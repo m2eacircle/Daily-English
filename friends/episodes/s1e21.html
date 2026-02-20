@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends S1E21 — Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .yt-placeholder {{
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+      color: #fff; border: none; border-radius: 8px;
+      padding: 8px 16px; font-size: 0.82rem; font-weight: 800;
+      cursor: not-allowed; opacity: 0.7; font-family: inherit;
+    }}
+    .yt-placeholder.live {{ cursor: pointer; opacity: 1; text-decoration: none; }}
+    .yt-placeholder.live:hover {{ transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }}
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home" aria-label="Home">🏠</button>
+    <div class="topbar-logo">
+      <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">🌐</span>
+      <span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="page-wrap">
+
+    <nav class="nav-row" aria-label="Page navigation">
+      <button class="btn-nav home" onclick="goHome()">🏠 Home</button>
+      <button class="btn-nav" onclick="goBack()">◀ Back to Season</button>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="../index.html">Friends</a>
+      <span class="sep">›</span>
+      <a href="../seasons/season1.html">Season 1</a>
+      <span class="sep">›</span>
+      <span class="current" id="bc-episode">Episode 21</span>
+    </nav>
+
+    <div class="page-header">
+      <div class="page-header-thumb" id="epThumb">
+        <img src="../images/s1e21.jpg" alt="Episode 21"
+          onerror="this.parentElement.innerHTML='🎬';">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title" id="epTitle">Friends — Season 1, Episode 21</div>
+        <div class="page-header-meta" id="epDesc">Loading...</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="episode-friends-s1e21"
+            onclick="toggleBookmark('episode','episode-friends-s1e21','📋 Friends S1E21','friends/episodes/s1e21.html')">
+            🔖 Bookmark
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head">
+        <span class="bm-icon">🔖</span>
+        <span>Your Bookmarks</span>
+      </div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+
+    <div class="section-label">English Expressions — Season 1 · Episode 21</div>
+    <div class="expr-list" id="exprList"></div>
+
+  </div>
+</main>
+
+<script src="../../js/app.js"></script>
+<script src="../friends-data.js"></script>
+<script>
+  const S_NUM = 1;
+  const E_NUM = 21;
+
+  function goHome() {{ window.location.href = '../../index.html'; }}
+  function goBack() {{ window.location.href = `../seasons/season${{S_NUM}}.html`; }}
+
+  function buildExpressions() {{
+    const ep = getEpisodeData(S_NUM, E_NUM);
+
+    document.getElementById('epTitle').textContent   = `Friends — Season ${{S_NUM}}, Ep ${{E_NUM}}: ${{ep.title}}`;
+    document.getElementById('epDesc').textContent    = ep.description;
+    document.getElementById('bc-episode').textContent = `Ep ${{E_NUM}}: ${{ep.title}}`;
+
+    const list = document.getElementById('exprList');
+
+    if (!ep.expressions || ep.expressions.length === 0) {{
+      list.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">🎬</div>
+          <div class="empty-title">Expressions Coming Soon</div>
+          <div class="empty-msg">YouTube video links and expressions for this episode will be added shortly. Check back later!</div>
+        </div>`;
+      return;
+    }}
+
+    list.innerHTML = ep.expressions.map((x, i) => {{
+      const isLive = x.youtubeUrl && !x.youtubeUrl.includes('REPLACE');
+      const ytBtn = isLive
+        ? `<a class="yt-placeholder live btn-youtube" href="${{x.youtubeUrl}}" target="_blank" rel="noopener" aria-label="Watch on YouTube">
+             <span class="yt-icon">▶</span> Watch on YouTube
+           </a>`
+        : `<button class="yt-placeholder" disabled aria-label="YouTube link coming soon">
+             ▶ YouTube Link Coming Soon
+           </button>`;
+
+      const bmId = `expr-${{x.id}}`;
+      const pos  = x.partOfSpeech ? `<span style="font-size:0.72rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">${{escHtml(x.partOfSpeech)}}</span>` : '';
+
+      return `
+        <div class="expr-card" id="expr-${{x.id}}">
+          <div class="expr-num">Expression ${{i+1}} of ${{ep.expressions.length}}</div>
+          <div class="expr-phrase">
+            <span class="quote">"</span>${{escHtml(x.phrase)}}<span class="quote">"</span>${{pos}}
+          </div>
+          <div class="expr-meaning">${{escHtml(x.meaning)}}</div>
+          <div class="expr-example">${{escHtml(x.example)}}</div>
+          ${{x.context ? `<div style="font-size:0.79rem;color:var(--muted);margin-top:5px;margin-bottom:10px">📍 Context: ${{escHtml(x.context)}}</div>` : ''}}
+          <div class="expr-actions">
+            ${{ytBtn}}
+            <button class="btn-bm" data-bm-id="${{bmId}}"
+              onclick="toggleBookmark('expression','${{bmId}}','💬 ${{escHtml(x.phrase)}}','friends/episodes/s${{S_NUM}}e${{E_NUM}}.html#expr-${{x.id}}')">
+              🔖 Bookmark
+            </button>
+          </div>
+        </div>
+      `;
+    }}).join('');
+
+    syncBookmarkButtons();
+  }}
+
+  window.addEventListener('DOMContentLoaded', () => {{
+    checkTermsGuard();
+    buildExpressions();
+    renderBookmarkBar();
+    // Scroll to bookmarked expression if hash present
+    if (window.location.hash) {{
+      setTimeout(() => {{
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+      }}, 200);
+    }}
+  }});
+</script>
+</body>
+</html>

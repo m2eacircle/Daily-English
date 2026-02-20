@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily English — Learn one English expression per day through your favorite TV shows and videos.">
+  <title>Daily English — ONE Expression per DAY</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Terms overlay */
+    .terms-overlay {
+      position: fixed; inset: 0;
+      background: var(--bg);
+      z-index: 500;
+      overflow-y: auto;
+      display: none;
+    }
+    .terms-overlay.visible { display: block; }
+    /* Main content hidden until agreed */
+    #mainContent { display: none; }
+    #mainContent.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home" aria-label="Home">🏠</button>
+    <div class="topbar-logo">
+      <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener" title="Visit m2ea Circle">
+      <span class="m2ea-icon">🌐</span>
+      <span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TERMS OF USE OVERLAY
+═════════════════════════════════════════════════════════════== -->
+<div class="terms-overlay visible" id="termsOverlay">
+  <div class="terms-wrap">
+    <div class="terms-hero">
+      <div class="terms-hero-icon">📖</div>
+      <div class="terms-hero-title">Daily English<br>ONE Expression per DAY</div>
+      <div class="terms-hero-sub">by m2ea Laps — Please read and agree to our Terms of Use to continue</div>
+    </div>
+
+    <div class="terms-card">
+      <div class="terms-card-title">📋 Welcome</div>
+      <p>Welcome to <strong>Daily English (ONE Expression per DAY)</strong>. This application is designed to help you study English through real-world video content, one expression at a time.</p>
+      <p>Please read the following Terms of Use carefully before accessing the application.</p>
+    </div>
+
+    <div class="terms-card">
+      <div class="terms-card-title">📌 Terms of Use</div>
+      <ul class="terms-list">
+        <li>This app is for <strong>study purposes only</strong>. All video clips' rights belong to each respective company. If any company requests content removal, all contents can be removed without prior notice.</li>
+        <li>You <strong>cannot use this content for any other purposes</strong>. Use is strictly limited to <strong>personal study only</strong>. Any commercial, redistribution, or other non-personal use is prohibited.</li>
+        <li>All study contents and comments <strong>may contain incorrect or inaccurate information</strong>. All explanations and comments represent a <strong>m2ea Laps opinion</strong>. If you have a different idea or opinion, <em>you are right</em> — please use your own judgment.</li>
+      </ul>
+    </div>
+
+    <div class="terms-card">
+      <div class="terms-card-title">ℹ️ About This App</div>
+      <p>Daily English connects short YouTube video clips to real English expressions used in popular TV shows. Each expression includes its meaning, an example sentence, and a link to a short video clip for context.</p>
+      <p>This app is operated by <strong>m2ea Laps</strong> as a study group project, not as a commercial enterprise. All video content remains the property of its original owners.</p>
+    </div>
+
+    <div class="terms-check-wrap" id="checkWrap" onclick="handleCheckClick(event)">
+      <input type="checkbox" id="agreeCheck" onchange="onCheckChange()" aria-label="Agree to Terms of Use">
+      <label for="agreeCheck">
+        I have read and fully agree to the <strong>Terms of Use</strong> above.
+        I understand this application is for personal study only and that all video content
+        rights belong to their respective owners.
+      </label>
+    </div>
+
+    <button class="btn-agree" id="btnAgree" onclick="agreeAndEnter()" disabled aria-disabled="true">
+      Agree &amp; Start Learning ▶
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN CONTENT
+═════════════════════════════════════════════════════════════== -->
+<main id="mainContent">
+  <div class="page-wrap">
+
+    <!-- Hero -->
+    <div class="home-hero">
+      <h1>🎬 <span class="accent">ONE</span> Expression <span class="day">per DAY</span></h1>
+      <p>Learn natural, everyday English expressions through iconic TV shows and video clips — one expression at a time.</p>
+    </div>
+
+    <!-- Bookmark Bar -->
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head">
+        <span class="bm-icon">🔖</span>
+        <span>Your Bookmarks — Jump back to where you left off</span>
+      </div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+
+    <!-- Shows -->
+    <div class="section-label">📺 Shows</div>
+    <div class="show-grid">
+
+      <!-- FRIENDS -->
+      <a class="show-card" href="friends/index.html" id="card-friends">
+        <button class="bm-corner" data-bm-id="show-friends"
+          onclick="event.preventDefault(); event.stopPropagation();
+                   toggleBookmark('show','show-friends','📺 Friends','friends/index.html')"
+          title="Bookmark Friends" aria-label="Bookmark Friends">🔖</button>
+        <img class="show-card-img" src="images/friends.jpg" alt="Friends TV Show"
+          onerror="this.style.display='none'; document.getElementById('friends-placeholder').style.display='flex';">
+        <div class="show-card-img-placeholder" id="friends-placeholder" style="display:none">👫</div>
+        <div class="show-card-body">
+          <div class="show-card-title">Friends</div>
+          <div class="show-card-meta">10 Seasons · 24 Episodes each · Real everyday expressions</div>
+        </div>
+        <span class="show-badge">🔥 Popular</span>
+      </a>
+
+      <!-- COMING SOON 1 -->
+      <div class="show-card disabled">
+        <div class="show-card-img-placeholder">🚧</div>
+        <div class="show-card-body">
+          <div class="show-card-title">Coming Soon 1</div>
+          <div class="show-card-meta">New show — stay tuned!</div>
+        </div>
+        <span class="show-badge coming-badge">Coming Soon</span>
+      </div>
+
+      <!-- COMING SOON 2 -->
+      <div class="show-card disabled">
+        <div class="show-card-img-placeholder">🚧</div>
+        <div class="show-card-body">
+          <div class="show-card-title">Coming Soon 2</div>
+          <div class="show-card-meta">New show — stay tuned!</div>
+        </div>
+        <span class="show-badge coming-badge">Coming Soon</span>
+      </div>
+
+    </div><!-- /show-grid -->
+
+  </div><!-- /page-wrap -->
+</main>
+
+<script src="js/app.js"></script>
+<script>
+  /* ── Terms Logic ─────────────────────────────────────────── */
+  function handleCheckClick(e) {
+    if (e.target.id !== 'agreeCheck') {
+      const cb = document.getElementById('agreeCheck');
+      cb.checked = !cb.checked;
+      onCheckChange();
+    }
+  }
+
+  function onCheckChange() {
+    const cb  = document.getElementById('agreeCheck');
+    const btn = document.getElementById('btnAgree');
+    btn.classList.toggle('enabled', cb.checked);
+    btn.disabled = !cb.checked;
+    btn.setAttribute('aria-disabled', String(!cb.checked));
+  }
+
+  function agreeAndEnter() {
+    const cb = document.getElementById('agreeCheck');
+    if (!cb.checked) return;
+    setAgreed();
+    document.getElementById('termsOverlay').classList.remove('visible');
+    document.getElementById('mainContent').classList.add('visible');
+    renderBookmarkBar();
+    syncBookmarkButtons();
+  }
+
+  function goHome() { window.location.href = 'index.html'; }
+
+  /* ── Check terms on load ─────────────────────────────────── */
+  window.addEventListener('DOMContentLoaded', () => {
+    // Handle redirect param
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get('redirect');
+
+    if (hasAgreed()) {
+      document.getElementById('termsOverlay').classList.remove('visible');
+      document.getElementById('mainContent').classList.add('visible');
+      renderBookmarkBar();
+      syncBookmarkButtons();
+      // If we came here via a redirect (e.g. from a bookmark), go there
+      if (redirect) {
+        window.location.href = decodeURIComponent(redirect);
+      }
+    }
+  });
+</script>
+</body>
+</html>

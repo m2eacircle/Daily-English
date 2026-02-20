@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends Season 7 — Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home" aria-label="Home">🏠</button>
+    <div class="topbar-logo">
+      <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">🌐</span>
+      <span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="page-wrap">
+
+    <nav class="nav-row" aria-label="Page navigation">
+      <button class="btn-nav home" onclick="goHome()">🏠 Home</button>
+      <button class="btn-nav" onclick="window.location.href='../index.html'">◀ Back to Friends</button>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="../index.html">Friends</a>
+      <span class="sep">›</span>
+      <span class="current">Season 7</span>
+    </nav>
+
+    <div class="page-header">
+      <div class="page-header-thumb" id="seasonThumb">
+        <img src="../images/season7.jpg" alt="Friends Season 7"
+          onerror="this.parentElement.innerHTML='🎬';">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title">Friends — Season 7</div>
+        <div class="page-header-meta" id="seasonMeta">24 Episodes · Click an episode to explore expressions</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="season-friends-s7"
+            onclick="toggleBookmark('season','season-friends-s7','🎬 Friends Season 7','friends/seasons/season7.html')">
+            🔖 Bookmark
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head">
+        <span class="bm-icon">🔖</span>
+        <span>Your Bookmarks</span>
+      </div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+
+    <div class="section-label">Episodes — Season 7</div>
+    <div class="episode-grid" id="episodeGrid"></div>
+
+  </div>
+</main>
+
+<script src="../../js/app.js"></script>
+<script src="../friends-data.js"></script>
+<script>
+  const SEASON_NUM = 7;
+
+  function goHome() {{ window.location.href = '../../index.html'; }}
+
+  /* Episode icons cycling */
+  const EP_ICONS = ['☕','🎬','🎭','🃏','🌟','🎵','🏃','💡','🌙','🎁',
+                    '🍕','💼','🚪','🌺','🎤','📱','🌊','🏡','🎯','🌈',
+                    '🎪','🌍','💫','🎶'];
+
+  function buildEpisodeGrid() {{
+    const grid = document.getElementById('episodeGrid');
+    let html = '';
+    for (let e = 1; e <= 24; e++) {{
+      const epData = getEpisodeData(SEASON_NUM, e);
+      const bmId   = `episode-friends-s${{SEASON_NUM}}e${{e}}`;
+      const url    = `../episodes/s${{SEASON_NUM}}e${{e}}.html`;
+      const icon   = epData.icon || EP_ICONS[(e-1) % EP_ICONS.length];
+      const imgSrc = epData.image || `../images/s${{SEASON_NUM}}e${{e}}.jpg`;
+
+      html += `
+        <a class="episode-card" href="${{url}}" aria-label="Season ${{SEASON_NUM}} Episode ${{e}}">
+          <button class="bm-corner" data-bm-id="${{bmId}}"
+            onclick="event.preventDefault(); event.stopPropagation();
+                     toggleBookmark('episode','${{bmId}}','📋 Friends S${{SEASON_NUM}}E${{e}}','friends/episodes/s${{SEASON_NUM}}e${{e}}.html')"
+            title="Bookmark Episode ${{e}}" aria-label="Bookmark">🔖</button>
+          ${{epData.image
+            ? `<img class="episode-card-img" src="${{imgSrc}}" alt="Episode ${{e}}"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+               <div class="episode-card-placeholder" style="display:none">${{icon}}<span class="episode-num-badge">S${{SEASON_NUM}}·E${{e}}</span></div>`
+            : `<div class="episode-card-placeholder">${{icon}}<span class="episode-num-badge">S${{SEASON_NUM}}·E${{e}}</span></div>`}}
+          <div class="episode-card-body">
+            <div class="episode-card-title">${{escHtml(epData.title)}}</div>
+            <div class="episode-card-desc">${{escHtml(epData.description)}}</div>
+          </div>
+        </a>
+      `;
+    }}
+    grid.innerHTML = html;
+    syncBookmarkButtons();
+  }}
+
+  window.addEventListener('DOMContentLoaded', () => {{
+    checkTermsGuard();
+    buildEpisodeGrid();
+    renderBookmarkBar();
+  }});
+</script>
+</body>
+</html>
