@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends S2E7 &mdash; Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
+    .expr-card:hover { transform: translateX(3px); }
+    .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
+    .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
+    .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
+    .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
+    .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
+    .btn-youtube.pending { background: var(--card2); color: var(--muted); border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
+    .placeholder-slot { opacity: 0.45; border-style: dashed; }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
+    <div class="topbar-logo"><span class="logo-accent">Daily</span> <span class="logo-day">English</span></div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">&#127760;</span><span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+<main>
+  <div class="page-wrap">
+    <nav class="nav-row">
+      <button class="btn-nav home" onclick="goHome()">&#127968; Home</button>
+      <button class="btn-nav" onclick="window.location.href='../seasons/season2.html'">&#9664; Back to Season 2</button>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">&#8250;</span>
+      <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
+      <a href="../seasons/season2.html">Season 2</a><span class="sep">&#8250;</span>
+      <span class="current">S2E7</span>
+    </nav>
+    <div class="page-header">
+      <div class="page-header-thumb">
+        <img src="../images/s2e7.jpg" alt="S2E7"
+          onerror="this.src='../images/s2e7.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title">Friends &mdash; S2E7: Season 2, Episode 7</div>
+        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="episode-friends-s2e7"
+            onclick="toggleBookmark('episode','episode-friends-s2e7','&#128203; Friends S2E7','friends/episodes/s2e7.html')">
+            &#128278; Bookmark Episode
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span>Your Bookmarks</span></div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+    <div class="section-label">&#128172; 15 English Expressions &mdash; Season 2 Episode 7</div>
+    <div class="expr-list" id="exprList"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-copy">&copy; 2025 m2ea Labs. All rights reserved.</div>
+  <div><button class="footer-terms" onclick="showTermsModal()">Terms of Use</button></div>
+</footer>
+<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;">
+  <div style="max-width:580px;margin:40px auto;padding:0 16px 60px;">
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px 24px;position:relative;">
+      <button onclick="closeTermsModal()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;">&times;</button>
+      <div style="text-align:center;margin-bottom:16px;">
+        <div style="font-size:2.2rem;margin-bottom:8px;">&#128214;</div>
+        <div style="font-size:1.2rem;font-weight:900;color:var(--accent);">Terms of Use</div>
+        <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Daily English &mdash; ONE Expression per DAY &nbsp;|&nbsp; by m2ea Labs</div>
+      </div>
+      <div id="agreedBadge" style="display:none;background:rgba(34,197,94,0.12);border:1.5px solid #22c55e;border-radius:10px;padding:11px 16px;margin-bottom:16px;align-items:center;gap:10px;">
+        <span style="font-size:1.3rem;">&#9989;</span>
+        <div><div style="font-size:0.85rem;font-weight:900;color:#22c55e;">You have agreed to these Terms of Use.</div>
+        <div style="font-size:0.76rem;color:var(--muted);margin-top:2px;">Your agreement is saved on this device. Thank you for using Daily English responsibly.</div></div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;">
+        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#128204; Terms of Use</div>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>This app is for <strong>study purposes only</strong>. All video clips&rsquo; rights belong to each respective company. Contents can be removed without prior notice upon request.</li>
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>Use is strictly limited to <strong>personal study only</strong>. Commercial or redistribution use is prohibited.</li>
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 0 16px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>All explanations represent a <strong>m2ea Labs opinion</strong>. If you have a different opinion, <em>you are right</em> &mdash; use your own judgment.</li>
+        </ul>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;">
+        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#8505;&#65039; About This App</div>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0 0 8px;">Daily English connects short YouTube video clips to real English expressions used in popular TV shows.</p>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0;">Operated by <strong>m2ea Labs</strong>. YouTube clips may include ads served by YouTube.</p>
+      </div>
+      <button onclick="closeTermsModal()" style="width:100%;background:linear-gradient(135deg,var(--accent),#0ea5e9);color:var(--bg);border:none;border-radius:10px;padding:13px;font-size:0.95rem;font-weight:900;cursor:pointer;font-family:inherit;">Close &nbsp;&times;</button>
+    </div>
+  </div>
+</div>
+<script>
+  function showTermsModal(){document.getElementById('termsModal').style.display='block';document.body.style.overflow='hidden';var b=document.getElementById('agreedBadge');if(b)b.style.display=(localStorage.getItem('de_agreed')==='1')?'flex':'none';}
+  function closeTermsModal(){document.getElementById('termsModal').style.display='none';document.body.style.overflow='';}
+  document.getElementById('termsModal').addEventListener('click',function(e){if(e.target===this)closeTermsModal();});
+</script>
+<script src="../../js/app.js"></script>
+<script>
+  /* ================================================================
+     EPISODE DATA — edit this object to update expressions
+     ----------------------------------------------------------------
+     Each expression has:
+       phrase       : the English expression
+       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
+       meaning      : your explanation
+       example      : an example sentence
+       context      : scene context (optional, can be empty '')
+       youtubeUrl   : paste YouTube link here when ready
+     ----------------------------------------------------------------
+     The page shows 15 slots. Add up to 15 objects in expressions[].
+     Empty slots show as "Coming Soon" placeholders automatically.
+  ================================================================ */
+  var EP_DATA = {
+    title: 'Season 2, Episode 7',
+    description: 'Expressions coming soon.',
+    expressions: []
+  };
+
+  var S_NUM = 2;
+  var E_NUM = 7;
+  var TOTAL = 15;
+
+  function goHome() { window.location.href = '../../index.html'; }
+
+  function buildExpressions() {
+    var dataExprs = EP_DATA.expressions || [];
+    var list = document.getElementById('exprList');
+    var html = '';
+    for (var i = 0; i < TOTAL; i++) {
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
+      var num = i + 1;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      if (x) {
+        var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
+        var ytBtn = isLive
+          ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>'
+          : '<button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+        var pos = x.partOfSpeech
+          ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
+          : '';
+        html += '<div class="expr-card" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
+        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-actions">' + ytBtn;
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+      } else {
+        html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-actions"><button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+      }
+    }
+    list.innerHTML = html;
+    syncBookmarkButtons();
+  }
+
+  function handleExprBm(num) {
+    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'&#128172; S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    checkTermsGuard();
+    buildExpressions();
+    renderBookmarkBar();
+    syncBookmarkButtons();
+    if (window.location.hash) {
+      setTimeout(function() {
+        var el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 200);
+    }
+  });
+</script>
+</body>
+</html>
