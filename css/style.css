@@ -693,3 +693,29 @@ ul { list-style: none; }
   .show-grid   { grid-template-columns: 1fr; }
   .season-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── Site Footer ───────────────────────────────────────────── */
+.site-footer {
+  margin-top: 52px;
+  padding: 18px 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--bg);
+}
+.site-footer .footer-copy { margin-bottom: 4px; }
+.site-footer .footer-terms {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.18s;
+}
+.site-footer .footer-terms:hover { color: var(--accent2); }
