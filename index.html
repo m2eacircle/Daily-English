@@ -6,8 +6,56 @@
   <meta name="description" content="Daily English — 매일 영어 표현 하나씩 배워보세요. Learn one English expression per day through your favorite TV shows.">
   <title>Daily English — ONE Expression per DAY</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#38bdf8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Daily English">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <style>
-    /* ── Terms overlay ──────────────────────────────────── */
+    /* ── Install banner ──────────────────────────────────── */
+    .install-banner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 400;
+      background: var(--card2);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 14px 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      max-width: 420px;
+      width: calc(100% - 32px);
+      animation: slideUp 0.35s ease;
+    }
+    .install-banner.show { display: flex; align-items: center; gap: 12px; }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+    .install-banner-icon { font-size: 2rem; flex-shrink: 0; }
+    .install-banner-text { flex: 1; }
+    .install-banner-text strong { font-size: 0.9rem; color: var(--text); display: block; margin-bottom: 2px; }
+    .install-banner-text span   { font-size: 0.78rem; color: var(--muted); }
+    .install-banner-actions { display: flex; gap: 6px; flex-shrink: 0; flex-direction: column; }
+    .btn-install {
+      background: var(--accent); color: var(--bg);
+      border: none; border-radius: 8px;
+      padding: 8px 14px; font-size: 0.8rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .btn-install:hover { background: #0ea5e9; }
+    .btn-dismiss {
+      background: none; color: var(--muted);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.75rem; font-weight: 700;
+      cursor: pointer; font-family: inherit;
+    }
+    .btn-dismiss:hover { color: var(--text); }
     .terms-overlay {
       position: fixed; inset: 0;
       background: var(--bg);
@@ -264,22 +312,38 @@
         <span class="show-badge">&#128293; Popular</span>
       </a>
 
-      <!-- COMING SOON 1 -->
-      <div class="show-card disabled">
-        <div class="show-card-img-placeholder">&#128679;</div>
+      <!-- THE OFFICE — Coming Soon -->
+      <div class="show-card disabled" title="Coming soon — not available yet">
+        <div style="position:relative;overflow:hidden;">
+          <img class="show-card-img" src="images/the_office.png" alt="The Office"
+            style="filter:blur(4px) grayscale(40%) brightness(0.7); pointer-events:none; user-select:none;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <span style="background:rgba(13,27,46,0.78);color:var(--accent);font-size:0.78rem;font-weight:900;
+              padding:6px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;
+              border:1px solid var(--accent);backdrop-filter:blur(2px);">&#128679; Coming Soon</span>
+          </div>
+        </div>
         <div class="show-card-body">
-          <div class="show-card-title">Coming Soon 1</div>
-          <div class="show-card-meta">New show &mdash; stay tuned!</div>
+          <div class="show-card-title">The Office</div>
+          <div class="show-card-meta">Study content in preparation &mdash; stay tuned!</div>
         </div>
         <span class="show-badge coming-badge">Coming Soon</span>
       </div>
 
-      <!-- COMING SOON 2 -->
-      <div class="show-card disabled">
-        <div class="show-card-img-placeholder">&#128679;</div>
+      <!-- MODERN FAMILY — Coming Soon -->
+      <div class="show-card disabled" title="Coming soon — not available yet">
+        <div style="position:relative;overflow:hidden;">
+          <img class="show-card-img" src="images/modern_family.png" alt="Modern Family"
+            style="filter:blur(4px) grayscale(40%) brightness(0.7); pointer-events:none; user-select:none;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <span style="background:rgba(13,27,46,0.78);color:var(--accent);font-size:0.78rem;font-weight:900;
+              padding:6px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;
+              border:1px solid var(--accent);backdrop-filter:blur(2px);">&#128679; Coming Soon</span>
+          </div>
+        </div>
         <div class="show-card-body">
-          <div class="show-card-title">Coming Soon 2</div>
-          <div class="show-card-meta">New show &mdash; stay tuned!</div>
+          <div class="show-card-title">Modern Family</div>
+          <div class="show-card-meta">Study content in preparation &mdash; stay tuned!</div>
         </div>
         <span class="show-badge coming-badge">Coming Soon</span>
       </div>
@@ -289,8 +353,68 @@
 </main>
 
 
+<!-- =====================================================
+     PWA INSTALL BANNER
+====================================================== -->
+<div class="install-banner" id="installBanner">
+  <div class="install-banner-icon">&#128241;</div>
+  <div class="install-banner-text">
+    <strong>앱으로 설치하기 / Install App</strong>
+    <span>홈 화면에 추가하면 오프라인에서도 사용 가능합니다<br>Add to home screen for offline use</span>
+  </div>
+  <div class="install-banner-actions">
+    <button class="btn-install" id="btnInstall" onclick="installApp()">&#8595; Install</button>
+    <button class="btn-dismiss" onclick="dismissInstall()">나중에</button>
+  </div>
+</div>
+
+
 <script src="js/app.js"></script>
 <script>
+
+  /* ── PWA: Service Worker Registration ───────────────────── */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js')
+        .then(function(reg) { console.log('[PWA] SW registered:', reg.scope); })
+        .catch(function(err) { console.warn('[PWA] SW failed:', err); });
+    });
+  }
+
+  /* ── PWA: Install Prompt ─────────────────────────────────── */
+  var _deferredPrompt = null;
+
+  window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    _deferredPrompt = e;
+    // Only show install banner if user hasn't dismissed it before
+    if (!localStorage.getItem('de_install_dismissed')) {
+      document.getElementById('installBanner').classList.add('show');
+    }
+  });
+
+  window.addEventListener('appinstalled', function() {
+    document.getElementById('installBanner').classList.remove('show');
+    _deferredPrompt = null;
+    showToast('&#10003; App installed! Check your home screen.');
+  });
+
+  function installApp() {
+    if (!_deferredPrompt) return;
+    _deferredPrompt.prompt();
+    _deferredPrompt.userChoice.then(function(result) {
+      if (result.outcome === 'accepted') {
+        showToast('&#10003; Installing Daily English...');
+      }
+      _deferredPrompt = null;
+      document.getElementById('installBanner').classList.remove('show');
+    });
+  }
+
+  function dismissInstall() {
+    document.getElementById('installBanner').classList.remove('show');
+    localStorage.setItem('de_install_dismissed', '1');
+  }
 
   /* ── State ───────────────────────────────────────────────── */
   let currentLang = 'ko'; // Korean is the primary / default language

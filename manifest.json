@@ -1,0 +1,37 @@
+{
+  "name": "Daily English — ONE Expression per DAY",
+  "short_name": "Daily English",
+  "description": "매일 한 표현 | Learn one English expression per day through popular TV shows.",
+  "start_url": "/daily-english/index.html",
+  "scope": "/daily-english/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0d1b2e",
+  "theme_color": "#38bdf8",
+  "lang": "ko",
+  "categories": ["education", "entertainment"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Friends",
+      "short_name": "Friends",
+      "description": "Go to Friends show",
+      "url": "/daily-english/friends/index.html",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

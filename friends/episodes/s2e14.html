@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends S2E14 &mdash; Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
+    .expr-card:hover { transform: translateX(3px); }
+    .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
+    .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic;
+      border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase;
+      letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
+    .expr-actions { display: flex; align-items: center; gap: 8px;
+      padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
+    .btn-youtube { display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none;
+      border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800;
+      cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
+    .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
+    .btn-youtube.pending { background: var(--card2); color: var(--muted);
+      border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
+    .placeholder-slot { opacity: 0.45; border-style: dashed; }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
+    <div class="topbar-logo">
+      <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">&#127760;</span>
+      <span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="page-wrap">
+
+    <nav class="nav-row">
+      <button class="btn-nav home" onclick="goHome()">&#127968; Home</button>
+      <button class="btn-nav" onclick="window.location.href='../seasons/season2.html'">&#9664; Back to Season 2</button>
+    </nav>
+
+    <nav class="breadcrumb">
+      <a href="../../index.html">Home</a>
+      <span class="sep">&#8250;</span>
+      <a href="../index.html">Friends</a>
+      <span class="sep">&#8250;</span>
+      <a href="../seasons/season2.html">Season 2</a>
+      <span class="sep">&#8250;</span>
+      <span class="current" id="bcEp">Episode 14</span>
+    </nav>
+
+    <div class="page-header">
+      <div class="page-header-thumb">
+        <img src="../images/s2e14.jpg" alt="S2E14"
+          onerror="this.parentElement.innerHTML='&#127916;';">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title" id="epTitle">Friends &mdash; Season 2, Episode 14</div>
+        <div class="page-header-meta" id="epDesc">15 Expressions &middot; Click &#9654; to watch on YouTube</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="episode-friends-s2e14"
+            onclick="toggleBookmark('episode','episode-friends-s2e14','&#128203; Friends S2E14','friends/episodes/s2e14.html')">
+            &#128278; Bookmark Episode
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head">
+        <span class="bm-icon">&#128278;</span>
+        <span>Your Bookmarks</span>
+      </div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+
+    <div class="section-label">&#128172; 15 English Expressions &mdash; Season 2 Episode 14</div>
+    <div class="expr-list" id="exprList"></div>
+
+  </div>
+</main>
+
+<script src="../../js/app.js"></script>
+<script src="../friends-data.js"></script>
+<script>
+  var S_NUM = 2;
+  var E_NUM = 14;
+  var TOTAL = 15;
+
+  function goHome() { window.location.href = '../../index.html'; }
+
+  function buildExpressions() {
+    var ep = getEpisodeData(S_NUM, E_NUM);
+    var dataExprs = (ep && ep.expressions) ? ep.expressions : [];
+
+    if (ep && ep.title) {
+      document.getElementById('epTitle').textContent =
+        'Friends — S' + S_NUM + 'E' + E_NUM + ': ' + ep.title;
+      document.getElementById('bcEp').textContent =
+        'E' + E_NUM + ': ' + ep.title;
+    }
+
+    var list = document.getElementById('exprList');
+    var html = '';
+
+    for (var i = 0; i < TOTAL; i++) {
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
+      var num = i + 1;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+
+      if (x) {
+        var isLive = x.youtubeUrl
+          && x.youtubeUrl.indexOf('REPLACE') === -1
+          && x.youtubeUrl.length > 25;
+
+        var ytBtn = isLive
+          ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>'
+          : '<button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+
+        var pos = x.partOfSpeech
+          ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">'
+            + escHtml(x.partOfSpeech) + '</span>'
+          : '';
+
+        html += '<div class="expr-card" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
+        if (x.context) {
+          html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        }
+        html += '<div class="expr-actions">' + ytBtn;
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '"';
+        html += ' onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+
+      } else {
+        // Empty placeholder — ready for YouTube link
+        html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">This expression will be added when the YouTube video is uploaded.</div>';
+        html += '<div class="expr-actions">';
+        html += '<button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '"';
+        html += ' onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+      }
+    }
+
+    list.innerHTML = html;
+    syncBookmarkButtons();
+  }
+
+  function handleExprBm(num) {
+    var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+    var label = '&#128172; S' + S_NUM + 'E' + E_NUM + ' Expr' + num;
+    var url   = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+    toggleBookmark('expression', bmId, label, url);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    checkTermsGuard();
+    buildExpressions();
+    renderBookmarkBar();
+    syncBookmarkButtons();
+    if (window.location.hash) {
+      setTimeout(function() {
+        var el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 200);
+    }
+  });
+</script>
+</body>
+</html>
