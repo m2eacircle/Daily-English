@@ -82,10 +82,18 @@
   <div style="max-width:580px;margin:40px auto;padding:0 16px 60px;">
     <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px 24px;position:relative;">
       <button onclick="closeTermsModal()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;line-height:1;">&times;</button>
-      <div style="text-align:center;margin-bottom:20px;">
+      <div style="text-align:center;margin-bottom:16px;">
         <div style="font-size:2.2rem;margin-bottom:8px;">&#128214;</div>
         <div style="font-size:1.2rem;font-weight:900;color:var(--accent);">Terms of Use</div>
         <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Daily English &mdash; ONE Expression per DAY &nbsp;|&nbsp; by m2ea Labs</div>
+      </div>
+      <!-- Agreed badge — shown only if user has already agreed -->
+      <div id="agreedBadge" style="display:none;background:rgba(34,197,94,0.12);border:1.5px solid #22c55e;border-radius:10px;padding:11px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+        <span style="font-size:1.3rem;flex-shrink:0;">&#9989;</span>
+        <div>
+          <div style="font-size:0.85rem;font-weight:900;color:#22c55e;">You have agreed to these Terms of Use.</div>
+          <div style="font-size:0.76rem;color:var(--muted);margin-top:2px;">Your agreement is saved on this device. Thank you for using Daily English responsibly.</div>
+        </div>
       </div>
       <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;">
         <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#128204; Terms of Use</div>
