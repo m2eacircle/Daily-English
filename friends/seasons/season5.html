@@ -5,6 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friends Season 5 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* Season hero banner */
+    .season-hero {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 22px;
+      border: 2px solid var(--border);
+    }
+    .season-hero img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .season-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(9,17,30,0.95) 0%, rgba(9,17,30,0.45) 55%, transparent 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: 18px 20px;
+      justify-content: space-between;
+    }
+    .season-hero-info { flex: 1; }
+    .season-hero-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      line-height: 1.2;
+    }
+    .season-hero-meta {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 4px;
+    }
+    .season-hero-actions {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+      padding-left: 12px;
+    }
+  </style>
 </head>
 <body>
 
@@ -39,23 +84,26 @@
       <span class="current">Season 5</span>
     </nav>
 
-    <div class="page-header">
-      <div class="page-header-thumb">
-        <img src="../images/season5.jpg" alt="Season 5"
-          onerror="this.parentElement.innerHTML='&#127909;';">
-      </div>
-      <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; Season 5</div>
-        <div class="page-header-meta">24 Episodes &middot; Click an episode to explore expressions</div>
-        <div class="page-header-actions">
+    <!-- Season Hero Banner with real photo -->
+    <div class="season-hero">
+      <img src="../images/season5.png" alt="Friends Season 5"
+        onerror="this.parentElement.style.background='var(--card2)';this.style.display='none';">
+      <div class="season-hero-overlay">
+        <div class="season-hero-info">
+          <div class="season-hero-title">Friends &mdash; Season 5</div>
+          <div class="season-hero-meta">1998–1999 &middot; 24 Episodes &middot; Click an episode to explore expressions</div>
+        </div>
+        <div class="season-hero-actions">
           <button class="btn-bm" data-bm-id="season-friends-s5"
-            onclick="toggleBookmark('season','season-friends-s5','&#127909; Friends Season 5','friends/seasons/season5.html')">
-            &#128278; Bookmark Season
+            onclick="toggleBookmark('season','season-friends-s5','&#127909; Friends Season 5','friends/seasons/season5.html')"
+            style="background:rgba(9,17,30,0.7);border-color:rgba(255,255,255,0.3);color:#fff;">
+            &#128278; Bookmark
           </button>
         </div>
       </div>
     </div>
 
+    <!-- Bookmark Bar -->
     <div class="bookmark-bar" id="bookmarkBar">
       <div class="bookmark-bar-head">
         <span class="bm-icon">&#128278;</span>
@@ -64,7 +112,7 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
 
-    <div class="section-label">&#127916; Episodes &mdash; Season 5</div>
+    <div class="section-label">&#127916; Episodes &mdash; Season 5 (24 Episodes)</div>
     <div class="episode-grid" id="episodeGrid"></div>
 
   </div>
@@ -74,14 +122,15 @@
 <script src="../friends-data.js"></script>
 <script>
   var SEASON_NUM = 5;
-  var EP_ICONS = ['&#9749;','&#127909;','&#127917;','&#127183;','&#11088;','&#127925;','&#127939;','&#128161;','&#127769;','&#127873;','&#127829;','&#128188;','&#128682;','&#127802;','&#127908;','&#128241;','&#127754;','&#127969;','&#127919;','&#127752;','&#127914;','&#127757;','&#128171;','&#127926;'];
+  var EPISODE_COUNT = 24;
+  var EP_ICONS = ['&#9749;','&#127909;','&#127917;','&#127183;','&#11088;','&#127925;','&#127939;','&#128161;','&#127769;','&#127873;','&#127829;','&#128188;','&#128682;','&#127802;','&#127908;','&#128241;','&#127754;','&#127969;','&#127919;','&#127752;','&#127914;','&#127757;','&#128171;','&#127926;','&#127881;'];
 
   function goHome() { window.location.href = '../../index.html'; }
 
   function buildEpisodeGrid() {
     var grid = document.getElementById('episodeGrid');
     var html = '';
-    for (var e = 1; e <= 24; e++) {
+    for (var e = 1; e <= EPISODE_COUNT; e++) {
       var epData = getEpisodeData(SEASON_NUM, e);
       var bmId   = 'episode-friends-s' + SEASON_NUM + 'e' + e;
       var url    = '../episodes/s' + SEASON_NUM + 'e' + e + '.html';

@@ -5,20 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friends — Daily English</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* 2 × 5 season grid */
+    .season-grid-2x5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .season-card-2x5 {
+      position: relative;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      display: block;
+    }
+    .season-card-2x5:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    }
+    .season-card-img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+    .season-card-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(9,17,30,0.96) 0%, rgba(9,17,30,0.7) 55%, transparent 100%);
+      padding: 28px 14px 13px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .season-card-info { flex: 1; min-width: 0; }
+    .season-card-title {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.2;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+    }
+    .season-card-meta {
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.65);
+      margin-top: 3px;
+    }
+    .season-bm-btn {
+      position: absolute;
+      top: 8px; left: 8px;
+      background: rgba(9,17,30,0.78);
+      border: none;
+      border-radius: 7px;
+      padding: 5px 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: var(--transition);
+      backdrop-filter: blur(4px);
+      line-height: 1;
+      z-index: 5;
+    }
+    .season-bm-btn:hover { color: var(--gold); background: rgba(9,17,30,0.95); }
+    .season-bm-btn.saved  { color: var(--gold); }
+
+    /* Season number badge top-right */
+    .season-num-badge {
+      position: absolute;
+      top: 8px; right: 8px;
+      background: rgba(56,189,248,0.88);
+      color: #0d1b2e;
+      font-size: 0.7rem;
+      font-weight: 900;
+      padding: 3px 9px;
+      border-radius: 12px;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    @media (max-width: 480px) {
+      .season-card-img { height: 150px; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- ── TOP BAR ─────────────────────────────────────────────── -->
 <header class="topbar">
   <div class="topbar-left">
-    <button class="btn-topbar-home" onclick="goHome()" title="Home" aria-label="Home">🏠</button>
+    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
     <div class="topbar-logo">
       <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
     </div>
   </div>
   <div class="topbar-right">
     <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
-      <span class="m2ea-icon">🌐</span>
+      <span class="m2ea-icon">&#127760;</span>
       <span class="label">m2ea Circle</span>
     </a>
   </div>
@@ -27,32 +113,30 @@
 <main>
   <div class="page-wrap">
 
-    <!-- Nav Row -->
-    <nav class="nav-row" aria-label="Page navigation">
-      <button class="btn-nav home" onclick="goHome()">🏠 Home</button>
-      <button class="btn-nav" onclick="history.back()">◀ Back</button>
+    <nav class="nav-row">
+      <button class="btn-nav home" onclick="goHome()">&#127968; Home</button>
+      <button class="btn-nav" onclick="history.back()">&#9664; Back</button>
     </nav>
 
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <nav class="breadcrumb">
       <a href="../index.html">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">&#8250;</span>
       <span class="current">Friends</span>
     </nav>
 
-    <!-- Page Header -->
+    <!-- Show header -->
     <div class="page-header">
       <div class="page-header-thumb">
         <img src="../images/friends.jpg" alt="Friends"
-          onerror="this.parentElement.textContent='👫';">
+          onerror="this.parentElement.innerHTML='&#128107;';">
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends</div>
-        <div class="page-header-meta">10 Seasons · 24 Episodes each · 1994–2004 · Learn everyday English expressions from the iconic sitcom</div>
+        <div class="page-header-meta">10 Seasons &middot; 236 Episodes total &middot; 1994&ndash;2004 &middot; Learn everyday English expressions from the iconic sitcom</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="show-friends"
-            onclick="toggleBookmark('show','show-friends','📺 Friends','friends/index.html')">
-            🔖 Bookmark
+            onclick="toggleBookmark('show','show-friends','&#128250; Friends','friends/index.html')">
+            &#128278; Bookmark
           </button>
         </div>
       </div>
@@ -61,61 +145,90 @@
     <!-- Bookmark Bar -->
     <div class="bookmark-bar" id="bookmarkBar">
       <div class="bookmark-bar-head">
-        <span class="bm-icon">🔖</span>
+        <span class="bm-icon">&#128278;</span>
         <span>Your Bookmarks</span>
       </div>
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
 
-    <!-- Seasons -->
-    <div class="section-label">Select a Season</div>
-    <div class="season-grid" id="seasonGrid">
-      <!-- Populated by JS -->
-    </div>
+    <div class="section-label">&#127916; Select a Season</div>
+
+    <!-- 2 × 5 Season Grid -->
+    <div class="season-grid-2x5" id="seasonGrid"></div>
 
   </div>
 </main>
 
 <script src="../js/app.js"></script>
-<script src="friends-data.js"></script>
 <script>
   function goHome() { window.location.href = '../index.html'; }
 
-  function buildSeasonGrid() {
-    const grid = document.getElementById('seasonGrid');
-    let html = '';
-    for (let s = 1; s <= FRIENDS_DATA.seasons; s++) {
-      const meta  = FRIENDS_DATA.seasonMeta[s];
-      const bmId  = `season-friends-s${s}`;
-      const url   = `seasons/season${s}.html`;
-      const bgGrad = meta.color ? `background: linear-gradient(135deg, #${meta.color.replace(/,/g,'%, #')}%)` : '';
+  var SEASON_META = {
+    1:  { year: '1994\u20131995', eps: 24 },
+    2:  { year: '1995\u20131996', eps: 24 },
+    3:  { year: '1996\u20131997', eps: 25 },
+    4:  { year: '1997\u20131998', eps: 24 },
+    5:  { year: '1998\u20131999', eps: 24 },
+    6:  { year: '1999\u20132000', eps: 25 },
+    7:  { year: '2000\u20132001', eps: 24 },
+    8:  { year: '2001\u20132002', eps: 24 },
+    9:  { year: '2002\u20132003', eps: 24 },
+    10: { year: '2003\u20132004', eps: 18 }
+  };
 
-      html += `
-        <a class="season-card" href="${url}" aria-label="Friends Season ${s}">
-          <button class="bm-corner" data-bm-id="${bmId}"
-            onclick="event.preventDefault(); event.stopPropagation();
-                     toggleBookmark('season','${bmId}','🎬 Friends Season ${s}','friends/${url}')"
-            title="Bookmark Season ${s}" aria-label="Bookmark Season ${s}">🔖</button>
-          ${meta.image
-            ? `<img class="season-card-img" src="images/season${s}.jpg" alt="Season ${s}"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-               <div class="season-card-placeholder" style="display:none; ${bgGrad}">Season ${s}</div>`
-            : `<div class="season-card-placeholder" style="${bgGrad}">Season ${s}</div>`}
-          <div class="season-card-body">
-            <div class="season-card-title">Season ${s}</div>
-            <div class="season-card-meta">${meta.year} · 24 Episodes</div>
-          </div>
-        </a>
-      `;
+  function buildSeasonGrid() {
+    var grid = document.getElementById('seasonGrid');
+    var html = '';
+
+    for (var s = 1; s <= 10; s++) {
+      var meta  = SEASON_META[s];
+      var bmId  = 'season-friends-s' + s;
+      var url   = 'seasons/season' + s + '.html';
+      var imgSrc = 'images/season' + s + '.png';
+
+      html += '<a class="season-card-2x5" href="' + url + '" aria-label="Season ' + s + '">';
+
+      /* Season image */
+      html += '<img class="season-card-img" src="' + imgSrc + '" alt="Season ' + s + '"'
+            + ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">';
+      /* Fallback placeholder (hidden by default) */
+      html += '<div style="display:none;width:100%;height:190px;align-items:center;justify-content:center;'
+            + 'font-size:3rem;background:linear-gradient(135deg,var(--card2),var(--surface))">&#127909;</div>';
+
+      /* Gradient overlay with title */
+      html += '<div class="season-card-overlay">';
+      html += '<div class="season-card-info">';
+      html += '<div class="season-card-title">Season ' + s + '</div>';
+      html += '<div class="season-card-meta">' + meta.year + ' &middot; ' + meta.eps + ' Episodes</div>';
+      html += '</div></div>';
+
+      /* Season number badge */
+      html += '<span class="season-num-badge">S' + s + '</span>';
+
+      /* Bookmark button */
+      html += '<button class="season-bm-btn bm-corner" data-bm-id="' + bmId + '"'
+            + ' onclick="event.preventDefault();event.stopPropagation();'
+            + 'handleSeasonBm(' + s + ')" title="Bookmark Season ' + s + '">&#128278;</button>';
+
+      html += '</a>';
     }
+
     grid.innerHTML = html;
     syncBookmarkButtons();
   }
 
-  window.addEventListener('DOMContentLoaded', () => {
+  function handleSeasonBm(s) {
+    var bmId  = 'season-friends-s' + s;
+    var label = '&#127909; Friends Season ' + s;
+    var url   = 'friends/seasons/season' + s + '.html';
+    toggleBookmark('season', bmId, label, url);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
     checkTermsGuard();
     buildSeasonGrid();
     renderBookmarkBar();
+    syncBookmarkButtons();
   });
 </script>
 </body>
