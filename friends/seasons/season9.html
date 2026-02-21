@@ -6,15 +6,26 @@
   <title>Friends Season 9 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../css/style.css">
   <style>
-    .ep-card-img { width:100%; height:120px; object-fit:cover; display:block; border-radius:var(--radius) var(--radius) 0 0; }
-    .ep-img-placeholder { width:100%; height:120px; display:flex; align-items:center; justify-content:center; font-size:2.2rem; background:linear-gradient(135deg,var(--card2),var(--surface)); border-radius:var(--radius) var(--radius) 0 0; position:relative; }
+    .ep-card-img {
+      width: 100%; height: 120px; object-fit: cover; display: block;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .ep-img-placeholder {
+      width: 100%; height: 120px; display: flex; align-items: center;
+      justify-content: center; font-size: 2.2rem;
+      background: linear-gradient(135deg, var(--card2), var(--surface));
+      border-radius: var(--radius) var(--radius) 0 0; position: relative;
+    }
   </style>
 </head>
 <body>
+
 <header class="topbar">
   <div class="topbar-left">
     <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
-    <div class="topbar-logo"><span class="logo-accent">Daily</span> <span class="logo-day">English</span></div>
+    <div class="topbar-logo">
+      <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
+    </div>
   </div>
   <div class="topbar-right">
     <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
@@ -22,17 +33,21 @@
     </a>
   </div>
 </header>
+
 <main>
   <div class="page-wrap">
+
     <nav class="nav-row">
       <button class="btn-nav home" onclick="goHome()">&#127968; Home</button>
       <button class="btn-nav" onclick="window.location.href='../index.html'">&#9664; Back to Friends</button>
     </nav>
+
     <nav class="breadcrumb">
       <a href="../../index.html">Home</a><span class="sep">&#8250;</span>
       <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
       <span class="current">Season 9</span>
     </nav>
+
     <div class="page-header">
       <div class="page-header-thumb">
         <img src="../images/season9.png" alt="Friends Season 9"
@@ -49,12 +64,17 @@
         </div>
       </div>
     </div>
+
     <div class="bookmark-bar" id="bookmarkBar">
-      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span>Your Bookmarks</span></div>
+      <div class="bookmark-bar-head">
+        <span class="bm-icon">&#128278;</span><span>Your Bookmarks</span>
+      </div>
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
+
     <div class="section-label">&#127916; Episodes &mdash; Season 9 (24 Episodes)</div>
     <div class="episode-grid" id="episodeGrid"></div>
+
   </div>
 </main>
 
@@ -100,15 +120,16 @@
 </script>
 <script src="../../js/app.js"></script>
 <script>
-  var SEASON_NUM = 9;
-  var EPISODE_COUNT = 24;
-  var EP_ICONS = ['&#9749;', '&#127909;', '&#127917;', '&#127183;', '&#11088;', '&#127925;', '&#127939;', '&#128161;', '&#127769;', '&#127873;', '&#127829;', '&#128188;', '&#128682;', '&#127802;', '&#127908;', '&#128241;', '&#127754;', '&#127969;', '&#127919;', '&#127752;', '&#127914;', '&#127757;', '&#128171;', '&#127926;', '&#127881;'];
+  var SEASON_NUM     = 9;
+  var EPISODE_COUNT  = 24;
+  var EP_ICONS       = ["&#9749;","&#127909;","&#127917;","&#127183;","&#11088;","&#127925;","&#127939;","&#128161;","&#127769;","&#127873;","&#127829;","&#128188;","&#128682;","&#127802;","&#127908;","&#128241;","&#127754;","&#127969;","&#127919;","&#127752;","&#127914;","&#127757;","&#128171;","&#127926;","&#127881;"];
 
   function goHome() { window.location.href = '../../index.html'; }
 
   function buildEpisodeGrid() {
     var grid = document.getElementById('episodeGrid');
     var html = '';
+
     for (var e = 1; e <= EPISODE_COUNT; e++) {
       var bmId   = 'episode-friends-s' + SEASON_NUM + 'e' + e;
       var url    = '../episodes/s' + SEASON_NUM + 'e' + e + '.html';
@@ -117,25 +138,47 @@
       var pngSrc = '../images/s' + SEASON_NUM + 'e' + e + '.png';
 
       html += '<a class="episode-card" href="' + url + '">';
+
+      // Bookmark button
       html += '<button class="bm-corner" data-bm-id="' + bmId + '"';
       html += ' onclick="event.preventDefault();event.stopPropagation();handleEpBookmark(' + SEASON_NUM + ',' + e + ')"';
       html += ' title="Bookmark">&#128278;</button>';
-      html += '<img class="ep-card-img" src="' + jpgSrc + '" alt="S' + SEASON_NUM + 'E' + e + '"'
-            + ' onerror="this.src='' + pngSrc + '';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';};">';
-      html += '<div class="ep-img-placeholder" style="display:none">' + icon
-            + '<span class="episode-num-badge" style="position:absolute;bottom:6px;right:8px;font-size:0.68rem;">S' + SEASON_NUM + '&middot;E' + e + '</span>'
+
+      // Episode image — data-png carries the fallback path safely
+      html += '<img class="ep-card-img"'
+            + ' src="' + jpgSrc + '"'
+            + ' data-png="' + pngSrc + '"'
+            + ' alt="S' + SEASON_NUM + 'E' + e + '"'
+            + ' onerror="this.src=this.getAttribute('data-png');'
+            + 'this.onerror=function(){this.style.display='none';'
+            + 'this.nextElementSibling.style.display='flex';};">';
+
+      // Emoji fallback (hidden until image fails)
+      html += '<div class="ep-img-placeholder" style="display:none">'
+            + icon
+            + '<span class="episode-num-badge"'
+            + ' style="position:absolute;bottom:6px;right:8px;font-size:0.68rem;">'
+            + 'S' + SEASON_NUM + '&middot;E' + e + '</span>'
             + '</div>';
+
+      // Card body
       html += '<div class="episode-card-body">';
       html += '<div class="episode-card-title">Episode ' + e + '</div>';
       html += '<div class="episode-card-desc">S' + SEASON_NUM + 'E' + e + ' &middot; 15 Expressions</div>';
       html += '</div></a>';
     }
+
     grid.innerHTML = html;
     syncBookmarkButtons();
   }
 
   function handleEpBookmark(s, e) {
-    toggleBookmark('episode','episode-friends-s'+s+'e'+e,'&#128203; Friends S'+s+'E'+e,'friends/episodes/s'+s+'e'+e+'.html');
+    toggleBookmark(
+      'episode',
+      'episode-friends-s' + s + 'e' + e,
+      '&#128203; Friends S' + s + 'E' + e,
+      'friends/episodes/s' + s + 'e' + e + '.html'
+    );
   }
 
   window.addEventListener('DOMContentLoaded', function() {
