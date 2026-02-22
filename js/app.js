@@ -9,12 +9,40 @@ const STORAGE_KEYS = {
   bookmarks: 'de_bookmarks',
 };
 
+/* ── App Root Detection ────────────────────────────────────── */
+/* Find the root URL of the app (the folder containing index.html)
+   by walking up from the current page URL until we reach a path
+   that contains the app root marker.
+   Works from any depth: root, friends/, friends/seasons/, friends/episodes/ */
+function getAppRoot() {
+  var href = window.location.href;
+  var path = window.location.pathname;
+  // Find the daily-english root by looking for known sub-paths and stripping them
+  var markers = [
+    '/friends/episodes/',
+    '/friends/seasons/',
+    '/friends/'
+  ];
+  for (var i = 0; i < markers.length; i++) {
+    var idx = path.indexOf(markers[i]);
+    if (idx !== -1) {
+      return href.substring(0, href.indexOf(markers[i])) + '/';
+    }
+  }
+  // Already at root or one level down
+  return href.substring(0, href.lastIndexOf('/') + 1);
+}
+
+/* Navigate to a bookmark URL stored relative to the app root */
+function goToBookmark(relUrl) {
+  var root = getAppRoot();
+  // Strip leading slash if present
+  var clean = relUrl.replace(/^\/+/, '');
+  window.location.href = root + clean;
+}
+
 /* ── Bookmark Utilities ────────────────────────────────────── */
 
-/**
- * Get all bookmarks from localStorage.
- * @returns {Array} bookmarks array
- */
 function getBookmarks() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEYS.bookmarks) || '[]');
@@ -23,9 +51,6 @@ function getBookmarks() {
   }
 }
 
-/**
- * Save bookmarks array to localStorage.
- */
 function saveBookmarks(bms) {
   try {
     localStorage.setItem(STORAGE_KEYS.bookmarks, JSON.stringify(bms));
@@ -34,88 +59,68 @@ function saveBookmarks(bms) {
   }
 }
 
-/**
- * Check if an item is already bookmarked by id.
- */
 function isBookmarked(id) {
-  return getBookmarks().some(b => b.id === id);
+  return getBookmarks().some(function(b) { return b.id === id; });
 }
 
-/**
- * Toggle bookmark state for an item.
- * @param {string} type   - 'show' | 'season' | 'episode' | 'expression'
- * @param {string} id     - unique identifier
- * @param {string} label  - human-readable label
- * @param {string} url    - relative path to jump to when clicked
- */
 function toggleBookmark(type, id, label, url) {
-  let bms = getBookmarks();
-  const idx = bms.findIndex(b => b.id === id);
+  var bms = getBookmarks();
+  var idx = bms.findIndex(function(b) { return b.id === id; });
   if (idx > -1) {
     bms.splice(idx, 1);
     showToast('🔖 Bookmark removed');
   } else {
-    bms.unshift({ type, id, label, url, ts: Date.now() });
+    bms.unshift({ type: type, id: id, label: label, url: url, ts: Date.now() });
     showToast('🔖 Bookmarked!');
   }
   saveBookmarks(bms);
 
   // Update all bookmark buttons that share this id
-  document.querySelectorAll(`[data-bm-id="${id}"]`).forEach(el => {
-    el.classList.toggle('saved', isBookmarked(id));
-    if (el.tagName === 'BUTTON') {
-      const isSaved = isBookmarked(id);
-      el.textContent = isSaved ? '🔖 Saved' : '🔖 Save';
-      if (el.classList.contains('btn-bm')) {
-        el.textContent = isSaved ? '🔖 Bookmarked' : '🔖 Bookmark';
-      }
+  document.querySelectorAll('[data-bm-id="' + id + '"]').forEach(function(el) {
+    var saved = isBookmarked(id);
+    el.classList.toggle('saved', saved);
+    if (el.classList.contains('btn-bm')) {
+      el.textContent = saved ? '🔖 Bookmarked' : '🔖 Bookmark';
+    }
+    if (el.classList.contains('bm-corner')) {
+      el.title = saved ? 'Remove Bookmark' : 'Bookmark';
     }
   });
 
-  // Re-render bookmark bar if it exists on the page
   if (document.getElementById('bookmarkBar')) renderBookmarkBar();
 }
 
-/**
- * Remove a bookmark by id and refresh UI.
- */
 function removeBookmark(id, event) {
   if (event) event.stopPropagation();
-  let bms = getBookmarks().filter(b => b.id !== id);
+  var bms = getBookmarks().filter(function(b) { return b.id !== id; });
   saveBookmarks(bms);
   showToast('Bookmark removed');
   if (document.getElementById('bookmarkBar')) renderBookmarkBar();
 }
 
-/**
- * Render the bookmark bar chips on the home page.
- */
 function renderBookmarkBar() {
-  const container = document.getElementById('bookmarkChips');
+  var container = document.getElementById('bookmarkChips');
   if (!container) return;
-  const bms = getBookmarks();
+  var bms = getBookmarks();
   if (bms.length === 0) {
     container.innerHTML = '<span class="bm-empty">No bookmarks yet. Click 🔖 on any Season, Episode, or Expression to save your progress.</span>';
     return;
   }
-  container.innerHTML = bms.map(b => {
-    const typeIcon = { show: '📺', season: '🎬', episode: '📋', expression: '💬' }[b.type] || '🔖';
-    return `
-      <div class="bm-chip" onclick="window.location.href='${b.url}'">
-        ${typeIcon} ${escHtml(b.label)}
-        <span class="bm-x" onclick="removeBookmark('${b.id}', event)" title="Remove">✕</span>
-      </div>
-    `;
+  var typeIcon = { show: '📺', season: '🎬', episode: '📋', expression: '💬' };
+  container.innerHTML = bms.map(function(b) {
+    var icon = typeIcon[b.type] || '🔖';
+    // Use goToBookmark() so navigation always resolves from app root
+    return '<div class="bm-chip" onclick="goToBookmark(\'' + b.url.replace(/'/g, "\\'") + '\')">'
+      + icon + ' ' + escHtml(b.label)
+      + '<span class="bm-x" onclick="removeBookmark(\'' + b.id.replace(/'/g, "\\'") + '\', event)" title="Remove">\u2715</span>'
+      + '</div>';
   }).join('');
 }
 
-/**
- * Sync all bookmark button visual states on the current page.
- */
 function syncBookmarkButtons() {
-  document.querySelectorAll('[data-bm-id]').forEach(el => {
-    const id = el.dataset.bmId;
-    const saved = isBookmarked(id);
+  document.querySelectorAll('[data-bm-id]').forEach(function(el) {
+    var id = el.dataset.bmId;
+    var saved = isBookmarked(id);
     el.classList.toggle('saved', saved);
     if (el.classList.contains('bm-corner')) {
       el.title = saved ? 'Remove Bookmark' : 'Bookmark';
@@ -128,9 +133,9 @@ function syncBookmarkButtons() {
 
 /* ── Toast ─────────────────────────────────────────────────── */
 
-let _toastTimer = null;
+var _toastTimer = null;
 function showToast(msg) {
-  let t = document.getElementById('globalToast');
+  var t = document.getElementById('globalToast');
   if (!t) {
     t = document.createElement('div');
     t.id = 'globalToast';
@@ -140,7 +145,7 @@ function showToast(msg) {
   t.textContent = msg;
   t.classList.add('show');
   clearTimeout(_toastTimer);
-  _toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+  _toastTimer = setTimeout(function() { t.classList.remove('show'); }, 2200);
 }
 
 /* ── Terms Agreement ───────────────────────────────────────── */
@@ -155,9 +160,8 @@ function setAgreed() {
 
 function checkTermsGuard() {
   if (!hasAgreed()) {
-    // Redirect to terms, preserve intended destination
-    const intended = encodeURIComponent(window.location.href);
-    window.location.href = `../../index.html?redirect=${intended}`;
+    var intended = encodeURIComponent(window.location.href);
+    window.location.href = getAppRoot() + 'index.html?redirect=' + intended;
   }
 }
 
@@ -171,11 +175,9 @@ function escHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-/* ── Init on DOMContentLoaded ──────────────────────────────── */
+/* ── Init ──────────────────────────────────────────────────── */
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Sync bookmark buttons
+document.addEventListener('DOMContentLoaded', function() {
   syncBookmarkButtons();
-  // Render bookmark bar (home page)
   if (document.getElementById('bookmarkBar')) renderBookmarkBar();
 });
