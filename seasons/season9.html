@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends Season 9 &mdash; Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .ep-card-img { width:100%; height:120px; object-fit:cover; display:block; border-radius:var(--radius) var(--radius) 0 0; }
+    .ep-img-placeholder { width:100%; height:120px; display:flex; align-items:center; justify-content:center; font-size:2.2rem; background:linear-gradient(135deg,var(--card2),var(--surface)); border-radius:var(--radius) var(--radius) 0 0; position:relative; }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
+    <div class="topbar-logo"><span class="logo-accent">Daily</span> <span class="logo-day">English</span></div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">&#127760;</span><span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+<main>
+  <div class="page-wrap">
+    <nav class="nav-row">
+      <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
+      <button class="btn-nav" onclick="window.location.href='../index.html'">&#9664; <span data-i18n="nav.back.friends">Back to Friends</span></button>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
+      <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
+      <span class="current">Season 9</span>
+    </nav>
+    <div class="page-header">
+      <div class="page-header-thumb">
+        <img src="../images/season9.png" alt="Friends Season 9"
+          onerror="this.parentElement.innerHTML='&#127909;';">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title">Friends &mdash; Season 9</div>
+        <div class="page-header-meta" data-i18n="season.meta" data-i18n-vars='{"year":"2002–2003","count":24}'>2002–2003 &middot; 24 Episodes &middot; Click an episode to explore expressions</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="season-friends-s9"
+            onclick="toggleBookmark('season','season-friends-s9','🎬 Friends Season 9','friends/seasons/season9.html')">
+            <span data-i18n="bm.season">&#128278; Bookmark Season</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span data-i18n="bm.bar.title">Your Bookmarks</span></div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+    <div class="section-label" data-i18n="season.episodes.label" data-i18n-vars='{"n":9,"count":24}'>&#127916; Episodes &mdash; Season 9 (24 Episodes)</div>
+    <div class="episode-grid" id="episodeGrid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-copy" data-i18n="footer.copy">&copy; 2025 m2ea Labs. All rights reserved.</div>
+  <div><button class="footer-terms" data-i18n="footer.terms" onclick="showTermsModal()">Terms of Use</button></div>
+</footer>
+<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
+<script src="../../js/i18n.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+  /* ================================================================
+     EPISODE DATA — edit this object to update expressions
+     ----------------------------------------------------------------
+     Each expression has:
+       phrase       : the English expression
+       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
+       meaning      : your explanation
+       example      : an example sentence
+       context      : scene context (optional, can be empty '')
+       youtubeUrl   : paste YouTube link here when ready
+     ----------------------------------------------------------------
+     The page shows 15 slots. Add up to 15 objects in expressions[].
+     Empty slots show as "Coming Soon" placeholders automatically.
+  ================================================================ */
+  var EP_DATA = {
+    title: 'The One Where Monica Gets a Roommate',
+    description: 'Rachel joins the group after leaving her fiancé at the altar.',
+    expressions: [
+    {phrase:'Leave someone at the altar',partOfSpeech:'idiom',meaning:'To abandon your partner on your wedding day, refusing to go through with the marriage at the very last moment.',example:'"She left him at the altar and fled to New York to start a new life."',context:'Rachel runs away from her wedding and shows up at Monica\'s door.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E1X1'},
+    {phrase:'Get a grip',partOfSpeech:'idiom',meaning:'To take control of your emotions or reactions; to calm down and think rationally.',example:'"Get a grip! Everything is going to work out fine." — Said to someone who is panicking.',context:'Used when someone is overreacting to a situation.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E1X2'},
+    {phrase:'Be on the same page',partOfSpeech:'idiom',meaning:'To have the same understanding or agreement about something with others.',example:'"Before we start the project, let\'s make sure we\'re all on the same page."',context:'Used when confirming everyone understands the situation equally.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E1X3'}
+  ]
+  };
+
+  var S_NUM = 1;
+  var E_NUM = 1;
+  var TOTAL = 15;
+
+  function goHome() { window.location.href = '../../index.html'; }
+
+  function buildExpressions() {
+    var dataExprs = EP_DATA.expressions || [];
+    var list = document.getElementById('exprList');
+    var html = '';
+    for (var i = 0; i < TOTAL; i++) {
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
+      var num = i + 1;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      if (x) {
+        var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
+        var ytBtn = isLive
+          ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>'
+          : '<button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+        var pos = x.partOfSpeech
+          ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
+          : '';
+        html += '<div class="expr-card" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
+        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-actions">' + ytBtn;
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+      } else {
+        html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-actions"><button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '</div></div>';
+      }
+    }
+    list.innerHTML = html;
+    syncBookmarkButtons();
+  }
+
+  function handleExprBm(num) {
+    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    checkTermsGuard();
+    buildExpressions();
+    renderBookmarkBar();
+    syncBookmarkButtons();
+    if (window.location.hash) {
+      setTimeout(function() {
+        var el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 200);
+    }
+  });
+</script>
+<script src="../../js/i18n.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+  var SEASON_NUM    = 9;
+  var EPISODE_COUNT = 24;
+  var EP_ICONS      = ["&#9749;","&#127909;","&#127917;","&#127183;","&#11088;","&#127925;","&#127939;","&#128161;","&#127769;","&#127873;","&#127829;","&#128188;","&#128682;","&#127802;","&#127908;","&#128241;","&#127754;","&#127969;","&#127919;","&#127752;","&#127914;","&#127757;","&#128171;","&#127926;","&#127881;"];
+
+  function goHome() {
+    window.location.href = "../../index.html";
+  }
+
+  /* Image error handler — called by onerror attribute.
+     Tries .png fallback first, then shows emoji placeholder. */
+  function onEpImgErr(img) {
+    if (img.src.indexOf(".png") === -1) {
+      img.src = img.getAttribute("data-png");
+    } else {
+      img.style.display = "none";
+      if (img.nextElementSibling) {
+        img.nextElementSibling.style.display = "flex";
+      }
+    }
+  }
+
+  function buildEpisodeGrid() {
+    var grid = document.getElementById("episodeGrid");
+    if (!grid) return;
+
+    for (var e = 1; e <= EPISODE_COUNT; e++) {
+      var bmId   = "episode-friends-s" + SEASON_NUM + "e" + e;
+      var url    = "../episodes/s" + SEASON_NUM + "e" + e + ".html";
+      var icon   = EP_ICONS[(e - 1) % EP_ICONS.length];
+      var jpgSrc = "../images/s" + SEASON_NUM + "e" + e + ".jpg";
+      var pngSrc = "../images/s" + SEASON_NUM + "e" + e + ".png";
+      var label  = "S" + SEASON_NUM + "E" + e;
+
+      /* Build card using DOM API — no innerHTML string quoting issues */
+      var card = document.createElement("a");
+      card.className = "episode-card";
+      card.href = url;
+
+      var bmBtn = document.createElement("button");
+      bmBtn.className = "bm-corner";
+      bmBtn.setAttribute("data-bm-id", bmId);
+      bmBtn.title = "Bookmark";
+      bmBtn.innerHTML = "&#128278;";
+      (function(sn, en) {
+        bmBtn.addEventListener("click", function(evt) {
+          evt.preventDefault();
+          evt.stopPropagation();
+          handleEpBookmark(sn, en);
+        });
+      })(SEASON_NUM, e);
+      card.appendChild(bmBtn);
+
+      var img = document.createElement("img");
+      img.className = "ep-card-img";
+      img.src = jpgSrc;
+      img.setAttribute("data-png", pngSrc);
+      img.alt = label;
+      img.addEventListener("error", function() { onEpImgErr(this); });
+      card.appendChild(img);
+
+      var ph = document.createElement("div");
+      ph.className = "ep-img-placeholder";
+      ph.style.display = "none";
+      ph.innerHTML = icon + "<span class=\"episode-num-badge\" style=\"position:absolute;bottom:6px;right:8px;font-size:0.68rem;\">" + label + "</span>";
+      card.appendChild(ph);
+
+      var body = document.createElement("div");
+      body.className = "episode-card-body";
+      body.innerHTML = "<div class=\"episode-card-title\">Episode " + e + "</div>"
+        + "<div class=\"episode-card-desc\">" + label + " &middot; 15 Expressions</div>";
+      card.appendChild(body);
+
+      grid.appendChild(card);
+    }
+    syncBookmarkButtons();
+  }
+
+  function handleEpBookmark(s, e) {
+    toggleBookmark(
+      "episode",
+      "episode-friends-s" + s + "e" + e,
+      "&#128203; Friends S" + s + "E" + e,
+      "friends/episodes/s" + s + "e" + e + ".html"
+    );
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    checkTermsGuard();
+    buildEpisodeGrid();
+    renderBookmarkBar();
+    syncBookmarkButtons();
+  });
+</script>
+</body>
+</html>
