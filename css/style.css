@@ -719,3 +719,52 @@ ul { list-style: none; }
   transition: color 0.18s;
 }
 .site-footer .footer-terms:hover { color: var(--accent2); }
+
+/* ── Language Toggle (topbar) ──────────────────────────────── */
+.topbar-lang {
+  display: flex;
+  align-items: center;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px;
+  gap: 0;
+  flex-shrink: 0;
+}
+.topbar-lang-btn {
+  background: none;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  transition: all 0.18s;
+  line-height: 1.4;
+}
+.topbar-lang-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+.topbar-lang-btn:not(.active):hover {
+  color: var(--text);
+}
+
+/* ── Korean body font ──────────────────────────────────────── */
+body.ko-active {
+  word-break: keep-all;
+}
+body.ko-active .expr-meaning,
+body.ko-active .expr-example,
+body.ko-active .expr-context,
+body.ko-active .page-header-meta,
+body.ko-active .show-card-meta,
+body.ko-active .season-card-meta,
+body.ko-active .episode-card-desc,
+body.ko-active .bm-empty,
+body.ko-active .footer-copy {
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Nunito', sans-serif;
+}

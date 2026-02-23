@@ -25,11 +25,11 @@
 <main>
   <div class="page-wrap">
     <nav class="nav-row">
-      <button class="btn-nav home" onclick="goHome()">&#127968; Home</button>
-      <button class="btn-nav" onclick="window.location.href='../index.html'">&#9664; Back to Friends</button>
+      <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
+      <button class="btn-nav" onclick="window.location.href='../index.html'">&#9664; <span data-i18n="nav.back.friends">Back to Friends</span></button>
     </nav>
     <nav class="breadcrumb">
-      <a href="../../index.html">Home</a><span class="sep">&#8250;</span>
+      <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
       <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
       <span class="current">Season 10</span>
     </nav>
@@ -40,64 +40,30 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; Season 10</div>
-        <div class="page-header-meta">2003–2004 &middot; 18 Episodes &middot; Click an episode to explore expressions</div>
+        <div class="page-header-meta" data-i18n="season.meta" data-i18n-vars='{"year":"2003–2004","count":18}'>2003–2004 &middot; 18 Episodes &middot; Click an episode to explore expressions</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="season-friends-s10"
             onclick="toggleBookmark('season','season-friends-s10','🎬 Friends Season 10','friends/seasons/season10.html')">
-            &#128278; Bookmark Season
+            <span data-i18n="bm.season">&#128278; Bookmark Season</span>
           </button>
         </div>
       </div>
     </div>
     <div class="bookmark-bar" id="bookmarkBar">
-      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span>Your Bookmarks</span></div>
+      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span data-i18n="bm.bar.title">Your Bookmarks</span></div>
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
-    <div class="section-label">&#127916; Episodes &mdash; Season 10 (18 Episodes)</div>
+    <div class="section-label" data-i18n="season.episodes.label" data-i18n-vars='{"n":10,"count":18}'>&#127916; Episodes &mdash; Season 10 (18 Episodes)</div>
     <div class="episode-grid" id="episodeGrid"></div>
   </div>
 </main>
 
 <footer class="site-footer">
-  <div class="footer-copy">&copy; 2025 m2ea Labs. All rights reserved.</div>
-  <div><button class="footer-terms" onclick="showTermsModal()">Terms of Use</button></div>
+  <div class="footer-copy" data-i18n="footer.copy">&copy; 2025 m2ea Labs. All rights reserved.</div>
+  <div><button class="footer-terms" data-i18n="footer.terms" onclick="showTermsModal()">Terms of Use</button></div>
 </footer>
-<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;">
-  <div style="max-width:580px;margin:40px auto;padding:0 16px 60px;">
-    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px 24px;position:relative;">
-      <button onclick="closeTermsModal()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;">&times;</button>
-      <div style="text-align:center;margin-bottom:16px;">
-        <div style="font-size:2.2rem;margin-bottom:8px;">&#128214;</div>
-        <div style="font-size:1.2rem;font-weight:900;color:var(--accent);">Terms of Use</div>
-        <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Daily English &mdash; ONE Expression per DAY &nbsp;|&nbsp; by m2ea Labs</div>
-      </div>
-      <div id="agreedBadge" style="display:none;background:rgba(34,197,94,0.12);border:1.5px solid #22c55e;border-radius:10px;padding:11px 16px;margin-bottom:16px;align-items:center;gap:10px;">
-        <span style="font-size:1.3rem;">&#9989;</span>
-        <div><div style="font-size:0.85rem;font-weight:900;color:#22c55e;">You have agreed to these Terms of Use.</div>
-        <div style="font-size:0.76rem;color:var(--muted);margin-top:2px;">Your agreement is saved on this device. Thank you for using Daily English responsibly.</div></div>
-      </div>
-      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;">
-        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#128204; Terms of Use</div>
-        <ul style="list-style:none;padding:0;margin:0;">
-          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>This app is for <strong>study purposes only</strong>. All video clips&rsquo; rights belong to each respective company. Contents can be removed without prior notice upon request.</li>
-          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>Use is strictly limited to <strong>personal study only</strong>. Commercial or redistribution use is prohibited.</li>
-          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 0 16px;position:relative;"><span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>All explanations represent a <strong>m2ea Labs opinion</strong>. If you have a different opinion, <em>you are right</em> &mdash; use your own judgment.</li>
-        </ul>
-      </div>
-      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;">
-        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#8505;&#65039; About This App</div>
-        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0 0 8px;">Daily English connects short YouTube video clips to real English expressions used in popular TV shows.</p>
-        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0;">Operated by <strong>m2ea Labs</strong>. YouTube clips may include ads served by YouTube.</p>
-      </div>
-      <button onclick="closeTermsModal()" style="width:100%;background:linear-gradient(135deg,var(--accent),#0ea5e9);color:var(--bg);border:none;border-radius:10px;padding:13px;font-size:0.95rem;font-weight:900;cursor:pointer;font-family:inherit;">Close &nbsp;&times;</button>
-    </div>
-  </div>
-</div>
-<script>
-  function showTermsModal(){document.getElementById('termsModal').style.display='block';document.body.style.overflow='hidden';var b=document.getElementById('agreedBadge');if(b)b.style.display=(localStorage.getItem('de_agreed')==='1')?'flex':'none';}
-  function closeTermsModal(){document.getElementById('termsModal').style.display='none';document.body.style.overflow='';}
-  document.getElementById('termsModal').addEventListener('click',function(e){if(e.target===this)closeTermsModal();});
-</script>
+<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
+<script src="../../js/i18n.js"></script>
 <script src="../../js/app.js"></script>
 <script>
   /* ================================================================
@@ -187,7 +153,7 @@
     }
   });
 </script>
-<script src="../../js/app.js"></script>
+/script>
 <script>
   var SEASON_NUM    = 10;
   var EPISODE_COUNT = 18;

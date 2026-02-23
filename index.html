@@ -1,236 +1,620 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends — Daily English</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <meta name="description" content="Daily English — 매일 영어 표현 하나씩 배워보세요. Learn one English expression per day through your favorite TV shows.">
+  <title>Daily English — ONE Expression per DAY</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#38bdf8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Daily English">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <style>
-    /* 2 × 5 season grid */
-    .season-grid-2x5 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+    /* ── Install banner ──────────────────────────────────── */
+    .install-banner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 400;
+      background: var(--card2);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 14px 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      max-width: 420px;
+      width: calc(100% - 32px);
+      animation: slideUp 0.35s ease;
     }
-    .season-card-2x5 {
-      position: relative;
-      background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      cursor: pointer;
-      transition: var(--transition);
-      text-decoration: none;
-      display: block;
+    .install-banner.show { display: flex; align-items: center; gap: 12px; }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      to   { opacity: 1; transform: translateX(-50%) translateY(0); }
     }
-    .season-card-2x5:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    .install-banner-icon { font-size: 2rem; flex-shrink: 0; }
+    .install-banner-text { flex: 1; }
+    .install-banner-text strong { font-size: 0.9rem; color: var(--text); display: block; margin-bottom: 2px; }
+    .install-banner-text span   { font-size: 0.78rem; color: var(--muted); }
+    .install-banner-actions { display: flex; gap: 6px; flex-shrink: 0; flex-direction: column; }
+    .btn-install {
+      background: var(--accent); color: var(--bg);
+      border: none; border-radius: 8px;
+      padding: 8px 14px; font-size: 0.8rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; white-space: nowrap;
+      transition: all 0.2s;
     }
-    .season-card-img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      display: block;
+    .btn-install:hover { background: #0ea5e9; }
+    .btn-dismiss {
+      background: none; color: var(--muted);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.75rem; font-weight: 700;
+      cursor: pointer; font-family: inherit;
     }
-    .season-card-overlay {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(9,17,30,0.96) 0%, rgba(9,17,30,0.7) 55%, transparent 100%);
-      padding: 28px 14px 13px;
+    .btn-dismiss:hover { color: var(--text); }
+
+    /* Fix banner accent border override */
+    #fixBanner { border-color: var(--accent2) !important; }
+    #fixBanner .install-banner-text strong { color: var(--accent2); }
+    .terms-overlay {
+      position: fixed; inset: 0;
+      background: var(--bg);
+      z-index: 500;
+      overflow-y: auto;
+      display: none;
+    }
+    .terms-overlay.visible { display: block; }
+
+    /* ── Main content hidden until agreed ───────────────── */
+    #mainContent { display: none; }
+    #mainContent.visible { display: block; }
+
+    /* ── Language toggle pill ───────────────────────────── */
+    .lang-toggle {
       display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 0 auto 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 4px;
+      width: fit-content;
     }
-    .season-card-info { flex: 1; min-width: 0; }
-    .season-card-title {
-      font-size: 1rem;
-      font-weight: 900;
-      color: #fff;
-      line-height: 1.2;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
-    }
-    .season-card-meta {
-      font-size: 0.74rem;
-      color: rgba(255,255,255,0.65);
-      margin-top: 3px;
-    }
-    .season-bm-btn {
-      position: absolute;
-      top: 8px; left: 8px;
-      background: rgba(9,17,30,0.78);
+    .lang-btn {
+      background: none;
       border: none;
-      border-radius: 7px;
-      padding: 5px 8px;
+      border-radius: 24px;
+      padding: 9px 28px;
       font-size: 0.9rem;
+      font-weight: 800;
+      font-family: 'Nunito', sans-serif;
       color: var(--muted);
       cursor: pointer;
-      transition: var(--transition);
-      backdrop-filter: blur(4px);
-      line-height: 1;
-      z-index: 5;
-    }
-    .season-bm-btn:hover { color: var(--gold); background: rgba(9,17,30,0.95); }
-    .season-bm-btn.saved  { color: var(--gold); }
-
-    /* Season number badge top-right */
-    .season-num-badge {
-      position: absolute;
-      top: 8px; right: 8px;
-      background: rgba(56,189,248,0.88);
-      color: #0d1b2e;
-      font-size: 0.7rem;
-      font-weight: 900;
-      padding: 3px 9px;
-      border-radius: 12px;
+      transition: all 0.22s ease;
       letter-spacing: 0.5px;
-      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      gap: 7px;
     }
+    .lang-btn.active {
+      background: var(--accent);
+      color: var(--bg);
+      box-shadow: 0 2px 14px rgba(56,189,248,0.42);
+    }
+    .lang-btn:not(.active):hover {
+      color: var(--text);
+      background: var(--card2);
+    }
+    .lang-flag { font-size: 1.1rem; line-height: 1; }
 
-    @media (max-width: 480px) {
-      .season-card-img { height: 150px; }
+    /* ── Language content blocks ────────────────────────── */
+    .lang-content { display: none; }
+    .lang-content.visible { display: block; }
+
+    /* ── Korean typography ───────────────────────────────── */
+    .ko-text {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Nunito', sans-serif;
+      word-break: keep-all;
+    }
+    .ko-text .terms-card p,
+    .ko-text .terms-list li {
+      font-size: 0.9rem;
+      line-height: 1.92;
+    }
+    .ko-text .terms-check-wrap label {
+      font-size: 0.88rem;
+      line-height: 1.85;
+    }
+    .ko-text .terms-hero-title {
+      font-size: 1.42rem;
+      line-height: 1.42;
+    }
+    .ko-text .terms-hero-sub {
+      font-size: 0.82rem;
+    }
+    .ko-text .btn-agree {
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
 
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
 <header class="topbar">
   <div class="topbar-left">
-    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
+    <button class="btn-topbar-home" onclick="goHome()" title="Home" aria-label="Home">&#127968;</button>
     <div class="topbar-logo">
       <span class="logo-accent">Daily</span> <span class="logo-day">English</span>
     </div>
   </div>
   <div class="topbar-right">
-    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener" title="Visit m2ea Circle">
       <span class="m2ea-icon">&#127760;</span>
       <span class="label">m2ea Circle</span>
     </a>
   </div>
 </header>
 
-<main>
-  <div class="page-wrap">
 
-    <nav class="nav-row">
-      <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
-      <button class="btn-nav" onclick="history.back()">&#9664; Back</button>
-    </nav>
+<!-- =====================================================
+     TERMS OF USE OVERLAY
+====================================================== -->
+<div class="terms-overlay visible" id="termsOverlay">
+  <div class="terms-wrap">
 
-    <nav class="breadcrumb">
-      <a href="../index.html" data-i18n="bc.home">Home</a>
-      <span class="sep">&#8250;</span>
-      <span class="current">Friends</span>
-    </nav>
-
-    <!-- Show header -->
-    <div class="page-header">
-      <div class="page-header-thumb">
-        <img src="../images/friends.jpg" alt="Friends"
-          onerror="this.parentElement.innerHTML='&#128107;';">
-      </div>
-      <div class="page-header-info">
-        <div class="page-header-title">Friends</div>
-        <div class="page-header-meta"><span data-i18n="friends.meta">10 Seasons &middot; 236 Episodes total &middot; 1994&ndash;2004</span></div>
-        <div class="page-header-actions">
-          <button class="btn-bm" data-bm-id="show-friends"
-            onclick="toggleBookmark('show','show-friends','📺 Friends','friends/index.html')">
-            &#128278; Bookmark
-          </button>
-        </div>
-      </div>
+    <!-- Language Toggle -->
+    <div class="lang-toggle" role="group" aria-label="Language / 언어 선택">
+      <button class="lang-btn" id="btn-en" onclick="setOverlayLang('en')" aria-pressed="false">
+        <span class="lang-flag">&#127482;&#127480;</span> EN
+      </button>
+      <button class="lang-btn active" id="btn-ko" onclick="setOverlayLang('ko')" aria-pressed="true">
+        <span class="lang-flag">&#127472;&#127479;</span> KO
+      </button>
     </div>
 
-    <!-- Bookmark Bar -->
+
+    <!-- ================================================
+         ENGLISH TERMS
+    ================================================= -->
+    <div class="lang-content" id="content-en">
+
+      <div class="terms-hero">
+        <div class="terms-hero-icon">&#128214;</div>
+        <div class="terms-hero-title">Daily English<br>ONE Expression per DAY</div>
+        <div class="terms-hero-sub">by m2ea Laps &mdash; Please read and agree to our Terms of Use to continue</div>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#128203; Welcome</div>
+        <p>Welcome to <strong>Daily English (ONE Expression per DAY)</strong>. This application is designed to help you study English through real-world video content, one expression at a time.</p>
+        <p>Please read the following Terms of Use carefully before accessing the application.</p>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#128204; Terms of Use</div>
+        <ul class="terms-list">
+          <li>This app is for <strong>study purposes only</strong>. All video clips&rsquo; rights belong to each respective company. If any company requests content removal, all contents can be removed without prior notice.</li>
+          <li>You <strong>cannot use this content for any other purposes</strong>. Use is strictly limited to <strong>personal study only</strong>. Any commercial, redistribution, or other non-personal use is prohibited.</li>
+          <li>All study contents and comments <strong>may contain incorrect or inaccurate information</strong>. All explanations and comments represent a <strong>m2ea Laps opinion</strong>. If you have a different idea or opinion, <em>you are right</em> &mdash; please use your own judgment.</li>
+        </ul>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#8505;&#65039; About This App</div>
+        <p>Daily English connects short YouTube video clips to real English expressions used in popular TV shows. Each expression includes its meaning, an example sentence, and a link to a short video clip for context.</p>
+        <p>This app is operated by <strong>m2ea Laps</strong> as a study group project. All video content remains the property of its original owners. YouTube video clips and shorts may include ads served by YouTube.</p>
+      </div>
+
+      <div class="terms-check-wrap" onclick="handleCheckClick('en', event)">
+        <input type="checkbox" id="agreeCheck-en" onchange="onCheckChange('en')" aria-label="Agree to Terms of Use">
+        <label for="agreeCheck-en">
+          I have read and fully agree to the <strong>Terms of Use</strong> above.
+          I understand this application is for personal study only and that all video content
+          rights belong to their respective owners.
+        </label>
+      </div>
+
+      <button class="btn-agree" id="btnAgree-en" onclick="agreeAndEnter()" disabled aria-disabled="true">
+        Agree &amp; Start Learning &#9658;
+      </button>
+
+    </div><!-- /content-en -->
+
+
+    <!-- ================================================
+         KOREAN TERMS (이용약관)
+    ================================================= -->
+    <div class="lang-content visible ko-text" id="content-ko">
+
+      <div class="terms-hero">
+        <div class="terms-hero-icon">&#128214;</div>
+        <div class="terms-hero-title">Daily English<br>매일 한 표현</div>
+        <div class="terms-hero-sub">by m2ea Laps &mdash; 이용약관을 읽고 동의하신 후 앱을 사용하실 수 있습니다</div>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#128203; 환영합니다</div>
+        <p><strong>Daily English (매일 한 표현)</strong>에 오신 것을 환영합니다. 이 앱은 실제 영상 콘텐츠를 통해 매일 영어 표현 하나씩 자연스럽게 학습할 수 있도록 제작된 영어 학습 앱입니다.</p>
+        <p>앱을 이용하시기 전에 아래 이용약관을 주의 깊게 읽어주시기 바랍니다.</p>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#128204; 이용약관</div>
+        <ul class="terms-list">
+          <li>이 앱은 <strong>학습 목적으로만</strong> 사용 가능합니다. 모든 영상 클립의 저작권은 각 해당 회사에 있으며, 저작권자의 요청이 있을 경우 <strong>예고 없이 콘텐츠가 삭제될 수 있습니다.</strong></li>
+          <li>이 콘텐츠는 <strong>다른 목적으로 사용하실 수 없습니다.</strong> 사용은 <strong>개인 학습 목적에 한정</strong>되며, 상업적 이용·재배포 및 기타 비개인적 사용은 금지됩니다.</li>
+          <li>모든 학습 내용 및 설명은 <strong>잘못된 정보를 포함할 수 있습니다.</strong> 모든 설명과 해설은 <strong>m2ea Laps의 개인적인 의견</strong>입니다. 다른 생각이나 의견이 있으시다면 <em>여러분이 맞을 수 있습니다</em> &mdash; 본인의 판단을 따르시기 바랍니다.</li>
+        </ul>
+      </div>
+
+      <div class="terms-card">
+        <div class="terms-card-title">&#8505;&#65039; 앱 소개</div>
+        <p>Daily English는 인기 TV 드라마에서 실제로 사용되는 영어 표현을 짧은 유튜브 영상 클립과 연결하여 제공합니다. 각 표현에는 의미 설명, 예문, 그리고 실제 사용 장면을 담은 영상 링크가 포함되어 있습니다.</p>
+        <p>이 앱은 <strong>m2ea Laps</strong>에서 학습 그룹 프로젝트로 운영됩니다. 모든 영상 콘텐츠의 저작권은 원저작자에게 있으며, 유튜브 영상 및 쇼츠에는 유튜브가 제공하는 광고가 포함될 수 있습니다.</p>
+      </div>
+
+      <div class="terms-check-wrap" onclick="handleCheckClick('ko', event)">
+        <input type="checkbox" id="agreeCheck-ko" onchange="onCheckChange('ko')" aria-label="이용약관에 동의합니다">
+        <label for="agreeCheck-ko">
+          위의 <strong>이용약관</strong>을 모두 읽었으며 이에 동의합니다.
+          본 앱이 개인 학습 목적으로만 사용 가능하며, 모든 영상 콘텐츠의
+          저작권은 각 원저작자에게 있음을 이해합니다.
+        </label>
+      </div>
+
+      <button class="btn-agree" id="btnAgree-ko" onclick="agreeAndEnter()" disabled aria-disabled="true">
+        동의하고 학습 시작하기 &#9658;
+      </button>
+
+    </div><!-- /content-ko -->
+
+  </div><!-- /terms-wrap -->
+</div><!-- /termsOverlay -->
+
+
+<!-- =====================================================
+     MAIN CONTENT (after agreement)
+====================================================== -->
+<main id="mainContent">
+  <div class="page-wrap">
+
+    <div class="home-hero">
+      <h1 data-i18n="home.hero.title">&#127916; <span class="accent">ONE</span> Expression <span class="day">per DAY</span></h1>
+      <p data-i18n="home.hero.sub">Learn natural, everyday English expressions through iconic TV shows and video clips &mdash; one expression at a time.</p>
+    </div>
+
     <div class="bookmark-bar" id="bookmarkBar">
       <div class="bookmark-bar-head">
         <span class="bm-icon">&#128278;</span>
-        <span>Your Bookmarks</span>
+        <span data-i18n="bm.bar.title">Your Bookmarks &mdash; Jump back to where you left off</span>
       </div>
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
 
-    <div class="section-label" data-i18n="friends.seasons.label">&#127916; Select a Season</div>
+    <div class="section-label" data-i18n="home.shows.label">&#128250; Shows</div>
+    <div class="show-grid">
 
-    <!-- 2 × 5 Season Grid -->
-    <div class="season-grid-2x5" id="seasonGrid"></div>
+      <!-- FRIENDS -->
+      <a class="show-card" href="friends/index.html" id="card-friends">
+        <button class="bm-corner" data-bm-id="show-friends"
+          onclick="event.preventDefault(); event.stopPropagation();
+                   toggleBookmark('show','show-friends','📺 Friends','friends/index.html')"
+          title="Bookmark Friends" aria-label="Bookmark Friends">&#128278;</button>
+        <img class="show-card-img" src="images/friends.jpg" alt="Friends TV Show"
+          onerror="this.style.display='none'; document.getElementById('friends-placeholder').style.display='flex';">
+        <div class="show-card-img-placeholder" id="friends-placeholder" style="display:none">&#128107;</div>
+        <div class="show-card-body">
+          <div class="show-card-title">Friends</div>
+          <div class="show-card-meta" data-i18n="home.friends.meta">10 Seasons &middot; 236 Episodes &middot; Real everyday expressions</div>
+        </div>
+        <span class="show-badge">&#128293; Popular</span>
+      </a>
 
+      <!-- THE OFFICE — Coming Soon -->
+      <div class="show-card disabled" title="Coming soon — not available yet">
+        <div style="position:relative;overflow:hidden;">
+          <img class="show-card-img" src="images/the_office.png" alt="The Office"
+            style="filter:blur(4px) grayscale(40%) brightness(0.7); pointer-events:none; user-select:none;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <span style="background:rgba(13,27,46,0.78);color:var(--accent);font-size:0.78rem;font-weight:900;
+              padding:6px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;
+              border:1px solid var(--accent);backdrop-filter:blur(2px);">&#128679; Coming Soon</span>
+          </div>
+        </div>
+        <div class="show-card-body">
+          <div class="show-card-title">The Office</div>
+          <div class="show-card-meta" data-i18n="home.office.meta">Study content in preparation &mdash; stay tuned!</div>
+        </div>
+        <span class="show-badge coming-badge">Coming Soon</span>
+      </div>
+
+      <!-- MODERN FAMILY — Coming Soon -->
+      <div class="show-card disabled" title="Coming soon — not available yet">
+        <div style="position:relative;overflow:hidden;">
+          <img class="show-card-img" src="images/modern_family.png" alt="Modern Family"
+            style="filter:blur(4px) grayscale(40%) brightness(0.7); pointer-events:none; user-select:none;">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <span style="background:rgba(13,27,46,0.78);color:var(--accent);font-size:0.78rem;font-weight:900;
+              padding:6px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;
+              border:1px solid var(--accent);backdrop-filter:blur(2px);">&#128679; Coming Soon</span>
+          </div>
+        </div>
+        <div class="show-card-body">
+          <div class="show-card-title">Modern Family</div>
+          <div class="show-card-meta" data-i18n="home.mf.meta">Study content in preparation &mdash; stay tuned!</div>
+        </div>
+        <span class="show-badge coming-badge">Coming Soon</span>
+      </div>
+
+    </div>
   </div>
 </main>
 
-<script src="../js/i18n.js"></script>
-<script src="../js/app.js"></script>
+
+<!-- =====================================================
+     PWA INSTALL BANNER
+====================================================== -->
+<div class="install-banner" id="installBanner">
+  <div class="install-banner-icon">&#128241;</div>
+  <div class="install-banner-text">
+    <strong>앱으로 설치하기 / Install App</strong>
+    <span>홈 화면에 추가하면 오프라인에서도 사용 가능합니다<br>Add to home screen for offline use</span>
+  </div>
+  <div class="install-banner-actions">
+    <button class="btn-install" id="btnInstall" onclick="installApp()">&#8595; Install</button>
+    <button class="btn-dismiss" onclick="dismissInstall()">나중에</button>
+  </div>
+</div>
+
+<!-- Fix banner: shown if user had the broken install -->
+<div class="install-banner" id="fixBanner" style="border-color:var(--accent2);">
+  <div class="install-banner-icon">&#128736;</div>
+  <div class="install-banner-text">
+    <strong>앱 오류 수정 / Fix App (404 Error)</strong>
+    <span>이전 버전 캐시를 삭제하고 재설치하세요<br>Clear old cache and reinstall to fix 404</span>
+  </div>
+  <div class="install-banner-actions">
+    <button class="btn-install" style="background:var(--accent2)" onclick="clearAndReload()">&#128465; Fix &amp; Reload</button>
+    <button class="btn-dismiss" onclick="document.getElementById('fixBanner').classList.remove('show')">&#10005;</button>
+  </div>
+</div>
+
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
 <script>
-  function goHome() { window.location.href = '../index.html'; }
 
-  var SEASON_META = {
-    1:  { year: '1994\u20131995', eps: 24 },
-    2:  { year: '1995\u20131996', eps: 24 },
-    3:  { year: '1996\u20131997', eps: 25 },
-    4:  { year: '1997\u20131998', eps: 24 },
-    5:  { year: '1998\u20131999', eps: 24 },
-    6:  { year: '1999\u20132000', eps: 25 },
-    7:  { year: '2000\u20132001', eps: 24 },
-    8:  { year: '2001\u20132002', eps: 24 },
-    9:  { year: '2002\u20132003', eps: 24 },
-    10: { year: '2003\u20132004', eps: 18 }
-  };
+  /* ── PWA: Service Worker Registration (v2 — fixed paths) ── */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
 
-  function buildSeasonGrid() {
-    var grid = document.getElementById('seasonGrid');
-    var html = '';
+      /* Unregister any previously broken SW versions */
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        regs.forEach(function(reg) {
+          var swUrl = (reg.active && reg.active.scriptURL) || '';
+          if (swUrl && swUrl.indexOf('sw.js') === -1) {
+            reg.unregister();
+            console.log('[PWA] Removed stale SW:', swUrl);
+          }
+        });
+      });
 
-    for (var s = 1; s <= 10; s++) {
-      var meta  = SEASON_META[s];
-      var bmId  = 'season-friends-s' + s;
-      var url   = 'seasons/season' + s + '.html';
-      var imgSrc = 'images/season' + s + '.png';
+      /* Register updated SW with explicit relative scope */
+      navigator.serviceWorker.register('./sw.js', { scope: './' })
+        .then(function(reg) {
+          console.log('[PWA] SW v2 registered, scope:', reg.scope);
+          reg.addEventListener('updatefound', function() {
+            var nw = reg.installing;
+            if (!nw) return;
+            nw.addEventListener('statechange', function() {
+              if (nw.state === 'installed' && navigator.serviceWorker.controller) {
+                showToast('\u21bb Update ready \u2014 refresh to apply');
+              }
+            });
+          });
+        })
+        .catch(function(err) { console.warn('[PWA] SW registration failed:', err); });
+    });
+  }
 
-      html += '<a class="season-card-2x5" href="' + url + '" aria-label="Season ' + s + '">';
+  /* ── PWA: Install Prompt ─────────────────────────────────── */
+  var _deferredPrompt = null;
 
-      /* Season image */
-      html += '<img class="season-card-img" src="' + imgSrc + '" alt="Season ' + s + '"'
-            + ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">';
-      /* Fallback placeholder (hidden by default) */
-      html += '<div style="display:none;width:100%;height:190px;align-items:center;justify-content:center;'
-            + 'font-size:3rem;background:linear-gradient(135deg,var(--card2),var(--surface))">&#127909;</div>';
+  window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    _deferredPrompt = e;
+    // Only show install banner if user hasn't dismissed it before
+    if (!localStorage.getItem('de_install_dismissed')) {
+      document.getElementById('installBanner').classList.add('show');
+    }
+  });
 
-      /* Gradient overlay with title */
-      html += '<div class="season-card-overlay">';
-      html += '<div class="season-card-info">';
-      html += '<div class="season-card-title">Season ' + s + '</div>';
-      html += '<div class="season-card-meta">' + meta.year + ' &middot; ' + meta.eps + ' Episodes</div>';
-      html += '</div></div>';
+  window.addEventListener('appinstalled', function() {
+    document.getElementById('installBanner').classList.remove('show');
+    _deferredPrompt = null;
+    showToast('&#10003; App installed! Check your home screen.');
+  });
 
-      /* Season number badge */
-      html += '<span class="season-num-badge">S' + s + '</span>';
+  function installApp() {
+    if (!_deferredPrompt) return;
+    _deferredPrompt.prompt();
+    _deferredPrompt.userChoice.then(function(result) {
+      if (result.outcome === 'accepted') {
+        showToast('&#10003; Installing Daily English...');
+      }
+      _deferredPrompt = null;
+      document.getElementById('installBanner').classList.remove('show');
+    });
+  }
 
-      /* Bookmark button */
-      html += '<button class="season-bm-btn bm-corner" data-bm-id="' + bmId + '"'
-            + ' onclick="event.preventDefault();event.stopPropagation();'
-            + 'handleSeasonBm(' + s + ')" title="Bookmark Season ' + s + '">&#128278;</button>';
+  function dismissInstall() {
+    document.getElementById('installBanner').classList.remove('show');
+    localStorage.setItem('de_install_dismissed', '1');
+  }
 
-      html += '</a>';
+  /* ── Clear old broken cache and hard-reload ──────────────── */
+  function clearAndReload() {
+    document.getElementById('fixBanner').classList.remove('show');
+    showToast('&#128465; Clearing cache...');
+
+    var clearDone = false;
+
+    /* 1. Tell SW to clear its caches */
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({ type: 'CLEAR_CACHE' });
     }
 
-    grid.innerHTML = html;
-    syncBookmarkButtons();
+    /* 2. Unregister all service workers */
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        return Promise.all(regs.map(function(r) { return r.unregister(); }));
+      }).then(function() {
+        console.log('[Fix] All SWs unregistered');
+      });
+    }
+
+    /* 3. Clear Cache API directly from the page */
+    if ('caches' in window) {
+      caches.keys().then(function(keys) {
+        return Promise.all(keys.map(function(k) { return caches.delete(k); }));
+      }).then(function() {
+        console.log('[Fix] CacheStorage cleared');
+        if (!clearDone) {
+          clearDone = true;
+          setTimeout(function() { window.location.reload(true); }, 600);
+        }
+      });
+    } else {
+      setTimeout(function() { window.location.reload(true); }, 800);
+    }
   }
 
-  function handleSeasonBm(s) {
-    var bmId  = 'season-friends-s' + s;
-    var label = '🎬 Friends Season ' + s;
-    var url   = 'friends/seasons/season' + s + '.html';
-    toggleBookmark('season', bmId, label, url);
+  /* ── Auto-show fix banner if app was opened after a 404 ──── */
+  (function() {
+    /* If the page loaded with ?fix=1 query param (linked from error screen) */
+    if (window.location.search.indexOf('fix=1') !== -1) {
+      setTimeout(function() {
+        document.getElementById('fixBanner').classList.add('show');
+      }, 800);
+    }
+    /* Or if we detect we're running as installed PWA (standalone) and
+       the referrer suggests a failed navigation */
+    var isStandalone = window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true;
+    if (isStandalone && document.referrer === '') {
+      /* Running as installed app — show subtle fix option in corner */
+      setTimeout(function() {
+        var fb = document.getElementById('fixBanner');
+        if (fb) {
+          /* Only show automatically if localStorage flag is set */
+          if (localStorage.getItem('de_had_404')) {
+            fb.classList.add('show');
+            localStorage.removeItem('de_had_404');
+          }
+        }
+      }, 1500);
+    }
+  })();
+
+  /* ── State ───────────────────────────────────────────────── */
+  var currentLang = getLang();
+
+  /* ── Language Switcher ───────────────────────────────────── */
+  function setOverlayLang(lang) {
+    currentLang = lang;
+    saveLang(lang);  /* sync to localStorage so all pages use same language */
+
+    // Show / hide content panels
+    document.getElementById('content-en').classList.toggle('visible', lang === 'en');
+    document.getElementById('content-ko').classList.toggle('visible', lang === 'ko');
+
+    // Update pill button styles
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.getElementById('btn-ko').setAttribute('aria-pressed', String(lang === 'ko'));
+
+    // Update html lang attribute for accessibility & fonts
+    document.documentElement.lang = lang;
+
+    // Keep checkbox states in sync across both panels
+    mirrorCheckboxState();
   }
 
-  window.addEventListener('DOMContentLoaded', function() {
-    checkTermsGuard();
-    buildSeasonGrid();
+  /* ── Keep both checkboxes in sync ────────────────────────── */
+  function mirrorCheckboxState() {
+    const cbEn = document.getElementById('agreeCheck-en');
+    const cbKo = document.getElementById('agreeCheck-ko');
+    // Read from currently visible panel, mirror to the other
+    const checked = currentLang === 'ko' ? cbKo.checked : cbEn.checked;
+    cbEn.checked = checked;
+    cbKo.checked = checked;
+    setAgreeBtnsState(checked);
+  }
+
+  function setAgreeBtnsState(checked) {
+    ['en', 'ko'].forEach(function(lang) {
+      var btn = document.getElementById('btnAgree-' + lang);
+      btn.classList.toggle('enabled', checked);
+      btn.disabled = !checked;
+      btn.setAttribute('aria-disabled', String(!checked));
+    });
+  }
+
+  /* ── Checkbox click handlers ─────────────────────────────── */
+  function handleCheckClick(lang, e) {
+    // Only toggle if click was on the wrapper, not the checkbox itself
+    var checkId = 'agreeCheck-' + lang;
+    if (e.target.id !== checkId && e.target.tagName !== 'INPUT') {
+      var cb = document.getElementById(checkId);
+      cb.checked = !cb.checked;
+      mirrorCheckboxState();
+    }
+  }
+
+  function onCheckChange(lang) {
+    mirrorCheckboxState();
+  }
+
+  /* ── Agree & Enter ───────────────────────────────────────── */
+  function agreeAndEnter() {
+    var activeCheckId = currentLang === 'ko' ? 'agreeCheck-ko' : 'agreeCheck-en';
+    var cb = document.getElementById(activeCheckId);
+    if (!cb.checked) return;
+    setAgreed();
+    document.getElementById('termsOverlay').classList.remove('visible');
+    document.getElementById('mainContent').classList.add('visible');
+    applyLang();  /* translate main content to chosen language */
     renderBookmarkBar();
     syncBookmarkButtons();
+  }
+
+  function goHome() { window.location.href = 'index.html'; }
+
+  /* ── Init ────────────────────────────────────────────────── */
+  window.addEventListener('DOMContentLoaded', function() {
+    var params   = new URLSearchParams(window.location.search);
+    var redirect = params.get('redirect');
+
+    if (hasAgreed()) {
+      document.getElementById('termsOverlay').classList.remove('visible');
+      document.getElementById('mainContent').classList.add('visible');
+      applyLang();
+      renderBookmarkBar();
+      syncBookmarkButtons();
+      if (redirect) window.location.href = decodeURIComponent(redirect);
+    } else {
+      // Auto-detect device language
+      setOverlayLang(getLang());
+    }
   });
+
 </script>
 
 <footer class="site-footer">
@@ -239,6 +623,70 @@
 </footer>
 
 <!-- Terms of Use Modal -->
-<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
+<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;">
+  <div style="max-width:580px;margin:40px auto;padding:0 16px 60px;">
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px 24px;position:relative;">
+      <button onclick="closeTermsModal()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;line-height:1;">&times;</button>
+      <div style="text-align:center;margin-bottom:16px;">
+        <div style="font-size:2.2rem;margin-bottom:8px;">&#128214;</div>
+        <div style="font-size:1.2rem;font-weight:900;color:var(--accent);">Terms of Use</div>
+        <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Daily English &mdash; ONE Expression per DAY &nbsp;|&nbsp; by m2ea Labs</div>
+      </div>
+      <!-- Agreed badge — shown only if user has already agreed -->
+      <div id="agreedBadge" style="display:none;background:rgba(34,197,94,0.12);border:1.5px solid #22c55e;border-radius:10px;padding:11px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px;">
+        <span style="font-size:1.3rem;flex-shrink:0;">&#9989;</span>
+        <div>
+          <div style="font-size:0.85rem;font-weight:900;color:#22c55e;">You have agreed to these Terms of Use.</div>
+          <div style="font-size:0.76rem;color:var(--muted);margin-top:2px;">Your agreement is saved on this device. Thank you for using Daily English responsibly.</div>
+        </div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;">
+        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#128204; Terms of Use</div>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;">
+            <span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>
+            This app is for <strong>study purposes only</strong>. All video clips&rsquo; rights belong to each respective company. If any company requests content removal, all contents can be removed without prior notice.
+          </li>
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 8px 16px;border-bottom:1px solid var(--border);position:relative;">
+            <span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>
+            You <strong>cannot use this content for any other purposes</strong>. Use is strictly limited to <strong>personal study only</strong>. Any commercial, redistribution, or other non-personal use is prohibited.
+          </li>
+          <li style="font-size:0.85rem;color:var(--text);line-height:1.75;padding:8px 0 0 16px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--accent);">&#9658;</span>
+            All study contents and comments <strong>may contain incorrect or inaccurate information</strong>. All explanations and comments represent a <strong>m2ea Labs opinion</strong>. If you have a different idea or opinion, <em>you are right</em> &mdash; please use your own judgment.
+          </li>
+        </ul>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;">
+        <div style="font-size:0.82rem;font-weight:900;color:var(--accent2);margin-bottom:10px;">&#8505;&#65039; About This App</div>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0 0 8px;">Daily English connects short YouTube video clips to real English expressions used in popular TV shows. Each expression includes its meaning, an example sentence, and a link to a short video clip for context.</p>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.75;margin:0;">This app is operated by <strong>m2ea Labs</strong> as a study group project. All video content remains the property of its original owners. YouTube video clips and shorts may include ads served by YouTube.</p>
+      </div>
+      <button onclick="closeTermsModal()" style="width:100%;background:linear-gradient(135deg,var(--accent),#0ea5e9);color:var(--bg);border:none;border-radius:10px;padding:13px;font-size:0.95rem;font-weight:900;cursor:pointer;font-family:inherit;">
+        Close &nbsp;&times;
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showTermsModal() {
+    document.getElementById('termsModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    // Show agreed badge if user has already accepted terms
+    var badge = document.getElementById('agreedBadge');
+    if (badge) {
+      badge.style.display = (localStorage.getItem('de_agreed') === '1') ? 'flex' : 'none';
+    }
+  }
+  function closeTermsModal() {
+    document.getElementById('termsModal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  // Close on backdrop click
+  document.getElementById('termsModal').addEventListener('click', function(e) {
+    if (e.target === this) closeTermsModal();
+  });
+</script>
 </body>
 </html>
