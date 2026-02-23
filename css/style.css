@@ -498,6 +498,25 @@ ul { list-style: none; }
   padding-left: 12px;
   margin-bottom: 14px;
 }
+.expr-ko-block {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+.expr-ko-block .expr-meaning {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.expr-ko-block .expr-example {
+  font-size: 0.81rem;
+  border-left-color: var(--accent2);
+  margin-bottom: 10px;
+}
+.expr-ko-block .expr-context {
+  font-size: 0.79rem;
+  margin-bottom: 0;
+}
 .expr-actions {
   display: flex;
   align-items: center;
