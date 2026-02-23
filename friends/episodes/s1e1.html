@@ -271,6 +271,7 @@
   function goHome() { window.location.href = '../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -287,21 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        /* English content — always shown */
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
-        /* Korean content — shown below English when available */
-        if (x.meaning_ko || x.example_ko || x.context_ko) {
-          html += '<div class="expr-ko-block">';
-          if (x.meaning_ko) html += '<div class="expr-meaning expr-ko">' + escHtml(x.meaning_ko) + '</div>';
-          if (x.example_ko) html += '<div class="expr-example expr-ko">' + escHtml(x.example_ko) + '</div>';
-          if (x.context_ko) html += '<div class="expr-context expr-ko">&#128205; ' + escHtml(x.context_ko) + '</div>';
-          html += '</div>';
-        }
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
         html += '</div></div>';
