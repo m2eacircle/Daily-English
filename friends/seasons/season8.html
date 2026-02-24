@@ -120,7 +120,7 @@
         html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
         if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
-        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
@@ -128,7 +128,7 @@
         html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
         html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">&#9654; YouTube Link Coming Soon</button>';
-        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">&#128278; Bookmark</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       }
     }
@@ -192,7 +192,7 @@
       var bmBtn = document.createElement("button");
       bmBtn.className = "bm-corner";
       bmBtn.setAttribute("data-bm-id", bmId);
-      bmBtn.title = "Bookmark";
+      bmBtn.title = t('bm.bookmark');
       bmBtn.innerHTML = "&#128278;";
       (function(sn, en) {
         bmBtn.addEventListener("click", function(evt) {
