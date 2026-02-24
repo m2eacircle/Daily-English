@@ -45,6 +45,8 @@ function setLang(lang) {
   if (typeof buildExpressions === 'function') buildExpressions();
   if (typeof buildEpisodeGrid === 'function') buildEpisodeGrid();
   if (typeof buildSeasonGrid  === 'function') buildSeasonGrid();
+  /* Re-sync bookmark button labels after any rebuild */
+  if (typeof syncBookmarkButtons === 'function') syncBookmarkButtons();
   if (typeof renderBookmarkBar === 'function' && document.getElementById('bookmarkBar')) renderBookmarkBar();
 }
 
