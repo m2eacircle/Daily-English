@@ -133,7 +133,6 @@
       }
     }
     list.innerHTML = html;
-    syncBookmarkButtons();
   }
 
   function handleExprBm(num) {
@@ -143,8 +142,6 @@
   window.addEventListener('DOMContentLoaded', function() {
     checkTermsGuard();
     buildExpressions();
-    renderBookmarkBar();
-    syncBookmarkButtons();
     if (window.location.hash) {
       setTimeout(function() {
         var el = document.querySelector(window.location.hash);
@@ -153,7 +150,6 @@
     }
   });
 </script>
-/script>
 <script>
   var SEASON_NUM    = 2;
   var EPISODE_COUNT = 24;
@@ -229,7 +225,6 @@
 
       grid.appendChild(card);
     }
-    syncBookmarkButtons();
   }
 
   function handleEpBookmark(s, e) {
@@ -244,8 +239,6 @@
   window.addEventListener("DOMContentLoaded", function() {
     checkTermsGuard();
     buildEpisodeGrid();
-    renderBookmarkBar();
-    syncBookmarkButtons();
   });
 </script>
 </body>
