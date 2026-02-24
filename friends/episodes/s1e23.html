@@ -143,7 +143,6 @@
       }
     }
     list.innerHTML = html;
-    syncBookmarkButtons();
   }
 
   function handleExprBm(num) {
@@ -153,8 +152,6 @@
   window.addEventListener('DOMContentLoaded', function() {
     checkTermsGuard();
     buildExpressions();
-    renderBookmarkBar();
-    syncBookmarkButtons();
     if (window.location.hash) {
       setTimeout(function() {
         var el = document.querySelector(window.location.hash);
