@@ -770,14 +770,22 @@ body.ko-active .footer-copy {
 }
 
 /* ── Content Protection ────────────────────────────────────── */
-body.content-protected .expr-card,
-body.content-protected .expr-phrase,
-body.content-protected .expr-meaning,
-body.content-protected .expr-example,
-body.content-protected .expr-context {
+html.content-protected body {
   -webkit-user-select: none;
   -moz-user-select:    none;
   -ms-user-select:     none;
   user-select:         none;
   -webkit-touch-callout: none;
+}
+/* Re-enable selection on interactive controls */
+html.content-protected input,
+html.content-protected textarea,
+html.content-protected select,
+html.content-protected button,
+html.content-protected a,
+html.content-protected [contenteditable] {
+  -webkit-user-select: auto;
+  -moz-user-select:    auto;
+  -ms-user-select:     auto;
+  user-select:         auto;
 }
