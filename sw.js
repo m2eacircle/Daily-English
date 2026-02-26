@@ -5,7 +5,7 @@
    - Offline fallback resolves from cache correctly
    ============================================================ */
 
-var CACHE_VERSION = 'daily-english-v3';
+var CACHE_VERSION = 'daily-english-v4';
 
 /* Core app-shell files to pre-cache on install */
 var PRECACHE_URLS = [
