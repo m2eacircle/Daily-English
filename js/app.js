@@ -269,22 +269,29 @@ function escHtml(str) {
   /* Selectors for protected content areas */
   var PROTECTED = '.expr-meaning, .expr-example, .expr-context, .expr-phrase, .expr-card';
 
-  function isProtected(el) {
-    if (!el) return false;
+  /* Resolve text nodes to their parent element before calling .closest() */
+  function toElement(node) {
+    if (!node) return null;
+    return (node.nodeType === 3) ? node.parentElement : node;
+  }
+
+  function isProtected(node) {
+    var el = toElement(node);
+    if (!el || typeof el.closest !== 'function') return false;
     return !!el.closest(PROTECTED);
   }
 
-  /* Block right-click context menu on protected content */
+  /* Block right-click context menu sitewide — prevents browser menu over any text */
   document.addEventListener('contextmenu', function(e) {
-    if (isProtected(e.target)) e.preventDefault();
+    e.preventDefault();
   }, true);
 
-  /* Block drag start on protected content */
+  /* Block drag on protected content */
   document.addEventListener('dragstart', function(e) {
     if (isProtected(e.target)) e.preventDefault();
   }, true);
 
-  /* Block copy and cut keyboard shortcuts on protected content */
+  /* Block copy and cut on protected content */
   document.addEventListener('copy', function(e) {
     if (isProtected(e.target)) { e.preventDefault(); e.stopImmediatePropagation(); }
   }, true);
@@ -297,15 +304,14 @@ function escHtml(str) {
     if (isProtected(e.target) && e.detail > 1) e.preventDefault();
   }, true);
 
-  /* Block selectstart (covers click-drag selection) on protected content */
+  /* Block click-drag text selection on protected content */
   document.addEventListener('selectstart', function(e) {
     if (isProtected(e.target)) e.preventDefault();
   }, true);
 
-  /* Add body class so CSS user-select:none can be applied */
-  document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('content-protected');
-  });
+  /* Apply protection class to html element immediately (before DOMContentLoaded)
+     so CSS user-select:none is active as soon as stylesheets load */
+  document.documentElement.classList.add('content-protected');
 })();
 
 /* ── Init ──────────────────────────────────────────────────── */
