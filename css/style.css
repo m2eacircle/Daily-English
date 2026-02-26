@@ -768,3 +768,16 @@ body.ko-active .bm-empty,
 body.ko-active .footer-copy {
   font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Nunito', sans-serif;
 }
+
+/* ── Content Protection ────────────────────────────────────── */
+body.content-protected .expr-card,
+body.content-protected .expr-phrase,
+body.content-protected .expr-meaning,
+body.content-protected .expr-example,
+body.content-protected .expr-context {
+  -webkit-user-select: none;
+  -moz-user-select:    none;
+  -ms-user-select:     none;
+  user-select:         none;
+  -webkit-touch-callout: none;
+}
