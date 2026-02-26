@@ -264,6 +264,50 @@ function escHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+/* ── Content Protection ────────────────────────────────────── */
+(function() {
+  /* Selectors for protected content areas */
+  var PROTECTED = '.expr-meaning, .expr-example, .expr-context, .expr-phrase, .expr-card';
+
+  function isProtected(el) {
+    if (!el) return false;
+    return !!el.closest(PROTECTED);
+  }
+
+  /* Block right-click context menu on protected content */
+  document.addEventListener('contextmenu', function(e) {
+    if (isProtected(e.target)) e.preventDefault();
+  }, true);
+
+  /* Block drag start on protected content */
+  document.addEventListener('dragstart', function(e) {
+    if (isProtected(e.target)) e.preventDefault();
+  }, true);
+
+  /* Block copy and cut keyboard shortcuts on protected content */
+  document.addEventListener('copy', function(e) {
+    if (isProtected(e.target)) { e.preventDefault(); e.stopImmediatePropagation(); }
+  }, true);
+  document.addEventListener('cut', function(e) {
+    if (isProtected(e.target)) { e.preventDefault(); e.stopImmediatePropagation(); }
+  }, true);
+
+  /* Block double/triple-click text selection on protected content */
+  document.addEventListener('mousedown', function(e) {
+    if (isProtected(e.target) && e.detail > 1) e.preventDefault();
+  }, true);
+
+  /* Block selectstart (covers click-drag selection) on protected content */
+  document.addEventListener('selectstart', function(e) {
+    if (isProtected(e.target)) e.preventDefault();
+  }, true);
+
+  /* Add body class so CSS user-select:none can be applied */
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('content-protected');
+  });
+})();
+
 /* ── Init ──────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function() {
   /* Inject lang toggle into every topbar-right */
