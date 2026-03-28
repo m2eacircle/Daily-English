@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends S1E6 &mdash; Daily English</title>
+  <title>Friends S10E3 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../css/style.css">
   <style>
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
@@ -36,25 +36,25 @@
   <div class="page-wrap">
     <nav class="nav-row">
       <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
-      <button class="btn-nav" onclick="window.location.href='../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
+      <button class="btn-nav" onclick="window.location.href='../seasons/season10.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":10}'>Back to Season 10</span></button>
     </nav>
     <nav class="breadcrumb">
       <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
       <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
-      <a href="../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
-      <span class="current">S1E6</span>
+      <a href="../seasons/season10.html">Season 10</a><span class="sep">&#8250;</span>
+      <span class="current">S10E3</span>
     </nav>
     <div class="page-header">
       <div class="page-header-thumb">
-        <img src="../images/s1e6.jpg" alt="S1E6"
-          onerror="this.src='../images/s1e6.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+        <img src="../images/s10e3.jpg" alt="S10E3"
+          onerror="this.src='../images/s10e3.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S1E6: The One with the Butt</div>
-        <div class="page-header-meta">Joey lands his first big acting role — as Al Pacino's butt double.</div>
+        <div class="page-header-title">Friends &mdash; S10E3: Season 10, Episode 3</div>
+        <div class="page-header-meta">Expressions coming soon.</div>
         <div class="page-header-actions">
-          <button class="btn-bm" data-bm-id="episode-friends-s1e6"
-            onclick="toggleBookmark('episode','episode-friends-s1e6','📋 Friends S1E6','friends/episodes/s1e6.html')">
+          <button class="btn-bm" data-bm-id="episode-friends-s10e3"
+            onclick="toggleBookmark('episode','episode-friends-s10e3','📋 Friends S10E3','friends/episodes/s10e3.html')">
             <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
           </button>
         </div>
@@ -64,7 +64,7 @@
       <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span data-i18n="bm.bar.title">Your Bookmarks</span></div>
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
-    <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":1,"e":6}'>&#128172; 15 English Expressions &mdash; Season 1 Episode 6</div>
+    <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":10,"e":3}'>&#128172; 15 English Expressions &mdash; Season 10 Episode 3</div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -77,186 +77,33 @@
 <script src="../../js/i18n.js"></script>
 <script src="../../js/app.js"></script>
 <script>
+  /* ================================================================
+     EPISODE DATA — edit this object to update expressions
+     ----------------------------------------------------------------
+     Each expression has:
+       phrase       : the English expression
+       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
+       meaning      : your explanation
+       example      : an example sentence
+       context      : scene context (optional, can be empty '')
+       youtubeUrl   : paste YouTube link here when ready
+     ----------------------------------------------------------------
+     The page shows 15 slots. Add up to 15 objects in expressions[].
+     Empty slots show as "Coming Soon" placeholders automatically.
+  ================================================================ */
   var EP_DATA = {
-    title: 'The One with the Butt',
-    description: 'Joey lands his first big acting role — as Al Pacino\'s butt double.',
-    expressions: [
-    {
-      phrase: 'No sense of impending doom.',
-      partOfSpeech: 'expression',
-      meaning: '"Impending doom" means a feeling that something terrible is about to happen very soon. "No sense of impending doom" means someone is blissfully unaware of the disaster ahead. The phrase is darkly humorous — used when you can see the disaster coming, but the other person can\'t.',
-      meaning_ko: '"Impending doom"은 곧 끔찍한 일이 일어날 것 같은 느낌을 뜻합니다. "No sense of impending doom"은 앞에 닥칠 재앙을 전혀 눈치채지 못하고 천진하게 있는 상태를 의미합니다. 자신은 재앙이 오는 게 보이는데 상대방은 전혀 모를 때 쓰는 어둡고 유머러스한 표현입니다.',
-      example: 'A: "He walked into the meeting smiling, no sense of impending doom." B: "He had no idea he was about to get fired?"',
-      example_ko: 'A: "그는 곧 닥칠 재앙도 모르고 웃으면서 회의실에 들어갔어." B: "잘릴 줄도 몰랐던 거야?"',
-      context: 'Chandler delivers this line while the group looks at Joey\'s photo outside the theater before watching his musical. They can tell from the poster that the show will be terrible — but Joey is inside, totally confident. The contrast between his enthusiasm and their dread is the joke.',
-      context_ko: '친구들이 극장 밖에서 조이의 사진을 보며 그의 뮤지컬을 보러 들어가기 전, 찬들러가 하는 말. 포스터만 봐도 공연이 끔찍할 게 뻔한데, 조이는 안에서 완전히 자신만만합니다. 그의 열정과 친구들의 두려움 사이의 대조가 바로 웃음 포인트입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X1'
-    },
-    {
-      phrase: 'Could she be more out of my league?',
-      partOfSpeech: 'expression',
-      meaning: '"Out of my league" means someone is significantly more attractive, successful, or impressive than you — so far above your level that pursuing them romantically seems almost impossible. The rhetorical question form ("Could she be more...?") makes it even more emphatic, meaning "She is absolutely, completely out of my league."',
-      meaning_ko: '"Out of my league"는 상대방이 자신보다 훨씬 매력적이거나 성공했거나 인상적인 경우로, 자신의 수준을 너무 크게 뛰어넘어 낭만적으로 다가가는 것이 거의 불가능하게 느껴진다는 뜻입니다. 수사적 의문문 형태("Could she be more...?")는 강조를 더해, "그녀는 완전히, 절대적으로 내 수준 밖"이라는 의미입니다.',
-      example: 'A: "That woman at the bar keeps looking over here." B: "Could she be more out of my league? Look at her."',
-      example_ko: 'A: "바에 있는 저 여자가 계속 이쪽을 보는데." B: "저 사람이 내 수준보다 더 높을 수 있겠어? 좀 봐봐."',
-      context: 'Chandler spots Aurora at the theater after the play and is immediately overwhelmed. He says this to Ross and the gang, completely defeated before he has even tried. Ross and the others encourage him to go anyway — and to everyone\'s surprise, she says yes.',
-      context_ko: '연극이 끝난 후 찬들러가 극장에서 오로라를 발견하고 즉시 압도되는 장면. 시도도 해보기 전에 완전히 포기한 채로 로스와 친구들에게 이 말을 합니다. 로스와 다른 친구들이 어쨌든 가보라고 격려하고, 모두를 놀라게도 그녀가 승낙합니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X2'
-    },
-    {
-      phrase: 'Would you like to go out with me?',
-      partOfSpeech: 'expression',
-      meaning: 'The classic, direct way to ask someone on a date in English. "Go out with" means to date someone — to spend social time together with romantic intent. Even though it is simple, many people find saying it terrifying, which is why Chandler\'s panicked, rambling build-up to finally saying it is so relatable.',
-      meaning_ko: '영어에서 누군가에게 데이트를 청하는 가장 고전적이고 직접적인 방법입니다. "Go out with"는 누군가와 사귀다, 즉 낭만적인 의도를 갖고 함께 시간을 보내다는 뜻입니다. 단순한 표현이지만 많은 사람들이 이 말을 하는 것을 두려워합니다. 찬들러가 이 말을 꺼내기까지 당황하며 횡설수설하는 과정이 바로 그래서 공감이 가는 것입니다.',
-      example: 'A: "I\'ve been trying to ask her for weeks." B: "Just say it! \'Would you like to go out with me?\' That\'s all."',
-      example_ko: 'A: "몇 주째 말을 못 꺼내고 있어." B: "그냥 말해! \'저랑 데이트하실래요?\' 그게 다야."',
-      context: 'After stammering through an introduction — giving his own name, saying "Hi" twice, and almost giving up — Chandler finally blurts out this question to Aurora, immediately adds "Thank you, good night," and turns to walk away. It is one of the most painfully funny cold-approaches in the show.',
-      context_ko: '자기 이름을 말하고 "Hi"를 두 번 하고 거의 포기할 뻔하다가 말을 더듬으며 소개를 끝낸 찬들러가 결국 오로라에게 이 질문을 불쑥 내뱉고, 즉시 "감사합니다, 안녕히 계세요"라고 덧붙이며 돌아서는 장면. 이 드라마에서 가장 처절하게 웃긴 작업 시도 중 하나입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X3'
-    },
-    {
-      phrase: 'She\'s had the most amazing life!',
-      partOfSpeech: 'expression',
-      meaning: 'Used to express awe and admiration for the breadth, depth, and drama of someone\'s personal experiences. It implies their life has been far richer, wilder, or more adventurous than the average person\'s. In casual English, "most amazing" is a very common superlative for emphasizing something extraordinary.',
-      meaning_ko: '누군가의 개인적 경험의 깊이, 폭, 그리고 극적인 면에 대한 경이로움과 감탄을 표현하는 데 씁니다. 그 사람의 삶이 보통 사람보다 훨씬 더 풍부하고 파란만장하고 모험적이었음을 내포합니다. 일상 영어에서 "most amazing"은 무언가 특별한 것을 강조하는 가장 흔한 최상급 표현입니다.',
-      example: 'A: "How was dinner with your new colleague?" B: "She\'s had the most amazing life — grew up in three different countries, studied opera, started a company."',
-      example_ko: 'A: "새 동료랑 저녁 어땠어?" B: "그 사람 정말 대단한 인생을 살아왔어 — 세 나라에서 자라고, 오페라를 공부하고, 회사도 창업했대."',
-      context: 'Chandler gushes to his friends about his first date with Aurora. She was in the Israeli army, escaped gunfire, crossed a border — and somehow made Chandler feel his own subway-to-Brooklyn story was equivalent. His complete infatuation is charming and funny at the same time.',
-      context_ko: '찬들러가 친구들에게 오로라와의 첫 데이트에 대해 열정적으로 떠드는 장면. 그녀는 이스라엘 군대에 있었고, 총격을 피하고, 국경을 넘었습니다. 그리고 어쩐지 찬들러는 자신의 브루클린 지하철 이야기를 그와 동등하게 여기게 만들었습니다. 완전히 빠져버린 그의 모습이 동시에 귀엽고 웃깁니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X4'
-    },
-    {
-      phrase: 'My husband.',
-      partOfSpeech: 'expression',
-      meaning: 'Two words that completely change the mood of a scene. Delivered by Aurora as a casual clarification after Chandler asks who "Rick" is, it is the episode\'s first major plot twist. The simplicity of the delivery — no explanation, no apology — is what makes it so striking. Knowing when a short sentence carries enormous weight is a key part of natural English communication.',
-      meaning_ko: '장면의 분위기를 완전히 바꾸는 두 단어. 찬들러가 "릭"이 누구냐고 묻자 오로라가 가볍게 해명하듯 내뱉는 말로, 에피소드의 첫 번째 주요 반전입니다. 설명도 사과도 없는 단순한 전달 방식이 그것을 더욱 강렬하게 만듭니다. 짧은 문장이 엄청난 무게를 지닐 때를 아는 것이 자연스러운 영어 소통의 핵심입니다.',
-      example: 'A: "So who is James?" B: "My husband." A: "...I\'m sorry, your what?"',
-      example_ko: 'A: "그럼 제임스가 누구야?" B: "내 남편이요." A: "...미안, 뭐라고?"',
-      context: 'During Chandler\'s romantic story about his first date with Aurora, he mentions "we" — and is asked to clarify. Aurora replies simply: "My husband." The group\'s collective gasp ("Ooh!") captures how the room feels. But Chandler isn\'t done — there\'s also a boyfriend.',
-      context_ko: '오로라와의 첫 데이트 이야기에서 찬들러가 "우리"라고 언급하자 해명 요청을 받는 장면. 오로라가 단순하게 답합니다: "내 남편이요." 친구들의 집단 탄식("오!")이 그 순간의 분위기를 그대로 전달합니다. 그런데 찬들러는 아직 끝나지 않았습니다 — 남자친구도 있거든요.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X5'
-    },
-    {
-      phrase: 'I get all the good stuff and no responsibility.',
-      partOfSpeech: 'expression',
-      meaning: '"The good stuff" refers informally to the enjoyable, positive parts of something — in this case, the fun and intimacy of a relationship. "No responsibility" means no obligations, commitments, or emotional labour. Chandler is describing an arrangement that sounds appealing in theory but becomes more complicated as the episode goes on.',
-      meaning_ko: '"The good stuff"는 비격식으로 무언가의 즐겁고 긍정적인 부분, 이 경우 관계의 재미와 친밀함을 말합니다. "No responsibility"는 의무, 헌신, 또는 감정적 수고가 없다는 뜻입니다. 찬들러는 이론상 매력적으로 들리지만 에피소드가 진행될수록 더 복잡해지는 관계를 묘사하고 있습니다.',
-      example: 'A: "Why are you so okay with this arrangement?" B: "Because I get all the good stuff — the dinners, the laughs — and no responsibility."',
-      example_ko: 'A: "왜 이 상황이 그렇게 괜찮아?" B: "좋은 것들은 다 챙기니까 — 같이 밥도 먹고 웃기도 하고 — 근데 책임은 없잖아."',
-      context: 'Chandler defends his decision to keep seeing Aurora despite her having a husband and a boyfriend. His logic sounds airtight for about thirty seconds — until he starts to realize he is actually developing real feelings, and "no responsibility" isn\'t as freeing as it sounded.',
-      context_ko: '찬들러가 남편과 남자친구가 있는 오로라를 계속 만나기로 한 결정을 변호하는 장면. 그의 논리는 약 30초 동안은 완벽해 보입니다 — 그러다 진짜 감정이 생기고 있다는 것을 깨닫기 시작하고, "책임 없음"이 들릴 때만큼 자유롭지 않다는 것을 알게 됩니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X6'
-    },
-    {
-      phrase: 'Monogamy can be a tricky concept.',
-      partOfSpeech: 'expression',
-      meaning: '"Monogamy" is the practice of having only one romantic or sexual partner at a time. Calling something a "tricky concept" is a polite, intellectual way of saying it is complicated or doesn\'t always work simply in practice. Ross is about to launch into an anthropological lecture when the whole group immediately pretends to fall asleep.',
-      meaning_ko: '"Monogamy(일부일처제)"는 한 번에 오직 한 명의 연인 혹은 성적 파트너만 두는 관행입니다. 무언가를 "tricky concept(까다로운 개념)"이라고 부르는 것은 그것이 복잡하거나 현실에서 항상 단순하게 작동하지 않는다는 것을 정중하고 지적인 방식으로 말하는 것입니다. 로스가 인류학적 강의를 시작하려던 순간 모든 친구들이 즉시 자는 척합니다.',
-      example: 'A: "You sound like you\'re about to give a lecture." B: "Well, monogamy can be a tricky concept historically speaking."',
-      example_ko: 'A: "강의라도 시작할 것 같은데." B: "뭐, 역사적으로 봤을 때 일부일처제는 꽤 까다로운 개념이라서요."',
-      context: 'When Chandler declares that seeing a married woman is "every guy\'s fantasy," the group objects and turns to Ross for backup. Ross — paleontologist and serial over-explainer — launches into an anthropological take on monogamy. Everyone immediately fake-snores. It\'s a perfect running gag for Ross\'s character.',
-      context_ko: '찬들러가 유부녀를 만나는 것이 "모든 남자의 판타지"라고 선언하자 친구들이 반대하며 로스에게 동의를 구하는 장면. 고생물학자이자 습관적인 과잉 설명자인 로스가 일부일처제에 대한 인류학적 견해를 펼치기 시작합니다. 모두가 즉시 자는 척을 합니다. 로스 캐릭터의 완벽한 반복 개그입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X7'
-    },
-    {
-      phrase: 'This is a big break for me!',
-      partOfSpeech: 'expression',
-      meaning: 'A "big break" is a major opportunity that opens the door to success — especially in the entertainment industry. Saying "this is a big break for me" is a declaration that you believe this moment will change your career trajectory. The humor in this line comes entirely from context: Joey is describing being a butt double as his big break.',
-      meaning_ko: '"Big break"는 성공으로 가는 문을 열어주는 큰 기회, 특히 연예계에서 씁니다. "This is a big break for me"는 이 순간이 자신의 커리어 궤적을 바꿀 것이라고 믿는다는 선언입니다. 이 대사의 유머는 전적으로 맥락에서 나옵니다: 조이가 엉덩이 대역을 자신의 큰 기회로 묘사하고 있는 것입니다.',
-      example: 'A: "It\'s just a small role in a local production." B: "Maybe, but this is a big break for me. I\'ve been waiting for this."',
-      example_ko: 'A: "작은 지역 공연에서 소소한 역할이잖아." B: "그럴 수도 있지, 근데 나한테는 큰 기회야. 이걸 기다려왔어."',
-      context: 'After the friends tease Joey relentlessly about being Al Pacino\'s butt double, he finally stands his ground. "Okay, fine. Make jokes, I don\'t care. This is a big break for me!" — and he\'s completely right. It IS a real film. The fact that he then gets fired for over-acting makes it even more poignant.',
-      context_ko: '친구들이 알 파치노 엉덩이 대역에 대해 끝없이 놀린 후 조이가 드디어 입장을 지키는 장면. "좋아, 실컷 놀려라, 아무래도 상관없어. 나한테는 큰 기회야!" — 그리고 그는 완전히 옳습니다. 진짜 영화이기는 합니다. 이후 과잉 연기로 해고된다는 사실이 그것을 더욱 안타깝게 만듭니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X8'
-    },
-    {
-      phrase: 'You\'ve finally been able to crack your way into show business.',
-      partOfSpeech: 'expression',
-      meaning: '"Crack your way into" something means to manage to break through into a competitive field or group — usually after a lot of effort and difficulty. "Show business" (or "showbiz") refers to the entertainment industry: film, TV, theater. The pun on "crack" (a butt crack) is entirely intentional — this is Chandler at his most irresistible.',
-      meaning_ko: '"Crack your way into" 무언가는 보통 많은 노력과 어려움 끝에 경쟁이 치열한 분야나 집단에 진입하는 데 성공한다는 뜻입니다. "Show business(쇼 비즈니스)"는 연예계, 즉 영화, TV, 연극 산업을 말합니다. "Crack(틈을 내다)"에 엉덩이 갈라짐(butt crack)을 연결한 말장난은 완전히 의도적입니다 — 찬들러 특유의 저항할 수 없는 개그입니다.',
-      example: 'A: "After ten rejections, he finally cracked his way into the industry." B: "It takes that kind of persistence."',
-      example_ko: 'A: "열 번의 거절 끝에 드디어 그 업계에 파고들었어." B: "그런 끈기가 있어야 하지."',
-      context: 'Chandler delivers this pun after Joey announces he is Al Pacino\'s butt double. "After all your years of struggling, you\'ve finally been able to crack your way into show business." The entire group groans, which is the correct response to a perfect pun.',
-      context_ko: '조이가 알 파치노 엉덩이 대역임을 발표한 후 찬들러가 이 말장난을 내뱉는 장면. "그렇게 고생하더니 드디어 쇼 비즈니스에 crack(틈을 내다/엉덩이)해서 들어가는구나." 모든 친구들이 신음 소리를 내는데, 이것이 완벽한 말장난에 대한 올바른 반응입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X9'
-    },
-    {
-      phrase: 'I was going for quiet desperation.',
-      partOfSpeech: 'expression',
-      meaning: '"Going for" something in acting means intentionally trying to convey or portray a specific emotion or quality. "Quiet desperation" is a deep, suppressed sadness or hopelessness — the kind that doesn\'t shout but simmers beneath the surface. The joke is that Joey is applying serious method-acting concepts to a butt.',
-      meaning_ko: '연기에서 무언가를 "going for"한다는 것은 특정 감정이나 특질을 의도적으로 전달하거나 표현하려 한다는 뜻입니다. "Quiet desperation(조용한 절망)"은 소리 지르지 않고 내면에서 끓어오르는 깊고 억눌린 슬픔이나 희망 없음입니다. 웃음 포인트는 조이가 엉덩이에 진지한 메소드 연기 개념을 적용하고 있다는 것입니다.',
-      example: 'A: "What emotion were you trying to show in that scene?" B: "I was going for quiet desperation — you know, holding it all in."',
-      example_ko: 'A: "그 장면에서 어떤 감정을 표현하려 했어?" B: "조용한 절망을 노렸어요 — 있잖아요, 모든 걸 안으로 삭이는 그런 거."',
-      context: 'After the director yells "Cut!" and demands to know what Joey was doing, Joey responds with complete seriousness: "I was going for quiet desperation." Then he adds a note about the character\'s dead wife and missing brother. The director\'s response — "His butt would like to get the shot before lunch" — is one of the episode\'s funniest lines.',
-      context_ko: '감독이 "컷!"을 외치고 조이가 뭘 하는 건지 따지자 조이가 완전히 진지하게 대답하는 장면: "조용한 절망을 표현하고 있었어요." 그리고는 캐릭터의 죽은 아내와 실종된 형제에 대한 노트를 덧붙입니다. 감독의 반응 — "그의 엉덩이는 점심 전에 촬영을 끝내고 싶어 할 거야" — 는 에피소드에서 가장 웃긴 대사 중 하나입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X10'
-    },
-    {
-      phrase: 'Lose the other guys.',
-      partOfSpeech: 'expression',
-      meaning: '"Lose" someone in this context means to get rid of them, cut them off, or stop seeing them. "The other guys" refers to Aurora\'s other romantic partners — her husband Rick, her boyfriend Ethan, and newly revealed Andrew. Chandler is asking her to end all her other relationships and be exclusive with him.',
-      meaning_ko: '이 맥락에서 누군가를 "lose"한다는 것은 그들을 제거하거나, 연락을 끊거나, 더 이상 보지 않는다는 뜻입니다. "The other guys"는 오로라의 다른 연인들, 즉 남편 릭, 남자친구 이선, 그리고 새로 밝혀진 앤드루를 말합니다. 찬들러는 그녀에게 다른 모든 관계를 끝내고 자신과만 만나자고 요청하고 있습니다.',
-      example: 'A: "What do you actually want from this?" B: "I want you to lose the other guys. Just us."',
-      example_ko: 'A: "이 관계에서 진짜 원하는 게 뭐야?" B: "다른 사람들 다 정리해줬으면 해. 우리 둘만."',
-      context: 'After Aurora casually mentions yet another man (Andrew), Chandler finally hits his limit. He asks her to cut everyone else off and be with only him. It\'s the moment Chandler\'s true feelings surface — and Aurora\'s reaction, and then the reversal ("Sorry, the first guy runs the lips"), makes this one of the episode\'s most satisfying scenes.',
-      context_ko: '오로라가 또 다른 남자(앤드루)를 아무렇지 않게 언급하자 찬들러가 드디어 한계에 달하는 장면. 그는 모두를 정리하고 자신과만 있어달라고 요청합니다. 찬들러의 진짜 감정이 표면으로 드러나는 순간이며, 오로라의 반응과 이후의 반전("미안, 첫 번째 놈이 입을 차지했어")이 이 장면을 에피소드에서 가장 만족스러운 장면 중 하나로 만듭니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X11'
-    },
-    {
-      phrase: 'I have to listen to both. They don\'t let each other finish.',
-      partOfSpeech: 'expression',
-      meaning: 'Chandler describes his inner conflict as two separate "guys" arguing inside him — one saying "shut up, this is great!" and the other urging him to get out because it\'s too hard. The joke is the absurdly literal way he describes his conscience: they argue like actual people and won\'t let each other speak. It\'s a vivid and very relatable image of being torn between two desires.',
-      meaning_ko: '찬들러가 내면의 갈등을 두 개의 별개 "녀석"이 자신 안에서 논쟁하는 것으로 묘사합니다 — 하나는 "닥쳐, 지금이 좋아!"라고 하고, 다른 하나는 너무 힘드니 그만두라고 재촉합니다. 웃음 포인트는 그가 양심을 터무니없이 문자 그대로 묘사하는 방식입니다: 실제 사람들처럼 말다툼을 하며 서로 말을 끝내지 못하게 합니다. 두 가지 욕망 사이에서 갈등하는 아주 생생하고 공감 가는 표현입니다.',
-      example: 'A: "So what did you decide?" B: "I couldn\'t. I have to listen to both. They don\'t let each other finish."',
-      example_ko: 'A: "그래서 어떻게 결정했어?" B: "못 했어. 둘 다 들어야 하는데, 서로 말을 끝내질 못하게 하거든."',
-      context: 'Aurora asks Chandler which of his two inner voices he will listen to. His answer — "I have to listen to both. They don\'t let each other finish" — is both hilarious and surprisingly honest. It captures the impossibility of being a conflicted person, which is one of Chandler\'s defining character traits throughout the entire series.',
-      context_ko: '오로라가 찬들러에게 두 내면의 목소리 중 어느 쪽을 들을 것이냐고 묻는 장면. 그의 대답 — "둘 다 들어야 해. 서로 말을 끝내질 않거든" — 은 동시에 우습고 놀랍도록 솔직합니다. 시리즈 전체에서 찬들러를 정의하는 특징 중 하나인, 갈등하는 사람의 불가능함을 포착합니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X12'
-    },
-    {
-      phrase: 'I finally get my shot, and I blow it!',
-      partOfSpeech: 'expression',
-      meaning: '"Get your shot" means to finally receive the opportunity you\'ve been waiting for. "Blow it" means to ruin or fail at something through your own mistake. Together, this phrase captures the specific agony of wasting an opportunity that took years to arrive — failing not because of bad luck but because of something you did.',
-      meaning_ko: '"Get your shot"는 드디어 기다리던 기회를 얻는다는 뜻입니다. "Blow it"은 자신의 실수로 무언가를 망치거나 실패한다는 뜻입니다. 함께 쓰면, 도착하는 데 수년이 걸린 기회를 낭비하는 특별한 고통을 표현합니다 — 운이 나빠서가 아니라 자신이 한 행동 때문에 실패한 것입니다.',
-      example: 'A: "How did the pitch go?" B: "I finally get my shot in front of the board, and I blow it. Completely froze up."',
-      example_ko: 'A: "피칭 어땠어?" B: "드디어 이사회 앞에서 기회를 얻었는데, 완전히 날려버렸어. 머리가 하얘졌어."',
-      context: 'Joey sits devastated after being fired from the Al Pacino film. "I\'ve done nothing but crappy plays for six years, and I finally get my shot, and I blow it!" — it\'s a raw, genuinely sad moment, and the friends\' response (Monica\'s encouragement that his real shot is still coming) turns it into one of the episode\'s most unexpectedly warm scenes.',
-      context_ko: '조이가 알 파치노 영화에서 해고된 후 망연자실 앉아있는 장면. "6년 동안 쓰레기 같은 연극만 하다가 드디어 기회를 잡았는데, 날려버렸어!" — 날것의, 진심으로 슬픈 순간이며, 친구들의 반응(진짜 기회는 아직 오지 않았다는 모니카의 격려)이 에피소드에서 가장 뜻밖에 따뜻한 장면 중 하나로 만들어줍니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X13'
-    },
-    {
-      phrase: 'When it\'s your shot, you know it\'s your shot.',
-      partOfSpeech: 'expression',
-      meaning: 'This line expresses the belief that truly meaningful opportunities come with a gut feeling — an inner certainty that this is the moment. "Your shot" is the right opportunity that fits who you are and what you\'re meant to do. The implication is that if you\'re not sure, it probably isn\'t the right one yet.',
-      meaning_ko: '이 문장은 진정으로 의미 있는 기회에는 직감, 즉 "이 순간이다"라는 내면의 확신이 따른다는 믿음을 표현합니다. "Your shot"은 당신이 누구인지, 당신이 해야 할 일에 맞는 올바른 기회입니다. 확신이 없다면 아직 맞는 기회가 아닐 것이라는 뉘앙스를 담고 있습니다.',
-      example: 'A: "How will I know when to take the leap?" B: "When it\'s your shot, you know it\'s your shot. You\'ll feel it."',
-      example_ko: 'A: "언제 도전해야 할지 어떻게 알아?" B: "네 기회가 왔을 때는 알게 돼. 느낌이 오거든."',
-      context: 'Monica says this to comfort Joey, making the distinction between a random opportunity and the right opportunity. She then asks him directly — "Did it feel like your shot?" Joey\'s honest, defeated answer: "Hard to tell. I was naked." — is the perfect punchline to end the scene.',
-      context_ko: '모니카가 조이를 위로하며 우연한 기회와 올바른 기회의 차이를 구별하는 장면. 그녀는 직접적으로 묻습니다 — "그게 네 기회처럼 느껴졌어?" 조이의 솔직하고 풀 죽은 대답: "알기가 힘들었어. 벗고 있었거든." — 장면을 마무리하는 완벽한 펀치라인입니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X14'
-    },
-    {
-      phrase: 'She is a kook.',
-      partOfSpeech: 'expression',
-      meaning: 'A "kook" is an informal, affectionate word for someone who is eccentric, quirky, or behaves in a charmingly odd way. Unlike "crazy" (which can be negative), "kook" is usually said with warmth and amusement — it suggests the person is entertainingly unconventional rather than genuinely troubling.',
-      meaning_ko: '"Kook"은 별나거나 독특하거나 매력적으로 기이하게 행동하는 사람을 부르는 비격식적이고 애정 어린 단어입니다. 부정적일 수 있는 "crazy"와 달리, "kook"은 보통 따뜻함과 유머로 말합니다 — 진심으로 걱정스럽기보다는 재미있게 관습에 얽매이지 않는 사람을 의미합니다.',
-      example: 'A: "She keeps rearranging all the furniture every weekend." B: "She\'s a kook. That\'s why we love her."',
-      example_ko: 'A: "그 사람 매주 주말마다 가구를 다 바꿔 놔." B: "좀 특이하지. 그래서 좋아하는 거야."',
-      context: 'This is Ross\'s affectionate reaction to watching Monica struggle not to pick up her shoes that she left casually in the hallway — a deliberate attempt to prove she\'s not obsessively tidy. Monica\'s internal monologue as she fights her own compulsion, and the episode\'s final image of her sneaking out in the middle of the night to retrieve them, makes "she is a kook" the perfect, fond last word.',
-      context_ko: '강박적으로 꼼꼼하지 않다는 것을 증명하기 위해 복도에 일부러 신발을 두고 갔다가 가져오지 않으려 안간힘을 쓰는 모니카를 보며 로스가 애정 어린 반응을 하는 장면. 자신의 강박과 싸우는 모니카의 내면 독백, 그리고 한밤중에 몰래 나가 신발을 가져오는 에피소드의 마지막 장면이 "she is a kook"을 완벽하고 다정한 마지막 말로 만듭니다.',
-      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E6X15'
-    }
-  ]
+    title: 'Season 10, Episode 3',
+    description: 'Expressions coming soon.',
+    expressions: []
   };
 
-  var S_NUM = 1;
-  var E_NUM = 6;
+  var S_NUM = 10;
+  var E_NUM = 3;
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../index.html'; }
 
   function buildExpressions() {
-    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -273,18 +120,12 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
-        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
-        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
-        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
-        var exprNum = isKo
-          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
-          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">' + exprNum + '</div>';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(example) + '</div>';
-        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
+        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
