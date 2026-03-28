@@ -77,26 +77,175 @@
 <script src="../../js/i18n.js"></script>
 <script src="../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
     title: 'The One with the Blackout',
     description: 'A city-wide blackout traps Chandler in an ATM vestibule with a model.',
     expressions: [
-    {phrase:'Hit it off',partOfSpeech:'phrasal verb',meaning:'To immediately like each other and get along very well from the first meeting.',example:'"They met at the conference and really hit it off right away."',context:'Chandler stuck with a beautiful stranger during the blackout.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E7X1'},
-    {phrase:'Cat got your tongue?',partOfSpeech:'idiom',meaning:'Asked when someone is unusually quiet or fails to speak when they should.',example:'"You haven\'t said a word since she walked in. Cat got your tongue?"',context:'Teasing someone who is awkwardly silent.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E7X2'}
+    {
+      phrase: 'The entire city\'s blacked out.',
+      partOfSpeech: 'expression',
+      meaning: '"Blacked out" means all the electricity has gone out — the lights, power, and everything running on electricity have completely stopped working. A "blackout" is a sudden, widespread power failure. This is different from a "brownout" (partial power reduction) and from "blacking out" (losing consciousness).',
+      meaning_ko: '"Blacked out"는 전기가 완전히 나갔다는 뜻으로, 조명, 전원, 전기로 작동하는 모든 것이 완전히 멈췄음을 의미합니다. "Blackout"은 갑작스럽고 광범위한 정전입니다. 부분적인 전력 감소인 "brownout"이나 의식을 잃는 "blacking out"과는 다릅니다.',
+      example: 'A: "Why is it so dark outside?" B: "The entire city\'s blacked out. Don\'t you have candles anywhere?"',
+      example_ko: 'A: "밖에 왜 이렇게 어두워?" B: "도시 전체가 정전이야. 양초 없어?"',
+      context: 'Monica announces the scale of the blackout to the group gathered in her apartment. The episode\'s entire premise — Chandler stuck with a model, Ross finally trying to tell Rachel his feelings, Paolo\'s dramatic entrance — all happens because of this city-wide power failure.',
+      context_ko: '모니카가 아파트에 모인 친구들에게 정전의 규모를 알리는 장면. 에피소드의 모든 설정 — 찬들러가 모델과 갇힘, 로스가 드디어 레이철에게 감정을 고백하려 함, 파올로의 극적인 등장 — 이 모두 이 도시 전체 정전 때문에 일어납니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X1'
+    },
+    {
+      phrase: 'I am trapped in an ATM vestibule with Jill Goodacre.',
+      partOfSpeech: 'expression',
+      meaning: 'A "vestibule" is a small enclosed entrance room or lobby — in this case, the little glass-enclosed area at the front of a bank where the ATM machines are. "Trapped" means unable to leave. Chandler delivers this line as a panicked inner monologue, and immediately second-guesses himself on whether "vestibule" is even the right word — which is a very Chandler thing to do.',
+      meaning_ko: '"Vestibule"은 작은 밀폐된 현관 또는 로비입니다. 이 경우 은행 앞에 ATM 기기가 있는 유리로 둘러싸인 작은 공간입니다. "Trapped"는 나갈 수 없다는 뜻입니다. 찬들러는 이 대사를 당황한 내면 독백으로 전달하고, 즉시 "vestibule"이 맞는 단어인지 스스로 의문을 품습니다 — 매우 찬들러다운 행동입니다.',
+      example: 'A: "Where are you?" B: "I\'m trapped in the elevator with my boss. This is not good."',
+      example_ko: 'A: "어디야?" B: "상사랑 엘리베이터에 갇혔어. 큰일이야."',
+      context: 'This is Chandler\'s delighted, panicked inner reaction when he realizes the woman stuck in the ATM lobby with him is supermodel Jill Goodacre. His internal monologue throughout the blackout is one of the episode\'s greatest comic devices — we hear exactly what he\'s thinking, which makes every awkward mistake funnier.',
+      context_ko: '찬들러가 ATM 로비에 함께 갇힌 여성이 슈퍼모델 질 굿에이커임을 깨달았을 때의 기쁘고 당황한 내면 반응입니다. 정전 내내 이어지는 그의 내면 독백은 에피소드 최고의 코미디 장치 중 하나입니다. 그가 무슨 생각을 하는지 정확히 들을 수 있어서 어색한 실수 하나하나가 더욱 웃깁니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X2'
+    },
+    {
+      phrase: 'Passion is way overrated.',
+      partOfSpeech: 'expression',
+      meaning: '"Overrated" means something is considered better or more important than it actually is — it has been given too much praise or credit. "Way overrated" uses "way" as an intensifier meaning "very much" or "completely." Ross says this while clearly trying to convince himself as much as anyone else.',
+      meaning_ko: '"Overrated"는 무언가가 실제보다 더 좋거나 중요하게 여겨진다는 뜻으로, 너무 많은 칭찬이나 공을 받았다는 것입니다. "Way overrated"에서 "way"는 "매우" 또는 "완전히"라는 의미의 강조어로 쓰입니다. 로스는 이 말을 하면서 명백히 다른 사람들만큼이나 자기 자신을 설득하려 하고 있습니다.',
+      example: 'A: "Everyone says New Year\'s Eve is magical." B: "Passion is way overrated. It\'s just another night."',
+      example_ko: 'A: "다들 새해 전날 밤이 마법 같다고 하던데." B: "설렘 같은 거 완전 과대평가야. 그냥 여느 밤이랑 다를 게 없어."',
+      context: 'The group is talking about passion in relationships after Rachel mentions that Ross and Carol once had to be stopped mid-ride at Disneyland. Ross — who is sitting next to Rachel and desperately wants her — tries to downplay passion as a relationship requirement. Nobody buys it for a second.',
+      context_ko: '레이철이 로스와 캐롤이 디즈니랜드에서 놀이기구를 타다 중간에 제지당한 이야기를 꺼낸 후, 친구들이 관계에서의 설렘에 대해 이야기하는 장면. 레이철 옆에 앉아 그녀를 간절히 원하는 로스는 설렘이 관계의 필수 조건이 아니라고 애써 깎아내리려 합니다. 아무도 한 순간도 믿지 않습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X3'
+    },
+    {
+      phrase: 'Eventually, it kind of burns out.',
+      partOfSpeech: 'expression',
+      meaning: '"Burns out" means to gradually fade, diminish, or extinguish — like a flame that runs out of fuel. When applied to a relationship or emotion, it means the intense feeling slowly fades away over time. It\'s a very natural metaphor: the fire of passion burns hot at first, but can\'t burn forever.',
+      meaning_ko: '"Burns out"는 서서히 흐릿해지거나 감소하거나 사그라든다는 뜻으로, 연료가 다 떨어진 불꽃처럼 꺼지는 것입니다. 관계나 감정에 적용할 때는 강렬한 감정이 시간이 지나면서 서서히 희미해진다는 의미입니다. 매우 자연스러운 비유입니다: 열정의 불꽃은 처음에 뜨겁게 타오르지만 영원히 탈 수는 없습니다.',
+      example: 'A: "We were so crazy about each other in the beginning." B: "Eventually it kind of burns out, right? But if you\'re lucky, something better takes its place."',
+      example_ko: 'A: "처음엔 서로에게 완전히 미쳐있었는데." B: "결국엔 어느 정도 식잖아. 근데 운이 좋으면 더 좋은 게 그 자리를 채워줘."',
+      context: 'Ross continues his half-hearted argument against passion, saying it burns out and what you\'re left with is trust, security — and then he adds the punchline: "In my ex-wife\'s case, lesbianism." The self-deprecating twist completely undercuts his point and gets the biggest laugh of the scene.',
+      context_ko: '로스가 설렘에 반대하는 억지 주장을 이어가며, 결국 식고 남는 것은 신뢰와 안정감이라고 말하다가 결정타를 날립니다: "내 전 아내의 경우엔 레즈비어니즘이었지만." 이 자기 비하적인 반전이 그의 주장을 완전히 무너뜨리며 장면의 가장 큰 웃음을 끌어냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X4'
+    },
+    {
+      phrase: 'You\'re in the Friend Zone.',
+      partOfSpeech: 'expression',
+      meaning: 'The "Friend Zone" is a popular concept describing a situation where one person in a friendship wants a romantic relationship but the other sees them only as a friend. Being "in the Friend Zone" means you\'ve been categorized as just a friend — and getting out of it is notoriously difficult. This episode is actually credited with coining the term.',
+      meaning_ko: '"Friend Zone(프렌드 존)"은 우정 관계에서 한 사람은 연애 관계를 원하지만 상대방은 그저 친구로만 보는 상황을 설명하는 인기 있는 개념입니다. "Friend Zone에 있다"는 것은 그저 친구로 분류됐다는 것이며, 거기서 벗어나기가 악명 높을 만큼 어렵습니다. 이 에피소드는 실제로 이 용어를 처음 만들어낸 것으로 알려져 있습니다.',
+      example: 'A: "I think she just sees me as a good friend." B: "You\'re in the Friend Zone, buddy. You need to make a move before it\'s too late."',
+      example_ko: 'A: "그 사람이 나를 그냥 좋은 친구로 보는 것 같아." B: "프렌드 존이야, 친구. 너무 늦기 전에 뭔가 행동을 해야 해."',
+      context: 'Joey delivers this iconic line to Ross, warning him that because he hasn\'t told Rachel his feelings, he\'s now permanently categorized as just a friend. Ross denies it. Joey goes further: "No, Ross. You\'re the mayor of the Zone." The scene is widely credited with introducing the term "Friend Zone" into popular culture.',
+      context_ko: '조이가 로스에게 이 상징적인 대사를 전달하며, 레이철에게 감정을 고백하지 않았기 때문에 이제 그냥 친구로 영구히 분류됐다고 경고하는 장면. 로스는 부정합니다. 조이는 한 발 더 나아갑니다: "아니, 로스. 너는 그 존의 시장이야." 이 장면은 "Friend Zone"이라는 용어를 대중문화에 도입한 것으로 널리 알려져 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X5'
+    },
+    {
+      phrase: 'I\'m laying the groundwork.',
+      partOfSpeech: 'expression',
+      meaning: '"Lay the groundwork" means to do the necessary preparation and foundation work before making a bigger move — to set things up carefully before taking direct action. In construction, groundwork is the base on which you build everything else. Here, Ross uses it to justify why he hasn\'t told Rachel his feelings yet.',
+      meaning_ko: '"Lay the groundwork"는 더 큰 행동을 취하기 전에 필요한 준비와 기초 작업을 한다는 뜻으로, 직접적인 행동을 취하기 전에 신중하게 준비하는 것입니다. 건축에서 "groundwork(기초 작업)"는 모든 것을 그 위에 세우는 토대입니다. 여기서 로스는 아직 레이철에게 감정을 고백하지 않은 것을 정당화하기 위해 이 표현을 씁니다.',
+      example: 'A: "Why haven\'t you asked for the promotion yet?" B: "I\'m laying the groundwork first. Building trust with the manager."',
+      example_ko: 'A: "왜 아직 승진 요청을 안 했어?" B: "먼저 기초를 닦고 있어. 매니저와 신뢰를 쌓는 중이야."',
+      context: 'Ross defends himself to Joey, insisting he hasn\'t lost Rachel to the Friend Zone — he\'s just being strategic. "I\'m laying the groundwork. Every day I get a little bit closer to, uh..." Joey finishes his sentence: "Priesthood." The deadpan punchline perfectly captures how unconvincing Ross\'s strategy sounds.',
+      context_ko: '로스가 조이에게 자신을 변호하며, 레이철을 프렌드 존에 빼앗긴 게 아니라 그냥 전략적으로 행동하는 중이라고 우기는 장면. "기초를 닦고 있어. 매일 조금씩 가까워지고 있어, 어..." 조이가 문장을 완성합니다: "사제직이요." 이 무표정한 펀치라인은 로스의 전략이 얼마나 설득력이 없는지를 완벽하게 포착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X6'
+    },
+    {
+      phrase: 'Mental note:',
+      partOfSpeech: 'expression',
+      meaning: 'A "mental note" is a reminder you make in your own head — something you decide to remember without writing it down. The phrase "mental note:" is used to introduce a decision or lesson you\'re committing to memory right now. It is often used humorously, especially after making a mistake.',
+      meaning_ko: '"Mental note(마음속 메모)"는 자신의 머릿속으로 만드는 알림으로, 적지 않고 기억하기로 결심하는 것입니다. "Mental note:"라는 표현은 지금 바로 기억에 새기기로 한 결정이나 교훈을 소개할 때 씁니다. 특히 실수를 한 후에 유머러스하게 자주 쓰입니다.',
+      example: 'A: "I forgot my umbrella again and got soaked." B: "Mental note: check the weather app before leaving the house."',
+      example_ko: 'A: "또 우산 잊고 나왔다가 흠뻑 젖었어." B: "마음속 메모: 집 나서기 전에 날씨 앱 확인하기."',
+      context: 'After Chandler refuses the gum Jill Goodacre offers him — she asked if he wanted sugarless, he said no thanks because it wasn\'t sugarless — his internal voice delivers this perfect lesson: "Mental note: If Jill Goodacre offers you gum, you take it. If she offers you mangled animal carcass, you take it." His self-loathing inner monologue is the comedic heart of the episode.',
+      context_ko: '질 굿에이커가 건넨 껌을 거절한 후 — 그녀가 무설탕이냐고 물었는데 무설탕이 아니라 사양한다고 했습니다 — 찬들러의 내면 목소리가 이 완벽한 교훈을 전달하는 장면: "마음속 메모: 질 굿에이커가 껌을 건네면 받아. 뭉개진 동물 사체를 건네도 받아." 자기혐오적인 내면 독백이 에피소드 코미디의 핵심입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X7'
+    },
+    {
+      phrase: 'Gum would be perfection.',
+      partOfSpeech: 'expression',
+      meaning: 'A hilariously overstated way of saying "yes, gum sounds good." Instead of the natural, casual responses — "Gum would be nice" or "I\'ll have a stick" — Chandler says "perfection," elevating a tiny thing to an absurd degree. The gap between what he meant to say and what came out is the joke. It\'s a perfect example of saying too much when nervous.',
+      meaning_ko: '"네, 껌이 좋겠네요"를 말하는 터무니없이 과장된 방식입니다. 자연스럽고 캐주얼한 반응 대신 — "껌이 좋겠네" 또는 "한 조각 주세요" — 찬들러는 "완벽함"이라고 해서 아주 사소한 것을 터무니없는 수준으로 끌어올립니다. 말하려던 것과 실제로 나온 것 사이의 간격이 바로 웃음 포인트입니다. 긴장할 때 너무 많이 말해버리는 것의 완벽한 예입니다.',
+      example: 'A: "Would you like some coffee?" B: "Coffee would be perfection." A: "...I\'ll just get you a cup."',
+      example_ko: 'A: "커피 드실래요?" B: "커피면 완벽하겠죠." A: "...그냥 한 잔 드릴게요."',
+      context: 'Earlier Chandler refused Jill\'s gum offer and immediately regretted it. When she offers again, he overcompensates so badly: "On second thought, gum would be perfection." His inner voice then tortures him: "Could\'ve said \'gum would be nice.\' I\'ll have a stick. But, no. For me, gum is perfection. I loathe myself."',
+      context_ko: '앞서 찬들러가 질의 껌 제안을 거절하고 즉시 후회한 후, 그녀가 다시 제안하자 너무 지나치게 과잉 보상하는 장면: "다시 생각해보니, 껌이면 완벽하겠죠." 그의 내면 목소리가 고문합니다: "\'껌이 좋겠다\'고 할 수 있었어. 한 조각 줘도 돼. 근데 아니야. 나한텐 껌이 완벽함이야. 나 자신이 혐오스러워."',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X8'
+    },
+    {
+      phrase: 'I\'m always the last to know everything.',
+      partOfSpeech: 'expression',
+      meaning: 'A complaint about being consistently left out of information — always finding out about things after everyone else already knows. "The last to know" implies being excluded or overlooked, whether intentionally or accidentally. It carries a mix of frustration and self-pity.',
+      meaning_ko: '항상 정보에서 소외되는 것에 대한 불평 — 다른 모든 사람이 이미 알고 난 후에 항상 뒤늦게 알게 된다는 것입니다. "The last to know"는 의도적이든 우연이든 제외되거나 간과된다는 것을 내포합니다. 좌절과 자기 연민이 뒤섞인 표현입니다.',
+      example: 'A: "Did you hear they\'re moving to a new office?" B: "No! I\'m always the last to know everything around here."',
+      example_ko: 'A: "새 사무실로 이사한다는 거 들었어?" B: "아니! 나는 항상 여기서 모든 걸 제일 늦게 알아."',
+      context: 'Phoebe discovers that everyone knew about Ross\'s surprise party for Monica, and she was the only one not told. She launches into a list of things she\'s always been last to know — Chandler getting bitten by a peacock, Monica having a crush on Joey — ending with the accidental revelation that Monica had a crush on Joey, which Joey himself didn\'t know.',
+      context_ko: '피비가 모니카의 서프라이즈 파티를 모두가 알고 있었는데 자신만 몰랐다는 것을 알게 되는 장면. 그녀는 항상 제일 늦게 알았던 것들의 목록을 늘어놓기 시작합니다 — 찬들러가 공작에게 물린 일, 모니카가 조이에게 반했던 일 — 우연히 모니카가 조이를 좋아했다는 사실을 폭로하며 끝나는데, 이것은 조이 자신도 몰랐던 것입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X9'
+    },
+    {
+      phrase: 'We\'re kind of a thing.',
+      partOfSpeech: 'expression',
+      meaning: '"A thing" in this context means a romantic relationship or connection — something more than friendship but perhaps not yet fully defined. "Kind of" softens it, suggesting it\'s not official or completely certain. Using "thing" to describe a relationship is deliberately vague and casual, often used when the speaker is nervous or the situation is complicated.',
+      meaning_ko: '이 맥락에서 "a thing"은 우정 이상이지만 아직 완전히 정의되지 않은 낭만적 관계나 연결을 뜻합니다. "Kind of"는 이를 부드럽게 해, 공식적이지 않거나 완전히 확실하지 않음을 암시합니다. 관계를 "thing"으로 표현하는 것은 의도적으로 모호하고 캐주얼하며, 화자가 긴장했거나 상황이 복잡할 때 자주 씁니다.',
+      example: 'A: "Are you two together?" B: "We\'re kind of a thing. It\'s still new."',
+      example_ko: 'A: "너희 둘 사귀는 거야?" B: "좀 그런 사이야. 아직 새로워."',
+      context: 'In perhaps the episode\'s funniest awkward moment, Ross tries to warn Paolo away from Rachel by claiming they are together. "Rachel and I are... we\'re kind of a thing." Paolo asks: "You have the sex?" Ross: "No." The language barrier and Ross\'s inability to lie clearly makes the whole scene collapse hilariously.',
+      context_ko: '에피소드에서 아마도 가장 웃긴 어색한 순간으로, 로스가 파올로에게 자신과 레이철이 사귀는 사이라고 주장하며 그를 쫓아내려 하는 장면. "레이철이랑 나는... 우리 좀 그런 사이야." 파올로가 묻습니다: "섹스 해?" 로스: "아니요." 언어 장벽과 로스의 명백한 거짓말 능력 부재가 장면 전체를 처절하게 웃긴 상황으로 만들어버립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X10'
+    },
+    {
+      phrase: 'Do you know the word crap-weasel?',
+      partOfSpeech: 'expression',
+      meaning: 'A "crap-weasel" is a made-up insult — a creative combination of two negative words to describe someone who is sneaky, underhanded, or generally awful. Ross uses it because Paolo barely speaks English, so he can insult him directly to his face without Paolo understanding. It\'s petty, passive-aggressive, and very funny.',
+      meaning_ko: '"Crap-weasel"은 만들어낸 욕설로, 교활하고 비열하거나 전반적으로 최악인 사람을 묘사하기 위해 두 개의 부정적인 단어를 창의적으로 결합한 것입니다. 로스가 이 표현을 쓰는 것은 파올로가 영어를 거의 못하기 때문에, 그가 이해하지 못하는 상태에서 직접 그의 면전에 대고 욕할 수 있기 때문입니다. 소심하고 수동 공격적이며 매우 웃깁니다.',
+      example: 'A: "Did you actually just insult him to his face in a language he doesn\'t understand?" B: "Technically, yes. Do you know the word crap-weasel?"',
+      example_ko: 'A: "방금 진짜로 그 사람이 모르는 언어로 면전에 대고 욕한 거야?" B: "기술적으로, 그렇지. crap-weasel이라는 단어 알아?"',
+      context: 'After his failed attempt to claim Rachel as his own, Ross discovers that Paolo actually does understand a little English. Ross takes his shot: "Do you know the word crap-weasel? No? That\'s funny, because you are a huge crap-weasel." It\'s Ross at his most petulantly hilarious.',
+      context_ko: '레이철을 자신의 사람으로 주장하려는 시도가 실패한 후, 로스가 파올로가 실제로 영어를 조금 이해한다는 것을 알게 되는 장면. 로스가 기회를 잡습니다: "crap-weasel이라는 단어 알아요? 아니요? 웃기네, 왜냐면 당신은 엄청난 crap-weasel이거든요." 가장 삐딱하게 웃긴 로스의 모습입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X11'
+    },
+    {
+      phrase: 'Those three seconds were more exciting than three weeks in Bermuda with Barry.',
+      partOfSpeech: 'expression',
+      meaning: 'A comparison used to emphasize how powerfully a small moment can surpass a much longer experience. "Three seconds vs. three weeks" is a deliberate contrast of time — the tiny amount of time being described as more meaningful. It is a vivid way of saying someone made a huge instant impression.',
+      meaning_ko: '짧은 순간이 훨씬 긴 경험을 얼마나 강력하게 능가할 수 있는지를 강조하기 위해 사용하는 비교입니다. "3초 대 3주"는 시간의 의도적인 대비로, 아주 짧은 시간이 더 의미 있는 것으로 묘사됩니다. 누군가가 즉각적으로 엄청난 인상을 남겼다는 것을 생생하게 표현하는 방식입니다.',
+      example: 'A: "You just met him." B: "I know, but those three seconds of talking to him were more exciting than my entire last relationship."',
+      example_ko: 'A: "방금 만난 거잖아." B: "알아, 근데 그 사람이랑 3초 대화하는 게 이전 연애 전체보다 더 설렜어."',
+      context: 'Rachel gushes to the girls about Paolo — the charming Italian she just met during the blackout. She knows it\'s superficial ("I know it\'s totally superficial, and we have nothing in common, and we don\'t even speak the same language") — but she\'s completely swept away. This line about Bermuda vs. three seconds beautifully captures the irrational power of attraction.',
+      context_ko: '레이철이 정전 중에 만난 매력적인 이탈리아인 파올로에 대해 여자 친구들에게 흥분해서 이야기하는 장면. 그녀는 그것이 피상적임을 알고 있습니다("완전 피상적인 거 알아, 공통점도 없고, 같은 언어도 못 하잖아") — 하지만 완전히 휩쓸려 있습니다. 버뮤다 대 3초에 관한 이 대사는 매력의 불합리한 힘을 아름답게 포착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X12'
+    },
+    {
+      phrase: 'This is so un-me.',
+      partOfSpeech: 'expression',
+      meaning: '"Un-me" is an informal, playful construction meaning "not like me" or "not typical of who I am." Prefixing "un-" to a personal pronoun to create a descriptive phrase is creative, casual English. It expresses surprise at one\'s own behaviour — when you catch yourself doing something out of character.',
+      meaning_ko: '"Un-me"는 "나답지 않다" 또는 "내가 보통 하는 행동이 아니다"를 의미하는 비격식적이고 장난스러운 표현입니다. 인칭대명사에 "un-"을 붙여 묘사적인 구를 만드는 것은 창의적인 캐주얼 영어입니다. 자신의 행동에 스스로 놀라는 것을 표현합니다 — 자신답지 않은 행동을 하고 있는 자신을 발견했을 때 씁니다.',
+      example: 'A: "I just danced on a table at the office party." B: "That is so un-you. Are you okay?"',
+      example_ko: 'A: "방금 회사 파티에서 테이블 위에서 춤 췄어." B: "완전 너답지 않다. 괜찮아?"',
+      context: 'Rachel exclaims "This is so un-me!" while admitting to the girls that she is completely infatuated with Paolo — a man she just met, can barely communicate with, and has almost nothing in common with. The fact that she loves it anyway is what makes the moment both funny and charming.',
+      context_ko: '레이철이 방금 만난, 거의 소통이 안 되고 공통점도 거의 없는 파올로에게 완전히 빠졌다고 여자 친구들에게 인정하면서 "완전 나답지 않아!"라고 외치는 장면. 그럼에도 불구하고 그것을 즐기고 있다는 사실이 이 순간을 재밌으면서도 매력적으로 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X13'
+    },
+    {
+      phrase: 'Thanks for saving my life.',
+      partOfSpeech: 'expression',
+      meaning: 'Literally, to "save someone\'s life" means to prevent them from dying. But in everyday English, it\'s very commonly used hyperbolically — to thank someone for helping you out of a really bad or embarrassing situation, even if there was no actual danger. The gap between the dramatic phrase and the small situation it describes is often the source of humor.',
+      meaning_ko: '문자 그대로 "save someone\'s life"는 그 사람이 죽지 않도록 막는다는 뜻입니다. 하지만 일상 영어에서는 실제 위험이 없더라도 정말 나쁘거나 당황스러운 상황에서 도움을 받았을 때 감사를 표하기 위해 과장법으로 매우 흔하게 씁니다. 이 극적인 표현과 그것이 묘사하는 작은 상황 사이의 간격이 종종 유머의 원천이 됩니다.',
+      example: 'A: "You remembered I\'m allergic to shellfish before I ordered." B: "Of course." A: "You literally saved my life."',
+      example_ko: 'A: "내가 조개류 알레르기인 걸 주문하기 전에 기억해줬네." B: "물론이지." A: "진짜로 내 목숨을 구해줬어."',
+      context: 'At the end of the blackout, Chandler thanks Jill Goodacre for two things: letting him use her phone, and saving his life — she performed the Heimlich manoeuvre when he choked on her gum. He calls the whole experience "a great blackout." It\'s a sweet, warm ending to his most extraordinary evening.',
+      context_ko: '정전이 끝날 때 찬들러가 질 굿에이커에게 두 가지에 감사하는 장면: 전화기를 쓰게 해준 것과 목숨을 구해준 것 — 그가 그녀의 껌에 목이 막혔을 때 하임리히법을 시행해줬습니다. 그는 이 경험 전체를 "훌륭한 정전"이라고 부릅니다. 그의 가장 특별한 저녁을 마무리하는 따뜻하고 달콤한 엔딩입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X14'
+    },
+    {
+      phrase: 'I had a great blackout.',
+      partOfSpeech: 'expression',
+      meaning: 'A playful twist on the common phrase "I had a great time" — by substituting the specific event ("blackout") for the generic word "time." It is charming because it treats an inconvenient city crisis as if it were a party or special occasion. The warmth with which Chandler says it to Jill tells you everything about how the evening went for him.',
+      meaning_ko: '흔한 표현 "I had a great time(정말 즐거웠어)"을 장난스럽게 비틀어, 일반적인 단어 "time" 대신 특정 사건("blackout")을 대입한 것입니다. 도시 전체의 불편한 위기를 마치 파티나 특별한 행사처럼 취급하기 때문에 매력적입니다. 찬들러가 질에게 이 말을 하는 따뜻한 어조가 그 저녁이 그에게 어땠는지를 모든 것을 말해줍니다.',
+      example: 'A: "We got snowed in at the airport for six hours." B: "Honestly? I had a great snowstorm. Best conversation of my trip."',
+      example_ko: 'A: "공항에서 6시간 동안 눈에 갇혔어." B: "솔직히? 최고의 눈폭풍이었어. 여행 중 최고의 대화를 나눴거든."',
+      context: 'The episode\'s final line in the ATM vestibule. As the power comes back on and they part ways, Chandler smiles and tells Jill: "I had a great blackout." It\'s the perfect button on a perfectly awkward, perfectly wonderful episode — Chandler managing to make the most of an impossible situation in his own uniquely fumbling way.',
+      context_ko: 'ATM 로비에서의 에피소드 마지막 대사. 전기가 돌아오고 두 사람이 헤어지면서, 찬들러가 웃으며 질에게 말합니다: "훌륭한 정전이었어요." 완벽하게 어색하고 완벽하게 멋진 에피소드의 완벽한 마무리입니다 — 찬들러가 불가능한 상황을 자신만의 독특하게 서툰 방식으로 최대한 활용하는 것.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E7X15'
+    }
   ]
   };
 
@@ -107,6 +256,7 @@
   function goHome() { window.location.href = '../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -123,12 +273,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
