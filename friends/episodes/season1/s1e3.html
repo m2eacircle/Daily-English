@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends S1E3 &mdash; Daily English</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
+    .expr-card:hover { transform: translateX(3px); }
+    .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
+    .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
+    .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
+    .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
+    .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
+    .btn-youtube.pending { background: var(--card2); color: var(--muted); border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
+    .placeholder-slot { opacity: 0.45; border-style: dashed; }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="btn-topbar-home" onclick="goHome()" title="Home">&#127968;</button>
+    <div class="topbar-logo"><span class="logo-accent">Daily</span> <span class="logo-day">English</span></div>
+  </div>
+  <div class="topbar-right">
+    <a class="m2ea-link" href="https://www.m2eacircle.com/entertainment/index.html" target="_blank" rel="noopener">
+      <span class="m2ea-icon">&#127760;</span><span class="label">m2ea Circle</span>
+    </a>
+  </div>
+</header>
+<main>
+  <div class="page-wrap">
+    <nav class="nav-row">
+      <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
+      <button class="btn-nav" onclick="window.location.href='../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
+    </nav>
+    <nav class="breadcrumb">
+      <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
+      <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
+      <a href="../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
+      <span class="current">S1E3</span>
+    </nav>
+    <div class="page-header">
+      <div class="page-header-thumb">
+        <img src="../images/s1e3.jpg" alt="S1E3"
+          onerror="this.src='../images/s1e3.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+      </div>
+      <div class="page-header-info">
+        <div class="page-header-title">Friends &mdash; S1E3: The One with the Thumb</div>
+        <div class="page-header-meta">Monica's new boyfriend is adored by everyone — except Monica herself.</div>
+        <div class="page-header-actions">
+          <button class="btn-bm" data-bm-id="episode-friends-s1e3"
+            onclick="toggleBookmark('episode','episode-friends-s1e3','📋 Friends S1E3','friends/episodes/season1/s1e3.html')">
+            <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bookmark-bar" id="bookmarkBar">
+      <div class="bookmark-bar-head"><span class="bm-icon">&#128278;</span><span data-i18n="bm.bar.title">Your Bookmarks</span></div>
+      <div class="bookmark-chips" id="bookmarkChips"></div>
+    </div>
+    <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":1,"e":3}'>&#128172; 15 English Expressions &mdash; Season 1 Episode 3</div>
+    <div class="expr-list" id="exprList"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-copy" data-i18n="footer.copy">&copy; 2025 m2ea Labs. All rights reserved.</div>
+  <div><button class="footer-terms" data-i18n="footer.terms" onclick="showTermsModal()">Terms of Use</button></div>
+</footer>
+<div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
+<script src="../../js/i18n.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+  var EP_DATA = {
+    title: 'The One with the Thumb',
+    description: 'Monica\'s new boyfriend is adored by everyone — except Monica herself.',
+    expressions: [
+    {
+      phrase: 'Loosely translated',
+      partOfSpeech: 'expression',
+      meaning: 'Used to introduce an informal or approximate interpretation of what something really means — especially when the literal words hide the true message. Very common when explaining hidden social meanings or unspoken intentions.',
+      meaning_ko: '어떤 말의 진짜 의미를 비공식적으로 또는 대략적으로 풀어 설명할 때 쓰는 표현입니다. 특히 겉으로 드러난 말 뒤에 숨은 진짜 의도나 사회적 의미를 설명할 때 자주 사용합니다.',
+      example: 'A: "He said he\'ll think about it." B: "Loosely translated, that means no."',
+      example_ko: 'A: "그 사람이 생각해 보겠대." B: "대충 해석하면, 싫다는 거야."',
+      context: 'Chandler explains that when a date says "We should do this again," it\'s not a genuine invitation — it\'s actually a polite way of saying you\'ll never see each other again. This kicks off a hilarious conversation about hidden meanings in common dating phrases.',
+      context_ko: '찬들러가 데이트 상대가 "또 만나자"고 하면 진짜 다시 만날 의향이 있다는 게 아니라 정중하게 거절하는 말이라고 설명하는 장면. 흔한 데이트 표현들 뒤에 숨은 진짜 의미를 얘기하는 웃긴 대화로 이어집니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X1'
+    },
+    {
+      phrase: 'It\'s not you. It is you.',
+      partOfSpeech: 'expression',
+      meaning: '"It\'s not you, it\'s me" is a famous break-up line people use to avoid hurting someone\'s feelings, pretending the problem lies with themselves rather than the other person. Chandler\'s twist — "It is you" — exposes the lie humorously, revealing that the phrase is actually a polite way of saying the opposite.',
+      meaning_ko: '"It\'s not you, it\'s me(네 잘못이 아니야, 내 문제야)"는 상대방의 감정을 다치지 않게 하려고 자신에게 문제가 있는 척 책임을 돌리는 이별 멘트입니다. 찬들러가 "It is you(사실 네 잘못이야)"로 반전시키며 이 표현이 사실 정반대 의미를 공손하게 포장한 거짓말임을 재치 있게 폭로합니다.',
+      example: 'A: "He said \'It\'s not you, it\'s me.\'" B: "Oh, come on. Loosely translated? It is you."',
+      example_ko: 'A: "그 사람이 \'네 잘못이 아니야, 내 문제야\'라고 했어." B: "솔직히 말하면? 사실 네 잘못이라는 거잖아."',
+      context: 'Chandler is listing common phrases people use in dating that mean the complete opposite of what they say. This line gets a big laugh because everyone recognizes the famous break-up cliché.',
+      context_ko: '찬들러가 데이트할 때 사람들이 실제와 정반대 의미로 쓰는 표현들을 열거하는 장면. 누구나 알고 있는 유명한 이별 멘트를 정면으로 꼬집어 큰 웃음을 유발합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X2'
+    },
+    {
+      phrase: 'Cushion the blow',
+      partOfSpeech: 'idiom',
+      meaning: 'To soften or reduce the negative impact of bad news or a difficult situation. Just as a cushion absorbs physical shock, this expression means making something unpleasant easier to accept — often by being gentle, indirect, or adding something positive.',
+      meaning_ko: '나쁜 소식이나 힘든 상황의 충격을 부드럽게 완화하다는 뜻입니다. 쿠션이 물리적 충격을 흡수하듯, 불쾌한 것을 받아들이기 쉽게 만드는 것을 말합니다. 보통 부드럽고 간접적인 방식이나 긍정적인 요소를 더해 표현합니다.',
+      example: 'A: "How do I tell my friend she didn\'t get the job?" B: "Start with something positive to cushion the blow."',
+      example_ko: 'A: "친구한테 취업이 안 됐다는 걸 어떻게 말하지?" B: "충격을 줄이려면 먼저 긍정적인 말부터 꺼내봐."',
+      context: 'Chandler explains that dating phrases like "We should do this again" exist to soften a rejection. They\'re not honest, but they make rejection sting less — the same way parents soften bad news to their kids.',
+      context_ko: '찬들러가 "또 만나자" 같은 데이트 표현들이 거절의 충격을 부드럽게 완화하기 위해 존재한다고 설명하는 장면. 솔직하지는 않지만 거절을 덜 아프게 만드는 방법으로, 부모가 아이에게 나쁜 소식을 부드럽게 전하는 것과 같은 이치입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X3'
+    },
+    {
+      phrase: 'Think of it as the thing that has been missing from your hand.',
+      partOfSpeech: 'expression',
+      meaning: 'Joey\'s creative way of coaching Chandler to hold a cigarette naturally for an acting role — by imagining it as something that completes him, not as the dangerous object it is. It\'s a technique of reframing: instead of seeing something negatively, find a way to feel it belongs.',
+      meaning_ko: '조이가 찬들러에게 연기 역할을 위해 담배를 자연스럽게 쥐도록 유도하는 창의적인 코칭 방식입니다. 담배를 위험한 물건으로 보지 말고, 자신을 완성시켜 주는 무언가로 상상하라는 것입니다. 부정적인 시각 대신 "원래 내 것인 것처럼" 느끼게 만드는 재구성(reframing) 기법입니다.',
+      example: 'A: "I can\'t hold this microphone naturally. I feel awkward." B: "Don\'t think of it as a microphone. Think of it as the thing that has been missing from your hand."',
+      example_ko: 'A: "마이크를 자연스럽게 잡질 못하겠어. 어색해." B: "마이크라고 생각하지 마. 네 손에서 항상 빠져 있던 바로 그 물건이라고 생각해봐."',
+      context: 'Joey is helping Chandler prepare for an acting audition where the character smokes. Chandler hasn\'t smoked in three years, and Joey gives him this poetic, slightly absurd pep talk to make him feel comfortable holding a cigarette.',
+      context_ko: '조이가 흡연 캐릭터를 연기하는 오디션을 준비하는 찬들러를 돕는 장면. 찬들러는 3년간 금연 중이었고, 조이는 담배를 편하게 들 수 있도록 이 시적이고 약간 황당한 격려를 해줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X4'
+    },
+    {
+      phrase: 'You\'ve been so good for three years.',
+      partOfSpeech: 'expression',
+      meaning: '"Been good" in this context means successfully avoiding a bad habit or sticking to a commitment over a long period. It\'s used to praise someone\'s self-control and to emphasize how much they would be giving up by going back to the old habit.',
+      meaning_ko: '이 문맥에서 "been good"은 나쁜 습관을 오랫동안 성공적으로 피해왔거나 어떤 다짐을 잘 지켜왔다는 뜻입니다. 상대방의 자제력을 칭찬하면서 동시에 지금 포기하면 얼마나 아까운지 강조하는 표현입니다.',
+      example: 'A: "I\'m thinking about quitting the gym." B: "But you\'ve been so good for six months! Don\'t give up now."',
+      example_ko: 'A: "헬스장 그만 다닐까 싶어." B: "6개월 동안 그렇게 잘 다녔잖아! 지금 포기하면 안 되지."',
+      context: 'Monica is shocked to find Chandler smoking again after three smoke-free years. She appeals to his pride in his progress to convince him to stop — but Chandler, in full denial mode, says "So this time I won\'t quit."',
+      context_ko: '모니카가 3년간 금연하던 찬들러가 다시 담배를 피우는 것을 발견하고 충격을 받는 장면. 그의 노력에 자부심을 느끼게 해서 멈추게 하려 하지만, 찬들러는 완전한 부정 모드로 "그러면 이번엔 끊지 않으면 되지"라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X5'
+    },
+    {
+      phrase: 'If you spent it, it would be like shopping.',
+      partOfSpeech: 'expression',
+      meaning: 'Joey\'s wonderfully illogical counter-argument to Phoebe\'s concern about keeping money that isn\'t hers. He reframes the act of spending the unearned money as simply "shopping" — something normal and fun — completely sidestepping the ethical problem. It\'s funny because the logic sounds reasonable but is completely wrong.',
+      meaning_ko: '자기 돈이 아닌 돈을 갖는 것에 대한 피비의 걱정에 조이가 내놓는 황당하지만 기막힌 반론입니다. 그 돈을 쓰는 행위를 그냥 "쇼핑"이라는 평범하고 즐거운 일로 재정의해서 윤리적 문제를 완전히 비껴갑니다. 논리가 그럴듯하게 들리지만 완전히 틀렸다는 점이 웃음 포인트입니다.',
+      example: 'A: "I shouldn\'t use this gift card, it was meant for my sister." B: "But if you used it, it would just be like shopping."',
+      example_ko: 'A: "이 상품권은 언니 거라 쓰면 안 되는데." B: "근데 그걸 쓰면 그냥 쇼핑하는 거잖아."',
+      context: 'The bank accidentally put $500 extra in Phoebe\'s account. Phoebe insists she must return it because it\'s not hers. Joey tries to convince her to keep it with this hilariously flawed reasoning.',
+      context_ko: '은행이 실수로 피비 계좌에 500달러를 더 입금한 상황. 피비는 자기 돈이 아니니 반드시 돌려줘야 한다고 고집하고, 조이는 이 황당하게 틀린 논리로 그냥 쓰라고 설득합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X6'
+    },
+    {
+      phrase: 'It\'d be like this giant karmic debt.',
+      partOfSpeech: 'expression',
+      meaning: '"Karma" is the idea that good actions bring good results and bad actions bring bad results. A "karmic debt" means a moral obligation you owe because of something wrong you\'ve done — something the universe will eventually make you pay back. Phoebe uses this concept seriously here to explain why she can\'t keep the money.',
+      meaning_ko: '"카르마(Karma)"는 좋은 행동은 좋은 결과를, 나쁜 행동은 나쁜 결과를 가져온다는 개념입니다. "Karmic debt(카르마의 빚)"는 자신이 잘못한 일로 인해 생긴 도덕적 채무로, 결국 우주가 청구서를 보낸다는 의미입니다. 피비는 이 개념을 진지하게 사용해 그 돈을 가질 수 없는 이유를 설명합니다.',
+      example: 'A: "I didn\'t say anything when they gave me too much change." B: "That\'s a karmic debt. It\'ll come back around."',
+      example_ko: 'A: "거슬러 준 돈이 많았는데 말 안 했어." B: "그건 카르마의 빚이야. 언젠가 돌아올 거야."',
+      context: 'Phoebe imagines herself wearing shoes bought with the accidentally deposited money, hearing "Not mine. Not mine." with every step. This vivid, personal reasoning about karmic consequences shows her unique and deeply sincere moral worldview.',
+      context_ko: '피비가 잘못 입금된 돈으로 산 신발을 신고 걷는 상상을 하면서 발걸음마다 "내 것이 아니야. 내 것이 아니야."가 들린다고 말하는 장면. 카르마에 대한 이 생생하고 개인적인 논리는 그녀의 독특하고 깊이 진지한 도덕관을 잘 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X7'
+    },
+    {
+      phrase: 'Let me do something.',
+      partOfSpeech: 'expression',
+      meaning: 'A phrase used when someone feels uncomfortable receiving a gift or favour without giving something in return. It expresses a strong desire to reciprocate — to restore balance in the relationship. It is often used when you feel the other person has been too generous.',
+      meaning_ko: '아무런 보답 없이 선물이나 호의를 받는 것이 불편할 때 쓰는 표현입니다. 보답하고 싶다는, 즉 관계의 균형을 되찾고 싶다는 강한 의지를 담고 있습니다. 상대방이 너무 관대하다고 느낄 때 자주 사용합니다.',
+      example: 'A: "You really didn\'t have to cover my lunch." B: "Please, let me do something. At least let me get dessert."',
+      example_ko: 'A: "정말 내 점심까지 내지 않아도 됐는데." B: "제발, 내가 뭔가 해줘야지. 최소한 디저트라도 내가 살게."',
+      context: 'Phoebe gives the extra $1,000 the bank compensated her with to a homeless woman she knows. The woman insists on giving Phoebe something back, saying "Let me do something." Phoebe tells her to just buy her a soda.',
+      context_ko: '피비가 은행이 보상으로 준 추가 1,000달러를 아는 노숙 여성에게 줘버리는 장면. 여성은 뭔가 보답해야겠다며 "Let me do something"이라고 고집하고, 피비는 그냥 음료수 하나 사달라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X8'
+    },
+    {
+      phrase: 'I don\'t know how I feel about him yet.',
+      partOfSpeech: 'expression',
+      meaning: 'Used when you are still in the process of forming your opinion or feelings about a person or situation. It signals that you need more time before you can give a clear answer — you haven\'t made up your mind yet.',
+      meaning_ko: '어떤 사람이나 상황에 대한 감정이나 의견을 아직 형성하는 중일 때 쓰는 표현입니다. 명확한 답을 내놓기 전에 시간이 더 필요하다는 신호로, 아직 마음을 정하지 못했다는 뜻입니다.',
+      example: 'A: "So, do you like your new manager?" B: "I don\'t know how I feel about him yet. It\'s only been a week."',
+      example_ko: 'A: "새 팀장 어때?" B: "아직 어떻게 생각해야 할지 모르겠어. 이제 일주일밖에 안 됐잖아."',
+      context: 'Monica\'s friends keep pressuring her to introduce Alan before she\'s ready. Monica asks them to give her time to figure out her own feelings first. The irony is that everyone else has already decided they love him — she\'s the only one still unsure.',
+      context_ko: '친구들이 모니카에게 준비도 되기 전에 앨런을 소개해 달라고 계속 압박하는 장면. 모니카는 자신의 감정을 먼저 파악할 시간을 달라고 부탁합니다. 반전은 다른 모두는 이미 앨런을 좋아한다고 결정한 상황에서 정작 모니카 혼자만 확신이 없다는 것입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X9'
+    },
+    {
+      phrase: 'Let\'s let the Alan-bashing begin.',
+      partOfSpeech: 'expression',
+      meaning: '"Bashing" means harshly criticizing or attacking someone, usually as a group. The phrase "let the [something]-bashing begin" is a humorous way of announcing that a round of criticism or complaining is about to start. It implies everyone is expected to take turns saying negative things.',
+      meaning_ko: '"Bashing"은 주로 집단적으로 누군가를 신랄하게 비판하거나 공격하는 것을 뜻합니다. "Let the [무언가]-bashing begin"은 비판이나 불평의 시간이 시작될 것임을 유머러스하게 선언하는 표현입니다. 모두가 돌아가며 부정적인 말을 할 것임을 암시합니다.',
+      example: 'A: "The meeting\'s over. Let the boss-bashing begin." B: "Ha! Where do we even start?"',
+      example_ko: 'A: "회의 끝났다. 이제 팀장 뒷담화 시작해볼까." B: "어디서부터 시작하지?"',
+      context: 'Monica calls her friends together after Alan\'s first visit, fully expecting them to tear him apart as they have with every boyfriend before. She sets the stage for the usual friend-jury verdict — but is completely blindsided when they all announce they love him.',
+      context_ko: '앨런의 첫 방문 후 모니카가 친구들을 모아 놓고 이전 남자친구들처럼 마구 비판할 것을 예상하는 장면. 친구들의 단체 심판을 각오하고 있었지만, 모두가 앨런을 사랑한다고 선언하자 완전히 당황합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X10'
+    },
+    {
+      phrase: 'He\'ll become the yardstick against which all future boyfriends will be measured.',
+      partOfSpeech: 'expression',
+      meaning: 'A "yardstick" is a standard of comparison — the measure you use to judge everything else. This expression means someone is so impressive that all future people or things will be evaluated by comparing them to this person. It is a very high compliment.',
+      meaning_ko: '"Yardstick"는 비교의 기준, 즉 다른 모든 것을 평가할 때 사용하는 척도를 뜻합니다. 이 표현은 어떤 사람이 너무 인상적이어서 앞으로 만나게 될 모든 사람이나 것들이 이 사람과 비교해서 평가될 것이라는 의미입니다. 매우 높은 칭찬의 표현입니다.',
+      example: 'A: "That trip to Japan was unreal." B: "I know. It\'s gonna be the yardstick against which all future trips will be measured."',
+      example_ko: 'A: "일본 여행 정말 믿기지 않을 정도로 좋았어." B: "그러게. 앞으로 모든 여행을 이 여행이랑 비교하게 될 것 같아."',
+      context: 'Ross delivers this line while the friends are gushing over Alan after meeting him. The whole group is convinced Monica has found someone extraordinary — and they are already worried no one will ever measure up to him in the future.',
+      context_ko: '친구들이 앨런을 만난 후 그에 대해 극찬을 늘어놓는 장면에서 로스가 이 말을 합니다. 모두가 모니카가 정말 특별한 사람을 찾았다고 확신하며, 앞으로 그 누구도 앨런에게 미치지 못할까봐 걱정하기 시작합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X11'
+    },
+    {
+      phrase: 'I don\'t feel the thing.',
+      partOfSpeech: 'expression',
+      meaning: '"Feel the thing" is a casual, vague way of saying you don\'t have romantic feelings — that special spark or emotional connection — with someone. "The thing" intentionally avoids naming the feeling directly, making it feel more natural and relatable in conversation.',
+      meaning_ko: '"Feel the thing"은 누군가에게 로맨틱한 감정, 즉 그 특별한 설렘이나 감정적 연결을 느끼지 못한다는 것을 캐주얼하고 모호하게 표현한 말입니다. "The thing"이 감정을 직접 명명하지 않아 대화에서 더 자연스럽고 공감가기 쉽게 느껴집니다.',
+      example: 'A: "He seems perfect on paper. Smart, funny, kind." B: "I know, but I just don\'t feel the thing."',
+      example_ko: 'A: "그 사람 조건은 완벽한 것 같은데. 똑똑하고, 재밌고, 다정하고." B: "알아, 근데 그냥 느낌이 없어."',
+      context: 'Monica finally admits to a stranger at a bar that despite Alan being wonderful and all her friends adoring him, she simply doesn\'t have romantic feelings for him. Everyone else feels "the thing" — she doesn\'t.',
+      context_ko: '모니카가 술집에서 만난 낯선 사람에게 앨런이 멋진 사람이고 친구들 모두가 그를 좋아하지만, 자신은 그냥 로맨틱한 감정이 없다고 드디어 털어놓는 장면. 다른 모두는 "그 느낌"을 받는데, 그녀만 그렇지 않습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X12'
+    },
+    {
+      phrase: 'There\'s really no easy way to say this.',
+      partOfSpeech: 'expression',
+      meaning: 'Said before delivering bad news or a difficult message to warn the listener that what\'s coming will be hard to hear. It\'s both a preparation for the other person and a way of acknowledging the speaker\'s own discomfort with the situation.',
+      meaning_ko: '나쁜 소식이나 어려운 말을 전하기 전에 듣는 사람에게 앞으로 나올 내용이 듣기 힘들 것임을 미리 알리는 표현입니다. 상대방을 심리적으로 준비시키는 동시에 말하는 사람 자신도 상황이 불편함을 인정하는 방식입니다.',
+      example: 'A: "There\'s really no easy way to say this, but your project didn\'t get approved." B: "Oh. I was afraid of that."',
+      example_ko: 'A: "이 말을 쉽게 하는 방법이 없는데, 네 프로젝트가 승인이 안 났어." B: "아. 그럴 것 같았어."',
+      context: 'Monica gathers all her friends to tell them she is breaking up with Alan — a man they have all completely fallen for. She knows this will devastate them, so she starts with this classic difficult-conversation opener.',
+      context_ko: '모니카가 친구들 모두가 완전히 빠져버린 앨런과 헤어지겠다고 선언하는 장면. 친구들이 크게 상처받을 것을 알기에 이 고전적인 어려운 대화 시작 문구로 운을 뗍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X13'
+    },
+    {
+      phrase: 'You let your guard down.',
+      partOfSpeech: 'idiom',
+      meaning: 'To "let your guard down" means to stop being emotionally defensive and allow yourself to become vulnerable or open to someone. It is often used in the context of romantic relationships or trust, and can describe the moment when someone finally allows themselves to care deeply.',
+      meaning_ko: '"Let your guard down"은 감정적으로 방어적인 태도를 내려놓고 스스로를 취약하게, 또는 누군가에게 열린 상태로 만들다는 의미입니다. 주로 연애 관계나 신뢰의 맥락에서 쓰이며, 마침내 진심으로 누군가를 마음에 들이는 순간을 묘사할 때 사용합니다.',
+      example: 'A: "I told myself I wasn\'t going to get attached." B: "But then you let your guard down?" A: "Yeah. Big mistake."',
+      example_ko: 'A: "정이 들지 말자고 스스로 다짐했었어." B: "근데 결국 마음을 열어버린 거야?" A: "응. 큰 실수였지."',
+      context: 'Chandler is being dramatic — almost heartbroken — after Monica announces the breakup. His line "You let your guard down. You start to really care about someone..." reveals how personally attached all the friends became to Alan, even though he wasn\'t their boyfriend.',
+      context_ko: '모니카가 이별을 선언하자 찬들러가 거의 실연당한 것처럼 극적으로 반응하는 장면. "마음을 열었잖아. 진심으로 누군가를 좋아하기 시작했는데..."라는 그의 대사는 친구들이 자신의 남자친구도 아닌 앨런에게 얼마나 깊이 정이 들었는지를 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X14'
+    },
+    {
+      phrase: 'I\'m a little relieved.',
+      partOfSpeech: 'expression',
+      meaning: '"Relieved" means feeling a sense of comfort or release after stress, worry, or pressure has been removed. "A little relieved" softens this — it doesn\'t mean the person is happy, but rather that some small weight has been lifted. It\'s often used when someone was nervous or uncomfortable about a situation that has now ended.',
+      meaning_ko: '"Relieved"는 스트레스나 걱정, 부담이 사라진 후 느끼는 편안함이나 해방감을 뜻합니다. "A little relieved"는 이를 부드럽게 표현한 것으로 기쁘다는 게 아니라 작은 짐이 내려진 느낌을 의미합니다. 불안하거나 불편했던 상황이 끝났을 때 자주 씁니다.',
+      example: 'A: "He texted and said he just wants to be friends." B: "Honestly? I\'m a little relieved. It was getting complicated."',
+      example_ko: 'A: "그 사람이 문자로 그냥 친구로 지내고 싶다고 했어." B: "솔직히? 좀 홀가분하다. 점점 복잡해지고 있었잖아."',
+      context: 'In the episode\'s final twist, when Monica breaks up with Alan, he reveals to her that he actually had a great time with her — but couldn\'t stand her friends. His relief at the breakup completely flips the episode\'s joke on its head.',
+      context_ko: '에피소드 마지막 반전으로, 모니카가 앨런과 헤어지자 앨런은 모니카와의 시간은 좋았지만 사실 그녀의 친구들을 전혀 못 참겠다고 털어놓습니다. 그가 이별에 오히려 홀가분함을 느낀다는 사실이 에피소드 전체의 유머를 완벽하게 뒤집어버립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E3X15'
+    }
+  ]
+  };
+
+  var S_NUM = 1;
+  var E_NUM = 3;
+  var TOTAL = 15;
+
+  function goHome() { window.location.href = '../../index.html'; }
+
+  function buildExpressions() {
+    var isKo = getLang() === 'ko';
+    var dataExprs = EP_DATA.expressions || [];
+    var list = document.getElementById('exprList');
+    var html = '';
+    for (var i = 0; i < TOTAL; i++) {
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
+      var num = i + 1;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/season' + S_NUM + '/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      if (x) {
+        var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
+        var ytBtn = isLive
+          ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">' + t('expr.watch') + '</a>'
+          : '<button class="btn-youtube pending">' + t('expr.coming') + '</button>';
+        var pos = x.partOfSpeech
+          ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
+          : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
+        html += '<div class="expr-card" id="slot' + num + '">';
+        html += '<div class="expr-num">' + exprNum + '</div>';
+        html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
+        html += '<div class="expr-actions">' + ytBtn;
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
+        html += '</div></div>';
+      } else {
+        html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
+        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
+        html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
+        html += '</div></div>';
+      }
+    }
+    list.innerHTML = html;
+  }
+
+  function handleExprBm(num) {
+    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    checkTermsGuard();
+    buildExpressions();
+    if (window.location.hash) {
+      setTimeout(function() {
+        var el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 200);
+    }
+  });
+</script>
+</body>
+</html>
