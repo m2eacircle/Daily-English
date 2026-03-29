@@ -172,6 +172,9 @@
     }
   }
 
+  /* Episodes unlocked for this season — update to open more */
+  var AVAILABLE_EPISODES = new Set([1, 2]);
+
   function buildEpisodeGrid() {
     var grid = document.getElementById("episodeGrid");
     if (!grid) return;
@@ -185,23 +188,31 @@
       var label  = "S" + SEASON_NUM + "E" + e;
 
       /* Build card using DOM API — no innerHTML string quoting issues */
-      var card = document.createElement("a");
-      card.className = "episode-card";
-      card.href = url;
+      var isAvailable = AVAILABLE_EPISODES.has(e);
+      var card = document.createElement(isAvailable ? "a" : "div");
+      card.className = "episode-card" + (isAvailable ? "" : " locked");
+      if (isAvailable) card.href = url;
 
-      var bmBtn = document.createElement("button");
-      bmBtn.className = "bm-corner";
-      bmBtn.setAttribute("data-bm-id", bmId);
-      bmBtn.title = t('bm.bookmark');
-      bmBtn.innerHTML = "&#128278;";
-      (function(sn, en) {
-        bmBtn.addEventListener("click", function(evt) {
-          evt.preventDefault();
-          evt.stopPropagation();
-          handleEpBookmark(sn, en);
-        });
-      })(SEASON_NUM, e);
-      card.appendChild(bmBtn);
+      if (isAvailable) {
+        var bmBtn = document.createElement("button");
+        bmBtn.className = "bm-corner";
+        bmBtn.setAttribute("data-bm-id", bmId);
+        bmBtn.title = t('bm.bookmark');
+        bmBtn.innerHTML = "&#128278;";
+        (function(sn, en) {
+          bmBtn.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            evt.stopPropagation();
+            handleEpBookmark(sn, en);
+          });
+        })(SEASON_NUM, e);
+        card.appendChild(bmBtn);
+      } else {
+        var lockBadge = document.createElement("div");
+        lockBadge.className = "ep-lock-badge";
+        lockBadge.innerHTML = "&#128274;";
+        card.appendChild(lockBadge);
+      }
 
       var img = document.createElement("img");
       img.className = "ep-card-img";

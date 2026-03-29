@@ -789,3 +789,30 @@ html.content-protected [contenteditable] {
   -ms-user-select:     auto;
   user-select:         auto;
 }
+
+/* ── Locked Episode Card ───────────────────────────────────── */
+.episode-card.locked {
+  cursor: default;
+  opacity: 0.52;
+  pointer-events: none;
+}
+.episode-card.locked:hover {
+  transform: none;
+  border-color: var(--border);
+  box-shadow: none;
+}
+.ep-lock-badge {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background: rgba(13,27,46,0.82);
+  color: var(--muted);
+  font-size: 0.95rem;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
