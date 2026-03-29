@@ -92,6 +92,7 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
+    available: false,
     title: 'Season 4, Episode 21',
     description: 'Expressions coming soon.',
     expressions: []
@@ -147,7 +148,18 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    checkTermsGuard();
+    /* ── Availability guard ── */
+    if (!EP_DATA.available) {
+      document.body.innerHTML =
+        '<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);padding:2rem;text-align:center;">'
+        + '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
+        + '<div style="font-size:1.3rem;font-weight:900;color:var(--accent);margin-bottom:0.5rem;">Coming Soon</div>'
+        + '<div style="font-size:0.9rem;color:var(--muted);margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
+        + '<button onclick="history.back()" style="background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>'
+        + '</div>';
+      return;
+    }
+        checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
