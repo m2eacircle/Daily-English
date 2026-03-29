@@ -177,6 +177,9 @@
     10: { year: '2003\u20132004', eps: 18 }
   };
 
+  /* Seasons unlocked — update to open more */
+  var AVAILABLE_SEASONS = new Set([1]);
+
   function buildSeasonGrid() {
     var grid = document.getElementById('seasonGrid');
     var html = '';
@@ -187,7 +190,12 @@
       var url   = 'seasons/season' + s + '.html';
       var imgSrc = 'images/season' + s + '.png';
 
-      html += '<a class="season-card-2x5" href="' + url + '" aria-label="Season ' + s + '">';
+      var isSeasonAvailable = AVAILABLE_SEASONS.has(s);
+      if (isSeasonAvailable) {
+        html += '<a class="season-card-2x5" href="' + url + '" aria-label="Season ' + s + '">';
+      } else {
+        html += '<div class="season-card-2x5 locked" aria-label="Season ' + s + ' Coming Soon">';
+      }
 
       /* Season image */
       html += '<img class="season-card-img" src="' + imgSrc + '" alt="Season ' + s + '"'
@@ -206,12 +214,16 @@
       /* Season number badge */
       html += '<span class="season-num-badge">S' + s + '</span>';
 
-      /* Bookmark button */
-      html += '<button class="season-bm-btn bm-corner" data-bm-id="' + bmId + '"'
-            + ' onclick="event.preventDefault();event.stopPropagation();'
-            + 'handleSeasonBm(' + s + ')" title="Bookmark Season ' + s + '">&#128278;</button>';
-
-      html += '</a>';
+      /* Bookmark button or lock badge */
+      if (isSeasonAvailable) {
+        html += '<button class="season-bm-btn bm-corner" data-bm-id="' + bmId + '"'
+              + ' onclick="event.preventDefault();event.stopPropagation();'
+              + 'handleSeasonBm(' + s + ')" title="Bookmark Season ' + s + '">&#128278;</button>';
+        html += '</a>';
+      } else {
+        html += '<div class="ep-lock-badge">&#128274;</div>';
+        html += '</div>';
+      }
     }
 
     grid.innerHTML = html;
