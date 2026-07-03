@@ -18,6 +18,7 @@
     .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
     .btn-youtube.pending { background: var(--card2); color: var(--muted); border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
     .placeholder-slot { opacity: 0.45; border-style: dashed; }
+    .expr-speaker { font-size: 0.72rem; font-weight: 800; color: var(--accent2); letter-spacing: 0.5px; margin-bottom: 7px; }
   </style>
 </head>
 <body>
@@ -82,19 +83,21 @@
     description: 'Ross and Monica\'s grandmother dies — twice. Chandler is mistaken for gay.',
     expressions: [
     {
-      phrase: 'I\'m gonna go flush myself down the toilet now.',
+      phrase: 'Can you believe she actually thought that?',
       partOfSpeech: 'expression',
-      meaning: 'A colorfully self-deprecating way of saying "I am so embarrassed I want to disappear." It uses the image of flushing something away to describe wanting to escape a humiliating situation entirely. This kind of exaggerated, physical self-humiliation for comic effect is very common in casual American English.',
-      meaning_ko: '"너무 창피해서 사라지고 싶다"고 말하는 자기 비하적으로 화려한 표현입니다. 무언가를 내려보내는 이미지를 사용해 굴욕적인 상황에서 완전히 탈출하고 싶다는 마음을 묘사합니다. 이런 식의 과장되고 신체적인 자기 모욕은 미국 일상 영어에서 코미디 효과를 위해 매우 흔하게 쓰입니다.',
-      example: 'A: "I just called my professor by the wrong name for the whole class." B: "I\'m gonna go flush myself down the toilet now."',
-      example_ko: 'A: "수업 내내 교수님을 틀린 이름으로 불렀어." B: "변기에 나를 내려보내고 싶어."',
-      context: 'Shelly from Chandler\'s office has just tried to set him up on a blind date with another man, assuming Chandler is gay. When she realises her mistake, she is so mortified she delivers this line and immediately leaves. It\'s the episode\'s opening joke and perfectly sets up the central question: why does everyone think Chandler is gay?',
-      context_ko: '찬들러 사무실의 쉘리가 찬들러가 게이라고 생각해서 다른 남자와 소개팅을 주선하려 한 장면. 실수를 깨달은 그녀가 이 대사를 하고 즉시 자리를 뜹니다. 에피소드의 오프닝 농담으로, 핵심 질문을 완벽하게 설정합니다: 왜 모든 사람이 찬들러가 게이라고 생각할까요?',
+      speaker: 'Chandler',
+      meaning: '\"Can you believe\" opens a rhetorical question — it doesn\'t expect an answer but invites the listener to share in the speaker\'s astonishment. \"She actually thought that\" uses \"actually\" as an intensifier of disbelief: it emphasises that the thing really, genuinely happened, which makes it feel even more unbelievable. Together it is one of the most natural ways to express shared outrage in English.',
+      meaning_ko: '\"Can you believe\"는 수사적 질문을 여는 표현으로 답을 기대하지 않고 듣는 사람에게 화자의 놀라움을 함께 느끼자고 초대합니다. \"She actually thought that\"에서 \"actually\"는 불신의 강조어입니다: 그 일이 진짜, 실제로 일어났다는 것을 강조하며 더욱 믿기지 않게 만듭니다. 합쳐서 영어에서 공분을 표현하는 가장 자연스러운 방법 중 하나입니다.',
+      example: 'A: \"She submitted my report under her own name.\" B: \"Can you believe she actually thought that was okay?\"',
+      example_ko: 'A: \"내 보고서를 자기 이름으로 제출했어.\" B: \"그게 괜찮다고 진짜 생각한 거야? 믿겨?\"',
+      context: 'Chandler says this immediately after his colleague Shelly leaves, stunned that she genuinely assumed he was gay and tried to set him up with a man. His tone is more bewildered than angry — and his friends\' honest response of \"Um, yeah, actually\" is what sets the whole episode\'s central question in motion.',
+      context_ko: '동료 쉘리가 자리를 뜬 직후 찬들러가 그녀가 진짜로 자신이 게이라고 생각하고 남자와 소개팅을 주선하려 했다는 사실에 어안이 벙벙해서 하는 말. 그의 어조는 화가 났다기보다 당황한 것에 가깝고 — 친구들의 솔직한 반응 \"어, 사실, 응\"이 에피소드 전체의 핵심 질문을 시작시킵니다.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X1'
     },
     {
       phrase: 'You have a quality.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Monica',
+
       meaning: 'Said when someone has a distinct but hard-to-define characteristic — an intangible "something" about them. "A quality" is deliberately vague: it acknowledges the existence of a trait without being able to name it precisely. The humor here is that Chandler keeps pressing for details and never gets a satisfying answer.',
       meaning_ko: '누군가에게 독특하지만 정의하기 어려운 특성, 즉 그들에게 있는 무형의 "뭔가"가 있을 때 쓰는 표현입니다. "A quality"는 의도적으로 모호합니다. 특성의 존재는 인정하지만 정확하게 이름을 붙일 수 없는 것입니다. 여기서 웃음 포인트는 찬들러가 계속 설명을 요구하지만 결코 만족스러운 답을 얻지 못한다는 것입니다.',
       example: 'A: "What is it about him that makes people think that?" B: "I don\'t know. He just has... a quality."',
@@ -105,7 +108,8 @@
     },
     {
       phrase: 'She\'s not quite.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Ross',
+
       meaning: '"Not quite" means "not fully" or "not yet" — it signals that something hasn\'t completely reached the expected state. In this darkly comic moment, it is used to gently clarify that Nana, who was declared dead, is in fact still alive. The understatement makes it even more surreal and funny.',
       meaning_ko: '"Not quite"는 "완전히 그렇지 않다" 또는 "아직 아니다"를 의미하며, 무언가가 예상된 상태에 완전히 도달하지 않았음을 나타냅니다. 이 어둡고 코믹한 순간에는 사망 선고를 받은 나나가 사실 아직 살아있다는 것을 부드럽게 명확히 하기 위해 쓰입니다. 절제된 표현이 더욱 초현실적이고 웃기게 만듭니다.',
       example: 'A: "Is the project done?" B: "Not quite. We\'re about 90% there."',
@@ -115,30 +119,33 @@
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X3'
     },
     {
-      phrase: 'When you\'re dead, you\'re dead. You\'re gone. You\'re worm food.',
+      phrase: 'No one ever really goes.',
       partOfSpeech: 'expression',
-      meaning: '"Worm food" is a blunt, informal way of describing a dead body — something that will be decomposed by worms in the ground. The three-part progression ("dead... gone... worm food") gets increasingly direct and coarse, which is what makes it funny and also a little shocking. Ross uses this to argue against Phoebe\'s spiritual view of death.',
-      meaning_ko: '"Worm food"는 죽은 몸을 직설적이고 비격식적으로 표현하는 말로, 땅속 벌레들에 의해 분해될 무언가를 뜻합니다. 세 부분으로 이어지는 진행("죽은... 사라진... 벌레 먹이")은 점점 더 직접적이고 거칠어지는데, 이것이 웃기면서도 약간 충격적으로 만듭니다. 로스는 죽음에 대한 피비의 영적인 관점에 반박하기 위해 이 표현을 씁니다.',
-      example: 'A: "Do you think he\'s still out there somewhere, watching over us?" B: "I don\'t know. When you\'re dead, you\'re dead. Maybe that\'s it."',
-      example_ko: 'A: "그 사람이 아직 어딘가에서 우리를 지켜보고 있을 것 같아?" B: "모르겠어. 죽으면 그냥 죽은 거지. 그게 전부일 수도 있어."',
-      context: 'Phoebe shares her belief that dead loved ones are still present with us in spirit — pointing to her deceased mother and her friend Debbie as examples. Ross, the scientist, categorically rejects the idea. His blunt counter-argument ("worm food") is funny precisely because of how harshly it contrasts with Phoebe\'s gentle warmth.',
-      context_ko: '피비가 돌아가신 사랑하는 사람들이 영적으로 여전히 우리 곁에 있다는 믿음을 공유하며 자신의 돌아가신 어머니와 친구 데비를 예로 드는 장면. 과학자인 로스는 이 생각을 단호하게 거부합니다. 그의 직설적인 반박("벌레 먹이")은 피비의 부드러운 따뜻함과 얼마나 가혹하게 대비되는지 때문에 웃깁니다.',
+      speaker: 'Phoebe',
+      meaning: 'A gentle belief that people who die don\'t completely disappear — they remain present in some form, whether in memory, feeling, or spirit. \"Ever really\" is a double intensifier: \"ever\" means at any point in time, and \"really\" emphasises the totality of the departure. Together they make the claim stronger than just \"no one goes\" — insisting that no one ever truly, completely leaves.',
+      meaning_ko: '\"Ever really\"는 이중 강조 표현입니다. \"Ever\"는 어느 때든, \"really\"는 완전히 떠남의 전체성을 강조합니다. 이 문장은 죽은 사람들이 완전히 사라지지 않는다는 부드러운 믿음을 표현합니다 — 기억이든, 감정이든, 영혼이든 어떤 형태로든 여전히 곁에 있다는 것입니다. 단순히 \"아무도 가지 않는다\"보다 훨씬 강한 주장으로, 아무도 결코 진정으로 완전히 떠나지 않는다고 말합니다.',
+      example: 'A: \"I still think about my grandmother every single day.\" B: \"Maybe that\'s exactly the point. No one ever really goes.\"',
+      example_ko: 'A: \"지금도 매일 할머니 생각이 나.\" B: \"어쩌면 그게 바로 그 의미야. 아무도 완전히 떠나지 않는 거야.\"',
+      context: 'Phoebe offers this as her quiet counter-belief right after Ross flatly declares \"when you\'re dead, you\'re dead — you\'re worm food.\" She draws on her own loss, saying she sometimes feels her late mother is \"right here, you know?\" The contrast between Ross\'s blunt scientific view and Phoebe\'s gentle spirituality is one of the episode\'s most tender exchanges.',
+      context_ko: '로스가 \"죽으면 그냥 죽은 거야 — 벌레 먹이야\"라고 단호하게 선언한 직후 피비가 조용한 반박 믿음으로 이 말을 하는 장면. 그녀는 자신의 상실을 꺼내며 때때로 돌아가신 어머니가 \"바로 여기, 알잖아?\" 있는 것 같다고 말합니다. 로스의 거친 과학적 태도와 피비의 부드러운 영성 사이의 대비는 에피소드에서 가장 따뜻한 교환 중 하나입니다.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X4'
     },
     {
-      phrase: 'It\'s a matter of hours.',
+      phrase: 'She looks so small.',
       partOfSpeech: 'expression',
-      meaning: 'Used to say that something will happen very soon — within a few hours at most. "A matter of [time unit]" is a common construction meaning "only [that amount of time] away." In a medical context, "it\'s a matter of hours" usually means a patient is near death.',
-      meaning_ko: '무언가가 매우 곧 일어날 것이라고 말할 때 쓰는 표현으로, 최대 몇 시간 이내를 의미합니다. "A matter of [시간 단위]"는 "[그만큼의 시간]만 남았다"를 의미하는 흔한 구조입니다. 의학적 맥락에서 "it\'s a matter of hours"는 보통 환자가 임종이 가깝다는 것을 의미합니다.',
-      example: 'A: "How much longer until the results?" B: "It\'s a matter of hours. We should know by this afternoon."',
-      example_ko: 'A: "결과가 언제쯤 나와?" B: "몇 시간 문제야. 오늘 오후까지는 알게 될 거야."',
-      context: 'The doctor tells the Geller family that Nana\'s condition is critical and she doesn\'t have long. This solemn moment is immediately undercut by the mother\'s first concern upon seeing Monica: "What\'s with your hair?" — a perfect example of the episode\'s skill at balancing real emotion with comedy.',
-      context_ko: '의사가 겔러 가족에게 나나의 상태가 위독하고 시간이 얼마 남지 않았다고 알리는 장면. 이 엄숙한 순간은 모니카를 보자마자 어머니의 첫 번째 걱정으로 즉시 분위기가 깨집니다: "머리가 왜 그래?" — 에피소드가 진짜 감동과 코미디를 균형 있게 다루는 능력을 완벽하게 보여주는 예입니다.',
+      speaker: 'Ross',
+      meaning: '\"Look\" + adjective describes how someone appears — not just physically but with emotional weight. \"So small\" means Nana looks frail and diminished compared to how Ross remembers her. The word \"so\" intensifies the observation: not just small, but strikingly, heartbreakingly small. Simple sentences like this carry the most weight in English — the fewer the words, the heavier each one lands.',
+      meaning_ko: '\"Look\" + 형용사는 누군가가 어떻게 보이는지 묘사합니다 — 단순히 시각적으로만이 아니라 감정적인 무게를 담아서. \"So small\"은 나나가 로스가 기억하는 것보다 연약하고 쪼그라들어 보인다는 뜻입니다. \"So\"는 강조합니다: 그냥 작은 게 아니라 충격적으로, 마음 아프게 작은 것. 이런 단순한 문장들이 영어에서 가장 큰 무게를 지닐 때가 많습니다 — 단어가 적을수록 하나하나의 무게가 더 크게 느껴집니다.',
+      example: 'A: \"I finally visited my grandfather last weekend.\" B: \"How was it?\" A: \"He looks so small now. I don\'t know when that happened.\"',
+      example_ko: 'A: \"지난 주말에 드디어 할아버지를 뵈러 갔어.\" B: \"어땠어?\" A: \"지금 너무 작아 보여. 언제 이렇게 됐는지 모르겠어.\"',
+      context: 'Ross and Monica stand at Nana\'s hospital bedside for what they believe is the last time. Ross\'s quiet observation — \"She looks so small\" — says everything about what age and illness does to the people we love. Monica simply says \"I know.\" It\'s the episode\'s most genuinely tender moment before the comedy takes hold again.',
+      context_ko: '로스와 모니카가 마지막이 될 것이라 생각하며 나나의 병원 침대 옆에 서는 장면. 로스의 조용한 관찰 — \"너무 작아 보여\" — 은 나이와 병이 우리가 사랑하는 사람들에게 무엇을 하는지를 모두 담아냅니다. 모니카는 단순히 \"알아\"라고 말합니다. 에피소드에서 코미디가 다시 이어지기 전 가장 진심 어린 순간입니다.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X5'
     },
     {
       phrase: 'She\'s present. She\'s back.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Ross',
+
       meaning: 'In a medical context, "present" means alive, conscious, or showing vital signs — as opposed to gone or unresponsive. "She\'s back" means she has returned from the brink of death — her vital signs have resumed. Ross uses these short, clipped sentences because he\'s bewildered himself and doesn\'t quite know how to explain what just happened.',
       meaning_ko: '의학적 맥락에서 "present"는 살아있거나 의식이 있거나 생체 징후를 보이는 상태를 의미합니다 — 사라졌거나 반응이 없는 것과 반대입니다. "She\'s back"은 그녀가 죽음의 문턱에서 돌아왔다는 것을 의미합니다 — 생체 징후가 재개됐습니다. 로스는 자신도 당황해서 방금 일어난 일을 어떻게 설명해야 할지 모르기 때문에 이 짧고 간결한 문장들을 씁니다.',
       example: 'A: "I thought the call had dropped." B: "No, no. I\'m here. I\'m present. I\'m back."',
@@ -148,19 +155,21 @@
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X6'
     },
     {
-      phrase: 'I wanna be buried at sea.',
+      phrase: 'God, what a great day! What? Weatherwise.',
       partOfSpeech: 'expression',
-      meaning: 'Being "buried at sea" means having your body committed to the ocean after death — a tradition historically associated with sailors and naval officers. Jack Geller wants this specifically because it sounds unconventional and surprising — he wants to defy people\'s expectations of him even in death.',
-      meaning_ko: '"Buried at sea"는 사망 후 시신을 바다에 수장하는 것을 의미하며, 역사적으로 선원과 해군 장교와 관련된 전통입니다. 잭 겔러가 이것을 원하는 것은 특히 관습적이지 않고 놀라워 보이기 때문입니다 — 그는 죽어서도 사람들의 기대를 저버리고 싶어합니다.',
-      example: 'A: "Have you ever thought about what you want when you go?" B: "I\'d want to be buried at sea, actually. Something different."',
-      example_ko: 'A: "언젠가 어떻게 되고 싶은지 생각해본 적 있어?" B: "사실 수장되고 싶어. 뭔가 색다른 거."',
-      context: 'At Nana\'s deathbed, the father suddenly announces his own end-of-life wish. His excitement at the idea — "It looks like fun... you\'ll get a boat, pack a lunch!" — is both sweet and absurd. Monica\'s flat response, "And then we throw your body in the water. Gee, that does sound fun," is perfectly timed.',
-      context_ko: '나나의 임종 자리에서 아버지가 갑자기 자신의 마지막 소원을 발표하는 장면. 그 생각에 대한 그의 흥분 — "재미있을 것 같아... 배 타고, 도시락 싸고!" — 은 동시에 귀엽고 황당합니다. 모니카의 담담한 반응 "그리고 당신 시신을 물에 던지는 거잖아요. 와, 정말 재밌겠다"가 타이밍이 완벽합니다.',
+      speaker: 'Phoebe',
+      meaning: '\"Weatherwise\" is added after a pause to clarify what the previous statement referred to — meaning \"in terms of the weather.\" Adding \"-wise\" to a noun is a natural English way of saying \"regarding [noun]\" or \"in terms of [noun].\" Here it\'s a hasty retrofit: Phoebe realises her cheerful exclamation sounds wrong at a funeral and quickly narrows its meaning down to just the sunshine — as if that fixes everything.',
+      meaning_ko: '\"Weatherwise\"는 이전 발언이 무엇을 가리키는지 명확히 하기 위해 잠시 후에 추가됩니다 — \"날씨 면에서\"라는 뜻입니다. 명사에 \"-wise\"를 붙이는 것은 \"~에 관해서\" 또는 \"~의 면에서\"를 표현하는 자연스러운 영어 방식입니다. 여기서는 뒤늦은 수습입니다: 피비가 자신의 명랑한 외침이 장례식에서 이상하게 들린다는 것을 깨닫고 얼른 날씨 하나로만 좁혀버립니다.',
+      example: 'A: \"Everything okay?\" B: \"Yeah, it\'s been great! I mean — workwise. Personally, it\'s been a rough week.\"',
+      example_ko: 'A: \"다 괜찮아?\" B: \"응, 정말 좋았어! 그러니까 — 일 면에서. 개인적으로는 힘든 주였지만.\"',
+      context: 'Phoebe exclaims this at the graveside while everyone else is quiet and grieving — the beautiful sunny weather making her genuinely happy before she catches herself. The hasty \"What? Weatherwise.\" recovery is perfectly Phoebe: completely unfiltered, tactless in the most charming possible way.',
+      context_ko: '다들 조용히 슬퍼하는 묘지에서 피비가 이렇게 외치는 장면 — 맑고 아름다운 날씨에 본능적으로 기분이 좋아졌다가 뒤늦게 깨닫는 것. 황급한 \"뭐? 날씨 면에서\"라는 수습이 완벽하게 피비답습니다: 완전히 거르지 않고, 가장 매력적인 방식으로 눈치 없는.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X7'
     },
     {
       phrase: 'Picking on every little detail.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Ross',
+
       meaning: '"Pick on" someone or something means to repeatedly criticize, find fault with, or single out for criticism. "Picking on every little detail" means criticizing obsessively over minor things — nothing is too small to escape scrutiny. It is the verbal equivalent of being a perfectionist who can never be satisfied.',
       meaning_ko: '누군가나 무언가를 "pick on"한다는 것은 반복적으로 비판하거나 결점을 찾거나 비판의 대상으로 삼는다는 뜻입니다. "Picking on every little detail"은 사소한 것에 대해 강박적으로 비판하는 것을 의미합니다 — 아무리 작은 것도 비판을 피할 수 없습니다. 결코 만족하지 못하는 완벽주의자의 언어적 동등물입니다.',
       example: 'A: "How was the review with your boss?" B: "Exhausting. She was picking on every little detail — the font, the margins, everything."',
@@ -170,19 +179,21 @@
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X8'
     },
     {
-      phrase: 'Some things are better left unsaid.',
+      phrase: 'Well, sure. What with it being her funeral and all.',
       partOfSpeech: 'expression',
-      meaning: 'A common saying meaning it is sometimes wiser or kinder to keep your true thoughts or feelings to yourself rather than expressing them. It reflects the idea that honesty is not always the best policy — that the potential hurt of speaking the truth can outweigh the benefit.',
-      meaning_ko: '진실된 생각이나 감정을 표현하는 것보다 자신 안에 간직하는 것이 때로는 더 현명하거나 친절하다는 흔한 말입니다. 솔직함이 항상 최선의 방책은 아니라는 생각을 반영합니다. 진실을 말하는 것의 잠재적 상처가 그 이점을 능가할 수 있다는 것입니다.',
-      example: 'A: "Should I tell her what I really think of her boyfriend?" B: "Maybe some things are better left unsaid."',
-      example_ko: 'A: "그 사람 남자친구에 대해 내가 진짜 어떻게 생각하는지 말해줄까?" B: "어쩌면 말하지 않는 게 나을 수도 있어."',
-      context: 'Ross\'s mother gives this as her wisdom when asked if she would have confronted Nana\'s constant criticism. "I think some things are better left unsaid. I think it\'s nicer when people just get along." It is a genuinely touching, emotionally true moment — and also a quiet key to understanding the whole Geller family.',
-      context_ko: '로스의 어머니가 나나의 끊임없는 비판에 맞섰을 것이냐는 질문에 이것을 자신의 지혜로 전하는 장면. "어떤 것들은 말하지 않는 편이 낫다고 생각해. 사람들이 그냥 사이좋게 지내는 게 더 좋은 것 같아." 진심으로 감동적이고 감정적으로 진실된 순간이며, 겔러 가족 전체를 이해하는 조용한 열쇠이기도 합니다.',
+      speaker: 'Monica',
+      meaning: '\"What with\" introduces a reason or circumstance that explains a situation — similar to \"given that\" or \"considering.\" \"And all\" is a casual tag meaning \"and everything that goes along with that.\" Together they form a dry, understated way to acknowledge the obvious. Monica uses this to agree completely with Phoebe — but with a quiet, exhausted wit that says: of course. It\'s a funeral. What did you expect?',
+      meaning_ko: '\"What with\"는 상황을 설명하는 이유나 사정을 소개합니다 — \"given that(~을 감안하면)\" 또는 \"considering(~을 고려하면)\"과 비슷합니다. \"And all\"은 \"그와 관련된 모든 것\"을 의미하는 캐주얼한 꼬리말입니다. 합쳐서 당연한 것을 건조하게 절제해서 인정하는 방식이 됩니다. 모니카는 이것을 사용해 피비에게 완전히 동의하면서 — 조용하고 지친 재치로: 당연하지. 장례식인데. 무엇을 기대했어?',
+      example: 'A: \"He seemed really nervous at dinner.\" B: \"Well, sure — what with it being his first time meeting the whole family and all.\"',
+      example_ko: 'A: \"저녁 식사 때 되게 긴장한 것 같더라고.\" B: \"뭐, 그렇겠지 — 처음으로 온 가족 만나는 자리잖아, 그 모든 것 다 포함해서.\"',
+      context: 'Phoebe has just said \"Your grandmother would\'ve hated this\" at the wake. Monica\'s response — \"Well, sure. What with it being her funeral and all.\" — is a masterclass in dry delivery. She agrees without hesitation, with the bone-tired acceptance of someone who grew up with Nana\'s complaints: naturally she would have hated it. She hated everything.',
+      context_ko: '피비가 피로연에서 \"할머니가 이걸 싫어하셨을 거야\"라고 말한 직후. 모니카의 반응 — \"뭐, 그렇겠지. 할머니 장례식이잖아, 모든 것 다 포함해서.\" — 은 건조한 전달의 교과서입니다. 그녀는 주저 없이 동의하며, 나나의 불평을 들으며 자란 사람의 뼛속까지 지친 수용이 담겨 있습니다: 당연히 싫어하셨을 거야. 모든 걸 싫어하셨으니까.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X9'
     },
     {
       phrase: 'You\'re watching football at a funeral?',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Rachel',
+
       meaning: 'A rhetorical question expressing disbelief and mild outrage at completely inappropriate behaviour. The question doesn\'t expect an answer — it\'s a way of saying "I can\'t believe you would do something so wrong in a setting like this." The specific combination of "football" and "funeral" makes the contrast maximally absurd.',
       meaning_ko: '완전히 부적절한 행동에 대한 불신과 가벼운 분노를 표현하는 수사적 질문입니다. 이 질문은 답을 기대하지 않습니다 — 이런 상황에서 그런 부적절한 행동을 할 수 있다니 믿을 수 없다는 말의 방식입니다. "축구"와 "장례식"이라는 특정 조합이 대비를 최대한 황당하게 만듭니다.',
       example: 'A: "Are you on your phone right now? We\'re in a meeting." B: "Are you online shopping in a meeting?"',
@@ -193,7 +204,8 @@
     },
     {
       phrase: 'I love you guys. You guys are the greatest.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Ross',
+
       meaning: '"You guys are the greatest" is a warm, enthusiastic way of saying your group of friends is the best — that you deeply appreciate and value them. Combined with "I love you guys," it is an unselfconscious declaration of affection. In normal circumstances, this would be sweet. In this episode, it\'s said by a heavily medicated Ross, which makes it both funny and genuinely touching.',
       meaning_ko: '"You guys are the greatest"는 친구 그룹이 최고라는 것, 즉 그들을 깊이 감사하고 소중히 여긴다는 것을 따뜻하고 열정적으로 표현하는 방식입니다. "I love you guys"와 결합하면, 꾸밈없는 애정의 선언이 됩니다. 일반적인 상황에서는 달콤할 것입니다. 이 에피소드에서는 강한 진통제를 먹은 로스가 하는 말이라 웃기면서도 진심으로 감동적입니다.',
       example: 'A: "We cancelled our plans to help you move." B: "I love you guys. You guys are the greatest."',
@@ -204,7 +216,8 @@
     },
     {
       phrase: 'If you wanna be gay, be gay.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Ross',
+
       meaning: 'A blunt, accepting declaration meaning "I don\'t care about your sexual orientation and fully support you either way." The directness is what makes it both funny (in context, because Chandler emphatically is not gay) and also genuinely warm — a loopy, medicated declaration of unconditional friendship and acceptance.',
       meaning_ko: '"당신의 성적 지향에 상관없이 어느 쪽이든 완전히 지지한다"는 직접적이고 수용하는 선언입니다. 직접성이 웃기기도 하고(맥락상 찬들러는 분명히 게이가 아니기 때문에) 진심으로 따뜻하기도 합니다 — 진통제에 취해 정신이 나간 채로 하는 무조건적인 우정과 수용의 선언입니다.',
       example: 'A: "I just want you to know — whatever you decide about your life, I\'m here for you." B: "If you wanna be gay, be gay — it doesn\'t matter to me."',
@@ -214,19 +227,21 @@
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X12'
     },
     {
-      phrase: 'We have a kind of radar.',
+      phrase: 'Just having my worst fear realized.',
       partOfSpeech: 'expression',
-      meaning: '"Radar" originally refers to the technology that detects distant objects using radio waves. In everyday English, "having a radar" for something means having an instinctive ability to detect or sense something that others might miss. Here, Lowell humorously claims that gay people have an innate ability to recognize other gay people — a "gaydar," as it is popularly known.',
-      meaning_ko: '"Radar"는 원래 전파를 사용해 먼 물체를 감지하는 기술을 말합니다. 일상 영어에서 무언가에 대한 "radar를 갖는다"는 것은 다른 사람들이 놓칠 수 있는 것을 본능적으로 감지하거나 느끼는 능력을 갖는다는 뜻입니다. 여기서 로웰은 게이들이 다른 게이를 인식하는 타고난 능력을 갖고 있다고 유머러스하게 주장합니다 — 대중적으로 "게이더(gaydar)"로 알려진 것입니다.',
-      example: 'A: "How did you know she was the right person to hire?" B: "You develop a kind of radar for it after enough interviews."',
-      example_ko: 'A: "어떻게 그 사람이 채용할 적임자인지 알았어?" B: "면접을 많이 하다 보면 그런 감이 생겨."',
-      context: 'At the wake, Chandler tracks down Lowell from Financial Services — who is gay — to ask directly whether he can tell the difference. Lowell\'s calm, matter-of-fact answer ("Pretty much. Most of the time. We have a kind of radar") both relieves Chandler and then immediately delivers a new blow: that Brian from Payroll is gay, and "way out of your league."',
-      context_ko: '피로연에서 찬들러가 재무팀의 게이인 로웰을 찾아가 차이를 알 수 있는지 직접 묻는 장면. 로웰의 침착하고 담담한 대답 ("거의요. 대부분의 경우. 우리는 일종의 레이더가 있어요")은 찬들러를 안심시키면서 즉시 새로운 충격을 줍니다: 급여팀의 브라이언이 게이이며 "완전히 당신 수준 밖"이라고.',
+      speaker: 'Ross',
+      meaning: '\"Having [something] realized\" means that thing is coming true or actually happening. \"My worst fear realized\" means the thing you dreaded most has occurred. Ross delivers this as a magnificent understatement — as if falling into an open grave at his grandmother\'s funeral in front of the entire family is merely a minor inconvenience. The bigger the disaster and the calmer the delivery, the funnier the line.',
+      meaning_ko: '\"Having [something] realized\"는 그것이 현실이 되거나 실제로 일어나고 있다는 뜻입니다. \"My worst fear realized\"는 가장 두려워했던 일이 실제로 일어났다는 것을 의미합니다. 로스는 이것을 최고의 절제어로 전달합니다 — 마치 온 가족이 지켜보는 할머니 장례식에서 열린 무덤 속에 빠진 것이 그저 사소한 불편 정도인 양. 재앙이 클수록 그리고 전달이 더 태연할수록 대사가 더 웃깁니다.',
+      example: 'A: \"How did the presentation go?\" B: \"Oh, just had my worst fear realized — I forgot every single word the moment I stood up.\"',
+      example_ko: 'A: \"발표 어떻게 됐어?\" B: \"오, 그냥 최악의 악몽이 현실이 됐어 — 일어서는 순간 한 마디도 생각이 안 났거든.\"',
+      context: 'Ross has fallen into Nana\'s open grave at the cemetery, injuring his back, while the entire family watches in horror. Friends rush over asking if he\'s okay. He looks up from inside the grave and delivers this with perfect deadpan. It\'s the episode\'s biggest physical comedy moment — and his utter calm makes it even funnier.',
+      context_ko: '온 가족이 공포에 질려 지켜보는 가운데 로스가 묘지에서 나나의 열린 무덤 속으로 빠져 허리를 다치는 장면. 친구들이 괜찮냐고 달려오자 무덤 안에서 올려다보며 이 대사를 완벽한 무표정으로 전달합니다. 에피소드 최고의 피지컬 코미디 순간이며, 완전한 침착함이 더욱 웃기게 만듭니다.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X13'
     },
     {
       phrase: 'She would\'ve told us it\'s the wrong one.',
-      partOfSpeech: 'expression',
+      partOfSpeech: 'expression',      speaker: 'Monica',
+
       meaning: 'A resigned observation about someone who was impossible to please — no matter what choice you made, she would have found fault with it. "Would\'ve" (would have) is the conditional past, used here to imagine what a deceased person\'s reaction would have been. It\'s a gentle, affectionate, and slightly exasperated way to remember someone\'s difficult personality.',
       meaning_ko: '어떤 선택을 하더라도 항상 결점을 찾아냈을, 만족시키기 불가능한 사람에 대한 체념 어린 관찰입니다. "Would\'ve"(would have)는 조건부 과거로, 돌아가신 분의 반응이 어떠했을지 상상하기 위해 여기서 쓰입니다. 누군가의 어려운 성격을 기억하는 부드럽고 애정 어리며 약간 지친 방식입니다.',
       example: 'A: "Which dress should we have chosen?" B: "It doesn\'t matter. She would\'ve told us it\'s the wrong one either way."',
@@ -236,14 +251,15 @@
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X14'
     },
     {
-      phrase: 'Out of your league.',
-      partOfSpeech: 'idiom',
-      meaning: 'When someone is "out of your league," they are considered significantly more attractive, successful, or desirable than you — so far beyond your level that pursuing them seems unrealistic. This episode uses the phrase in an unusual comedic way: Chandler is told by a gay colleague that the handsome man he admires is gay — and still out of his league.',
-      meaning_ko: '누군가가 "out of your league"라는 것은 자신보다 훨씬 더 매력적이거나 성공했거나 바람직한 것으로 여겨진다는 뜻으로, 자신의 수준을 너무 크게 뛰어넘어 그들을 쫓는 것이 비현실적으로 보입니다. 이 에피소드는 이 표현을 독특하고 코믹한 방식으로 사용합니다: 찬들러는 게이 동료에게 자신이 감탄하는 잘생긴 남자가 게이이며 — 여전히 자신의 수준 밖이라는 말을 듣습니다.',
-      example: 'A: "You should ask her out." B: "She\'s way out of my league. I wouldn\'t even know how to start."',
-      example_ko: 'A: "그 사람한테 고백해봐." B: "완전 내 수준 밖이야. 어떻게 시작해야 할지도 모르겠어."',
-      context: 'The episode\'s final joke: Lowell tells Chandler that Brian from Payroll — the handsome colleague Chandler was curious about — is gay. Chandler\'s ego reacts immediately: "I could get a Brian. If I wanted to get a Brian, I could get a Brian." But Lowell delivers the parting blow: "Way out of your league." The episode ends on Chandler still insisting — and failing to get Brian\'s attention.',
-      context_ko: '에피소드의 마지막 농담: 로웰이 찬들러에게 찬들러가 궁금해했던 잘생긴 동료 브라이언이 게이라고 알려주는 장면. 찬들러의 자존심이 즉시 반응합니다: "브라이언 같은 사람 만들 수 있어. 원하면 만들 수 있다고." 하지만 로웰이 작별 타격을 날립니다: "완전 당신 수준 밖이에요." 에피소드는 여전히 우기는 찬들러 — 그리고 브라이언의 관심을 끄는 데 실패하는 것 — 로 끝납니다.',
+      phrase: 'I could get a Brian.',
+      partOfSpeech: 'expression',
+      speaker: 'Chandler',
+      meaning: '\"I could get a [person]\" asserts that you are capable of attracting or winning over someone, even when no one asked and even when it\'s unlikely. It\'s a defensive, ego-protecting claim that surfaces when someone implies you can\'t have something — especially something you didn\'t particularly want in the first place. The comedy here is that Chandler is defending his attractiveness to a man he has no interest in, purely to protect his pride.',
+      meaning_ko: '\"I could get a [사람]\"은 아무도 묻지 않았더라도, 또는 가능성이 낮더라도 누군가를 유혹하거나 얻을 수 있다고 주장합니다. 처음에는 원하지도 않았던 것을 가질 수 없다고 누군가가 암시할 때 나오는 방어적이고 자존심을 지키려는 주장입니다. 여기서의 웃음 포인트는 찬들러가 순전히 자존심 때문에 아무 관심도 없는 남자에 대한 자신의 매력을 방어하는 것입니다.',
+      example: 'A: \"That position is way above your level.\" B: \"Above my level? I could get that job. If I really went for it, I could absolutely get it.\"',
+      example_ko: 'A: \"그 자리는 완전히 네 수준 위야.\" B: \"내 수준 위라고? 그 일 할 수 있어. 진짜 도전하면 절대적으로 할 수 있다고.\"',
+      context: 'Lowell has just told Chandler that Brian from Payroll — the handsome colleague Chandler had been curious about — is gay, and way out of his league. Chandler\'s ego fires back instantly: \"I could get a Brian. If I wanted to get a Brian, I could get a Brian.\" He immediately tries to wave at Brian across the room. Brian doesn\'t notice. The perfect final note.',
+      context_ko: '로웰이 찬들러에게 찬들러가 궁금해했던 잘생긴 동료 브라이언이 게이이고 \"완전 당신 수준 밖\"이라고 말한 직후. 찬들러의 자존심이 즉각 반격합니다: \"브라이언 같은 사람 만들 수 있어. 원하면 브라이언 만들 수 있다고.\" 그는 즉시 방 건너편 브라이언에게 손을 흔들려 합니다. 브라이언은 알아채지 못합니다. 완벽한 마지막 음표.',
       youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E8X15'
     }
   ]
@@ -282,6 +298,7 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        if (x.speaker) html += '<div class="expr-speaker">&#127939; ' + escHtml(x.speaker) + '</div>';
         html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
         html += '<div class="expr-example">' + escHtml(example) + '</div>';
         if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
