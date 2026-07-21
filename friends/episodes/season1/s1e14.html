@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E14: The One with the Candy Hearts</div>
-        <div class="page-header-meta">Chandler ends up on a date with Janice. Ross runs into Carol on Valentine's Day.</div>
+        <div class="page-header-meta">Chandler accidentally ends up on a Valentine's date with Janice again.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e14"
             onclick="toggleBookmark('episode','episode-friends-s1e14','📋 Friends S1E14','friends/episodes/season1/s1e14.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Candy Hearts',
-    description: 'Chandler ends up on a date with Janice. Ross runs into Carol on Valentine\'s Day.',
+    description: 'Chandler accidentally ends up on a Valentine\'s date with Janice again.',
     expressions: [
-    {phrase:'Fall back into old habits',partOfSpeech:'expression',meaning:'To return to previous patterns of behavior, usually ones you were trying to avoid.',example:'"After the stress of the holidays, I fell back into my old habit of eating late at night."',context:'Chandler keeps returning to Janice despite wanting to move on.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E14X1'},
-    {phrase:'Out of the blue',partOfSpeech:'idiom',meaning:'Unexpectedly, with no warning; completely by surprise.',example:'"Out of the blue, she called me after five years of silence."',context:'Something happening completely unexpectedly.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E14X2'}
+    {
+      phrase: 'You\'re in.',
+      partOfSpeech: 'expression',
+      meaning: '"You\'re in" means you have successfully established a connection or foot in the door — you have earned access or interest from the other person. It is an enthusiastic, shorthand declaration that the relationship has started. The phrase implies that all you needed was that one point of contact to make your move.',
+      meaning_ko: '"You\'re in"은 연결을 성공적으로 만들거나 발판을 마련했다는 뜻입니다 — 상대방으로부터 접근권이나 관심을 얻은 것입니다. 관계가 시작됐다는 열정적인 단축 선언입니다. 이 표현은 행동을 취하기 위해 필요한 것은 그 하나의 접촉 지점뿐이었다는 것을 암시합니다.',
+      example: 'A: "She texted back within five minutes." B: "You\'re in. Don\'t overthink it."',
+      example_ko: 'A: "5분 만에 답장이 왔어." B: "됐다. 너무 생각하지 마."',
+      context: 'Joey is coaching Ross on asking out his neighbour Kristen. When Ross reveals she once lent him an egg, Joey\'s immediate verdict is "You\'re in." The ridiculous gap between the evidence (one egg) and the conclusion (full romantic access) is the joke — and it is completely Joey.',
+      context_ko: '조이가 로스에게 이웃 크리스틴에게 접근하는 방법을 코치하는 장면. 로스가 그녀가 한번 계란을 빌려줬다고 하자 조이의 즉각적인 판결은 "됐다"입니다. 증거(계란 하나)와 결론(완전한 낭만적 접근권) 사이의 터무니없는 간격이 웃음 포인트 — 완전히 조이다운 모습입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X1'
+    },
+    {
+      phrase: 'You gotta get back in the game.',
+      partOfSpeech: 'expression',
+      meaning: '"Back in the game" uses a sports metaphor — after sitting out (a period of being single, heartbroken, or withdrawn), it is time to return to active participation in dating or social life. "Gotta" makes it urgent and direct. It is one of the most common expressions friends use to push each other back into the dating world after a setback.',
+      meaning_ko: '"Back in the game"은 스포츠 비유를 씁니다 — 벤치에 앉아 있던 시간(솔로, 상심, 또는 위축된 기간) 이후 연애나 사회생활에 다시 적극적으로 참여할 때가 됐다는 것. "Gotta"는 긴박하고 직접적으로 만듭니다. 좌절 후 서로를 다시 데이트 세계로 밀어붙이기 위해 친구들이 쓰는 가장 흔한 표현 중 하나입니다.',
+      example: 'A: "I haven\'t dated anyone in over a year." B: "You gotta get back in the game. Start small — just coffee."',
+      example_ko: 'A: "1년 넘게 아무도 만나지 않았어." B: "다시 시작해야 해. 작게 시작해 — 그냥 커피부터."',
+      context: 'Chandler tells Ross that the Rachel situation is not happening and his ex-wife is a lesbian — and therefore Ross needs to get back in the game. The line sets up the episode\'s main Ross plot: his date with Kristen, which goes surprisingly well until Carol shows up.',
+      context_ko: '찬들러가 로스에게 레이철 상황은 이루어지지 않을 것이고 전 아내는 레즈비언이라고 말하며 — 그러니 다시 시작해야 한다고 합니다. 이 대사가 에피소드 로스의 메인 플롯 설정입니다: 크리스틴과의 데이트인데, 캐롤이 나타나기 전까지 놀랍도록 잘 진행됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X2'
+    },
+    {
+      phrase: 'Go with the egg, my friend.',
+      partOfSpeech: 'expression',
+      meaning: '"Go with [something]" means to choose it, commit to it, and use it as your approach. The advice to "go with the egg" is Joey at his most confidently absurd: using a borrowed egg as a conversation opener is objectively strange, but Joey delivers it with total conviction. The "my friend" at the end adds warmth and authority.',
+      meaning_ko: '"Go with [무언가]"는 그것을 선택하고, 그것에 헌신하고, 그것을 방법으로 사용한다는 뜻입니다. "계란으로 가라"는 조언은 자신 있게 황당한 조이의 전형입니다: 빌린 계란을 대화 시작 수단으로 사용하는 것은 객관적으로 이상하지만, 조이는 완전한 확신으로 전달합니다. 끝의 "my friend"가 따뜻함과 권위를 더합니다.',
+      example: 'A: "Should I bring the homemade cake or just flowers?" B: "Go with the cake, my friend. Nobody forgets homemade."',
+      example_ko: 'A: "직접 만든 케이크를 가져갈까, 아니면 그냥 꽃만 가져갈까?" B: "케이크로 가, 친구. 집에서 만든 건 아무도 잊지 않아."',
+      context: 'Joey has arranged for the café to provide a raw egg so Ross can "return" it to his neighbour as an icebreaker. Ross hesitates — it is clearly insane — but Joey\'s earnest conviction ("She\'ll love it") combined with "Go with the egg, my friend" somehow makes it feel like wisdom.',
+      context_ko: '조이가 카페에서 날달걀을 준비해줘서 로스가 이웃에게 "돌려주는" 것으로 대화를 시작할 수 있게 한 장면. 로스는 망설입니다 — 분명히 미친 짓인데 — 하지만 조이의 진지한 확신("그 사람 좋아할 거야")과 "계란으로 가, 친구"가 합쳐지면 어쩐지 지혜처럼 느껴집니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X3'
+    },
+    {
+      phrase: 'It\'s suicide. The man\'s got an egg.',
+      partOfSpeech: 'expression',
+      meaning: '"It\'s suicide" is a hyperbolic way of saying something will end in certain failure or disaster — not literal death, but the social equivalent. The second sentence — "The man\'s got an egg" — delivers the specific, undeniable reason. Together they form a perfect two-part joke: the dramatic verdict followed by the absurd, concrete evidence.',
+      meaning_ko: '"It\'s suicide"는 어떤 것이 확실한 실패나 재앙으로 끝날 것이라는 과장적인 표현입니다 — 문자 그대로의 죽음이 아니라 사회적 동등물. 두 번째 문장 — "그 사람 계란을 들고 있잖아" — 이 구체적이고 반박할 수 없는 이유를 전달합니다. 함께 완벽한 두 부분의 농담을 형성합니다: 극적인 판결 뒤에 황당하고 구체적인 증거.',
+      example: 'A: "He\'s going to ask her out in front of the whole team." B: "It\'s suicide. He barely knows her name."',
+      example_ko: 'A: "팀 전체 앞에서 그 사람에게 고백하려고 해." B: "자살 행위야. 이름도 겨우 아는 사이잖아."',
+      context: 'Chandler and Joey watch Ross approach his neighbour with the egg. Chandler\'s deadpan "It\'s suicide. The man\'s got an egg" perfectly captures the doom they are witnessing — and then immediately contradicts itself when Ross comes back having succeeded. Ross: "She said yes." Chandler: "Way to go, man."',
+      context_ko: '찬들러와 조이가 계란을 들고 이웃에게 다가가는 로스를 지켜보는 장면. 찬들러의 무표정한 "자살 행위야. 저 사람 계란을 들고 있잖아"가 그들이 목격하는 재앙을 완벽하게 포착합니다 — 그리고 로스가 성공하고 돌아오자 즉시 모순됩니다. 로스: "응한댔어." 찬들러: "잘했어, 친구."',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X4'
+    },
+    {
+      phrase: 'How do we end up with these jerks? We\'re good people.',
+      partOfSpeech: 'expression',
+      meaning: '"How do we end up with" someone is a rhetorical question about the mystery of repeatedly attracting the wrong type. "Jerks" is informal slang for people who are rude, selfish, or unpleasant. "We\'re good people" is the contrasting self-assessment — the logic being: good people deserve better, so why don\'t we get it?',
+      meaning_ko: '"How do we end up with" 누군가는 반복적으로 잘못된 유형을 끌어당기는 것의 미스터리에 대한 수사적 질문입니다. "Jerks"는 무례하거나, 이기적이거나, 불쾌한 사람들을 가리키는 비격식 속어입니다. "We\'re good people"이 대조적인 자기 평가입니다 — 좋은 사람들은 더 좋은 것을 받을 자격이 있으니, 왜 그렇지 않냐는 논리.',
+      example: 'A: "Another terrible date." B: "Seriously — how do we end up with these people? We\'re good people."',
+      example_ko: 'A: "또 끔찍한 데이트였어." B: "진짜 — 어떻게 우리가 이런 사람들이랑 엮이는 거야? 우리는 좋은 사람들인데."',
+      context: 'Monica, Rachel, and Phoebe are sharing their worst ex-boyfriend stories on Valentine\'s Day — Pete the Weeper, Howard the "I win" guy. Monica lands this line as the shared conclusion: they are collectively baffled by their own bad taste in men. It is one of the most relatable lines of the season.',
+      context_ko: '모니카, 레이철, 피비가 발렌타인 데이에 최악의 전 남자친구 이야기를 나누는 장면 — 울보 피트, "내가 이겼어" 하워드. 모니카가 공유된 결론으로 이 대사를 날립니다: 그들은 자신들의 나쁜 남자 취향에 집단적으로 당황해합니다. 시즌에서 가장 공감 가는 대사 중 하나입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X5'
+    },
+    {
+      phrase: 'We can burn the stuff they gave us.',
+      partOfSpeech: 'expression',
+      meaning: 'A "cleansing ritual" where you literally burn objects associated with bad relationships — letters, photos, gifts — as a physical act of emotional release and closure. "Burn the stuff" is casual and matter-of-fact, which makes the intense emotional act feel more accessible. The girls treat it as completely practical.',
+      meaning_ko: '나쁜 관계와 관련된 물건들 — 편지, 사진, 선물 — 을 문자 그대로 태우는 "정화 의식"으로, 감정적 해방과 마무리의 신체적 행동. "Burn the stuff"는 캐주얼하고 담담해서 강렬한 감정적 행동이 더 접근하기 쉬운 것처럼 느껴집니다. 여자들은 이것을 완전히 실용적으로 취급합니다.',
+      example: 'A: "I still have all his stuff at my place." B: "We can burn the stuff he gave you. Seriously. It helps."',
+      example_ko: 'A: "그 사람 물건이 아직 우리 집에 있어." B: "그 사람이 준 거 다 태울 수 있어. 진짜로. 도움이 돼."',
+      context: 'Phoebe proposes a Valentine\'s Day cleansing ritual based on advice from her bald friend Abby. The options are burning things or chanting and dancing naked with sticks. Monica and Rachel\'s immediate, unanimous "Burning\'s good" is one of the episode\'s fastest and funniest exchanges.',
+      context_ko: '피비가 대머리 친구 애비의 조언을 바탕으로 발렌타인 데이 정화 의식을 제안하는 장면. 선택지는 물건을 태우거나 막대기를 들고 나체로 노래하고 춤추는 것입니다. 모니카와 레이철의 즉각적이고 만장일치인 "태우는 거 좋아"가 에피소드에서 가장 빠르고 웃긴 교환 중 하나입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X6'
+    },
+    {
+      phrase: 'What a crappy night.',
+      partOfSpeech: 'expression',
+      meaning: '"Crappy" is an informal adjective meaning bad, unpleasant, or deeply unsatisfying. "What a crappy night" is an emphatic declaration of how badly an evening has gone — the "what a" construction makes it more dramatic than just saying "tonight was bad." It is honest, unfiltered, and extremely natural in casual conversation.',
+      meaning_ko: '"Crappy"는 나쁘거나, 불쾌하거나, 깊이 불만족스러운 것을 의미하는 비격식 형용사입니다. "What a crappy night"는 저녁이 얼마나 나쁘게 흘러갔는지에 대한 강조적인 선언입니다 — "what a" 구조가 단순히 "오늘 밤 나빴어"라고 말하는 것보다 더 극적으로 만듭니다. 솔직하고, 여과 없으며, 캐주얼한 대화에서 매우 자연스럽습니다.',
+      example: 'A: "Flight delayed, luggage lost, hotel overbooked." B: "What a crappy night."',
+      example_ko: 'A: "비행기 연착, 짐 분실, 호텔 오버북." B: "진짜 최악의 밤이다."',
+      context: 'Chandler and Joey are left alone at the restaurant after Chandler\'s date Lorraine disappears with Joey, leaving Chandler stranded with Janice. Chandler sums up the evening with these four words. The moment is briefly dark before flipping to Janice ordering champagne on Joey\'s credit card.',
+      context_ko: '조이가 찬들러의 데이트 상대 로레인을 데려가 버려서 찬들러가 재니스와 단둘이 식당에 남겨지는 장면. 찬들러가 저녁을 이 네 단어로 요약합니다. 재니스가 조이의 신용카드로 샴페인을 주문하는 장면으로 전환되기 전 잠깐 어두운 순간입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X7'
+    },
+    {
+      phrase: 'A stupid man who left us his credit card.',
+      partOfSpeech: 'expression',
+      meaning: 'Chandler reframes Joey — normally his best friend — as simply "a stupid man" the moment it becomes tactically useful. The specificity of "left us his credit card" explains the strategic value of the reclassification. The joke is the speed of the pivot: from "friend" to "tactical asset" in under a second.',
+      meaning_ko: '찬들러가 조이 — 보통 그의 가장 친한 친구 — 를 전략적으로 유용해지는 순간 단순히 "멍청한 남자"로 재프레임하는 장면. "신용카드를 두고 갔어"의 구체성이 재분류의 전략적 가치를 설명합니다. 웃음 포인트는 전환의 속도입니다: 1초도 안 돼서 "친구"에서 "전략적 자산"으로.',
+      example: 'A: "I thought you said he was your best friend." B: "He\'s a man who left his credit card. That\'s all I know right now."',
+      example_ko: 'A: "제일 친한 친구라고 했잖아." B: "신용카드를 두고 간 남자야. 지금 내가 아는 건 그것뿐이야."',
+      context: 'Chandler catches himself mid-sentence saying "So do we have the best friends or what?" — and immediately corrects himself. Joey has abandoned him with Janice and fled with Lorraine. The pivot to "stupid man who left us his credit card" triggers Janice\'s gleeful ordering spree.',
+      context_ko: '찬들러가 "우리 정말 최고의 친구들이 있는 거 아냐?"라고 말하다가 즉시 스스로를 수정하는 장면. 조이가 그를 재니스와 함께 버려두고 로레인과 달아났습니다. "신용카드를 두고 간 멍청한 남자"로의 전환이 재니스의 신나는 주문 잔치를 촉발합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X8'
+    },
+    {
+      phrase: 'If you want to put a label on it.',
+      partOfSpeech: 'expression',
+      meaning: '"Putting a label on" something means giving it a specific name or category. "If you want to put a label on it" is a deliberate hedge — the speaker acknowledges what the thing is but distances themselves from the act of naming it directly. Ross uses it to describe Carol\'s relationship with Susan, and the gentle evasion tells you exactly where he still is emotionally.',
+      meaning_ko: '어떤 것에 "label을 붙인다"는 것은 그것에 특정 이름이나 범주를 부여하는 것입니다. "If you want to put a label on it"은 의도적인 완충 표현입니다 — 화자가 그것이 무엇인지는 인정하지만 직접 이름을 붙이는 행위로부터 거리를 둡니다. 로스가 캐롤과 수잔의 관계를 묘사하기 위해 이것을 쓰는데, 부드러운 회피가 그가 감정적으로 여전히 어디에 있는지를 정확히 말해줍니다.',
+      example: 'A: "So they\'re rivals?" B: "If you want to put a label on it, sure."',
+      example_ko: 'A: "그러면 라이벌인 거야?" B: "라벨을 붙이고 싶다면, 그렇다고 할 수 있지."',
+      context: 'Ross is explaining his situation to Kristen on their first date. When she asks if Carol and Susan are lovers, he replies with this — a masterclass in technically confirming something while emotionally refusing to commit to it. Kristen\'s "Wow. Anything else I should know?" followed by his "Nope. That\'s it. Oh, and she\'s pregnant with my baby" is the scene\'s best run.',
+      context_ko: '로스가 크리스틴과의 첫 데이트에서 자신의 상황을 설명하는 장면. 그녀가 캐롤과 수잔이 연인이냐고 묻자 이 말로 답합니다 — 기술적으로는 확인하면서 감정적으로는 인정하기를 거부하는 교과서적인 예. 그녀의 "와. 내가 알아야 할 게 더 있어?" 뒤에 이어지는 "아니. 그게 다야. 아, 그리고 그녀가 내 아이를 임신하고 있어"가 장면 최고의 연속입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X9'
+    },
+    {
+      phrase: 'I always forget that part.',
+      partOfSpeech: 'expression',
+      meaning: 'Used as a dry, self-aware admission that you have overlooked or suppressed a significant piece of information. "Always" makes it a pattern, not a one-time slip. The casual delivery — as if the forgetting is a minor inconvenience rather than a colossal revelation — is the entire joke. Ross "always forgets" that Carol is pregnant with his baby.',
+      meaning_ko: '중요한 정보를 간과하거나 억압했다는 건조하고 자기 인식적인 인정으로 씁니다. "Always"는 일회성 실수가 아닌 패턴으로 만듭니다. 캐주얼한 전달 방식 — 망각이 엄청난 폭로가 아니라 사소한 불편인 것처럼 — 이 농담의 전부입니다. 로스는 캐롤이 자신의 아이를 임신하고 있다는 것을 "항상 잊어버립니다".',
+      example: 'A: "Wait, you forgot to mention he\'s your boss?" B: "I always forget that part. It just slips my mind."',
+      example_ko: 'A: "잠깐, 그 사람이 네 상사라는 걸 말 안 했잖아?" B: "항상 그 부분을 잊어버려. 그냥 머릿속에서 빠져나가."',
+      context: 'Ross has just listed all his complications to Kristen — Carol, Susan, being lesbians — and added as a casual afterthought: "Oh, and she\'s pregnant with my baby." His "I always forget that part" after Kristen\'s stunned pause is delivered with such genuine sheepishness that it becomes immediately charming.',
+      context_ko: '로스가 크리스틴에게 자신의 모든 복잡한 상황 — 캐롤, 수잔, 레즈비언 — 을 나열하고 태연하게 추가하는 장면: "아, 그리고 그녀가 내 아이를 임신하고 있어." 크리스틴의 충격받은 침묵 뒤에 나오는 "항상 그 부분을 잊어버려"는 너무나 진심으로 머쓱한 태도로 전달되어 즉시 매력적이 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X10'
+    },
+    {
+      phrase: 'How can I dump this woman on Valentine\'s Day?',
+      partOfSpeech: 'expression',
+      meaning: '"Dump" is informal for breaking up with someone — ending a romantic relationship, usually abruptly. "How can I [do something]?" used rhetorically means: it would be wrong or impossible for me to do this. Chandler is not actually asking for advice — he is explaining why his moral conscience won\'t let him act on his clearly sensible plan.',
+      meaning_ko: '"Dump"은 누군가와 헤어지다는 비격식 표현으로 — 보통 갑작스럽게 낭만적 관계를 끝내는 것. 수사적으로 쓰인 "How can I [어떤 것을 하다]?"는 내가 이것을 하는 것이 잘못됐거나 불가능하다는 의미입니다. 찬들러는 실제로 조언을 구하는 것이 아닙니다 — 그의 도덕적 양심이 분명히 합리적인 계획을 실행하지 못하게 하는 이유를 설명하고 있습니다.',
+      example: 'A: "Just tell her it\'s over." B: "How can I dump her the day before her big presentation? That\'s just cruel."',
+      example_ko: 'A: "그냥 끝이라고 말해." B: "중요한 발표 전날에 어떻게 차? 너무 잔인하잖아."',
+      context: 'Chandler is sitting with Janice on Valentine\'s Day, knowing he should end things, but paralysed by the date. Joey\'s response — "I don\'t know. You dumped her on New Year\'s" — is the perfectly placed callback, and Chandler\'s follow-up about coming back as a toilet brush is immediately one of the episode\'s best lines.',
+      context_ko: '찬들러가 발렌타인 데이에 재니스와 앉아 관계를 끝내야 한다는 것을 알면서도 날짜에 마비된 장면. 조이의 반응 — "모르겠어. 새해에는 찼잖아" — 이 완벽하게 배치된 복선이고, 화장실 솔로 환생하겠다는 찬들러의 후속 대사가 즉시 에피소드 최고의 대사 중 하나가 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X11'
+    },
+    {
+      phrase: 'Let\'s just stick a pin in it.',
+      partOfSpeech: 'expression',
+      meaning: '"Stick a pin in it" means to set aside an issue temporarily — to pause it, mark it as acknowledged but not resolved, and come back to it later. The image is of sticking a pin in a map or bulletin board to mark a location. Ross uses it to literally ask Carol to park the fact that she\'s a lesbian while he makes his romantic case.',
+      meaning_ko: '"Stick a pin in it"은 문제를 일시적으로 옆에 두다는 뜻으로 — 인정됐지만 해결되지 않은 것으로 표시하고 나중에 돌아오는 것. 이미지는 지도나 게시판에 핀을 꽂아 위치를 표시하는 것입니다. 로스가 낭만적인 주장을 펼치는 동안 캐롤에게 레즈비언이라는 사실을 잠시 내려두라고 요청하기 위해 문자 그대로 이것을 씁니다.',
+      example: 'A: "But there\'s the problem of the budget—" B: "Let\'s just stick a pin in that for now and focus on the idea itself."',
+      example_ko: 'A: "근데 예산 문제가—" B: "지금은 그건 잠깐 옆에 두고 아이디어 자체에 집중하자."',
+      context: 'A drunk Ross makes a heartfelt, deluded argument to Carol: "No, I know what you\'re gonna say. You\'re a lesbian. But what do you say we just put that aside for now. Let\'s just stick a pin in it." The earnestness with which he says the impossible thing is both funny and genuinely touching.',
+      context_ko: '술에 취한 로스가 캐롤에게 진심 어린, 망상적인 주장을 하는 장면: "아니, 무슨 말 할지 알아. 레즈비언이라는 거. 근데 지금은 그냥 그 부분을 잠깐 내려두면 어때. 핀으로 꽂아두자." 불가능한 것을 말하는 그의 진지함이 웃기면서도 진심으로 감동적입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X12'
+    },
+    {
+      phrase: 'You just don\'t know you know it.',
+      partOfSpeech: 'expression',
+      meaning: 'A paradoxical claim: you possess a knowledge or feeling that you are unaware of possessing. "You don\'t know you know it" suggests that the truth is already inside you — you just haven\'t recognised it consciously yet. Janice uses it to argue that Chandler\'s subconscious keeps bringing him back to her, which is oddly hard to refute.',
+      meaning_ko: '역설적인 주장입니다: 당신이 소유하고 있다는 것을 인식하지 못하는 지식이나 감정을 소유하고 있다는 것. "You don\'t know you know it"은 진실이 이미 당신 안에 있다는 것을 암시합니다 — 단지 아직 의식적으로 그것을 인식하지 못했을 뿐. 재니스가 찬들러의 잠재의식이 계속 그를 자신에게 데려온다고 주장하기 위해 이것을 씁니다. 반박하기 묘하게 어렵습니다.',
+      example: 'A: "I don\'t know if I love this city." B: "You do. You just don\'t know you know it yet."',
+      example_ko: 'A: "이 도시가 좋은 건지 모르겠어." B: "좋아하는 거야. 아직 그걸 알고 있다는 걸 모를 뿐이야."',
+      context: 'Janice delivers her full theory to Chandler: he loves her, he seeks her out, something in his soul calls to her like a foghorn. And the coup de grâce: "You just don\'t know you know it." The internal logic of Janice\'s argument is actually airtight — and Chandler knows it, which is the episode\'s real emotional punch.',
+      context_ko: '재니스가 찬들러에게 자신의 완전한 이론을 전달하는 장면: 그는 자신을 사랑하고, 그녀를 찾아오고, 그의 영혼 어딘가가 안개 경보음처럼 그녀를 부른다고. 그리고 최후의 일격: "그냥 네가 알고 있다는 걸 모를 뿐이야." 재니스 주장의 내부 논리는 실제로 허점이 없습니다 — 찬들러도 그것을 알고 있으며, 이것이 에피소드의 진짜 감정적 충격입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X13'
+    },
+    {
+      phrase: 'Well, do I have to?',
+      partOfSpeech: 'expression',
+      meaning: 'A simple, plaintive question that carries enormous emotional weight in context. "Do I have to?" is normally a child\'s complaint about an unwanted chore. Ross uses it as an adult, asking whether he is truly obligated to move on from Carol. The vulnerability of asking this question out loud — to Carol herself — is both funny and genuinely sad.',
+      meaning_ko: '맥락에서 엄청난 감정적 무게를 지닌 단순하고 애처로운 질문입니다. "Do I have to?"는 보통 원치 않는 일에 대한 아이의 불평입니다. 로스가 성인으로서 이것을 쓰며, 캐롤로부터 진정으로 나아가야 할 의무가 있는지 묻습니다. 이 질문을 소리 내어 — 캐롤 본인에게 — 묻는 취약함이 웃기면서도 진심으로 슬픕니다.',
+      example: 'A: "You need to move on from this job." B: "Well, do I have to? I know it\'s bad, but it\'s familiar."',
+      example_ko: 'A: "이 직장을 떠나야 해." B: "꼭 그래야 해? 나쁜 건 알지만 익숙하잖아."',
+      context: 'Ross is sitting with Carol, his ex-wife, after his date with Kristen fell apart. He admits he finds Kristen "perfectly nice" but there is nothing there. And then: "Well, you know the whole getting-on-with-your-life thing? Well, do I have to?" His honesty with Carol — of all people — is the episode\'s most human moment.',
+      context_ko: '로스가 크리스틴과의 데이트가 실패로 끝난 후 전 아내 캐롤과 앉아있는 장면. 그는 크리스틴이 "완전히 괜찮은 사람"이지만 아무것도 없다고 인정합니다. 그리고: "있잖아, 삶을 앞으로 나아가는 거 말이야? 꼭 그래야 해?" 하필 캐롤에게 하는 그의 솔직함이 에피소드에서 가장 인간적인 순간입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X14'
+    },
+    {
+      phrase: 'The cleansing worked.',
+      partOfSpeech: 'expression',
+      meaning: 'A triumphant declaration that a ritual, plan, or process has produced its desired result. "The cleansing worked" is funnier because the "cleansing" was a bonfire that called the fire department — and then the firemen themselves became the result. The cause-and-effect logic is dubious at best, but Phoebe\'s total confidence makes it perfect.',
+      meaning_ko: '의식, 계획, 또는 과정이 원하는 결과를 낳았다는 승리의 선언입니다. "The cleansing worked"는 "정화"가 소방서를 부른 모닥불이었기 때문에 더 웃깁니다 — 그리고 소방관들 자신이 결과가 됐습니다. 인과 관계 논리는 기껏해야 의심스럽지만, 피비의 완전한 자신감이 완벽하게 만듭니다.',
+      example: 'A: "I did that new morning routine you recommended." B: "And?" A: "I got the job offer today." B: "The cleansing worked."',
+      example_ko: 'A: "네가 추천한 새 아침 루틴 해봤어." B: "그래서?" A: "오늘 취업 제안이 왔어." B: "정화가 효과가 있었어."',
+      context: 'The girls\' boyfriend bonfire got out of control and called the fire department. Two handsome firemen arrive, flirt with the girls, and invite them out later. As the firemen leave, Phoebe announces: "See, there you go. The cleansing worked." Monica confirms: "You\'re right." Then the firemen are overheard saying they\'re both married.',
+      context_ko: '여자들의 남자친구 모닥불이 통제불능이 돼서 소방서를 부르는 장면. 잘생긴 소방관 두 명이 도착해 여자들과 시시덕거리며 나중에 외출을 제안합니다. 소방관들이 떠나자 피비가 발표합니다: "봐, 됐잖아. 정화가 효과가 있었어." 모니카가 확인합니다: "맞아." 그런 다음 소방관들이 둘 다 결혼했다는 것이 들립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E14X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
