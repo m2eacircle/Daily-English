@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Boobies',
     description: 'Accidental nakedness causes chaos. Joey\'s father has a mistress.',
     expressions: [
-    {phrase:'Walk in on someone',partOfSpeech:'phrasal verb',meaning:'To accidentally enter a room and witness something private or embarrassing.',example:'"I walked in on my roommate in the middle of a video call — so awkward."',context:'Accidentally seeing something you were not meant to see.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E13X1'},
-    {phrase:'Turn a blind eye',partOfSpeech:'idiom',meaning:'To deliberately ignore something you know is wrong or happening.',example:'"Management turned a blind eye to the safety violations for years."',context:'Choosing to ignore a problem you are aware of.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E13X2'}
+    {
+      phrase: 'You have no respect for anybody\'s privacy.',
+      partOfSpeech: 'expression',
+      meaning: '"Respect for privacy" means acknowledging that people have a right to personal space, time alone, and things kept from others\' view. "No respect for privacy" is a strong accusation — it says the person acts as if those boundaries simply do not exist. Saying it while wrapped in a towel, as Rachel does, makes it both righteous and extremely funny.',
+      meaning_ko: '"Respect for privacy"는 사람들이 개인 공간, 혼자만의 시간, 그리고 다른 사람의 시선에서 벗어난 것들에 대한 권리가 있다는 것을 인정하는 것입니다. "No respect for privacy"는 강한 비난으로 — 상대방이 마치 그런 경계가 존재하지 않는 것처럼 행동한다는 것을 말합니다. 타월을 두른 채로 말하는 레이철의 모습이 동시에 정당하고 매우 웃깁니다.',
+      example: 'A: "I just walked right in without knocking." B: "You have no respect for anybody\'s privacy. That has to stop."',
+      example_ko: 'A: "그냥 노크도 없이 들어갔어." B: "다른 사람 사생활을 전혀 존중하지 않는구나. 그러면 안 되지."',
+      context: 'Chandler accidentally walks in on Rachel changing. She unleashes this line as her opening argument in the confrontation that follows. The episode\'s entire comic chain reaction — the escalating series of accidental walk-ins that follows — begins here.',
+      context_ko: '찬들러가 실수로 옷 갈아입는 레이철에게 들이닥치는 장면. 레이철이 이어지는 대치에서 이 대사로 첫 번째 주장을 시작합니다. 에피소드 전체의 코믹한 연쇄 반응 — 이후 이어지는 실수로 들이닥치는 사건들의 에스컬레이션 — 이 여기서 시작됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X1'
+    },
+    {
+      phrase: 'Hey, I married a lesbian to make you look good.',
+      partOfSpeech: 'expression',
+      meaning: 'A self-deprecating joke used as a counter-argument — Ross turns his own most painful life experience into a punchline to win a sibling argument. Using your own misfortune as ammunition ("I suffered so you'd benefit") is a very particular kind of dark humour. The absurdity of the claim is exactly what makes it land.',
+      meaning_ko: '반론으로 사용되는 자기 비하적 농담입니다 — 로스가 자신의 가장 고통스러운 인생 경험을 남매 싸움에서 이기기 위한 펀치라인으로 만듭니다. 자신의 불행을 무기로 사용하는 것("나는 네가 잘 보이도록 고생했어")은 매우 특이한 종류의 어두운 유머입니다. 주장의 황당함이 정확히 효과를 내게 만듭니다.',
+      example: 'A: "You always got the better deal." B: "Oh yeah? I took the blame for breaking the window to make you look good."',
+      example_ko: 'A: "항상 네가 더 좋은 대우를 받았잖아." B: "그래? 네가 잘 보이도록 창문 깬 죄를 내가 뒤집어썼잖아."',
+      context: 'Monica accuses Ross of sucking up to their parents so they'd favor him. Ross fires back with this line — claiming his disastrous marriage to Carol was a selfless act to make Monica look better by comparison. The logic is ridiculous and the delivery is deadpan, which is why it gets the laugh.',
+      context_ko: '모니카가 로스가 부모님에게 잘 보이려고 아첨했다고 비난하는 장면. 로스가 이 대사로 반격합니다 — 캐롤과의 재앙 같은 결혼이 비교를 통해 모니카가 더 좋아 보이도록 하기 위한 이타적인 행동이었다고 주장합니다. 논리는 황당하고 전달은 무표정하며, 그 때문에 웃음이 터집니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X2'
+    },
+    {
+      phrase: 'Rock, hard place... me.',
+      partOfSpeech: 'expression',
+      meaning: 'This is a compressed version of the idiom "between a rock and a hard place," which means stuck in a situation where all available options are bad. Chandler shortens it to three words — naming himself as the person trapped in the middle — for maximum comic effect. The pause before "me" is everything.',
+      meaning_ko: '이것은 모든 선택지가 나쁜 상황에 갇혀있다는 뜻의 관용어 "between a rock and a hard place"의 압축 버전입니다. 찬들러가 최대한의 코미디 효과를 위해 이것을 세 단어로 단축해 — 중간에 갇힌 자신을 지목합니다. "me" 앞의 멈춤이 전부입니다.',
+      example: 'A: "My boss wants one thing, my client wants the opposite." B: "Rock, hard place, you."',
+      example_ko: 'A: "상사는 한 가지를 원하고, 고객은 정반대를 원해." B: "돌, 딱딱한 곳... 너."',
+      context: 'Rachel is angry that Chandler said her boobs were only "nice" — while simultaneously Phoebe is upset that Chandler used the word "boobies" instead of "breasts." Chandler is being attacked from both sides simultaneously, with completely contradictory complaints. His three-word summary is perfect.',
+      context_ko: '레이철은 찬들러가 자신의 가슴이 단지 "괜찮다"고만 했다는 것에 화가 나 있고 — 동시에 피비는 찬들러가 "breasts" 대신 "boobies"라는 단어를 썼다고 속상해합니다. 찬들러가 완전히 모순된 불평으로 양쪽에서 동시에 공격받고 있습니다. 그의 세 단어 요약이 완벽합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X3'
+    },
+    {
+      phrase: 'You\'re not him, you\'re you.',
+      partOfSpeech: 'expression',
+      meaning: 'A short, powerful statement of individual identity — a reminder that a person's choices and character are their own, not inherited or determined by someone else's failures. "You're not him" acknowledges the fear of becoming someone; "you're you" redirects the focus to personal agency. It is Chandler at his most direct and sincere.',
+      meaning_ko: '개인 정체성에 대한 짧고 강력한 진술 — 자신의 선택과 성격은 다른 사람의 실패로 물려받거나 결정된 것이 아니라 자신의 것이라는 상기입니다. "You're not him"은 누군가가 되는 것에 대한 두려움을 인정하고, "you're you"는 개인적인 주체성으로 초점을 돌립니다. 가장 직접적이고 진심 어린 찬들러의 모습입니다.',
+      example: 'A: "I'm scared I'm turning into my father." B: "You're not him. You're you. Your choices are yours."',
+      example_ko: 'A: "내가 아버지처럼 변할까봐 두려워." B: "그 사람이 아니야. 너야. 네 선택은 네 것이야."',
+      context: 'Joey lies awake worrying that he might be like his father — unable to stay faithful. Chandler cuts straight to the heart of the anxiety: "You're not him, you're you." It is notable because Chandler rarely delivers sincere comfort without a joke — this moment is one of the exceptions, and it works.',
+      context_ko: '조이가 아버지처럼 충실하지 못할 수 있다는 걱정으로 잠을 이루지 못하는 장면. 찬들러가 불안의 핵심을 바로 짚습니다: "그 사람이 아니야, 너야." 찬들러가 농담 없이 진심 어린 위로를 전달하는 경우가 드물기 때문에 주목할 만합니다 — 이 순간이 그 예외 중 하나이며, 효과가 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X4'
+    },
+    {
+      phrase: 'That wasn\'t easy, but you did it.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple acknowledgment of past achievement used as evidence that a person has the capacity to do hard things. "That wasn't easy" validates the difficulty; "but you did it" emphasises that they succeeded anyway. Together they form a complete motivational argument: if you could do that, you can do this.',
+      meaning_ko: '과거의 성취에 대한 단순한 인정으로, 그 사람이 어려운 일을 할 능력이 있다는 증거로 사용됩니다. "That wasn't easy"는 어려움을 인정하고, "but you did it"은 어쨌든 성공했다는 것을 강조합니다. 함께 완전한 동기부여 논거를 형성합니다: 그걸 할 수 있었다면, 이것도 할 수 있어.',
+      example: 'A: "I don't know if I can handle this." B: "Moving to a new city alone wasn't easy, but you did it. This is no different."',
+      example_ko: 'A: "이걸 감당할 수 있을지 모르겠어." B: "새 도시로 혼자 이사 가는 게 쉽지 않았는데 해냈잖아. 이것도 마찬가지야."',
+      context: 'Chandler reminds Joey that he once refused to join his father's business and chose acting instead — a genuinely difficult, unpopular decision. "That wasn't easy, but you did it." It becomes the foundation of Chandler's argument that Joey has the strength to be faithful when it matters.',
+      context_ko: '찬들러가 조이에게 한때 아버지의 사업에 합류하기를 거부하고 대신 연기를 선택했다는 것을 상기시키는 장면 — 진정으로 어렵고 인기 없는 결정이었습니다. "쉽지 않았는데 해냈잖아." 이것이 중요한 순간에 조이가 충실할 힘이 있다는 찬들러 주장의 토대가 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X5'
+    },
+    {
+      phrase: 'This blows.',
+      partOfSpeech: 'expression',
+      meaning: '"This blows" is very informal slang meaning "this is really bad" or "this situation is awful." It is blunt and expressive, used when something is deeply disappointing or upsetting. The brevity is the point — two words that say everything about how Joey feels discovering his father is having an affair.',
+      meaning_ko: '"This blows"는 "이건 정말 나빠" 또는 "이 상황은 끔찍해"를 의미하는 매우 비격식적인 속어입니다. 무뚝뚝하고 표현력이 있으며, 무언가가 깊이 실망스럽거나 속상할 때 씁니다. 간결함이 핵심입니다 — 조이가 아버지가 바람을 피우고 있다는 것을 알아낸 기분을 두 단어로 모두 말합니다.',
+      example: 'A: "The concert got cancelled at the last minute." B: "This blows. We planned this for weeks."',
+      example_ko: 'A: "공연이 마지막 순간에 취소됐어." B: "진짜 최악이다. 몇 주 동안 계획했는데."',
+      context: 'Joey has just found out his father has a mistress named Ronni. Chandler tries to cheer him up with a spy analogy — "It\'s like finding out your dad is working for the CIA." Joey cuts through the romanticisation with two flat words: "This blows." It is the most honest and un-Joey-like response in the episode.',
+      context_ko: '조이가 아버지에게 론니라는 정부가 있다는 것을 방금 알게 된 장면. 찬들러가 스파이 비유로 그를 격려하려 합니다 — "아버지가 CIA에서 일하고 있다는 것을 알게 된 것 같아." 조이가 낭만화를 두 개의 단조로운 단어로 끊어버립니다: "진짜 최악이다." 에피소드에서 가장 솔직하고 조이답지 않은 반응입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X6'
+    },
+    {
+      phrase: 'You\'re gonna live by my rules.',
+      partOfSpeech: 'expression',
+      meaning: '"Live by my rules" means to follow the standards and conditions that the speaker sets — to accept their authority over how you behave while in their space or under their care. It is a classic parental authority phrase, made funnier when Joey says it to his own father as the host of the apartment.',
+      meaning_ko: '"Live by my rules"는 화자가 정하는 기준과 조건을 따른다는 뜻으로, 그들의 공간이나 보호 아래에 있는 동안 행동 방식에 대한 그들의 권위를 받아들이는 것입니다. 전형적인 부모의 권위 표현으로, 조이가 아파트의 주인으로서 자신의 아버지에게 이 말을 할 때 더 웃깁니다.',
+      example: 'A: "I don't see why I have to be home by ten." B: "Because you're staying here, and you're gonna live by my rules."',
+      example_ko: 'A: "왜 10시까지 들어와야 하는지 모르겠어." B: "여기 있는 거잖아, 그러면 내 규칙대로 살아야 해."',
+      context: 'Joey has just taken control of the situation — his father and his father's mistress will both stay in his apartment, but separately. The role reversal is complete: the son is now the parent, laying down household rules. "And that means no sleeping with your girlfriend" is the specific rule, which makes Ronni say: "Wow, he's strict."',
+      context_ko: '조이가 방금 상황을 통제하기 시작한 장면 — 아버지와 아버지의 정부가 모두 그의 아파트에 머무르지만, 따로따로. 역할 역전이 완성됩니다: 아들이 이제 부모가 되어 가정 규칙을 정하고 있습니다. "그건 여자친구랑 같이 자면 안 된다는 거야"가 구체적인 규칙이며, 이에 론니가 말합니다: "와, 엄격하다."',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X7'
+    },
+    {
+      phrase: 'Perfect.',
+      partOfSpeech: 'expression',
+      meaning: '"Perfect." delivered as a single word — with a full stop — is one of the most versatile words in English. Here it expresses satisfied readiness: everything is set up exactly as needed, the plan can now proceed. The contrast between the simple word and the ridiculous plan it is approving is where the comedy lives.',
+      meaning_ko: '마침표와 함께 단 한 마디로 전달되는 "Perfect."는 영어에서 가장 다재다능한 단어 중 하나입니다. 여기서는 만족스러운 준비 상태를 표현합니다: 모든 것이 필요한 대로 정확히 설정되어 있고 이제 계획을 진행할 수 있습니다. 단순한 단어와 그것이 승인하는 황당한 계획 사이의 대비가 코미디가 사는 곳입니다.',
+      example: 'A: "He won't be back for another twenty minutes." B: "Perfect." [starts executing the surprise plan]',
+      example_ko: 'A: "그 사람 20분 더 안 와." B: "완벽해." [서프라이즈 계획 실행 시작]',
+      context: 'Rachel asks Monica how long Chandler has been in the shower. Monica says five minutes. Rachel says "Perfect" — and immediately sets off to exact her revenge for Chandler accidentally seeing her by walking in on him. The word is the whole joke: calm, precise, and completely committed to an absurd plan.',
+      context_ko: '레이철이 모니카에게 찬들러가 샤워한 지 얼마나 됐냐고 묻는 장면. 모니카가 5분이라고 합니다. 레이철이 "완벽해"라고 말하고 — 즉시 찬들러가 실수로 자신을 본 것에 대한 복수를 하러 들어갑니다. 이 단어가 농담의 전부입니다: 차분하고, 정확하고, 황당한 계획에 완전히 헌신하는.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X8'
+    },
+    {
+      phrase: 'Come clean.',
+      partOfSpeech: 'phrasal verb',
+      meaning: 'To "come clean" means to tell the full truth about something you have been hiding — to confess, admit, or stop concealing a secret. The phrase implies that the truth has been dirty (hidden, shameful) and revealing it is an act of cleansing. It is one of the most natural and common expressions for confession in everyday English.',
+      meaning_ko: '"Come clean"은 숨겨왔던 것에 대한 완전한 진실을 말한다는 뜻으로 — 고백하거나, 인정하거나, 비밀 감추기를 멈추는 것입니다. 이 표현은 진실이 더러웠다(숨겨지고, 부끄러웠다)는 것을 암시하며 그것을 드러내는 것이 정화 행위임을 나타냅니다. 일상 영어에서 고백에 가장 자연스럽고 흔한 표현 중 하나입니다.',
+      example: 'A: "You\'ve been keeping something from me." B: "Okay. It\'s time to come clean. I didn\'t send that email."',
+      example_ko: 'A: "나한테 뭔가 숨기고 있잖아." B: "좋아. 솔직하게 말할게. 그 이메일 내가 안 보냈어."',
+      context: 'Joey confronts his father and lays out the two options: break up with Ronni, or come clean with Joey\'s mother. "This is not right" — spoken by Joey without sarcasm or comedy, just plain frustration — is one of the few times we see Joey\'s moral clarity used in a serious scene rather than a comic one.',
+      context_ko: '조이가 아버지와 대면해 두 가지 선택지를 제시하는 장면: 론니와 헤어지거나, 조이의 어머니에게 솔직하게 털어놓거나. "이건 옳지 않아" — 빈정거림이나 코미디 없이 그냥 솔직한 좌절감으로 말하는 조이의 말 — 이 조이의 도덕적 명확함이 코미디 장면이 아닌 진지한 장면에서 사용되는 몇 안 되는 순간 중 하나입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X9'
+    },
+    {
+      phrase: 'I\'ll be able to be a standup guy and go the distance.',
+      partOfSpeech: 'expression',
+      meaning: '"A standup guy" means a man of integrity — reliable, honest, and loyal. "Go the distance" means to stay committed for the long haul, not giving up when things get hard. Together they describe Joey\'s aspiration: to be the kind of man who stays faithful. Hearing himself say this out loud, in the context of watching his father fail, gives the speech unexpected weight.',
+      meaning_ko: '"A standup guy"는 성실한 남자를 의미합니다 — 신뢰할 수 있고, 정직하고, 충성스러운. "Go the distance"는 힘들 때도 포기하지 않고 장기적으로 헌신한다는 뜻입니다. 함께 이것들은 조이의 열망을 묘사합니다: 충실한 종류의 남자가 되는 것. 아버지가 실패하는 것을 보는 맥락에서 이 말을 소리 내어 하는 것이 연설에 예상치 못한 무게를 줍니다.',
+      example: 'A: "Do you think you can really commit this time?" B: "Yes. I\'m going to be a standup guy and go the distance."',
+      example_ko: 'A: "이번엔 진짜 헌신할 수 있을 것 같아?" B: "응. 성실한 사람이 되고 끝까지 갈 거야."',
+      context: 'Joey confides in Chandler at night, wrestling with whether he is capable of being faithful. "I always figured, when the right one comes along, I\'ll be able to be a standup guy and go the distance." Chandler\'s quiet, sincere "Yeah. I really do" — for once without a joke — is one of the episode\'s most genuine moments.',
+      context_ko: '조이가 밤에 찬들러에게 자신이 충실할 수 있는지 씨름하며 털어놓는 장면. "항상 맞는 사람이 오면 성실한 남자가 되고 끝까지 갈 수 있을 것 같았거든." 찬들러의 조용하고 진심 어린 "응. 진짜로" — 한 번도 농담 없이 — 이 에피소드에서 가장 진솔한 순간 중 하나입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X10'
+    },
+        {
+      phrase: 'Fasten your seat belts, it\'s pee-pee time.',
+      partOfSpeech: 'expression',
+      meaning: '"Fasten your seat belts" is the standard safety announcement on an airplane — a signal to prepare for something significant ahead. Using it as a dramatic intro to something silly ("pee-pee time") creates a comic gap between the serious framing and the ridiculous content. Rachel uses it to announce her revenge plan with total confidence.',
+      meaning_ko: '"Fasten your seat belts"는 비행기에서 하는 표준 안전 안내 방송으로 — 앞으로 중요한 일에 대비하라는 신호입니다. 이것을 어리석은 것의 극적인 소개로 사용하는 것("pee-pee time")은 진지한 프레이밍과 황당한 내용 사이에 코미디적 간격을 만듭니다. 레이철이 복수 계획을 완전한 자신감으로 발표하기 위해 씁니다.',
+      example: 'A: "What are you about to do?" B: "Fasten your seat belts. It\'s payback time."',
+      example_ko: 'A: "뭐 하려는 거야?" B: "안전벨트 매. 복수의 시간이야."',
+      context: 'Rachel has confirmed Chandler is in the shower, said "Perfect," and now dramatically announces her revenge mission to Monica before marching into the boys\' apartment. The formal aviation language applied to a petty nudity-revenge plan is the whole joke — and Rachel\'s total commitment to the absurd plan makes it funnier.',
+      context_ko: '레이철이 찬들러가 샤워 중임을 확인하고 "완벽해"라고 한 후, 남자들 아파트로 행진하기 전에 이 대사로 모니카에게 복수 임무를 극적으로 발표하는 장면. 사소한 알몸 복수 계획에 적용되는 공식적인 항공 언어가 농담의 전부이며 — 레이철의 황당한 계획에 대한 완전한 헌신이 더 웃기게 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X11'
+    },
+    {
+      phrase: 'We hate that guy.',
+      partOfSpeech: 'expression',
+      meaning: '"We hate that guy" is a collective declaration of strong dislike — the "we" makes it a group verdict, not just a personal opinion. It is blunt, final, and leaves no room for nuance or appeal. In casual English, "that guy" is used to refer to someone specific without naming them — adding a tone of dismissal, as if they barely deserve to be named.',
+      meaning_ko: '"We hate that guy"는 강한 싫음의 집단적 선언입니다 — "we"가 개인적인 의견이 아닌 그룹의 평결로 만듭니다. 직설적이고 최종적이며, 뉘앙스나 항소의 여지를 남기지 않습니다. 캐주얼한 영어에서 "that guy"는 이름을 말하지 않고 특정 사람을 지칭하는 데 쓰이며 — 거의 이름도 붙일 가치가 없다는 듯한 무시의 어조를 더합니다.',
+      example: 'A: "What do you all think of the new coach?" B: "Honestly? We hate that guy. Unanimous."',
+      example_ko: 'A: "새 코치에 대해 다들 어떻게 생각해?" B: "솔직히? 우리 다 저 사람 싫어. 만장일치야."',
+      context: 'When Phoebe tells the group about Roger's dinner invitation, Chandler, Monica and Ross struggle to articulate their problem with him — "It's just that, uh... It's Roger... Basically we just feel that he's, uh..." — before Chandler cuts through with the simplest possible summary. Monica immediately confirms: "We hate him." The two lines together are the perfect group verdict.',
+      context_ko: '피비가 그룹에게 로저의 저녁 초대를 전할 때, 찬들러, 모니카, 로스가 그와의 문제를 표현하는 데 어려움을 겪는 장면 — "그냥, 어... 로저야... 기본적으로 우리는 그냥 그가, 어..." — 찬들러가 가능한 가장 단순한 요약으로 끊어버립니다. 모니카가 즉시 확인합니다: "싫어." 두 대사가 함께 완벽한 그룹 판결입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X12'
+    },
+    {
+      phrase: 'After a certain point, you gotta let go.',
+      partOfSpeech: 'expression',
+      meaning: '"After a certain point" means beyond a particular stage or threshold — once enough time or circumstances have passed. "Let go" means to release your grip, stop trying to control, and accept the situation. Together the phrase is about accepting that some things are beyond your power to fix, and that trying to control them does more harm than good.',
+      meaning_ko: '"After a certain point"는 특정 단계나 기준점을 넘어서 — 충분한 시간이나 상황이 지났을 때를 의미합니다. "Let go"는 잡고 있던 것을 놓고, 통제하려는 것을 멈추고, 상황을 받아들인다는 뜻입니다. 함께 이 표현은 어떤 것들은 당신이 고칠 능력 밖에 있다는 것을 받아들이고, 통제하려고 하는 것이 도움보다 더 큰 해를 끼친다는 것에 관한 것입니다.',
+      example: 'A: "I keep trying to fix this situation." B: "After a certain point, you gotta let go. Some things aren\'t yours to fix."',
+      example_ko: 'A: "계속 이 상황을 고치려고 해." B: "어느 정도가 지나면 그냥 놔야 해. 어떤 것들은 네가 고칠 게 아니야."',
+      context: 'Joey reaches this conclusion about his parents\' situation at the end of the episode. "They\'re parents. After a certain point, you gotta let them make their own mistakes." It is Joey at his wisest — and the wisdom is all the more striking because it comes from someone who seems the least philosophical in the group.',
+      context_ko: '조이가 에피소드 말미에 부모님의 상황에 대해 이 결론에 도달하는 장면. "그들은 부모님이야. 어느 정도가 지나면 자신만의 실수를 하도록 내버려둬야 해." 이것이 가장 지혜로운 조이의 모습입니다 — 그리고 그 지혜는 그룹에서 가장 철학적이지 않아 보이는 사람에게서 나오기 때문에 더욱 인상적입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X13'
+    },
+    {
+      phrase: 'I just did what I thought you\'d want.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple, honest explanation of an action taken with good intentions that did not produce the expected result. "I did what I thought you\'d want" acknowledges that the person acted on an assumption rather than a direct request — and that the assumption turned out to be wrong. It is both an explanation and a quiet, indirect apology.',
+      meaning_ko: '좋은 의도로 취한 행동이 기대했던 결과를 내지 못했을 때의 단순하고 솔직한 설명입니다. "I did what I thought you\'d want"는 그 사람이 직접적인 요청이 아닌 가정을 바탕으로 행동했다는 것을 인정합니다 — 그리고 그 가정이 틀린 것으로 밝혀졌다는 것을. 설명이자 조용하고 간접적인 사과입니다.',
+      example: 'A: "Why did you tell them?" B: "I just did what I thought you\'d want. I thought you\'d be relieved."',
+      example_ko: 'A: "왜 말한 거야?" B: "네가 원할 것 같아서 했어. 안도할 거라고 생각했어."',
+      context: 'Joey\'s mother has come to scold him for telling his father to come clean — which has now disrupted the arrangement she had quietly accepted for years. Joey\'s "I just did what I thought you\'d want" is genuine and heartbreaking. She knows it. Her response — "I know you did, cookie. I know you did" — is the episode\'s most tender moment.',
+      context_ko: '조이의 어머니가 아버지에게 솔직하게 말하라고 한 것에 대해 그를 꾸짖으러 오는 장면 — 그것이 그녀가 수년간 조용히 받아들인 관계를 이제 뒤흔들었습니다. 조이의 "네가 원할 것 같아서 했어"는 진심이고 가슴 아픕니다. 그녀는 그것을 압니다. 그녀의 반응 — "알아, 우리 아들. 알아" — 이 에피소드에서 가장 따뜻한 순간입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X14'
+    },
+    {
+      phrase: 'It\'s just, I hate that guy.',
+      partOfSpeech: 'expression',
+      meaning: '"It\'s just" is a softener — it signals that what follows is a confession you have been building up to, presented as simply and honestly as possible. "I hate that guy" is the most direct, unqualified statement of dislike. Together they form a classic confession structure: I\'ve been holding back, but here it is, plainly.',
+      meaning_ko: '"It\'s just"는 완충어입니다 — 뒤에 오는 것이 가능한 한 단순하고 솔직하게 제시되는, 쌓아온 고백이라는 신호입니다. "I hate that guy"는 가장 직접적이고 조건 없는 혐오 표현입니다. 함께 이것들은 전형적인 고백 구조를 형성합니다: 참아왔지만, 여기 있어, 솔직하게.',
+      example: 'A: "So what do you think of the new manager?" B: "I mean, he\'s... it\'s just, I hate that guy."',
+      example_ko: 'A: "새 매니저 어떻게 생각해?" B: "음, 그는... 그냥, 저 사람이 싫어."',
+      context: 'Phoebe finally breaks up with Roger and tells the group. When asked what happened, she lists his good qualities — good person, really sweet, so right for her — and then delivers the real conclusion: "It\'s just, I hate that guy." The contrast between the build-up and the blunt payoff is perfectly Phoebe.',
+      context_ko: '피비가 드디어 로저와 헤어지고 친구들에게 말하는 장면. 무슨 일이 있었냐는 질문에 그의 좋은 자질들을 나열합니다 — 좋은 사람, 정말 다정하고, 자신에게 너무 맞는 것 같아서 — 그러다 진짜 결론을 내놓습니다: "그냥, 저 사람이 싫어." 빌드업과 직설적인 결론 사이의 대비가 완벽하게 피비답습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E13X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
