@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E15: The One with the Stoned Guy</div>
-        <div class="page-header-meta">Monica cooks for a potential restaurant job. Chandler gets a promotion he doesn't want.</div>
+        <div class="page-header-meta">Chandler quits his job. Monica cooks a dinner audition for a restaurant investor who arrives stoned.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e15"
             onclick="toggleBookmark('episode','episode-friends-s1e15','📋 Friends S1E15','friends/episodes/season1/s1e15.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Stoned Guy',
-    description: 'Monica cooks for a potential restaurant job. Chandler gets a promotion he doesn\'t want.',
+    description: 'Chandler quits his job. Monica cooks a dinner audition for a restaurant investor who arrives stoned.',
     expressions: [
-    {phrase:'In over your head',partOfSpeech:'idiom',meaning:'To be involved in a situation that is too difficult or complex for you to handle.',example:'"Taking three online courses at once left me completely in over my head."',context:'Chandler is stuck in a job he doesn\'t want.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E15X1'},
-    {phrase:'Seize the opportunity',partOfSpeech:'expression',meaning:'To take full advantage of a chance when it appears.',example:'"When they offered her the role, she seized the opportunity immediately."',context:'Taking action when a good chance presents itself.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E15X2'}
+    {
+      phrase: 'Never mind.',
+      partOfSpeech: 'expression',
+      meaning: '"Never mind" means: forget what I just said, it doesn\'t matter, or I\'ve decided not to continue with what I was about to do or say. It is one of the most versatile and frequently used expressions in casual English — cancelling something without explanation. The tone can be resigned, disappointed, amused, or dismissive depending on the situation.',
+      meaning_ko: '"Never mind"는 내가 방금 한 말은 잊어라, 상관없다, 또는 하려던 것을 계속하지 않기로 했다는 의미입니다. 설명 없이 무언가를 취소하는 캐주얼한 영어에서 가장 다재다능하고 자주 쓰이는 표현 중 하나입니다. 상황에 따라 체념, 실망, 즐거움, 또는 무시의 어조가 될 수 있습니다.',
+      example: 'A: "Wait, what were you about to say?" B: "Never mind. It\'s not important."',
+      example_ko: 'A: "잠깐, 뭐 말하려고 했어?" B: "됐어. 중요한 게 아니야."',
+      context: 'Joey rushes into Central Perk with exciting news — Chandler is coming with incredible news. He is about to ask everyone to pretend they didn\'t know, but Chandler walks in the door before Joey can finish the sentence. Joey deflates: "Never mind. But it was gonna be really good."',
+      context_ko: '조이가 흥분해서 센트럴 퍼크로 뛰어 들어와 소식을 알리는 장면 — 찬들러가 놀라운 소식을 갖고 오고 있다고. 모두에게 모르는 척하라고 하려는 찰나, 문장을 마치기도 전에 찬들러가 문으로 들어옵니다. 조이가 풀이 죽습니다: "됐어. 근데 진짜 좋은 거였는데."',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X1'
+    },
+    {
+      phrase: 'So I quit.',
+      partOfSpeech: 'expression',
+      meaning: '"So I quit" uses "so" as a casual connector meaning: given everything I just described, the logical conclusion was that I quit. It announces the action plainly and without drama, as if it is the most reasonable thing in the world. The gap between the build-up (a promotion!) and this conclusion (quitting!) is the entire joke.',
+      meaning_ko: '"So I quit"에서 "so"는 내가 방금 설명한 모든 것을 감안해서, 논리적인 결론은 그만두는 것이었다는 뜻의 캐주얼한 연결어로 씁니다. 마치 세상에서 가장 합리적인 것인 양 행동을 평범하고 드라마틱하지 않게 발표합니다. 빌드업(승진!)과 이 결론(퇴직!) 사이의 간격이 바로 농담 전체입니다.',
+      example: 'A: "And then they offered me a promotion." B: "That\'s great!" A: "So I quit."',
+      example_ko: 'A: "그리고 나서 승진을 제안했어." B: "잘됐네!" A: "그래서 그만뒀어."',
+      context: 'Chandler has been building up to what sounds like great news — his boss called him in and offered him a promotion to processing supervisor. The group starts celebrating. Then Chandler lands "So I quit" — and the bewildered "Why?" from both Monica and Rachel is the perfect response.',
+      context_ko: '찬들러가 좋은 소식처럼 들리는 것을 쌓아 올리는 장면 — 상사가 그를 불러 처리 부서 관리자로 승진시키겠다고 제안했습니다. 친구들이 축하하기 시작합니다. 그러다 찬들러가 "그래서 그만뒀어"를 날리고 — 모니카와 레이철의 당황한 "왜?"가 완벽한 반응입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X2'
+    },
+    {
+      phrase: 'This was supposed to be a temp job.',
+      partOfSpeech: 'expression',
+      meaning: 'A "temp job" (temporary job) is one you take with no intention of staying long-term — just to earn money while you figure out something better. "Was supposed to be" signals that the original plan has gone completely off track. It is both an explanation and an accusation directed at circumstance: things were meant to be different.',
+      meaning_ko: '"Temp job"(임시직)은 더 좋은 것을 찾는 동안 돈을 벌기 위해 장기적으로 있을 의도 없이 취하는 일입니다. "Was supposed to be"는 원래 계획이 완전히 틀어졌다는 신호입니다. 설명이자 상황을 향한 고발이기도 합니다: 상황은 달라야 했습니다.',
+      example: 'A: "You\'ve been here six years." B: "I know. This was supposed to be a temp job."',
+      example_ko: 'A: "여기서 6년이나 있었잖아." B: "알아. 그냥 임시직이어야 했는데."',
+      context: 'Chandler explains why he quit the promotion: accepting it would mean admitting this data-processing job is actually his career. "This was supposed to be a temp job!" captures every person who took a stopgap job and watched it quietly become their life. Ross follows up: "Chandler, you\'ve been there for five years."',
+      context_ko: '찬들러가 왜 승진을 거절했는지 설명하는 장면: 받아들이면 이 데이터 처리 일이 실제로 자신의 커리어라고 인정하는 것이 됩니다. "임시직이어야 했는데!"는 임시방편 직장을 잡았다가 조용히 인생이 되는 것을 지켜본 모든 사람을 포착합니다. 로스가 이어서: "찬들러, 거기서 5년이나 일했잖아."',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X3'
+    },
+    {
+      phrase: 'I don\'t have a dream.',
+      partOfSpeech: 'expression',
+      meaning: 'A flat, honest admission of lacking a clear personal ambition or passion. While most people are expected to have a dream — a calling, a goal they work toward — "I don\'t have a dream" is a quietly devastating confession. Chandler says it without self-pity, which is what makes it land so hard.',
+      meaning_ko: '명확한 개인적 야망이나 열정이 없다는 솔직한 인정입니다. 대부분의 사람들이 꿈, 즉 향해 나아가는 목표나 소명을 가질 것으로 기대되는 반면, "I don\'t have a dream"은 조용하고 처절한 고백입니다. 찬들러가 자기 연민 없이 이것을 말하는 것이 이 말을 더 강하게 만듭니다.',
+      example: 'A: "What\'s your dream?" B: "Honestly? I don\'t have a dream. And that\'s the problem."',
+      example_ko: 'A: "꿈이 뭐야?" B: "솔직히? 꿈이 없어. 그게 문제야."',
+      context: 'Chandler justifies going to a career counsellor: "You guys all know what you want to do. You have goals. You have dreams. I don\'t have a dream." Monica\'s immediate comeback — "Ah, the lesser known \'I Don\'t Have a Dream\' speech" — is perfect, but Chandler\'s admission is genuinely the emotional core of the episode.',
+      context_ko: '찬들러가 커리어 상담사를 찾아가는 것을 정당화하는 장면: "너희는 다 하고 싶은 게 뭔지 알잖아. 목표도 있고. 꿈도 있고. 나는 꿈이 없어." 모니카의 즉각적인 반격 — "아, 덜 알려진 \'나는 꿈이 없다\' 연설이네" — 이 완벽하지만, 찬들러의 고백이 진정으로 에피소드의 감정적 핵심입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X4'
+    },
+    {
+      phrase: 'It\'s just gotta be so great.',
+      partOfSpeech: 'expression',
+      meaning: '"Just gotta be" is a casual, emphatic way of saying "it absolutely must be." The "just" intensifies the necessity and strips away any alternative. Monica says this about the dinner she is preparing — it cannot merely be good, it has to be great. The pressure she puts on herself in three words tells you everything about her character.',
+      meaning_ko: '"Just gotta be"는 "절대적으로 그래야만 한다"의 캐주얼하고 강조적인 표현입니다. "Just"가 필요성을 강화하고 다른 대안을 없애버립니다. 모니카가 준비하는 저녁에 대해 이것을 말합니다 — 그냥 좋으면 안 되고, 훌륭해야 합니다. 세 단어로 그녀가 스스로에게 가하는 압박이 그녀의 성격에 대한 모든 것을 말해줍니다.',
+      example: 'A: "It just needs to be decent." B: "No. It just gotta be so great. This is my one shot."',
+      example_ko: 'A: "그냥 괜찮으면 되지." B: "아니. 정말 훌륭해야 해. 이게 내 유일한 기회야."',
+      context: 'Monica learns that Phoebe\'s massage client Steve is looking for a head chef for his new restaurant. She immediately begins planning the audition dinner, unable to contain the pressure she is already feeling. "I don\'t know what to make, I don\'t know — it\'s just gotta be so great." This is Monica at maximum intensity.',
+      context_ko: '모니카가 피비의 마사지 고객 스티브가 새 식당을 위한 주방장을 찾고 있다는 것을 알게 되는 장면. 즉시 오디션 저녁을 계획하기 시작하며 이미 느끼는 압박을 억제할 수 없습니다. "뭘 만들어야 할지 모르겠어, 모르겠어 — 정말 훌륭해야 해." 최대 강도의 모니카입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X5'
+    },
+    {
+      phrase: 'Talk dirty to me.',
+      partOfSpeech: 'expression',
+      meaning: '"Talk dirty" means to use sexually explicit language during an intimate encounter. The request "talk dirty to me" is asking a partner to verbally describe sexual desires or scenarios. It is widely understood in English popular culture. The episode uses it for comic effect as Ross — who is famously awkward — completely fails at it.',
+      meaning_ko: '"Talk dirty"는 친밀한 만남에서 성적으로 노골적인 언어를 사용한다는 뜻입니다. "Talk dirty to me"는 파트너에게 성적 욕구나 시나리오를 언어로 묘사해달라는 요청입니다. 영어 대중문화에서 널리 이해됩니다. 에피소드는 악명 높게 어색한 로스가 완전히 실패하는 것을 코미디 효과로 씁니다.',
+      example: 'A: "Say something." B: "Talk dirty to me." A: "I... uh... the laundry needs doing?"',
+      example_ko: 'A: "뭔가 말해." B: "야하게 얘기해줘." A: "나는... 어... 빨래를 해야 하는데?"',
+      context: 'Ross\'s date Celia asks him to talk dirty while they are together. Ross panics completely and his only contribution is the word "vulva." Joey later coaches him, demonstrating and then asking Ross to try — but Ross can only manage saying he wants to be alone in his apartment. A masterclass in comedic failure.',
+      context_ko: '로스의 데이트 상대 셀리아가 함께 있는 동안 야하게 말해달라고 하는 장면. 로스가 완전히 패닉하고 그의 유일한 기여는 "vulva"라는 단어입니다. 조이가 나중에 시범을 보이고 로스에게 시도해보라고 코치하지만 — 로스는 자신의 아파트에 혼자 있고 싶다는 말만 겨우 합니다. 코미디적 실패의 교과서입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X6'
+    },
+    {
+      phrase: 'I panicked, all right?',
+      partOfSpeech: 'expression',
+      meaning: '"I panicked" means I lost control of my thoughts and actions due to sudden anxiety or pressure, causing me to do something irrational. "All right?" at the end is a defensive tag — it is not really a question but a plea for understanding: I know it was wrong, I couldn\'t help it. It is the honest explanation for almost any embarrassing impulsive action.',
+      meaning_ko: '"I panicked"는 갑작스러운 불안이나 압박으로 인해 생각과 행동 통제력을 잃어, 비이성적인 무언가를 했다는 의미입니다. 끝의 "all right?"은 방어적인 태그입니다 — 진짜 질문이 아니라 이해를 구하는 호소: 잘못됐다는 걸 알아, 어쩔 수 없었어. 거의 모든 당황스러운 충동적 행동에 대한 솔직한 설명입니다.',
+      example: 'A: "You just said the wrong person\'s name at the altar?" B: "I panicked, all right? It was the first name that came to mind."',
+      example_ko: 'A: "제단에서 다른 사람 이름을 말했다고?" B: "패닉했어, 알겠어? 가장 먼저 떠오른 이름이었어."',
+      context: 'Ross explains to Joey why his attempt at talking dirty failed so catastrophically. He was asked for something "hot" and produced the word "vulva." His self-defence — "I panicked, all right? She took me by surprise" — is both relatable and hilarious, because the specific failure is so uniquely Ross.',
+      context_ko: '로스가 조이에게 야한 말하기 시도가 왜 그렇게 처참하게 실패했는지 설명하는 장면. "뜨거운" 것을 요청받았는데 "vulva"라는 단어를 내놓았습니다. 그의 자기 변호 — "패닉했어, 알겠어? 그녀가 불시에 공격했잖아" — 가 공감 가면서도 웃깁니다. 특정 실패가 너무나도 유일하게 로스답기 때문입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X7'
+    },
+    {
+      phrase: 'Try something on me.',
+      partOfSpeech: 'expression',
+      meaning: '"Try something on" someone means to test or practise something directly on that person. In this context, Joey is offering himself as a practice target for Ross to attempt dirty talk. "On me" makes it direct and personal. The offer is generous, practical, and completely absurd given they are best friends.',
+      meaning_ko: '누군가에게 "try something on"한다는 것은 그 사람에게 직접 무언가를 테스트하거나 연습한다는 뜻입니다. 이 맥락에서 조이는 로스가 야한 말을 시도할 수 있도록 연습 대상으로 자신을 제공하고 있습니다. "On me"는 직접적이고 개인적으로 만듭니다. 제안이 관대하고 실용적이며, 그들이 가장 친한 친구라는 것을 감안하면 완전히 황당합니다.',
+      example: 'A: "I don\'t know how to bring it up." B: "Try something on me. I\'ll tell you if it sounds weird."',
+      example_ko: 'A: "어떻게 꺼내야 할지 모르겠어." B: "나한테 해봐. 이상하게 들리면 말해줄게."',
+      context: 'Joey offers to be Ross\'s dirty-talk practice partner. "Look, I tell you what. Try something on me." Ross\'s horrified "Please be kidding" and Joey\'s sincere "Why not?" perfectly captures the gap between how seriously Joey takes this coaching and how deeply uncomfortable Ross is.',
+      context_ko: '조이가 로스의 야한 말 연습 파트너가 되겠다고 제안하는 장면. "있잖아, 있지. 나한테 해봐." 로스의 공포에 질린 "제발 농담이라고 해줘"와 조이의 진지한 "왜 안 돼?"가 조이가 이 코칭을 얼마나 진지하게 받아들이는지와 로스가 얼마나 깊이 불편한지 사이의 간격을 완벽하게 포착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X8'
+    },
+    {
+      phrase: 'That\'s it. You\'re not there.',
+      partOfSpeech: 'expression',
+      meaning: '"That\'s it" signals an abrupt stopping point — that\'s as far as we go, nothing more. "You\'re not there" means: in this scenario I am imagining, you do not exist. Ross uses both to shut down his dirty-talk attempt the moment he realises he has mentally placed himself alone in his apartment — the opposite of what the exercise was for.',
+      meaning_ko: '"That\'s it"은 갑작스러운 중단점을 알립니다 — 여기까지, 더 이상 없습니다. "You\'re not there"은 내가 상상하는 이 시나리오에서 당신은 존재하지 않는다는 뜻입니다. 로스는 혼자 아파트에 있는 자신을 상상하고 있다는 것을 깨달은 순간 — 이 연습의 목적과 정반대 — 이 두 표현으로 야한 말 시도를 중단합니다.',
+      example: 'A: "I\'m picturing us on a beach and..." B: "Wait — that\'s it. You\'re not there. Never mind."',
+      example_ko: 'A: "우리가 해변에 있는 걸 상상하고 있는데..." B: "잠깐 — 됐어. 너 없어. 됐어."',
+      context: 'Ross closes his eyes to try dirty talk and begins: "I\'m in my apartment..." Joey leans in expectantly. Then: "That\'s it. You\'re not there. We\'re not having this conversation." The reveal that Ross\'s ideal scenario involves no partner at all is the scene\'s best joke — his imagination went somewhere wholesome by default.',
+      context_ko: '로스가 눈을 감고 야한 말을 시도하며 시작합니다: "나는 아파트에 있어..." 조이가 기대하며 몸을 기울입니다. 그러자: "됐어. 너 없어. 우리 이 대화 안 하고 있어." 로스의 이상적인 시나리오에 파트너가 전혀 없다는 폭로가 장면 최고의 농담입니다 — 그의 상상이 기본값으로 건전한 곳으로 향했습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X9'
+    },
+    {
+      phrase: 'Word has lost all meaning.',
+      partOfSpeech: 'expression',
+      meaning: 'Said when a word has been repeated so many times that it begins to sound strange and disconnected from its meaning — a well-known linguistic phenomenon called "semantic satiation." Saying "word has lost all meaning" is a way of describing that moment humorously. It is one of the most delightful and unexpected lines of the episode.',
+      meaning_ko: '한 단어가 너무 많이 반복되어 이상하게 들리고 의미와 단절된 것처럼 느껴지기 시작할 때 하는 말입니다 — "의미 포화"라고 불리는 잘 알려진 언어 현상. "Word has lost all meaning"은 그 순간을 유머러스하게 묘사하는 방법입니다. 에피소드에서 가장 즐겁고 예상치 못한 대사 중 하나입니다.',
+      example: 'A: "Spoon. Spoon. Spoon. Spoooon." B: "Stop. Word has lost all meaning."',
+      example_ko: 'A: "숟가락. 숟가락. 숟가락. 숟가락." B: "그만해. 단어가 모든 의미를 잃어버렸어."',
+      context: 'Monica tells Steve that the next course will be "tartlets." Steve says "tartlets?" out loud. Monica says "tartlets." Steve repeats "tartlets" again. Monica again: "tartlets." Steve keeps saying it until: "Word has lost all meaning." The deadpan delivery from a very stoned Steve makes it one of the most quoted lines of the season.',
+      context_ko: '모니카가 스티브에게 다음 코스가 "tartlets"라고 알려주는 장면. 스티브가 "tartlets?"라고 소리 내어 말합니다. 모니카: "tartlets." 스티브: "tartlets"를 반복합니다. 모니카도 또: "tartlets." 스티브가 계속 말하다가: "단어가 모든 의미를 잃어버렸어." 많이 취한 스티브의 무표정한 전달이 시즌에서 가장 많이 인용되는 대사 중 하나가 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X10'
+    },
+    {
+      phrase: 'What a tool.',
+      partOfSpeech: 'expression',
+      meaning: '"Tool" is informal slang for a person who behaves in a stupid, thoughtless, or contemptible way — someone who lets you down or acts selfishly. "What a tool" is an exclamation of dismissive contempt. It is blunt, colloquial, and satisfying to say when someone has acted badly and left the scene.',
+      meaning_ko: '"Tool"은 멍청하거나 생각 없거나 경멸스러운 방식으로 행동하는 사람을 가리키는 비격식 속어입니다 — 실망을 주거나 이기적으로 행동하는 사람. "What a tool"은 무시하는 경멸의 감탄사입니다. 직설적이고 구어체이며, 누군가가 나쁘게 행동하고 자리를 떠난 후 말하기에 시원한 표현입니다.',
+      example: 'A: "He cancelled on us again at the last minute." B: "What a tool."',
+      example_ko: 'A: "그 사람이 마지막 순간에 또 취소했어." B: "진짜 쓸모없는 사람이네."',
+      context: 'After Steve leaves the dinner audition early because he could not wait four minutes for the tartlets — despite Monica having worked for seven years toward this opportunity — Phoebe sums him up with two words: "What a tool." The brevity is perfect. Monica\'s devastated silence makes it land even harder.',
+      context_ko: '스티브가 tartlets를 4분도 기다리지 못하고 오디션 저녁을 일찍 떠난 후 — 모니카가 7년 동안 이 기회를 향해 일해왔음에도 — 피비가 두 단어로 그를 요약하는 장면: "진짜 쓸모없네." 간결함이 완벽합니다. 모니카의 처절한 침묵이 더 강하게 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X11'
+    },
+    {
+      phrase: 'You\'ll get there.',
+      partOfSpeech: 'expression',
+      meaning: '"You\'ll get there" is a short, warm reassurance meaning: you will eventually reach your goal, achieve success, or find what you are looking for. "There" refers to the destination — the dream, the success, the version of yourself you want to become. It is gentle, forward-looking, and one of the most natural ways to comfort someone who is discouraged.',
+      meaning_ko: '"You\'ll get there"는 결국 목표에 도달하거나, 성공을 이루거나, 찾고 있는 것을 찾게 될 것이라는 짧고 따뜻한 위로입니다. "There"는 목적지, 즉 꿈, 성공, 되고 싶은 자신의 모습을 말합니다. 부드럽고, 미래를 향하며, 낙심한 사람을 위로하는 가장 자연스러운 방법 중 하나입니다.',
+      example: 'A: "I feel like I\'m never going to figure it out." B: "You\'ll get there. Give it time."',
+      example_ko: 'A: "절대 알아내지 못할 것 같아." B: "될 거야. 시간을 줘."',
+      context: 'After Steve ruins Monica\'s dinner audition, Chandler comforts her: "Look, you\'ll get there. You\'re an amazing chef." It is a simple, sincere thing to say — and coming from Chandler, who has spent the episode wrestling with his own lack of direction, it carries extra weight.',
+      context_ko: '스티브가 모니카의 오디션 저녁을 망친 후 찬들러가 위로하는 장면: "봐봐, 될 거야. 놀라운 요리사잖아." 단순하고 진심 어린 말입니다 — 에피소드 내내 자신의 방향 부재와 씨름해온 찬들러에게서 나오는 것이라 더 무게가 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X12'
+    },
+    {
+      phrase: 'I wasn\'t faking.',
+      partOfSpeech: 'expression',
+      meaning: '"Faking" means performing a reaction or emotion that is not genuine — pretending. "I wasn\'t faking" is an assurance that what you expressed was real and sincere. In everyday conversation it can refer to any performed response — laughter, enthusiasm, pain, or in Phoebe\'s case, food appreciation noises.',
+      meaning_ko: '"Faking"은 진정이 아닌 반응이나 감정을 연기하는 것을 의미합니다 — 가장하는 것. "I wasn\'t faking"은 당신이 표현한 것이 진짜이고 진심이었다는 확인입니다. 일상 대화에서 웃음, 열정, 고통, 또는 피비의 경우에는 음식 감상 소리 등 어떤 연기된 반응에도 쓸 수 있습니다.',
+      example: 'A: "You were just being nice about my cooking." B: "I wasn\'t faking. It was genuinely delicious."',
+      example_ko: 'A: "내 요리에 그냥 좋다고 한 거잖아." B: "연기한 거 아니야. 진짜 맛있었어."',
+      context: 'After Steve leaves and Monica is devastated, Phoebe comforts her: "Yeah, you know all those yummy noises I made? I wasn\'t faking." This small declaration of genuine appreciation — coming right after the disaster — is exactly what Monica needed to hear, and it is genuinely sweet.',
+      context_ko: '스티브가 떠나고 모니카가 망연자실한 후 피비가 위로하는 장면: "있잖아, 내가 냈던 맛있다는 소리들 있잖아? 연기한 거 아니야." 이 작은 진심 어린 감사의 선언이 — 재앙 바로 직후에 — 모니카가 들어야 했던 정확한 말이며, 진심으로 달콤합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X13'
+    },
+    {
+      phrase: 'I was unbelievable.',
+      partOfSpeech: 'expression',
+      meaning: '"Unbelievable" normally means something that is hard to believe because it is so extreme — either extremely good or extremely bad. "I was unbelievable" said about yourself means you performed at an extraordinary level. The word is used here with complete sincerity by Ross, which makes it funny — because his "unbelievable" performance turned out to be unbelievably bad.',
+      meaning_ko: '"Unbelievable"은 보통 너무 극단적이어서 믿기 어렵다는 뜻으로 — 극도로 좋거나 극도로 나쁜 것. 자신에 대해 "I was unbelievable"이라고 말하는 것은 특별한 수준으로 수행했다는 의미입니다. 이 단어는 로스가 완전한 진심으로 쓰는데, 웃긴 것은 그의 "믿기 어려운" 수행이 믿기 어려울 만큼 나빴기 때문입니다.',
+      example: 'A: "How did the presentation go?" B: "I was unbelievable. Honestly, even I surprised myself."',
+      example_ko: 'A: "발표 어떻게 됐어?" B: "믿기지 않을 만큼 잘했어. 솔직히, 나도 놀랐어."',
+      context: 'Ross reports back on his second date with Celia. "Oh, I was unbelievable." He then describes it as elaborate, with characters, plot lines, themes, a motif, and villagers — only to reveal that after all the "dirty talk," they just ended up cuddling. His self-assessment vs. the reality is the entire joke.',
+      context_ko: '로스가 셀리아와의 두 번째 데이트 결과를 보고하는 장면. "아, 믿기지 않을 만큼 잘했어." 그런 다음 등장인물, 줄거리, 주제, 모티프, 그리고 마을 사람들까지 있는 정교한 것으로 묘사합니다 — 그러나 모든 "야한 말" 끝에 그냥 껴안고 잤다고 밝힙니다. 그의 자기 평가 대 현실이 농담 전체입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X14'
+    },
+    {
+      phrase: 'I\'ll see you Monday.',
+      partOfSpeech: 'expression',
+      meaning: 'A straightforward farewell that indicates a definite, scheduled next meeting. What makes this line the episode\'s punchline is its context: Chandler has just spent the entire call insisting he will not return to work, telling his boss "this is a rejection, not a negotiation," and demanding he stop saying numbers. Then the salary offer reaches a point where Chandler simply says this.',
+      meaning_ko: '확실하고 예정된 다음 만남을 나타내는 간단한 작별 인사입니다. 이 대사가 에피소드 펀치라인이 되는 것은 맥락 때문입니다: 찬들러가 방금 전화 내내 직장으로 돌아가지 않을 것이라고 주장하며, 상사에게 "이건 거절이야, 협상이 아니야"라고 말하고 숫자 얘기를 멈추라고 요구했습니다. 그러다 급여 제안이 특정 수준에 도달하자 찬들러가 단순히 이 말을 합니다.',
+      example: 'A: "I told myself I wasn\'t going back." B: "And?" A: "I\'ll see you Monday."',
+      example_ko: 'A: "돌아가지 않겠다고 스스로 말했잖아." B: "그래서?" A: "월요일에 봐요."',
+      context: 'Chandler\'s entire dramatic rebellion — quitting, going to a career counsellor, refusing the promotion — ends when his boss keeps raising the offer. The episode\'s final image is Chandler on the phone, having caved completely, simply saying "I\'ll see you Monday." It is the most perfect, funniest, and saddest ending of the subplot.',
+      context_ko: '찬들러의 모든 드라마틱한 반란 — 퇴직, 커리어 상담사 방문, 승진 거절 — 이 상사가 계속 제안을 높이자 끝나버리는 장면. 에피소드의 마지막 이미지는 전화기를 들고 완전히 굴복한 찬들러가 단순히 "월요일에 봐요"라고 말하는 것. 서브플롯에서 가장 완벽하고, 가장 웃기고, 가장 슬픈 엔딩입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E15X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
