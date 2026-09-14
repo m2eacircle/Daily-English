@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e1.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E1: Season 2, Episode 1</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E1: The One with Ross' New Girlfriend</div>
+        <div class="page-header-meta">Ross returns from China with girlfriend Julie. Rachel deals with her unexpected feelings.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e1"
             onclick="toggleBookmark('episode','episode-friends-s2e1','📋 Friends S2E1','friends/episodes/season2/s2e1.html')">
@@ -77,25 +77,178 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Ross\' New Girlfriend',
+    description: 'Ross returns from China with girlfriend Julie. Rachel deals with her unexpected feelings.',
+    expressions: [
+    {
+      phrase: 'Excuse me. Move, move, move!',
+      partOfSpeech: 'expression',
+      meaning: 'An urgent, repeated command to clear a path or make space. The phrase combines politeness with escalating urgency, using repetition for emphasis. It conveys immediate need to navigate through people or obstacles.',
+      meaning_ko: '길을 비우거나 공간을 만들기 위한 긴급한 반복된 명령입니다. 이 표현은 정중함을 긴급함과 결합하며, 강조를 위해 반복을 사용합니다. 그것은 사람들이나 장애물을 통해 탐색해야 할 즉각적인 필요를 전달합니다.',
+      example: 'A: "The exit is blocked!" B: "Excuse me. Move, move, move!"',
+      example_ko: 'A: "출구가 막혔어!" B: "실례합니다. 비켜, 비켜, 비켜!"',
+      context: 'Monica rushes through the airport crowd to meet Ross arriving from China, urgently pushing through.',
+      context_ko: 'Monica는 중국에서 도착하는 Ross를 만나기 위해 공항 군중을 통해 서두르며, 급히 밀어붙입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X1'
+    },
+    {
+      phrase: 'How was China?',
+      partOfSpeech: 'question',
+      meaning: 'A casual inquiry about someone\'s experience in a place or during a trip. The phrase opens conversation to learn about the person\'s time away. It\'s a friendly greeting that invites storytelling about their recent experience.',
+      meaning_ko: '한 장소에서 또는 여행 중의 누군가의 경험에 대한 일반적인 질문입니다. 이 표현은 그 사람의 부재 중 시간에 대해 배우기 위해 대화를 엽니다. 그것은 최근 경험에 대한 이야기를 초대하는 친절한 인사입니다.',
+      example: 'A: "I just got back from my trip!" B: "How was China?"',
+      example_ko: 'A: "난 여행에서 방금 돌아왔어!" B: "중국은 어땠어?"',
+      context: 'Rachel greets Ross at the airport, asking about his recent trip to China.',
+      context_ko: 'Rachel은 공항에서 Ross를 맞이하며, 그의 최근 중국 여행에 대해 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X2'
+    },
+    {
+      phrase: 'You\'re bleeding.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct statement of observation about a physical injury. The phrase informs someone of a visible wound or bleeding. It\'s a straightforward alert to draw attention to an injury that needs attention.',
+      meaning_ko: '신체 부상에 대한 관찰의 직접적인 진술입니다. 이 표현은 눈에 보이는 상처나 출혈에 대한 누군가를 알립니다. 그것은 주의가 필요한 부상에 주목을 끌기 위한 직설적인 경고입니다.',
+      example: 'A: "What\'s wrong?" B: "You\'re bleeding."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "넌 피가 나고 있어."',
+      context: 'Monica notices Rachel has a nosebleed after rushing through the airport.',
+      context_ko: 'Monica는 Rachel이 공항을 통해 서두른 후 코피가 났다는 것을 알아챕니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X3'
+    },
+    {
+      phrase: 'Come on, I wanna hear everything.',
+      partOfSpeech: 'expression',
+      meaning: 'An enthusiastic request for complete information or a full story about a person\'s experiences. The phrase conveys eager interest and desire to know all details. It invites someone to share freely and comprehensively.',
+      meaning_ko: '누군가의 경험에 대한 완전한 정보 또는 전체 이야기에 대한 열정적인 요청입니다. 이 표현은 열심인 관심과 모든 세부 사항을 알고 싶은 욕망을 전달합니다. 그것은 누군가가 자유롭고 포괄적으로 공유하도록 초대합니다.',
+      example: 'A: "I have so many stories!" B: "Come on, I wanna hear everything!"',
+      example_ko: 'A: "난 정말 많은 이야기가 있어!" B: "와, 난 모든 걸 듣고 싶어!"',
+      context: 'Rachel eagerly asks Ross to share details about his entire trip to China.',
+      context_ko: 'Rachel은 Ross에게 중국 여행 전체에 대한 세부 사항을 공유하도록 열심히 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X4'
+    },
+    {
+      phrase: 'You said he liked me!',
+      partOfSpeech: 'expression',
+      meaning: 'An accusatory statement reminding someone of a previous statement they made. The phrase expresses betrayal or disappointment because circumstances have changed from what was promised. It\'s used to hold someone accountable for prior words.',
+      meaning_ko: '누군가가 한 이전 진술을 상기시키는 비난적 진술입니다. 이 표현은 약속된 것으로부터 상황이 변경되었기 때문에 배반이나 실망을 표현합니다. 그것은 누군가를 이전 말에 대해 책임지도록 하는 데 사용됩니다.',
+      example: 'A: "I told you he\'d wait for you." B: "But you said he liked me!"',
+      example_ko: 'A: "난 넌 그가 너를 기다릴 거라고 말했어." B: "하지만 넌 그가 나를 좋아한다고 말했어!"',
+      context: 'Rachel confronts Chandler and Monica about Ross\' feelings, recalling their previous assurances.',
+      context_ko: 'Rachel은 Chandler과 Monica에게 Ross의 감정에 대해 대면하며, 그들의 이전 확신을 회상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X5'
+    },
+    {
+      phrase: 'There was always this voice inside that kept saying.',
+      partOfSpeech: 'expression',
+      meaning: 'A reference to inner intuition or internal wisdom that consistently communicated something over time. The phrase suggests the person had lingering doubts or knowing feelings. It conveys that a deeper part of the self was trying to convey an important message.',
+      meaning_ko: '시간 경과에 따라 지속적으로 뭔가를 전달한 내부 직관 또는 내부 지혜에 대한 참조입니다. 이 표현은 그 사람이 지속적인 의심이나 아는 감정을 가지고 있었다는 것을 시사합니다. 그것은 자신의 더 깊은 부분이 중요한 메시지를 전달하려고 했다는 것을 전달합니다.',
+      meaning_ko2: '지속적으로 뭔가를 말해준 내부의 목소리에 대한 언급입니다.',
+      example: 'A: "Why didn\'t you tell me?" B: "There was always this voice inside that kept saying it wouldn\'t work."',
+      example_ko: 'A: "왜 넌 나한테 말하지 않았어?" B: "항상 내 안에 그것이 작동하지 않을 거라고 계속 말하는 목소리가 있었어."',
+      context: 'Ross explains to Chandler how his inner voice finally convinced him to move on from Rachel.',
+      context_ko: 'Ross는 Chandler에게 그의 내부 목소리가 결국 그를 Rachel로부터 계속하도록 설득했다는 것을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X6'
+    },
+    {
+      phrase: 'Isn\'t that just kick-you-in-the-crotch fantastic?',
+      partOfSpeech: 'expression',
+      meaning: 'An extreme, sarcastic exclamation expressing bitter disappointment or cruel irony about a situation. The phrase uses crude, shocking language for emphasis. It conveys deep frustration about an unfortunate and painful coincidence or outcome.',
+      meaning_ko: '상황에 대한 신랄한 실망 또는 잔인한 아이러니를 표현하는 극단적이고 풍자적인 감탄입니다. 이 표현은 강조를 위해 거친 충격적인 언어를 사용합니다. 그것은 불행하고 고통스러운 우연이나 결과에 대한 깊은 좌절감을 전달합니다.',
+      example: 'A: "He\'s dating her now." B: "Isn\'t that just kick-you-in-the-crotch fantastic?"',
+      example_ko: 'A: "그는 지금 그녀와 데이트하고 있어." B: "그건 정말로 끔찍한 거 아니야?"',
+      context: 'Chandler sarcastically reacts to the cruel irony that Julie and Ross ended up together in China.',
+      context_ko: 'Chandler은 Julie과 Ross가 중국에서 함께 끝났다는 잔인한 아이러니에 풍자적으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X7'
+    },
+    {
+      phrase: 'It\'s an expression.',
+      partOfSpeech: 'expression',
+      meaning: 'A clarification that something just said is idiomatic language rather than literal. The phrase defends unusual or crude wording by explaining it as a common figure of speech. It\'s used when someone needs to justify unconventional language choice.',
+      meaning_ko: '방금 말한 것이 문자적인 것이 아닌 관용적 언어라는 명확성입니다. 이 표현은 관례적이지 않은 단어 선택을 일반적인 표현으로 설명하여 방어합니다. 누군가가 관례적이지 않은 언어 선택을 정당화할 필요가 있을 때 사용됩니다.',
+      example: 'A: "That\'s a weird thing to say!" B: "It\'s an expression."',
+      example_ko: 'A: "그건 이상한 말이야!" B: "그건 표현이야."',
+      context: 'Chandler explains that his crude exclamation about the situation is just an expression.',
+      context_ko: 'Chandler은 상황에 대한 그의 거친 감탄이 단지 표현이라고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X8'
+    },
+    {
+      phrase: 'I like to be surprised.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing preference for unexpected events or information rather than advance notice. The phrase conveys enjoyment of suspense and not knowing what comes next. It reflects an appreciation for mystery and the element of surprise in life.',
+      meaning_ko: '사전 통지보다는 예상치 못한 사건이나 정보에 대한 선호를 표현하는 진술입니다. 이 표현은 서스펜스의 즐김과 무엇이 다음에 올지 모르는 것을 전달합니다. 그것은 삶의 신비와 놀라움의 요소에 대한 감사를 반영합니다.',
+      example: 'A: "I\'ll tell you what\'s happening." B: "No, I like to be surprised."',
+      example_ko: 'A: "난 넌 무슨 일이 일어나고 있는지 말해줄 거야." B: "아니, 난 놀라고 싶어."',
+      context: 'Monica tells Ross not to spoil events about their day because she enjoys surprises.',
+      context_ko: 'Monica는 Ross에게 그녀가 놀라움을 즐기기 때문에 그들의 날에 대한 사건을 망치지 말라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X9'
+    },
+    {
+      phrase: 'I never would have gone for it with her.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing that the speaker would not have pursued a romantic connection with someone. The phrase indicates lack of prior attraction or interest. It conveys that romantic involvement with that person would not have happened under different circumstances.',
+      meaning_ko: '화자가 누군가와 낭만적인 연결을 추구하지 않았을 것이라는 진술입니다. 이 표현은 사전 매력이나 관심의 부족을 나타냅니다. 그것은 그 사람과의 낭만적 관여가 다른 상황에서 일어나지 않았을 것이라는 것을 전달합니다.',
+      example: 'A: "Would you have dated her?" B: "I never would have gone for it with her."',
+      example_ko: 'A: "넌 그녀와 데이트했을 거야?" B: "난 절대로 그녀와 함께 하지 않았을 거야."',
+      context: 'Ross tells Chandler he would not have pursued Julie if Rachel hadn\'t been unavailable.',
+      context_ko: 'Ross는 Chandler에게 Rachel이 이용 가능하지 않았다면 Julie를 추구하지 않았을 것이라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X10'
+    },
+    {
+      phrase: 'You have to really wanna see it.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement suggesting that something is only apparent if you actively look for it or want to believe it. The phrase implies the positive aspect is not obvious but requires effort to recognize. It conveys that optimism requires intentional perspective or willingness to see good.',
+      meaning_ko: '무언가는 그것을 적극적으로 찾거나 믿기를 원하면 명백하다는 것을 시사하는 진술입니다. 이 표현은 긍정적인 측면이 명백하지 않지만 인식하려면 노력이 필요하다는 것을 암시합니다. 그것은 낙관주의가 의도적인 관점이나 선의를 보려는 의지를 요구한다는 것을 전달합니다.',
+      example: 'A: "Is there any good side to this?" B: "You have to really wanna see it."',
+      example_ko: 'A: "이건 좋은 측면이 있어?" B: "넌 정말로 그것을 보고 싶어야 해."',
+      context: 'Phoebe tries to find a silver lining in Rachel\'s heartbreak about Ross.',
+      context_ko: 'Phoebe는 Ross에 대한 Rachel의 심장 통증에서 희망적인 것을 찾으려고 시도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X11'
+    },
+    {
+      phrase: 'I\'m incredibly anal and a control freak.',
+      partOfSpeech: 'expression',
+      meaning: 'A self-deprecating admission of being extremely organized, meticulous, and unwilling to relinquish control. The phrase acknowledges personality traits of perfectionism and rigidity. It\'s used with humor to describe obsessive need for order and management of situations.',
+      meaning_ko: '극도로 조직적이고, 꼼꼼하며, 통제를 포기하려는 욕망이 없다는 자조적 인정입니다. 이 표현은 완벽주의와 경직성의 성격 특성을 인정합니다. 그것은 질서와 상황 관리에 대한 강박적 필요를 설명하기 위해 유머로 사용됩니다.',
+      example: 'A: "Why won\'t you try the new system?" B: "I\'m incredibly anal and a control freak."',
+      example_ko: 'A: "넌 왜 새 시스템을 시도하지 않아?" B: "난 극도로 강박적이고 통제 광이야."',
+      context: 'Monica admits to Phoebe that her controlling nature makes her unwilling to cut her hair.',
+      context_ko: 'Monica는 Phoebe에게 그녀의 통제적 특성이 그녀가 머리를 자르려는 것을 꺼린다고 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X12'
+    },
+    {
+      phrase: 'I sort of did a stupid thing last night.',
+      partOfSpeech: 'expression',
+      meaning: 'A tentative confession acknowledging a regrettable action performed in the past. The phrase uses softening language like "sort of" to minimize the admission. It\'s used to come clean about something foolish without being completely direct about it.',
+      meaning_ko: '과거에 수행된 후회스러운 행동을 인정하는 잠정적 고백입니다. 이 표현은 "kind of"와 같은 완화 언어를 사용하여 인정을 최소화합니다. 그것은 완전히 직접적이지 않으면서 어리석은 일에 대해 깨끗이 하는 데 사용됩니다.',
+      example: 'A: "What\'s wrong?" B: "I sort of did a stupid thing last night."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "난 어제 밤에 어리석은 일을 했어."',
+      context: 'Phoebe confesses to Monica that she gave herself a bad haircut.',
+      context_ko: 'Phoebe는 Monica에게 자신이 자신에게 나쁜 헤어컷을 했다는 것을 고백합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X13'
+    },
+    {
+      phrase: 'Rachel, how did this happen?',
+      partOfSpeech: 'question',
+      meaning: 'A confused inquiry about how an unexpected or dramatic situation came to be. The phrase expresses bewilderment at circumstances that have developed. It seeks understanding of the causes or chain of events that led to the present moment.',
+      meaning_ko: '예상치 못한 드라마틱한 상황이 어떻게 발생했는지에 대한 혼란스러운 조회입니다. 이 표현은 발전한 상황에 대한 당혹감을 표현합니다. 그것은 현재의 순간으로 이어진 원인이나 일련의 사건을 이해하기를 추구합니다.',
+      example: 'A: "I got my hair cut." B: "Rachel, how did this happen?"',
+      example_ko: 'A: "난 헤어컷을 했어." B: "Rachel, 이건 어떻게 된 거야?"',
+      context: 'Monica questions Rachel about how she ended up sleeping with Ross.',
+      context_ko: 'Monica는 Rachel에게 그녀가 Ross와 자게 되었는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X14'
+    },
+    {
+      phrase: 'I gotta get out of here!',
+      partOfSpeech: 'expression',
+      meaning: 'An urgent exclamation expressing immediate need to leave a location or situation. The phrase conveys anxiety or distress requiring escape. It\'s used when someone feels uncomfortable, overwhelmed, or emotionally stressed.',
+      meaning_ko: '위치 또는 상황을 즉시 떠나야 할 필요를 표현하는 긴급한 감탄입니다. 이 표현은 탈출을 요구하는 불안이나 고통을 전달합니다. 누군가가 불편하거나, 압도되거나, 감정적으로 스트레스를 받을 때 사용됩니다.',
+      example: 'A: "Are you okay?" B: "No, I gotta get out of here!"',
+      example_ko: 'A: "넌 괜찮아?" B: "아니, 난 여기를 나가야 해!"',
+      context: 'Rachel urgently leaves after processing the emotional reality of Ross\' relationship with Julie.',
+      context_ko: 'Rachel은 Ross와 Julie의 관계의 감정적 현실을 처리한 후 서둘러 떠납니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E1X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +258,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +275,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +320,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
