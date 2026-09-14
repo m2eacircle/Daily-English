@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e5.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E5: Season 2, Episode 5</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E5: The One You Could Never Do in a Million Years</div>
+        <div class="page-header-meta">Chandler's phone scam with Jade. Money tensions between the friends. Ross' birthday concert conflict.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e5"
             onclick="toggleBookmark('episode','episode-friends-s2e5','📋 Friends S2E5','friends/episodes/season2/s2e5.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 5',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One You Could Never Do in a Million Years',
+    description: 'Chandler\'s phone scam with Jade. Money tensions between the friends. Ross\' birthday concert conflict.',
+    expressions: [
+    {
+      phrase: 'Man, I sure miss Julie.',
+      partOfSpeech: 'expression',
+      meaning: 'An emphatic statement expressing longing for someone no longer in one\'s life. The phrase conveys deep personal loss. It demonstrates vulnerability and emotional honesty about romantic attachment.',
+      meaning_ko: '더 이상 자신의 삶에 없는 누군가에 대한 그리움을 강조하며 표현하는 진술입니다. 이 표현은 깊은 개인적 상실을 전달합니다. 그것은 낭만적 감정에 대한 취약성과 감정적 솔직함을 보여줍니다.',
+      example: 'A: "How have you been since the breakup?" B: "Man, I sure miss Julie."',
+      example_ko: 'A: "헤어진 후에 어떻게 지냈어?" B: "정말 Julie가 그리워."',
+      context: 'Joey opens the episode still pining for his ex-girlfriend Julie.',
+      context_ko: 'Joey는 여전히 그의 전 여자친구 Julie를 그리워하며 에피소드를 시작합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X1'
+    },
+    {
+      phrase: 'I\'m trying this screening thing.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement indicating the adoption of a new strategy or technique. The phrase references using an answering machine to filter calls. It conveys an attempt to manage one\'s social interactions differently.',
+      meaning_ko: '새로운 전략이나 기술을 도입하려는 진술입니다. 이 표현은 답변 전화기를 사용하여 통화를 필터링하는 것을 참조합니다. 그것은 자신의 사회적 상호작용을 다르게 관리하려는 시도를 전달합니다.',
+      example: 'A: "You always answer your phone immediately." B: "I\'m trying this screening thing."',
+      example_ko: 'A: "넌 항상 전화를 즉시 받아." B: "난 이 screening thing을 시도하고 있어."',
+      context: 'Chandler explains his new phone-answering philosophy using an answering machine.',
+      context_ko: 'Chandler는 답변 전화기를 사용하여 그의 새로운 전화 응답 철학을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X2'
+    },
+    {
+      phrase: 'People will think I don\'t have a life.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement reflecting concern about social perception based on availability. The phrase indicates worry about appearing unoccupied or unpopular. It conveys the social stigma associated with always being available.',
+      meaning_ko: '가용성을 기반으로 사회적 인식에 대한 우려를 반영하는 진술입니다. 이 표현은 점유되지 않거나 인기 없어 보일 것에 대한 걱정을 나타냅니다. 그것은 항상 가용한 것과 관련된 사회적 낙인을 전달합니다.',
+      example: 'A: "Why don\'t you ever answer your phone?" B: "People will think I don\'t have a life."',
+      example_ko: 'A: "넌 왜 절대로 전화를 답장 안 해?" B: "사람들이 난 삶이 없다고 생각할 거야."',
+      context: 'Chandler explains his flawed logic for not answering phones.',
+      context_ko: 'Chandler는 전화를 답하지 않는 그의 결함있는 논리를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X3'
+    },
+    {
+      phrase: 'We don\'t make as much money as you do.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct statement of financial inequality within the friend group. The phrase articulates a previously unspoken tension. It conveys resentment about income disparity and its social consequences.',
+      meaning_ko: '친구 그룹 내의 재정적 불평등의 직접적인 진술입니다. 이 표현은 이전에 말하지 않은 긴장을 명확히 합니다. 그것은 소득 불평등과 그 사회적 결과에 대한 불만을 전달합니다.',
+      example: 'A: "Why won\'t you go to that expensive restaurant?" B: "We don\'t make as much money as you do."',
+      example_ko: 'A: "왜 그런 비싼 레스토랑에 안 가?" B: "우리는 너처럼 많은 돈을 버는 게 아니야."',
+      context: 'Phoebe, Monica, and Rachel finally confront the wealthier friends about income inequality.',
+      context_ko: 'Phoebe, Monica, Rachel은 마침내 더 부유한 친구들에게 소득 불평등에 대해 대면합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X4'
+    },
+    {
+      phrase: 'You are pure evil.',
+      partOfSpeech: 'expression',
+      meaning: 'A dramatic accusation of moral corruption or wickedness. The phrase uses hyperbolic language for effect. It conveys strong disapproval of someone\'s behavior or plan.',
+      meaning_ko: '도덕적 부패 또는 사악함의 극단적 비난입니다. 이 표현은 효과를 위해 과장된 언어를 사용합니다. 그것은 누군가의 행동이나 계획에 대한 강한 불승인을 전달합니다.',
+      example: 'A: "I\'m planning to trick this girl." B: "You are pure evil."',
+      example_ko: 'A: "난 이 여자를 속일 계획이야." B: "넌 순수하게 악해."',
+      context: 'Monica reacts to Chandler\'s scheme to pretend to be Bob and seduce Jade.',
+      context_ko: 'Monica는 Chandler가 Bob으로 가장하여 Jade를 유혹하려는 계획에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X5'
+    },
+    {
+      phrase: 'Horny and alone.',
+      partOfSpeech: 'expression',
+      meaning: 'A blunt self-deprecating description combining sexual frustration with loneliness. The phrase uses crude language for comedic impact. It conveys honest admission of emotional and physical needs.',
+      meaning_ko: '성적 욕구 불만과 외로움을 결합한 무뚝뚝한 자조적 설명입니다. 이 표현은 코미디 영향을 위해 거친 언어를 사용합니다. 그것은 감정적이고 신체적 욕구에 대한 솔직한 인정을 전달합니다.',
+      example: 'A: "What are you right now?" B: "Horny and alone."',
+      example_ko: 'A: "넌 지금 뭐야?" B: "성적으로 좌절하고 혼자야."',
+      context: 'Chandler admits his true state of desperation about finding romantic connection.',
+      context_ko: 'Chandler는 낭만적 연결을 찾는 것에 대한 그의 진정한 절망의 상태를 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X6'
+    },
+    {
+      phrase: 'Having a phone has finally paid off.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing success or benefit from a previously questioned decision. The phrase conveys triumphant vindication. It demonstrates how a seemingly useless tool or item suddenly becomes valuable.',
+      meaning_ko: '이전에 의문을 제기받은 결정으로부터의 성공 또는 이점을 표현하는 진술입니다. 이 표현은 승리한 정당화를 전달합니다. 그것은 겉보기에 쓸모없는 도구나 항목이 어떻게 갑자기 가치 있게 되는지 보여줍니다.',
+      example: 'A: "I thought you said your answering machine was useless." B: "Having a phone has finally paid off."',
+      example_ko: 'A: "난 넌 네 답변 전화기가 쓸모없다고 했다고 생각했어." B: "전화기를 가지는 게 마침내 값어치가 있었어."',
+      context: 'Chandler celebrates that his phone-screening strategy led to meeting Jade.',
+      context_ko: 'Chandler는 그의 전화 screening 전략이 Jade를 만나게 했다고 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X7'
+    },
+    {
+      phrase: 'Whoever stood you up is a jerk.',
+      partOfSpeech: 'expression',
+      meaning: 'A sympathetic judgment about someone who failed to appear for a social commitment. The phrase provides validation and support. It conveys moral disapproval of unreliability and rudeness.',
+      meaning_ko: '사회적 약속에 나타나지 못한 누군가에 대한 동정심 있는 판단입니다. 이 표현은 검증과 지원을 제공합니다. 그것은 신뢰성 부족과 무례함에 대한 도덕적 불승인을 전달합니다.',
+      example: 'A: "The person I was meeting never showed up." B: "Whoever stood you up is a jerk."',
+      example_ko: 'A: "내가 만나려던 사람이 나타나지 않았어." B: "넌 누가 너를 차버렸든 그 사람은 jerks야."',
+      context: 'Chandler comforts Jade after Bob fails to appear at their meeting, while lying about his identity.',
+      context_ko: 'Chandler는 Bob이 그들의 만남에 나타나지 못한 후 Jade를 위로하면서 그의 정체성에 대해 거짓말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X8'
+    },
+    {
+      phrase: 'I\'m weird and sensitive.',
+      partOfSpeech: 'expression',
+      meaning: 'A self-aware admission combining non-conformity with emotional responsiveness. The phrase uses self-deprecation as a charm tactic. It conveys vulnerability masked by casual admission.',
+      meaning_ko: '비적응성과 감정적 반응성을 결합한 자신을 인식한 인정입니다. 이 표현은 매력 전략으로 자조를 사용합니다. 그것은 무시적 인정으로 가려진 취약성을 전달합니다.',
+      example: 'A: "How did you know I was sad?" B: "I\'m weird and sensitive."',
+      example_ko: 'A: "넌 어떻게 내가 슬픈 걸 알았어?" B: "난 이상하고 민감해."',
+      context: 'Chandler explains his ability to read Jade\'s emotions as part of his character.',
+      context_ko: 'Chandler는 Jade의 감정을 읽는 그의 능력을 그의 성격의 일부로 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X9'
+    },
+    {
+      phrase: 'There\'s gonna be a hoopla?',
+      partOfSpeech: 'question',
+      meaning: 'An incredulous inquiry about festive plans made without one\'s knowledge. The phrase conveys surprise and mild concern. It demonstrates obliviousness to social planning by friends.',
+      meaning_ko: '사람의 지식 없이 만든 축제 계획에 대한 의심스러운 조회입니다. 이 표현은 놀라움과 약간의 우려를 전달합니다. 그것은 친구들의 사회적 계획에 대한 무지를 보여줍니다.',
+      example: 'A: "We\'re throwing you a party." B: "There\'s gonna be a hoopla?"',
+      example_ko: 'A: "우리가 넌 파티를 열어줄 거야." B: "뭔가 큰 일이 있을 거야?"',
+      context: 'Ross learns that his friends have planned an elaborate birthday celebration.',
+      context_ko: 'Ross는 그의 친구들이 정교한 생일 축하를 계획했다는 것을 배웁니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X10'
+    },
+    {
+      phrase: 'Could you be less enthused?',
+      partOfSpeech: 'question',
+      meaning: 'A sarcastic criticism about someone\'s lack of excitement or gratitude. The phrase uses rhetorical questioning for effect. It conveys frustration with minimal appreciation being shown.',
+      meaning_ko: '누군가의 흥분이나 감사의 부족에 대한 풍자적 비판입니다. 이 표현은 효과를 위해 수사적 질문을 사용합니다. 그것은 최소한의 감사가 표시되지 않은 것에 대한 좌절을 전달합니다.',
+      example: 'A: "Thanks for the gift, I guess." B: "Could you be less enthused?"',
+      example_ko: 'A: "선물 고마워, 아마." B: "넌 덜 열정적일 수 있어?"',
+      context: 'Monica criticizes the poor reception to the concert tickets gift.',
+      context_ko: 'Monica는 콘서트 티켓 선물의 좋지 않은 반응을 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X11'
+    },
+    {
+      phrase: 'It just feels like charity.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing how well-intentioned help can feel demeaning. The phrase conveys hurt about implied inequality. It demonstrates the emotional complexity of receiving gifts with strings attached.',
+      meaning_ko: '좋은 의도의 도움이 어떻게 모욕감을 줄 수 있는지를 표현하는 진술입니다. 이 표현은 암시된 불평등에 대한 상처를 전달합니다. 그것은 조건부 선물을 받는 것의 감정적 복잡성을 보여줍니다.',
+      example: 'A: "We\'re giving you this gift." B: "It just feels like charity."',
+      example_ko: 'A: "우리가 넌 이 선물을 주는 거야." B: "그냥 자선처럼 느껴져."',
+      context: 'Phoebe expresses hurt that the wealthy friends\' gifts make her feel inferior.',
+      context_ko: 'Phoebe는 부유한 친구들의 선물이 그녀를 열등하다고 느끼게 한다는 것을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X12'
+    },
+    {
+      phrase: 'That\'s because you have it.',
+      partOfSpeech: 'expression',
+      meaning: 'A retort pointing out the hypocrisy or blind spot in someone\'s perspective. The phrase uses logic to highlight inequality. It conveys the speaker\'s frustration with privileged obliviousness.',
+      meaning_ko: '누군가의 관점의 위선이나 blind spot을 지적하는 대응입니다. 이 표현은 논리를 사용하여 불평등을 강조합니다. 그것은 화자의 특권을 받은 무지에 대한 좌절을 전달합니다.',
+      example: 'A: "I don\'t think of money as an issue." B: "That\'s because you have it."',
+      example_ko: 'A: "난 돈을 문제로 생각하지 않아." B: "그건 넌 그것을 가지고 있기 때문이야."',
+      context: 'Phoebe provides a cutting reality check when Ross dismisses money as unimportant.',
+      context_ko: 'Phoebe는 Ross가 돈을 중요하지 않다고 무시할 때 날카로운 현실을 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X13'
+    },
+    {
+      phrase: 'I\'m not in a very Hootie place.',
+      partOfSpeech: 'expression',
+      meaning: 'A humorous explanation for declining an event, using the concert band\'s name as a metaphor. The phrase employs wordplay and irony. It conveys emotional unwillingness masked by comedy.',
+      meaning_ko: '콘서트 밴드의 이름을 은유로 사용하여 이벤트를 거절하는 재미있는 설명입니다. 이 표현은 말장난과 아이러니를 사용합니다. 그것은 코미디로 가려진 감정적 불의지를 전달합니다.',
+      example: 'A: "Please come to the concert." B: "I\'m not in a very Hootie place."',
+      example_ko: 'A: "제발 콘서트에 와." B: "난 Hootie 기분이 아니야."',
+      context: 'Phoebe declines attending the Hootie and the Blowfish concert due to the money conflict.',
+      context_ko: 'Phoebe는 돈 갈등 때문에 Hootie and the Blowfish 콘서트에 참석하지 않기로 거절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X14'
+    },
+    {
+      phrase: 'I had sex today.',
+      partOfSpeech: 'expression',
+      meaning: 'A boastful announcement of sexual conquest serving as a triumphant conclusion. The phrase reveals victory in the romantic subplot. It conveys pride and relief after the phone-screening struggle.',
+      meaning_ko: '승리한 결론으로 역할하는 성적 정복의 자랑스러운 발표입니다. 이 표현은 낭만적 부분 줄거리에서의 승리를 드러냅니다. 그것은 전화 screening 투쟁 후의 자부심과 안도감을 전달합니다.',
+      example: 'A: "You\'re leaving already?" B: "I had sex today."',
+      example_ko: 'A: "넌 이미 떠나? " B: "난 오늘 sex를 했어."',
+      context: 'Chandler announces his successful encounter with Jade at the episode\'s conclusion.',
+      context_ko: 'Chandler는 에피소드의 결론에서 Jade와의 성공적인 만남을 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E5X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
