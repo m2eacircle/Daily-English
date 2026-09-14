@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e8.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E8: Season 2, Episode 8</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E8: The One with the List</div>
+        <div class="page-header-meta">Ross kisses Rachel. Monica interviews for Mockolate job. Ross makes a pros/cons list. Phoebe sings about love triangle.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e8"
             onclick="toggleBookmark('episode','episode-friends-s2e8','📋 Friends S2E8','friends/episodes/season2/s2e8.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 8',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the List',
+    description: 'Ross kisses Rachel. Monica interviews for Mockolate job. Ross makes a pros/cons list. Phoebe sings about love triangle.',
+    expressions: [
+    {
+      phrase: 'Ross kissed me.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple declarative statement revealing an unexpected romantic event. The phrase conveys stunning news with understatement. It demonstrates dramatic revelation of pivotal moment.',
+      meaning_ko: '예상치 못한 낭만적 사건을 드러내는 단순한 선언 진술입니다. 이 표현은 과소평가로 충격적인 뉴스를 전달합니다. 그것은 중추적 순간의 극단적 공개를 보여줍니다.',
+      example: 'A: "What happened last night?" B: "Ross kissed me."',
+      example_ko: 'A: "어제 밤에 뭐가 일어났어?" B: "Ross가 날 키스했어."',
+      context: 'Rachel tells her friends about an unexpected kiss from Ross after the party.',
+      context_ko: 'Rachel은 파티 후 Ross로부터 예상치 못한 키스에 대해 친구들에게 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X1'
+    },
+    {
+      phrase: 'It was unbelievable!',
+      partOfSpeech: 'expression',
+      meaning: 'A superlative exclamation expressing amazement about a romantic experience. The phrase conveys overwhelming positive emotion. It demonstrates extreme satisfaction with physical affection.',
+      meaning_ko: '낭만적 경험에 대한 놀라움을 표현하는 최상급 감탄입니다. 이 표현은 압도적인 긍정적 감정을 전달합니다. 그것은 신체적 친밀감에 대한 극단적 만족을 보여줍니다.',
+      example: 'A: "How was the kiss?" B: "It was unbelievable!"',
+      example_ko: 'A: "키스는 어떤 거였어?" B: "정말 믿기지 않을 정도였어!"',
+      context: 'Rachel describes the amazing quality of her kiss with Ross.',
+      context_ko: 'Rachel은 Ross와의 키스의 놀라운 질에 대해 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X2'
+    },
+    {
+      phrase: 'We wanna hear everything.',
+      partOfSpeech: 'expression',
+      meaning: 'A determined collective demand for complete romantic narrative disclosure. The phrase uses plural solidarity to pressure compliance. It conveys urgent curiosity about every detail.',
+      meaning_ko: '완전한 낭만적 서사 공개에 대한 결정적인 집단 요구입니다. 이 표현은 준수 압력을 위해 복수형 연대를 사용합니다. 그것은 모든 세부사항에 대한 긴급 호기심을 전달합니다.',
+      example: 'A: "I have news." B: "We wanna hear everything."',
+      example_ko: 'A: "난 소식이 있어." B: "우리는 모든 걸 듣고 싶어."',
+      context: 'Rachel\'s friends demand she tells them all the details about kissing Ross.',
+      context_ko: 'Rachel의 친구들은 그녀가 Ross를 키스하는 것에 대한 모든 세부사항을 알려달라고 요구합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X3'
+    },
+    {
+      phrase: 'Get the wine and unplug the phone.',
+      partOfSpeech: 'expression',
+      meaning: 'An instruction to prepare for extended intimate conversation by removing distractions. The phrase establishes ritual for serious girl talk. It demonstrates ceremonial approach to gossip.',
+      meaning_ko: '방해 요소를 제거하여 연장된 친밀한 대화를 준비하라는 지시입니다. 이 표현은 심각한 girl talk를 위한 의식을 확립합니다. 그것은 수다에 대한 의식적 접근을 보여줍니다.',
+      example: 'A: "Get the wine and unplug the phone." B: "This is serious!"',
+      example_ko: 'A: "와인 가져오고 전화 빼." B: "이건 진지한 거네!"',
+      context: 'Monica instructs everyone to settle in for a long girl conversation about Rachel and Ross.',
+      context_ko: 'Monica는 모두에게 Rachel과 Ross에 대한 긴 girl conversation을 위해 정착하라고 지시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X4'
+    },
+    {
+      phrase: 'It was really intense at first.',
+      partOfSpeech: 'expression',
+      meaning: 'A descriptive phrase conveying passionate beginning to physical intimacy. The phrase qualifies intensity with temporal reference. It demonstrates graduated analysis of romantic experience.',
+      meaning_ko: '신체적 친밀함의 열정적인 시작을 전달하는 서술적 표현입니다. 이 표현은 시간적 참조를 통해 강도를 수정합니다. 그것은 낭만적 경험의 점진적 분석을 보여줍니다.',
+      example: 'A: "Describe the kiss." B: "It was really intense at first."',
+      example_ko: 'A: "키스를 설명해." B: "처음에는 정말 강렬했어."',
+      context: 'Rachel details the escalating passion during her kiss with Ross.',
+      context_ko: 'Rachel은 Ross와의 키스 중 에스컬레이트되는 열정을 자세히 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X5'
+    },
+    {
+      phrase: 'It\'s a synthetic chocolate substitute.',
+      partOfSpeech: 'expression',
+      meaning: 'A definition of an artificial food product created as alternative to authentic ingredient. The phrase categorizes fake food through technical language. It conveys product origin and nature.',
+      meaning_ko: '진정한 성분의 대안으로 만든 인공 식품 제품의 정의입니다. 이 표현은 기술 언어를 통해 가짜 음식을 분류합니다. 그것은 제품 원점과 성질을 전달합니다.',
+      example: 'A: "What is Mockolate?" B: "It\'s a synthetic chocolate substitute."',
+      example_ko: 'A: "Mockolate가 뭐야?" B: "그건 synthetic chocolate substitute야."',
+      context: 'Mr. Rastatter explains the Mockolate product to Monica during job interview.',
+      context_ko: 'Mr. Rastatter은 job interview 중에 Monica에게 Mockolate 제품을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X6'
+    },
+    {
+      phrase: 'I love how it crumbles.',
+      partOfSpeech: 'expression',
+      meaning: 'A positive statement praising undesirable food quality as distinctive feature. The phrase reverses typical judgment by celebrating product flaw. It demonstrates sarcastic or desperate approval.',
+      meaning_ko: '바람직하지 않은 식품 품질을 독특한 특징으로 칭찬하는 긍정적 진술입니다. 이 표현은 제품 결함을 축하하여 전형적인 판단을 반전시킵니다. 그것은 풍자적 또는 절망적 승인을 보여줍니다.',
+      example: 'A: "The Mockolate is terrible." B: "I love how it crumbles."',
+      example_ko: 'A: "Mockolate는 끔찍해." B: "난 그게 부숴지는 방식을 좋아해."',
+      context: 'Monica praises Mockolate\'s poor texture, which is actually a major flaw.',
+      context_ko: 'Monica는 Mockolate의 나쁜 질감을 칭찬하는데, 이것은 실제로 주요 결함입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X7'
+    },
+    {
+      phrase: 'But I\'ve been dreaming about me and Rachel for ten years.',
+      partOfSpeech: 'expression',
+      meaning: 'A confession of long-standing romantic fantasy about a specific person. The phrase quantifies emotional history with time reference. It conveys depth of hidden desire.',
+      meaning_ko: '특정 사람에 대한 오래된 낭만적 환상의 고백입니다. 이 표현은 시간 참조를 통해 감정적 역사를 수량화합니다. 그것은 숨겨진 욕망의 깊이를 전달합니다.',
+      example: 'A: "You\'re with Julie now." B: "But I\'ve been dreaming about Rachel for ten years."',
+      example_ko: 'A: "넌 지금 Julie와 있어." B: "하지만 난 10년간 Rachel을 꿈꿔왔어."',
+      context: 'Ross reveals to Chandler his decade-long unrequited feelings for Rachel.',
+      context_ko: 'Ross는 Chandler에게 Rachel에 대한 10년 동안의 짝사랑을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X8'
+    },
+    {
+      phrase: 'He must decide.',
+      partOfSpeech: 'expression',
+      meaning: 'A thematic statement indicating critical choice between two romantic options. The phrase uses imperative tone about decisive action. It conveys narrative centrality of commitment.',
+      meaning_ko: '두 가지 낭만적 옵션 사이의 중요한 선택을 나타내는 주제적 진술입니다. 이 표현은 결정적 행동에 대한 명령적 톤을 사용합니다. 그것은 약속의 서사 중심성을 전달합니다.',
+      example: 'A: "Who will Ross choose?" B: "He must decide."',
+      example_ko: 'A: "Ross가 누구를 선택할까?" B: "그는 결정해야 해."',
+      context: 'Phoebe\'s song "Two of Them Kissed Last Night" repeatedly emphasizes Neil\'s need to choose.',
+      context_ko: 'Phoebe의 노래 "Two of Them Kissed Last Night"는 Neil이 선택해야 한다는 것을 반복적으로 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X9'
+    },
+    {
+      phrase: 'Her ankles are a little chubby.',
+      partOfSpeech: 'expression',
+      meaning: 'A harsh physical criticism of minor body part expressed as romantic dealbreaker. The phrase uses casual tone for deeply offensive judgment. It conveys petty character evaluation in romance.',
+      meaning_ko: '낭만적 거래 위반으로 표현된 신체 부분에 대한 가혹한 신체 비판입니다. 이 표현은 깊이 있는 모욕적 판단을 위해 캐주얼한 톤을 사용합니다. 그것은 낭만 관계에서 소소한 문자 평가를 전달합니다.',
+      example: 'A: "Why don\'t you like Rachel?" B: "Her ankles are a little chubby."',
+      example_ko: 'A: "넌 왜 Rachel을 좋아하지 않아?" B: "그녀의 발목이 좀 통통해."',
+      context: 'Ross lists insulting criticisms of Rachel when comparing her to Julie.',
+      context_ko: 'Ross는 Rachel을 Julie와 비교할 때 모욕적인 비판을 나열합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X10'
+    },
+    {
+      phrase: 'She\'s not Rachel.',
+      partOfSpeech: 'expression',
+      meaning: 'A devastating dismissal of alternative romantic choice through simple negation. The phrase uses minimal language for maximum emotional impact. It conveys that all other qualities become irrelevant.',
+      meaning_ko: '단순 부정을 통한 대체 낭만적 선택의 파괴적 거부입니다. 이 표현은 최대 감정적 영향을 위해 최소 언어를 사용합니다. 그것은 다른 모든 자질이 관련 없어진다는 것을 전달합니다.',
+      example: 'A: "What\'s wrong with Julie?" B: "She\'s not Rachel."',
+      example_ko: 'A: "Julie는 뭐가 문제야?" B: "그녀는 Rachel이 아니야."',
+      context: 'Ross summarizes why Julie can never compete with Rachel as his romantic partner.',
+      context_ko: 'Ross는 Julie가 왜 Rachel과 낭만 파트너로 경쟁할 수 없는지 요약합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X11'
+    },
+    {
+      phrase: 'It\'s always been you, Rach.',
+      partOfSpeech: 'expression',
+      meaning: 'A romantic declaration confirming consistent devotion despite external obstacles. The phrase uses past-inclusive phrasing to suggest enduring truth. It conveys resolution of romantic conflict.',
+      meaning_ko: '외부 장애물에도 불구하고 일관된 헌신을 확인하는 낭만적 선언입니다. 이 표현은 지속되는 진실을 시사하기 위해 과거 포함 표현을 사용합니다. 그것은 낭만적 갈등의 해결을 전달합니다.',
+      example: 'A: "Do you love me?" B: "It\'s always been you, Rach."',
+      example_ko: 'A: "넌 날 사랑해?" B: "항상 넌 너였어, Rach."',
+      context: 'Ross declares his true feelings to Rachel after breaking up with Julie.',
+      context_ko: 'Ross는 Julie와 헤어진 후 Rachel에게 자신의 진정한 감정을 선언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X12'
+    },
+    {
+      phrase: 'Kind of ditzy.',
+      partOfSpeech: 'expression',
+      meaning: 'A dismissive character assessment using slang term for scattered thinking patterns. The phrase softens harsh judgment through qualifying modifier. It conveys criticism disguised as gentle observation.',
+      meaning_ko: '산만한 생각 패턴에 대한 속어 용어를 사용하는 경멸적 문자 평가입니다. 이 표현은 수정자를 수정하여 가혹한 판단을 완화합니다. 그것은 부드러운 관찰로 위장된 비판을 전달합니다.',
+      example: 'A: "What do you think of Rachel?" B: "Kind of ditzy."',
+      example_ko: 'A: "Rachel에 대해 어떻게 생각해?" B: "좀 scatterbrained야."',
+      context: 'Ross criticizes Rachel as ditzy when listing her cons to Chandler.',
+      context_ko: 'Ross는 Chandler에게 그녀의 단점을 나열할 때 Rachel을 ditzy로 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X13'
+    },
+    {
+      phrase: 'Too into her looks.',
+      partOfSpeech: 'expression',
+      meaning: 'A criticism of excessive vanity or appearance-focused priorities in a person. The phrase uses contemporary phrasing to express judgment about shallow values. It conveys concern about character depth.',
+      meaning_ko: '개인의 과도한 허영심이나 외모 중심 우선 순위에 대한 비판입니다. 이 표현은 현대적 표현을 사용하여 얕은 가치에 대한 판단을 표현합니다. 그것은 문자 깊이에 대한 우려를 전달합니다.',
+      example: 'A: "What\'s her weakness?" B: "Too into her looks."',
+      example_ko: 'A: "그녀의 약점은 뭐야?" B: "그녀의 외모에 너무 집중해."',
+      context: 'Ross lists physical vanity as one of Rachel\'s primary character flaws.',
+      context_ko: 'Ross는 신체적 허영심을 Rachel의 주요 문자 결함 중 하나로 나열합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X14'
+    },
+    {
+      phrase: 'Just a waitress.',
+      partOfSpeech: 'expression',
+      meaning: 'A dismissive phrase reducing someone\'s entire identity to their current occupation. The phrase uses occupational status as character assessment. It conveys class-based judgment and condescension.',
+      meaning_ko: '누군가의 전체 정체성을 현재 직업으로 줄이는 경멸적 표현입니다. 이 표현은 직업 상태를 문자 평가로 사용합니다. 그것은 계급 기반 판단과 condescension을 전달합니다.',
+      example: 'A: "Rachel is successful." B: "She\'s just a waitress."',
+      example_ko: 'A: "Rachel은 성공했어." B: "그냥 waitress야."',
+      context: 'Ross dismisses Rachel\'s value compared to Julie by referencing her job.',
+      context_ko: 'Ross는 Rachel의 일을 언급하여 Julie와 비교하여 그녀의 가치를 무시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E8X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
