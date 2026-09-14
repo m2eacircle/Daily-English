@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E22: The One with the Ick Factor</div>
-        <div class="page-header-meta">Monica dates a younger man. Chandler's assistant has a crush on him.</div>
+        <div class="page-header-meta">Monica dates college boy Ethan. Chandler's boss struggles with employee friendship.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e22"
             onclick="toggleBookmark('episode','episode-friends-s1e22','📋 Friends S1E22','friends/episodes/season1/s1e22.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Ick Factor',
-    description: 'Monica dates a younger man. Chandler\'s assistant has a crush on him.',
+    description: 'Monica dates college boy Ethan. Chandler\'s boss struggles with employee friendship.',
     expressions: [
-    {phrase:'Ick factor',partOfSpeech:'noun phrase',meaning:'A feeling of disgust or discomfort about something.',example:'"The ick factor of eating insects is purely psychological for most people."',context:'Monica dating someone significantly younger.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E22X1'},
-    {phrase:'Awkward situation',partOfSpeech:'noun phrase',meaning:'A social circumstance that causes discomfort or embarrassment for those involved.',example:'"Running into your ex at a party is always an awkward situation."',context:'Navigating a socially uncomfortable scenario.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E22X2'}
+    {
+      phrase: 'Could tonight be the night?',
+      partOfSpeech: 'question',
+      meaning: 'A question expressing hopeful anticipation about a potential intimate or significant moment. The phrasing conveys a sense of nervous excitement and readiness for something important to occur. It\'s used when someone believes an anticipated event might finally happen.',
+      meaning_ko: '잠재적 친밀한 또는 중요한 순간에 대한 희망찬 기대를 표현하는 질문입니다. 표현은 신경 쓰인 흥분과 뭔가 중요한 일이 일어날 준비를 전달합니다. 누군가가 예상된 사건이 마침내 일어날 수 있다고 믿을 때 사용됩니다.',
+      example: 'A: "I\'ve been dating this guy for months." B: "Could tonight be the night?"',
+      example_ko: 'A: "난 몇 달 동안 이 남자와 데이트했어." B: "오늘 밤이 그 날일까?"',
+      context: 'Rachel questions if Monica will sleep with her college-aged boyfriend Ethan as Monica obsessively prepares her apartment.',
+      context_ko: 'Rachel은 Monica가 대학생 남친 Ethan과 자면서 Monica가 집착적으로 아파트를 준비하는 동안 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X1'
+    },
+    {
+      phrase: 'Things happen when they happen.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement about the natural, spontaneous progression of events without forced timing or planning. The phrase suggests acceptance of circumstances as they naturally develop rather than orchestrating outcomes. It conveys a relaxed, fatalistic approach to life\'s moments.',
+      meaning_ko: '강제된 타이밍이나 계획 없이 사건이 자연스럽게 진행되는 것에 대한 진술입니다. 이 표현은 결과를 조정하기보다는 자연스럽게 발생하는 상황을 받아들이는 것을 시사합니다. 그것은 인생의 순간에 대해 편안하고 숙명적인 접근을 전달합니다.',
+      example: 'A: "Are you planning to propose soon?" B: "Things happen when they happen. I\'m not rushing it."',
+      example_ko: 'A: "넌 곧 청혼할 거야?" B: "일들은 그것이 일어날 때 일어나. 난 서두르지 않을 거야."',
+      context: 'Monica insists she\'s not planning intimacy with Ethan, saying events develop naturally without forcing them.',
+      context_ko: 'Monica는 Ethan과의 친밀한 관계를 계획하지 않고 있다고 주장하며, 사건이 강제하지 않고 자연스럽게 발전한다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X2'
+    },
+    {
+      phrase: 'Would you let it go?',
+      partOfSpeech: 'question',
+      meaning: 'A request for someone to stop dwelling on or repeatedly bringing up a topic. The phrase expresses frustration with someone\'s persistent focus on something the speaker wants to move past. It\'s an appeal to drop a subject and stop discussing it.',
+      meaning_ko: '누군가가 주제에 대해 계속 집착하거나 반복적으로 언급하는 것을 멈추도록 요청하는 것입니다. 이 표현은 화자가 지나가고 싶은 것에 대한 누군가의 지속적인 초점에 대한 좌절감을 표현합니다. 그것은 주제를 떨어뜨리고 그것에 대해 논의를 멈추도록 하는 호소입니다.',
+      example: 'A: "I can\'t believe you laughed at my joke." B: "Would you let it go? It was three days ago!"',
+      example_ko: 'A: "난 넌 내 농담에 웃었다고 믿을 수 없어." B: "그냥 놔둘래? 그건 3일 전이었어!"',
+      context: 'Rachel tells Ross to stop bringing up a dream she had about him and asks him to move on from the topic.',
+      context_ko: 'Rachel은 Ross에게 그에 대해 가진 꿈을 계속 언급하지 말도록 말하고 그가 주제에서 계속하도록 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X3'
+    },
+    {
+      phrase: 'Why would you dream that?',
+      partOfSpeech: 'question',
+      meaning: 'A question expressing confusion or disbelief about someone\'s subconscious thoughts or dreams. The phrase conveys surprise that someone\'s mind produced such content during sleep. It questions the origin or reason behind an unexpected dream scenario.',
+      meaning_ko: '누군가의 무의식적 생각이나 꿈에 대한 혼란이나 의심을 표현하는 질문입니다. 이 표현은 누군가의 마음이 수면 중에 그러한 내용을 만들었다는 것에 대한 놀라움을 전달합니다. 예상치 못한 꿈 시나리오의 출처나 이유를 질문합니다.',
+      example: 'A: "I had a dream I could fly." B: "Why would you dream that?"',
+      example_ko: 'A: "난 날 수 있다는 꿈을 꿨어." B: "넌 왜 그런 꿈을 꿨어?"',
+      context: 'Ross questions Rachel about why she had a sexual dream about him, seeking to understand the source of her subconscious thoughts.',
+      context_ko: 'Ross는 Rachel에게 그에 대해 성적인 꿈을 가진 이유를 질문하며, 그녀의 무의식적 생각의 출처를 이해하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X4'
+    },
+    {
+      phrase: 'Well, you were pretty damned good.',
+      partOfSpeech: 'expression',
+      meaning: 'A sincere compliment emphasizing that someone performed exceptionally well. The word "damned" intensifies the praise, making it more emphatic and genuine. The phrase conveys that the person exceeded expectations or performed admirably.',
+      meaning_ko: '누군가가 매우 잘 수행했다는 것을 강조하는 진정한 칭찬입니다. "Damned"라는 단어는 칭찬을 강화하여 더욱 강조되고 진정성 있게 만듭니다. 이 표현은 그 사람이 기대를 초과했거나 훌륭하게 수행했다는 것을 전달합니다.',
+      example: 'A: "How did I do in the presentation?" B: "Well, you were pretty damned good."',
+      example_ko: 'A: "난 프레젠테이션에서 어땠어?" B: "아, 넌 정말 좋았어."',
+      context: 'Ross compliments Rachel on her performance in the dream, expressing that she was impressive despite it being only a dream scenario.',
+      context_ko: 'Ross는 꿈에서의 Rachel의 성능을 칭찬하며, 그것이 단순한 꿈 시나리오임에도 불구하고 그녀가 인상적이었다는 것을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X5'
+    },
+    {
+      phrase: 'I could use another reason.',
+      partOfSpeech: 'expression',
+      meaning: 'A sarcastic statement suggesting the speaker already has multiple reasons for something negative, and adding another would be excessive. The phrase conveys ironic self-pity or resignation about accumulated problems. It\'s used to humorously emphasize an ongoing frustration.',
+      meaning_ko: '화자가 이미 부정적인 것에 대한 여러 가지 이유를 가지고 있고, 다른 것을 추가하는 것이 과도할 것이라는 풍자적 진술입니다. 이 표현은 축적된 문제에 대한 아이러니한 자기 연민이나 체념을 전달합니다. 진행 중인 좌절감을 유머러스하게 강조하는 데 사용됩니다.',
+      example: 'A: "Your boss is probably going to yell at you." B: "Great. I could use another reason to be miserable."',
+      example_ko: 'A: "너 보스가 넌 소리칠 거야." B: "좋아. 난 비참한 이유를 더 추가할 수 있어."',
+      context: 'Chandler sarcastically says he could use another reason why women won\'t look at him, referring to his ongoing dating struggles.',
+      context_ko: 'Chandler은 풍자적으로 여자들이 그를 보지 않는 이유를 더 추가할 수 있다고 말하며, 그의 진행 중인 데이팅 투쟁을 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X6'
+    },
+    {
+      phrase: 'He\'s a senior in college.',
+      partOfSpeech: 'expression',
+      meaning: 'A factual statement identifying someone\'s academic status in higher education. The phrase conveys the specific year level of a college student, indicating they are in their final year before graduation. It\'s a straightforward way to communicate someone\'s age and life stage.',
+      meaning_ko: '고등 교육 기관의 누군가의 학문적 지위를 식별하는 사실 진술입니다. 이 표현은 대학생의 구체적인 연도 수준을 전달하여 졸업 전 최종 해에 있음을 나타냅니다. 누군가의 나이와 인생 단계를 전달하는 직접적인 방법입니다.',
+      example: 'A: "How old is Ethan?" B: "He\'s a senior in college, so probably around 21 or 22."',
+      example_ko: 'A: "Ethan은 몇 살이야?" B: "그건 대학 4학년이니까 아마 21살 또는 22살일 거야."',
+      context: 'Rachel and the friends react with surprise when learning that Monica is dating someone who is still a college senior, revealing the age gap.',
+      context_ko: 'Rachel과 친구들은 Monica가 여전히 대학 4학년인 사람과 데이트하고 있다는 것을 알 때 놀라움으로 반응하여 나이 차이를 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X7'
+    },
+    {
+      phrase: 'I told him I was 22.',
+      partOfSpeech: 'expression',
+      meaning: 'A confession that someone misrepresented their age to another person. The statement reveals a dishonesty about a personal fact, typically to appear younger or more appropriate for a romantic connection. It\'s an admission of deliberate deception.',
+      meaning_ko: '누군가가 다른 사람에게 나이를 잘못 표현했다는 고백입니다. 이 진술은 개인적 사실에 대한 부정직함을 드러내며, 일반적으로 더 젊거나 낭만적 연결에 더 적절해 보이기 위함입니다. 그것은 의도적인 기만의 인정입니다.',
+      example: 'A: "Does he know your real age?" B: "No, I told him I was 22. I don\'t want him to think I\'m too old."',
+      example_ko: 'A: "그건 넌 실제 나이를 알아?" B: "아니야, 난 그에게 22라고 말했어. 난 그가 나를 너무 늙다고 생각하지 않기를 원해."',
+      context: 'Monica admits to lying about her age to her young boyfriend Ethan to make herself seem closer to his age and more compatible.',
+      context_ko: 'Monica는 젊은 남친 Ethan에게 자신을 그의 나이에 더 가깝게 보이고 더 양립 가능하게 보이기 위해 자신의 나이에 대해 거짓말한 것을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X8'
+    },
+    {
+      phrase: 'Just because I\'m in charge doesn\'t mean I\'m different.',
+      partOfSpeech: 'expression',
+      meaning: 'A defensive statement arguing that assuming a position of authority doesn\'t fundamentally change one\'s personality or values. The phrase asserts that a promotion or leadership role shouldn\'t alter how others perceive or treat the person. It\'s used to resist the idea that status creates distance.',
+      meaning_ko: '권위를 맡는 것이 근본적으로 자신의 성격이나 가치를 바꾸지 않는다고 주장하는 방어적 진술입니다. 이 표현은 승진이나 리더십 역할이 다른 사람이 그 사람을 인식하거나 대하는 방식을 바꿔서는 안 된다고 주장합니다. 그것은 지위가 거리를 만든다는 아이디어에 저항하는 데 사용됩니다.',
+      example: 'A: "Now that you\'re a manager, you\'ve changed." B: "Just because I\'m in charge doesn\'t mean I\'m different. I\'m still me."',
+      example_ko: 'A: "이제 넌 매니저니까 너는 바뀌었어." B: "내가 책임지는 것이 내가 다르다는 뜻이 아니야. 난 여전히 나야."',
+      context: 'Chandler defends himself to his employees, arguing that his promotion to a managerial position shouldn\'t change how they view him as a person.',
+      context_ko: 'Chandler은 관리자 직책으로 승진한 것이 그들이 그를 사람으로 보는 방식을 바꿔서는 안 된다고 주장하며 직원들에게 자신을 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X9'
+    },
+    {
+      phrase: 'They\'re not your friends anymore.',
+      partOfSpeech: 'expression',
+      meaning: 'A harsh reality statement acknowledging that a relationship dynamic has fundamentally changed due to a shift in power or status. The phrase conveys that a promotion or position change has altered the nature of friendships, making them professional rather than personal. It\'s a difficult truth about workplace relationships.',
+      meaning_ko: '권력이나 지위 변화로 인해 관계 역학 관계가 근본적으로 변했다는 것을 인정하는 가혹한 현실 진술입니다. 이 표현은 승진이나 직책 변화가 우정의 특성을 변경했으며, 그것을 개인적이 아닌 전문적으로 만들었다는 것을 전달합니다. 그것은 직장 관계에 대한 어려운 진실입니다.',
+      example: 'A: "Why don\'t my coworkers want to hang out anymore?" B: "They\'re not your friends anymore. You\'re the boss now."',
+      example_ko: 'A: "왜 내 동료들이 더 이상 놀고 싶지 않아?" B: "그들은 더 이상 네 친구들이 아니야. 넌 이제 보스야."',
+      context: 'Phoebe delivers a difficult truth to Chandler, explaining that his employees can no longer be his friends now that he\'s in a position of authority over them.',
+      context_ko: 'Phoebe는 Chandler에게 어려운 진실을 전달하며, 그의 직원들은 이제 그가 그들에 대한 권위 있는 입장에 있으므로 더 이상 그의 친구가 될 수 없다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X10'
+    },
+    {
+      phrase: 'A month ago, these people were my friends.',
+      partOfSpeech: 'expression',
+      meaning: 'A nostalgic and sorrowful statement lamenting how rapidly friendships have deteriorated over a short period of time. The phrase emphasizes the sudden shift from camaraderie to distance. It expresses confusion and sadness about the unexpected loss of workplace friendships.',
+      meaning_ko: '짧은 시간 동안 우정이 얼마나 빠르게 악화되었는지를 안타깝게 여기는 향수적이고 슬픈 진술입니다. 이 표현은 우의에서 거리로의 갑작스러운 변화를 강조합니다. 그것은 직장 우정의 예상치 못한 손실에 대한 혼란과 슬픔을 표현합니다.',
+      example: 'A: "Why is everyone avoiding you?" B: "A month ago, these people were my friends. Now everything\'s changed."',
+      example_ko: 'A: "왜 모두가 넌 피하고 있어?" B: "한 달 전에 이 사람들은 내 친구였어. 이제 모든 게 바뀌었어."',
+      context: 'Chandler expresses regret about how quickly his workplace friendships dissolved after his promotion to a position of authority.',
+      context_ko: 'Chandler은 승진 후 그의 직장 우정이 얼마나 빨리 해산되었는지에 대한 후회를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X11'
+    },
+    {
+      phrase: 'I\'m just such a dummy.',
+      partOfSpeech: 'expression',
+      meaning: 'A self-deprecating statement where someone calls themselves foolish or unintelligent for their own mistakes or poor judgment. The phrase expresses self-criticism and regret about one\'s actions. It\'s a way of taking blame and acknowledging one\'s faults.',
+      meaning_ko: '누군가가 자신의 실수나 판단 오류에 대해 자신을 어리석다고 부르는 자조적 진술입니다. 이 표현은 자기 비판과 자신의 행동에 대한 후회를 표현합니다. 그것은 비난을 받고 자신의 결함을 인정하는 방법입니다.',
+      example: 'A: "I forgot our anniversary." B: "How could you?" A: "I\'m just such a dummy."',
+      example_ko: 'A: "난 우리의 기념일을 잊었어." B: "어떻게 그럴 수 있어?" A: "난 그런 바보야."',
+      context: 'Phoebe calls herself a dummy after realizing she taught people to massage themselves, eliminating her own client base.',
+      context_ko: 'Phoebe는 자신이 사람들에게 자신을 마사지하도록 가르친 후 자신의 고객 기반을 제거한 후 자신을 바보라고 부릅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X12'
+    },
+    {
+      phrase: 'How young is young Ethan?',
+      partOfSpeech: 'question',
+      meaning: 'A questioning statement seeking to understand the degree of youth, implying skepticism or concern about the age difference. The repetition of "young" emphasizes the focus on age and suggests the asker is probing for specifics that might justify or explain the concern.',
+      meaning_ko: '나이 차이에 대한 회의 또는 우려를 암시하면서 젊음의 정도를 이해하려는 질문 진술입니다. "Young"의 반복은 나이에 대한 초점을 강조하고 질문자가 우려를 정당화하거나 설명할 수 있는 구체적인 사항을 조사하고 있음을 시사합니다.',
+      example: 'A: "I\'m dating someone young." B: "How young is young Ethan?"',
+      example_ko: 'A: "난 젊은 누군가와 데이트하고 있어." B: "Ethan은 얼마나 젊어?"',
+      context: 'The friends ask Monica to clarify exactly how young her boyfriend Ethan is, expressing concern about the significant age gap.',
+      context_ko: '친구들은 Monica에게 그녀의 남친 Ethan이 정확히 얼마나 젊은지 명확히 하도록 요청하며, 나이 차이에 대한 우려를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X13'
+    },
+    {
+      phrase: 'You don\'t plan these things.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement asserting that certain important or intimate moments should happen spontaneously without deliberate planning or orchestration. The phrase conveys a belief in allowing natural progression rather than forcing outcomes. It suggests that the best moments occur organically.',
+      meaning_ko: '특정한 중요하거나 친밀한 순간이 의도적인 계획이나 조직 없이 자발적으로 일어나야 한다고 주장하는 진술입니다. 이 표현은 결과를 강제하기보다는 자연스러운 진행을 허용하는 믿음을 전달합니다. 그것은 최고의 순간이 유기적으로 발생한다는 것을 시사합니다.',
+      example: 'A: "Are you planning when to propose?" B: "No, you don\'t plan these things. It\'ll happen when it\'s right."',
+      example_ko: 'A: "넌 언제 청혼할지 계획할 거야?" B: "아니, 넌 이런 것들을 계획하지 않아. 적절할 때 일어날 거야."',
+      context: 'Monica insists that intimacy should happen naturally without being planned, expressing her philosophy about relationships.',
+      context_ko: 'Monica는 친밀한 관계가 계획되지 않고 자연스럽게 일어나야 한다고 주장하며 관계에 대한 그녀의 철학을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X14'
+    },
+    {
+      phrase: 'Am I out of control?',
+      partOfSpeech: 'question',
+      meaning: 'A self-aware question where someone asks if their behavior has become excessive or inappropriate. The phrase reflects concern about one\'s own actions and seeking validation or correction from others. It shows vulnerability and openness to feedback about one\'s conduct.',
+      meaning_ko: '누군가가 자신의 행동이 과도해지거나 부적절해졌는지 묻는 자각적 질문입니다. 이 표현은 자신의 행동에 대한 우려와 다른 사람으로부터의 검증이나 교정을 추구하는 것을 반영합니다. 그것은 자신의 행동에 대한 취약성과 피드백에 대한 개방성을 보여줍니다.',
+      example: 'A: "I\'ve been researching this guy for three weeks." B: "Am I out of control?"',
+      example_ko: 'A: "난 3주 동안 이 남자를 연구했어." B: "난 미친 거야?"',
+      context: 'Monica asks Rachel if her obsessive preparation and cleaning for her date with Ethan indicates she\'s losing control of her behavior.',
+      context_ko: 'Monica는 Rachel에게 Ethan과의 데이트를 위한 집착적인 준비와 청소가 그녀가 행동에 대한 통제를 잃고 있음을 나타내는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E22X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
