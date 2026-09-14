@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e3.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E3: Season 2, Episode 3</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E3: The One Where Heckles Dies</div>
+        <div class="page-header-meta">Mr. Heckles dies. Chandler's picky dating habits. Phoebe questions evolution and gravity.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e3"
             onclick="toggleBookmark('episode','episode-friends-s2e3','📋 Friends S2E3','friends/episodes/season2/s2e3.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 3',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One Where Heckles Dies',
+    description: 'Mr. Heckles dies. Chandler\'s picky dating habits. Phoebe questions evolution and gravity.',
+    expressions: [
+    {
+      phrase: 'Broke up with her.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple, direct statement indicating the end of a romantic relationship. The phrase is used to announce a breakup matter-of-factly. It conveys the action of ending a dating relationship without elaboration.',
+      meaning_ko: '낭만적인 관계의 종료를 나타내는 간단하고 직접적인 진술입니다. 이 표현은 분명하게 헤어짐을 발표하는 데 사용됩니다. 그것은 자세히 설명하지 않고 데이팅 관계를 종료하는 행동을 전달합니다.',
+      example: 'A: "How\'s Joan?" B: "Broke up with her."',
+      example_ko: 'A: "Joan은 어떻게 돼?" B: "그녀와 헤어졌어."',
+      context: 'Chandler tells Monica he ended his relationship with Joan over superficial reasons.',
+      context_ko: 'Chandler은 Monica에게 그가 superficial한 이유로 Joan과의 관계를 끝냈다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X1'
+    },
+    {
+      phrase: 'Because of the big nostril thing?',
+      partOfSpeech: 'question',
+      meaning: 'A probing inquiry suggesting a superficial or trivial reason for a decision. The phrase uses humorous exaggeration to highlight the pettiness of breaking up. It conveys skepticism about physical features being a valid reason for ending a relationship.',
+      meaning_ko: '결정을 위한 superficial하거나 사소한 이유를 시사하는 탐사적 질문입니다. 이 표현은 헤어지는 것의 소소함을 강조하기 위해 유머로운 과장을 사용합니다. 그것은 신체적 특징이 관계를 종료하는 타당한 이유라는 데 대한 회의를 전달합니다.',
+      example: 'A: "He dumped her for something stupid." B: "Because of the big nostril thing?"',
+      example_ko: 'A: "그는 그녀를 어리석은 일 때문에 버렸어." B: "큰 콧구멍 때문에?"',
+      context: 'Monica sarcastically guesses the superficial reason for Chandler\'s breakup with Joan.',
+      context_ko: 'Monica는 Chandler이 Joan과의 헤어짐의 superficial한 이유를 풍자적으로 추측합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X2'
+    },
+    {
+      phrase: 'They were huge.',
+      partOfSpeech: 'expression',
+      meaning: 'A blunt statement emphasizing the large size or prominence of something. The phrase uses minimal language for comedic effect. It conveys exaggeration or emphasis through brevity and directness.',
+      meaning_ko: '뭔가의 큰 크기나 두드러짐을 강조하는 무딘 진술입니다. 이 표현은 코미디 효과를 위해 최소한의 언어를 사용합니다. 그것은 간결함과 직설성을 통해 과장이나 강조를 전달합니다.',
+      example: 'A: "How big were they?" B: "They were huge."',
+      example_ko: 'A: "그건 얼마나 컸어?" B: "엄청 컸어."',
+      context: 'Joey defends Chandler\'s criticism of Joan\'s large nostrils.',
+      context_ko: 'Joey는 Chandler의 Joan의 큰 콧구멍에 대한 비판을 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X3'
+    },
+    {
+      phrase: 'How many women will you reject?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical question expressing frustration or criticism about someone\'s repeated rejection of potential partners. The phrase implies the person is overly picky or critical. It conveys exasperation with patterns of dismissing others for trivial reasons.',
+      meaning_ko: '누군가의 잠재적 파트너의 반복된 거부에 대한 좌절감이나 비판을 표현하는 수사적 질문입니다. 이 표현은 그 사람이 지나치게 까다롭거나 비판적이라는 것을 암시합니다. 그것은 사소한 이유로 다른 사람을 무시하는 패턴에 대한 답답함을 전달합니다.',
+      example: 'A: "I broke up with her for that one little thing." B: "How many women will you reject?"',
+      example_ko: 'A: "난 그 한 가지 작은 일 때문에 그녀와 헤어졌어." B: "넌 얼마나 많은 여자를 거절할 거야?"',
+      context: 'Monica criticizes Chandler\'s pattern of breaking up with women over superficial reasons.',
+      context_ko: 'Monica는 Chandler의 superficial한 이유로 여자와 헤어지는 패턴을 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X4'
+    },
+    {
+      phrase: 'We won! We finally won!',
+      partOfSpeech: 'expression',
+      meaning: 'An enthusiastic exclamation celebrating victory or success after a prolonged conflict. The phrase expresses relief and triumph. It conveys genuine joy at finally achieving a desired outcome.',
+      meaning_ko: '오랜 갈등 후 승리 또는 성공을 축하하는 열정적인 감탄입니다. 이 표현은 안도감과 승리를 표현합니다. 그것은 마침내 원하는 결과를 달성하는 진정한 기쁨을 전달합니다.',
+      example: 'A: "We finally got him to stop!" B: "We won! We finally won!"',
+      example_ko: 'A: "우리가 드디어 그를 멈추게 했어!" B: "우리가 이겼어! 우리가 마침내 이겼어!"',
+      context: 'The friends celebrate successfully making Mr. Heckles stop complaining about noise.',
+      context_ko: '친구들은 성공적으로 Mr. Heckles가 소음에 대해 불평하지 않도록 멈추었다고 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X5'
+    },
+    {
+      phrase: 'How did this happen?',
+      partOfSpeech: 'question',
+      meaning: 'A shocked inquiry expressing disbelief or confusion about an unexpected event. The phrase seeks to understand how a particular situation came to be. It conveys surprise and the need for explanation.',
+      meaning_ko: '예상치 못한 사건에 대한 의심이나 혼란을 표현하는 충격받은 조회입니다. 이 표현은 특정 상황이 어떻게 발생했는지 이해하기를 추구합니다. 그것은 놀라움과 설명의 필요성을 전달합니다.',
+      example: 'A: "Mr. Heckles is dead." B: "How did this happen?"',
+      example_ko: 'A: "Mr. Heckles가 죽었어." B: "이건 어떻게 된 거야?"',
+      context: 'Monica learns that Mr. Heckles has passed away and is shocked.',
+      context_ko: 'Monica는 Mr. Heckles가 사망했다는 것을 알게 되고 충격을 받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X6'
+    },
+    {
+      phrase: 'It could\'ve been me.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement reflecting on how circumstances could have led to personal involvement in a dangerous or fatal situation. The phrase uses dark humor to acknowledge fragility of life. It conveys sobering recognition of how easily fate could have been different.',
+      meaning_ko: '상황이 개인적 참여로 이어질 수 있었던 방법을 반영하는 진술입니다. 이 표현은 검은 유머를 사용하여 생명의 취약성을 인정합니다. 그것은 운명이 얼마나 쉽게 달라질 수 있었는지에 대한 엄숙한 인식을 전달합니다.',
+      example: 'A: "He died while sweeping." B: "It could\'ve been me."',
+      example_ko: 'A: "그는 청소하다가 죽었어." B: "그건 날 수도 있었어."',
+      context: 'Chandler reflects darkly on how he could have died instead of Mr. Heckles.',
+      context_ko: 'Chandler은 Mr. Heckles 대신 자신이 죽을 수 있었을 방법을 어둡게 반영합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X7'
+    },
+    {
+      phrase: 'Don\'t get me started on gravity.',
+      partOfSpeech: 'expression',
+      meaning: 'A dismissive statement warning against discussing a particular topic because the speaker has strong or controversial views. The phrase prevents an argument from escalating. It conveys the speaker believes strongly enough to debate the topic.',
+      meaning_ko: '화자가 강하거나 논쟁이 되는 견해를 가지고 있기 때문에 특정 주제를 논의하지 말 것을 경고하는 무시적 진술입니다. 이 표현은 논쟁이 확대되는 것을 방지합니다. 그것은 화자가 주제를 토론하기에 충분히 강하게 믿는다는 것을 전달합니다.',
+      example: 'A: "You don\'t believe in physics?" B: "Don\'t get me started on gravity."',
+      example_ko: 'A: "넌 물리학을 믿지 않아?" B: "중력에 대해 말하지 마."',
+      context: 'Phoebe warns the group not to question her alternative beliefs about gravity.',
+      context_ko: 'Phoebe는 그룹에 중력에 대한 그녀의 대체 신념을 질문하지 말 것을 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X8'
+    },
+    {
+      phrase: 'I don\'t believe in evolution.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing disbelief or rejection of a widely accepted scientific theory. The phrase declares personal skepticism about evolutionary biology. It conveys the speaker chooses not to accept established scientific consensus.',
+      meaning_ko: '널리 인정된 과학 이론에 대한 불신 또는 거부를 표현하는 진술입니다. 이 표현은 진화 생물학에 대한 개인적 회의론을 선언합니다. 그것은 화자가 확립된 과학적 합의를 받아들이지 않기로 선택한다는 것을 전달합니다.',
+      example: 'A: "Humans evolved from apes." B: "I don\'t believe in evolution."',
+      example_ko: 'A: "인간은 원숭이에서 진화했어." B: "난 진화론을 믿지 않아."',
+      context: 'Phoebe flatly denies her belief in evolutionary theory to the scientific-minded Ross.',
+      context_ko: 'Phoebe는 과학적 사고를 하는 Ross에게 진화론에 대한 믿음을 명확히 부인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X9'
+    },
+    {
+      phrase: 'Monkeys, Darwin, it\'s a nice story.',
+      partOfSpeech: 'expression',
+      meaning: 'A dismissive characterization of evolutionary theory as merely a pleasant narrative rather than scientific fact. The phrase trivializes a complex scientific concept. It conveys skepticism by reducing serious science to storytelling.',
+      meaning_ko: '진화론을 과학적 사실이 아닌 단순한 유쾌한 이야기로 낮춰 특징짓는 것입니다. 이 표현은 복잡한 과학적 개념을 약화시킵니다. 그것은 심각한 과학을 이야기로 축소함으로써 회의론을 전달합니다.',
+      example: 'A: "Evolution explains how we got here." B: "Monkeys, Darwin, it\'s a nice story."',
+      example_ko: 'A: "진화론은 우리가 어떻게 여기 왔는지 설명해." B: "원숭이, Darwin, 좋은 이야기네."',
+      context: 'Phoebe dismisses evolutionary theory as just an interesting fictional narrative.',
+      context_ko: 'Phoebe는 진화론을 단지 흥미로운 허구의 이야기로 무시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X10'
+    },
+    {
+      phrase: 'Yeah, I just don\'t buy it.',
+      partOfSpeech: 'expression',
+      meaning: 'A casual statement of disbelief or rejection of an idea, theory, or explanation. The phrase uses "buy" metaphorically to mean "accept" or "believe." It conveys skepticism while maintaining a conversational tone.',
+      meaning_ko: '아이디어, 이론 또는 설명에 대한 비신 또는 거부의 비공식적 진술입니다. 이 표현은 "buy"를 은유적으로 사용하여 "accept" 또는 "believe"를 의미합니다. 그것은 대화적 톤을 유지하면서 회의론을 전달합니다.',
+      example: 'A: "That explanation makes sense to me." B: "Yeah, I just don\'t buy it."',
+      example_ko: 'A: "그 설명은 내게 말이 돼." B: "응, 난 그냥 그걸 못 믿어."',
+      context: 'Phoebe rejects Ross\'s evidence supporting evolution despite his scientific expertise.',
+      context_ko: 'Phoebe는 Ross의 과학적 전문 지식에도 불구하고 진화론을 지지하는 증거를 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X11'
+    },
+    {
+      phrase: 'You don\'t believe in gravity?',
+      partOfSpeech: 'question',
+      meaning: 'An incredulous inquiry expressing shock at someone rejecting belief in a fundamental physical force. The phrase emphasizes the absurdity of disbelieving gravity. It conveys extreme disbelief at skepticism about something universally experienced.',
+      meaning_ko: '기본적인 물리적 힘에 대한 믿음을 거부하는 누군가에 대한 충격을 표현하는 의심스러운 조회입니다. 이 표현은 중력 불신의 황당함을 강조합니다. 그것은 보편적으로 경험하는 것에 대한 회의론에 대한 극단적인 불신을 전달합니다.',
+      example: 'A: "I don\'t believe in gravity." B: "You don\'t believe in gravity?"',
+      example_ko: 'A: "난 중력을 믿지 않아." B: "넌 중력을 믿지 않아?"',
+      context: 'Ross is shocked when Phoebe expresses skepticism about gravitational theory.',
+      context_ko: 'Ross는 Phoebe가 중력 이론에 대해 회의를 표현할 때 충격을 받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X12'
+    },
+    {
+      phrase: 'There are a lot of things I don\'t believe.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement acknowledging broad skepticism toward multiple concepts, theories, or phenomena. The phrase conveys openness to non-mainstream beliefs. It suggests the speaker questions conventional wisdom on many subjects.',
+      meaning_ko: '여러 개념, 이론 또는 현상에 대한 광범위한 회의론을 인정하는 진술입니다. 이 표현은 비주류 신념에 대한 개방성을 전달합니다. 그것은 화자가 많은 주제에 관한 통상적인 지혜에 의문을 제기한다는 것을 시사합니다.',
+      example: 'A: "You don\'t believe in vaccines?" B: "There are a lot of things I don\'t believe in."',
+      example_ko: 'A: "넌 백신을 믿지 않아?" B: "난 많은 것들을 믿지 않아."',
+      context: 'Phoebe defends her multiple unorthodox beliefs about science and nature.',
+      context_ko: 'Phoebe는 과학과 자연에 대한 그녀의 많은 정통적이지 않은 신념을 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X13'
+    },
+    {
+      phrase: 'I can\'t believe we thought he hated us.',
+      partOfSpeech: 'expression',
+      meaning: 'A reflection expressing surprise at discovering one\'s previous negative assumptions were incorrect. The phrase conveys irony about misjudged character. It reflects on how wrong initial impressions or beliefs turned out to be.',
+      meaning_ko: '이전의 부정적인 가정이 잘못되었다는 것을 발견한 것에 대해 놀라움을 표현하는 반성입니다. 이 표현은 잘못 판단된 성격에 대한 아이러니를 전달합니다. 그것은 처음 인상이나 신념이 얼마나 잘못되었는지를 반영합니다.',
+      example: 'A: "He left us all his money?" B: "I can\'t believe we thought he hated us."',
+      example_ko: 'A: "그가 우리에게 모든 돈을 남겼어?" B: "난 우리가 그가 우리를 미워한다고 생각했을 거라고 믿을 수 없어."',
+      context: 'Monica realizes Mr. Heckles actually liked them before the reveal of his will.',
+      context_ko: 'Monica는 Mr. Heckles가 실제로는 그의 유언 계시 전에 그들을 좋아했다는 것을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X14'
+    },
+    {
+      phrase: 'Who put those fossils there and why?',
+      partOfSpeech: 'question',
+      meaning: 'A skeptical inquiry questioning the origin and purpose of scientific evidence. The phrase rejects the logical conclusion from presented facts. It conveys conspiracy-thinking by suggesting an alternative explanation to accepted evidence.',
+      meaning_ko: '과학적 증거의 기원과 목적을 의문하는 회의적 조회입니다. 이 표현은 제시된 사실로부터의 논리적 결론을 거부합니다. 그것은 받아들인 증거에 대한 대안적 설명을 시사함으로써 음모론적 사고를 전달합니다.',
+      example: 'A: "The fossils prove evolution." B: "Who put those fossils there and why?"',
+      example_ko: 'A: "화석은 진화론을 증명해." B: "누가 그 화석을 여기에 두고 왜?"',
+      context: 'Phoebe suggests a conspiracy about fossil evidence rather than accepting evolution.',
+      context_ko: 'Phoebe는 진화론을 받아들이기보다는 화석 증거에 대한 음모를 시사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E3X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
