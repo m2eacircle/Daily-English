@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with Two Parts (Part 2)',
     description: 'Rachel gets injured. Ross and Susan argue in an elevator.',
     expressions: [
-    {phrase:'In a bind',partOfSpeech:'idiom',meaning:'In a difficult or awkward situation with no easy solution.',example:'"Without a car and no bus routes, I was really in a bind."',context:'Being in a difficult situation with limited options.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E17X1'},
-    {phrase:'Cut someone some slack',partOfSpeech:'idiom',meaning:'To be less critical or demanding of someone; to give them more freedom or understanding.',example:'"Cut him some slack — it\'s only his first week on the job."',context:'Being more lenient with someone going through a tough time.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E17X2'}
+    {
+      phrase: 'I\'m okay. I\'m okay.',
+      partOfSpeech: 'expression',
+      meaning: 'A reassuring statement used to calm others after an accident or injury. Repeating "I\'m okay" emphasizes that despite a scare or mishap, the person is unharmed. This phrase is often used to prevent others from panicking and to demonstrate courage or downplay the severity of a situation.',
+      meaning_ko: '사고나 부상 후에 다른 사람들을 진정시키기 위해 사용하는 안심 진술입니다. "I\'m okay"를 반복하는 것은 놀람이나 불행사고에도 불구하고 그 사람이 다쳤지 않다는 것을 강조합니다. 이 표현은 종종 다른 사람들이 공황에 빠지는 것을 방지하고 용기를 보여주거나 상황의 심각성을 경시하는 데 사용됩니다.',
+      example: 'A: "Oh my God! Are you hurt?" B: "I\'m okay. I\'m okay. It just scared me more than anything."',
+      example_ko: 'A: "오my God! 다쳤어?" B: "괜찮아. 괜찮아. 그냥 놀랐어."',
+      context: 'Rachel assures everyone that she is fine after falling off the balcony while removing Christmas lights, even though she has injured her foot.',
+      context_ko: 'Rachel이 크리스마스 조명을 제거하다가 발코니에서 떨어진 후 발을 다쳤음에도 불구하고 모두에게 자신이 괜찮다고 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X1'
+    },
+    {
+      phrase: 'What are the odds of that happening?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical question expressing amazement or disbelief at an unlikely coincidence. The phrase highlights how improbable something is. Instead of expecting an answer, the speaker is commenting on the remarkable nature of a situation — that the chances of this event occurring were extremely low.',
+      meaning_ko: '가능성이 낮은 우연에 대한 놀라움이나 의심을 표현하는 수사적 질문입니다. 이 구는 무언가가 얼마나 가능성이 낮은지를 강조합니다. 답변을 기대하는 대신, 화자는 상황이 얼마나 주목할만한지에 대해 언급하고 있습니다.',
+      example: 'A: "I ran into my ex at the grocery store on the same day my new relationship started." B: "What are the odds of that happening?"',
+      example_ko: 'A: "내 새로운 관계가 시작된 그 날에 식료품점에서 우연히 내 전 친구를 만났어." B: "정말 우연이네."',
+      context: 'Joey expresses amazement that both Phoebe and Ursula have the same birthday, making it impossible for him to celebrate with both of them.',
+      context_ko: 'Joey가 Phoebe와 Ursula가 같은 생일을 가지고 있다는 사실에 놀라움을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X2'
+    },
+    {
+      phrase: 'I don\'t want to screw it up with Ursula.',
+      partOfSpeech: 'expression',
+      meaning: '"Screw up" means to make a mistake or damage a relationship through poor choices. "I don\'t want to screw it up" expresses a desire to preserve and protect something valuable — usually a budding romantic relationship. The phrase acknowledges that there is risk involved and that the speaker wants to avoid making mistakes.',
+      meaning_ko: '"Screw up"은 실수를 하거나 잘못된 선택을 통해 관계를 망치는 것을 의미합니다. "I don\'t want to screw it up"은 귀중한 것을 보존하고 보호하려는 욕망을 표현합니다. 이 표현은 위험이 관련되어 있고 화자가 실수를 피하고 싶어한다는 것을 인정합니다.',
+      example: 'A: "You should ask her out." B: "I want to, but I don\'t want to screw it up. She\'s amazing."',
+      example_ko: 'A: "그 여자한테 데이트 신청해." B: "하고 싶은데, 망치고 싶지 않아. 그 여자 정말 멋있어."',
+      context: 'Joey expresses his concern about possibly ruining his relationship with Ursula by choosing to spend Ursula\'s birthday with her instead of with Phoebe.',
+      context_ko: 'Joey가 Ursula의 생일을 그녀와 보냄으로써 Ursula와의 관계를 망칠 수도 있다는 우려를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X3'
+    },
+    {
+      phrase: 'He\'s really nutsy about you.',
+      partOfSpeech: 'expression',
+      meaning: '"Nutsy" or "nuts" means someone is crazy or obsessively fond of someone. "He\'s really nutsy about you" means he has strong, passionate feelings — usually romantic attraction or infatuation. The word is colloquial and often used in casual conversation to describe someone\'s intense emotional attachment.',
+      meaning_ko: '"Nutsy" 또는 "nuts"은 누군가가 미쳤거나 누군가를 집착적으로 좋아한다는 의미입니다. "He\'s really nutsy about you"는 그가 강한 열정적인 감정을 가지고 있다는 뜻입니다. 이 단어는 구어체이며 누군가의 강렬한 감정적 애착을 묘사하는 데 자주 사용됩니다.',
+      example: 'A: "Does your brother like my friend?" B: "Like her? He\'s really nutsy about her. He can\'t stop talking about her."',
+      example_ko: 'A: "너 형이 내 친구 좋아해?" B: "좋아? 그 친구한테 완전 미쳤어. 계속 그 친구 얘기만 해."',
+      context: 'Phoebe tells Ursula that Joey is infatuated with her, trying to gauge how serious Joey\'s feelings are.',
+      context_ko: 'Phoebe는 Ursula에게 Joey가 그녀에게 홀려 있다고 말하고, Joey의 감정이 얼마나 진지한지 파악하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X4'
+    },
+    {
+      phrase: 'This hospital is for people.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement emphasizing that a facility or service is intended exclusively for human beings. The phrase is often used dismissively to exclude others who are not people — in this case, animals. While technically accurate, it can sound cold or heartless when used to deny help or entry.',
+      meaning_ko: '시설이나 서비스가 전적으로 인간을 위한 것임을 강조하는 진술입니다. 이 표현은 종종 무시적으로 사람이 아닌 다른 사람들을 배제하는 데 사용됩니다. 기술적으로는 정확하지만, 도움이나 입장을 거부할 때 차갑거나 무정해 보일 수 있습니다.',
+      example: 'A: "Can I bring my dog to the hospital to visit my friend?" B: "No, this hospital is for people."',
+      example_ko: 'A: "내 개를 병원에 데려가서 친구를 방문할 수 있을까?" B: "아니야, 병원은 사람을 위한 곳이야."',
+      context: 'A hospital staff member dismisses Ross\'s attempt to bring Marcel the monkey to the emergency room for medical help.',
+      context_ko: '병원 직원이 Marcel 원숭이를 응급실에 데려가려는 Ross의 시도를 거절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X5'
+    },
+    {
+      phrase: 'He is people.',
+      partOfSpeech: 'expression',
+      meaning: 'An emotional declaration asserting that despite not being human, someone or something has personhood and deserves to be treated with respect and dignity. The phrase challenges the distinction between people and non-people by arguing that the non-human subject has human-like qualities — consciousness, name, feelings, or moral worth.',
+      meaning_ko: '인간이 아니지만 누군가 또는 무언가가 인격성을 가지고 있으며 존경과 존엄성으로 대우받을 자격이 있다는 것을 주장하는 정서적 선언입니다. 이 표현은 비인간 주체가 인간 같은 특성을 가지고 있다고 주장함으로써 사람과 비인간 사이의 구별에 이의를 제기합니다.',
+      example: 'A: "We can\'t let the animal sanctuary help the injured deer." B: "But that deer is people — it has worth and deserves care."',
+      example_ko: 'A: "우리는 동물 보호소가 다친 사슴을 도와주게 할 수 없어." B: "하지만 그 사슴도 중요한 생명이야 — 존경과 보살핌을 받을 자격이 있어."',
+      context: 'Ross desperately defends Marcel to hospital staff, arguing that the monkey deserves medical attention and should be treated as if he were a person.',
+      context_ko: 'Ross는 Marcel이 의료 관심을 받을 자격이 있으며 인간처럼 대우받아야 한다고 주장하면서 병원 직원에게 Marcel을 필사적으로 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X6'
+    },
+    {
+      phrase: 'I\'ve been trying for two days.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement indicating repeated, unsuccessful efforts to achieve something over an extended period. The phrase emphasizes the length of time and the persistence of the attempt. It often conveys frustration that despite multiple tries, the goal has not been reached.',
+      meaning_ko: '연장된 기간 동안 무언가를 달성하려는 반복되지만 실패한 시도를 나타내는 진술입니다. 이 표현은 시간의 길이와 시도의 지속성을 강조합니다. 종종 여러 번의 시도에도 불구하고 목표에 도달하지 못했다는 좌절감을 전달합니다.',
+      example: 'A: "Have you reached your friend?" B: "No. I\'ve been trying for two days, but she won\'t answer."',
+      example_ko: 'A: "친구한테 연락했어?" B: "아니. 이틀 동안 계속 연락하고 있는데 받지 않아."',
+      context: 'Phoebe expresses frustration that Ursula has been avoiding her and won\'t return her phone calls despite her repeated attempts to reach her sister.',
+      context_ko: 'Phoebe는 Ursula가 자신을 피하고 있으며 반복된 시도에도 불구하고 전화를 받지 않는다는 답답함을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X7'
+    },
+    {
+      phrase: 'I can\'t believe you did this.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing disbelief, amazement, or emotional reaction to someone\'s action. The phrase can convey either positive surprise (admiration for something wonderful) or negative surprise (shock at something hurtful). The tone and context determine whether the emotion is gratitude, hurt, betrayal, or wonder.',
+      meaning_ko: '누군가의 행동에 대한 의심, 놀라움 또는 감정적 반응을 표현하는 진술입니다. 이 표현은 긍정적인 놀라움(멋진 것에 대한 감탄) 또는 부정적인 놀라움(상처받은 충격)을 전달할 수 있습니다.',
+      example: 'A: "I organized a surprise party for your birthday." B: "I can\'t believe you did this. Thank you!"',
+      example_ko: 'A: "너한테 생일 깜짝 파티를 해줬어." B: "뭐 한 거야? 고마워!"',
+      context: 'When Phoebe and Ursula reunite after their conflict, Phoebe is moved that Ursula has brought her a Judy Jetson Thermos — the same item Ursula broke when they were children.',
+      context_ko: 'Phoebe와 Ursula가 갈등 후 재회할 때, Phoebe는 Ursula가 자신에게 Judy Jetson 보온병을 가져왔다는 사실에 감동합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X8'
+    },
+    {
+      phrase: 'Just forget about what I said under the bridge.',
+      partOfSpeech: 'expression',
+      meaning: 'A plea to ignore or dismiss previous emotional statements, usually because the speaker wants to avoid consequences or change direction in a relationship. Asking someone to "forget" about serious declarations is often a way of backing out of commitments or downplaying earlier feelings. It reflects fear, uncertainty, or a change of heart.',
+      meaning_ko: '이전의 감정적 진술을 무시하거나 제쳐두려는 간청으로, 종종 화자가 결과를 피하거나 관계의 방향을 바꾸고 싶을 때 사용합니다. 누군가에게 심각한 선언을 "잊어달라"고 요청하는 것은 종종 약속에서 물러나거나 이전 감정을 경시하는 방법입니다.',
+      example: 'A: "You said you loved me under the bridge." B: "Just forget about what I said that night. I wasn\'t thinking clearly."',
+      example_ko: 'A: "넌 다리 아래에서 나를 사랑한다고 말했어." B: "그때 내가 한 말 잊어. 난 제대로 생각을 못 했어."',
+      context: 'Joey tries to backtrack on the romantic declarations he made to Ursula, attempting to undo his emotional commitment by asking her to disregard his earlier confession.',
+      context_ko: 'Joey는 Ursula에게 한 로맨틱한 선언을 철회하려고 시도하며, 그녀에게 자신의 이전 고백을 무시하도록 요청함으로써 자신의 감정적 약속을 취소하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X9'
+    },
+    {
+      phrase: 'But I was drunk on you.',
+      partOfSpeech: 'expression',
+      meaning: '"Drunk on you" is a romantic expression meaning intoxicated by love or attraction to someone. Unlike actual drunkenness, being "drunk on" someone is a positive metaphor for being overwhelmed by emotion and desire. It\'s a poetic way of saying someone has completely captivated your heart and mind.',
+      meaning_ko: '"Drunk on you"는 누군가에 대한 사랑이나 매력에 취한다는 의미의 로맨틱한 표현입니다. 실제 취함과 달리, 누군가에게 "drunk on"인 것은 감정과 욕망에 압도되는 것을 의미하는 긍정적인 은유입니다.',
+      example: 'A: "You\'re beautiful when you look at me like that." B: "That\'s because I\'m drunk on you — you make me feel alive."',
+      example_ko: 'A: "넌 날 그렇게 봐줄 때 너무 예뻐." B: "그건 내가 너한테 홀려서 그래 — 넌 나를 살아있게 해."',
+      context: 'Joey uses this romantic line when breaking up with Ursula, trying to explain that his feelings for her were genuine and overwhelming, even if the relationship can\'t continue.',
+      context_ko: 'Joey는 Ursula와 헤어질 때 이 로맨틱한 대사를 사용하여 관계가 계속될 수 없을지라도 자신의 감정이 진정하고 압도적이라는 것을 설명하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X10'
+    },
+    {
+      phrase: 'You did what you had to do.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of validation and understanding that someone made the right or necessary decision, even if it was difficult. The phrase acknowledges that while circumstances forced a choice, the choice was correct. It often offers reassurance and removes blame, saying "You did the right thing under the circumstances."',
+      meaning_ko: '어려운 결정이었을지라도 누군가가 올바르거나 필요한 결정을 했다는 것을 검증하고 이해하는 진술입니다. 이 표현은 상황이 선택을 강요했지만 선택이 올바르다는 것을 인정합니다.',
+      example: 'A: "I had to let my friend go because he was being toxic." B: "I understand. You did what you had to do. Your well-being matters."',
+      example_ko: 'A: "그 친구가 나한테 안 좋은 영향을 미쳐서 그만 지내기로 했어." B: "이해해. 넌 올바르게 했어. 너의 행복이 중요하니까."',
+      context: 'Chandler praises Ross for stepping up to help save Marcel\'s life when the monkey swallowed a Scrabble tile, acknowledging that Ross did what was necessary despite the emotional stress.',
+      context_ko: 'Chandler는 원숭이가 스크래블 타일을 삼켰을 때 Marcel의 생명을 구하기 위해 행동한 Ross를 칭찬하며, Ross가 감정적인 스트레스에도 불구하고 필요한 조치를 취했다는 것을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X11'
+    },
+    {
+      phrase: 'That is very dad.',
+      partOfSpeech: 'expression',
+      meaning: 'A compliment meaning that someone is acting like a responsible, caring father figure — displaying qualities like protection, support, and doing what\'s right. The phrase takes the word "dad" as an adjective to describe admirable parental or protective behavior. It\'s a casual way of saying someone is demonstrating maturity and caregiving.',
+      meaning_ko: '누군가가 책임감 있고 배려심 있는 아버지처럼 행동하고 있다는 의미의 칭찬입니다. 이 표현은 "dad"라는 단어를 칭찬할 만한 부모 또는 보호 행동을 설명하기 위한 형용사로 사용합니다. 누군가가 성숙함과 돌봄을 보여주고 있다는 것을 말하는 캐주얼한 방법입니다.',
+      example: 'A: "He stayed up all night to help me with my problem." B: "That is very dad of him."',
+      example_ko: 'A: "그 친구가 밤을 새워서 내 문제를 도와줬어." B: "그건 정말 아버지다운 행동이네."',
+      context: 'Chandler praises Ross for handling the emergency with Marcel well, saying that Ross\'s quick thinking and responsible action demonstrate that he will be a good father to his own child.',
+      context_ko: 'Chandler은 Marcel의 응급 상황을 잘 처리한 Ross를 칭찬하며, Ross의 빠른 생각과 책임감 있는 행동이 그가 자신의 아이에게 좋은 아버지가 될 것임을 보여준다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X12'
+    },
+    {
+      phrase: 'He\'s gonna be fine.',
+      partOfSpeech: 'expression',
+      meaning: 'A reassuring statement predicting positive recovery or outcome. The phrase is used to calm worries and offer hope after a crisis or accident. It conveys confidence that despite current difficulties, things will return to normal and the person or animal will be okay.',
+      meaning_ko: '긍정적인 회복이나 결과를 예측하는 안심 진술입니다. 이 표현은 위기나 사고 후에 걱정을 진정시키고 희망을 제공하는 데 사용됩니다. 현재의 어려움에도 불구하고 상황이 정상으로 돌아갈 것이고 그 사람이나 동물이 괜찮을 것이라는 신뢰를 전달합니다.',
+      example: 'A: "The doctor is still examining him." B: "Don\'t worry. He\'s gonna be fine. The doctor knows what he\'s doing."',
+      example_ko: 'A: "의사가 계속 진찰 중이야." B: "걱정하지 마. 괜찮을 거야. 의사가 뭐 하는지 알아."',
+      context: 'The hospital doctor assures Ross that Marcel will recover after surgery to remove the Scrabble tile from his stomach.',
+      context_ko: '병원 의사는 Marcel의 배에서 스크래블 타일을 제거한 수술 후 Marcel이 회복될 것이라고 Ross를 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X13'
+    },
+    {
+      phrase: 'Do you have a point?',
+      partOfSpeech: 'question',
+      meaning: 'A challenging question asking someone to explain the purpose or meaning behind what they\'ve just said. The phrase suggests that what the person said was unclear, rambling, or didn\'t lead anywhere obvious. It can be asked genuinely to seek clarification, or more assertively to challenge the relevance of the statement.',
+      meaning_ko: '누군가가 방금 말한 것의 목적이나 의미를 설명하도록 요청하는 도전적인 질문입니다. 이 표현은 그 사람이 말한 것이 불명확하고, 일관되지 않거나 명확한 곳으로 이어지지 않았음을 시사합니다.',
+      example: 'A: "So I was thinking about what could go wrong, and then I realized that the sky is blue, and blue is sad..." B: "Do you have a point?"',
+      example_ko: 'A: "그래서 뭐가 잘못될 수 있을지 생각했는데, 하늘이 파란색이라는 걸 깨달았어..." B: "결론이 뭐야?"',
+      context: 'Ross questions Chandler\'s rambling analysis about worst-case scenarios regarding fatherhood, asking him to get to the point of his complicated story.',
+      context_ko: 'Ross는 아버지 됨에 대한 최악의 상황 분석에 대한 Chandler의 중얼거림에 의문을 제기하며 그에게 복잡한 이야기의 요점을 말하도록 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X14'
+    },
+    {
+      phrase: 'I can\'t believe she\'s blowing me off.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing hurt and disappointment that someone is ignoring, dismissing, or avoiding you. "Blowing someone off" means canceling plans or refusing to engage with them, usually without proper explanation. The phrase conveys both surprise at the treatment and emotional pain from being disregarded or deprioritized.',
+      meaning_ko: '누군가가 당신을 무시하거나, 거절하거나, 피하고 있다는 것에 대한 상처와 실망을 표현하는 진술입니다. "Blowing someone off"는 계획을 취소하거나 그들과의 상호작용을 거부하는 것을 의미합니다.',
+      example: 'A: "Has Sarah texted back?" B: "No. I can\'t believe she\'s blowing me off after everything I\'ve done for her."',
+      example_ko: 'A: "Sarah가 문자 답변했어?" B: "아니. 내가 한 모든 것 후에 얘가 나를 무시한다니 믿기 어렵네."',
+      context: 'Joey is upset that Ursula is ignoring his calls and avoiding contact with him, unable to understand why his relationship with her has deteriorated so quickly.',
+      context_ko: 'Joey는 Ursula가 자신의 전화를 무시하고 연락을 피하고 있다는 사실에 화가 나 있으며, 자신과 그녀의 관계가 왜 그렇게 빨리 악화되었는지 이해할 수 없습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E17X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
