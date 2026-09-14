@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E19: The One Where the Monkey Gets Away</div>
-        <div class="page-header-meta">Marcel escapes and Animal Control comes. Rachel loses Ross's monkey.</div>
+        <div class="page-header-meta">Marcel escapes. Rachel tries to get him back. Barry crashes the party.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e19"
             onclick="toggleBookmark('episode','episode-friends-s1e19','📋 Friends S1E19','friends/episodes/season1/s1e19.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One Where the Monkey Gets Away',
-    description: 'Marcel escapes and Animal Control comes. Rachel loses Ross\'s monkey.',
+    description: 'Marcel escapes. Rachel tries to get him back. Barry crashes the party.',
     expressions: [
-    {phrase:'Let something slip',partOfSpeech:'phrasal verb',meaning:'To accidentally reveal something you were supposed to keep secret.',example:'"I let it slip that the party was a surprise — she knows now."',context:'Accidentally revealing a secret.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E19X1'},
-    {phrase:'Off the hook',partOfSpeech:'idiom',meaning:'No longer in trouble or responsible for a difficult situation; free from blame.',example:'"He admitted it was his fault, so you\'re completely off the hook."',context:'Being freed from responsibility or blame.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E19X2'}
+    {
+      phrase: 'This is so stupid.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of frustration or annoyance with a situation. By calling something "stupid," the speaker is expressing strong disapproval or exasperation at what is happening. This is a casual way to dismiss something as foolish or frustrating.',
+      meaning_ko: '상황에 대한 좌절감이나 짜증을 나타내는 진술입니다. 뭔가를 "stupid"라고 부름으로써, 화자는 일어나고 있는 것에 대한 강한 불만 또는 답답함을 표현합니다. 이것은 무언가를 어리석거나 답답한 것으로 무시하는 캐주얼한 방법입니다.',
+      example: 'A: "I can\'t find my keys." B: "This is so stupid. You always lose them."',
+      example_ko: 'A: "내 열쇠를 찾을 수 없어." B: "정말 답답해. 넌 항상 잃어버려."',
+      context: 'Rachel expresses frustration about seeing her ex-boyfriend Barry getting engaged to her former maid of honor, Mindy.',
+      context_ko: 'Rachel은 그녀의 전 남친 Barry가 그녀의 전직 명誉 신부 Mindy와 약혼하는 것을 보고 좌절감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X1'
+    },
+    {
+      phrase: 'I should be happy for them.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing what the speaker believes they ought to feel, rather than what they actually feel. The word "should" indicates an internal conflict between expectation and reality — the speaker knows they should feel happy, but they don\'t. It\'s often used when someone is struggling with their true emotions.',
+      meaning_ko: '화자가 실제로 느끼는 것이 아니라 느껴야 한다고 믿는 것을 표현하는 진술입니다. "Should"라는 단어는 기대와 현실 사이의 내적 갈등을 나타냅니다. 화자는 행복해야 한다는 것을 알지만, 그렇지 않습니다. 누군가가 자신의 진정한 감정과 씨름할 때 자주 사용됩니다.',
+      example: 'A: "Your friend got the promotion you wanted." B: "I should be happy for her, but I\'m just disappointed."',
+      example_ko: 'A: "너 친구가 네가 원했던 승진을 얻었어." B: "나는 그녀를 축하해야 하지만, 난 그냥 실망했어."',
+      context: 'Rachel struggles with conflicted emotions about Barry\'s engagement, knowing she broke up with him but still feeling jealous.',
+      context_ko: 'Rachel은 Barry의 약혼에 대해 상충된 감정과 씨름하고, 그와 헤어졌지만 여전히 질투심을 느끼고 있다는 것을 알고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X2'
+    },
+    {
+      phrase: 'You\'re off in Rachel Land, doing your Rachel thing.',
+      partOfSpeech: 'expression',
+      meaning: 'A critical observation that someone is self-absorbed and oblivious to their surroundings or the impact of their actions. The phrase "Rachel Land" is a metaphorical place where the subject lives in their own world. It\'s used to suggest someone is disconnected from reality or doesn\'t consider others\' feelings.',
+      meaning_ko: '누군가가 자아도취적이며 자신의 주변이나 자신의 행동의 영향에 무관심하다는 비판적 관찰입니다. "Rachel Land"라는 표현은 대상이 자신의 세계에서 산다는 은유적 장소입니다. 누군가가 현실과 단절되어 있거나 다른 사람의 감정을 고려하지 않는다는 것을 제안하는 데 사용됩니다.',
+      example: 'A: "You didn\'t even notice I was upset." B: "You\'re off in your own world, doing your thing. You never think about anyone else."',
+      example_ko: 'A: "넌 내가 화났다는 것도 눈치 채지 못했어." B: "넌 자신의 세계에서 너의 일을 하고 있어. 넌 절대 다른 사람을 생각하지 않아."',
+      context: 'Ross criticizes Rachel for being careless with Marcel and not paying attention to others\' feelings when she lost the monkey.',
+      context_ko: 'Ross는 Rachel이 Marcel을 부주의하게 다루고 원숭이를 잃었을 때 다른 사람의 감정에 주의를 기울이지 않은 것을 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X3'
+    },
+    {
+      phrase: 'Things just sort of happen around you.',
+      partOfSpeech: 'expression',
+      meaning: 'An observation that events or problems seem to occur in someone\'s vicinity without their direct intention or control. The phrase suggests that the person creates chaos or unexpected situations wherever they go. It\'s a way of saying someone is accident-prone or has a pattern of causing problems.',
+      meaning_ko: '사건이나 문제가 누군가의 직접적인 의도나 통제 없이 그들의 주변에서 발생하는 것처럼 보인다는 관찰입니다. 이 표현은 그 사람이 어디를 가든 혼란이나 예상치 못한 상황을 만든다는 것을 시사합니다. 누군가가 사고를 당하기 쉽거나 문제를 일으키는 패턴이 있다는 것을 말하는 방법입니다.',
+      example: 'A: "I didn\'t mean to spill the drink." B: "Things just sort of happen around you. You\'re like a disaster magnet."',
+      example_ko: 'A: "난 음료를 쏟으려는 게 아니었어." B: "그냥 일들이 넌 중심으로 일어나. 넌 마치 재해 자석 같아."',
+      context: 'Ross comments that Rachel always seems to cause problems or create chaos wherever she goes, a pattern he\'s noticed throughout their friendship.',
+      context_ko: 'Ross는 Rachel이 항상 문제를 일으키거나 어디를 가든 혼란을 만드는 것처럼 보인다고 언급하며, 이것은 그가 우정 내내 주목한 패턴입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X4'
+    },
+    {
+      phrase: 'Give me my monkey back.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct demand to return something that belongs to the speaker. While in this case it refers to an actual monkey, the phrase is used more broadly to demand the return of any possession. It\'s a clear, assertive statement showing urgency and possession.',
+      meaning_ko: '화자에게 속한 무언가를 돌려달라는 직접적인 요구입니다. 이 경우 실제 원숭이를 의미하지만, 이 표현은 모든 소유물의 반환을 요구하는 데 더 광범위하게 사용됩니다. 긴급성과 소유권을 보여주는 명확하고 강력한 진술입니다.',
+      example: 'A: "I borrowed your book." B: "Give me my book back. I need it for class."',
+      example_ko: 'A: "난 너 책을 빌렸어." B: "내 책을 돌려줘. 난 수업을 위해 필요해."',
+      context: 'Ross demands that the person who took Marcel (his monkey) return him after the animal escaped and was captured.',
+      context_ko: 'Ross는 동물이 도망쳤다가 잡혔을 때 Marcel을 빼앗아간 사람에게 그를 돌려달라고 요구합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X5'
+    },
+    {
+      phrase: 'Are you insane?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical question expressing shock or disbelief at someone\'s actions or statements. Rather than genuinely questioning the person\'s mental state, it\'s a way of saying the person\'s behavior is irrational or beyond reasonable comprehension. It conveys strong disapproval or astonishment.',
+      meaning_ko: '누군가의 행동이나 진술에 대한 충격이나 의심을 표현하는 수사적 질문입니다. 그 사람의 정신 상태를 진정으로 의문하기보다는, 그 사람의 행동이 비이성적이거나 합리적 이해를 벗어난다고 말하는 방법입니다. 강한 불만 또는 놀라움을 전달합니다.',
+      example: 'A: "I\'m going to jump off the roof into the pool." B: "Are you insane? That\'s incredibly dangerous!"',
+      example_ko: 'A: "나는 지붕에서 풀로 뛰어내릴 거야." B: "넌 미쳤어? 그건 정말 위험해!"',
+      context: 'Ross expresses shock and disbelief when discovering that the person holding Marcel claims the monkey is actually named Patty and belongs to them.',
+      context_ko: 'Ross는 Marcel을 잡고 있는 사람이 원숭이가 실제로 Patty라고 이름 지어졌고 자신들의 것이라고 주장할 때 충격과 의심을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X6'
+    },
+    {
+      phrase: 'It\'s not like I did this on purpose.',
+      partOfSpeech: 'expression',
+      meaning: 'A defense that clarifies the speaker did not intend to cause harm or make a mistake. By emphasizing that something was accidental rather than intentional, the speaker is asking for forgiveness or understanding. It\'s used to distinguish between negligence and malice.',
+      meaning_ko: '화자가 피해를 일으키거나 실수하려고 의도하지 않았다는 것을 명확히 하는 방어입니다. 뭔가가 의도적이 아니라 우발적이라는 것을 강조함으로써, 화자는 용서나 이해를 요청하고 있습니다. 과실과 악의를 구분하는 데 사용됩니다.',
+      example: 'A: "You broke my vase!" B: "It\'s not like I did this on purpose. I didn\'t mean to knock it over."',
+      example_ko: 'A: "넌 내 꽃병을 깨뜨렸어!" B: "난 이걸 의도적으로 한 게 아니야. 난 그걸 쓰러뜨리려고 의도하지 않았어."',
+      context: 'Rachel defends herself when Ross is upset about Marcel getting away, emphasizing that she didn\'t intentionally lose his monkey.',
+      context_ko: 'Rachel은 Marcel이 도망쳤을 때 Ross가 화났을 때 자신을 방어하며, 그녀가 의도적으로 그의 원숭이를 잃지 않았다고 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X7'
+    },
+    {
+      phrase: 'What do you want me to do? Huh?',
+      partOfSpeech: 'question',
+      meaning: 'A challenging or defensive question asking the other person to specify what they expect. The addition of "Huh?" at the end makes it more confrontational and frustrated. The speaker is essentially saying they\'ve done what they can, and it\'s now the other person\'s turn to explain their expectations.',
+      meaning_ko: '다른 사람이 무엇을 기대하는지 구체적으로 명시하도록 요청하는 도전적이거나 방어적인 질문입니다. 끝에 "Huh?"를 추가하면 더 대립적이고 답답해집니다. 화자는 본질적으로 자신이 할 수 있는 일을 했다고 말하고 있으며, 이제 다른 사람이 자신의 기대를 설명해야 합니다.',
+      example: 'A: "You need to fix this situation!" B: "What do you want me to do? Huh? I\'ve already tried everything!"',
+      example_ko: 'A: "넌 이 상황을 고쳐야 해!" B: "넌 나한테 뭘 원해? 난 이미 모든 것을 시도했어!"',
+      context: 'Rachel challenges Ross when he continues to blame her for losing Marcel, asking what more he expects her to do.',
+      context_ko: 'Rachel은 Ross가 계속 Marcel을 잃은 것에 대해 그녀를 비난할 때 도전하며, 그가 그녀에게 더 무엇을 기대하는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X8'
+    },
+    {
+      phrase: 'I don\'t miss Marcel anymore.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement showing that the speaker\'s emotional attachment to someone or something has changed. In this case, it\'s humor masking pain — while sad about losing the monkey, the speaker jokes that they\'ve moved on. It can be used seriously or sarcastically depending on context.',
+      meaning_ko: '화자의 누군가 또는 무언가에 대한 감정적 애착이 변했다는 것을 보여주는 진술입니다. 이 경우, 그것은 고통을 가리는 유머입니다. 원숭이를 잃은 것에 대해 슬프지만, 화자는 자신이 계속했다는 농담을 합니다. 맥락에 따라 진지하게 또는 풍자적으로 사용할 수 있습니다.',
+      example: 'A: "Do you miss your friend who moved away?" B: "Not anymore. I don\'t miss him at all."',
+      example_ko: 'A: "이사 간 너 친구 그리워?" B: "이제 아니야. 난 그를 그리워하지 않아."',
+      context: 'Ross makes a dark joke after kicking a sign in frustration over losing Marcel, saying he doesn\'t miss him anymore because he\'s too angry.',
+      context_ko: 'Ross는 Marcel을 잃은 것에 대한 좌절로 표지판을 찬 후 어두운 농담을 하며, 너무 화나서 더 이상 그를 그리워하지 않는다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X9'
+    },
+    {
+      phrase: 'This is just vintage Rachel.',
+      partOfSpeech: 'expression',
+      meaning: 'A phrase suggesting that someone\'s behavior is typical or characteristic of who they are. "Vintage" implies a well-known pattern or trait. The speaker is saying that the person\'s actions are a classic example of their personality or tendency. It\'s often used critically.',
+      meaning_ko: '누군가의 행동이 전형적이거나 그들이 누인지의 특징이라는 것을 제안하는 표현입니다. "Vintage"는 잘 알려진 패턴이나 특성을 암시합니다. 화자는 그 사람의 행동이 그들의 성격이나 경향의 전형적인 예라고 말하고 있습니다. 종종 비판적으로 사용됩니다.',
+      example: 'A: "She forgot my birthday." B: "That\'s just vintage Jessica. She always forgets important dates."',
+      example_ko: 'A: "그녀는 내 생일을 잊었어." B: "그건 전형적인 Jessica야. 그녀는 항상 중요한 날짜를 잊어."',
+      context: 'Ross uses this phrase to suggest that Rachel\'s carelessness and self-absorption are typical characteristics of who she is as a person.',
+      context_ko: 'Ross는 이 표현을 사용하여 Rachel의 무의식함과 자아도취가 그녀가 누인지의 전형적인 특성이라고 암시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X10'
+    },
+    {
+      phrase: 'He\'s gone. He\'s just gone.',
+      partOfSpeech: 'expression',
+      meaning: 'A repetition for emphasis that something or someone is no longer present or available. The repeated statement conveys resignation, sadness, or hopelessness. It\'s often used when someone accepts a loss after initially denying or hoping for recovery.',
+      meaning_ko: '뭔가 또는 누군가가 더 이상 존재하지 않거나 이용할 수 없다는 것을 강조하기 위한 반복입니다. 반복된 진술은 체념, 슬픔, 또는 절망을 전달합니다. 종종 누군가가 처음에 부인하거나 회복을 희망한 후에 손실을 받아들일 때 사용됩니다.',
+      example: 'A: "Do you think we\'ll ever find him?" B: "He\'s gone. He\'s just gone. We have to accept it."',
+      example_ko: 'A: "우리가 그를 찾을 거라고 생각해?" B: "그는 가버렸어. 그냥 가버렸어. 우리는 그것을 받아들여야 해."',
+      context: 'Ross expresses despair and hopelessness after searching for Marcel throughout the neighborhood without success.',
+      context_ko: 'Ross는 근처 전역에서 Marcel을 찾으려는 시도가 성공하지 못한 후 절망과 무기력함을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X11'
+    },
+    {
+      phrase: 'It\'s cold, it\'s dark.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement describing harsh or unpleasant conditions. The use of simple observations to paint a picture of difficulty or danger. It\'s often used to highlight concerns or justify why a situation is problematic. Each phrase emphasizes an aspect of discomfort.',
+      meaning_ko: '가혹하거나 불쾌한 조건을 설명하는 진술입니다. 간단한 관찰을 사용하여 어려움이나 위험의 그림을 그립니다. 종종 우려를 강조하거나 상황이 문제가 되는 이유를 정당화하는 데 사용됩니다. 각 표현은 불편함의 한 측면을 강조합니다.',
+      example: 'A: "We should go out and search for him." B: "It\'s cold, it\'s dark, and it\'s dangerous out there."',
+      example_ko: 'A: "우리는 나가서 그를 찾아야 해." B: "밖은 차갑고, 어둡고, 위험해."',
+      context: 'Ross expresses concern about Marcel\'s safety, pointing out the harsh environmental conditions that make him worried about the monkey\'s survival.',
+      context_ko: 'Ross는 Marcel의 안전에 대한 우려를 표현하며, 원숭이의 생존을 걱정하게 만드는 가혹한 환경 조건을 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X12'
+    },
+    {
+      phrase: 'It was my fault.',
+      partOfSpeech: 'expression',
+      meaning: 'An admission of personal responsibility for a mistake or problem. This statement shows acceptance of blame and accountability. It\'s a straightforward way of taking ownership of one\'s actions without making excuses or shifting blame to others.',
+      meaning_ko: '실수나 문제에 대한 개인적 책임을 인정하는 것입니다. 이 진술은 비난과 책임을 받아들이는 것을 보여줍니다. 변명을 하거나 다른 사람에게 비난을 옮기지 않고 자신의 행동의 소유권을 가지는 직접적인 방법입니다.',
+      example: 'A: "I\'m so disappointed in you." B: "You\'re right. It was my fault. I should have been more careful."',
+      example_ko: 'A: "난 너한테 실망했어." B: "넌 맞아. 그건 내 잘못이야. 난 더 조심했어야 해."',
+      context: 'Rachel takes responsibility for losing Marcel, acknowledging that it was her mistake and not shifting blame to others.',
+      context_ko: 'Rachel은 Marcel을 잃은 것에 대해 책임을 지며, 그것이 그녀의 실수임을 인정하고 다른 사람에게 비난을 옮기지 않습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X13'
+    },
+    {
+      phrase: 'You were great.',
+      partOfSpeech: 'expression',
+      meaning: 'A compliment expressing genuine appreciation or admiration for someone\'s actions or performance. It\'s a simple but powerful way of praising someone and making them feel valued. The word "great" conveys enthusiasm and satisfaction.',
+      meaning_ko: '누군가의 행동이나 성능에 대한 진정한 감사나 감탄을 표현하는 칭찬입니다. 누군가를 칭찬하고 그들에게 가치 있다고 느끼게 하는 간단하지만 강력한 방법입니다. "Great"이라는 단어는 열정과 만족감을 전달합니다.',
+      example: 'A: "I worked really hard on this presentation." B: "You were great. It was impressive and well-organized."',
+      example_ko: 'A: "난 이 프레젠테이션에 정말 열심히 일했어." B: "넌 정말 좋았어. 그것은 인상적이고 잘 정리되었어."',
+      context: 'Ross praises Rachel after she successfully retrieves Marcel from the person who was holding him, recognizing her effort.',
+      context_ko: 'Ross는 Rachel이 Marcel을 잡고 있던 사람에게서 성공적으로 그를 가져온 후에 그녀를 칭찬하며, 그녀의 노력을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X14'
+    },
+    {
+      phrase: 'We have got to start locking that door.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of necessity about implementing security measures or privacy protection. The phrase emphasizes an urgent need to change a current behavior. In this context, it\'s about maintaining privacy in a shared space by locking the door to prevent unexpected intrusions.',
+      meaning_ko: '보안 조치 또는 개인정보 보호 구현에 대한 필요성의 진술입니다. 이 표현은 현재 행동을 변경할 긴급한 필요성을 강조합니다. 이 맥락에서, 그것은 예상치 못한 침입을 방지하기 위해 문을 잠금으로써 공유 공간에서 개인정보를 유지하는 것에 관한 것입니다.',
+      example: 'A: "My parents walked in while we were kissing." B: "We have got to start locking that door!"',
+      example_ko: 'A: "우리가 키스하는 동안 부모님이 들어왔어." B: "우리는 정말로 그 문을 잠그기 시작해야 해!"',
+      context: 'Monica suggests they need to lock the door to Monica\'s apartment after Barry unexpectedly shows up and walks in on an intimate moment between Rachel and Ross.',
+      context_ko: 'Monica는 Barry가 예상치 못하게 나타나 Rachel과 Ross 사이의 친밀한 순간에 들어온 후 Monica\'s 아파트의 문을 잠그기 시작해야 한다고 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E19X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
