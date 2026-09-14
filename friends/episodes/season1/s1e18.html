@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s1e18.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S1E18: The One with All the Poker</div>
-        <div class="page-header-meta">The group plays poker. Rachel competes fiercely against Ross.</div>
+        <div class="page-header-title">Friends &mdash; S1E18: The One with Two Parts (Part 3)</div>
+        <div class="page-header-meta">The gang plays poker. Rachel applies for a job.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e18"
             onclick="toggleBookmark('episode','episode-friends-s1e18','📋 Friends S1E18','friends/episodes/season1/s1e18.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'The One with All the Poker',
-    description: 'The group plays poker. Rachel competes fiercely against Ross.',
+    available: true,
+    title: 'The One with Two Parts (Part 3)',
+    description: 'The gang plays poker. Rachel applies for a job.',
     expressions: [
-    {phrase:'Have a poker face',partOfSpeech:'idiom',meaning:'To show no emotion or expression, making it impossible to know what you are thinking or feeling.',example:'"He negotiated with a perfect poker face and got a great deal."',context:'Hiding emotions during a competitive situation.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E18X1'},
-    {phrase:'Up the ante',partOfSpeech:'idiom',meaning:'To raise the stakes; to increase the level of a challenge, risk, or reward.',example:'"The competitor upped the ante by offering free shipping on all orders."',context:'Making something more competitive or challenging.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E18X2'}
+    {
+      phrase: 'I can\'t be a waitress anymore. I mean it.',
+      partOfSpeech: 'expression',
+      meaning: 'A forceful declaration of determination to stop doing something undesirable. "I mean it" adds emphasis and seriousness to the statement, indicating this is not a casual complaint but a firm resolve. The speaker is announcing a definitive change in their life or circumstances.',
+      meaning_ko: '원하지 않는 일을 멈추려는 결연한 결정을 강력하게 선언하는 것입니다. "I mean it"은 진술에 강조와 진지함을 더하며, 이것이 무심한 불평이 아니라 확실한 결심임을 나타냅니다. 화자는 그들의 삶이나 상황에서 확정적인 변화를 발표하고 있습니다.',
+      example: 'A: "Are you quitting your job?" B: "Yes, I can\'t work here anymore. I mean it this time."',
+      example_ko: 'A: "넌 직장을 그만둘 거야?" B: "응, 난 더 이상 여기서 일할 수 없어. 이번엔 진심이야."',
+      context: 'Rachel expresses her frustration with waitressing and declares her intention to find a different job.',
+      context_ko: 'Rachel은 웨이터 일에 대한 답답함을 표현하고 다른 일을 찾으려는 의도를 선언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X1'
+    },
+    {
+      phrase: 'I\'m sick of lousy tips.',
+      partOfSpeech: 'expression',
+      meaning: 'An expression of deep frustration or annoyance with something. "Sick of" is an idiom meaning to be tired of, fed up with, or disgusted by something that has been happening repeatedly. The complaint is directed at a specific grievance.',
+      meaning_ko: '어떤 것에 대한 깊은 좌절감이나 짜증을 표현하는 것입니다. "Sick of"는 계속 반복되는 무언가에 지치거나, 충분히 했거나, 혐오감을 느끼는 것을 의미하는 관용구입니다. 불평은 특정한 불만에 향해집니다.',
+      example: 'A: "Why are you quitting your job?" B: "I\'m sick of working overtime without extra pay."',
+      example_ko: 'A: "왜 일을 그만두고 싶어?" B: "추가 급여 없이 초과 근무하는 게 지겹거든."',
+      context: 'Rachel complains about not receiving adequate tips from customers at her waitressing job.',
+      context_ko: 'Rachel은 웨이터 일을 하면서 고객들로부터 적절한 팁을 받지 못하는 것에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X2'
+    },
+    {
+      phrase: 'This is a poker game. You can\'t serve food.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement establishing and enforcing a rule or expectation for a specific context. By stating what "cannot" be done, the speaker is defining boundaries and proper procedures for the activity. It\'s a humorous way of maintaining the integrity or tradition of the game.',
+      meaning_ko: '특정 상황에 대한 규칙이나 기대를 설정하고 강제하는 진술입니다. "할 수 없다"는 것을 명시함으로써, 화자는 활동의 경계와 절차를 정의하고 있습니다. 게임의 무결성이나 전통을 유지하는 재미있는 방법입니다.',
+      example: 'A: "Can I bring snacks to the meeting?" B: "This is a formal presentation. You can\'t bring food in here."',
+      example_ko: 'A: "회의에 간식을 가져올 수 있을까?" B: "이건 공식 프레젠테이션이야. 여기서 음식을 가져올 수 없어."',
+      context: 'Chandler criticizes Monica for bringing elaborate food to the poker game, saying only simple snacks should be served.',
+      context_ko: 'Chandler은 Monica가 포커 게임에 정교한 음식을 가져온 것을 비판하며, 간단한 간식만 제공해야 한다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X3'
+    },
+    {
+      phrase: 'I was bluffing.',
+      partOfSpeech: 'expression',
+      meaning: 'An admission that someone deceived others by pretending to have something they didn\'t actually have, or by making a false claim to achieve an advantage. In poker, bluffing is a legitimate strategy, but the term is used more broadly to mean any form of strategic deception.',
+      meaning_ko: '누군가가 실제로 가지지 않은 것을 가지고 있는 척함으로써 다른 사람들을 속였다는 것을 인정하는 것입니다. 포커에서 블러핑은 합법적인 전략이지만, 이 용어는 전략적 속임수의 모든 형태를 의미하는 데 더 광범위하게 사용됩니다.',
+      example: 'A: "I thought you had a winning hand!" B: "I was bluffing the whole time."',
+      example_ko: 'A: "넌 승리 패를 가진 줄 알았어!" B: "난 계속 블러핑하고 있었어."',
+      context: 'Rachel admits to bluffing during the poker game when Phoebe questions her strategy and card quality.',
+      context_ko: 'Rachel은 Phoebe가 그녀의 전략과 카드 품질을 의문할 때 포커 게임에서 블러핑했다는 것을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X4'
+    },
+    {
+      phrase: 'Is it not another word for lying?',
+      partOfSpeech: 'question',
+      meaning: 'A challenging question that points out the similarity between two actions or behaviors — in this case, bluffing and lying. The question is rhetorical in nature, as the questioner already knows the answer and is using it to make a point or show disapproval.',
+      meaning_ko: '두 행동이나 행동의 유사성을 지적하는 도전적인 질문입니다. 이 경우 블러핑과 거짓말입니다. 질문은 수사적 성질이 있으며, 질문자는 이미 답을 알고 있고 요점을 만들거나 불만을 나타내기 위해 사용하고 있습니다.',
+      example: 'A: "I was just being strategic." B: "Is that not just a fancy word for being dishonest?"',
+      example_ko: 'A: "나는 전략적이었을 뿐이야." B: "그게 부정직한 것의 멋진 말 아니야?"',
+      context: 'Phoebe challenges Rachel\'s use of bluffing by questioning whether it\'s essentially the same as lying.',
+      context_ko: 'Phoebe는 Rachel의 블러핑 사용에 대해 그것이 본질적으로 거짓말과 같은지 의문함으로써 도전합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X5'
+    },
+    {
+      phrase: 'Hell, no. We\'ll pay.',
+      partOfSpeech: 'expression',
+      meaning: 'A forceful, emphatic refusal of an offer or suggestion, followed by an assertion of alternative action. "Hell, no" is strong slang that conveys absolute rejection, while the second part shows determination to proceed with their own plan instead.',
+      meaning_ko: '제안이나 제안을 강력하게, 강조적으로 거부한 후 대안 조치를 주장하는 것입니다. "Hell, no"는 절대적인 거부를 전달하는 강력한 속어이며, 두 번째 부분은 대신 자신의 계획을 진행하려는 결심을 보여줍니다.',
+      example: 'A: "You don\'t have to pay for the meal since it\'s your birthday." B: "Hell, no. We\'ll pay. It\'s our treat."',
+      example_ko: 'A: "생일이니까 밥값을 안 내도 돼." B: "절대 안 돼. 우리가 낼 거야. 우리가 쏠 거야."',
+      context: 'The female poker players refuse to let the men waive the money owed from the game and insist on paying.',
+      context_ko: '여성 포커 플레이어들은 남자들이 게임에서 빚진 돈을 탕감해주는 것을 거부하고 지불을 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X6'
+    },
+    {
+      phrase: 'You really can\'t stand to lose, can you?',
+      partOfSpeech: 'question',
+      meaning: 'An observation that someone has difficulty accepting defeat or loss. The phrase suggests that the person has poor sportsmanship or an inability to handle failure gracefully. It\'s often used to call out someone\'s bad behavior during competition.',
+      meaning_ko: '누군가가 패배나 손실을 받아들이는 데 어려움이 있다는 관찰입니다. 이 표현은 그 사람이 좋지 않은 스포츠정신을 가지고 있거나 실패를 우아하게 처리할 수 없음을 시사합니다. 경쟁 중에 누군가의 나쁜 행동을 지적하는 데 자주 사용됩니다.',
+      example: 'A: "You\'ve been arguing about every decision the referee made." B: "You really can\'t stand to lose, can you?"',
+      example_ko: 'A: "넌 심판의 모든 결정에 대해 논쟁하고 있어." B: "넌 진정 지는 것을 견딜 수 없어, 그지?"',
+      context: 'Rachel comments on Chandler\'s inability to accept losing during the poker game.',
+      context_ko: 'Rachel은 포커 게임 중에 패배를 받아들이지 못하는 Chandler의 무능력에 대해 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X7'
+    },
+    {
+      phrase: 'Your whole face is getting red.',
+      partOfSpeech: 'expression',
+      meaning: 'An observation of someone\'s emotional state based on their physical appearance. When a person\'s face becomes flushed or red, it usually indicates anger, embarrassment, or intense emotion. This statement points out the visible sign of their inner turmoil.',
+      meaning_ko: '신체 외모를 바탕으로 누군가의 감정 상태를 관찰하는 것입니다. 사람의 얼굴이 화끈거리거나 빨개지면 보통 분노, 당혹, 또는 강한 감정을 나타냅니다. 이 진술은 그들의 내적 혼란의 눈에 띄는 징조를 지적합니다.',
+      example: 'A: "I\'m fine, why are you asking?" B: "Your whole face is getting red. You\'re clearly upset."',
+      example_ko: 'A: "난 괜찮아, 왜 물어봐?" B: "넌 얼굴이 빨개지고 있어. 넌 분명히 화났어."',
+      context: 'Rachel points out that Chandler is showing physical signs of frustration and anger during losing.',
+      context_ko: 'Rachel은 Chandler가 졌을 때 좌절감과 분노의 신체 징후를 보이고 있다고 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X8'
+    },
+    {
+      phrase: 'That shirt doesn\'t really match those pants.',
+      partOfSpeech: 'expression',
+      meaning: 'A critical observation about someone\'s clothing choices or appearance. While stated matter-of-factly, this comment can be used either as sincere fashion advice or as a cutting remark intended to deflate someone\'s confidence or distract them from their current concern.',
+      meaning_ko: '누군가의 의류 선택이나 외모에 대한 비판적 관찰입니다. 평범하게 표현되지만, 이 댓글은 진지한 패션 조언으로 사용되거나 누군가의 자신감을 꺾거나 현재 우려에서 그들을 산만하게 하려는 절단 발언으로 사용될 수 있습니다.',
+      example: 'A: "Do you think I look okay?" B: "Well, that color doesn\'t really match those shoes."',
+      example_ko: 'A: "내가 괜찮아 보여?" B: "글쎄, 그 색은 그 신발과 정말 안 어울려."',
+      context: 'Rachel makes disparaging remarks about Chandler\'s appearance to further upset him during the game.',
+      context_ko: 'Rachel은 게임 중에 Chandler를 더욱 화나게 하기 위해 그의 외모에 대해 경멸적인 발언을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X9'
+    },
+    {
+      phrase: 'I got four sixes. I won.',
+      partOfSpeech: 'expression',
+      meaning: 'A triumphant announcement of victory in a game. The speaker is declaring their winning hand and the result simultaneously. The directness and simplicity of the statement conveys confidence and satisfaction in achieving success.',
+      meaning_ko: '게임에서의 승리를 triumphant하게 발표하는 것입니다. 화자는 동시에 자신의 승리 패와 결과를 선언하고 있습니다. 진술의 직접성과 단순성은 성공을 달성하려는 자신감과 만족감을 전달합니다.',
+      example: 'A: "What did you get?" B: "I got three aces and two kings. Full house. I won!"',
+      example_ko: 'A: "넌 뭘 얻었어?" B: "나 에이스 3개랑 킹 2개 얻었어. 풀하우스. 이겼어!"',
+      context: 'Monica celebrates her victory in the poker game after winning with four sixes.',
+      context_ko: 'Monica는 4개의 6으로 포커 게임에서 승리한 후 자신의 승리를 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X10'
+    },
+    {
+      phrase: 'Your fly\'s still open.',
+      partOfSpeech: 'expression',
+      meaning: 'A humorous or often embarrassing observation that someone has forgotten to zip or button their pants. This comment is typically made after the fact, usually in a playful or teasing manner, to point out an oversight or vulnerability.',
+      meaning_ko: '누군가가 바지를 지퍼로 채우거나 단추로 잠그는 것을 잊었다는 재미있거나 종종 당혹스러운 관찰입니다. 이 댓글은 일반적으로 사실 후에, 보통 장난스럽거나 놀리는 방식으로 공격을 지적하기 위해 만들어집니다.',
+      example: 'A: "Let\'s go, we\'re late." B: "Hold on... Your fly\'s still open."',
+      example_ko: 'A: "가자, 늦었어." B: "잠깐... 넌 바지 지퍼가 아직도 열려있어."',
+      context: 'Monica tells Chandler that his fly is open after a tense moment during the game.',
+      context_ko: 'Monica는 게임 중 긴장된 순간 후에 Chandler에게 그의 지퍼가 열려있다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X11'
+    },
+    {
+      phrase: 'I made you look.',
+      partOfSpeech: 'expression',
+      meaning: 'A playful taunt after someone falls for a trick or looks at something when told to. The phrase celebrates a small victory in a practical joke or game of wit. It\'s typically said with humor and good-natured teasing.',
+      meaning_ko: '누군가가 속임수에 넘어가거나 무언가를 보도록 지시했을 때 장난스러운 놀림입니다. 이 표현은 실용적인 농담이나 재치 게임에서 작은 승리를 축하합니다. 일반적으로 유머와 좋은 성격의 놀림으로 말해집니다.',
+      example: 'A: "Look over there!" B: [looks] A: "I made you look!"',
+      example_ko: 'A: "저기 봐!" B: [봐] A: "넌 봤지!"',
+      context: 'Monica taunts Chandler playfully after successfully distracting him with a trick.',
+      context_ko: 'Monica는 성공적으로 그를 속임수로 산만하게 한 후 Chandler를 장난스럽게 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X12'
+    },
+    {
+      phrase: 'I hate this game.',
+      partOfSpeech: 'expression',
+      meaning: 'A blunt statement of strong disapproval or frustration with an activity. The speaker is expressing that their negative feelings toward the game have reached a point where they no longer enjoy it, want to continue, or endorse it.',
+      meaning_ko: '활동에 대한 강한 불만 또는 좌절감의 blunt한 진술입니다. 화자는 게임에 대한 부정적인 감정이 더 이상 즐기거나 계속하거나 보증하는 지점에 도달했음을 표현합니다.',
+      example: 'A: "Come on, one more game?" B: "No. I hate this game. It\'s too stressful."',
+      example_ko: 'A: "하나 더 하자고." B: "아니야. 난 이 게임 싫어. 스트레스 받아."',
+      context: 'Monica expresses her frustration and dislike of the poker game while continuing to play.',
+      context_ko: 'Monica는 포커 게임을 계속하면서 자신의 좌절감과 불만을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X13'
+    },
+    {
+      phrase: 'It\'s about the job.',
+      partOfSpeech: 'expression',
+      meaning: 'A brief explanation indicating that a certain matter or topic pertains to employment or a job opportunity. The phrase serves as a quick way to clarify the subject of discussion, usually in response to a question or curious look.',
+      meaning_ko: '특정 사항이나 주제가 고용 또는 직업 기회와 관련이 있음을 나타내는 간단한 설명입니다. 이 표현은 일반적으로 질문이나 호기심 어린 표정에 대한 응답으로 논의 주제를 명확히 하는 빠른 방법을 제공합니다.',
+      example: 'A: "Who was that on the phone?" B: "It\'s about the job. They want me to come in for an interview."',
+      example_ko: 'A: "전화 받은 사람이 누구야?" B: "직업 때문이야. 그들이 인터뷰하러 오라고 해."',
+      context: 'Rachel receives a phone call and informs everyone that it concerns the job she applied for.',
+      context_ko: 'Rachel이 전화를 받고 지원한 일에 관한 것이라고 모두에게 알립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X14'
+    },
+    {
+      phrase: 'There\'s gonna be lots of other stuff.',
+      partOfSpeech: 'expression',
+      meaning: 'A reassuring statement suggesting that opportunities will continue to come in the future. The phrase is used to console someone after a disappointment by reminding them that setbacks are temporary and that more possibilities exist ahead.',
+      meaning_ko: '미래에 기회가 계속 올 것이라고 제안하는 안심 진술입니다. 이 표현은 실망 후에 누군가를 위로하기 위해 사용되며, 좌절감은 일시적이고 더 많은 가능성이 앞에 있음을 상기시킵니다.',
+      example: 'A: "I didn\'t get that promotion." B: "Don\'t worry. There\'s gonna be lots of other stuff. You\'ll find something better."',
+      example_ko: 'A: "나 그 승진을 못 얻었어." B: "걱정하지 마. 다른 기회들이 있을 거야. 넌 더 좋은 걸 찾을 거야."',
+      context: 'Ross consoles Rachel after she doesn\'t get the job she interviewed for.',
+      context_ko: 'Ross는 인터뷰한 일을 얻지 못한 Rachel을 위로합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E18X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
