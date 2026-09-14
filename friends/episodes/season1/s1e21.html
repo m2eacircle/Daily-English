@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E21: The One with the Fake Monica</div>
-        <div class="page-header-meta">Monica's identity is stolen. Joey chooses a new stage name.</div>
+        <div class="page-header-meta">Monica's identity is stolen. Fake Monica lives Monica's dreams. Marcel goes to San Diego.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e21"
             onclick="toggleBookmark('episode','episode-friends-s1e21','📋 Friends S1E21','friends/episodes/season1/s1e21.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Fake Monica',
-    description: 'Monica\'s identity is stolen. Joey chooses a new stage name.',
+    description: 'Monica\'s identity is stolen. Fake Monica lives Monica\'s dreams. Marcel goes to San Diego.',
     expressions: [
-    {phrase:'Take on a new identity',partOfSpeech:'expression',meaning:'To adopt a completely new persona, name, or way of presenting oneself.',example:'"After moving abroad, she essentially took on a new identity."',context:'Joey choosing a memorable stage name.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E21X1'},
-    {phrase:'Live life to the fullest',partOfSpeech:'expression',meaning:'To enjoy every aspect of life and take every opportunity; to live without regrets.',example:'"After her recovery, she decided to live life to the fullest."',context:'Embracing every experience and opportunity.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E21X2'}
+    {
+      phrase: 'How\'d someone get your credit card number?',
+      partOfSpeech: 'question',
+      meaning: 'A question seeking to understand how a security breach occurred. The speaker is asking for information about the circumstances that led to identity theft or unauthorized access. It expresses concern and curiosity about the cause of the problem.',
+      meaning_ko: '보안 침해가 어떻게 발생했는지 이해하려는 질문입니다. 화자는 신원 도용이나 무단 접근으로 이어진 상황에 대한 정보를 요청하고 있습니다. 그것은 문제의 원인에 대한 우려와 호기심을 표현합니다.',
+      example: 'A: "Someone charged $5,000 to my card!" B: "How\'d someone get your credit card number?"',
+      example_ko: 'A: "누군가가 내 카드에 5,000달러를 청구했어!" B: "누군가가 넌 신용 카드 번호를 어떻게 얻었어?"',
+      context: 'Chandler asks Monica how her credit card number was compromised after discovering fraudulent charges on her statement.',
+      context_ko: 'Chandler은 Monica의 계좌에서 사기성 청구를 발견한 후 그녀의 신용 카드 번호가 어떻게 손상되었는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X1'
+    },
+    {
+      phrase: 'Look how much they spent!',
+      partOfSpeech: 'expression',
+      meaning: 'An exclamatory statement directing attention to the extent of spending or damage. The phrase expresses shock or alarm at the quantity or amount of money involved. The word "look" invites the listener to share in the speaker\'s reaction of surprise.',
+      meaning_ko: '지출이나 피해의 범위에 주의를 기울이도록 지시하는 감탄적 진술입니다. 이 표현은 관련된 금액의 양에 대한 충격이나 경보를 표현합니다. "Look"이라는 단어는 청자를 화자의 놀라움의 반응에 공유하도록 초대합니다.',
+      example: 'A: "I got the credit card bill." B: "Look how much they spent!"',
+      example_ko: 'A: "난 신용 카드 청구서를 받았어." B: "그들이 얼마나 많이 썼는지 봐!"',
+      context: 'Monica and Rachel react with shock when seeing how much the credit card thief spent using Monica\'s card.',
+      context_ko: 'Monica와 Rachel은 신용 카드 도둑이 Monica의 카드를 사용하여 얼마나 많이 썼는지 보고 충격으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X2'
+    },
+    {
+      phrase: 'It\'s just such reckless spending.',
+      partOfSpeech: 'expression',
+      meaning: 'A judgment statement about the quality or nature of spending behavior. The phrase criticizes someone for spending money without careful consideration or regard for consequences. It conveys disapproval of careless financial decisions.',
+      meaning_ko: '지출 행동의 질이나 특성에 대한 판단 진술입니다. 이 표현은 누군가가 신중한 고려나 결과에 대한 고려 없이 돈을 쓰는 것을 비판합니다. 그것은 부주의한 재정 결정에 대한 불만을 전달합니다.',
+      example: 'A: "He spent $500 on shoes in one day." B: "It\'s just such reckless spending."',
+      example_ko: 'A: "그는 한 날에 신발에 500달러를 썼어." B: "그건 정말 부주의한 지출이야."',
+      context: 'Monica comments on how irresponsibly the credit card thief is spending her money, noting the excessive and wasteful purchases.',
+      context_ko: 'Monica는 신용 카드 도둑이 그녀의 돈을 얼마나 무책임하게 쓰고 있는지 언급하며, 과도하고 낭비적인 구매를 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X3'
+    },
+    {
+      phrase: 'She\'s living my life.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing the unsettling realization that someone else is experiencing the life you want for yourself. The phrase captures a sense of envy and invasion of personal identity. It suggests that the thief is not just stealing money but stealing the lifestyle and opportunities that should be the speaker\'s.',
+      meaning_ko: '누군가가 당신이 자신을 위해 원하는 삶을 경험하고 있다는 불안한 깨달음을 표현하는 진술입니다. 이 표현은 질투감과 개인 정체성의 침해를 포착합니다. 도둑이 단순히 돈을 도둑질하는 것이 아니라 화자의 것이어야 할 라이프스타일과 기회를 도둑질하고 있다는 것을 시사합니다.',
+      example: 'A: "The thief is buying things I wanted." B: "She\'s living my life. She has my dreams."',
+      example_ko: 'A: "도둑이 내가 원했던 것들을 사고 있어." B: "그건 내 삶을 살고 있어. 그건 내 꿈을 갖고 있어."',
+      context: 'Monica becomes obsessed with the fact that the credit card thief is doing all the things Monica wished she could do with her life.',
+      context_ko: 'Monica는 신용 카드 도둑이 Monica가 자신의 삶을 하고 싶었던 모든 일을 하고 있다는 사실에 집착하게 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X4'
+    },
+    {
+      phrase: 'This is so unfair.',
+      partOfSpeech: 'expression',
+      meaning: 'A complaint expressing that a situation is not just or equitable. The phrase conveys a sense of grievance and victimization. It\'s used when something happens that the speaker feels they don\'t deserve and that violates their sense of fairness.',
+      meaning_ko: '상황이 공정하지 않거나 동등하지 않다는 불만을 표현합니다. 이 표현은 고통과 피해 의식을 전달합니다. 화자가 받을 자격이 없다고 생각하고 공정성 감각을 위반하는 일이 일어날 때 사용됩니다.',
+      example: 'A: "He got the promotion instead of you." B: "This is so unfair. I worked harder!"',
+      example_ko: 'A: "그가 넌 대신 승진을 받았어." B: "이건 너무 부당해. 난 더 열심히 일했어!"',
+      context: 'Monica expresses her frustration that the woman who stole her identity has access to and is enjoying all the enriching experiences Monica cannot afford.',
+      context_ko: 'Monica는 그녀의 신원을 도둑질한 여자가 Monica가 감당할 수 없는 모든 풍요로운 경험에 접근할 수 있고 즐기고 있다는 것에 대해 답답함을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X5'
+    },
+    {
+      phrase: 'Do I go horseback riding in the park?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical question emphasizing what the speaker does NOT do. Rather than genuinely asking for information, the speaker is pointing out an absence or lack in their life. The question format makes the point more forcefully than a simple statement.',
+      meaning_ko: '화자가 하지 않는 것을 강조하는 수사적 질문입니다. 진정으로 정보를 요청하기보다는, 화자는 자신의 삶에서 부재 또는 부족을 지적하고 있습니다. 질문 형식은 간단한 진술보다 요점을 더 강력하게 만듭니다.',
+      example: 'A: "She went skydiving." B: "Do I go skydiving? No, I never do anything exciting."',
+      example_ko: 'A: "그건 스카이다이빙을 했어." B: "난 스카이다이빙을 해? 아니, 난 절대 흥미로운 일을 하지 않아."',
+      context: 'Monica uses this rhetorical question to emphasize how boring and unadventurous her life is compared to the fake Monica who is enjoying luxurious activities.',
+      context_ko: 'Monica는 이 수사적 질문을 사용하여 그녀의 삶이 호화로운 활동을 즐기고 있는 가짜 Monica와 비교하여 얼마나 지루하고 모험하지 않는지 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X6'
+    },
+    {
+      phrase: 'This is really becoming a weird obsession.',
+      partOfSpeech: 'expression',
+      meaning: 'A concerned observation that someone\'s focus on a topic is becoming unhealthy or excessive. The phrase suggests that the person\'s preoccupation has crossed from normal interest into something problematic. It\'s often used to gently warn someone they\'re going too far.',
+      meaning_ko: '누군가의 주제에 대한 초점이 건강하지 않거나 과도해지고 있다는 우려 관찰입니다. 이 표현은 그 사람의 선점이 정상적인 관심에서 문제가 되는 것으로 넘어갔다는 것을 시사합니다. 종종 누군가가 너무 멀리 가고 있다는 것을 부드럽게 경고하는 데 사용됩니다.',
+      example: 'A: "He\'s been researching that conspiracy theory for weeks." B: "This is really becoming a weird obsession."',
+      example_ko: 'A: "그건 그 음모론을 수주 동안 연구했어." B: "이건 정말 이상한 집착이 되고 있어."',
+      context: 'Rachel expresses concern that Monica\'s preoccupation with finding and tracking the woman who stole her identity is becoming unhealthy.',
+      context_ko: 'Rachel은 자신의 신원을 도둑질한 여자를 찾고 추적하려는 Monica의 선점이 건강하지 않아지고 있다는 우려를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X7'
+    },
+    {
+      phrase: 'For the love of God, Monica, don\'t do it!',
+      partOfSpeech: 'expression',
+      meaning: 'A passionate plea or warning to someone not to take a particular action. The phrase appeals to a higher power or principle to emphasize urgency and desperation. It conveys that the speaker is very concerned about the consequences of the action being considered.',
+      meaning_ko: '누군가가 특정 행동을 취하지 않도록 하는 열정적인 호소 또는 경고입니다. 이 표현은 더 높은 권력이나 원칙에 호소하여 긴급성과 절망을 강조합니다. 화자가 고려 중인 행동의 결과에 대해 매우 우려하고 있다는 것을 전달합니다.',
+      example: 'A: "I\'m going to quit my job and move away." B: "For the love of God, don\'t do it!"',
+      example_ko: 'A: "난 내 일을 그만두고 이사할 거야." B: "제발, 그렇게 하지 마!"',
+      context: 'Rachel desperately tries to stop Monica from going to the tap dancing class to spy on the woman who stole her identity and credit card.',
+      context_ko: 'Rachel은 Monica를 자신의 신원과 신용 카드를 도둑질한 여자를 염탐하기 위해 탭댄싱 클래스에 가는 것을 막으려고 필사적으로 노력합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X8'
+    },
+    {
+      phrase: 'You don\'t observe a dance class.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement that clearly explains how something works or what is required. The phrase is correcting a misunderstanding by clarifying the actual nature or purpose of an activity. It\'s a straightforward way of saying someone cannot passively participate.',
+      meaning_ko: '뭔가가 어떻게 작동하는지 또는 무엇이 필요한지를 명확히 설명하는 진술입니다. 이 표현은 활동의 실제 특성이나 목적을 명확히 하여 오해를 바로잡습니다. 누군가가 수동적으로 참여할 수 없다는 것을 말하는 직접적인 방법입니다.',
+      example: 'A: "Can I just watch the aerobics class?" B: "No. You don\'t observe an aerobics class. You participate."',
+      example_ko: 'A: "난 그냥 에어로빅 클래스를 볼 수 있어?" B: "아니야. 넌 에어로빅 클래스를 관찰하지 않아. 넌 참여해."',
+      context: 'The tap dancing instructor corrects Monica and Rachel when they try to watch the class without participating or taking their shoes off.',
+      context_ko: '탭댄싱 강사는 Monica와 Rachel이 참여하거나 신발을 벗지 않고 클래스를 보려고 할 때 그들을 바로잡습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X9'
+    },
+    {
+      phrase: 'You dance a dance class!',
+      partOfSpeech: 'expression',
+      meaning: 'A forceful statement clarifying what one must do to participate in a dance class. The repetition of "dance" emphasizes the point with humor and directness. It\'s the instructor\'s way of insisting that passive observation is not acceptable.',
+      meaning_ko: '댄스 클래스에 참여하기 위해 해야 할 일을 명확히 하는 강력한 진술입니다. "Dance"의 반복은 유머와 직접성으로 요점을 강조합니다. 그것은 강사가 수동적 관찰이 용납할 수 없다는 것을 주장하는 방법입니다.',
+      example: 'A: "Do I have to dance?" B: "Yes! You dance a dance class!"',
+      example_ko: 'A: "난 춤을 춰야 해?" B: "응! 넌 댄스 클래스를 춤춰!"',
+      context: 'The tap dancing instructor makes this emphatic point to Monica and Rachel after they insist they just want to watch the class.',
+      context_ko: '탭댄싱 강사는 Monica와 Rachel이 클래스를 보고 싶다고 주장한 후 이 강조하는 점을 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X10'
+    },
+    {
+      phrase: 'Do you ever feel unbelievably uncoordinated?',
+      partOfSpeech: 'question',
+      meaning: 'A question expressing a sense of personal inadequacy regarding physical coordination. The word "unbelievably" intensifies the statement, showing exaggeration or self-criticism. The question invites empathy and shared experience of struggling with movement or physical tasks.',
+      meaning_ko: '신체 조정에 관한 개인적 부족감을 표현하는 질문입니다. "Unbelievably"라는 단어는 진술을 강화하여 과장이나 자기 비판을 보여줍니다. 이 질문은 움직임이나 신체 작업으로 고생하는 공감과 공유된 경험을 초대합니다.',
+      example: 'A: "I fell during dance class." B: "Do you ever feel unbelievably uncoordinated?"',
+      example_ko: 'A: "난 댄스 클래스 중에 넘어졌어." B: "넌 정말로 부족하다고 느껴?"',
+      context: 'Monica and Rachel express their shared frustration with their inability to keep up with the tap dancing instructor and master the choreography.',
+      context_ko: 'Monica와 Rachel은 탭댄싱 강사를 따라가고 안무를 습득할 수 없는 것에 대한 공유된 좌절감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X11'
+    },
+    {
+      phrase: 'Great, it\'s gym class all over again.',
+      partOfSpeech: 'expression',
+      meaning: 'A sarcastic comment expressing dismay at being in an uncomfortable or embarrassing situation similar to past experiences. The phrase draws a parallel between current and past experiences of social awkwardness. "All over again" emphasizes the repetition and suggests weariness about reliving the same type of situation.',
+      meaning_ko: '과거 경험과 유사한 불편하거나 당황스러운 상황에 있다는 것에 대한 실망을 표현하는 풍자적 의견입니다. 이 표현은 현재와 과거의 사회적 어색함 경험 사이에 평행을 그립니다. "All over again"은 반복을 강조하고 같은 유형의 상황을 다시 경험하는 것에 대한 지쳐함을 시사합니다.',
+      example: 'A: "You have to go up front and dance with the teacher." B: "Great, it\'s gym class all over again!"',
+      example_ko: 'A: "넌 앞으로 가서 선생님과 춤을 춰야 해." B: "좋아, 체육 시간이 또 시작됐어!"',
+      context: 'Monica expresses dismay when told she must partner dance with the instructor at the front of the class, recalling the trauma of being picked last in gym class.',
+      context_ko: 'Monica는 클래스 앞에서 강사와 파트너 댄스를 해야 한다는 것을 들었을 때 당황함을 표현하며, 체육 시간에 마지막으로 선택되는 트라우마를 회상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X12'
+    },
+    {
+      phrase: 'He got into San Diego!',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of excitement and accomplishment announcing that someone has been accepted or admitted somewhere. The phrase conveys pride and joy about someone\'s success. The exclamation point emphasizes the enthusiasm and positive emotion about the achievement.',
+      meaning_ko: '누군가가 어디에 수락되거나 입장했다고 발표하는 흥분과 성취의 진술입니다. 이 표현은 누군가의 성공에 대한 자부심과 기쁨을 전달합니다. 느낌표는 성취에 대한 열정과 긍정적 감정을 강조합니다.',
+      example: 'A: "Did you hear from the university?" B: "Yes! She got into San Diego!"',
+      example_ko: 'A: "넌 대학에서 들었어?" B: "응! 그건 샌디에이고에 입장했어!"',
+      context: 'Ross calls with the happy news that Marcel has been accepted into a primate research program in San Diego.',
+      context_ko: 'Ross는 Marcel이 샌디에이고의 영장류 연구 프로그램에 합격했다는 행복한 소식으로 전화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X13'
+    },
+    {
+      phrase: 'I\'m going to the Big Apple Circus today.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement about an immediate plan or intention to attend an event. The phrase announces a decision to do something fun or spontaneous. It reflects a carefree attitude and willingness to break routine.',
+      meaning_ko: '이벤트에 참석하기 위한 즉각적인 계획이나 의도에 대한 진술입니다. 이 표현은 재미있거나 자발적인 일을 하기로 한 결정을 발표합니다. 그것은 무관심한 태도와 일상을 깨고 기꺼이 하려는 것을 반영합니다.',
+      example: 'A: "But you have work today!" B: "I don\'t care. I\'m going to the circus today."',
+      example_ko: 'A: "하지만 넌 오늘 일이 있어!" B: "상관없어. 난 오늘 서커스에 갈 거야."',
+      context: 'The drunk Monica announces her plans to skip work and go to the Big Apple Circus, showing how liberated and carefree she has become.',
+      context_ko: '취한 Monica는 일을 건너뛰고 Big Apple Circus에 가려는 그녀의 계획을 발표하여 그녀가 얼마나 해방되고 무관심해졌는지 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X14'
+    },
+    {
+      phrase: 'I\'m really gonna miss you.',
+      partOfSpeech: 'expression',
+      meaning: 'A sincere statement of affection expressing that the speaker will feel sadness at someone\'s absence. The phrase conveys emotional attachment and the anticipation of loss. It\'s a tender way of saying that someone is important and their presence is valued.',
+      meaning_ko: '화자가 누군가의 부재에 대해 슬픔을 느낄 것이라고 표현하는 진정한 애정 진술입니다. 이 표현은 감정적 애착과 손실의 예상을 전달합니다. 누군가가 중요하고 그들의 존재가 소중하다는 것을 말하는 부드러운 방법입니다.',
+      example: 'A: "I\'m moving to another country." B: "I\'m really gonna miss you."',
+      example_ko: 'A: "난 다른 나라로 이사할 거야." B: "난 정말 너를 그리워할 거야."',
+      context: 'Ross tells Marcel how much he will miss him as the monkey prepares to leave for San Diego and a new life in the research program.',
+      context_ko: 'Ross는 원숭이가 샌디에이고으로 떠나 연구 프로그램에서 새로운 삶을 준비할 때 그를 얼마나 그리워할 것인지 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E21X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
