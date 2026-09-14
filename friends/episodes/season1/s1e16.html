@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friends S1E16 &mdash; Daily English</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../../css/style.css">
   <style>
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
-    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; font-weight: 500; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
-    .expr-example-ko { font-size: 0.82rem; color: var(--muted); border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
@@ -20,7 +18,6 @@
     .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
     .btn-youtube.pending { background: var(--card2); color: var(--muted); border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
     .placeholder-slot { opacity: 0.45; border-style: dashed; }
-    .lang-toggle { font-size: 0.75rem; color: var(--accent2); font-weight: 700; margin: 3px 0; text-transform: uppercase; letter-spacing: 0.5px; }
   </style>
 </head>
 <body>
@@ -39,25 +36,25 @@
   <div class="page-wrap">
     <nav class="nav-row">
       <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
-      <button class="btn-nav" onclick="window.location.href='../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
+      <button class="btn-nav" onclick="window.location.href='../../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
     </nav>
     <nav class="breadcrumb">
-      <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
-      <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
-      <a href="../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
+      <a href="../../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
+      <a href="../../index.html">Friends</a><span class="sep">&#8250;</span>
+      <a href="../../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
       <span class="current">S1E16</span>
     </nav>
     <div class="page-header">
       <div class="page-header-thumb">
-        <img src="../images/s1e16.jpg" alt="S1E16"
-          onerror="this.src='../images/s1e16.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+        <img src="../../images/s1e16.jpg" alt="S1E16"
+          onerror="this.src='../../images/s1e16.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E16: The One with Two Parts (Part 1)</div>
         <div class="page-header-meta">Phoebe meets her twin sister Ursula. Joey falls for Ursula.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e16"
-            onclick="toggleBookmark('episode','episode-friends-s1e16','📋 Friends S1E16','friends/episodes/s1e16.html')">
+            onclick="toggleBookmark('episode','episode-friends-s1e16','📋 Friends S1E16','friends/episodes/season1/s1e16.html')">
             <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
           </button>
         </div>
@@ -77,35 +74,179 @@
   <div><button class="footer-terms" data-i18n="footer.terms" onclick="showTermsModal()">Terms of Use</button></div>
 </footer>
 <div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
-<script src="../../js/i18n.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../../../js/i18n.js"></script>
+<script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — 15 Expressions from Friends S1E16
-     ================================================================
-     Format: English phrase, part of speech, English meaning, English 
-     example, context, Korean meaning, Korean example, YouTube link
-  ================================================================ */
   var EP_DATA = {
+    available: true,
     title: 'The One with Two Parts (Part 1)',
     description: 'Phoebe meets her twin sister Ursula. Joey falls for Ursula.',
     expressions: [
-    {phrase:'This is unbelievable.',partOfSpeech:'expression',meaning:'Something is so surprising or shocking that it\'s hard to accept.',meaningKo:'받아들이기 힘들 정도로 놀라운 일이다.',example:'"It\'s been half an hour and the food still hasn\'t come — this is unbelievable!"',exampleKo:'"30분이 지났는데 음식이 아직도 안 왔어 — 정말 믿을 수 없어!"',context:'Monica\'s complaint about slow service.',youtubeUrl:''},
-    {phrase:'What are you doing here?',partOfSpeech:'question',meaning:'Asking someone to explain their presence or reason for being in a place.',meaningKo:'누군가가 어떤 이유로 그곳에 있는지 묻다.',example:'"I saw you at the café yesterday. What are you doing here?"',exampleKo:'"어제 카페에서 봤는데, 여기서 뭐 하는 거야?"',context:'Joey surprised to see Phoebe working at the restaurant.',youtubeUrl:''},
-    {phrase:'Can we start over?',partOfSpeech:'expression',meaning:'To begin again from the beginning, usually after a bad first attempt.',meaningKo:'처음부터 다시 시작하다.',example:'"I said something mean. Can we start over and forget what I said?"',exampleKo:'"나 나쁜 말을 했어. 처음부터 다시 시작할 수 있을까?"',context:'Chandler wanting to reset their awkward conversation.',youtubeUrl:''},
-    {phrase:'You don\'t dip your pen in the company ink.',partOfSpeech:'idiom',meaning:'Don\'t get romantically involved with a coworker; avoid mixing personal relationships with work.',meaningKo:'직장 동료와 연애하지 마라; 개인 관계와 일을 섞지 마라.',example:'"He likes his coworker, but remember: you don\'t dip your pen in the company ink."',exampleKo:'"그가 동료를 좋아하지만, 기억해: 직장 동료와 연애하면 안 돼."',context:'Chandler warning Ross about dating at work.',youtubeUrl:''},
-    {phrase:'It\'s a little complicated.',partOfSpeech:'expression',meaning:'A situation is complex or difficult to explain simply.',meaningKo:'상황이 복잡하거나 설명하기 어렵다.',example:'"Are they still together?" "It\'s a little complicated."',exampleKo:'"그들이 아직 함께 있어?" "조금 복잡해."',context:'Ross explaining his relationship situation at Lamaze class.',youtubeUrl:''},
-    {phrase:'I\'m gonna be a father.',partOfSpeech:'expression',meaning:'Announcing the realization that one will become a parent.',meaningKo:'아버지가 될 것이라는 것을 깨닫다.',example:'"The baby is due in two months. I\'m gonna be a father."',exampleKo:'"아기가 2개월 후에 태어나. 나 아버지가 될 거야."',context:'Ross suddenly realizing the reality of becoming a parent.',youtubeUrl:''},
-    {phrase:'I just never realized the baby was having me.',partOfSpeech:'expression',meaning:'A witty way of saying the baby will also have an impact on the parent.',meaningKo:'아기도 부모에게 영향을 미친다는 것을 깨닫다.',example:'"I\'m having a baby, but really, the baby is having me too."',exampleKo:'"나가 아기를 가지는 게 아니라 아기가 나를 가지는 거네."',context:'Ross\'s humorous realization about parenthood.',youtubeUrl:''},
-    {phrase:'Is it really so terrible?',partOfSpeech:'question',meaning:'Asking if something is truly as bad as someone is making it seem.',meaningKo:'정말 그렇게 나쁜 일일까?',example:'"You\'re upset about your sister dating your friend. Is it really so terrible?"',exampleKo:'"언니가 너 친구 사귀는 게 싫어? 정말 그렇게 나쁜 일일까?"',context:'Rachel questioning why Phoebe is so upset about Joey and Ursula.',youtubeUrl:''},
-    {phrase:'You gotta talk to Joey.',partOfSpeech:'expression',meaning:'You must communicate with someone to resolve an issue.',meaningKo:'누군가와 얘기해서 문제를 해결해야 한다.',example:'"He doesn\'t know how you feel. You gotta talk to Joey."',exampleKo:'"그가 너 마음을 몰라. 조이와 얘기해야 돼."',context:'Rachel advising Phoebe to communicate with Joey.',youtubeUrl:''},
-    {phrase:'She\'s always breaking my stuff.',partOfSpeech:'expression',meaning:'Someone repeatedly damages or ruins your possessions.',meaningKo:'누군가가 계속 내 물건을 부수다.',example:'"First my thermos, then my records — she\'s always breaking my stuff."',exampleKo:'"먼저 내 보온병, 그 다음 내 레코드 — 얘가 자꾸 내 물건을 부셔."',context:'Phoebe explaining her complicated history with her sister Ursula.',youtubeUrl:''},
-    {phrase:'Cleansing breath.',partOfSpeech:'expression',meaning:'Taking a deep breath to calm down and manage stress.',meaningKo:'진정하기 위해 깊게 숨을 쉬다.',example:'"I\'m getting nervous. Let me take a cleansing breath."',exampleKo:'"불안해지고 있어. 진정을 위해 숨을 깊게 쉬자."',context:'Susan teaching Carol relaxation techniques during Lamaze class.',youtubeUrl:''},
-    {phrase:'The whole parenting team.',partOfSpeech:'expression',meaning:'Everyone who will be involved in raising the child together.',meaningKo:'함께 아이를 키울 모든 사람들.',example:'"We\'ve got Carol, Susan, and me — the whole parenting team."',exampleKo:'"캐롤, 수잔, 나 — 우리 모두가 양육팀이야."',context:'Ross introducing his diverse parenting group at Lamaze class.',youtubeUrl:''},
-    {phrase:'Rachel, what are you doing? It\'s freezing.',partOfSpeech:'expression',meaning:'Questioning someone\'s action and pointing out uncomfortable conditions.',meaningKo:'누군가의 행동을 묻고 불편한 상황을 지적하다.',example:'"You\'re outside in the snow. Rachel, what are you doing? It\'s freezing!"',exampleKo:'"넌 눈이 오는데 밖에 있어. 뭐 하는 거야? 춥잖아!"',context:'Monica concerned about Rachel on the balcony removing Christmas lights.',youtubeUrl:''},
-    {phrase:'I mean, I\'m not saying she\'s evil.',partOfSpeech:'expression',meaning:'Saying something critical while trying to be fair or not too harsh.',meaningKo:'공정하려고 노력하면서 비판적인 말을 하다.',example:'"I mean, I\'m not saying she\'s evil, but she\'s not nice either."',exampleKo:'"내가 그 사람이 악하다는 건 아니지만, 착하지도 않아."',context:'Phoebe carefully explaining her negative feelings about Ursula.',youtubeUrl:''},
-    {phrase:'He doesn\'t know how you felt.',partOfSpeech:'expression',meaning:'Someone is unaware of your emotions or feelings about them.',meaningKo:'누군가가 당신의 감정을 모르다.',example:'"He left you hanging for weeks. He doesn\'t know how you felt about that."',exampleKo:'"그가 너를 몇 주일 동안 방치했어. 그게 어떤 기분인지 몰라."',context:'Rachel explaining why Phoebe needs to tell Joey how she feels.',youtubeUrl:''},
-    {phrase:'This whole stupid Ursula thing.',partOfSpeech:'expression',meaning:'Referring to an annoying or frustrating situation involving someone.',meaningKo:'누군가와 관련된 성가신 상황을 말하다.',example:'"I\'m tired of dealing with this whole stupid Ursula thing."',exampleKo:'"이 어리석은 우르술라 일을 계속 처리하기 싫어."',context:'Phoebe frustrated about the problems caused by her sister.',youtubeUrl:''}
+    {
+      phrase: 'This is unbelievable.',
+      partOfSpeech: 'expression',
+      meaning: '"Unbelievable" means something is so surprising, shocking, or hard to believe that it stretches the limits of what one can accept. Used to express strong frustration or amazement. "This is unbelievable" is often an exasperated complaint rather than a literal statement — it conveys the speaker\'s emotional reaction to an unexpected or intolerable situation.',
+      meaning_ko: '"Unbelievable"은 너무 놀랍거나 충격적이거나 믿기 어려운 것을 의미합니다. 강한 좌절감이나 놀라움을 표현하는 데 사용됩니다. "This is unbelievable"은 종종 문자 그대로의 진술보다는 버럭 불평하는 것으로, 예상치 못한 또는 참을 수 없는 상황에 대한 화자의 감정 반응을 전달합니다.',
+      example: 'A: "We\'ve been waiting for an hour and the food still hasn\'t arrived!" B: "This is unbelievable."',
+      example_ko: 'A: "한 시간을 기다렸는데 음식이 아직도 안 왔어!" B: "정말 믿을 수 없네."',
+      context: 'Monica expresses her exasperation at the slow service when she and the gang are waiting at a restaurant in the opening scene.',
+      context_ko: '모니카가 레스토랑에서 기다리는 동안 느린 서빙에 대한 답답함을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X1'
+    },
+    {
+      phrase: 'What are you doing here?',
+      partOfSpeech: 'question',
+      meaning: 'A direct question asking someone to explain or justify their presence in a specific location. The question can range from innocent curiosity to suspicion or surprise. The tone and context determine the underlying meaning — it can imply "Why are you in this place?" "How did you get here?" or even "You shouldn\'t be here."',
+      meaning_ko: '누군가가 특정 장소에 있는 것을 설명하거나 정당화하도록 요청하는 직접적인 질문입니다. 질문은 순수한 호기심부터 의심이나 놀라움까지 다양할 수 있습니다. 톤과 맥락은 기본적인 의미를 결정합니다.',
+      example: 'A: "I ran into your ex at the coffee shop." B: "What are you doing here?" A: "I was getting coffee!"',
+      example_ko: 'A: "커피숍에서 너 전 친구를 만났어." B: "뭐 하는 거야?" A: "커피 사러 온 거야!"',
+      context: 'Joey is shocked when he realizes the waitress he was flirting with at Central Perk is actually Phoebe.',
+      context_ko: 'Joey는 중앙 Perk에서 작업 거는 웨이트리스가 실제로 Phoebe라는 것을 깨닫고 놀랍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X2'
+    },
+    {
+      phrase: 'Can we start over?',
+      partOfSpeech: 'expression',
+      meaning: 'A request to begin again from the beginning, usually after an awkward, embarrassing, or negative first encounter. "Starting over" implies erasing or forgetting the previous interaction and beginning fresh with a clean slate. It is a request for a second chance.',
+      meaning_ko: '보통 어색하고, 당황스럽거나 부정적인 첫 만남 후에 처음부터 다시 시작하달라는 요청입니다. "다시 시작하기"는 이전 상호작용을 지우거나 잊고 새롭게 시작하는 것을 의미합니다. 두 번째 기회를 달라는 요청입니다.',
+      example: 'A: "I\'m sorry I was rude earlier. Can we start over?" B: "Sure, let\'s pretend that never happened."',
+      example_ko: 'A: "미안해, 나 아까 무례했어. 다시 시작할 수 있을까?" B: "물론이지, 아무것도 없었던 걸로 하자."',
+      context: 'Chandler wants to reset the conversation after an awkward exchange with Phoebe at the restaurant.',
+      context_ko: 'Chandler는 레스토랑에서 Phoebe와의 어색한 대화 후에 대화를 다시 설정하고 싶어 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X3'
+    },
+    {
+      phrase: 'You don\'t dip your pen in the company ink.',
+      partOfSpeech: 'idiom',
+      meaning: 'An old-fashioned idiom warning against romantic or sexual involvement with coworkers. "Dipping your pen in the company ink" is a metaphor for mixing professional boundaries with personal relationships. The expression originates from the image of someone using company supplies (ink) for personal purposes — in this case, romantic entanglement at work is seen as using company resources inappropriately.',
+      meaning_ko: '직장 동료와의 로맨틱하거나 성적인 관계에 대해 경고하는 오래된 관용구입니다. "회사 잉크에 펜을 담그다"는 전문적인 경계와 개인적 관계를 섞는 것의 은유입니다. 이 표현은 누군가가 회사 물품(잉크)을 개인적 목적으로 사용하는 이미지에서 비롯되었습니다.',
+      example: 'A: "I\'m going to ask my coworker out." B: "Be careful — remember, you don\'t dip your pen in the company ink."',
+      example_ko: 'A: "직장 동료를 데이트에 초대하려고 해." B: "조심해 — 기억해, 회사 동료와 사귀면 안 된다는 거."',
+      context: 'Chandler warns Ross about his attraction to Nina, a coworker at the museum, using this classic workplace saying.',
+      context_ko: 'Chandler는 박물관 동료인 Nina에 대한 Ross의 끌림에 대해 이 고전적인 직장 속담을 사용하여 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X4'
+    },
+    {
+      phrase: 'It\'s a little complicated.',
+      partOfSpeech: 'expression',
+      meaning: '"It\'s a little complicated" is a euphemism used when a situation is too messy, tangled, or nuanced to explain simply or briefly. It signals that there are multiple layers to the story — competing emotions, unclear relationships, or unresolved issues. Often used as a way to deflect from giving full details, it acknowledges complexity without requiring explanation.',
+      meaning_ko: '"It\'s a little complicated"은 상황이 너무 복잡하고, 얽혀 있거나 뉘앙스가 있어서 간단하게 또는 간략하게 설명할 수 없을 때 사용하는 완곡한 표현입니다. 여러 감정, 불명확한 관계 또는 미해결 문제가 있음을 신호합니다.',
+      example: 'A: "Are you and your ex still friends?" B: "It\'s a little complicated. We\'re trying to co-parent, but it\'s awkward."',
+      example_ko: 'A: "너와 너 전 친구가 아직 친구야?" B: "조금 복잡해. 우리가 함께 양육하려고 하지만, 어색해."',
+      context: 'Ross uses this phrase to describe his relationship situation when explaining to the Lamaze class instructor why Susan, Carol, and he are all attending the birth class together.',
+      context_ko: 'Ross는 Lamaze 수업에서 Susan, Carol, 자신이 함께 수강하는 이유를 설명할 때 이 표현을 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X5'
+    },
+    {
+      phrase: 'I\'m gonna be a father.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple, direct statement announcing the realization of impending parenthood. The phrase captures a moment of dawning recognition — the speaker is suddenly struck by the reality and magnitude of becoming a parent. It often carries a tone of wonder, fear, or awe, as the speaker confronts both the joy and responsibility ahead.',
+      meaning_ko: '임박한 부모 됨의 실현을 발표하는 간단하고 직접적인 진술입니다. 이 표현은 깨달음의 순간을 포착합니다 — 화자가 부모가 되는 현실과 규모에 갑자기 타격을 입습니다. 종종 경이, 두려움 또는 경악의 톤을 띠며, 화자가 앞서 온 기쁨과 책임에 직면합니다.',
+      example: 'A: "The baby is due next month." B: "It\'s finally hitting me — I\'m gonna be a father."',
+      example_ko: 'A: "아기가 다음 달에 태어나." B: "이제야 현실이 와 닿아 — 나 아버지가 될 거야."',
+      context: 'During the Lamaze class, Ross suddenly has the realization that he is about to become a parent, having been in denial about the reality until that moment.',
+      context_ko: 'Lamaze 수업 중에 Ross는 그 순간까지 현실을 거부해 왔지만 부모가 될 것이라는 것을 갑자기 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X6'
+    },
+    {
+      phrase: 'I just never realized the baby was having me.',
+      partOfSpeech: 'expression',
+      meaning: 'A witty observation that playfully reverses the direction of parenthood — instead of "I am having a baby," it becomes "the baby is having me." This clever wordplay acknowledges that parenthood is a two-way street: parents shape their children, but children also shape their parents. It is a humorous way of recognizing that raising a child fundamentally changes the parent.',
+      meaning_ko: '친자 관계의 방향을 재미있게 뒤집는 기발한 관찰입니다. "I am having a baby" 대신 "the baby is having me"이 됩니다. 이 말장난은 친자 관계가 양방향 거리임을 인정합니다: 부모가 자식을 형성하지만, 자식도 부모를 형성합니다. 아이를 키우는 것이 부모를 근본적으로 변화시킨다는 것을 인식하는 재미있는 방식입니다.',
+      example: 'A: "You\'re going to have a baby soon." B: "I know I\'m having a baby, but I never realized the baby was having me too — it\'s going to change everything."',
+      example_ko: 'A: "넌 곧 아기를 가질 거야." B: "난 아기를 갖는다는 걸 알지만, 아기도 나를 갖는다는 걸 깨닫지 못했어 — 이건 모든 게 바뀔 거야."',
+      context: 'Ross makes this observation after realizing the magnitude of becoming a father, reflecting on how the baby will impact his own life and identity.',
+      context_ko: 'Ross는 아버지가 되는 규모를 깨닫은 후 이 관찰을 합니다. 아기가 자신의 삶과 정체성에 미칠 영향에 대해 생각합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X7'
+    },
+    {
+      phrase: 'Is it really so terrible?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical question used to challenge someone\'s negative reaction to a situation. By asking if something is "really so terrible," the speaker is suggesting the other person might be overreacting or being too dramatic. It invites the listener to reconsider their judgment and see the situation in a more balanced or positive light.',
+      meaning_ko: '어떤 상황에 대한 누군가의 부정적인 반응에 이의를 제기하는 데 사용되는 수사적 질문입니다. 무언가가 "정말 그렇게 끔찍한지" 물음으로써, 화자는 다른 사람이 과대반응하거나 너무 드라마틱할 수도 있음을 시사합니다.',
+      example: 'A: "I\'m devastated that my friend is moving away." B: "Is it really so terrible? You can still video call and visit."',
+      example_ko: 'A: "친구가 이사 가는 거 정말 슬프다." B: "정말 그렇게 끔찍할까? 계속 화상 전화하고 방문할 수 있잖아."',
+      context: 'Rachel asks Phoebe this question when Phoebe is upset about Joey dating her sister Ursula, suggesting that Phoebe might be overreacting.',
+      context_ko: 'Rachel은 Phoebe가 Joey가 그녀의 언니 Ursula와 데이트하는 것에 대해 화난 상황에서 이 질문을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X8'
+    },
+    {
+      phrase: 'You gotta talk to Joey.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct statement saying that someone must communicate with another person to resolve a misunderstanding or issue. "Gotta" (have got to) expresses obligation and necessity. This phrase emphasizes that talking is the only way forward — that continuing to avoid the conversation will only make things worse.',
+      meaning_ko: '누군가가 오해나 문제를 해결하기 위해 다른 사람과 통신해야 한다는 직접적인 진술입니다. "Gotta"는 의무와 필요성을 표현합니다. 이 표현은 대화가 유일한 방법임을 강조합니다.',
+      example: 'A: "Joey doesn\'t know you\'re upset with him." B: "What should I do?" A: "You gotta talk to Joey and tell him how you feel."',
+      example_ko: 'A: "Joey는 넌 그한테 화났다는 걸 몰라." B: "뭐 해야 할까?" A: "Joey한테 얘기해서 너 감정을 말해야 돼."',
+      context: 'Rachel advises Phoebe that the only way to resolve the situation with Joey and Ursula is to communicate her feelings directly to Joey.',
+      context_ko: 'Rachel은 Joey와 Ursula와의 상황을 해결하는 유일한 방법은 Joey에게 직접 자신의 감정을 전달하는 것이라고 Phoebe에게 조언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X9'
+    },
+    {
+      phrase: 'She\'s always breaking my stuff.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of repeated, habitual action — someone consistently damages or ruins your possessions. The use of "always" emphasizes the pattern of behavior over time. This phrase often carries frustration and resentment, implying that the person\'s carelessness or malice has become an established pattern in the relationship.',
+      meaning_ko: '반복되고 습관적인 행동에 대한 진술입니다 — 누군가가 지속적으로 당신의 소유물을 손상시키거나 망칩니다. "Always"의 사용은 시간 경과에 따른 행동의 패턴을 강조합니다. 이 표현은 종종 좌절과 분노를 전달합니다.',
+      example: 'A: "Your sister borrowed my book and never gave it back." B: "Yeah, she\'s always breaking my stuff too. Last month she broke my favorite mug."',
+      example_ko: 'A: "너 언니가 내 책 빌려가더니 안 줬어." B: "응, 얘는 내 물건도 자꾸 부셔. 지난달에 내가 제일 좋아하던 컵도 깼어."',
+      context: 'Phoebe explains the root of her conflict with Ursula by recounting instances of her sister damaging her belongings, starting from childhood.',
+      context_ko: 'Phoebe는 언니가 자신의 물건을 손상시킨 사례를 어린 시절부터 나열하여 Ursula와의 갈등의 근원을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X10'
+    },
+    {
+      phrase: 'Cleansing breath.',
+      partOfSpeech: 'expression',
+      meaning: 'A stress-management technique taught in Lamaze classes that involves taking a slow, deep breath to calm nerves and center oneself. In childbirth preparation, the "cleansing breath" signals the beginning and end of contractions. More broadly, it refers to any deliberate, calming breath taken to regain composure in a stressful situation.',
+      meaning_ko: 'Lamaze 수업에서 가르치는 스트레스 관리 기법으로 신경을 진정시키고 자신을 중심에 두기 위해 느리고 깊은 숨을 쉬는 것을 포함합니다. 출산 준비에서 "정화 호흡"은 수축의 시작과 끝을 신호합니다.',
+      example: 'A: "I\'m getting really nervous before my presentation." B: "Take a cleansing breath. You\'ve got this."',
+      example_ko: 'A: "프레젠테이션 전에 정말 긴장돼." B: "깊게 숨 쉬어. 넌 할 수 있어."',
+      context: 'Susan uses this Lamaze technique to help Carol manage her anxiety about childbirth during the birth class.',
+      context_ko: 'Susan은 출산 수업 중에 Carol이 출산에 대한 불안감을 관리하도록 돕기 위해 이 Lamaze 기법을 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X11'
+    },
+    {
+      phrase: 'The whole parenting team.',
+      partOfSpeech: 'expression',
+      meaning: 'A collective reference to everyone who will be involved in raising and caring for a child. In Ross\'s case, it includes his ex-partner Carol, Carol\'s partner Susan, and himself — a non-traditional parenting arrangement. The phrase acknowledges that modern parenting often involves multiple caregivers with different roles and relationships.',
+      meaning_ko: '아이를 양육하고 돌보는 데 참여할 모든 사람을 집합적으로 나타냅니다. Ross의 경우, 그의 전 파트너 Carol, Carol의 파트너 Susan, 그리고 자신을 포함합니다 — 비전통적인 양육 배열입니다.',
+      example: 'A: "Who\'s going to help you raise the baby?" B: "My wife, my best friend, and my sister\'s husband — basically the whole parenting team."',
+      example_ko: 'A: "누가 아기 양육 도와줄 거야?" B: "내 아내, 나 제일 친한 친구, 그리고 내 언니 남편 — 기본적으로 우리 전체 양육팀이지."',
+      context: 'Ross refers to Carol, Susan, and himself as "the whole parenting team" when introducing his unconventional family arrangement to the Lamaze class.',
+      context_ko: 'Ross는 Lamaze 수업에 자신의 비전통적인 가족 배열을 소개할 때 Carol, Susan, 자신을 "전체 양육 팀"이라고 지칭합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X12'
+    },
+    {
+      phrase: 'Rachel, what are you doing? It\'s freezing.',
+      partOfSpeech: 'expression',
+      meaning: 'A compound statement that combines a question about someone\'s actions with a statement of concern about current conditions. The expression serves two purposes: it asks for an explanation while simultaneously pointing out that the circumstances are uncomfortable or unpleasant. Often used to express both confusion and worry.',
+      meaning_ko: '누군가의 행동에 대한 질문을 현재 조건에 대한 우려 진술과 결합하는 복합 진술입니다. 이 표현은 두 가지 목적을 수행합니다: 설명을 요청하면서 동시에 상황이 불편하거나 불쾌함을 지적합니다.',
+      example: 'A: "You\'re standing outside in your pajamas in the middle of winter." B: "Rachel, what are you doing? It\'s freezing."',
+      example_ko: 'A: "넌 겨울 한 복판에 파자마를 입고 밖에 있어." B: "뭐 하는 거야? 추워 죽겠다."',
+      context: 'Monica expresses concern for Rachel when she discovers Rachel on the apartment balcony attempting to remove Christmas lights in freezing weather.',
+      context_ko: 'Monica는 Rachel이 아파트 발코니에서 추운 날씨에 크리스마스 조명을 제거하려고 하는 것을 발견했을 때 Rachel에 대한 우려를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X13'
+    },
+    {
+      phrase: 'I mean, I\'m not saying she\'s evil.',
+      partOfSpeech: 'expression',
+      meaning: 'A diplomatic qualifier used to soften criticism or negative judgment. By starting with "I mean" and using the negative construction "I\'m not saying," the speaker attempts to present their criticism as fair and measured. It allows the speaker to express disapproval while maintaining a veneer of restraint and avoiding absolute condemnation.',
+      meaning_ko: '비판이나 부정적인 판단을 완화하는 데 사용되는 외교적인 한정사입니다. "I mean"으로 시작하고 부정 구조를 사용하면서, 화자는 자신의 비판을 공정하고 균형 있게 제시하려고 시도합니다.',
+      example: 'A: "I don\'t like your friend." B: "What? Why?" A: "I mean, I\'m not saying she\'s a bad person, but she\'s kind of annoying."',
+      example_ko: 'A: "나 너 친구 안 좋아." B: "뭐? 왜?" A: "내가 그 친구가 나쁜 사람이라고 하는 건 아니지만, 좀 짜증나."',
+      context: 'Phoebe uses this careful phrasing when trying to explain her negative feelings toward her sister Ursula without seeming overly harsh or unfair.',
+      context_ko: 'Phoebe는 언니 Ursula에 대한 부정적인 감정을 설명하려고 할 때 너무 가혹하거나 불공정해 보이지 않으려는 신중한 표현을 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X14'
+    },
+    {
+      phrase: 'He doesn\'t know how you felt.',
+      partOfSpeech: 'expression',
+      meaning: 'A straightforward statement indicating that someone is unaware of another person\'s emotions or emotional reactions. The past tense "felt" emphasizes that feelings in the past were unexpressed or hidden. The phrase often implies that the person should communicate their feelings to the unaware party, making it both an observation and an indirect suggestion.',
+      meaning_ko: '누군가가 다른 사람의 감정이나 감정적 반응을 알지 못한다는 것을 나타내는 간단한 진술입니다. 과거형 "felt"는 과거의 감정이 표현되지 않았거나 숨겨졌음을 강조합니다.',
+      example: 'A: "My friend was upset with me for canceling." B: "Did you tell them why?" A: "No." B: "He doesn\'t know how you felt — you should explain."',
+      example_ko: 'A: "내 친구가 내가 취소해서 화났어." B: "왜인지 말했어?" A: "아니." B: "그 친구는 넌 어떤 기분인지 몰라 — 설명해야 돼."',
+      context: 'Rachel tells Phoebe that Joey doesn\'t understand the depth of her feelings about him dating Ursula because Phoebe has never expressed those feelings.',
+      context_ko: 'Rachel은 Phoebe가 자신의 감정을 표현하지 않았기 때문에 Joey가 그가 Ursula와 데이트하는 것에 대한 그녀의 감정의 깊이를 이해하지 못한다고 Phoebe에게 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E16X15'
+    }
   ]
   };
 
@@ -113,9 +254,10 @@
   var E_NUM = 16;
   var TOTAL = 15;
 
-  function goHome() { window.location.href = '../../index.html'; }
+  function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -123,7 +265,7 @@
       var x   = (i < dataExprs.length) ? dataExprs[i] : null;
       var num = i + 1;
       var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
-      var bmUrl = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      var bmUrl = 'friends/episodes/season' + S_NUM + '/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
       if (x) {
         var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
         var ytBtn = isLive
@@ -132,16 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="lang-toggle">🇬🇧 English</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        html += '<div class="lang-toggle">🇰🇷 한국어</div>';
-        html += '<div class="expr-meaning-ko">' + escHtml(x.meaningKo) + '</div>';
-        html += '<div class="expr-example-ko">' + escHtml(x.exampleKo) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; <em>' + escHtml(x.context) + '</em></div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -159,10 +303,22 @@
   }
 
   function handleExprBm(num) {
-    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
+    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
   }
 
   window.addEventListener('DOMContentLoaded', function() {
+    /* ── Availability guard ── */
+    if (!EP_DATA.available) {
+      var overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
+      overlay.innerHTML =
+        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
+        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
+        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
+        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
+      document.body.appendChild(overlay);
+      return;
+    }
     checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
