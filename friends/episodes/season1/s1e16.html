@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friends S1E16 &mdash; Daily English</title>
-  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <style>
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; font-weight: 500; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
@@ -18,6 +20,7 @@
     .btn-youtube:hover { transform: scale(1.04); box-shadow: 0 4px 18px rgba(255,0,0,0.4); }
     .btn-youtube.pending { background: var(--card2); color: var(--muted); border: 1px solid var(--border); cursor: not-allowed; pointer-events: none; opacity: 0.6; }
     .placeholder-slot { opacity: 0.45; border-style: dashed; }
+    .lang-toggle { font-size: 0.75rem; color: var(--accent2); font-weight: 700; margin: 3px 0; text-transform: uppercase; letter-spacing: 0.5px; }
   </style>
 </head>
 <body>
@@ -36,25 +39,25 @@
   <div class="page-wrap">
     <nav class="nav-row">
       <button class="btn-nav home" onclick="goHome()">&#127968; <span data-i18n="nav.home">Home</span></button>
-      <button class="btn-nav" onclick="window.location.href='../../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
+      <button class="btn-nav" onclick="window.location.href='../seasons/season1.html'">&#9664; <span data-i18n="nav.back.season" data-i18n-vars='{"n":1}'>Back to Season 1</span></button>
     </nav>
     <nav class="breadcrumb">
-      <a href="../../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
-      <a href="../../index.html">Friends</a><span class="sep">&#8250;</span>
-      <a href="../../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
+      <a href="../../index.html" data-i18n="bc.home">Home</a><span class="sep">&#8250;</span>
+      <a href="../index.html">Friends</a><span class="sep">&#8250;</span>
+      <a href="../seasons/season1.html">Season 1</a><span class="sep">&#8250;</span>
       <span class="current">S1E16</span>
     </nav>
     <div class="page-header">
       <div class="page-header-thumb">
-        <img src="../../images/s1e16.jpg" alt="S1E16"
-          onerror="this.src='../../images/s1e16.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+        <img src="../images/s1e16.jpg" alt="S1E16"
+          onerror="this.src='../images/s1e16.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E16: The One with Two Parts (Part 1)</div>
         <div class="page-header-meta">Phoebe meets her twin sister Ursula. Joey falls for Ursula.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e16"
-            onclick="toggleBookmark('episode','episode-friends-s1e16','📋 Friends S1E16','friends/episodes/season1/s1e16.html')">
+            onclick="toggleBookmark('episode','episode-friends-s1e16','📋 Friends S1E16','friends/episodes/s1e16.html')">
             <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
           </button>
         </div>
@@ -74,30 +77,35 @@
   <div><button class="footer-terms" data-i18n="footer.terms" onclick="showTermsModal()">Terms of Use</button></div>
 </footer>
 <div id="termsModal" style="display:none;position:fixed;inset:0;z-index:900;background:rgba(9,17,30,0.88);overflow-y:auto;"></div>
-<script src="../../../js/i18n.js"></script>
-<script src="../../../js/app.js"></script>
+<script src="../../js/i18n.js"></script>
+<script src="../../js/app.js"></script>
 <script>
   /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
+     EPISODE DATA — 15 Expressions from Friends S1E16
+     ================================================================
+     Format: English phrase, part of speech, English meaning, English 
+     example, context, Korean meaning, Korean example, YouTube link
   ================================================================ */
   var EP_DATA = {
-    available: false,
     title: 'The One with Two Parts (Part 1)',
     description: 'Phoebe meets her twin sister Ursula. Joey falls for Ursula.',
     expressions: [
-    {phrase:'A splitting image',partOfSpeech:'idiom',meaning:'Someone who looks exactly like another person.',example:'"She\'s a splitting image of her mother — they could be twins."',context:'Phoebe and Ursula being identical twins.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E16X1'},
-    {phrase:'Torn between two things',partOfSpeech:'expression',meaning:'Unable to choose between two equally appealing or conflicting options.',example:'"I was torn between taking the job in Paris or staying close to family."',context:'Being unable to decide between two important choices.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E16X2'}
+    {phrase:'This is unbelievable.',partOfSpeech:'expression',meaning:'Something is so surprising or shocking that it\'s hard to accept.',meaningKo:'받아들이기 힘들 정도로 놀라운 일이다.',example:'"It\'s been half an hour and the food still hasn\'t come — this is unbelievable!"',exampleKo:'"30분이 지났는데 음식이 아직도 안 왔어 — 정말 믿을 수 없어!"',context:'Monica\'s complaint about slow service.',youtubeUrl:''},
+    {phrase:'What are you doing here?',partOfSpeech:'question',meaning:'Asking someone to explain their presence or reason for being in a place.',meaningKo:'누군가가 어떤 이유로 그곳에 있는지 묻다.',example:'"I saw you at the café yesterday. What are you doing here?"',exampleKo:'"어제 카페에서 봤는데, 여기서 뭐 하는 거야?"',context:'Joey surprised to see Phoebe working at the restaurant.',youtubeUrl:''},
+    {phrase:'Can we start over?',partOfSpeech:'expression',meaning:'To begin again from the beginning, usually after a bad first attempt.',meaningKo:'처음부터 다시 시작하다.',example:'"I said something mean. Can we start over and forget what I said?"',exampleKo:'"나 나쁜 말을 했어. 처음부터 다시 시작할 수 있을까?"',context:'Chandler wanting to reset their awkward conversation.',youtubeUrl:''},
+    {phrase:'You don\'t dip your pen in the company ink.',partOfSpeech:'idiom',meaning:'Don\'t get romantically involved with a coworker; avoid mixing personal relationships with work.',meaningKo:'직장 동료와 연애하지 마라; 개인 관계와 일을 섞지 마라.',example:'"He likes his coworker, but remember: you don\'t dip your pen in the company ink."',exampleKo:'"그가 동료를 좋아하지만, 기억해: 직장 동료와 연애하면 안 돼."',context:'Chandler warning Ross about dating at work.',youtubeUrl:''},
+    {phrase:'It\'s a little complicated.',partOfSpeech:'expression',meaning:'A situation is complex or difficult to explain simply.',meaningKo:'상황이 복잡하거나 설명하기 어렵다.',example:'"Are they still together?" "It\'s a little complicated."',exampleKo:'"그들이 아직 함께 있어?" "조금 복잡해."',context:'Ross explaining his relationship situation at Lamaze class.',youtubeUrl:''},
+    {phrase:'I\'m gonna be a father.',partOfSpeech:'expression',meaning:'Announcing the realization that one will become a parent.',meaningKo:'아버지가 될 것이라는 것을 깨닫다.',example:'"The baby is due in two months. I\'m gonna be a father."',exampleKo:'"아기가 2개월 후에 태어나. 나 아버지가 될 거야."',context:'Ross suddenly realizing the reality of becoming a parent.',youtubeUrl:''},
+    {phrase:'I just never realized the baby was having me.',partOfSpeech:'expression',meaning:'A witty way of saying the baby will also have an impact on the parent.',meaningKo:'아기도 부모에게 영향을 미친다는 것을 깨닫다.',example:'"I\'m having a baby, but really, the baby is having me too."',exampleKo:'"나가 아기를 가지는 게 아니라 아기가 나를 가지는 거네."',context:'Ross\'s humorous realization about parenthood.',youtubeUrl:''},
+    {phrase:'Is it really so terrible?',partOfSpeech:'question',meaning:'Asking if something is truly as bad as someone is making it seem.',meaningKo:'정말 그렇게 나쁜 일일까?',example:'"You\'re upset about your sister dating your friend. Is it really so terrible?"',exampleKo:'"언니가 너 친구 사귀는 게 싫어? 정말 그렇게 나쁜 일일까?"',context:'Rachel questioning why Phoebe is so upset about Joey and Ursula.',youtubeUrl:''},
+    {phrase:'You gotta talk to Joey.',partOfSpeech:'expression',meaning:'You must communicate with someone to resolve an issue.',meaningKo:'누군가와 얘기해서 문제를 해결해야 한다.',example:'"He doesn\'t know how you feel. You gotta talk to Joey."',exampleKo:'"그가 너 마음을 몰라. 조이와 얘기해야 돼."',context:'Rachel advising Phoebe to communicate with Joey.',youtubeUrl:''},
+    {phrase:'She\'s always breaking my stuff.',partOfSpeech:'expression',meaning:'Someone repeatedly damages or ruins your possessions.',meaningKo:'누군가가 계속 내 물건을 부수다.',example:'"First my thermos, then my records — she\'s always breaking my stuff."',exampleKo:'"먼저 내 보온병, 그 다음 내 레코드 — 얘가 자꾸 내 물건을 부셔."',context:'Phoebe explaining her complicated history with her sister Ursula.',youtubeUrl:''},
+    {phrase:'Cleansing breath.',partOfSpeech:'expression',meaning:'Taking a deep breath to calm down and manage stress.',meaningKo:'진정하기 위해 깊게 숨을 쉬다.',example:'"I\'m getting nervous. Let me take a cleansing breath."',exampleKo:'"불안해지고 있어. 진정을 위해 숨을 깊게 쉬자."',context:'Susan teaching Carol relaxation techniques during Lamaze class.',youtubeUrl:''},
+    {phrase:'The whole parenting team.',partOfSpeech:'expression',meaning:'Everyone who will be involved in raising the child together.',meaningKo:'함께 아이를 키울 모든 사람들.',example:'"We\'ve got Carol, Susan, and me — the whole parenting team."',exampleKo:'"캐롤, 수잔, 나 — 우리 모두가 양육팀이야."',context:'Ross introducing his diverse parenting group at Lamaze class.',youtubeUrl:''},
+    {phrase:'Rachel, what are you doing? It\'s freezing.',partOfSpeech:'expression',meaning:'Questioning someone\'s action and pointing out uncomfortable conditions.',meaningKo:'누군가의 행동을 묻고 불편한 상황을 지적하다.',example:'"You\'re outside in the snow. Rachel, what are you doing? It\'s freezing!"',exampleKo:'"넌 눈이 오는데 밖에 있어. 뭐 하는 거야? 춥잖아!"',context:'Monica concerned about Rachel on the balcony removing Christmas lights.',youtubeUrl:''},
+    {phrase:'I mean, I\'m not saying she\'s evil.',partOfSpeech:'expression',meaning:'Saying something critical while trying to be fair or not too harsh.',meaningKo:'공정하려고 노력하면서 비판적인 말을 하다.',example:'"I mean, I\'m not saying she\'s evil, but she\'s not nice either."',exampleKo:'"내가 그 사람이 악하다는 건 아니지만, 착하지도 않아."',context:'Phoebe carefully explaining her negative feelings about Ursula.',youtubeUrl:''},
+    {phrase:'He doesn\'t know how you felt.',partOfSpeech:'expression',meaning:'Someone is unaware of your emotions or feelings about them.',meaningKo:'누군가가 당신의 감정을 모르다.',example:'"He left you hanging for weeks. He doesn\'t know how you felt about that."',exampleKo:'"그가 너를 몇 주일 동안 방치했어. 그게 어떤 기분인지 몰라."',context:'Rachel explaining why Phoebe needs to tell Joey how she feels.',youtubeUrl:''},
+    {phrase:'This whole stupid Ursula thing.',partOfSpeech:'expression',meaning:'Referring to an annoying or frustrating situation involving someone.',meaningKo:'누군가와 관련된 성가신 상황을 말하다.',example:'"I\'m tired of dealing with this whole stupid Ursula thing."',exampleKo:'"이 어리석은 우르술라 일을 계속 처리하기 싫어."',context:'Phoebe frustrated about the problems caused by her sister.',youtubeUrl:''}
   ]
   };
 
@@ -105,7 +113,7 @@
   var E_NUM = 16;
   var TOTAL = 15;
 
-  function goHome() { window.location.href = '../../../index.html'; }
+  function goHome() { window.location.href = '../../index.html'; }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -115,7 +123,7 @@
       var x   = (i < dataExprs.length) ? dataExprs[i] : null;
       var num = i + 1;
       var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
-      var bmUrl = 'friends/episodes/season' + S_NUM + '/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      var bmUrl = 'friends/episodes/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
       if (x) {
         var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
         var ytBtn = isLive
@@ -127,9 +135,13 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div class="lang-toggle">🇬🇧 English</div>';
         html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
         html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="lang-toggle">🇰🇷 한국어</div>';
+        html += '<div class="expr-meaning-ko">' + escHtml(x.meaningKo) + '</div>';
+        html += '<div class="expr-example-ko">' + escHtml(x.exampleKo) + '</div>';
+        if (x.context) html += '<div class="expr-context">&#128205; <em>' + escHtml(x.context) + '</em></div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -147,23 +159,11 @@
   }
 
   function handleExprBm(num) {
-    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
+    toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
