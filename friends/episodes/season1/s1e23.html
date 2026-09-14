@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S1E23: The One with the Birth</div>
-        <div class="page-header-meta">Carol goes into labor. Everyone rushes to the hospital for the birth of Ben.</div>
+        <div class="page-header-meta">Carol goes into labor at the hospital. Friends rush to be there for the birth of Ben.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s1e23"
             onclick="toggleBookmark('episode','episode-friends-s1e23','📋 Friends S1E23','friends/episodes/season1/s1e23.html')">
@@ -77,27 +77,176 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'The One with the Birth',
-    description: 'Carol goes into labor. Everyone rushes to the hospital for the birth of Ben.',
+    description: 'Carol goes into labor at the hospital. Friends rush to be there for the birth of Ben.',
     expressions: [
-    {phrase:'In labor',partOfSpeech:'expression',meaning:'The process of giving birth; experiencing the contractions and work of childbirth.',example:'"She was in labor for 14 hours before the baby arrived."',context:'Carol giving birth to Ross\'s son Ben.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E23X1'},
-    {phrase:'It takes a village',partOfSpeech:'proverb',meaning:'A task — especially raising a child — requires the help and effort of an entire community.',example:'"It takes a village to raise a child — we all need support."',context:'The whole group coming together to support during the birth.',youtubeUrl:'https://www.youtube.com/watch?v=REPLACE_S1E23X2'}
+    {
+      phrase: 'She\'s having my baby and she\'s not here.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of panic and frustration about an urgent situation where someone needed is absent. The phrase emphasizes anxiety about the timing and the importance of someone\'s presence during a critical moment. It conveys urgency and concern about the expected outcome.',
+      meaning_ko: '긴급한 상황에서 필요한 누군가가 부재하다는 것에 대한 패닉과 좌절의 진술입니다. 이 표현은 중요한 순간 동안 누군가의 존재에 대한 불안을 강조합니다. 예상 결과에 대한 긴급성과 우려를 전달합니다.',
+      example: 'A: "Where\'s Carol?" B: "She\'s having my baby and she\'s not here!"',
+      example_ko: 'A: "Carol은 어디야?" B: "그건 내 아기를 낳고 있는데 여기에 없어!"',
+      context: 'Ross panics in the hospital when he realizes his ex-wife Carol is in active labor but hasn\'t yet arrived at the hospital.',
+      context_ko: 'Ross는 전 처 Carol이 진통 중이지만 아직 병원에 도착하지 않았다는 것을 깨달을 때 병원에서 패닉합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X1'
+    },
+    {
+      phrase: 'Oh, Ross, relax.',
+      partOfSpeech: 'expression',
+      meaning: 'A calm, reassuring statement urging someone to reduce their anxiety or worry. The phrase is a gentle instruction to settle down and trust that things will be fine. It conveys confidence and attempts to soothe someone\'s distress.',
+      meaning_ko: '누군가에게 그들의 불안이나 걱정을 줄이도록 촉구하는 침착하고 안심시키는 진술입니다. 이 표현은 진정하고 일이 잘 될 것이라고 믿도록 하는 온화한 지시입니다. 그것은 자신감을 전달하고 누군가의 고통을 달래려고 시도합니다.',
+      example: 'A: "I\'m so nervous about the test!" B: "Oh, relax. You\'ll do fine."',
+      example_ko: 'A: "난 시험이 너무 떨려!" B: "아, 진정해. 넌 잘할 거야."',
+      context: 'Monica tries to calm down the anxious Ross at the hospital, asking him not to panic about the impending birth.',
+      context_ko: 'Monica는 병원에서 불안해 하는 Ross를 진정시키려고 시도하며, 그에게 임박한 출산에 대해 패닉하지 말도록 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X2'
+    },
+    {
+      phrase: 'It\'s only like $2 for the first contraction.',
+      partOfSpeech: 'expression',
+      meaning: 'A joking statement making light of a serious situation through humor about costs or unexpected fees. The phrase uses exaggeration and absurdity to deflect anxiety or tension about an important moment. It reflects using humor as a coping mechanism.',
+      meaning_ko: '비용이나 예상치 못한 수수료에 대한 유머를 통해 심각한 상황을 가볍게 하는 농담 진술입니다. 이 표현은 중요한 순간에 대한 불안이나 긴장을 물리치기 위해 과장과 황당함을 사용합니다. 그것은 대처 메커니즘으로서 유머를 사용하는 것을 반영합니다.',
+      example: 'A: "Carol might give birth in the taxi!" B: "It\'s only $2 for the first contraction and 50 cents each additional!"',
+      example_ko: 'A: "Carol이 택시에서 출산할 수 있어!" B: "첫 진통에 2달러, 그 이후 각 진통에 50센트야!"',
+      context: 'Chandler uses humor to address the group\'s anxiety about Carol potentially giving birth during the taxi ride to the hospital.',
+      context_ko: 'Chandler은 Carol이 병원으로 가는 택시 타는 동안 출산할 가능성에 대한 그룹의 불안을 해결하기 위해 유머를 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X3'
+    },
+    {
+      phrase: 'What\'s with the guitar?',
+      partOfSpeech: 'question',
+      meaning: 'A questioning inquiry about the purpose or reason for something unusual or unexpected. The phrase seeks to understand why someone has brought or brought up something that seems out of place in the current situation. It expresses curiosity and mild surprise.',
+      meaning_ko: '뭔가 이상하거나 예상치 못한 것의 목적이나 이유를 묻는 질문 조회입니다. 이 표현은 누군가가 현재 상황에서 맞지 않는 것처럼 보이는 것을 가져온 이유를 이해하려고 합니다. 그것은 호기심과 약간의 놀라움을 표현합니다.',
+      example: 'A: "Why did you bring a guitar to the hospital?" B: "What\'s with the guitar?"',
+      example_ko: 'A: "넌 왜 병원에 기타를 가져왔어?" B: "기타가 뭐야?"',
+      context: 'Monica questions Phoebe about why she brought a guitar to the hospital during Carol\'s labor.',
+      context_ko: 'Monica는 Carol의 진통 중에 Phoebe가 병원에 기타를 가져온 이유에 대해 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X4'
+    },
+    {
+      phrase: 'You don\'t stop for Chunkys.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing disbelief and criticism at someone\'s inappropriate priorities during an urgent situation. The phrase emphasizes that certain moments call for singular focus and abandonment of casual concerns. It conveys exasperation at misaligned priorities.',
+      meaning_ko: '긴급한 상황 중 누군가의 부적절한 우선순위에 대한 의심과 비판을 표현하는 진술입니다. 이 표현은 특정 순간이 단일 초점과 일상적 우려의 포기를 요구한다는 것을 강조합니다. 그것은 부정렬된 우선순위에 대한 답답함을 전달합니다.',
+      example: 'A: "We stopped to buy candy bars on the way to the hospital." B: "You don\'t stop for Chunkys when someone\'s having a baby!"',
+      example_ko: 'A: "우리는 병원 가는 길에 초콜릿 바를 사기 위해 멈췄어." B: "누군가가 아기를 낳을 때 초콜릿을 위해 멈추지 않아!"',
+      context: 'Ross is upset with Carol and Susan for stopping at the gift shop to buy Chunky bars instead of rushing directly to the hospital for her labor.',
+      context_ko: 'Ross는 Carol과 Susan이 병원으로 서둘러 가는 대신 선물 가게에 멈춰 Chunky 바를 사기 위해 불만입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X5'
+    },
+    {
+      phrase: 'Let it go, Ross.',
+      partOfSpeech: 'expression',
+      meaning: 'An instruction to someone to stop dwelling on or becoming upset about something minor or past. The phrase urges releasing frustration and moving forward. It\'s a directive to abandon a complaint or grievance and focus on what matters now.',
+      meaning_ko: '누군가에게 사소한 것이나 과거의 것에 대해 집착하거나 화내는 것을 멈추도록 지시하는 것입니다. 이 표현은 좌절감을 방출하고 앞으로 나아가도록 촉구합니다. 그것은 불평이나 불만을 포기하고 지금 중요한 것에 집중하도록 하는 지시입니다.',
+      example: 'A: "I can\'t believe they stopped for Chunkys!" B: "Let it go, Ross. Focus on what\'s important now."',
+      example_ko: 'A: "난 그들이 Chunkys를 위해 멈췄다고 믿을 수 없어!" B: "그냥 놔둬, Ross. 지금 중요한 것에 집중해."',
+      context: 'A friend tells Ross to stop being upset about the Chunky bar detour and focus on the birth that\'s about to happen.',
+      context_ko: '친구는 Ross에게 Chunky 바 우회에 대해 화내는 것을 멈추고 곧 일어날 출산에 집중하도록 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X6'
+    },
+    {
+      phrase: 'I see you\'re nine months pregnant.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of observation and reassurance, acknowledging the obvious reality of a pregnancy\'s advanced stage. The phrase conveys understanding and readiness for what\'s about to happen. It\'s a clinical yet comforting acknowledgment of the present situation.',
+      meaning_ko: '임신의 고급 단계의 명백한 현실을 인정하는 관찰과 안심의 진술입니다. 이 표현은 무엇이 일어날 준비에 대한 이해를 전달합니다. 그것은 현재 상황의 임상적이지만 편안한 인정입니다.',
+      example: 'A: "Is it obvious?" B: "I see you\'re nine months pregnant. That\'s a good start."',
+      example_ko: 'A: "분명해?" B: "넌 9개월 임신했어. 좋은 시작이야."',
+      context: 'Dr. Franzblau makes a lighthearted observation to Carol, noting that being nine months pregnant is indeed obvious.',
+      context_ko: 'Dr. Franzblau는 Carol에게 9개월 임신이 실제로 명백하다는 것을 지적하여 재치 있는 관찰을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X7'
+    },
+    {
+      phrase: 'Each one\'s like a little party in my uterus.',
+      partOfSpeech: 'expression',
+      meaning: 'A humorous self-description of experiencing contractions during labor, using playful exaggeration to describe the physical sensation. The phrase uses absurdist humor to cope with pain and discomfort. It reflects finding lightness in a difficult physical experience.',
+      meaning_ko: '진통을 경험하는 것의 재치 있는 자기 설명이며, 신체 감각을 설명하기 위해 장난스러운 과장을 사용합니다. 이 표현은 불합리한 유머를 사용하여 통증과 불편함을 대처합니다. 그것은 어려운 신체 경험에서 가벼움을 찾는 것을 반영합니다.',
+      example: 'A: "How are your contractions?" B: "Each one\'s like a little party in my uterus!"',
+      example_ko: 'A: "넌 진통이 어때?" B: "각각은 내 자궁에서 작은 파티 같아!"',
+      context: 'Carol uses self-deprecating humor to describe the experience of experiencing contractions during labor at the hospital.',
+      context_ko: 'Carol은 병원에서 출산 중 진통을 경험하는 것을 설명하기 위해 자조적 유머를 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X8'
+    },
+    {
+      phrase: 'Is there something fundamentally unmarriable about me?',
+      partOfSpeech: 'question',
+      meaning: 'A vulnerable self-questioning about whether one possesses inherent qualities that make romantic commitment impossible. The phrase expresses deep insecurity and seeks reassurance. It reflects internalized doubt about one\'s desirability as a long-term partner.',
+      meaning_ko: '낭만적 약속을 불가능하게 만드는 내재된 자질을 소유하는지에 대한 취약한 자기 질문입니다. 이 표현은 깊은 불안감을 표현하고 안심을 요구합니다. 그것은 장기적 파트너로서 자신의 욕망에 대한 내재된 의심을 반영합니다.',
+      example: 'A: "Why are you single?" B: "Is there something fundamentally unmarriable about me?"',
+      example_ko: 'A: "왜 넌 싱글이야?" B: "내게 근본적으로 미혼인 뭔가가 있어?"',
+      context: 'Rachel questions Chandler\'s joke about waiting until age 40 to have a baby, expressing insecurity about her marriageability.',
+      context_ko: 'Rachel은 40대까지 아기를 갖는 것에 대한 Chandler의 농담에 질문하며, 그녀의 결혼 가능성에 대한 불안감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X9'
+    },
+    {
+      phrase: 'Dear God. This parachute is a knapsack.',
+      partOfSpeech: 'expression',
+      meaning: 'A panicked exclamation expressing sudden realization of a serious problem or mistake. The phrase uses absurdist imagery to convey shock and dismay about an inadequate solution. It reflects desperation when facing an unpreparedness for an important task.',
+      meaning_ko: '심각한 문제나 실수의 갑작스러운 깨달음을 표현하는 당황한 감탄입니다. 이 표현은 불충분한 해결책에 대한 충격과 실망을 전달하기 위해 불합리한 이미지를 사용합니다. 중요한 작업에 대한 준비 부족에 직면할 때 절망을 반영합니다.',
+      example: 'A: "I realized I brought the wrong equipment!" B: "Dear God. This parachute is a knapsack!"',
+      example_ko: 'A: "난 잘못된 장비를 가져왔다는 것을 깨달았어!" B: "예수님. 이 낙하산은 배낭이야!"',
+      context: 'Chandler panics when Rachel questions whether he finds her unmarriable, realizing he\'s made a serious social misstep.',
+      context_ko: 'Chandler은 Rachel이 그가 자신을 미혼인이라고 생각하는지 질문할 때 패닉합니다. 그가 심각한 사회적 실수를 했다는 것을 깨달으면서.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X10'
+    },
+    {
+      phrase: 'He is supposed to be here.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement expressing expectation and frustration about someone\'s absence when they are needed. The phrase conveys reliance on someone\'s presence and disappointment at their non-arrival. It emphasizes the importance of punctuality and commitment.',
+      meaning_ko: '필요할 때 누군가의 부재에 대한 기대와 좌절감을 표현하는 진술입니다. 이 표현은 누군가의 존재에 대한 의존과 그들의 도착 부족에 대한 실망을 전달합니다. 그것은 정시성과 약속의 중요성을 강조합니다.',
+      example: 'A: "Where\'s the doctor?" B: "He is supposed to be here!"',
+      example_ko: 'A: "의사는 어디야?" B: "그는 여기 있어야 해!"',
+      context: 'Rachel expresses concern that Dr. Franzblau hasn\'t arrived at the hospital yet during Carol\'s active labor.',
+      context_ko: 'Rachel은 Carol의 진통 중에 Dr. Franzblau가 아직 병원에 도착하지 않았다는 것에 대해 우려를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X11'
+    },
+    {
+      phrase: 'What is the deal with you and doctors?',
+      partOfSpeech: 'question',
+      meaning: 'A questioning inquiry into someone\'s unusual relationship or fixation with a particular group of people. The phrase seeks to understand the reason behind consistent behavior or preference. It expresses curiosity about motivations and patterns.',
+      meaning_ko: '특정 그룹과의 누군가의 비정상적인 관계나 고정 관념에 대한 질문 조회입니다. 이 표현은 지속적인 행동이나 선호도의 이유를 이해하려고 합니다. 그것은 동기와 패턴에 대한 호기심을 표현합니다.',
+      example: 'A: "You\'re always worried about doctors." B: "What is the deal with you and doctors?"',
+      example_ko: 'A: "넌 항상 의사에 대해 걱정해." B: "넌 의사와 무슨 관계야?"',
+      context: 'Ross notices Rachel\'s obsessive concern about whether Dr. Franzblau will be present for the birth.',
+      context_ko: 'Ross는 Rachel이 Dr. Franzblau가 출산에 참석할 것인지에 대한 집착적 우려를 주목합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X12'
+    },
+    {
+      phrase: 'I will always have gum.',
+      partOfSpeech: 'expression',
+      meaning: 'A promise or commitment made to someone, emphasizing reliability and presence despite potential absences. The phrase conveys constancy and a pledge to always provide what someone needs. It\'s a sweet, simple vow of commitment.',
+      meaning_ko: '누군가에게 한 약속이나 약속이며, 잠재적 부재에도 불구하고 신뢰성과 존재를 강조합니다. 이 표현은 지속성과 항상 누군가가 필요로 하는 것을 제공하기 위한 서약을 전달합니다. 그것은 약속에 대한 달콤하고 간단한 서약입니다.',
+      example: 'A: "Will you always be there for me?" B: "I will always have gum." (Promise of comfort and support)',
+      example_ko: 'A: "넌 항상 내 곁에 있을 거야?" B: "난 항상 껌을 가질 거야." (위안과 지원의 약속)',
+      context: 'Monica makes a sweet promise to newborn Ben, vowing that she will always have gum for him as part of her commitment as his aunt.',
+      context_ko: 'Monica는 새로 태어난 Ben에게 달콤한 약속을 하며, 그녀가 그의 이모로서 약속의 일환으로 항상 그를 위해 껌을 가질 것이라고 맹세합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X13'
+    },
+    {
+      phrase: 'How about Ben?',
+      partOfSpeech: 'question',
+      meaning: 'A simple suggestion offered as a possible solution or choice, seeking agreement from others. The phrase invites input and consensus on a decision. It\'s a casual way of proposing an idea and testing its reception.',
+      meaning_ko: '가능한 해결책이나 선택으로 제공되는 간단한 제안이며, 다른 사람들의 동의를 추구합니다. 이 표현은 의견을 초대하고 결정에 대한 합의를 초대합니다. 그것은 아이디어를 제안하고 그것의 반응을 테스트하는 일상적인 방법입니다.',
+      example: 'A: "We need a name for the baby." B: "How about Ben?"',
+      example_ko: 'A: "우리는 아기의 이름이 필요해." B: "Ben은 어때?"',
+      context: 'Susan suggests the name Ben for their newborn son during the hospital delivery.',
+      context_ko: 'Susan은 병원 배달 중에 새로 태어난 아들의 이름 Ben을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X14'
+    },
+    {
+      phrase: 'I\'m your Aunt Monica. Yes, I am.',
+      partOfSpeech: 'expression',
+      meaning: 'A joyful affirmation of a newly established family relationship, expressing pride and happiness in the role. The phrase emphasizes commitment to the new role with enthusiastic repetition. It conveys warmth and emotional connection to a new family member.',
+      meaning_ko: '새로 설립된 가족 관계의 기쁜 확인이며, 역할에 대한 자부심과 행복을 표현합니다. 이 표현은 열정적인 반복으로 새로운 역할에 대한 약속을 강조합니다. 새로운 가족 구성원에 대한 따뜻함과 감정적 연결을 전달합니다.',
+      example: 'A: "Who are you?" B: "I\'m your Aunt Monica. Yes, I am."',
+      example_ko: 'A: "넌 누구야?" B: "난 넌 이모 Monica야. 응, 난 그래."',
+      context: 'Monica holds newborn Ben and introduces herself as his aunt with joyful affirmation and emotional attachment.',
+      context_ko: 'Monica는 새로 태어난 Ben을 안고 자신을 그의 이모로 기쁜 확인과 감정적 애착으로 소개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S1E23X15'
+    }
   ]
   };
 
@@ -108,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -124,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -163,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
