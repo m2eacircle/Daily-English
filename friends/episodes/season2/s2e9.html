@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e9.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E9: Season 2, Episode 9</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E9: The One with the Holiday Armadillo</div>
+        <div class="page-header-meta">Christmas party planning. Phoebe discovers her father. Rachel and Ross reconcile. Tropical theme party fiasco.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e9"
             onclick="toggleBookmark('episode','episode-friends-s2e9','📋 Friends S2E9','friends/episodes/season2/s2e9.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 9',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Holiday Armadillo',
+    description: 'Christmas party planning. Phoebe discovers her father. Rachel and Ross reconcile. Tropical theme party fiasco.',
+    expressions: [
+    {
+      phrase: 'Ugly Naked Guy is decorating his tree.',
+      partOfSpeech: 'observation',
+      meaning: 'A statement of observation about a neighbor\'s seasonal holiday activity. The phrase provides commentary on someone else\'s Christmas preparations. It conveys amusement at unexpected sight.',
+      meaning_ko: '이웃의 계절 휴일 활동에 대한 관찰 진술입니다. 이 표현은 누군가의 크리스마스 준비에 대한 논평을 제공합니다. 그것은 예상치 못한 광경에 대한 즐거움을 전달합니다.',
+      example: 'A: "Look outside!" B: "Ugly Naked Guy is decorating his tree."',
+      example_ko: 'A: "밖을 봐!" B: "Ugly Naked Guy가 자신의 나무를 장식하고 있어."',
+      context: 'Monica observes their neighbor preparing for Christmas from their apartment window.',
+      context_ko: 'Monica는 그들의 아파트 창에서 이웃이 크리스마스를 준비하는 것을 관찰합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X1'
+    },
+    {
+      phrase: 'Money is so impersonal.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement arguing that monetary gifts lack emotional warmth compared to homemade alternatives. The phrase justifies unconventional gift-giving. It conveys belief in personal touch.',
+      meaning_ko: '금전 선물이 직접 만든 대안과 비교하여 감정적 따뜻함이 부족하다고 주장하는 진술입니다. 이 표현은 비관습적 선물하기를 정당화합니다. 그것은 개인적 터치에 대한 믿음을 전달합니다.',
+      example: 'A: "Why not tip money?" B: "Money is so impersonal."',
+      example_ko: 'A: "왜 돈을 팁 하지 않아?" B: "돈은 너무 비인격적이야."',
+      context: 'Monica justifies giving homemade cookies as Christmas tips instead of cash.',
+      context_ko: 'Monica는 현금 대신 직접 만든 쿠키를 크리스마스 팁으로 주는 것을 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X2'
+    },
+    {
+      phrase: 'Cookies says someone really cares.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement claiming that homemade baked goods communicate genuine affection better than money. The phrase personalizes gift-giving through baking. It conveys sentimental approach to generosity.',
+      meaning_ko: '직접 만든 구운 상품이 돈보다 더 진정한 애정을 전달한다고 주장하는 진술입니다. 이 표현은 베이킹을 통해 선물하기를 개인화합니다. 그것은 관대함에 대한 감정적 접근을 전달합니다.',
+      example: 'A: "Why cookies instead of money?" B: "Cookies says someone really cares."',
+      example_ko: 'A: "왜 돈 대신 쿠키야?" B: "쿠키는 누군가 정말 신경 쓴다는 걸 말해."',
+      context: 'Phoebe defends Monica\'s decision to give homemade cookies as tips.',
+      context_ko: 'Phoebe는 Monica의 직접 만든 쿠키를 팁으로 주기로 한 결정을 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X3'
+    },
+    {
+      phrase: 'I think they had pot in them.',
+      partOfSpeech: 'expression',
+      meaning: 'A casual disclosure that baked goods contain marijuana as secret ingredient. The phrase reveals unintentional drug contamination. It conveys matter-of-fact acceptance of drug presence.',
+      meaning_ko: '구운 상품이 숨은 재료로 마리화나를 포함한다는 캐주얼한 공개입니다. 이 표현은 의도하지 않은 약물 오염을 드러냅니다. 그것은 약물 존재의 사실적 수용을 전달합니다.',
+      example: 'A: "How were the brownies funny?" B: "I think they had pot in them."',
+      example_ko: 'A: "브라우니는 왜 재미있었어?" B: "나는 그들이 pot을 가지고 있었다고 생각해."',
+      context: 'Phoebe casually reveals her brownies containing marijuana without fully understanding.',
+      context_ko: 'Phoebe는 마리화나를 포함하는 브라우니를 완전히 이해하지 않고 우연히 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X4'
+    },
+    {
+      phrase: 'This is my father!',
+      partOfSpeech: 'exclamation',
+      meaning: 'An excited declaration identifying a person in a picture as one\'s biological parent. The phrase expresses emotional revelation of family discovery. It conveys overwhelming joy about paternal connection.',
+      meaning_ko: '사진의 사람을 자신의 생물학적 부모로 식별하는 흥분한 선언입니다. 이 표현은 가족 발견의 감정적 공개를 표현합니다. 그것은 부계 연결에 대한 압도적인 기쁨을 전달합니다.',
+      example: 'A: "That\'s just the frame picture." B: "This is my father!"',
+      example_ko: 'A: "그건 그냥 프레임 사진이야." B: "이건 내 아버지야!"',
+      context: 'Phoebe excitedly identifies a frame picture as her real father.',
+      context_ko: 'Phoebe는 흥분하며 프레임 사진을 그녀의 실제 아버지로 식별합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X5'
+    },
+    {
+      phrase: 'How have you never been on Oprah?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical inquiry expressing disbelief at someone\'s lack of media exposure given dramatic life story. The phrase suggests someone\'s trauma merits television spotlight. It conveys amazement at unmarked life tragedy.',
+      meaning_ko: '극적인 생활 이야기가 주어진 누군가의 미디어 노출 부족에 대한 불신을 표현하는 수사적 질문입니다. 이 표현은 누군가의 외상이 텔레비전 스포트라이트를 받을 자격이 있음을 시사합니다. 그것은 표시되지 않은 삶의 비극에 대한 놀라움을 전달합니다.',
+      example: 'A: "My life is tragic." B: "How have you never been on Oprah?"',
+      example_ko: 'A: "내 삶은 비극적이야." B: "넌 왜 오프라에 나간 적이 없어?"',
+      context: 'Rachel expresses amazement at Phoebe\'s extraordinary life story deserving media attention.',
+      context_ko: 'Rachel은 Phoebe의 특별한 삶의 이야기가 미디어 관심을 받을 자격이 있다는 것에 놀라움을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X6'
+    },
+    {
+      phrase: 'Why would the villagers worship a pharmacist?',
+      partOfSpeech: 'question',
+      meaning: 'A statement of disbelief at a false narrative claim about occupational status. The phrase questions implausible family mythology. It conveys skepticism about fatherly fabrication.',
+      meaning_ko: '직업 상태에 대한 거짓 서사 주장에 대한 불신 진술입니다. 이 표현은 그럴듯하지 않은 가족 신화를 의문합니다. 그것은 아버지의 거짓에 대한 회의론을 전달합니다.',
+      example: 'A: "He\'s a pharmacist." B: "Why would the villagers worship a pharmacist?"',
+      example_ko: 'A: "그는 약사야." B: "왜 마을 사람들이 약사를 숭배할까?"',
+      context: 'Phoebe rejects the idea her father is an ordinary pharmacist, expecting something more dramatic.',
+      context_ko: 'Phoebe는 그녀의 아버지가 평범한 약사라는 생각을 거부하고 더 극적인 것을 기대합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X7'
+    },
+    {
+      phrase: 'You don\'t ever just seize the day.',
+      partOfSpeech: 'accusation',
+      meaning: 'A criticism that someone fails to take spontaneous action or embrace bold opportunity. The phrase condemns passivity in life choices. It conveys complaint about risk aversion.',
+      meaning_ko: '누군가가 자발적 행동을 취하거나 대담한 기회를 포용하지 못한다는 비판입니다. 이 표현은 인생 선택의 수동성을 비난합니다. 그것은 위험 회피에 대한 불평을 전달합니다.',
+      example: 'A: "You\'re hesitant." B: "You don\'t ever just seize the day."',
+      example_ko: 'A: "넌 주저해." B: "넌 항상 그 날을 활용하지 않아."',
+      context: 'Rachel lists Ross\'s character flaws including his passivity and lack of action.',
+      context_ko: 'Rachel은 Ross의 수동성과 행동 부족을 포함한 문자 결함을 나열합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X8'
+    },
+    {
+      phrase: 'I do feel better. Thank you, Ross.',
+      partOfSpeech: 'expression',
+      meaning: 'A grateful acknowledgment that hearing criticism actually improved emotional state. The phrase expresses unexpected catharsis from negativity. It conveys gratitude through backhanded compliment.',
+      meaning_ko: '비판을 듣는 것이 실제로 감정 상태를 개선했다는 감사한 인정입니다. 이 표현은 부정성에서 예상치 못한 정화를 표현합니다. 그것은 뒤틀린 칭찬을 통해 감사를 전달합니다.',
+      example: 'A: "You\'re spoiled and ditzy." B: "I do feel better. Thank you, Ross."',
+      example_ko: 'A: "넌 spoiled하고 ditzy해." B: "난 더 좋아져. 감사해, Ross."',
+      context: 'Rachel thanks Ross after he lists insulting criticisms, which surprisingly make her feel better.',
+      context_ko: 'Rachel은 Ross가 모욕적인 비판을 나열한 후 감사하고, 이는 놀랍게도 그녀를 더 좋게 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X9'
+    },
+    {
+      phrase: 'You shouldn\'t call yourself Information!',
+      partOfSpeech: 'accusation',
+      meaning: 'A frustrated complaint that someone providing directory assistance service is doing so incompetently. The phrase uses wordplay on company name to criticize poor service. It conveys anger about unhelpful assistance.',
+      meaning_ko: '누군가가 디렉토리 지원 서비스를 무능하게 제공하고 있다는 답답한 불평입니다. 이 표현은 회사 이름에 대한 말장난을 사용하여 부실 서비스를 비판합니다. 그것은 도움이 되지 않는 지원에 대한 분노를 전달합니다.',
+      example: 'A: "Can you find my dad?" B: "You shouldn\'t call yourself Information!"',
+      example_ko: 'A: "넌 내 아빠를 찾을 수 있어?" B: "넌 Information이라고 부르지 말아야 해!"',
+      context: 'Phoebe angrily responds to Information services unable to locate her father.',
+      context_ko: 'Phoebe는 아버지를 찾을 수 없는 정보 서비스에 화난 응답을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X10'
+    },
+    {
+      phrase: 'Don\'t still be mad at me.',
+      partOfSpeech: 'plea',
+      meaning: 'A request to cease harboring resentment about a past deception. The phrase seeks forgiveness after wrongdoing. It conveys desire to restore damaged relationship.',
+      meaning_ko: '과거 속임수에 대한 분노를 계속 품기를 멈추라는 요청입니다. 이 표현은 잘못된 행동 후 용서를 구합니다. 그것은 손상된 관계를 복구하려는 욕망을 전달합니다.',
+      example: 'A: "You lied to me." B: "Don\'t still be mad at me."',
+      example_ko: 'A: "넌 나한테 거짓말했어." B: "계속 날 화내지 마."',
+      context: 'Phoebe\'s grandmother asks her to stop being angry about the false father story.',
+      context_ko: 'Phoebe의 할머니는 그녀가 거짓 아버지 이야기에 대해 화나기를 멈추라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X11'
+    },
+    {
+      phrase: 'Upstate\'s pretty big. He\'s pretty small.',
+      partOfSpeech: 'observation',
+      meaning: 'A statement acknowledging difficulty finding someone in large geographic area when limited information exists. The phrase uses humor to express search futility. It conveys resignation about needle-in-haystack challenge.',
+      meaning_ko: '제한된 정보가 있을 때 큰 지리적 영역에서 누군가를 찾기 어려움을 인정하는 진술입니다. 이 표현은 유머를 사용하여 검색 무용함을 표현합니다. 그것은 건초 더미에서 바늘 찾기 도전에 대한 항복을 전달합니다.',
+      example: 'A: "How will you find your dad?" B: "Upstate\'s pretty big. He\'s pretty small."',
+      example_ko: 'A: "넌 어떻게 너의 아버지를 찾을까?" B: "Upstate는 꽤 커. 그는 꽤 작아."',
+      context: 'Phoebe\'s grandmother makes a joke about the difficulty of finding her father.',
+      context_ko: 'Phoebe의 할머니는 그녀의 아버지를 찾기의 어려움에 대해 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X12'
+    },
+    {
+      phrase: 'In like two hours I\'m gonna have a dad.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of excited anticipation about imminent family reunion after long separation. The phrase conveys hope about meeting absent biological parent. It demonstrates overwhelming joy about paternal discovery.',
+      meaning_ko: '오랜 분리 후 임박한 가족 재결합에 대한 흥분한 기대의 진술입니다. 이 표현은 부재한 생물학적 부모를 만나는 것에 대한 희망을 전달합니다. 그것은 부계 발견에 대한 압도적인 기쁨을 보여줍니다.',
+      example: 'A: "You\'re going to meet him?" B: "In like two hours I\'m gonna have a dad."',
+      example_ko: 'A: "넌 그를 만날 거야?" B: "2시간 안에 난 아버지를 가질 거야."',
+      context: 'Phoebe expresses excitement as she prepares to visit her biological father.',
+      context_ko: 'Phoebe는 그녀의 생물학적 아버지를 방문할 준비를 하면서 흥분을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X13'
+    },
+    {
+      phrase: 'Did you just break the radiator?',
+      partOfSpeech: 'question',
+      meaning: 'An accusation of accidentally damaging heating equipment through careless manipulation. The phrase expresses frustration at mechanical mishap. It conveys blame for home appliance failure.',
+      meaning_ko: '부주의한 조작을 통해 가열 장비를 실수로 손상시키는 비난입니다. 이 표현은 기계적 사고에 대한 좌절감을 표현합니다. 그것은 가정용 기기 고장에 대한 비난을 전달합니다.',
+      example: 'A: "I was adjusting the heat." B: "Did you just break the radiator?"',
+      example_ko: 'A: "난 난방을 조정하고 있었어." B: "넌 라디에이터를 부숴?"',
+      context: 'Rachel discovers Ross broke the radiator knob while trying to adjust the heat.',
+      context_ko: 'Rachel은 Ross가 난방을 조정하려고 할 때 라디에이터 손잡이를 부러뜨렸다는 것을 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X14'
+    },
+    {
+      phrase: 'Heat, heat, heat. And I\'m the obsessive one?',
+      partOfSpeech: 'question',
+      meaning: 'An ironic self-defense against accusation of obsessive behavior while responding repetitively to urgent problem. The phrase uses repetition to highlight someone else\'s obsessiveness. It conveys mock exasperation at hypocrisy.',
+      meaning_ko: '긴급 문제에 반복적으로 응하면서 강박적 행동 비난에 대한 아이러닉한 자기 방어입니다. 이 표현은 반복을 사용하여 다른 사람의 강박성을 강조합니다. 그것은 위선에 대한 조롱하는 답답함을 전달합니다.',
+      example: 'A: "Heat, heat, heat!" B: "Heat, heat, heat. And I\'m the obsessive one?"',
+      example_ko: 'A: "열, 열, 열!" B: "열, 열, 열. 그리고 내가 강박적인 거야?"',
+      context: 'Ross points out Rachel\'s repetitive obsession with the heat while fixing it.',
+      context_ko: 'Ross는 난방을 고치는 동안 Rachel의 반복적인 열 강박을 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E9X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
