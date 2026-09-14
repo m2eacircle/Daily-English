@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e2.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E2: Season 2, Episode 2</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E2: The One with the Breast Milk</div>
+        <div class="page-header-meta">Friends learn about Ben's needs. Cologne wars at Bloomingdale's. Rachel upset about shopping with Julie.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e2"
             onclick="toggleBookmark('episode','episode-friends-s2e2','📋 Friends S2E2','friends/episodes/season2/s2e2.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 2',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Breast Milk',
+    description: 'Friends learn about Ben\'s needs. Cologne wars at Bloomingdale\'s. Rachel upset about shopping with Julie.',
+    expressions: [
+    {
+      phrase: 'Will you guys grow up?',
+      partOfSpeech: 'question',
+      meaning: 'A frustrated appeal for someone to behave more maturely or stop acting childishly. The phrase expresses exasperation at prolonged immaturity. It conveys a desire for people to adopt more adult behavior and perspectives.',
+      meaning_ko: '누군가가 더 성숙하게 행동하거나 어린 짓을 멈추도록 하는 좌절한 호소입니다. 이 표현은 지속된 미성숙에 대한 답답함을 표현합니다. 그것은 사람들이 더 성인적인 행동과 관점을 채택하려는 욕망을 전달합니다.',
+      example: 'A: "Stop making jokes about this." B: "Will you guys grow up?"',
+      example_ko: 'A: "이것에 대한 농담을 멈춰." B: "넘들, 제발 어른이 돼?"',
+      context: 'Ross tells the friends to grow up when they giggle about breastfeeding.',
+      context_ko: 'Ross는 친구들이 모유 수유에 대해 킥킥대할 때 어른이 되라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X1'
+    },
+    {
+      phrase: 'This is the most natural, beautiful thing.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement affirming that something is fundamentally wholesome and should not be treated as inappropriate. The phrase normalizes a natural biological process. It conveys that the speaker sees nothing shameful or embarrassing about the topic.',
+      meaning_ko: '뭔가가 근본적으로 건전하고 부적절한 것으로 취급받지 않아야 한다는 것을 확인하는 진술입니다. 이 표현은 자연적인 생물학적 과정을 정상화합니다. 그것은 화자가 주제에 대해 부끄럽거나 당황스러운 것이 없다는 것을 전달합니다.',
+      example: 'A: "I\'m embarrassed to talk about this." B: "This is the most natural, beautiful thing in the world."',
+      example_ko: 'A: "난 이건 얘기하기 창피해." B: "이건 세상에서 가장 자연적이고 아름다운 일이야."',
+      context: 'Ross defends breastfeeding as natural and beautiful when his friends snicker.',
+      context_ko: 'Ross는 그의 친구들이 킥킥댈 때 모유 수유를 자연적이고 아름답다고 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X2'
+    },
+    {
+      phrase: 'Does it hurt?',
+      partOfSpeech: 'question',
+      meaning: 'A simple, direct inquiry about pain or physical discomfort. The phrase seeks honest information about a medical or bodily experience. It\'s a straightforward question seeking factual answers about physical sensation.',
+      meaning_ko: '통증이나 신체적 불편에 대한 간단하고 직접적인 질문입니다. 이 표현은 의료 또는 신체 경험에 대한 정직한 정보를 찾습니다. 그것은 신체 감각에 대한 사실적인 답변을 추구하는 직설적인 질문입니다.',
+      example: 'A: "I just had a procedure." B: "Does it hurt?"',
+      example_ko: 'A: "난 방금 시술을 받았어." B: "아파?"',
+      context: 'Joey innocently asks Carol about the physical experience of breastfeeding.',
+      context_ko: 'Joey는 Carol에게 모유 수유의 신체 경험에 대해 순진하게 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X3'
+    },
+    {
+      phrase: 'As much as he needs.',
+      partOfSpeech: 'expression',
+      meaning: 'A response indicating unlimited or flexible availability based on someone\'s requirements. The phrase conveys unconditional willingness to provide as much as necessary. It reflects prioritizing someone\'s needs over convenience or schedule.',
+      meaning_ko: '누군가의 요구 사항에 따라 무제한 또는 유연한 가용성을 나타내는 응답입니다. 이 표현은 필요한 만큼 제공하려는 무조건적 의지를 전달합니다. 그것은 편의 또는 일정보다 누군가의 필요를 우선시하는 것을 반영합니다.',
+      example: 'A: "How often can you feed him?" B: "As much as he needs."',
+      example_ko: 'A: "넌 얼마나 자주 그에게 먹일 수 있어?" B: "그가 필요한 만큼."',
+      context: 'Carol answers Chandler\'s question about breastfeeding frequency.',
+      context_ko: 'Carol은 Chandler의 모유 수유 빈도에 대한 질문에 대답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X4'
+    },
+    {
+      phrase: 'You can\'t go shopping with her.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct statement forbidding or advising against a particular action. The phrase uses prohibition language to express concern or disagreement. It conveys that the action would have negative consequences.',
+      meaning_ko: '특정 행동을 금하거나 조언하는 직접적인 진술입니다. 이 표현은 금지 언어를 사용하여 우려 또는 의견 불일치를 표현합니다. 그것은 행동이 부정적인 결과를 초래할 것이라는 것을 전달합니다.',
+      example: 'A: "I\'m going shopping with her today." B: "You can\'t go shopping with her."',
+      example_ko: 'A: "난 오늘 그녀와 쇼핑 가고 있어." B: "넌 그녀와 쇼핑 갈 수 없어."',
+      context: 'Chandler warns Monica that she shouldn\'t go shopping with Julie because Rachel will be upset.',
+      context_ko: 'Chandler은 Monica에게 Julie와 쇼핑을 가면 Rachel이 화날 것이기 때문에 안 된다고 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X5'
+    },
+    {
+      phrase: 'Monica, she will kill you.',
+      partOfSpeech: 'expression',
+      meaning: 'A dramatic, hyperbolic warning that someone will be extremely angry or upset with the listener. The phrase uses exaggerated language for emphasis. It conveys serious concern about another person\'s negative reaction.',
+      meaning_ko: '누군가가 청자에 대해 극도로 화나거나 화난다는 극적이고 과장된 경고입니다. 이 표현은 강조를 위해 과장된 언어를 사용합니다. 그것은 다른 사람의 부정적인 반응에 대한 심각한 우려를 전달합니다.',
+      example: 'A: "I\'m going to tell her the bad news." B: "Monica, she will kill you."',
+      example_ko: 'A: "난 그녀에게 나쁜 소식을 말할 거야." B: "Monica, 그건 너를 죽일 거야."',
+      context: 'Chandler dramatically warns Monica that Rachel will be furious about shopping with Julie.',
+      context_ko: 'Chandler은 Monica에게 Rachel이 Julie와 쇼핑하는 것에 대해 분노할 것이라고 극적으로 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X6'
+    },
+    {
+      phrase: 'Yeah, it\'s actually not that big a deal.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement downplaying the importance or severity of something. The phrase uses minimization language to reduce significance. It conveys that something is less concerning than others might think.',
+      meaning_ko: '뭔가의 중요성이나 심각성을 경감하는 진술입니다. 이 표현은 최소화 언어를 사용하여 중요성을 줄입니다. 그것은 뭔가가 다른 사람들이 생각하는 것보다 덜 우려되고 있다는 것을 전달합니다.',
+      example: 'A: "Is this a big deal?" B: "Yeah, it\'s actually not that big a deal."',
+      example_ko: 'A: "이건 큰 일이야?" B: "응, 사실 그리 큰 일은 아니야."',
+      context: 'Rachel downplays the significance of Monica going shopping with Julie to avoid seeming petty.',
+      context_ko: 'Rachel은 Monica가 Julie와 쇼핑하는 것의 중요성을 경감하여 소소해 보이지 않으려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X7'
+    },
+    {
+      phrase: 'Nobody knows his name.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement indicating that someone is unknown or unidentified to a group. The phrase conveys anonymity or lack of introduction. It suggests the person has not yet been properly introduced to the community.',
+      meaning_ko: '누군가가 그룹에 알려지지 않거나 식별되지 않았다는 것을 나타내는 진술입니다. 이 표현은 익명성 또는 소개 부족을 전달합니다. 그것은 그 사람이 아직 공동체에 제대로 소개되지 않았다는 것을 시사합니다.',
+      example: 'A: "Who\'s the new employee?" B: "Nobody knows his name."',
+      example_ko: 'A: "새로운 직원이 누구야?" B: "아무도 그의 이름을 모르지."',
+      context: 'Joey tells Annabel that no one knows the name of the new cologne model.',
+      context_ko: 'Joey는 Annabel에게 아무도 새로운 향수 모델의 이름을 모른다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X8'
+    },
+    {
+      phrase: 'What\'s he doing in my section?',
+      partOfSpeech: 'question',
+      meaning: 'A question expressing concern or resentment about someone violating a boundary or territory. The phrase asserts ownership or authority over an area. It conveys territorial awareness and challenge to an intrusion.',
+      meaning_ko: '누군가가 경계 또는 영역을 침해하는 것에 대한 우려 또는 분개를 표현하는 질문입니다. 이 표현은 영역에 대한 소유권이나 권위를 주장합니다. 그것은 영역 인식과 침입에 대한 도전을 전달합니다.',
+      example: 'A: "The new guy is over here." B: "What\'s he doing in my section?"',
+      example_ko: 'A: "그 새로운 남자가 여기 있어." B: "그건 내 섹션에서 뭐하는 거야?"',
+      context: 'Joey questions why the new cologne model is in his territory at work.',
+      context_ko: 'Joey는 새로운 향수 모델이 직장에서 그의 영역에 있는 이유를 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X9'
+    },
+    {
+      phrase: 'Your territory, huh?',
+      partOfSpeech: 'question',
+      meaning: 'A questioning response challenging someone\'s claim of ownership or authority. The phrase expresses skepticism about territorial assertions. It suggests doubt or amusement at the speaker\'s presumption of control.',
+      meaning_ko: '소유권이나 권위에 대한 주장을 도전하는 질문 응답입니다. 이 표현은 영역적 주장에 대한 회의를 표현합니다. 그것은 화자의 통제 주장에 대한 의심이나 재미를 시사합니다.',
+      example: 'A: "This is my territory." B: "Your territory, huh?"',
+      example_ko: 'A: "이건 내 영역이야." B: "넌 영역이 있어? 정말?"',
+      context: 'The new model challenges Joey\'s territorial claim over his section.',
+      context_ko: '새로운 모델이 Joey의 그의 섹션에 대한 영역적 주장을 도전합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X10'
+    },
+    {
+      phrase: 'Phoebe, listen. You were with me.',
+      partOfSpeech: 'expression',
+      meaning: 'A directive statement enlisting someone to corroborate or confirm an alibi or story. The phrase is used to coach someone on what to claim. It conveys an attempt to create a false narrative for protective purposes.',
+      meaning_ko: '누군가가 별칭이나 이야기를 확인하거나 확인하도록 입대하는 지시 진술입니다. 이 표현은 주장할 것을 사람에게 코칭하는 데 사용됩니다. 그것은 보호 목적을 위해 거짓 내러티브를 만들려는 시도를 전달합니다.',
+      example: 'A: "I need you to back up my story." B: "Okay, you were with me."',
+      example_ko: 'A: "난 넌 내 이야기를 지지해 줄 필요가 있어." B: "응, 넌 나와 함께였어."',
+      context: 'Monica coaches Phoebe to lie about her whereabouts so Rachel won\'t find out about shopping with Julie.',
+      context_ko: 'Monica는 Phoebe에게 Rachel이 Julie와 쇼핑한 것을 알아내지 못하도록 그녀의 행동을 거짓말하도록 코칭합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X11'
+    },
+    {
+      phrase: 'No wonder I don\'t feel full.',
+      partOfSpeech: 'expression',
+      meaning: 'A comment expressing sudden understanding or recognition of why something occurred. The phrase uses humorous logic to connect cause and effect. It conveys realization that explains a physical or emotional state.',
+      meaning_ko: '뭔가가 왜 발생했는지에 대한 갑작스러운 이해나 인식을 표현하는 의견입니다. 이 표현은 유머로운 논리를 사용하여 원인과 결과를 연결합니다. 그것은 신체적 또는 감정적 상태를 설명하는 깨달음을 전달합니다.',
+      example: 'A: "You had a salad for lunch." B: "No wonder I don\'t feel full."',
+      example_ko: 'A: "넌 점심으로 샐러드를 먹었어." B: "난 왜 나쁠까. 그렇긴 하지."',
+      context: 'Phoebe realizes why she doesn\'t feel satisfied after learning she only had a salad.',
+      context_ko: 'Phoebe는 그녀가 샐러드만 먹었다는 것을 알게 된 후 왜 그녀가 만족감을 느끼지 않는지 깨달습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X12'
+    },
+    {
+      phrase: 'We bought bras!',
+      partOfSpeech: 'expression',
+      meaning: 'An excited exclamation clarifying or correcting a previous misunderstanding. The phrase uses capitalization and emphasis to emphasize the correction. It conveys relief at clearing up confusion about a topic.',
+      meaning_ko: '이전의 오해를 명확히 하거나 수정하는 흥분된 감탄입니다. 이 표현은 대문자와 강조를 사용하여 수정을 강조합니다. 그것은 주제에 대한 혼란을 명확히 하는 것의 안도감을 전달합니다.',
+      example: 'A: "What did you buy?" B: "Boobs! No wait... We bought bras!"',
+      example_ko: 'A: "넌 뭘 샀어?" B: "가슴들! 아니다, 잠깐... 우리는 브래지어를 샀어!"',
+      context: 'Phoebe excitedly corrects her embarrassing slip-up about what she and Monica purchased.',
+      context_ko: 'Phoebe는 그녀와 Monica가 구매한 것에 대한 당황스러운 실수를 신나게 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X13'
+    },
+    {
+      phrase: 'Don\'t look so surprised. I\'m lovely.',
+      partOfSpeech: 'expression',
+      meaning: 'A humorous, self-confident statement asserting positive personal qualities. The phrase combines mock indignation with self-praise. It conveys playful assurance that the speaker has admirable traits despite others\' skepticism.',
+      meaning_ko: '긍정적인 개인 특성을 주장하는 유머로운, 자신 있는 진술입니다. 이 표현은 모욕감을 조롱과 자기 칭찬으로 결합합니다. 그것은 다른 사람들의 회의에도 불구하고 화자가 칭찬받을 만한 특성을 가지고 있다는 장난스러운 확신을 전달합니다.',
+      example: 'A: "You\'re good with kids?" B: "Don\'t look so surprised. I\'m lovely."',
+      example_ko: 'A: "넌 아이들과 좋아?" B: "그렇게 놀라지 마. 난 좋아."',
+      context: 'Ross playfully defends himself when people seem surprised he\'s good with Ben.',
+      context_ko: 'Ross는 사람들이 그가 Ben과 좋아하는 것을 놀라워할 때 자신을 장난스럽게 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X14'
+    },
+    {
+      phrase: 'Duh, I think I know how to heat breast milk.',
+      partOfSpeech: 'expression',
+      meaning: 'A sarcastic statement expressing annoyance at being questioned about something the speaker considers obvious or within their competence. The phrase uses "duh" for dismissive emphasis. It conveys mild irritation at being second-guessed about capabilities.',
+      meaning_ko: '화자가 명백하거나 그들의 능력 내에 있다고 생각하는 것에 대해 묻는 것에 대한 짜증을 표현하는 풍자적 진술입니다. 이 표현은 "당연하지"를 경멸적 강조를 위해 사용합니다. 그것은 능력에 대해 의심받는 것에 대한 경미한 짜증을 전달합니다.',
+      example: 'A: "You\'re sure you can do that?" B: "Duh, I think I know how to do this."',
+      example_ko: 'A: "넌 그 일을 할 수 있어?" B: "당연하지, 난 이 일을 하는 방법을 알아."',
+      context: 'Phoebe responds with sarcasm when Carol questions if she knows how to heat breast milk.',
+      context_ko: 'Phoebe는 Carol이 그녀가 모유를 데우는 방법을 알고 있는지 질문할 때 풍자로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E2X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
