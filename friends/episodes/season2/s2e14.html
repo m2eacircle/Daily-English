@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e14.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E14: Season 2, Episode 14</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E14: The One with the Bracelet</div>
+        <div class="page-header-meta">Joey gives Monica money from acting job. Phoebe introduces "lobster" soulmate theory. Rachel's parents separate. Monica's awkward job interview.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e14"
             onclick="toggleBookmark('episode','episode-friends-s2e14','📋 Friends S2E14','friends/episodes/season2/s2e14.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 14',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Bracelet',
+    description: 'Joey gives Monica money from acting job. Phoebe introduces "lobster" soulmate theory. Rachel\'s parents separate. Monica\'s awkward job interview.',
+    expressions: [
+    {
+      phrase: 'I\'m making money now.',
+      partOfSpeech: 'achievement',
+      meaning: 'A proud declaration of earning income from newfound success. The phrase conveys personal progress and financial independence. It demonstrates adult milestone realization.',
+      meaning_ko: '새로운 성공으로부터 수입을 얻는 자랑스러운 선언입니다. 이 표현은 개인적 진전과 재정적 독립성을 전달합니다. 그것은 성인 마일스톤 실현을 보여줍니다.',
+      example: 'A: "Where\'s this money from?" B: "I\'m making money now."',
+      example_ko: 'A: "이 돈은 어디서 왔어?" B: "난 이제 돈을 벌고 있어."',
+      context: 'Joey explains his newfound earnings from acting job.',
+      context_ko: 'Joey는 연기 일자리에서 새로 얻은 수입을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X1'
+    },
+    {
+      phrase: 'Now I can get my pony.',
+      partOfSpeech: 'humor',
+      meaning: 'A humorous remark about buying unnecessary luxury item with unexpected money. The phrase conveys childlike materialism and misplaced priorities. It demonstrates comedic response to money.',
+      meaning_ko: '예상치 못한 돈으로 불필요한 사치 물품을 사는 것에 대한 유머러스한 발언입니다. 이 표현은 어린아이 같은 물질주의와 잘못된 우선순위를 전달합니다. 그것은 돈에 대한 코미디 반응을 보여줍니다.',
+      example: 'A: "What will you do with it?" B: "Now I can get my pony."',
+      example_ko: 'A: "넌 뭘 할 거야?" B: "이제 난 내 조랑말을 살 수 있어."',
+      context: 'Chandler jokes about frivolous purchases after getting loan.',
+      context_ko: 'Chandler는 돈을 받은 후 무분별한 구매에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X2'
+    },
+    {
+      phrase: 'It\'s engraved. To my best bud.',
+      partOfSpeech: 'sentiment',
+      meaning: 'A personalized gift inscription conveying deep friendship affection. The phrase demonstrates sentimental value and meaningful gesture. It conveys emotional commitment.',
+      meaning_ko: '깊은 우정 애정을 전달하는 개인화된 선물 비문입니다. 이 표현은 정서적 가치와 의미 있는 제스처를 보여줍니다. 그것은 감정적 헌신을 전달합니다.',
+      example: 'A: "Nice bracelet." B: "It\'s engraved. To my best bud."',
+      example_ko: 'A: "좋은 팔찌네." B: "그것은 각인되어 있어. 내 가장 친한 친구에게."',
+      context: 'Joey reveals the personalized engraving on his bracelet.',
+      context_ko: 'Joey는 그의 팔찌에 개인화된 각인을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X3'
+    },
+    {
+      phrase: 'It goes with everything.',
+      partOfSpeech: 'claim',
+      meaning: 'An assertion that item\'s universal compatibility eliminates timing concerns. The phrase conveys confidence in product versatility. It demonstrates sales pitch mentality.',
+      meaning_ko: '항목의 범용적 호환성이 타이밍 우려를 제거한다는 주장입니다. 이 표현은 제품 다양성에 대한 자신감을 전달합니다. 그것은 판매 피치 사고를 보여줍니다.',
+      example: 'A: "Should I save this for a special occasion?" B: "It goes with everything."',
+      example_ko: 'A: "특별한 날을 위해 이걸 아껴야 해?" B: "그것은 모든 것과 어울려."',
+      context: 'Chandler persuades Joey to wear bracelet immediately.',
+      context_ko: 'Chandler는 Joey를 즉시 팔찌를 착용하도록 설득합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X4'
+    },
+    {
+      phrase: 'What are you doing while you\'re doing it?',
+      partOfSpeech: 'instruction',
+      meaning: 'An interviewer\'s request for narration during task execution for evaluation purposes. The phrase conveys unusual evaluation method. It demonstrates awkward communication dynamic.',
+      meaning_ko: '평가 목적을 위한 작업 실행 중 나레이션에 대한 인터뷰어의 요청입니다. 이 표현은 비정상적인 평가 방법을 전달합니다. 그것은 어색한 의사 소통 역학을 보여줍니다.',
+      example: 'A: "I\'m making a salad." B: "What are you doing while you\'re doing it?"',
+      example_ko: 'A: "난 샐러드를 만들고 있어." B: "넌 그걸 하면서 뭘 하고 있어?"',
+      context: 'Restaurant manager uses odd coaching technique during Monica\'s interview.',
+      context_ko: '레스토랑 매니저는 Monica의 면접 중에 이상한 코칭 기술을 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X5'
+    },
+    {
+      phrase: 'Don\'t. I like it dirty.',
+      partOfSpeech: 'suggestion',
+      meaning: 'A sexually suggestive interruption during cooking instruction creating misunderstanding. The phrase conveys double entendre and awkward innuendo. It demonstrates uncomfortable flirtation.',
+      meaning_ko: '요리 지침 중 성적으로 암시적인 중단으로 오해를 만듭니다. 이 표현은 이중의 의미와 어색한 암시를 전달합니다. 그것은 불편한 작업을 보여줍니다.',
+      example: 'A: "I\'ll wash the lettuce." B: "Don\'t. I like it dirty."',
+      example_ko: 'A: "난 샐러드를 씻겠어." B: "하지 마. 난 더러운 걸 좋아해."',
+      context: 'Manager makes inappropriate sexual innuendo during interview.',
+      context_ko: '매니저는 면접 중에 부적절한 성적 암시를 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X6'
+    },
+    {
+      phrase: 'I\'m out of here!',
+      partOfSpeech: 'departure',
+      meaning: 'An abrupt announcement of leaving situation due to discomfort or offense. The phrase conveys immediate decision-making and boundary enforcement. It demonstrates self-respect priority.',
+      meaning_ko: '불편함 또는 모욕으로 인한 상황을 떠나는 갑작스러운 공지입니다. 이 표현은 즉각적인 의사 결정과 경계 강화를 전달합니다. 그것은 자존감 우선순위를 보여줍니다.',
+      example: 'A: "Are you uncomfortable?" B: "I\'m out of here!"',
+      example_ko: 'A: "넌 불편해?" B: "난 나갈 거야!"',
+      context: 'Monica walks out on inappropriate job interview.',
+      context_ko: 'Monica는 부적절한 일자리 면접을 걷어찬다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X7'
+    },
+    {
+      phrase: 'She\'s your lobster.',
+      partOfSpeech: 'metaphor',
+      meaning: 'A romantic philosophy declaring soulmate connection using marine animal analogy. The phrase conveys quirky relationship theory. It demonstrates unconventional love expression.',
+      meaning_ko: '해양 동물 비유를 사용하는 소울메이트 연결을 선언하는 로맨틱한 철학입니다. 이 표현은 기발한 관계 이론을 전달합니다. 그것은 비정통적인 사랑 표현을 보여줍니다.',
+      example: 'A: "Will Rachel like me?" B: "She\'s your lobster."',
+      example_ko: 'A: "Rachel이 나를 좋아할까?" B: "그녀는 너의 바닷가재야."',
+      context: 'Phoebe explains her lobster soulmate theory to Ross.',
+      context_ko: 'Phoebe는 그녀의 바닷가재 소울메이트 이론을 Ross에게 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X8'
+    },
+    {
+      phrase: 'Lobsters fall in love and mate for life.',
+      partOfSpeech: 'fact',
+      meaning: 'A claimed zoological fact about lobster reproductive and bonding behavior. The phrase conveys biological justification for romantic theory. It demonstrates quirky knowledge application.',
+      meaning_ko: '바닷가재 번식 및 결합 행동에 대한 주장된 동물학적 사실입니다. 이 표현은 로맨틱한 이론에 대한 생물학적 정당성을 전달합니다. 그것은 기발한 지식 적용을 보여줍니다.',
+      example: 'A: "Why lobsters?" B: "Lobsters fall in love and mate for life."',
+      example_ko: 'A: "왜 바닷가재?" B: "바닷가재는 사랑에 빠져 평생 짝짓기해."',
+      context: 'Phoebe justifies her lobster theory with marine biology.',
+      context_ko: 'Phoebe는 해양 생물학으로 바닷가재 이론을 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X9'
+    },
+    {
+      phrase: 'Two months ago, Rachel and I were this close.',
+      partOfSpeech: 'lament',
+      meaning: 'A regretful measurement of romantic progress regression indicating previous intimacy. The phrase conveys relationship distance frustration. It demonstrates emotional disappointment.',
+      meaning_ko: '이전의 친밀함을 나타내는 로맨틱한 진전 후퇴를 측정한 후회입니다. 이 표현은 관계 거리 좌절감을 전달합니다. 그것은 정서적 실망을 보여줍니다.',
+      example: 'A: "Why are you upset?" B: "Two months ago, Rachel and I were this close."',
+      example_ko: 'A: "넌 왜 화났어?" B: "2달 전에 Rachel과 난 이 정도로 가까웠어."',
+      context: 'Ross expresses frustration about romantic distance from Rachel.',
+      context_ko: 'Ross는 Rachel로부터의 로맨틱한 거리에 대한 좌절감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X10'
+    },
+    {
+      phrase: 'I\'m taking messages from guys she meets.',
+      partOfSpeech: 'resentment',
+      meaning: 'A complaint about role reversal from suitor to intermediary in romantic pursuit. The phrase conveys role inversion frustration. It demonstrates indirect rejection processing.',
+      meaning_ko: '로맨틱한 추구에서 구혼자에서 중개인으로의 역할 반전에 대한 불만입니다. 이 표현은 역할 반전 좌절감을 전달합니다. 그것은 간접 거부 처리를 보여줍니다.',
+      example: 'A: "Why are you upset?" B: "I\'m taking messages from guys she meets."',
+      example_ko: 'A: "넌 왜 화났어?" B: "난 그녀가 만나는 남자들로부터 메시지를 받고 있어."',
+      context: 'Ross complains about being messenger between Rachel and Casey.',
+      context_ko: 'Ross는 Rachel과 Casey 사이의 메신저가 되는 것에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X11'
+    },
+    {
+      phrase: 'You can actually see old lobster couples.',
+      partOfSpeech: 'example',
+      meaning: 'An illustration of romantic bonding using real animal observation. The phrase conveys empirical evidence for unconventional theory. It demonstrates persuasive storytelling.',
+      meaning_ko: '실제 동물 관찰을 사용한 로맨틱한 결합의 그림입니다. 이 표현은 비정통적인 이론에 대한 경험적 증거를 전달합니다. 그것은 설득력 있는 이야기를 보여줍니다.',
+      example: 'A: "Is that really true?" B: "You can actually see old lobster couples."',
+      example_ko: 'A: "그게 정말 사실이야?" B: "넌 실제로 늙은 바닷가재 부부를 볼 수 있어."',
+      context: 'Phoebe provides observational proof of lobster lifelong bonding.',
+      context_ko: 'Phoebe는 바닷가재 평생 결합의 관찰 증거를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X12'
+    },
+    {
+      phrase: 'We\'re turning your room into a gym.',
+      partOfSpeech: 'announcement',
+      meaning: 'A major decision declaration regarding home renovation without prior consultation. The phrase conveys parental unilateral action. It demonstrates dismissive child autonomy.',
+      meaning_ko: '사전 협의 없이 가정 개조에 대한 주요 결정 선언입니다. 이 표현은 부모의 일방적인 행동을 전달합니다. 그것은 자율성 무시를 보여줍니다.',
+      example: 'A: "Any changes at home?" B: "We\'re turning your room into a gym."',
+      example_ko: 'A: "집에서 변화가 있어?" B: "우리는 너의 방을 체육관으로 만들고 있어."',
+      context: 'Monica\'s parents announce they\'re repurposing her childhood bedroom.',
+      context_ko: 'Monica의 부모는 그들이 그녀의 어린 시절 침실을 재용도하고 있다고 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X13'
+    },
+    {
+      phrase: 'God forbid!',
+      partOfSpeech: 'sarcasm',
+      meaning: 'A sarcastic exclamation expressing mock horror about disturbing Ross\'s trophies. The phrase conveys bitter irony and sibling rivalry. It demonstrates passive-aggressive response.',
+      meaning_ko: 'Ross의 트로피를 방해하는 것에 대한 조롱된 공포를 표현하는 풍자적 감탄입니다. 이 표현은 쓸쓸한 아이러니와 형제 경쟁을 전달합니다. 그것은 수동적-공격적 반응을 보여줍니다.',
+      example: 'A: "We didn\'t want to disturb his trophies." B: "God forbid!"',
+      example_ko: 'A: "우리는 그의 트로피를 방해하고 싶지 않았어." B: "맙소사!"',
+      context: 'Monica sarcastically reacts to parents protecting Ross\'s room.',
+      context_ko: 'Monica는 부모가 Ross의 방을 보호하는 것에 풍자적으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X14'
+    },
+    {
+      phrase: 'I am not yours to save.',
+      partOfSpeech: 'boundary',
+      meaning: 'A firm assertion of autonomy rejecting presumed romantic ownership claim. The phrase conveys independence demand and relationship boundary. It demonstrates self-determination emphasis.',
+      meaning_ko: '예상된 로맨틱한 소유권 주장을 거부하는 자율성의 단호한 주장입니다. 이 표현은 독립성 요구와 관계 경계를 전달합니다. 그것은 자결 강조를 보여줍니다.',
+      example: 'A: "I\'m saving you from him." B: "I am not yours to save."',
+      example_ko: 'A: "난 너를 그 남자로부터 구하고 있어." B: "난 너가 구하는 것이 아니야."',
+      context: 'Rachel rejects Ross\'s paternalistic intervention in her dating.',
+      context_ko: 'Rachel은 Rachel의 데이트에 대한 Ross의 부족적 개입을 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E14X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
