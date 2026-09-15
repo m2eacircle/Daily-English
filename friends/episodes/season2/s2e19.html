@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e19.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E19: Season 2, Episode 19</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E19: The One with the Bullies</div>
+        <div class="page-header-meta">Chandler gets fired by Joey. Eddie's creepy roommate behavior. Rachel discovers empowerment book. Monica gains independence. Friendship conflicts.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e19"
             onclick="toggleBookmark('episode','episode-friends-s2e19','📋 Friends S2E19','friends/episodes/season2/s2e19.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 19',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Bullies',
+    description: 'Chandler gets fired by Joey. Eddie\'s creepy roommate behavior. Rachel discovers empowerment book. Monica gains independence. Friendship conflicts.',
+    expressions: [
+    {
+      phrase: 'Watching you sleep.',
+      partOfSpeech: 'revelation',
+      meaning: 'A disturbing disclosure of surreptitious nighttime surveillance of sleeping roommate. The phrase conveys creepy invasion of privacy. It demonstrates deeply inappropriate behavior.',
+      meaning_ko: '자고 있는 룸메이트의 은밀한 야간 감시의 불안한 공개입니다. 이 표현은 불쾌한 프라이버시 침해를 전달합니다. 그것은 깊이 부적절한 행동을 보여줍니다.',
+      example: 'A: "What are you doing here?" B: "Watching you sleep."',
+      example_ko: 'A: "넌 여기서 뭐 하는 거야?" B: "넌 자는 걸 보고 있었어."',
+      context: 'Eddie admits to watching Chandler sleep at night.',
+      context_ko: 'Eddie는 밤에 Chandler가 자는 걸 본 것을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X1'
+    },
+    {
+      phrase: 'It makes me feel peaceful.',
+      partOfSpeech: 'justification',
+      meaning: 'An alarming self-justification rationalizing voyeuristic behavior through emotional benefit claim. The phrase conveys deeply disturbing reasoning. It demonstrates rationalization of abuse.',
+      meaning_ko: '감정적 이익 청구를 통해 관음증적 행동을 합리화하는 경보하는 자기 정당화입니다. 이 표현은 깊이 불안한 추론을 전달합니다. 그것은 학대의 합리화를 보여줍니다.',
+      example: 'A: "Why watch me sleep?" B: "It makes me feel peaceful."',
+      example_ko: 'A: "왜 날 자면서 봐?" B: "그건 날 평화롭게 느끼게 해."',
+      context: 'Eddie justifies invasive roommate surveillance.',
+      context_ko: 'Eddie는 침해적인 룸메이트 감시를 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X2'
+    },
+    {
+      phrase: 'I can\'t sleep now!',
+      partOfSpeech: 'reaction',
+      meaning: 'An exasperated response expressing complete loss of ability to sleep after unsettling discovery. The phrase conveys disturbance and frustration. It demonstrates understandable upset.',
+      meaning_ko: '불안한 발견 후 수면 능력의 완전한 손실을 표현하는 답답한 반응입니다. 이 표현은 방해와 답답함을 전달합니다. 그것은 이해할 수 있는 화를 보여줍니다.',
+      example: 'A: "I was watching you sleep." B: "I can\'t sleep now!"',
+      example_ko: 'A: "난 넌 자는 걸 봤어." B: "난 지금 잘 수 없어!"',
+      context: 'Chandler panics about Eddie\'s creepy surveillance.',
+      context_ko: 'Chandler는 Eddie의 불쾌한 감시를 패닉합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X3'
+    },
+    {
+      phrase: 'Hannibal Lecter? Better roommate than you.',
+      partOfSpeech: 'insult',
+      meaning: 'A cutting comparison to fictional cannibal serial killer to judge roommate negatively. The phrase conveys extreme dissatisfaction. It demonstrates harsh rejection.',
+      meaning_ko: '룸메이트를 부정적으로 판단하기 위해 허구의 식인 연쇄살인마와의 절단 비교입니다. 이 표현은 극단적인 불만족을 전달합니다. 그것은 가혹한 거부를 보여줍니다.',
+      example: 'A: "Am I that bad?" B: "Hannibal Lecter? Better roommate than you."',
+      example_ko: 'A: "난 그렇게 나빠?" B: "Hannibal Lecter? 너보다 나은 룸메이트."',
+      context: 'Chandler compares Eddie to notorious fictional villain.',
+      context_ko: 'Chandler는 Eddie를 악명높은 허구 악당과 비교합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X4'
+    },
+    {
+      phrase: 'I was nice enough to hide behind the door.',
+      partOfSpeech: 'boast',
+      meaning: 'A twisted self-congratulation for hiding during roommate\'s nighttime bathroom visit. The phrase conveys disturbing pride in predatory behavior. It demonstrates alarming self-awareness gap.',
+      meaning_ko: '룸메이트의 야간 욕실 방문 중 숨는 것에 대한 왜곡된 자기 축하입니다. 이 표현은 포식 행동에 대한 불안한 자부심을 전달합니다. 그것은 경보 자기 인식 격차를 보여줍니다.',
+      example: 'A: "You hid in the bathroom?" B: "I was nice enough to hide behind the door."',
+      example_ko: 'A: "넌 욕실에 숨었어?" B: "난 문 뒤에 숨을 충분히 친절했어."',
+      context: 'Eddie brags about additional stalking incidents.',
+      context_ko: 'Eddie는 추가 스토킹 사건을 자랑합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X5'
+    },
+    {
+      phrase: 'I want to hear it from your lips.',
+      partOfSpeech: 'demand',
+      meaning: 'A manipulative insistence on hearing roommate verbally expel him directly. The phrase conveys emotional control and power play. It demonstrates controlling behavior.',
+      meaning_ko: '룸메이트가 직접 그를 언어로 추방하는 것을 들을 것에 대한 조작적인 주장입니다. 이 표현은 감정적 통제와 권력 게임을 전달합니다. 그것은 통제적인 행동을 보여줍니다.',
+      example: 'A: "Just leave!" B: "I want to hear it from your lips."',
+      example_ko: 'A: "그냥 가!" B: "난 너의 입에서 그걸 듣고 싶어."',
+      context: 'Eddie manipulates Chandler to say the words directly.',
+      context_ko: 'Eddie는 Chandler를 조작하여 단어를 직접 말하도록 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X6'
+    },
+    {
+      phrase: 'Be Your Own Wind Keeper.',
+      partOfSpeech: 'reference',
+      meaning: 'A book title emphasizing female empowerment and reclaiming personal power metaphorically. The phrase conveys feminist self-help messaging. It demonstrates contemporary empowerment literature.',
+      meaning_ko: '여성 권력 위임과 개인적 힘을 은유적으로 회수하는 것을 강조하는 책 제목입니다. 이 표현은 페미니스트 자조 메시징을 전달합니다. 그것은 현대 권력 위임 문학을 보여줍니다.',
+      example: 'A: "What\'s this book?" B: "Be Your Own Wind Keeper."',
+      example_ko: 'A: "이 책이 뭐야?" B: "Be Your Own Wind Keeper."',
+      context: 'Phoebe excitedly shares empowerment book discovery.',
+      context_ko: 'Phoebe는 흥분하여 권력 위임 책 발견을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X7'
+    },
+    {
+      phrase: 'Men just take our wind.',
+      partOfSpeech: 'metaphor',
+      meaning: 'A metaphorical accusation that men usurp women\'s personal power and agency. The phrase conveys feminist critique of gender dynamics. It demonstrates patriarchal power analysis.',
+      meaning_ko: '남자들이 여자의 개인적 힘과 대리를 빼앗는다는 은유적 고발입니다. 이 표현은 성 역학의 페미니스트 비판을 전달합니다. 그것은 부족적 권력 분석을 보여줍니다.',
+      example: 'A: "What does the book teach?" B: "Men just take our wind."',
+      example_ko: 'A: "그 책은 뭘 가르쳐?" B: "남자들은 그냥 우리 바람을 가져가."',
+      context: 'Phoebe explains book\'s central feminist message.',
+      context_ko: 'Phoebe는 책의 중앙 페미니스트 메시지를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X8'
+    },
+    {
+      phrase: 'They are the lightning-bearers.',
+      partOfSpeech: 'metaphor',
+      meaning: 'A metaphorical description of men as powerful mythological beings controlling energy force. The phrase conveys poetic feminist analysis. It demonstrates book\'s symbolic language.',
+      meaning_ko: '남자를 강력한 신화적 존재로 에너지 힘을 제어하는 은유적 설명입니다. 이 표현은 시적 페미니스트 분석을 전달합니다. 그것은 책의 상징적 언어를 보여줍니다.',
+      example: 'A: "Why are men powerful?" B: "They are the lightning-bearers."',
+      example_ko: 'A: "왜 남자들이 강력해?" B: "그들은 lightning-bearers야."',
+      context: 'Phoebe continues explaining book\'s mystical metaphors.',
+      context_ko: 'Phoebe는 책의 신비로운 은유를 계속 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X9'
+    },
+    {
+      phrase: 'Taking a step backwards.',
+      partOfSpeech: 'setback',
+      meaning: 'A negative career progression from lead television role to minor acting part. The phrase conveys professional regression and disappointed expectations. It demonstrates career frustration.',
+      meaning_ko: '주요 텔레비전 역할에서 사소한 연기 부분으로의 부정적 경력 진행입니다. 이 표현은 직업 회귀와 실망한 기대를 전달합니다. 그것은 경력 답답함을 보여줍니다.',
+      example: 'A: "Should I take the cab driver role?" B: "That\'s taking a step backwards."',
+      example_ko: 'A: "내가 택시 운전기사 역할을 해야 할까?" B: "그건 한 발 뒤로 가는 것이야."',
+      context: 'Joey expresses reluctance about career downgrade.',
+      context_ko: 'Joey는 경력 하향 조정에 대한 꺼림을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X10'
+    },
+    {
+      phrase: 'Roll with them.',
+      partOfSpeech: 'advice',
+      meaning: 'An instructional phrase encouraging acceptance and flexibility with unexpected circumstances. The phrase conveys pragmatic wisdom. It demonstrates adaptability philosophy.',
+      meaning_ko: '예기치 않은 상황과의 수용과 유연성을 권장하는 지시 문구입니다. 이 표현은 실용적 지혜를 전달합니다. 그것은 적응성 철학을 보여줍니다.',
+      example: 'A: "Everything\'s changed." B: "Roll with them."',
+      example_ko: 'A: "모든 게 바뀌었어." B: "그들과 함께 굴러가."',
+      context: 'Agent advises Joey to accept available work.',
+      context_ko: '에이전트는 Joey가 가능한 일을 받아들이도록 조언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X11'
+    },
+    {
+      phrase: 'You go, girl!',
+      partOfSpeech: 'encouragement',
+      meaning: 'An enthusiastic endorsement celebrating assertiveness and empowered feminine expression. The phrase conveys support for boundary-setting. It demonstrates feminist solidarity.',
+      meaning_ko: '단호함과 권력을 위임받은 여성 표현을 축하하는 열정적 승인입니다. 이 표현은 경계 설정에 대한 지원을 전달합니다. 그것은 페미니스트 연대를 보여줍니다.',
+      example: 'A: "I won\'t do what you say!" B: "You go, girl!"',
+      example_ko: 'A: "난 넌 말대로 하지 않을 거야!" B: "화이팅, 여자!"',
+      context: 'Phoebe excitedly encourages Rachel\'s empowerment rebellion.',
+      context_ko: 'Phoebe는 흥분하여 Rachel의 권력 위임 반란을 격려합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X12'
+    },
+    {
+      phrase: 'How do you expect me to grow if you won\'t let me blow?',
+      partOfSpeech: 'metaphor',
+      meaning: 'A wind metaphor expressing frustration about personal agency restriction in relationship. The phrase conveys need for individual autonomy. It demonstrates feminist relationship critique.',
+      meaning_ko: '관계에서 개인적 대리 제한에 대한 좌절감을 표현하는 바람 은유입니다. 이 표현은 개인 자율성의 필요성을 전달합니다. 그것은 페미니스트 관계 비판을 보여줍니다.',
+      example: 'A: "Why are you upset?" B: "How do you expect me to grow if you won\'t let me blow?"',
+      example_ko: 'A: "왜 화났어?" B: "넌 날 불도록 하지 않으면 난 어떻게 자라?"',
+      context: 'Rachel expresses relationship power-balance frustration.',
+      context_ko: 'Rachel은 관계 권력 균형 좌절감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X13'
+    },
+    {
+      phrase: 'I just really need to be with myself right now.',
+      partOfSpeech: 'boundary',
+      meaning: 'A self-focused statement asserting need for solitary personal reflection and independence. The phrase conveys priority of individual wellbeing. It demonstrates healthy boundary-setting.',
+      meaning_ko: '독창적인 개인 반영과 독립성의 필요성을 주장하는 자기 중심 진술입니다. 이 표현은 개인 웰빙의 우선 순위를 전달합니다. 그것은 건강한 경계 설정을 보여줍니다.',
+      example: 'A: "Don\'t you want to spend time with me?" B: "I just really need to be with myself right now."',
+      example_ko: 'A: "넌 날 만날 시간을 원하지 않아?" B: "난 지금 자기 자신과 있을 필요가 정말 있어."',
+      context: 'Rachel prioritizes personal empowerment over romance.',
+      context_ko: 'Rachel은 로맨스보다 개인 권력 위임을 우선시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X14'
+    },
+    {
+      phrase: 'Suck it up, man.',
+      partOfSpeech: 'command',
+      meaning: 'A blunt instruction to accept undesirable circumstances without complaint. The phrase conveys tough-love pragmatism. It demonstrates stoic acceptance philosophy.',
+      meaning_ko: '불만 없이 불리한 상황을 받아들이는 무뚝뚝한 지시입니다. 이 표현은 강철 같은 실용주의를 전달합니다. 그것은 스토아적 수용 철학을 보여줍니다.',
+      example: 'A: "I don\'t want this job." B: "Suck it up, man."',
+      example_ko: 'A: "난 이 일을 원하지 않아." B: "참고 받아들여, 친구."',
+      context: 'Chandler gives Joey tough-love career advice.',
+      context_ko: 'Chandler는 Joey에게 강철 같은 사랑 경력 조언을 줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E19X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
