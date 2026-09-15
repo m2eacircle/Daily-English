@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e11.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E11: Season 2, Episode 11</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E11: The One with Two Parts</div>
+        <div class="page-header-meta">Carol and Susan's wedding. Joey's soap opera debut. Phoebe's spiritual encounter. Rachel's mother visits.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e11"
             onclick="toggleBookmark('episode','episode-friends-s2e11','📋 Friends S2E11','friends/episodes/season2/s2e11.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 11',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Two Parts',
+    description: 'Carol and Susan\'s wedding. Joey\'s soap opera debut. Phoebe\'s spiritual encounter. Rachel\'s mother visits.',
+    expressions: [
+    {
+      phrase: 'We\'re getting married.',
+      partOfSpeech: 'announcement',
+      meaning: 'A formal declaration of commitment between two people preparing to wed. The phrase conveys major life decision. It demonstrates openness about same-sex relationship within family context.',
+      meaning_ko: '결혼할 준비를 하는 두 사람 사이의 헌신 공식 선언입니다. 이 표현은 주요 인생 결정을 전달합니다. 그것은 가족 맥락 내에서 동성 관계에 대한 개방성을 보여줍니다.',
+      example: 'A: "What\'s your news?" B: "We\'re getting married."',
+      example_ko: 'A: "너의 뉴스는 뭐야?" B: "우리 결혼할 거야."',
+      context: 'Ross announces Carol and Susan\'s wedding plans to the group.',
+      context_ko: 'Ross는 Carol과 Susan의 결혼 계획을 그룹에 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X1'
+    },
+    {
+      phrase: 'Wife and wife married?',
+      partOfSpeech: 'question',
+      meaning: 'A clarification seeking confirmation about same-sex marriage terminology and concept. The phrase uses wordplay with repetition. It conveys surprise and acceptance through literal language.',
+      meaning_ko: '동성 결혼 용어와 개념에 대한 확인을 추구하는 명확화입니다. 이 표현은 반복으로 말장난을 사용합니다. 그것은 문자적 언어를 통해 놀라움과 수용을 전달합니다.',
+      example: 'A: "Carol and Susan are getting married." B: "Wife and wife married?"',
+      example_ko: 'A: "Carol과 Susan이 결혼할 거야." B: "아내와 아내가 결혼해?"',
+      context: 'Rachel seeks clarification about Carol and Susan\'s same-sex marriage ceremony.',
+      context_ko: 'Rachel은 Carol과 Susan의 동성 결혼식에 대한 명확화를 추구합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X2'
+    },
+    {
+      phrase: 'I had fun at the first wedding.',
+      partOfSpeech: 'defense',
+      meaning: 'A positive reference to previous attendance at earlier wedding celebration. The phrase expresses willingness to attend current celebration. It conveys acceptance of relationship progression.',
+      meaning_ko: '이전 결혼식 축하 행사에 대한 이전 참석에 대한 긍정적 참조입니다. 이 표현은 현재 축하식에 참석할 의지를 표현합니다. 그것은 관계 진행에 대한 수용을 전달합니다.',
+      example: 'A: "Will you come to the ceremony?" B: "I had fun at the first wedding."',
+      example_ko: 'A: "넌 식에 올래?" B: "난 첫 번째 결혼식에서 즐거웠어."',
+      context: 'Ross reassures Carol and Susan he will attend their wedding ceremony.',
+      context_ko: 'Ross는 Carol과 Susan에게 그들의 결혼식에 참석할 것이라고 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X3'
+    },
+    {
+      phrase: 'I\'m reveling in your joy.',
+      partOfSpeech: 'expression',
+      meaning: 'A statement of sharing and celebrating someone else\'s happiness and emotional fulfillment. The phrase conveys genuine support. It demonstrates enthusiasm despite personal reservations.',
+      meaning_ko: '다른 사람의 행복과 감정적 성취를 공유하고 축하하는 진술입니다. 이 표현은 진정한 지원을 전달합니다. 그것은 개인적 보류에도 불구하고 열정을 보여줍니다.',
+      example: 'A: "I appreciate your support." B: "I\'m reveling in your joy."',
+      example_ko: 'A: "난 당신의 지원을 감사해." B: "난 당신의 기쁨에 기뻐하고 있어."',
+      context: 'Ross exaggerates his enthusiasm about Carol and Susan\'s wedding.',
+      context_ko: 'Ross는 Carol과 Susan의 결혼식에 대한 그의 열정을 과장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X4'
+    },
+    {
+      phrase: 'These are the days of our lives.',
+      partOfSpeech: 'observation',
+      meaning: 'A philosophical reflection on show title coinciding with real-life meaning. The phrase uses wordplay about television show name. It conveys appreciation for life moment happening simultaneously.',
+      meaning_ko: '쇼 제목이 실생활 의미와 일치하는 철학적 성찰입니다. 이 표현은 텔레비전 쇼 이름에 대한 말장난을 사용합니다. 그것은 동시에 발생하는 인생 순간에 대한 감상을 전달합니다.',
+      example: 'A: "You\'re on TV." B: "These are the days of our lives."',
+      example_ko: 'A: "넌 TV에 나왔어." B: "이건 우리 인생의 날들이야."',
+      context: 'Joey has an epiphany connecting his soap opera role to real life.',
+      context_ko: 'Joey는 그의 비누 오페라 역할을 실생활과 연결하는 깨달음을 얻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X5'
+    },
+    {
+      phrase: 'Smell-the-fart acting.',
+      partOfSpeech: 'acting-technique',
+      meaning: 'A soap opera acting technique involving exaggerated pause for dramatic effect. The phrase describes specific theatrical mannerism. It conveys humorous criticism of melodramatic performance style.',
+      meaning_ko: '극적 효과를 위해 과장된 일시 중지를 포함하는 비누 오페라 연기 기법입니다. 이 표현은 특정 극적 매너리즘을 설명합니다. 그것은 멜로드라마틱 공연 스타일에 대한 유머로운 비판을 전달합니다.',
+      example: 'A: "What\'s your acting technique?" B: "Smell-the-fart acting."',
+      example_ko: 'A: "너의 연기 기법은 뭐야?" B: "Smell-the-fart 연기."',
+      context: 'Joey\'s co-star teaches him about soap opera acting conventions.',
+      context_ko: 'Joey의 공동 주연은 그에게 비누 오페라 연기 관습에 대해 가르칩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X6'
+    },
+    {
+      phrase: 'One of my clients died today.',
+      partOfSpeech: 'disclosure',
+      meaning: 'A statement revealing occupational fatality occurring during professional service delivery. The phrase conveys grave and disturbing workplace incident. It demonstrates matter-of-fact delivery of significant event.',
+      meaning_ko: '전문 서비스 제공 중에 발생하는 직업 사망을 드러내는 진술입니다. 이 표현은 심각하고 불안한 직장 사건을 전달합니다. 그것은 중요한 사건의 사실적 전달을 보여줍니다.',
+      example: 'A: "How was work?" B: "One of my clients died today."',
+      example_ko: 'A: "일은 어땠어?" B: "오늘 내 고객 중 한 명이 죽었어."',
+      context: 'Phoebe reveals a client passed away during massage therapy.',
+      context_ko: 'Phoebe는 마사지 요법 중에 고객이 사망했다고 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X7'
+    },
+    {
+      phrase: 'I think her spirit went into me.',
+      partOfSpeech: 'supernatural-claim',
+      meaning: 'A statement claiming supernatural possession or spiritual transference of deceased person. The phrase describes spiritual belief about afterlife. It conveys Phoebe\'s mystical worldview.',
+      meaning_ko: '사망자의 초자연적 소유 또는 영적 이전에 대한 청구 진술입니다. 이 표현은 내세에 대한 영적 신념을 설명합니다. 그것은 Phoebe의 신비로운 세계관을 전달합니다.',
+      example: 'A: "Where is the spirit?" B: "I think her spirit went into me."',
+      example_ko: 'A: "영혼은 어디 있어?" B: "난 그녀의 영혼이 내 안으로 들어갔다고 생각해."',
+      context: 'Phoebe believes the deceased client\'s spirit has entered her body.',
+      context_ko: 'Phoebe는 사망한 고객의 영혼이 그녀의 몸에 들어갔다고 믿습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X8'
+    },
+    {
+      phrase: 'Well, lambs are scarier.',
+      partOfSpeech: 'humor',
+      meaning: 'A humorous assertion about animal threat level based on cultural reference. The phrase uses wordplay with movie title. It conveys comedic logic about which animal scares people more.',
+      meaning_ko: '문화적 참조를 기반으로 동물 위협 수준에 대한 유머러스한 주장입니다. 이 표현은 영화 제목으로 말장난을 사용합니다. 그것은 어떤 동물이 사람들을 더 두렵게 하는지에 대한 코미디 논리를 전달합니다.',
+      example: 'A: "Duck or lamb for dinner?" B: "Well, lambs are scarier."',
+      example_ko: 'A: "저녁으로 오리 또는 양?" B: "글쎄, 양이 더 무서워."',
+      context: 'Chandler jokes about menu choices while catering the wedding.',
+      context_ko: 'Chandler는 결혼식을 케이터링하면서 메뉴 선택에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X9'
+    },
+    {
+      phrase: 'The half-drunk cappuccino with lipstick.',
+      partOfSpeech: 'description',
+      meaning: 'A specific inventory item combining partially consumed beverage with cosmetic evidence. The phrase uses humorous detail to describe cafe debris. It conveys comedic observation about leftover order.',
+      meaning_ko: '부분적으로 소비된 음료와 화장품 증거를 결합하는 특정 인벤토리 항목입니다. 이 표현은 유머러스한 디테일을 사용하여 카페 잔해를 설명합니다. 그것은 남겨진 주문에 대한 코미디 관찰을 전달합니다.',
+      example: 'A: "What\'s this coffee?" B: "The half-drunk cappuccino with lipstick."',
+      example_ko: 'A: "이건 무슨 커피야?" B: "반만 마신 립스틱이 있는 카푸치노."',
+      context: 'Monica attempts to clear leftover cafe items while catering.',
+      context_ko: 'Monica는 케이터링하면서 남겨진 카페 항목을 정리하려고 시도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X10'
+    },
+    {
+      phrase: 'They already live together. Why marry?',
+      partOfSpeech: 'question',
+      meaning: 'A rhetorical inquiry questioning logical necessity of legal marriage ceremony. The phrase expresses skepticism about wedding institution. It conveys Chandler\'s initial resistance to same-sex relationship validation.',
+      meaning_ko: '법적 결혼 ceremony의 논리적 필요성에 의문을 제기하는 수사적 질문입니다. 이 표현은 결혼 제도에 대한 회의론을 표현합니다. 그것은 동성 관계 검증에 대한 Chandler의 초기 저항을 전달합니다.',
+      example: 'A: "Will you support the wedding?" B: "They already live together. Why marry?"',
+      example_ko: 'A: "넌 결혼식을 지원할 거야?" B: "그들은 이미 함께 살아. 왜 결혼해?"',
+      context: 'Chandler questions the necessity of Carol and Susan\'s wedding.',
+      context_ko: 'Chandler는 Carol과 Susan의 결혼식의 필요성을 의문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X11'
+    },
+    {
+      phrase: 'I\'m considering leaving your father.',
+      partOfSpeech: 'bombshell',
+      meaning: 'A stunning revelation of marital separation intention dropped on unsuspecting daughter. The phrase conveys shocking personal life disruption. It demonstrates independent life reassessment triggered by seeing daughter\'s choices.',
+      meaning_ko: '예상치 못한 딸에게 떨어진 결혼 분리 의도의 놀라운 공개입니다. 이 표현은 충격적인 개인 생활 중단을 전달합니다. 그것은 딸의 선택을 보는 것으로 촉발되는 독립적인 인생 재평가를 보여줍니다.',
+      example: 'A: "I\'m so proud of you." B: "I\'m considering leaving your father."',
+      example_ko: 'A: "난 너가 자랑스러워." B: "난 너의 아버지를 떠나는 것을 고려 중이야."',
+      context: 'Rachel\'s mother drops shocking news about leaving her husband.',
+      context_ko: 'Rachel의 어머니는 남편을 떠나는 것에 대한 충격적인 소식을 떨어뜨립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X12'
+    },
+    {
+      phrase: 'In my day, divorce was not an option.',
+      partOfSpeech: 'generational-statement',
+      meaning: 'A reflection on past cultural norms limiting marital dissolution rights. The phrase conveys generational difference in relationship expectations. It demonstrates how times have changed for women\'s autonomy.',
+      meaning_ko: '결혼 해산 권리를 제한하는 과거 문화 규범에 대한 성찰입니다. 이 표현은 관계 기대치의 세대 차이를 전달합니다. 그것은 여성의 자율성에 대한 시간이 어떻게 변했는지 보여줍니다.',
+      example: 'A: "Mom\'s leaving Dad." B: "In my day, divorce was not an option."',
+      example_ko: 'A: "Mom이 Dad를 떠나." B: "내 시대에는 이혼이 선택 사항이 아니었어."',
+      context: 'Older perspective on how marriage and divorce expectations have evolved.',
+      context_ko: '결혼 및 이혼 기대치가 어떻게 진화했는지에 대한 더 오래된 관점입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X13'
+    },
+    {
+      phrase: 'All parents got divorced.',
+      partOfSpeech: 'statement',
+      meaning: 'An observation about generational pattern of widespread parental separation. The phrase reflects personal experience of social normalization. It conveys ironic hope about escaping adult family disruption.',
+      meaning_ko: '광범위한 부모 분리의 세대 패턴에 대한 관찰입니다. 이 표현은 사회적 정상화의 개인적 경험을 반영합니다. 그것은 성인 가족 중단을 피하는 것에 대한 아이러닉한 희망을 전달합니다.',
+      example: 'A: "My mom\'s leaving my dad." B: "All parents got divorced."',
+      example_ko: 'A: "내 엄마가 내 아빠를 떠나." B: "모든 부모가 이혼했어."',
+      context: 'Rachel reflects on her childhood experience with parental divorce.',
+      context_ko: 'Rachel은 부모 이혼에 대한 그녀의 어린 시절 경험을 반영합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X14'
+    },
+    {
+      phrase: 'She wanted to see everything.',
+      partOfSpeech: 'explanation',
+      meaning: 'A statement revealing deceased person\'s lifelong aspiration for comprehensive experience. The phrase describes spiritual mission motivating continued presence. It conveys unfinished life journey driving supernatural phenomenon.',
+      meaning_ko: '사망자의 포괄적 경험에 대한 평생 열망을 드러내는 진술입니다. 이 표현은 계속된 존재를 동기부여하는 영적 사명을 설명합니다. 그것은 초자연적 현상을 운전하는 미완성 인생 여정을 전달합니다.',
+      example: 'A: "Why is her spirit still here?" B: "She wanted to see everything."',
+      example_ko: 'A: "왜 그녀의 영혼이 여전히 여기 있어?" B: "그녀는 모든 것을 보고 싶었어."',
+      context: 'Phoebe explains Mrs. Adelman\'s unfinished business keeping her spirit present.',
+      context_ko: 'Phoebe는 Mrs. Adelman의 미완성 비즈니스를 그녀의 영혼을 현재로 유지합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E11X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
