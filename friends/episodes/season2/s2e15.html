@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s2e15.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S2E15: Season 2, Episode 15</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S2E15: The One with the Couch</div>
+        <div class="page-header-meta">New couch delivery. Joey books TV role. Rachel's first date with Ross. Monica's catering job. Dr. Burke chemistry.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s2e15"
             onclick="toggleBookmark('episode','episode-friends-s2e15','📋 Friends S2E15','friends/episodes/season2/s2e15.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 2, Episode 15',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Couch',
+    description: 'New couch delivery. Joey books TV role. Rachel\'s first date with Ross. Monica\'s catering job. Dr. Burke chemistry.',
+    expressions: [
+    {
+      phrase: 'Days of our Lives picked up my option!',
+      partOfSpeech: 'celebration',
+      meaning: 'An excited announcement of television contract renewal allowing continued character employment. The phrase conveys professional success and creative achievement. It demonstrates career milestone accomplishment.',
+      meaning_ko: '텔레비전 계약 갱신으로 계속된 문자 고용을 가능하게 하는 흥분된 공지입니다. 이 표현은 직업 성공과 창의적 성취를 전달합니다. 그것은 경력 이정표 성취를 보여줍니다.',
+      example: 'A: "Great news?" B: "Days of our Lives picked up my option!"',
+      example_ko: 'A: "좋은 소식?" B: "Days of our Lives이 내 선택권을 선택했어!"',
+      context: 'Joey celebrates his television acting role continuation.',
+      context_ko: 'Joey는 그의 텔레비전 연기 역할 계속을 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X1'
+    },
+    {
+      phrase: 'No peeking! No peeking!',
+      partOfSpeech: 'instruction',
+      meaning: 'A repeated directive preventing advance viewing during surprise reveal preparation. The phrase conveys playful enforcement and anticipatory control. It demonstrates excitement management.',
+      meaning_ko: '놀라운 공개 준비 중에 미리 보기를 방지하는 반복된 지시입니다. 이 표현은 장난스러운 강제와 기대 제어를 전달합니다. 그것은 흥분 관리를 보여줍니다.',
+      example: 'A: "Can I look?" B: "No peeking! No peeking!"',
+      example_ko: 'A: "나 봐도 돼?" B: "몰래 보지 마! 몰래 보지 마!"',
+      context: 'Friends prevent Joey from seeing new furniture before reveal.',
+      context_ko: '친구들은 Joey가 새 가구를 공개 전에 보지 못하도록 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X2'
+    },
+    {
+      phrase: 'Whichever one you want, man.',
+      partOfSpeech: 'generosity',
+      meaning: 'An unconditional offer giving recipient complete choice from available options. The phrase conveys unlimited generosity and trusting confidence. It demonstrates friend-focused accommodation.',
+      meaning_ko: '사용 가능한 옵션에서 수신자에게 완전한 선택을 제공하는 무조건적인 제안입니다. 이 표현은 무제한 관대함과 신뢰하는 자신감을 전달합니다. 그것은 친구 중심적 숙박을 보여줍니다.',
+      example: 'A: "Which one is mine?" B: "Whichever one you want, man."',
+      example_ko: 'A: "어느 것이 나껀데?" B: "넌 원하는 것이 뭐든, 친구."',
+      context: 'Chandler offers Joey unrestricted choice for couch seating.',
+      context_ko: 'Chandler는 Joey에게 소파 좌석을 제한 없이 선택할 수 있도록 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X3'
+    },
+    {
+      phrase: 'That\'s the stuff.',
+      partOfSpeech: 'satisfaction',
+      meaning: 'An expression of contentment and pleasure at receiving desired object or experience. The phrase conveys sensory satisfaction and appreciation. It demonstrates happiness with provided service.',
+      meaning_ko: '원하는 물체나 경험을 받는 것에 대한 만족감과 즐거움의 표현입니다. 이 표현은 감각적 만족과 감사를 전달합니다. 그것은 제공된 서비스에 대한 행복을 보여줍니다.',
+      example: 'A: "How\'s the couch?" B: "Yeah, that\'s the stuff."',
+      example_ko: 'A: "소파는 어때?" B: "맞아, 이거 좋아."',
+      context: 'Joey expresses pleasure while testing new furniture.',
+      context_ko: 'Joey는 새 가구를 테스트하면서 즐거움을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X4'
+    },
+    {
+      phrase: 'Two cows made the ultimate sacrifice.',
+      partOfSpeech: 'humor',
+      meaning: 'A humorous anthropomorphization of furniture materials expressing environmental concern. The phrase conveys comedic guilt and ironic perspective. It demonstrates creative guilt acknowledgment.',
+      meaning_ko: '환경 관심을 표현하는 가구 재료의 유머로운 의인화입니다. 이 표현은 코미디 죄책감과 아이러니한 관점을 전달합니다. 그것은 창의적인 죄책감 인정을 보여줍니다.',
+      example: 'A: "Is leather ethical?" B: "Two cows made the ultimate sacrifice."',
+      example_ko: 'A: "가죽이 윤리적이야?" B: "두 마리의 소가 궁극의 희생을 했어."',
+      context: 'Phoebe makes environmental joke about leather couch.',
+      context_ko: 'Phoebe는 가죽 소파에 대한 환경 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X5'
+    },
+    {
+      phrase: 'Chair-shaped cows never would have survived.',
+      partOfSpeech: 'defense',
+      meaning: 'A humorous justification using absurdist logic to defend ethical concerns. The phrase conveys comedic rationalization and playful argument. It demonstrates witty response to criticism.',
+      meaning_ko: '윤리적 우려를 방어하기 위해 터무니없는 논리를 사용한 유머로운 정당화입니다. 이 표현은 코미디 합리화와 장난스러운 주장을 전달합니다. 그것은 비판에 대한 재치 있는 반응을 보여줍니다.',
+      example: 'A: "But the cows?" B: "Chair-shaped cows never would have survived."',
+      example_ko: 'A: "하지만 소들?" B: "의자 모양의 소는 결코 살아남지 못했을 거야."',
+      context: 'Chandler absurdly defends the leather couch purchase.',
+      context_ko: 'Chandler는 가죽 소파 구매를 터무니없게 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X6'
+    },
+    {
+      phrase: 'This screen is amazing.',
+      partOfSpeech: 'admiration',
+      meaning: 'An expression of wonder at new television technology\'s superior visual quality. The phrase conveys technological appreciation and excitement. It demonstrates modern entertainment enthusiasm.',
+      meaning_ko: '새로운 텔레비전 기술의 우수한 시각적 품질에 대한 경탄의 표현입니다. 이 표현은 기술 감상과 흥분을 전달합니다. 그것은 현대 오락 열정을 보여줍니다.',
+      example: 'A: "What do you think?" B: "This screen is amazing."',
+      example_ko: 'A: "어떻게 생각해?" B: "이 화면은 정말 좋아."',
+      context: 'Friends admire the new large television\'s picture quality.',
+      context_ko: '친구들은 새 큰 텔레비전의 화질을 찬탄합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X7'
+    },
+    {
+      phrase: 'Adam and Eve on a raft and wreck them!',
+      partOfSpeech: 'slang',
+      meaning: 'Short-order waitress slang for specific diner food preparation instructions. The phrase conveys professional kitchen communication shorthand. It demonstrates workplace jargon usage.',
+      meaning_ko: '특정 식당 음식 준비 지침에 대한 짧은 주문 웨이트리스 슬랭입니다. 이 표현은 전문 주방 의사 소통 속기법을 전달합니다. 그것은 직장 용어 사용을 보여줍니다.',
+      example: 'A: "What did the cook say?" B: "Adam and Eve on a raft and wreck them!"',
+      example_ko: 'A: "요리사가 뭐라고 했어?" B: "Adam and Eve on a raft and wreck them!"',
+      context: 'Phoebe demonstrates authentic waitress communication skills.',
+      context_ko: 'Phoebe는 진정한 웨이트리스 의사 소통 기술을 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X8'
+    },
+    {
+      phrase: 'The head tilt.',
+      partOfSpeech: 'gesture',
+      meaning: 'A sympathetic head movement expressing condolence and concern during difficult times. The phrase conveys nonverbal emotional communication. It demonstrates compassion gesture recognition.',
+      meaning_ko: '어려운 시기에 동정과 우려를 표현하는 동정적인 머리 움직임입니다. 이 표현은 비언어적 감정 의사 소통을 전달합니다. 그것은 연민 제스처 인식을 보여줍니다.',
+      example: 'A: "Why does everyone do that?" B: "The head tilt."',
+      example_ko: 'A: "왜 다들 그렇게 해?" B: "머리 기울임."',
+      context: 'Dr. Burke notices sympathetic head movement during divorce discussion.',
+      context_ko: 'Dr. Burke는 이혼 논의 중에 동정적인 머리 움직임을 알아챕니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X9'
+    },
+    {
+      phrase: 'I wanted to be a sheriff.',
+      partOfSpeech: 'revelation',
+      meaning: 'A personal admission of childhood career aspirations contrary to family expectations. The phrase conveys individual dreams versus parental pressure. It demonstrates authenticity disclosure.',
+      meaning_ko: '가족 기대와 반대되는 어린 시절 직업 열망의 개인적 인정입니다. 이 표현은 개인적인 꿈 대 부모 압력을 전달합니다. 그것은 진정성 공개를 보여줍니다.',
+      example: 'A: "Why ophthalmology?" B: "I wanted to be a sheriff."',
+      example_ko: 'A: "왜 안과의학?" B: "난 보안관이 되고 싶었어."',
+      context: 'Dr. Burke confesses his suppressed childhood ambition.',
+      context_ko: 'Dr. Burke는 억눌린 어린 시절 야망을 고백합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X10'
+    },
+    {
+      phrase: '27 is a dangerous eye age.',
+      partOfSpeech: 'humor',
+      meaning: 'A comedic rationalization for scheduling unnecessary eye appointment near love interest. The phrase conveys playful excuse-making and flirtation strategy. It demonstrates creative dating reasoning.',
+      meaning_ko: '사랑 관심 근처에 불필요한 안과 약속을 예약하기 위한 코미디 합리화입니다. 이 표현은 장난스러운 변명 만들기와 작업 전략을 전달합니다. 그것은 창의적인 데이트 추론을 보여줍니다.',
+      example: 'A: "Why another eye exam?" B: "27 is a dangerous eye age."',
+      example_ko: 'A: "왜 또 안과 검진?" B: "27은 위험한 눈 나이야."',
+      context: 'Monica makes up excuse to see Dr. Burke again.',
+      context_ko: 'Monica는 Dr. Burke를 다시 보기 위해 변명을 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X11'
+    },
+    {
+      phrase: 'It\'s just, when you moved your hands down...',
+      partOfSpeech: 'awkwardness',
+      meaning: 'An explanation of nervous laughter during intimate moment causing mood disruption. The phrase conveys anxiety about physical affection. It demonstrates vulnerability in romantic context.',
+      meaning_ko: '친밀한 순간 동안 신경질적인 웃음으로 인한 분위기 방해의 설명입니다. 이 표현은 신체 애정에 대한 불안감을 전달합니다. 그것은 로맨틱한 맥락에서 취약성을 보여줍니다.',
+      example: 'A: "Why did you laugh?" B: "It\'s just, when you moved your hands down..."',
+      example_ko: 'A: "왜 웃었어?" B: "그냥 넌 너의 손을 내려갈 때..."',
+      context: 'Rachel laughs nervously during intimate moment with Ross.',
+      context_ko: 'Rachel은 Ross와의 친밀한 순간에 긴장하며 웃습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X12'
+    },
+    {
+      phrase: 'I mean, it\'s you. It\'s us.',
+      partOfSpeech: 'emotion',
+      meaning: 'A tender expression acknowledging the significance of intimate connection between partners. The phrase conveys emotional importance and relationship weight. It demonstrates romantic tenderness.',
+      meaning_ko: '파트너 간의 친밀한 연결의 중요성을 인정하는 부드러운 표현입니다. 이 표현은 감정적 중요성과 관계 무게를 전달합니다. 그것은 로맨틱한 온화함을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "I mean, it\'s you. It\'s us."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "내 말은, 그건 넌데. 그건 우리야."',
+      context: 'Ross expresses emotional significance to Rachel about their relationship.',
+      context_ko: 'Ross는 자신들의 관계에 대해 Rachel에게 감정적 중요성을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X13'
+    },
+    {
+      phrase: 'We\'re crossing that line. It\'s a big thing.',
+      partOfSpeech: 'significance',
+      meaning: 'An acknowledgment of moving relationship from friendship to physical intimacy boundary. The phrase conveys relationship milestone seriousness. It demonstrates romantic maturity understanding.',
+      meaning_ko: '우정에서 신체적 친밀함 경계로의 관계 이동 인정입니다. 이 표현은 관계 이정표 진지함을 전달합니다. 그것은 로맨틱한 성숙 이해를 보여줍니다.',
+      example: 'A: "Are you ready?" B: "We\'re crossing that line. It\'s a big thing."',
+      example_ko: 'A: "넌 준비됐어?" B: "우리는 그 선을 넘고 있어. 그건 큰일이야."',
+      context: 'Rachel acknowledges the importance of physical relationship progression.',
+      context_ko: 'Rachel은 신체 관계 진전의 중요성을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X14'
+    },
+    {
+      phrase: 'The moment\'s gone.',
+      partOfSpeech: 'resignation',
+      meaning: 'A statement acknowledging loss of romantic mood due to disruption or timing. The phrase conveys emotional connection timing importance. It demonstrates spontaneity vulnerability.',
+      meaning_ko: '방해 또는 타이밍으로 인한 로맨틱한 분위기 손실을 인정하는 진술입니다. 이 표현은 감정적 연결 타이밍 중요성을 전달합니다. 그것은 자발성 취약성을 보여줍니다.',
+      example: 'A: "Can we try again?" B: "The moment\'s gone."',
+      example_ko: 'A: "다시 시도할 수 있어?" B: "그 순간은 지나갔어."',
+      context: 'Ross recognizes lost romantic momentum after nervous laughter.',
+      context_ko: 'Ross는 신경질적인 웃음 후 잃어버린 로맨틱한 모멘텀을 인식합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S2E15X15'
+    }
+  ]
   };
 
   var S_NUM = 2;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -160,7 +319,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
