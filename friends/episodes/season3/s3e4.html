@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s3e4.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S3E4: Season 3, Episode 4</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S3E4: The One with the Birth</div>
+        <div class="page-header-meta">Joey misses audition after Chandler game. Phoebe becomes agent. Ben gets Barbie doll. Chandler relationship fear. Janice reconciliation.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s3e4"
             onclick="toggleBookmark('episode','episode-friends-s3e4','📋 Friends S3E4','friends/episodes/season3/s3e4.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 3, Episode 4',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Birth',
+    description: 'Joey misses audition after Chandler game. Phoebe becomes agent. Ben gets Barbie doll. Chandler relationship fear. Janice reconciliation.',
+    expressions: [
+    {
+      phrase: 'There\'s gotta be a better way.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing frustration about difficult task and wanting improvement. The phrase conveys need for solution. It demonstrates problem-seeking.',
+      meaning_ko: '어려운 작업에 대한 좌절감과 개선 욕구를 표현합니다. 이 표현은 해결책의 필요성을 전달합니다. 그것은 문제 추구를 보여줍니다.',
+      example: 'A: "This is so hard." B: "There\'s gotta be a better way."',
+      example_ko: 'A: "이거 너무 힘들어." B: "더 나은 방법이 있어야 해."',
+      context: 'TV infomercial character complaining about milk cartons.',
+      context_ko: 'TV infomercial 캐릭터가 milk cartons에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X1'
+    },
+    {
+      phrase: 'I meant to tell you, and I wrote it on my hand.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining forgotten message despite written reminder. The phrase conveys poor memory execution. It demonstrates flawed planning.',
+      meaning_ko: '필기된 알림에도 불구하고 잊혀진 메시지를 설명합니다. 이 표현은 낮은 기억 실행을 전달합니다. 그것은 결함 계획을 보여줍니다.',
+      example: 'A: "You forgot?" B: "I meant to tell you. I wrote it on my hand."',
+      example_ko: 'A: "너 깜빡했어?" B: "말하려고 했어. 내 손에 썼어."',
+      context: 'Joey explaining he forgot to give message despite handwritten note.',
+      context_ko: 'Joey는 필기 노트에도 불구하고 메시지를 주지 못한 것을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X2'
+    },
+    {
+      phrase: 'This is why I keep notepads everywhere.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining reason for widespread note-taking habit. The phrase conveys learned lesson from past mistakes. It demonstrates memory strategy.',
+      meaning_ko: '광범위한 메모 습관의 이유를 설명합니다. 이 표현은 과거 실수로부터 학습한 교훈을 전달합니다. 그것은 메모리 전략을 보여줍니다.',
+      example: 'A: "Why so many notepads?" B: "This is why I keep them everywhere."',
+      example_ko: 'A: "왜 메모판이 이렇게 많아?" B: "그래서 난 어디든 가지고 다니지."',
+      context: 'Monica justifying her notepad collection habit.',
+      context_ko: 'Monica는 그녀의 notepad 수집 습관을 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X3'
+    },
+    {
+      phrase: 'The casting director doesn\'t talk to friends.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining professional protocol about agent communication requirements. The phrase conveys workplace hierarchy. It demonstrates procedural limitation.',
+      meaning_ko: '에이전트 소통 요구 사항에 대한 전문 프로토콜을 설명합니다. 이 표현은 직장 계층을 전달합니다. 그것은 절차적 제한을 보여줍니다.',
+      example: 'A: "I\'ll call the director." B: "The casting director doesn\'t talk to friends."',
+      example_ko: 'A: "난 director에게 전화할게." B: "casting director는 친구와 얘기하지 않아."',
+      context: 'Phoebe explaining professional boundary with casting director.',
+      context_ko: 'Phoebe는 casting director와의 전문적 경계를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X4'
+    },
+    {
+      phrase: 'It\'s official. There are no good movies.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring absolute lack of quality entertainment options. The phrase conveys comedic exaggeration. It demonstrates hyperbolic conclusion.',
+      meaning_ko: '질 높은 엔터테인먼트 옵션의 절대적 부족을 선언합니다. 이 표현은 코미디 과장을 전달합니다. 그것은 쌍곡선 결론을 보여줍니다.',
+      example: 'A: "Let\'s find something to watch." B: "It\'s official. No good movies."',
+      example_ko: 'A: "뭐 봅시다." B: "공식적으로 좋은 영화가 없어."',
+      context: 'Chandler being dramatic about movie selection.',
+      context_ko: 'Chandler는 영화 선택에 대해 극적입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X5'
+    },
+    {
+      phrase: 'All of a sudden, we were this couple.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing unexpected transition into committed relationship status. The phrase conveys surprise at relationship development. It demonstrates emotional realization.',
+      meaning_ko: '헌신적인 관계 상태로의 예상치 못한 전환을 설명합니다. 이 표현은 관계 발전에 대한 놀라움을 전달합니다. 그것은 정서적 깨달음을 보여줍니다.',
+      example: 'A: "How did it happen?" B: "All of a sudden, we were this couple."',
+      example_ko: 'A: "어떻게 되었어?" B: "갑자기 우린 couple이 되었어."',
+      context: 'Chandler describing his fear of relationship commitment.',
+      context_ko: 'Chandler는 그의 관계 헌신 두려움을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X6'
+    },
+    {
+      phrase: 'This alarm started going off in my head.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing mental warning signal about relationship situation. The phrase conveys panic response. It demonstrates emotional alarm.',
+      meaning_ko: '관계 상황에 대한 정신적 경고 신호를 설명합니다. 이 표현은 공황 반응을 전달합니다. 그것은 정서적 경보를 보여줍니다.',
+      example: 'A: "What did you do?" B: "An alarm started going off in my head."',
+      example_ko: 'A: "넌 뭐 했어?" B: "내 머리에 경보가 울렸어."',
+      context: 'Chandler describing panic at relationship escalation.',
+      context_ko: 'Chandler는 관계 확대에서의 공황을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X7'
+    },
+    {
+      phrase: 'You are so pathetic.',
+      partOfSpeech: 'expression',
+      meaning: 'Harsh judgment declaring someone sad or ineffectual. The phrase conveys strong disapproval. It demonstrates critical assessment.',
+      meaning_ko: '누군가를 슬프거나 비효과적이라고 선언하는 가혹한 판단. 이 표현은 강한 불승인을 전달합니다. 그것은 비판적 평가를 보여줍니다.',
+      example: 'A: "I can\'t do it." B: "You are so pathetic."',
+      example_ko: 'A: "난 못 해." B: "넌 정말 비련해."',
+      context: 'Ross criticizing father trying to change his son\'s toy preference.',
+      context_ko: 'Ross는 아들의 장난감 선호도 변경을 시도하는 아버지를 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X8'
+    },
+    {
+      phrase: 'He carries it everywhere, like a security blanket.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing constant attachment to comforting object. The phrase conveys dependency pattern. It demonstrates emotional reliance metaphor.',
+      meaning_ko: '위로하는 물건에 대한 끊임없는 애착을 설명합니다. 이 표현은 의존 패턴을 전달합니다. 그것은 정서적 의존 은유를 보여줍니다.',
+      example: 'A: "He\'s always holding it?" B: "Like a security blanket."',
+      example_ko: 'A: "그는 항상 들고 있어?" B: "security blanket처럼."',
+      context: 'Carol describing Ben\'s attachment to his Barbie doll.',
+      context_ko: 'Carol은 Ben의 Barbie 인형에 대한 애착을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X9'
+    },
+    {
+      phrase: 'Don\'t get me wrong.',
+      partOfSpeech: 'expression',
+      meaning: 'Clarifying statement before potentially negative comment. The phrase conveys intent to avoid misunderstanding. It demonstrates rhetorical softening.',
+      meaning_ko: '잠재적으로 부정적인 발언 전에 명확히 하는 진술. 이 표현은 오해를 피하려는 의도를 전달합니다. 그것은 수사적 완화를 보여줍니다.',
+      example: 'A: "You don\'t like my idea?" B: "Don\'t get me wrong."',
+      example_ko: 'A: "넌 내 생각을 좋아하지 않아?" B: "오해하지 마."',
+      context: 'Phoebe tempering criticism before admitting shortcomings.',
+      context_ko: 'Phoebe는 부족함을 인정하기 전에 비판을 누그러뜨립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X10'
+    },
+    {
+      phrase: 'You\'re pretty but dumb.',
+      partOfSpeech: 'expression',
+      meaning: 'Backhanded compliment combining physical praise with intellectual criticism. The phrase conveys mixed evaluation. It demonstrates cutting judgment.',
+      meaning_ko: '신체 칭찬과 지적 비판을 결합한 비트는 칭찬. 이 표현은 혼합 평가를 전달합니다. 그것은 자르는 판단을 보여줍니다.',
+      example: 'A: "What did they say?" B: "You\'re pretty but dumb."',
+      example_ko: 'A: "그들은 뭐라고 했어?" B: "넌 예쁜데 멍청해."',
+      context: 'Casting feedback about Joey\'s acting audition.',
+      context_ko: 'Joey의 acting 오디션에 대한 casting 피드백.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X11'
+    },
+    {
+      phrase: 'You\'re pretending you\'re seeing somebody.',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing someone of fabricating relationship for deception. The phrase conveys suspicion of dishonesty. It demonstrates accusatory tone.',
+      meaning_ko: '기만을 위해 관계를 조작하는 사람을 고소합니다. 이 표현은 부정직함에 대한 의혹을 전달합니다. 그것은 고소 어조를 보여줍니다.',
+      example: 'A: "Are you dating?" B: "You\'re pretending you\'re seeing somebody."',
+      example_ko: 'A: "넌 데이팅 중이야?" B: "넌 누군가를 만나는 척해."',
+      context: 'Emily confronting Chandler about alleged relationship.',
+      context_ko: 'Emily는 Chandler의 주장된 관계에 대해 대면합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X12'
+    },
+    {
+      phrase: 'Which of these two guys do you wanna be?',
+      partOfSpeech: 'question',
+      meaning: 'Forcing choice between two unflattering character options. The phrase conveys ultimatum of moral judgment. It demonstrates confrontational choice.',
+      meaning_ko: '두 개의 부정적 캐릭터 선택지 사이에서 선택을 강요합니다. 이 표현은 도덕적 판단의 최후 통첩을 전달합니다. 그것은 대립적 선택을 보여줍니다.',
+      example: 'A: "I wasn\'t..." B: "Which guy do you wanna be?"',
+      example_ko: 'A: "난 아니었어..." B: "넌 어느 남자가 되고 싶어?"',
+      context: 'Emily forcing Chandler to choose between being a cheater or liar.',
+      context_ko: 'Emily는 Chandler에게 cheater 또는 liar 사이 선택을 강요합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X13'
+    },
+    {
+      phrase: 'I\'ve literally never been this happy.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing superlative happiness about embarrassing situation. The phrase conveys extreme amusement. It demonstrates comedic satisfaction.',
+      meaning_ko: '부끄러운 상황에 대한 최상급 행복을 표현합니다. 이 표현은 극단적 재미를 전달합니다. 그것은 코미디 만족을 보여줍니다.',
+      example: 'A: "You\'re enjoying this?" B: "I\'ve never been this happy."',
+      example_ko: 'A: "넌 이걸 즐기고 있어?" B: "난 이렇게 행복한 적이 없어."',
+      context: 'Ross incredibly delighted about brother\'s childhood cross-dressing.',
+      context_ko: 'Ross는 형의 어린 시절 cross-dressing에 대해 믿을 수 없을 정도로 기쁩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X14'
+    },
+    {
+      phrase: 'I am Bea. I drink tea.',
+      partOfSpeech: 'expression',
+      meaning: 'Quoting humorous childhood song about fictional feminine persona. The phrase conveys embarrassing memory. It demonstrates comedic humiliation.',
+      meaning_ko: '허구의 여성 페르소나에 대한 유머러스한 어린 시절 노래를 인용합니다. 이 표현은 부끄러운 기억을 전달합니다. 그것은 코미디 굴욕을 보여줍니다.',
+      example: 'A: "Was there a song?" B: "I am Bea. I drink tea."',
+      example_ko: 'A: "노래가 있었어?" B: "난 Bea야. 난 tea를 마셔."',
+      context: 'Chandler\'s childhood song while dressed as feminine character Bea.',
+      context_ko: 'Chandler는 feminine character Bea로 옷을 입고 어린 시절 노래를 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E4X15'
+    }
+  ]
   };
 
   var S_NUM = 3;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

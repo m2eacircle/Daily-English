@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s3e2.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S3E2: Season 3, Episode 2</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S3E2: The One Where No One's Ready</div>
+        <div class="page-header-meta">Museum party preparations. Everyone rushing to get dressed. Chair disputes and pranks. Monica hears Richard's message. Chaos before the event.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s3e2"
             onclick="toggleBookmark('episode','episode-friends-s3e2','📋 Friends S3E2','friends/episodes/season3/s3e2.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 3, Episode 2',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One Where No One\'s Ready',
+    description: 'Museum party preparations. Everyone rushing to get dressed. Chair disputes and pranks. Monica hears Richard\'s message. Chaos before the event.',
+    expressions: [
+    {
+      phrase: 'Yeah, it\'s fat.',
+      partOfSpeech: 'expression',
+      meaning: 'Confirming that something is rendered animal fat. The phrase conveys unhappy realization. It demonstrates dietary disappointment.',
+      meaning_ko: '무언가가 동물 지방이라는 것을 확인합니다. 이 표현은 불행한 깨달음을 전달합니다. 그것은 식이 실망을 보여줍니다.',
+      example: 'A: "What is this juice?" B: "Yeah, it\'s fat."',
+      example_ko: 'A: "이건 뭐야?" B: "그건 지방이야."',
+      context: 'Joey discovering he drank rendered chicken fat.',
+      context_ko: 'Joey는 그가 렌더링된 치킨 지방을 마셨다는 것을 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X1'
+    },
+    {
+      phrase: 'I drank fat!',
+      partOfSpeech: 'expression',
+      meaning: 'Horrified realization of consuming rendered animal fat. The phrase conveys shock and disgust. It demonstrates vocal dismay.',
+      meaning_ko: '동물 지방을 섭취한 것의 놀라운 깨달음. 이 표현은 충격과 혐오를 전달합니다. 그것은 음성 실망을 보여줍니다.',
+      example: 'A: "What did you drink?" B: "I drank fat!"',
+      example_ko: 'A: "넌 뭘 마셨어?" B: "난 지방을 마셨어!"',
+      context: 'Joey\'s horrified reaction to drinking fat.',
+      context_ko: 'Joey의 지방을 마신 것에 대한 충격 반응.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X2'
+    },
+    {
+      phrase: 'It takes us two minutes to get dressed.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming someone can dress very quickly. The phrase conveys false confidence. It demonstrates overestimation.',
+      meaning_ko: '누군가가 매우 빨리 옷을 입을 수 있다고 주장합니다. 이 표현은 거짓 자신감을 전달합니다. 그것은 과대 평가를 보여줍니다.',
+      example: 'A: "We\'re running late." B: "It takes us two minutes to get dressed."',
+      example_ko: 'A: "우린 늦어." B: "우린 2분 안에 옷 입어."',
+      context: 'Chandler\'s unrealistic promise about dressing speed.',
+      context_ko: 'Chandler의 옷 입는 속도에 대한 비현실적인 약속.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X3'
+    },
+    {
+      phrase: 'How come you didn\'t come over earlier?',
+      partOfSpeech: 'question',
+      meaning: 'Asking why someone didn\'t arrive at an expected time. The phrase conveys questioning someone\'s tardiness. It demonstrates expectation inquiry.',
+      meaning_ko: '왜 누군가가 예상된 시간에 도착하지 않았는지 묻습니다. 이 표현은 누군가의 지연을 질문합니다. 그것은 기대 문의를 보여줍니다.',
+      example: 'A: "I came late." B: "How come you didn\'t come over earlier?"',
+      example_ko: 'A: "난 늦게 왔어." B: "넌 왜 더 일찍 안 왔어?"',
+      context: 'Monica asking Phoebe about delayed arrival.',
+      context_ko: 'Monica가 Phoebe에게 지연된 도착에 대해 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X4'
+    },
+    {
+      phrase: 'Because I\'m a stupid, stupid man.',
+      partOfSpeech: 'expression',
+      meaning: 'Self-deprecating admission of foolishness. The phrase conveys self-blame and regret. It demonstrates humorous self-criticism.',
+      meaning_ko: '어리석음의 자조적 인정. 이 표현은 자기 비난과 후회를 전달합니다. 그것은 유머러스한 자기 비판을 보여줍니다.',
+      example: 'A: "Why did you do that?" B: "Because I\'m a stupid man."',
+      example_ko: 'A: "넌 왜 그런 짓을 했어?" B: "난 어리석은 남자니까."',
+      context: 'Phoebe\'s humorous self-blame for being late.',
+      context_ko: 'Phoebe의 늦은 것에 대한 유머러스한 자기 비난.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X5'
+    },
+    {
+      phrase: 'You are my star.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that someone is special and valued. The phrase conveys affection and admiration. It demonstrates heartfelt appreciation.',
+      meaning_ko: '누군가가 특별하고 소중하다는 것을 표현합니다. 이 표현은 애정과 감탄을 전달합니다. 그것은 진심 어린 감사를 보여줍니다.',
+      example: 'A: "You\'re important to me." B: "You are my star."',
+      example_ko: 'A: "넌 날 위해 중요해." B: "넌 내 별이야."',
+      context: 'Monica\'s affectionate compliment to Phoebe.',
+      context_ko: 'Monica의 Phoebe에게 애정 어린 칭찬.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X6'
+    },
+    {
+      phrase: 'You\'re in my seat.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting ownership of a chair or location. The phrase conveys territorial claim. It demonstrates possession emphasis.',
+      meaning_ko: '의자나 장소의 소유권을 주장합니다. 이 표현은 영역 주장을 전달합니다. 그것은 소유 강조를 보여줍니다.',
+      example: 'A: "I\'m sitting here." B: "You\'re in my seat."',
+      example_ko: 'A: "난 여기 앉아." B: "넌 내 자리에 있어."',
+      context: 'Monica and Chandler\'s dispute over a chair.',
+      context_ko: 'Monica와 Chandler의 의자를 놓고 싸움.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X7'
+    },
+    {
+      phrase: 'Well, it\'s not like I went to Spain.',
+      partOfSpeech: 'expression',
+      meaning: 'Exaggerating how far someone went to minimize absence. The phrase conveys sarcasm about short absence. It demonstrates hyperbolic comparison.',
+      meaning_ko: '누군가가 얼마나 멀리 갔는지를 과장하여 부재를 최소화합니다. 이 표현은 짧은 부재에 대한 풍자를 전달합니다. 그것은 과장된 비교를 보여줍니다.',
+      example: 'A: "You left forever." B: "It\'s not like I went to Spain."',
+      example_ko: 'A: "넌 영원히 갔어." B: "난 스페인에 간 게 아니야."',
+      context: 'Monica arguing about brief bathroom absence.',
+      context_ko: 'Monica는 짧은 화장실 부재를 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X8'
+    },
+    {
+      phrase: 'I just have to do one thing.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming only one remaining task before completion. The phrase conveys false simplicity. It demonstrates underestimation.',
+      meaning_ko: '완료 전에 남은 작업이 하나뿐이라고 주장합니다. 이 표현은 거짓 단순성을 전달합니다. 그것은 과소 평가를 보여줍니다.',
+      example: 'A: "Are you ready?" B: "I just have to do one thing."',
+      example_ko: 'A: "넌 준비됐어?" B: "난 한 가지만 더 하면 돼."',
+      context: 'Chandler\'s claim about getting ready quickly.',
+      context_ko: 'Chandler의 빨리 준비된다는 주장.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X9'
+    },
+    {
+      phrase: 'It starts at 8. We can\'t be late.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating firm deadline and consequences of tardiness. The phrase conveys urgency and importance. It demonstrates time pressure.',
+      meaning_ko: '견고한 마감일과 지연의 결과를 설명합니다. 이 표현은 긴급성과 중요성을 전달합니다. 그것은 시간 압박을 보여줍니다.',
+      example: 'A: "We have time." B: "It starts at 8. We can\'t be late."',
+      example_ko: 'A: "우린 시간 있어." B: "8시에 시작해. 우린 늦을 수 없어."',
+      context: 'Monica emphasizing importance of punctuality.',
+      context_ko: 'Monica는 시간 준수의 중요성을 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X10'
+    },
+    {
+      phrase: 'Not touching. Can\'t get mad!',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming someone can\'t be angry if not physically touched. The phrase conveys childish logic and teasing. It demonstrates playful mischief.',
+      meaning_ko: '신체적 접촉이 없으면 누군가가 화낼 수 없다고 주장합니다. 이 표현은 유치한 논리와 놀림을 전달합니다. 그것은 장난스러운 장난을 보여줍니다.',
+      example: 'A: "Stop bothering me!" B: "Not touching, can\'t get mad!"',
+      example_ko: 'A: "나 놔!" B: "건드리지 않으니까 화내지 못해!"',
+      context: 'Chandler and Joey teasing Phoebe with humor.',
+      context_ko: 'Chandler와 Joey는 Phoebe를 유머로 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X11'
+    },
+    {
+      phrase: 'What gets out hummus?',
+      partOfSpeech: 'question',
+      meaning: 'Asking how to remove hummus stain from clothing. The phrase conveys stain removal desperation. It demonstrates practical urgency.',
+      meaning_ko: '옷에서 hummus 얼룩을 제거하는 방법을 묻습니다. 이 표현은 얼룩 제거 절망을 전달합니다. 그것은 실제 긴급성을 보여줍니다.',
+      example: 'A: "Hummus got on my dress!" B: "What gets out hummus?"',
+      example_ko: 'A: "내 드레스에 hummus가 묻었어!" B: "hummus는 뭘로 빼?"',
+      context: 'Phoebe desperately trying to clean hummus stain.',
+      context_ko: 'Phoebe는 desperately hummus 얼룩을 청소하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X12'
+    },
+    {
+      phrase: 'You could drink the fat.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting someone consume rendered fat as penance. The phrase conveys humorous punishment idea. It demonstrates comedic retribution.',
+      meaning_ko: '누군가가 벌칙으로 렌더링된 지방을 섭취하도록 제안합니다. 이 표현은 유머러스한 처벌 아이디어를 전달합니다. 그것은 코미디 보복을 보여줍니다.',
+      example: 'A: "How can I make it up to you?" B: "You could drink the fat."',
+      example_ko: 'A: "난 어떻게 보상해?" B: "넌 지방을 마실 수 있어."',
+      context: 'Rachel suggesting Ross drink fat as apology.',
+      context_ko: 'Rachel은 Ross에게 사과로 지방을 마시도록 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X13'
+    },
+    {
+      phrase: 'I\'m wearing everything you own.',
+      partOfSpeech: 'expression',
+      meaning: 'Threatening to wear all of someone\'s clothes in retaliation. The phrase conveys revenge-driven fashion statement. It demonstrates humorous retaliation.',
+      meaning_ko: '보복으로 누군가의 모든 옷을 입겠다고 위협합니다. 이 표현은 복수 주도 패션 진술을 전달합니다. 그것은 유머러스한 보복을 보여줍니다.',
+      example: 'A: "You hid my clothes!" B: "I\'m wearing everything you own."',
+      example_ko: 'A: "넌 내 옷을 숨겼어!" B: "난 너의 모든 옷을 입을 거야."',
+      context: 'Monica retaliating after Chandler hides her clothes.',
+      context_ko: 'Monica는 Chandler가 그녀의 옷을 숨긴 후 보복합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X14'
+    },
+    {
+      phrase: 'Could I be wearing any more clothes?',
+      partOfSpeech: 'question',
+      meaning: 'Rhetorical question about wearing excessive layers. The phrase conveys sarcasm about outfit bulk. It demonstrates comedic exaggeration.',
+      meaning_ko: '과도한 레이어 착용에 대한 수사적 질문. 이 표현은 의복 벌크에 대한 풍자를 전달합니다. 그것은 코미디 과장을 보여줍니다.',
+      example: 'A: "You look bulky!" B: "Could I be wearing any more clothes?"',
+      example_ko: 'A: "넌 부피가 크게 보여!" B: "난 더 많은 옷을 입을 수 있을까?"',
+      context: 'Chandler mocking outfit with multiple layers on.',
+      context_ko: 'Chandler는 여러 겹의 의복으로 의상을 조롱합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E2X15'
+    }
+  ]
   };
 
   var S_NUM = 3;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

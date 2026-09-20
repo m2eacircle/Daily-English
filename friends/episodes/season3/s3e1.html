@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s3e1.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S3E1: Season 3, Episode 1</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S3E1: The One with the Princess Leia Fantasy</div>
+        <div class="page-header-meta">Monica heartbroken after Richard breakup. Chandler stays with Janice. Ross reveals Star Wars fantasy. Friends attempt acceptance. Blissful couple time.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s3e1"
             onclick="toggleBookmark('episode','episode-friends-s3e1','📋 Friends S3E1','friends/episodes/season3/s3e1.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 3, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Princess Leia Fantasy',
+    description: 'Monica heartbroken after Richard breakup. Chandler stays with Janice. Ross reveals Star Wars fantasy. Friends attempt acceptance. Blissful couple time.',
+    expressions: [
+    {
+      phrase: 'She totally winked at me!',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting that someone made a flirtatious gesture with eye contact. The phrase conveys romantic misinterpretation. It demonstrates hopeful romantic misreading.',
+      meaning_ko: '누군가가 눈 접촉으로 작업 신호를 했다고 주장합니다. 이 표현은 로맨틱한 오해를 전달합니다. 그것은 희망찬 로맨틱 오독을 보여줍니다.',
+      example: 'A: "Did she seem interested?" B: "She totally winked at me!"',
+      example_ko: 'A: "그녀가 관심 있어 보였어?" B: "그녀가 정말 내게 윙크했어!"',
+      context: 'Joey misinterpreting friendly gestures as romantic interest.',
+      context_ko: 'Joey는 친근한 제스처를 로맨틱한 관심으로 잘못 해석합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X1'
+    },
+    {
+      phrase: 'You always think somebody\'s winking at you.',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing someone of habitually misinterpreting others\' behavior. The phrase conveys repeated pattern of misunderstanding. It demonstrates exasperation.',
+      meaning_ko: '누군가가 습관적으로 다른 사람의 행동을 잘못 해석한다고 비난합니다. 이 표현은 반복된 오해 패턴을 전달합니다. 그것은 답답함을 보여줍니다.',
+      example: 'A: "She winked at me!" B: "You always think somebody\'s winking at you."',
+      example_ko: 'A: "그녀가 윙크했어!" B: "넌 항상 누군가 윙크한다고 생각해."',
+      context: 'Chandler teasing Joey about misreading signals.',
+      context_ko: 'Chandler는 Joey가 신호를 잘못 읽는 것을 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X2'
+    },
+    {
+      phrase: 'It\'s been three nights in a row.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating consecutive occurrences over three consecutive days. The phrase conveys repetition and pattern. It demonstrates continuity.',
+      meaning_ko: '3일 연속 연속 발생을 나타냅니다. 이 표현은 반복과 패턴을 전달합니다. 그것은 지속성을 보여줍니다.',
+      example: 'A: "How often does this happen?" B: "It\'s been three nights in a row."',
+      example_ko: 'A: "이게 얼마나 자주 일어나?" B: "계속 3밤이어."',
+      context: 'Rachel describing Monica\'s sleepless nights after breakup.',
+      context_ko: 'Rachel은 Monica의 breakup 후 잠들지 못한 밤을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X3'
+    },
+    {
+      phrase: 'I\'m just so tired of missing him.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing exhaustion from longing for someone. The phrase conveys emotional fatigue. It demonstrates weariness of longing.',
+      meaning_ko: '누군가를 그리워하는 피로를 표현합니다. 이 표현은 정서적 피로를 전달합니다. 그것은 그리움의 피로를 보여줍니다.',
+      example: 'A: "How are you feeling?" B: "I\'m just so tired of missing him."',
+      example_ko: 'A: "넌 어떤 기분이야?" B: "난 그를 그리워하는 게 정말 피곤해."',
+      context: 'Monica expressing sadness about Richard breakup.',
+      context_ko: 'Monica는 Richard breakup에 대한 슬픔을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X4'
+    },
+    {
+      phrase: 'Come on, quit yanking me.',
+      partOfSpeech: 'expression',
+      meaning: 'Asking someone to stop joking or misleading you. The phrase conveys request for honesty. It demonstrates skepticism.',
+      meaning_ko: '누군가에게 농담을 하거나 당신을 오도하는 것을 멈출 것을 요청합니다. 이 표현은 정직에 대한 요청을 전달합니다. 그것은 회의를 보여줍니다.',
+      example: 'A: "I\'m really dating her." B: "Come on, quit yanking me."',
+      example_ko: 'A: "난 정말 그녀를 사귀고 있어." B: "농담하지 마."',
+      context: 'Friends doubting Chandler\'s commitment to Janice.',
+      context_ko: 'Friends는 Chandler가 Janice에 약속하는 것을 의심합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X5'
+    },
+    {
+      phrase: 'She makes me happy.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring that someone brings joy and contentment. The phrase conveys personal satisfaction. It demonstrates emotional fulfillment.',
+      meaning_ko: '누군가가 기쁨과 만족감을 가져온다고 선언합니다. 이 표현은 개인적 만족을 전달합니다. 그것은 정서적 성취를 보여줍니다.',
+      example: 'A: "Why are you with her?" B: "She makes me happy."',
+      example_ko: 'A: "넌 왜 그녀와 있어?" B: "그녀가 날 행복하게 해."',
+      context: 'Chandler defending his relationship with Janice.',
+      context_ko: 'Chandler는 Janice와의 관계를 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X6'
+    },
+    {
+      phrase: 'I\'m not breaking up with her!',
+      partOfSpeech: 'expression',
+      meaning: 'Emphatically denying plans to end a romantic relationship. The phrase conveys commitment. It demonstrates firm relationship stance.',
+      meaning_ko: '로맨틱한 관계를 끝낼 계획을 단호히 부인합니다. 이 표현은 헌신을 전달합니다. 그것은 확고한 관계 입장을 보여줍니다.',
+      example: 'A: "When will you break up?" B: "I\'m not breaking up with her!"',
+      example_ko: 'A: "언제 헤어질 거야?" B: "난 그녀랑 헤어지지 않을 거야!"',
+      context: 'Chandler defending his relationship status.',
+      context_ko: 'Chandler는 그의 관계 상태를 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X7'
+    },
+    {
+      phrase: 'This is all I have left of him.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating that something is the only remaining reminder. The phrase conveys precious loss. It demonstrates sentimental attachment.',
+      meaning_ko: '무언가가 유일한 남은 상기시켜준다는 것을 나타냅니다. 이 표현은 소중한 손실을 전달합니다. 그것은 감정적 집착을 보여줍니다.',
+      example: 'A: "Why keep that?" B: "This is all I have left of him."',
+      example_ko: 'A: "넌 왜 그걸 두고 있어?" B: "이게 내가 그에 대해 남긴 전부야."',
+      context: 'Monica refusing to throw away Richard\'s hair.',
+      context_ko: 'Monica는 Richard의 머리카락을 버리기를 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X8'
+    },
+    {
+      phrase: 'You have that report to finish.',
+      partOfSpeech: 'expression',
+      meaning: 'Reminding someone of their pending responsibilities. The phrase conveys task reminder. It demonstrates concern for obligations.',
+      meaning_ko: '누군가의 미래 책임을 상기시킵니다. 이 표현은 작업 미리 알림을 전달합니다. 그것은 의무에 대한 관심을 보여줍니다.',
+      example: 'A: "Stay with me today." B: "You have that report to finish."',
+      example_ko: 'A: "오늘 나랑 있어." B: "넌 그 report를 마쳐야 해."',
+      context: 'Ross reminding Rachel about work responsibilities.',
+      context_ko: 'Ross는 Rachel에게 일할 책임을 상기시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X9'
+    },
+    {
+      phrase: 'I\'m such a grownup.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about taking on adult responsibilities proudly. The phrase conveys humorous adult role-playing. It demonstrates playful maturity.',
+      meaning_ko: '성인 책임을 자랑스럽게 맡는 것에 대해 농담합니다. 이 표현은 유머러스한 성인 역할극을 전달합니다. 그것은 장난스러운 성숙을 보여줍니다.',
+      example: 'A: "You\'re so mature." B: "I\'m such a grownup."',
+      example_ko: 'A: "넌 정말 성숙해." B: "난 정말 어른이야."',
+      context: 'Joey joking about dating a woman going through divorce.',
+      context_ko: 'Joey는 이혼 중인 여자와 사귀는 것을 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X10'
+    },
+    {
+      phrase: 'They\'re really cute.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing couple as adorable and sweet together. The phrase conveys positive relationship observation. It demonstrates romantic approval.',
+      meaning_ko: '부부를 사랑스럽고 함께 달콤한 것으로 설명합니다. 이 표현은 긍정적인 관계 관찰을 전달합니다. 그것은 로맨틱 승인을 보여줍니다.',
+      example: 'A: "What do you think of them?" B: "They\'re really cute."',
+      example_ko: 'A: "넌 그들을 어떻게 생각해?" B: "그들 정말 cute해."',
+      context: 'Friends surprised Chandler and Janice look good together.',
+      context_ko: 'Friends는 Chandler와 Janice가 함께 잘 보인다고 놀랐습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X11'
+    },
+    {
+      phrase: 'What can we do?',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing acceptance of inevitable situation beyond control. The phrase conveys resignation. It demonstrates acceptance of reality.',
+      meaning_ko: '통제 불가능한 피할 수 없는 상황을 수용합니다. 이 표현은 체념을 전달합니다. 그것은 현실 수용을 보여줍니다.',
+      example: 'A: "You have to accept it." B: "What can we do?"',
+      example_ko: 'A: "넌 그걸 받아들여야 해." B: "우린 뭘 할 수 있어?"',
+      context: 'Friends accepting Chandler dating Janice.',
+      context_ko: 'Friends는 Chandler가 Janice와 사귀는 것을 받아들입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X12'
+    },
+    {
+      phrase: 'Did you ever see Return of the Jedi?',
+      partOfSpeech: 'question',
+      meaning: 'Asking about familiarity with famous Star Wars movie. The phrase conveys pop culture reference. It demonstrates movie reference.',
+      meaning_ko: '유명한 Star Wars 영화에 대한 친숙함을 묻습니다. 이 표현은 팝 문화 참고를 전달합니다. 그것은 영화 참고를 보여줍니다.',
+      example: 'A: "What\'s your fantasy?" B: "Did you ever see Return of the Jedi?"',
+      example_ko: 'A: "넌 어떤 fantasy가 있어?" B: "넌 Return of the Jedi를 봤어?"',
+      context: 'Ross asking Rachel about his Star Wars fantasy.',
+      context_ko: 'Ross는 Rachel에게 그의 Star Wars fantasy를 물어봅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X13'
+    },
+    {
+      phrase: 'I might do it.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering willingness to engage in someone\'s fantasy. The phrase conveys conditional agreement. It demonstrates adventurous openness.',
+      meaning_ko: '누군가의 fantasy에 참여할 의사를 제공합니다. 이 표현은 조건부 동의를 전달합니다. 그것은 모험적 개방성을 보여줍니다.',
+      example: 'A: "If you tell me your fantasy..." B: "I might do it."',
+      example_ko: 'A: "만약 넌 나한테 너의 fantasy를 말해..." B: "난 해 볼 수 있어."',
+      context: 'Rachel teasing Ross about fantasy possibilities.',
+      context_ko: 'Rachel은 Ross를 fantasy 가능성으로 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X14'
+    },
+    {
+      phrase: 'I hate Chandler. The bastard ruined my life!',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about someone ruining romantic moment. The phrase conveys humorous frustration. It demonstrates comedic blame.',
+      meaning_ko: '누군가가 로맨틱한 순간을 망쳤다는 농담. 이 표현은 유머러스한 좌절을 전달합니다. 그것은 코미디 비난을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "I hate Chandler. He ruined everything!"',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "난 Chandler가 싫어. 그가 모든 걸 망쳤어!"',
+      context: 'Ross blaming Chandler for ruining his fantasy moment.',
+      context_ko: 'Ross는 Chandler가 그의 fantasy 순간을 망쳤다고 비난합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E1X15'
+    }
+  ]
   };
 
   var S_NUM = 3;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s3e6.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S3E6: Season 3, Episode 6</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S3E6: The One with the Flashback</div>
+        <div class="page-header-meta">Janice interrogates about group romantic history. Chandler searches for roommate. Carol reveals she's lesbian. Ross discovers marriage breakdown. Bar closes down.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s3e6"
             onclick="toggleBookmark('episode','episode-friends-s3e6','📋 Friends S3E6','friends/episodes/season3/s3e6.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 3, Episode 6',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Flashback',
+    description: 'Janice interrogates about group romantic history. Chandler searches for roommate. Carol reveals she\'s lesbian. Ross discovers marriage breakdown. Bar closes down.',
+    expressions: [
+    {
+      phrase: 'It\'s like a dirty math problem.',
+      partOfSpeech: 'expression',
+      meaning: 'Comparing complex romantic situation to confusing calculation. The phrase conveys humorous complexity. It demonstrates comedic math reference.',
+      meaning_ko: '복잡한 로맨틱 상황을 혼란스러운 계산과 비교합니다. 이 표현은 유머러스한 복잡성을 전달합니다. 그것은 코미디 수학 참조를 보여줍니다.',
+      example: 'A: "This is complicated." B: "It\'s like a dirty math problem."',
+      example_ko: 'A: "이건 복잡해." B: "더러운 수학 문제 같아."',
+      context: 'Ross describing Janice\'s question about romantic entanglements.',
+      context_ko: 'Ross는 Janice의 로맨틱 얽힘에 대한 질문을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X1'
+    },
+    {
+      phrase: 'Has never bumped uglies.',
+      partOfSpeech: 'expression',
+      meaning: 'Euphemistic term for never having romantic physical intimacy. The phrase conveys crude humor. It demonstrates slang terminology.',
+      meaning_ko: '로맨틱 신체 친밀감을 절대로 가지지 못했다는 유완곡 표현. 이 표현은 조악한 유머를 전달합니다. 그것은 slang 용어를 보여줍니다.',
+      example: 'A: "You\'ve never been intimate?" B: "Never bumped uglies."',
+      example_ko: 'A: "넌 절대 intimate하지 않았어?" B: "Never bumped uglies."',
+      context: 'Janice expressing disbelief about group\'s lack of romantic involvement.',
+      context_ko: 'Janice는 그룹의 로맨틱 involvement 부족에 대해 불신을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X2'
+    },
+    {
+      phrase: 'Over the years, none of you ever got drunk and stupid?',
+      partOfSpeech: 'question',
+      meaning: 'Questioning whether alcohol ever led to romantic mistakes. The phrase conveys skeptical inquiry. It demonstrates implied accusation.',
+      meaning_ko: '알코올이 로맨틱 실수를 초래했는지를 질문합니다. 이 표현은 회의적 문의를 전달합니다. 그것은 암시적 고소를 보여줍니다.',
+      example: 'A: "We\'ve never done that." B: "Over years, never got drunk and stupid?"',
+      example_ko: 'A: "우린 그걸 한 적 없어." B: "해 동안, 절대 drunk and stupid 하지 않았어?"',
+      context: 'Janice pressing about alcohol-fueled romantic situations.',
+      context_ko: 'Janice는 alcohol-fueled romantic 상황을 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X3'
+    },
+    {
+      phrase: 'I\'m never gonna find a roommate. Ever.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing absolute hopelessness about finding suitable living companion. The phrase conveys dramatic defeat. It demonstrates exaggeration.',
+      meaning_ko: '적절한 roommate 찾기에 대한 절대적 절망을 표현합니다. 이 표현은 극적인 패배를 전달합니다. 그것은 과장을 보여줍니다.',
+      example: 'A: "Keep looking." B: "I\'ll never find a roommate. Ever."',
+      example_ko: 'A: "계속 찾아." B: "난 절대 roommate를 찾지 못할 거야."',
+      context: 'Chandler expressing frustration after meeting difficult candidates.',
+      context_ko: 'Chandler는 어려운 후보자들을 만난 후 frustration을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X4'
+    },
+    {
+      phrase: 'Great apartment, Chandler Bing. Bing!',
+      partOfSpeech: 'expression',
+      meaning: 'Mocking roommate\'s annoying habit of repeating last name with sound effect. The phrase conveys comedic annoyance. It demonstrates exasperation.',
+      meaning_ko: 'Roommate가 마지막 이름을 반복하는 성가신 습관을 조롱합니다. 이 표현은 코미디 짜증을 전달합니다. 그것은 exasperation을 보여줍니다.',
+      example: 'A: "What did he say?" B: "Great apartment, Bing! Bing!"',
+      example_ko: 'A: "그가 뭐라고 했어?" B: "Great apartment, Bing! Bing!"',
+      context: 'Chandler mimicking potential roommate\'s irritating name repetition.',
+      context_ko: 'Chandler는 잠재적 roommate의 짜증나는 이름 반복을 모방합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X5'
+    },
+    {
+      phrase: 'How hard is it to get a couple drinks right?',
+      partOfSpeech: 'question',
+      meaning: 'Sarcastically questioning bartender\'s basic competence. The phrase conveys frustrated criticism. It demonstrates impatient rhetorical question.',
+      meaning_ko: 'Bartender의 기본적 능력을 풍자적으로 질문합니다. 이 표현은 frustrated 비판을 전달합니다. 그것은 impatient 수사적 질문을 보여줍니다.',
+      example: 'A: "Wrong order again." B: "How hard is it to get drinks right?"',
+      example_ko: 'A: "다시 틀린 주문." B: "drinks를 제대로 하기가 얼마나 어워?"',
+      context: 'Monica complaining about bar server errors in taking orders.',
+      context_ko: 'Monica는 bar server가 주문 처리에서 오류를 범한 것에 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X6'
+    },
+    {
+      phrase: 'Totally okay with the gay thing.',
+      partOfSpeech: 'expression',
+      meaning: 'Awkwardly declaring acceptance of homosexuality in oblivious context. The phrase conveys tone-deaf understanding. It demonstrates misplaced progressive sentiment.',
+      meaning_ko: 'oblivious 맥락에서 homosexuality 수용을 어색하게 선언합니다. 이 표현은 tone-deaf 이해를 전달합니다. 그것은 misplaced progressive sentiment를 보여줍니다.',
+      example: 'A: "What gay thing?" B: "Totally okay with the gay thing."',
+      example_ko: 'A: "무슨 gay thing?" B: "그 gay thing에 완전히 괜찮아."',
+      context: 'Jerry commenting awkwardly on gay acceptance to questioning roommate.',
+      context_ko: 'Jerry는 questioning roommate에게 gay 수용에 대해 어색하게 코멘트합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X7'
+    },
+    {
+      phrase: 'Where are we gonna hang out?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing worry about losing social meeting location. The phrase conveys concern about routine disruption. It demonstrates anxiety about change.',
+      meaning_ko: '사회적 만남 위치를 잃을 것에 대한 걱정을 표현합니다. 이 표현은 routine disruption에 대한 우려를 전달합니다. 그것은 변화에 대한 불안을 보여줍니다.',
+      example: 'A: "The bar is closing." B: "Where are we gonna hang out?"',
+      example_ko: 'A: "bar가 닫혀." B: "우린 어디 hang out 할 거야?"',
+      context: 'Friends worried about losing their regular hangout spot.',
+      context_ko: 'Friends는 그들의 정규 hangout spot을 잃을 것을 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X8'
+    },
+    {
+      phrase: 'Is this why I don\'t have a boyfriend?',
+      partOfSpeech: 'question',
+      meaning: 'Anxiously questioning if personality flaw explains romantic failure. The phrase conveys self-doubt. It demonstrates insecurity.',
+      meaning_ko: 'personality flaw이 romantic failure를 설명하는지 불안하게 질문합니다. 이 표현은 self-doubt를 전달합니다. 그것은 insecurity를 보여줍니다.',
+      example: 'A: "Something\'s wrong." B: "Is this why I don\'t have a boyfriend?"',
+      example_ko: 'A: "뭔가 잘못됐어." B: "이게 내가 boyfriend 없는 이유야?"',
+      context: 'Monica worrying roommate leaving is her fault.',
+      context_ko: 'Monica는 roommate를 떠나가는 것이 자신의 잘못이라고 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X9'
+    },
+    {
+      phrase: 'You are one of my favorite people.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing deep affection and high regard for someone. The phrase conveys sincere compliment. It demonstrates emotional connection.',
+      meaning_ko: '누군가에 대한 깊은 애정과 높은 평가를 표현합니다. 이 표현은 sincere 칭찬을 전달합니다. 그것은 emotional connection을 보여줍니다.',
+      example: 'A: "Am I hard to live with?" B: "You\'re one of my favorite people."',
+      example_ko: 'A: "난 함께 살기 어려워?" B: "넌 내 favorite people 중 한 명이야."',
+      context: 'Phoebe comforting Monica with genuine affection.',
+      context_ko: 'Phoebe는 Monica를 genuine affection으로 위로합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X10'
+    },
+    {
+      phrase: 'My wife\'s a lesbian.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating shocking discovery about spouse\'s sexual orientation. The phrase conveys relationship-ending revelation. It demonstrates emotional devastation.',
+      meaning_ko: 'spouse의 sexual orientation에 대한 충격적 발견을 명시합니다. 이 표현은 relationship-ending revelation을 전달합니다. 그것은 emotional devastation을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "My wife\'s a lesbian."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "내 아내가 lesbian이야."',
+      context: 'Ross revealing devastating truth about Carol to Monica.',
+      context_ko: 'Ross는 Carol에 대한 devastating 진실을 Monica에게 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X11'
+    },
+    {
+      phrase: 'And I\'m not one.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating incompatibility due to opposing sexual orientation. The phrase conveys tragic relationship mismatch. It demonstrates sad resignation.',
+      meaning_ko: '반대 sexual orientation으로 인한 incompatibility를 명시합니다. 이 표현은 tragic relationship mismatch를 전달합니다. 그것은 sad resignation을 보여줍니다.',
+      example: 'A: "Carol\'s a lesbian." B: "And I\'m not one."',
+      example_ko: 'A: "Carol은 lesbian이야." B: "그리고 난 아니야."',
+      context: 'Ross explaining why marriage cannot work.',
+      context_ko: 'Ross는 왜 결혼이 작동할 수 없는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X12'
+    },
+    {
+      phrase: 'Maybe this wouldn\'t have happened if I had a uterus.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically blaming self due to gender differences. The phrase conveys dark humor about divorce. It demonstrates cynical self-reproach.',
+      meaning_ko: '성 차이로 인해 자신을 풍자적으로 비난합니다. 이 표현은 divorce에 대한 dark humor를 전달합니다. 그것은 cynical self-reproach를 보여줍니다.',
+      example: 'A: "It\'s not your fault." B: "Maybe if I had a uterus."',
+      example_ko: 'A: "이건 너 때문이 아니야." B: "Maybe I had a uterus."',
+      context: 'Ross sardonically wondering if being male caused marriage failure.',
+      context_ko: 'Ross는 male이 marriage failure를 야기했는지 sardonically 궁금해합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X13'
+    },
+    {
+      phrase: 'Wait, wait, wait. My foot is stuck in the pocket.',
+      partOfSpeech: 'expression',
+      meaning: 'Interrupting intimate moment with physical embarrassment. The phrase conveys comedic mood-killer. It demonstrates awkward situation.',
+      meaning_ko: 'physical embarrassment로 intimate moment를 중단합니다. 이 표현은 comedic mood-killer를 전달합니다. 그것은 awkward situation을 보여줍니다.',
+      example: 'A: "Come here." B: "My foot is stuck in the pocket."',
+      example_ko: 'A: "여기 와." B: "내 발이 pocket에 걸렸어."',
+      context: 'Rachel\'s embarrassing interruption during intimate moment with Ross.',
+      context_ko: 'Rachel의 Ross와 intimate moment 중 embarrassing interruption.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X14'
+    },
+    {
+      phrase: 'I don\'t wanna speak. I don\'t wanna think.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing desire to avoid communication and contemplation. The phrase conveys emotional numbness. It demonstrates escape attempt.',
+      meaning_ko: '소통과 contemplation을 피하려는 욕구를 표현합니다. 이 표현은 emotional numbness를 전달합니다. 그것은 escape attempt를 보여줍니다.',
+      example: 'A: "Let\'s talk." B: "I don\'t wanna speak or think."',
+      example_ko: 'A: "말해보자." B: "난 말하거나 생각하고 싶지 않아."',
+      context: 'Rachel returning after argument and wanting emotional escape.',
+      context_ko: 'Rachel은 argument 후 돌아와서 emotional escape를 원합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S3E6X15'
+    }
+  ]
   };
 
   var S_NUM = 3;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
