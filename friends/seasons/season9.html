@@ -152,7 +152,7 @@
 </script>
 <script>
   /* Season availability — set to true to unlock this season */
-  var SEASON_AVAILABLE = false;
+  var SEASON_AVAILABLE = true;
 
   var SEASON_NUM    = 9;
   var EPISODE_COUNT = 24;
@@ -176,7 +176,7 @@
   }
 
   /* Episodes unlocked for this season — update to open more */
-  var AVAILABLE_EPISODES = new Set([]);
+  var AVAILABLE_EPISODES = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]);
 
   function buildEpisodeGrid() {
     var grid = document.getElementById("episodeGrid");
