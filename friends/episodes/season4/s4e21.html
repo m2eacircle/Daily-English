@@ -46,13 +46,15 @@
     </nav>
     <div class="page-header">
       <div class="page-header-thumb">
-        <img src="../../images/s4e21.jpg" alt="S4E21" onerror="this.src='../../images/s4e21.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+        <img src="../../images/s4e21.jpg" alt="S4E21"
+          onerror="this.src='../../images/s4e21.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S4E21: Season 4, Episode 21</div>
-        <div class="page-header-meta">Barbados - Part 3.</div>
+        <div class="page-header-meta">15 English Expressions & Korean Translations</div>
         <div class="page-header-actions">
-          <button class="btn-bm" data-bm-id="episode-friends-s4e21" onclick="toggleBookmark('episode','episode-friends-s4e21','📋 Friends S4E21','friends/episodes/season4/s4e21.html')">
+          <button class="btn-bm" data-bm-id="episode-friends-s4e21"
+            onclick="toggleBookmark('episode','episode-friends-s4e21','📋 Friends S4E21','friends/episodes/season4/s4e21.html')">
             <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
           </button>
         </div>
@@ -75,175 +77,189 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
+  /* ================================================================
+     EPISODE DATA — edit this object to update expressions
+     ----------------------------------------------------------------
+     Each expression has:
+       phrase       : the English expression
+       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
+       meaning      : your explanation
+       example      : an example sentence
+       context      : scene context (optional, can be empty '')
+       youtubeUrl   : paste YouTube link here when ready
+     ----------------------------------------------------------------
+     The page shows 15 slots. Add up to 15 objects in expressions[].
+     Empty slots show as "Coming Soon" placeholders automatically.
+  ================================================================ */
   var EP_DATA = {
     available: true,
     title: 'Season 4, Episode 21',
-    description: 'Barbados - Part 3.',
+    description: '15 natural English expressions from Season 4, Episode 21.',
     expressions: [
       {
-        phrase: "I gotta go",
+        phrase: "It seems like all of a sudden, so much is happening.",
         partOfSpeech: "expression",
-        meaning: "I need to leave immediately",
-        meaning_ko: "즉시 떠나야 함",
-        example: "I gotta go break up with Bonnie.",
-        example_ko: "난 Bonnie와 헤어져야 해.",
-        context: "Ross needs to end his relationship",
-        context_ko: "Ross는 관계를 끝내야 함을 깨닫다",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Expressing how quickly life events are occurring simultaneously.",
+        meaning_ko: '나는 돌아가야 해',
+        example: "It seems like all of a sudden, so much is happening.",
+        example_ko: '나는 돌아가야 합니다.',
+        context: "Monica and Chandler observe everyone's major life changes.",
+        context_ko: 'Rachel은 현실을 직시한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X1"
       },
       {
-        phrase: "Can\'t let it go",
+        phrase: "We just sit here.",
         partOfSpeech: "expression",
-        meaning: "Unable to stop thinking about something",
-        meaning_ko: "어떤 것을 멈출 수 없음",
-        example: "He couldn\'t let it go.",
-        example_ko: "그는 그것을 놓치지 못했어.",
-        context: "Joey mentions Monica\'s comment",
-        context_ko: "Joey는 Monica의 댓글을 계속 언급",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Expressing feeling stagnant or unproductive.",
+        meaning_ko: '아니, 남아',
+        example: "Everybody's doing stuff. We just sit here.",
+        example_ko: '아니, 여기 있어.',
+        context: "Chandler feels envious of others' accomplishments.",
+        context_ko: 'Ross는 간청한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X2"
       },
       {
-        phrase: "Thanks a million",
+        phrase: "We have to do something huge.",
         partOfSpeech: "expression",
-        meaning: "Express sincere gratitude",
-        meaning_ko: "진심 어린 감사 표현",
-        example: "Thanks a million for your help.",
-        example_ko: "도움을 줘서 정말 고마워.",
-        context: "Bonnie thanks Rachel",
-        context_ko: "Bonnie는 Rachel에 감사",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "The need to take significant action.",
+        meaning_ko: '나는 기다리는 일이 있어',
+        example: "Look, we have to do something. Okay? Something huge.",
+        example_ko: '나는 돌아갈 일이 있어.',
+        context: "Monica insists they need to make major life changes.",
+        context_ko: 'Rachel은 의무를 설명한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X3"
       },
       {
-        phrase: "I need to be alone",
+        phrase: "It's just climbing. It's just steep.",
         partOfSpeech: "expression",
-        meaning: "Request time by oneself",
-        meaning_ko: "혼자만의 시간 요청",
-        example: "I need to be alone right now.",
-        example_ko: "난 지금 혼자 있고 싶어.",
-        context: "Phoebe needs space",
-        context_ko: "Phoebe는 공간이 필요",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Downplaying the difficulty of a challenging task.",
+        meaning_ko: '그럼 그만둬',
+        example: "Why not? I mean, it's just climbing. It's just steep.",
+        example_ko: '그럼 그만둬.',
+        context: "Joey minimizes the dangers of climbing Mount Everest.",
+        context_ko: 'Ross는 급진적 해결책을 제안한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X4"
       },
       {
-        phrase: "Start from here",
+        phrase: "I had a major crush on you.",
         partOfSpeech: "expression",
-        meaning: "Begin fresh from this point",
-        meaning_ko: "이 시점에서 새로 시작",
-        example: "Can\'t we start from here?",
-        example_ko: "여기서부터 시작할 수 없어?",
-        context: "Phoebe\'s mother wants a new beginning",
-        context_ko: "Phoebe의 어머니는 새로운 시작 원함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Expressing a strong romantic attraction.",
+        meaning_ko: '나는 단순히 내 인생을 떠날 수 없어',
+        example: "Back in high school, I had a major crush on you.",
+        example_ko: '나는 내 일을 단순히 떠날 수 없어.',
+        context: "Rachel tells Ross about her old feelings for him.",
+        context_ko: 'Rachel은 현실성을 제시한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X5"
       },
       {
-        phrase: "I stepped up",
-        partOfSpeech: "expression",
-        meaning: "Take on responsibility",
-        meaning_ko: "책임을 짐",
-        example: "I stepped up and helped.",
-        example_ko: "난 책임을 졌어.",
-        context: "Chandler helped Rachel",
-        context_ko: "Chandler는 Rachel을 도움",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        phrase: "Once a cheater, always a cheater",
+        phrase: "This ship has sailed.",
         partOfSpeech: "idiom",
-        meaning: "Betrayal pattern repeats",
-        meaning_ko: "배신 패턴 반복",
-        example: "Once a cheater, always a cheater.",
-        example_ko: "한 번 부정행위하면 항상 부정행위한다.",
-        context: "Rachel\'s mother doubts Ross",
-        context_ko: "Rachel의 어머니는 Ross를 의심",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "A missed opportunity that can no longer happen.",
+        meaning_ko: '왜 안 돼',
+        example: "I'm with somebody else. I'm happy. This ship has sailed.",
+        example_ko: '왜 안 되지.',
+        context: "Ross tells Rachel his relationship is over.",
+        context_ko: 'Ross는 질문한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X6"
       },
       {
-        phrase: "We were on a break",
+        phrase: "I'm tired of having a relationship with your answering machine.",
         partOfSpeech: "expression",
-        meaning: "Defense for cheating during separation",
-        meaning_ko: "분리 중 부정행위 변명",
+        meaning: "Frustration that someone is unavailable and always busy.",
+        meaning_ko: '왜냐하면 그렇게 간단하지 않거든',
+        example: "I'm tired of having a relationship with your answering machine.",
+        example_ko: '왜냐하면 그건 간단하지 않으니까.',
+        context: "Carol criticizes Rachel's work-life imbalance.",
+        context_ko: 'Rachel은 설명한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X7"
+      },
+      {
+        phrase: "We were on a break!",
+        partOfSpeech: "expression",
+        meaning: "Justifying infidelity by claiming the relationship was paused.",
+        meaning_ko: '사랑은 간단해',
         example: "We were on a break!",
-        example_ko: "우리는 쉬고 있었어!",
-        context: "Ross defends his actions",
-        context_ko: "Ross는 자신의 행동을 변명",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        example_ko: '사랑은 간단해.',
+        context: "Ross's famous defense against Rachel's accusation.",
+        context_ko: 'Ross는 주장한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X8"
       },
       {
-        phrase: "I fell asleep",
+        phrase: "I can't believe he remembered.",
         partOfSpeech: "expression",
-        meaning: "Lost consciousness unexpectedly",
-        meaning_ko: "예상치 못하게 잠듦",
-        example: "I fell asleep reading.",
-        example_ko: "난 읽다가 잠이 들었어.",
-        context: "Ross didn\'t finish Rachel\'s letter",
-        context_ko: "Ross는 Rachel의 편지를 다 읽지 못함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Expressing surprise at someone's thoughtfulness.",
+        meaning_ko: '아마 넌 그럴지도',
+        example: "It was like months ago... I can't believe he remembered.",
+        example_ko: '아마 너는.',
+        context: "Rachel is moved by Ross's gift of a pin.",
+        context_ko: 'Rachel은 차이를 지적한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X9"
       },
       {
-        phrase: "You will always be the guy",
+        phrase: "I'm happy for him. I really... I'm... I'm ha...",
         partOfSpeech: "expression",
-        meaning: "Remind of defining moment",
-        meaning_ko: "결정적인 순간 상기",
-        example: "You will always be that guy.",
-        example_ko: "넌 항상 그 남자야.",
-        context: "Rachel won\'t forget",
-        context_ko: "Rachel은 잊지 않음",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Struggling to express genuine happiness amid sadness.",
+        meaning_ko: '나는 너를 필요해',
+        example: "I'm happy for him. I really... I'm... I'm ha... I'll work on it.",
+        example_ko: '나는 너를 필요해.',
+        context: "Rachel tries to be supportive about Ross's wedding.",
+        context_ko: 'Ross의 간청',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X10"
       },
       {
-        phrase: "I would like to know you",
-        partOfSpeech: "expression",
-        meaning: "Desire to understand someone better",
-        meaning_ko: "누군가를 더 잘 이해하고 싶음",
-        example: "I would like to know you.",
-        example_ko: "난 너를 알고 싶어.",
-        context: "Phoebe\'s mother wants connection",
-        context_ko: "Phoebe의 어머니는 연결을 원함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        phrase: "Head got all sunburned",
-        partOfSpeech: "expression",
-        meaning: "Severe sunburn on head",
-        meaning_ko: "머리에 심한 일광화상",
-        example: "My head got sunburned.",
-        example_ko: "내 머리가 일광화상을 입었어.",
-        context: "Bonnie explains",
-        context_ko: "Bonnie는 설명",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        phrase: "Get cracking on this",
-        partOfSpeech: "phrasal verb",
-        meaning: "Start working energetically",
-        meaning_ko: "활기차게 일하기 시작",
-        example: "Let\'s get cracking.",
-        example_ko: "시작하자.",
-        context: "Ross prepares",
-        context_ko: "Ross는 준비",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        phrase: "It wasn\'t every morning",
-        partOfSpeech: "expression",
-        meaning: "Clarify infrequency",
-        meaning_ko: "드물게 일어남을 명확히",
-        example: "It wasn\'t every morning.",
-        example_ko: "매 아침이 아니었어.",
-        context: "Ross corrects himself",
-        context_ko: "Ross는 자신을 수정",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        phrase: "Big fat abandoner",
+        phrase: "Isn't that just kick-you-in-the-crotch, spit-on-your-neck fantastic?",
         partOfSpeech: "idiom",
-        meaning: "Critical term for abandonment",
-        meaning_ko: "포기에 대한 비판적 용어",
-        example: "Big fat abandoner!",
-        example_ko: "뚱뚱한 버린 사람!",
-        context: "Phoebe expresses anger",
-        context_ko: "Phoebe는 분노 표현",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        meaning: "Sarcastic response to terrible news.",
+        meaning_ko: '그리고 나는 내 인생을 필요로 해',
+        example: "Isn't that just kick-you-in-the-crotch, spit-on-your-neck fantastic?",
+        example_ko: '그리고 나도 내 인생이 필요해.',
+        context: "Ross discovers Julie will be in China.",
+        context_ko: 'Rachel의 우선순위',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X11"
+      },
+      {
+        phrase: "Everything's fine. I'm really happy for you and your cat.",
+        partOfSpeech: "expression",
+        meaning: "A sarcastic message implying everything is NOT fine.",
+        meaning_ko: '이것은 작동하지 않을 거야',
+        example: "Everything's fine. And I'm really happy for you and your cat.",
+        example_ko: '이건 안 될 거야.',
+        context: "Rachel leaves a bitter message on Ross's voicemail.",
+        context_ko: 'Rachel은 현실을 제시한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X12"
+      },
+      {
+        phrase: "That's what they call closure.",
+        partOfSpeech: "expression",
+        meaning: "Marking the end of an emotional issue or relationship.",
+        meaning_ko: '우리가 노력하면 작동할 거야',
+        example: "And that, my friend, is what they call closure.",
+        example_ko: '우리가 노력하면 될 거야.',
+        context: "Rachel's closing statement in her voicemail.",
+        context_ko: 'Ross는 희망을 유지한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X13"
+      },
+      {
+        phrase: "It's always been you, Rach.",
+        partOfSpeech: "expression",
+        meaning: "Romantic confession that someone is one's true love.",
+        meaning_ko: '나는 미안해',
+        example: "It's always been you, Rach.",
+        example_ko: '나는 정말 미안해.',
+        context: "Ross finally confesses his real feelings to Rachel.",
+        context_ko: 'Rachel은 감정을 표현한다',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X14"
+      },
+      {
+        phrase: "See? He's her lobster.",
+        partOfSpeech: "idiom",
+        meaning: "Destiny; your soulmate or perfect match.",
+        meaning_ko: '나도',
+        example: "See? He's her lobster.",
+        example_ko: '나도.',
+        context: "Phoebe observes the connection between Ross and Rachel.",
+        context_ko: 'Ross의 슬픈 동의',
+        youtubeUrl: "https://www.youtube.com/watch?v=REPLACE_S4E21X15"
       }
     ]
   };
@@ -254,16 +270,26 @@
 
   function goHome() { window.location.href = '../../../index.html'; }
 
-  function buildExpressions() {
-    var isKo = getLang() === 'ko';
+    function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
+    var isKo = getLang() === 'ko';
+    
     for (var i = 0; i < TOTAL; i++) {
-      var x = (i < dataExprs.length) ? dataExprs[i] : null;
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
       var num = i + 1;
-      var bmId = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/season' + S_NUM + '/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      
       if (x) {
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
+        
         var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
         var ytBtn = isLive
           ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">' + t('expr.watch') + '</a>'
@@ -271,12 +297,7 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
-        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
-        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
-        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
-        var exprNum = isKo
-          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
-          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
+        
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
@@ -288,9 +309,9 @@
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions</div>';
+        html += '<div class="expr-num">' + (isKo ? '표현 ' : 'Expression ') + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; ' + (isKo ? '표현 ' : 'Expression ') + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Coming Soon</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -304,14 +325,19 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
+    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML = '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div><div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div><div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.\nCheck back soon!</div><button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
+      overlay.innerHTML =
+        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
+        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
+        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
+        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
       document.body.appendChild(overlay);
       return;
     }
-    checkTermsGuard();
+        checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
