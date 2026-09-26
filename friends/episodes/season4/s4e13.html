@@ -46,13 +46,15 @@
     </nav>
     <div class="page-header">
       <div class="page-header-thumb">
-        <img src="../../images/s4e13.jpg" alt="S4E13" onerror="this.src='../../images/s4e13.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
+        <img src="../../images/s4e13.jpg" alt="S4E13"
+          onerror="this.src='../../images/s4e13.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S4E13: Season 4, Episode 13</div>
-        <div class="page-header-meta">Thanksgiving part 2.</div>
+        <div class="page-header-meta">15 English Expressions & Korean Translations</div>
         <div class="page-header-actions">
-          <button class="btn-bm" data-bm-id="episode-friends-s4e13" onclick="toggleBookmark('episode','episode-friends-s4e13','📋 Friends S4E13','friends/episodes/season4/s4e13.html')">
+          <button class="btn-bm" data-bm-id="episode-friends-s4e13"
+            onclick="toggleBookmark('episode','episode-friends-s4e13','📋 Friends S4E13','friends/episodes/season4/s4e13.html')">
             <span data-i18n="bm.episode">&#128278; Bookmark Episode</span>
           </button>
         </div>
@@ -75,175 +77,189 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
+  /* ================================================================
+     EPISODE DATA — edit this object to update expressions
+     ----------------------------------------------------------------
+     Each expression has:
+       phrase       : the English expression
+       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
+       meaning      : your explanation
+       example      : an example sentence
+       context      : scene context (optional, can be empty '')
+       youtubeUrl   : paste YouTube link here when ready
+     ----------------------------------------------------------------
+     The page shows 15 slots. Add up to 15 objects in expressions[].
+     Empty slots show as "Coming Soon" placeholders automatically.
+  ================================================================ */
   var EP_DATA = {
     available: true,
     title: 'Season 4, Episode 13',
-    description: 'Thanksgiving part 2.',
+    description: '15 expressions from the play and workplace relationship episode.',
     expressions: [
       {
-        phrase: "I gotta go",
-        partOfSpeech: "expression",
-        meaning: "I need to leave immediately",
-        meaning_ko: "즉시 떠나야 함",
-        example: "I gotta go break up with Bonnie.",
-        example_ko: "난 Bonnie와 헤어져야 해.",
-        context: "Ross needs to end his relationship",
-        context_ko: "Ross는 관계를 끝내야 함을 깨닫다",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'That gravy train has ended',
+        partOfSpeech: 'idiom',
+        meaning: 'Free benefits or advantages are no longer available',
+        meaning_ko: '당신에게 뭔가를 말하고 싶어',
+        example: 'You can\'t eat our food anymore. That gravy train has ended.',
+        example_ko: '나는 당신에게 뭔가를 말하고 싶어.',
+        context: 'Joey tells Monica she can no longer eat from their fridge',
+        context_ko: 'Chandler는 Joey에게 뭔가 중요한 것을 말하려고 한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X1'
       },
       {
-        phrase: "Can\'t let it go",
-        partOfSpeech: "expression",
-        meaning: "Unable to stop thinking about something",
-        meaning_ko: "어떤 것을 멈출 수 없음",
-        example: "He couldn\'t let it go.",
-        example_ko: "그는 그것을 놓치지 못했어.",
-        context: "Joey mentions Monica\'s comment",
-        context_ko: "Joey는 Monica의 댓글을 계속 언급",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'People coming over all the time',
+        partOfSpeech: 'expression',
+        meaning: 'Frequent guests and visitors',
+        meaning_ko: '이것은 정말 어려울 거야',
+        example: 'If you have the big apartment, then deal with people coming over all the time.',
+        example_ko: '이것은 정말 힘들 거야.',
+        context: 'Monica explains the responsibility of having the larger apartment',
+        context_ko: 'Chandler는 자신의 공개에 대해 걱정한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X2'
       },
       {
-        phrase: "Thanks a million",
-        partOfSpeech: "expression",
-        meaning: "Express sincere gratitude",
-        meaning_ko: "진심 어린 감사 표현",
-        example: "Thanks a million for your help.",
-        example_ko: "도움을 줘서 정말 고마워.",
-        context: "Bonnie thanks Rachel",
-        context_ko: "Bonnie는 Rachel에 감사",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'That fridge has got to be stocked',
+        partOfSpeech: 'expression',
+        meaning: 'Must be filled with food and supplies',
+        meaning_ko: '나는 그녀를 사랑한다',
+        example: 'That fridge has got to be stocked, okay?',
+        example_ko: '나는 그녀를 사랑해.',
+        context: 'Joey lists the responsibilities that come with the big apartment',
+        context_ko: 'Chandler는 Kathy에 대한 자신의 감정을 공개한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X3'
       },
       {
-        phrase: "I need to be alone",
-        partOfSpeech: "expression",
-        meaning: "Request time by oneself",
-        meaning_ko: "혼자만의 시간 요청",
-        example: "I need to be alone right now.",
-        example_ko: "난 지금 혼자 있고 싶어.",
-        context: "Phoebe needs space",
-        context_ko: "Phoebe는 공간이 필요",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'Charged me $32 to see it',
+        partOfSpeech: 'expression',
+        meaning: 'Had to pay to experience something unwanted',
+        meaning_ko: '당신이 내 여자친구를 사랑하게 되었어',
+        example: 'It was like somebody wrote down my worst nightmare and then charged me $32 to see it.',
+        example_ko: '넌 내 여자친구를 사랑하게 되었어.',
+        context: 'Chandler describes watching Kathy\'s sexual play scene',
+        context_ko: 'Joey는 Chandler의 배신에 반응한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X4'
       },
       {
-        phrase: "Start from here",
-        partOfSpeech: "expression",
-        meaning: "Begin fresh from this point",
-        meaning_ko: "이 시점에서 새로 시작",
-        example: "Can\'t we start from here?",
-        example_ko: "여기서부터 시작할 수 없어?",
-        context: "Phoebe\'s mother wants a new beginning",
-        context_ko: "Phoebe의 어머니는 새로운 시작 원함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'They\'re gonna go to their cast parties',
+        partOfSpeech: 'expression',
+        meaning: 'Attend social events after work',
+        meaning_ko: '우리는 키스나 다른 것을 하지 않았어',
+        example: 'They\'re gonna go to their cast parties, and he\'s gonna undermine me.',
+        example_ko: '우리는 키스도 안 했어 아무것도.',
+        context: 'Chandler worries about Kathy and Nick at post-show parties',
+        context_ko: 'Chandler는 자신의 순결을 방어한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X5'
       },
       {
-        phrase: "I stepped up",
-        partOfSpeech: "expression",
-        meaning: "Take on responsibility",
-        meaning_ko: "책임을 짐",
-        example: "I stepped up and helped.",
-        example_ko: "난 책임을 졌어.",
-        context: "Chandler helped Rachel",
-        context_ko: "Chandler는 Rachel을 도움",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'He\'ll go, "Whatever"',
+        partOfSpeech: 'expression',
+        meaning: 'Dismissive response showing indifference',
+        meaning_ko: '나는 화낼 권리가 있어',
+        example: 'He\'ll go, "Whatever. Ha-ha-ha."',
+        example_ko: '나는 화낼 권리가 있어.',
+        context: 'Chandler imagines the other actor mocking his name',
+        context_ko: 'Joey는 자신의 감정을 정당화한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X6'
       },
       {
-        phrase: "Once a cheater, always a cheater",
-        partOfSpeech: "idiom",
-        meaning: "Betrayal pattern repeats",
-        meaning_ko: "배신 패턴 반복",
-        example: "Once a cheater, always a cheater.",
-        example_ko: "한 번 부정행위하면 항상 부정행위한다.",
-        context: "Rachel\'s mother doubts Ross",
-        context_ko: "Rachel의 어머니는 Ross를 의심",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'Just because they work together doesn\'t mean they\'ll get together',
+        partOfSpeech: 'expression',
+        meaning: 'Coworking does not automatically lead to romance',
+        meaning_ko: '넌 내 최고의 친구야',
+        example: 'Just because they work together doesn\'t mean they\'ll get together.',
+        example_ko: '넌 내 베스트 프렌드야.',
+        context: 'Joey reassures Chandler about on-stage chemistry',
+        context_ko: 'Joey는 우정이 깨졌다고 말한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X7'
       },
       {
-        phrase: "We were on a break",
-        partOfSpeech: "expression",
-        meaning: "Defense for cheating during separation",
-        meaning_ko: "분리 중 부정행위 변명",
-        example: "We were on a break!",
-        example_ko: "우리는 쉬고 있었어!",
-        context: "Ross defends his actions",
-        context_ko: "Ross는 자신의 행동을 변명",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'The rule is when two actors are actually doing it',
+        partOfSpeech: 'expression',
+        meaning: 'Established principle or guideline',
+        meaning_ko: '이사 나가',
+        example: 'The rule is when two actors are actually doing it off-stage, then all the sexual tension between them is gone.',
+        example_ko: '나가.',
+        context: 'Joey explains his theory about actor relationships',
+        context_ko: 'Joey는 Chandler에게 아파트에서 나가라고 말한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X8'
       },
       {
-        phrase: "I fell asleep",
-        partOfSpeech: "expression",
-        meaning: "Lost consciousness unexpectedly",
-        meaning_ko: "예상치 못하게 잠듦",
-        example: "I fell asleep reading.",
-        example_ko: "난 읽다가 잠이 들었어.",
-        context: "Ross didn\'t finish Rachel\'s letter",
-        context_ko: "Ross는 Rachel의 편지를 다 읽지 못함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'Have I ever had chemistry on-stage',
+        partOfSpeech: 'expression',
+        meaning: 'Show romantic or sexual connection in performance',
+        meaning_ko: 'Rachel, 넌 착한 사람이야',
+        example: 'Have I ever had chemistry on-stage?',
+        example_ko: 'Rachel, 넌 좋은 사람이야.',
+        context: 'Joey asks if he\'s ever had on-stage chemistry',
+        context_ko: 'Kathy는 Rachel에게 칭찬한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X9'
       },
       {
-        phrase: "You will always be the guy",
-        partOfSpeech: "expression",
-        meaning: "Remind of defining moment",
-        meaning_ko: "결정적인 순간 상기",
-        example: "You will always be that guy.",
-        example_ko: "넌 항상 그 남자야.",
-        context: "Rachel won\'t forget",
-        context_ko: "Rachel은 잊지 않음",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'I just helped an 81-year-old woman put on a thong',
+        partOfSpeech: 'expression',
+        meaning: 'Assisted a customer with trying on clothing',
+        meaning_ko: '나는 정말 미안해',
+        example: 'I just helped an 81-year-old woman put on a thong, and she didn\'t even buy it.',
+        example_ko: '나는 정말 미안합니다.',
+        context: 'Rachel describes her worst personal shopping experience',
+        context_ko: 'Chandler는 위기 상황을 사과한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X10'
       },
       {
-        phrase: "I would like to know you",
-        partOfSpeech: "expression",
-        meaning: "Desire to understand someone better",
-        meaning_ko: "누군가를 더 잘 이해하고 싶음",
-        example: "I would like to know you.",
-        example_ko: "난 너를 알고 싶어.",
-        context: "Phoebe\'s mother wants connection",
-        context_ko: "Phoebe의 어머니는 연결을 원함",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'My wife... Well, my ex-wife',
+        partOfSpeech: 'expression',
+        meaning: 'Correction indicating recent marital status change',
+        meaning_ko: '우리 사이에 아무것도 없어',
+        example: 'Well, I need a new wardrobe. My wife... Well, my ex-wife...',
+        example_ko: '우리 사이에는 아무도 없어.',
+        context: 'Joshua explains his need for new clothes',
+        context_ko: 'Kathy는 거짓말한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X11'
       },
       {
-        phrase: "Head got all sunburned",
-        partOfSpeech: "expression",
-        meaning: "Severe sunburn on head",
-        meaning_ko: "머리에 심한 일광화상",
-        example: "My head got sunburned.",
-        example_ko: "내 머리가 일광화상을 입었어.",
-        context: "Bonnie explains",
-        context_ko: "Bonnie는 설명",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'Dropping it off at the dry cleaners in the skirt',
+        partOfSpeech: 'expression',
+        meaning: 'Embarrassing situation of wearing wrong clothing',
+        meaning_ko: '이것이 어떻게 보일 것인지 알아',
+        example: 'Yeah, it wasn\'t much fun dropping it off at the dry cleaners in the skirt.',
+        example_ko: '나는 이것이 어떻게 보일지 알아.',
+        context: 'Joshua tells Rachel about an awkward moment',
+        context_ko: 'Joey는 상황을 이해한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X12'
       },
       {
-        phrase: "Get cracking on this",
-        partOfSpeech: "phrasal verb",
-        meaning: "Start working energetically",
-        meaning_ko: "활기차게 일하기 시작",
-        example: "Let\'s get cracking.",
-        example_ko: "시작하자.",
-        context: "Ross prepares",
-        context_ko: "Ross는 준비",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'Clearly, you\'re having sex with him',
+        partOfSpeech: 'expression',
+        meaning: 'Obviously, from evidence or observation',
+        meaning_ko: '끝났어',
+        example: 'Clearly, you\'re having sex with him.',
+        example_ko: '그것은 끝났어.',
+        context: 'Chandler accuses Kathy based on lack of on-stage chemistry',
+        context_ko: 'Joey는 우정이 끝났다고 선언한다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X13'
       },
       {
-        phrase: "It wasn\'t every morning",
-        partOfSpeech: "expression",
-        meaning: "Clarify infrequency",
-        meaning_ko: "드물게 일어남을 명확히",
-        example: "It wasn\'t every morning.",
-        example_ko: "매 아침이 아니었어.",
-        context: "Ross corrects himself",
-        context_ko: "Ross는 자신을 수정",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'There was no chemistry between you two',
+        partOfSpeech: 'expression',
+        meaning: 'Lack of romantic or sexual connection',
+        meaning_ko: '넌 떠나야 할 거야',
+        example: 'Oh, come on. It was so obvious. There was no chemistry between you two.',
+        example_ko: '넌 떠나야 할 거야.',
+        context: 'Chandler criticizes Kathy\'s on-stage performance',
+        context_ko: 'Joey는 최후통첩을 내린다',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X14'
       },
       {
-        phrase: "Big fat abandoner",
-        partOfSpeech: "idiom",
-        meaning: "Critical term for abandonment",
-        meaning_ko: "포기에 대한 비판적 용어",
-        example: "Big fat abandoner!",
-        example_ko: "뚱뚱한 버린 사람!",
-        context: "Phoebe expresses anger",
-        context_ko: "Phoebe는 분노 표현",
-        youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        phrase: 'I\'m playing a part in a play. How can you not trust me',
+        partOfSpeech: 'expression',
+        meaning: 'Question expressing hurt from betrayal of trust',
+        meaning_ko: '나는 모든 것에 대해 미안해',
+        example: 'Acting. Chandler, this is my job. I\'m playing a part in a play. How can you not trust me?',
+        example_ko: '나는 모든 것에 대해 미안합니다.',
+        context: 'Kathy confronts Chandler about his accusations',
+        context_ko: 'Chandler의 최종 사과',
+        youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S4E13X15'
       }
     ]
   };
@@ -254,16 +270,26 @@
 
   function goHome() { window.location.href = '../../../index.html'; }
 
-  function buildExpressions() {
-    var isKo = getLang() === 'ko';
+    function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
+    var isKo = getLang() === 'ko';
+    
     for (var i = 0; i < TOTAL; i++) {
-      var x = (i < dataExprs.length) ? dataExprs[i] : null;
+      var x   = (i < dataExprs.length) ? dataExprs[i] : null;
       var num = i + 1;
-      var bmId = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmId  = 'expr-s' + S_NUM + 'e' + E_NUM + 'x' + num;
+      var bmUrl = 'friends/episodes/season' + S_NUM + '/s' + S_NUM + 'e' + E_NUM + '.html#slot' + num;
+      
       if (x) {
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
+        
         var isLive = x.youtubeUrl && x.youtubeUrl.indexOf('REPLACE') === -1 && x.youtubeUrl.length > 25;
         var ytBtn = isLive
           ? '<a class="btn-youtube" href="' + x.youtubeUrl + '" target="_blank" rel="noopener">' + t('expr.watch') + '</a>'
@@ -271,12 +297,7 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
-        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
-        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
-        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
-        var exprNum = isKo
-          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
-          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
+        
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
@@ -288,9 +309,9 @@
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions</div>';
+        html += '<div class="expr-num">' + (isKo ? '표현 ' : 'Expression ') + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; ' + (isKo ? '표현 ' : 'Expression ') + num + '</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Coming Soon</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -304,14 +325,19 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
+    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML = '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div><div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div><div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.\nCheck back soon!</div><button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
+      overlay.innerHTML =
+        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
+        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
+        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
+        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
       document.body.appendChild(overlay);
       return;
     }
-    checkTermsGuard();
+        checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
