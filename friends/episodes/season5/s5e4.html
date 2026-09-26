@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S5E4: Season 5, Episode 4</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-meta">15 English Expressions & Korean Translations</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s5e4"
             onclick="toggleBookmark('episode','episode-friends-s5e4','📋 Friends S5E4','friends/episodes/season5/s5e4.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 5, Episode 4',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Monica\'s secret boyfriend, selfish good deeds, Emily returns',
+    expressions: [
+    {
+      phrase: 'I was taking a nap',
+      partOfSpeech: 'expression',
+      meaning: 'Excuse for being in an awkward position/situation',
+      meaning_ko: '어색한 위치/상황에 있다는 변명',
+      example: 'Monica uses nap as excuse after being caught.',
+      example_ko: 'Monica는 잡힌 후 낮잠을 변명으로 사용합니다.',
+      context: 'Monica caught in romantic position waiting for boyfriend',
+      context_ko: 'Monica가 남친을 기다리는 로맨틱한 위치에서 잡힘',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X1'
+    },
+    {
+      phrase: 'Tell me you were waiting for a guy',
+      partOfSpeech: 'expression',
+      meaning: 'Express hope about something specific',
+      meaning_ko: '무언가 구체적인 것에 대한 희망을 표현하다',
+      example: 'Rachel hopes Monica is dating someone.',
+      example_ko: 'Rachel은 Monica가 누군가와 데이트하기를 바랍니다.',
+      context: 'Rachel\'s reaction to Monica\'s suspicious position',
+      context_ko: 'Monica의 의심스러운 위치에 대한 Rachel의 반응',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X2'
+    },
+    {
+      phrase: 'I\'m seeing a guy from work',
+      partOfSpeech: 'expression',
+      meaning: 'Announce that you\'re dating someone',
+      meaning_ko: '누군가와 데이트하고 있다고 발표하다',
+      example: 'Monica reveals she\'s dating a waiter.',
+      example_ko: 'Monica는 자신이 웨이터와 데이트하고 있다고 밝힙니다.',
+      context: 'Monica sharing her relationship news',
+      context_ko: 'Monica가 자신의 관계 뉴스를 공유함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X3'
+    },
+    {
+      phrase: 'Give me a second. I\'ll be out of your hair',
+      partOfSpeech: 'idiom',
+      meaning: 'Say you\'ll leave or stop bothering someone soon',
+      meaning_ko: '곧 떠나거나 누군가를 괴롭히는 것을 멈추겠다고 말하다',
+      example: 'Chandler says he\'ll get out of the apartment.',
+      example_ko: 'Chandler는 아파트에서 나가겠다고 말합니다.',
+      context: 'Chandler excusing himself from the room',
+      context_ko: 'Chandler가 방을 나가며 변명함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X4'
+    },
+    {
+      phrase: 'Ross was talking so loud, they threw us out',
+      partOfSpeech: 'expression',
+      meaning: 'Get removed from a place for causing trouble',
+      meaning_ko: '문제를 일으켜 어딘가에서 제거되다',
+      example: 'Joey explains why they left the movie.',
+      example_ko: 'Joey는 왜 영화를 떠났는지 설명합니다.',
+      context: 'Joey and Ross kicked out of the cinema',
+      context_ko: 'Joey와 Ross가 영화관에서 쫓겨남',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X5'
+    },
+    {
+      phrase: 'There\'s no unselfish good deeds',
+      partOfSpeech: 'statement',
+      meaning: 'All good actions have selfish motives behind them',
+      meaning_ko: '모든 좋은 행동에는 이기적인 동기가 있다',
+      example: 'Joey\'s cynical philosophy about charity.',
+      example_ko: 'Joey의 자선에 대한 냉소적인 철학.',
+      context: 'Joey and Phoebe\'s debate about selflessness',
+      context_ko: 'Joey와 Phoebe의 이타심에 대한 논쟁',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X6'
+    },
+    {
+      phrase: 'May I ask for one example?',
+      partOfSpeech: 'expression',
+      meaning: 'Politely request an instance or illustration',
+      meaning_ko: '상황이나 삽화를 공손히 요청하다',
+      example: 'Joey challenges Phoebe to prove her point.',
+      example_ko: 'Joey는 Phoebe에게 자신의 주장을 증명하라고 도전합니다.',
+      context: 'Joey pushing back on Phoebe\'s argument',
+      context_ko: 'Joey가 Phoebe의 주장에 대해 반박함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X7'
+    },
+    {
+      phrase: 'Sorry to burst that bubble, Pheebs',
+      partOfSpeech: 'idiom',
+      meaning: 'Disappoint someone by revealing unwelcome truth',
+      meaning_ko: '불쾌한 진실을 드러내 누군가를 실망시키다',
+      example: 'Joey delivers harsh reality to Phoebe.',
+      example_ko: 'Joey는 Phoebe에게 엄혹한 현실을 전달합니다.',
+      context: 'Joey crushing Phoebe\'s idealism',
+      context_ko: 'Joey가 Phoebe의 이상주의를 짓누름',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X8'
+    },
+    {
+      phrase: 'I\'m going to beat you, you evil genius!',
+      partOfSpeech: 'expression',
+      meaning: 'Declare determination to defeat or prove someone wrong',
+      meaning_ko: '누군가를 물리치거나 틀렸음을 증명하겠다는 결의를 선포하다',
+      example: 'Phoebe vows to find a selfless good deed.',
+      example_ko: 'Phoebe는 이기심 없는 좋은 행동을 찾겠다고 맹세합니다.',
+      context: 'Phoebe\'s challenge to Joey\'s philosophy',
+      context_ko: 'Phoebe의 Joey의 철학에 대한 도전',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X9'
+    },
+    {
+      phrase: 'She wants me to move to London',
+      partOfSpeech: 'expression',
+      meaning: 'Someone requires you to relocate elsewhere',
+      meaning_ko: '누군가가 다른 곳으로 이주할 것을 요구한다',
+      example: 'Emily\'s condition for reconciliation with Ross.',
+      example_ko: 'Emily의 Ross와의 화해 조건.',
+      context: 'Ross announcing Emily\'s major request',
+      context_ko: 'Ross가 Emily의 주요 요청을 발표함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X10'
+    },
+    {
+      phrase: 'I can\'t move to London without Ben',
+      partOfSpeech: 'expression',
+      meaning: 'Cannot do something because of a limitation',
+      meaning_ko: '제한으로 인해 무언가를 할 수 없다',
+      example: 'Ross can\'t leave New York because of his son.',
+      example_ko: 'Ross는 아들 때문에 뉴욕을 떠날 수 없습니다.',
+      context: 'Ross explaining impossible situation to Emily',
+      context_ko: 'Ross가 Emily에게 불가능한 상황을 설명함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X11'
+    },
+    {
+      phrase: 'It could happen',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledge something is theoretically possible',
+      meaning_ko: '무언가가 이론적으로 가능하다는 것을 인정하다',
+      example: 'Ross\'s vague hope about Carol moving.',
+      example_ko: 'Ross의 Carol이 이사할 수 있다는 모호한 희망.',
+      context: 'Ross responding to seemingly impossible scenario',
+      context_ko: 'Ross가 불가능해 보이는 시나리오에 반응함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X12'
+    },
+    {
+      phrase: 'No, you answer it and take pledges',
+      partOfSpeech: 'expression',
+      meaning: 'Assign someone a subordinate task',
+      meaning_ko: '누군가에게 종속적인 작업을 할당하다',
+      example: 'Director tells Joey he\'s answering phones, not hosting.',
+      example_ko: '감독은 Joey에게 전화 응답이 진행 중이 아니라고 말합니다.',
+      context: 'Joey learning his real role in telethon',
+      context_ko: 'Joey가 텔레톤에서의 실제 역할을 배움',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X13'
+    },
+    {
+      phrase: 'See, I was Dr. Drake Ramoray',
+      partOfSpeech: 'expression',
+      meaning: 'Reference past status/achievement to deflect',
+      meaning_ko: '과거의 지위/성과를 참조하여 회피하다',
+      example: 'Joey tries to assert his celebrity importance.',
+      example_ko: 'Joey는 자신의 유명인 중요성을 주장하려고 합니다.',
+      context: 'Joey reminding of his TV doctor role',
+      context_ko: 'Joey가 자신의 TV 의사 역할을 상기시킴',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X14'
+    },
+    {
+      phrase: 'We\'re going to be like two idiots in love',
+      partOfSpeech: 'expression',
+      meaning: 'Describe oneself and partner as foolish but devoted',
+      meaning_ko: '자신과 파트너를 어리석지만 헌신적이라고 묘사하다',
+      example: 'Ross\'s romantic if slightly self-aware declaration.',
+      example_ko: 'Ross의 로맨틱하지만 약간 자각하는 선언.',
+      context: 'Ross speaking to Emily about their future',
+      context_ko: 'Ross가 Emily에게 그들의 미래에 대해 말함',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S5E4X15'
+    }
+    ]
   };
 
   var S_NUM = 5;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -134,7 +293,7 @@
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-meaning" style="color:var(--muted)">Coming Soon</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
