@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Ross and Rachel accidentally get married in Vegas. Monica and Chandler confront feelings. Friends navigate drunken decisions.',
+    expressions: [
+    {
+      phrase: 'What\'s the big deal?',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing something as unimportant or trivial. Used when questioning why something matters. Shows lack of understanding of significance.',
+      meaning_ko: '뭔가를 중요하지 않거나 사소한 것으로 치부합니다. 뭔가가 왜 중요한지 의문을 제기할 때 사용합니다. 중요성 이해의 부족을 보여줍니다.',
+      example: 'A: "He got married!" B: "What\'s the big deal? It\'s not real."',
+      example_ko: 'A: "그가 결혼했어!" B: "뭐 대단한데? 가짜 결혼이잖아."',
+      context: 'Phoebe dismissing a Vegas marriage as not a real marriage.',
+      context_ko: 'Phoebe가 Vegas 결혼을 진짜 결혼이 아니라고 치부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X1'
+    },
+    {
+      phrase: 'This is insane.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing disbelief or shock at something absurd. Indicates frustration with unreasonable circumstances. Shows astonishment.',
+      meaning_ko: '뭔가 터무니없는 것에 대한 믿음 거부나 충격을 표현합니다. 합리적이지 않은 상황에 대한 답답함을 나타냅니다. 놀라움을 보여줍니다.',
+      example: 'A: "We got married drunk." B: "This is insane."',
+      example_ko: 'A: "우리가 취한 상태에서 결혼했어." B: "이건 미친 짓이야."',
+      context: 'Monica reacting to Ross and Rachel\'s Vegas marriage.',
+      context_ko: 'Monica가 Ross와 Rachel의 Vegas 결혼에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X2'
+    },
+    {
+      phrase: 'I don\'t remember much about last night.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting lack of memory from drinking too much. Indicates inebriation from the night before. Shows confusion about events.',
+      meaning_ko: '너무 많이 마신 탓에 기억이 나지 않음을 인정합니다. 전날 밤 과음을 나타냅니다. 사건에 대한 혼동을 보여줍니다.',
+      example: 'A: "Do you remember getting married?" B: "I don\'t remember much about last night."',
+      example_ko: 'A: "결혼한 거 기억나?" B: "어제 밤에 뭔 기억도 안 나."',
+      context: 'Rachel unable to recall events from drunken Vegas night.',
+      context_ko: 'Rachel이 취한 Vegas 밤의 사건들을 회상하지 못합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X3'
+    },
+    {
+      phrase: 'I\'m glad we didn\'t do anything stupid.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing relief that no regrettable actions occurred. Shows happiness things didn\'t escalate. Conveys thankfulness.',
+      meaning_ko: '후회할 만한 행동이 일어나지 않았다는 안도감을 표현합니다. 사건이 악화되지 않았다는 기쁨을 보여줍니다. 감사함을 전달합니다.',
+      example: 'A: "We were in bed together." B: "I\'m glad we didn\'t do anything stupid."',
+      example_ko: 'A: "우리가 함께 침대에 있었어." B: "뭔가 바보 같은 짓 안 해서 다행이야."',
+      context: 'Rachel relieved nothing happened between her and Ross.',
+      context_ko: 'Rachel은 자신과 Ross 사이에 아무것도 일어나지 않아서 안도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X4'
+    },
+    {
+      phrase: 'My movie has been officially canceled.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing definite cancellation of a film project. Shows disappointment about project ending. Conveys finality.',
+      meaning_ko: '영화 프로젝트의 확실한 취소를 발표합니다. 프로젝트 종료에 대한 실망을 보여줍니다. 확정성을 전달합니다.',
+      example: 'A: "What happened to your movie?" B: "My movie has been officially canceled."',
+      example_ko: 'A: "넌 영화는 어떻게 됐어?" B: "내 영화가 공식적으로 취소됐어."',
+      context: 'Joey learning his movie project will not proceed.',
+      context_ko: 'Joey가 그의 영화 프로젝트가 진행되지 않을 것을 알게 됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X5'
+    },
+    {
+      phrase: 'I\'ll probably eat in like five minutes.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking contradiction about being too depressed to eat. Shows humor despite sadness. Demonstrates comedic contradiction.',
+      meaning_ko: '너무 우울해서 먹을 수 없다는 주장에 대한 농담입니다. 슬픔에도 불구하고 유머를 보여줍니다. 코미디적 모순을 보여줍니다.',
+      example: 'A: "You\'re too depressed?" B: "I\'ll probably eat in like five minutes."',
+      example_ko: 'A: "넌 너무 우울해?" B: "난 5분 후엔 아마 먹을 거야."',
+      context: 'Joey joking about his appetite despite being depressed.',
+      context_ko: 'Joey가 우울함에도 불구하고 자신의 식욕에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X6'
+    },
+    {
+      phrase: 'I never stopped loving you.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring continuous romantic feelings throughout. Shows constant affection without interruption. Expresses unwavering love.',
+      meaning_ko: '계속된 로맨틱한 감정을 선언합니다. 중단 없는 지속적 애정을 보여줍니다. 흔들리지 않는 사랑을 표현합니다.',
+      example: 'A: "Do you still love me?" B: "I never stopped loving you."',
+      example_ko: 'A: "넌 날 여전히 사랑해?" B: "난 너를 사랑하는 걸 멈춘 적이 없어."',
+      context: 'Chandler declaring his love for Monica.',
+      context_ko: 'Chandler가 Monica에 대한 자신의 사랑을 선언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X7'
+    },
+    {
+      phrase: 'That\'s huge!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing shock and enthusiasm about significant news. Shows excitement about big developments. Conveys impressed surprise.',
+      meaning_ko: '중요한 뉴스에 대한 충격과 열정을 표현합니다. 큰 발전에 대한 흥분을 보여줍니다. 감동한 놀라움을 전달합니다.',
+      example: 'A: "I almost got married!" B: "That\'s huge!"',
+      example_ko: 'A: "나 거의 결혼할 뻔했어!" B: "정말 대단한데!"',
+      context: 'Chandler shocked to hear about near-marriage.',
+      context_ko: 'Chandler가 거의 결혼 사건에 대해 충격을 받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X8'
+    },
+    {
+      phrase: 'How do I tell her without crushing her?',
+      partOfSpeech: 'question',
+      meaning: 'Asking how to deliver bad news sensitively. Shows concern about hurting someone\'s feelings. Demonstrates compassion.',
+      meaning_ko: '나쁜 소식을 민감하게 전달하는 방법을 묻습니다. 누군가의 감정을 상하게 할 까봐 걱정합니다. 동정심을 보여줍니다.',
+      example: 'A: "I need to break the news." B: "How do I tell her without crushing her?"',
+      example_ko: 'A: "난 그 소식을 말해야 해." B: "어떻게 그녀 마음을 안 상하게 할 수 있을까?"',
+      context: 'Chandler worried about telling Monica marriage is too soon.',
+      context_ko: 'Chandler가 Monica에게 결혼이 너무 이르다고 말하는 것을 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X9'
+    },
+    {
+      phrase: 'We were talking about tennis.',
+      partOfSpeech: 'expression',
+      meaning: 'Making an excuse to hide actual topic of conversation. Shows quick lie when caught discussing something else. Demonstrates evasiveness.',
+      meaning_ko: '실제 대화 주제를 숨기기 위해 변명을 합니다. 다른 것을 논의하다가 잡혔을 때 빠른 거짓말을 보여줍니다. 회피를 보여줍니다.',
+      example: 'A: "What were you talking about?" B: "We were talking about tennis."',
+      example_ko: 'A: "넌 뭐 얘기하고 있었어?" B: "우린 테니스 얘기하고 있었어."',
+      context: 'Monica and Rachel caught discussing relationship issues.',
+      context_ko: 'Monica와 Rachel이 연애 문제를 논의하다 들킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X10'
+    },
+    {
+      phrase: 'Nothing, uh, happened last night.',
+      partOfSpeech: 'expression',
+      meaning: 'Denying events occurred despite obvious evidence. Shows unconvincing denial of facts. Demonstrates weak lying.',
+      meaning_ko: '명백한 증거에도 불구하고 발생한 사건을 부정합니다. 사실에 대한 설득력 없는 부정을 보여줍니다. 약한 거짓말을 보여줍니다.',
+      example: 'A: "You got married!" B: "Nothing, uh, happened last night."',
+      example_ko: 'A: "넌 결혼했잖아!" B: "어, 어제 밤에 뭔 일도 없었어."',
+      context: 'Ross and Rachel denying their Vegas wedding.',
+      context_ko: 'Ross와 Rachel이 자신들의 Vegas 결혼을 부정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X11'
+    },
+    {
+      phrase: 'Most people who marry in Vegas are drunk.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating commonplace fact about Vegas weddings. Shows normalization of drunken marriage. Conveys casual observation.',
+      meaning_ko: 'Vegas 결혼에 대한 일반적인 사실을 나타냅니다. 취한 결혼을 정상화하는 것을 보여줍니다. 우연한 관찰을 전달합니다.',
+      example: 'A: "You were drunk!" B: "Most people who marry in Vegas are drunk."',
+      example_ko: 'A: "넌 취했잖아!" B: "Vegas에서 결혼하는 대부분 사람들이 취해 있어."',
+      context: 'Rachel defending drunk Vegas wedding as normal occurrence.',
+      context_ko: 'Rachel이 취한 Vegas 결혼을 정상적인 사건으로 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X12'
+    },
+    {
+      phrase: 'We cannot stay married.',
+      partOfSpeech: 'expression',
+      meaning: 'Making firm statement about ending marriage. Shows definitive decision about relationship. Demonstrates resolve.',
+      meaning_ko: '결혼을 끝내기 위한 강한 진술을 합니다. 관계에 대한 명확한 결정을 보여줍니다. 결심을 보여줍니다.',
+      example: 'A: "Can we make this work?" B: "We cannot stay married."',
+      example_ko: 'A: "우리가 이걸 잘해낼 수 있을까?" B: "우린 결혼 상태를 유지할 수 없어."',
+      context: 'Rachel telling Ross their marriage must end immediately.',
+      context_ko: 'Rachel이 Ross에게 그들의 결혼이 즉시 끝나야 한다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X13'
+    },
+    {
+      phrase: 'This is the world\'s worst hangover!',
+      partOfSpeech: 'expression',
+      meaning: 'Comparing undesirable situation to severe aftereffects of drinking. Shows exaggeration for comic effect. Demonstrates hyperbolic frustration.',
+      meaning_ko: '바람직하지 않은 상황을 심각한 숙취의 영향과 비교합니다. 코미디 효과를 위한 과장을 보여줍니다. 과장된 좌절을 보여줍니다.',
+      example: 'A: "We\'re stuck together." B: "This is the world\'s worst hangover!"',
+      example_ko: 'A: "우리가 함께 갇혔어." B: "이건 세상 최고의 숙취야!"',
+      context: 'Rachel expressing frustration about marriage situation.',
+      context_ko: 'Rachel이 결혼 상황에 대한 답답함을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X14'
+    },
+    {
+      phrase: 'I didn\'t get the annulment.',
+      partOfSpeech: 'expression',
+      meaning: 'Revealing failure to complete promised legal action. Shows deception about marriage status. Demonstrates shocking admission.',
+      meaning_ko: '약속한 법적 조치를 완료하지 못했음을 드러냅니다. 결혼 상태에 대한 기만을 보여줍니다. 충격적인 인정을 보여줍니다.',
+      example: 'A: "Did you get the annulment?" B: "I didn\'t get the annulment."',
+      example_ko: 'A: "넌 혼인무효를 얻었어?" B: "난 혼인무효를 안 얻었어."',
+      context: 'Ross revealing he kept marriage to Rachel secret.',
+      context_ko: 'Ross가 자신이 Rachel과의 결혼을 비밀로 유지했음을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E1X15'
+    }
+  ]
   };
 
   var S_NUM = 6;
