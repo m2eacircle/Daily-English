@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e6.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E6: Season 7, Episode 6</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E6: The One with the Nanny</div>
+        <div class="page-header-meta">Monica chooses maid of honor system. Girls debate options. Joey watches Die Hard twice. Phoebe asks Rachel a special question. Conflicts arise.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e6"
             onclick="toggleBookmark('episode','episode-friends-s7e6','📋 Friends S7E6','friends/episodes/season7/s7e6.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 6',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Nanny',
+    description: 'Monica chooses maid of honor system. Girls debate options. Joey watches Die Hard twice. Phoebe asks Rachel a special question. Conflicts arise.',
+    expressions: [
+    {
+      phrase: 'The reason I asked you to brunch...',
+      partOfSpeech: 'expression',
+      meaning: 'Beginning an explanation with purpose introduction. The phrase sets up important news.',
+      meaning_ko: '목적 소개로 설명을 시작합니다. 이 표현은 중요한 소식을 설정합니다.',
+      example: 'A: "Why the brunch?" B: "The reason I asked you to brunch..."',
+      example_ko: 'A: "왜 브런치?" B: "내가 너한테 브런치 신청한 이유는..."',
+      context: 'Monica setting up announcement about maid of honor.',
+      context_ko: 'Monica가 들러리에 대한 발표를 설정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X1'
+    },
+    {
+      phrase: 'I\'ve been thinking about my maid of honor.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing that someone has been contemplating an important decision. The phrase shows consideration.',
+      meaning_ko: '중요한 결정을 검토했음을 발표합니다. 이 표현은 배려를 보여줍니다.',
+      example: 'A: "What\'s on your mind?" B: "I\'ve been thinking about my maid of honor."',
+      example_ko: 'A: "넌 뭘 생각해?" B: "난 내 들러리를 생각했어."',
+      context: 'Monica announcing major wedding decision discussion.',
+      context_ko: 'Monica가 중요한 결혼식 결정 논의를 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X2'
+    },
+    {
+      phrase: 'Oh, my God. This is it.',
+      partOfSpeech: 'exclamation',
+      meaning: 'Expressing excitement and anticipation about something important. The phrase shows eager expectations.',
+      meaning_ko: '중요한 것에 대한 흥분과 기대감을 표현합니다. 이 표현은 열심의 기대를 보여줍니다.',
+      example: 'A: "I have an announcement." B: "Oh, my God. This is it."',
+      example_ko: 'A: "난 발표할 게 있어." B: "오, 맙소사. 이거네!"',
+      context: 'Rachel getting excited about maid of honor announcement.',
+      context_ko: 'Rachel이 들러리 발표에 흥분됩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X3'
+    },
+    {
+      phrase: 'I hope it\'s you.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing desire that a specific person be chosen. The phrase shows personal hope.',
+      meaning_ko: '특정 사람이 선택되기를 원함을 표현합니다. 이 표현은 개인적 희망을 보여줍니다.',
+      example: 'A: "You might be chosen." B: "I hope it\'s you."',
+      example_ko: 'A: "넌 선택될 수 있어." B: "그게 너였으면 좋겠어."',
+      context: 'Phoebe and Rachel both hoping to be chosen.',
+      context_ko: 'Phoebe와 Rachel이 모두 선택되기를 희망합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X4'
+    },
+    {
+      phrase: 'Blah, blah, blah. Who is it?',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing long preamble to get to the point quickly. The phrase shows impatience humorously.',
+      meaning_ko: '길게 전설명을 무시하고 빨리 핵심에 도달합니다. 이 표현은 유머러스하게 성급함을 보여줍니다.',
+      example: 'A: "I love you both..." B: "Blah, blah, blah. Who is it?"',
+      example_ko: 'A: "나 너희 둘 다 사랑해..." B: "따라, 따라. 그게 누군데?"',
+      context: 'Phoebe impatient for Monica to announce the decision.',
+      context_ko: 'Phoebe가 Monica의 발표를 기다리지 못합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X5'
+    },
+    {
+      phrase: 'We all get to do it and no one gets upset.',
+      partOfSpeech: 'expression',
+      meaning: 'Proposing a solution that satisfies everyone fairly. The phrase seeks consensus.',
+      meaning_ko: '모두가 공정하게 만족하는 해결책을 제안합니다. 이 표현은 합의를 추구합니다.',
+      example: 'A: "How do we choose?" B: "We all get to do it and no one gets upset."',
+      example_ko: 'A: "어떻게 선택해?" B: "우리 모두 할 수 있고 아무도 화내지 않아."',
+      context: 'Monica proposing rotation system for maids of honor.',
+      context_ko: 'Monica가 들러리 순번 시스템을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X6'
+    },
+    {
+      phrase: 'You guys get to decide.',
+      partOfSpeech: 'statement',
+      meaning: 'Delegating a decision to others to make. The phrase shows authority transfer.',
+      meaning_ko: '결정을 다른 사람에게 위임합니다. 이 표현은 권한 이전을 보여줍니다.',
+      example: 'A: "Who should it be?" B: "You guys get to decide."',
+      example_ko: 'A: "누가 되어야 해?" B: "너희들이 정해."',
+      context: 'Monica letting friends choose for Chandler\'s wedding.',
+      context_ko: 'Monica가 친구들이 Chandler의 결혼식을 정하게 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X7'
+    },
+    {
+      phrase: 'I don\'t have to.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining the advantage or benefit of something. The phrase shows clever reasoning.',
+      meaning_ko: '무언가의 이점이나 장점을 설명합니다. 이 표현은 영리한 추론을 보여줍니다.',
+      example: 'A: "Why is that good?" B: "I don\'t have to."',
+      example_ko: 'A: "왜 그게 좋아?" B: "난 안 해도 돼."',
+      context: 'Monica\'s clever solution avoiding difficult decision.',
+      context_ko: 'Monica의 어려운 결정을 피하는 영리한 해결책.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X8'
+    },
+    {
+      phrase: 'I\'d like to make a toast.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting permission to make a celebratory speech. The phrase is formal and polite.',
+      meaning_ko: '축하 연설을 허락해달라고 요청합니다. 이 표현은 형식적이고 정중합니다.',
+      example: 'A: "What are you doing?" B: "I\'d like to make a toast."',
+      example_ko: 'A: "넌 뭐 하는 거야?" B: "난 건배사를 하고 싶어."',
+      context: 'Ross making toast for Monica at brunch.',
+      context_ko: 'Ross가 브런치에서 Monica를 위해 건배합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X9'
+    },
+    {
+      phrase: 'Really not deciding.',
+      partOfSpeech: 'expression',
+      meaning: 'Humorously refusing to commit to a decision during speeches. The phrase is comical.',
+      meaning_ko: '연설 중 결정을 유머러스하게 거부합니다. 이 표현은 코믹합니다.',
+      example: 'A: "So who do you choose?" B: "Really not deciding."',
+      example_ko: 'A: "그럼 넌 누가 선택했어?" B: "정말 결정 안 할 거야."',
+      context: 'Monica avoiding decision during toasts at brunch.',
+      context_ko: 'Monica가 브런치 건배 중 결정을 피합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X10'
+    },
+    {
+      phrase: 'You\'re marrying Chandler Bing?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing surprise about someone\'s choice of spouse. The phrase conveys shock.',
+      meaning_ko: '누군가의 배우자 선택에 대한 놀람을 표현합니다. 이 표현은 충격을 전달합니다.',
+      example: 'A: "Yes, I\'m getting married." B: "You\'re marrying Chandler Bing?"',
+      example_ko: 'A: "응, 난 결혼해." B: "넌 Chandler Bing이랑 결혼해?"',
+      context: 'Stranger woman eavesdropping at the restaurant.',
+      context_ko: '낯선 여자가 레스토랑에서 몰래 듣습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X11'
+    },
+    {
+      phrase: 'Good luck!',
+      partOfSpeech: 'expression',
+      meaning: 'Wishing someone well in their future endeavor. The phrase is encouraging.',
+      meaning_ko: '누군가의 미래 노력을 응원합니다. 이 표현은 격려적입니다.',
+      example: 'A: "I\'m getting married." B: "Good luck!"',
+      example_ko: 'A: "난 결혼해." B: "행운을 빌어!"',
+      context: 'Stranger wishing Monica and Chandler well.',
+      context_ko: '낯선 여자가 Monica와 Chandler에게 행운을 빕니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X12'
+    },
+    {
+      phrase: 'Die Hard, still great.',
+      partOfSpeech: 'statement',
+      meaning: 'Affirming that something remains excellent despite time. The phrase shows lasting appreciation.',
+      meaning_ko: '무언가가 시간이 지나도 여전히 훌륭함을 확인합니다. 이 표현은 지속적인 감사를 보여줍니다.',
+      example: 'A: "How is the movie?" B: "Die Hard, still great."',
+      example_ko: 'A: "그 영화 어때?" B: "Die Hard, 여전히 좋아."',
+      context: 'Joey and Chandler watching Die Hard.',
+      context_ko: 'Joey와 Chandler가 Die Hard를 봅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X13'
+    },
+    {
+      phrase: 'Let\'s make it a double feature?',
+      partOfSpeech: 'question',
+      meaning: 'Suggesting to watch two movies in succession. The phrase proposes an extended activity.',
+      meaning_ko: '연속으로 두 영화를 보도록 제안합니다. 이 표현은 연장된 활동을 제안합니다.',
+      example: 'A: "One movie?" B: "Let\'s make it a double feature?"',
+      example_ko: 'A: "영화 하나?" B: "더블 피처를 만들까?"',
+      context: 'Joey suggesting watching two movies back to back.',
+      context_ko: 'Joey가 두 영화를 연속으로 보도록 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X14'
+    },
+    {
+      phrase: 'It would be cool to see it again!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing enthusiasm for repeating a pleasant experience. The phrase shows eagerness.',
+      meaning_ko: '즐거운 경험을 반복하는 것에 대한 열정을 표현합니다. 이 표현은 열심을 보여줍니다.',
+      example: 'A: "We just saw it." B: "It would be cool to see it again!"',
+      example_ko: 'A: "우리 방금 봤잖아." B: "또 봤으면 좋겠는데!"',
+      context: 'Joey wanting to rewatch Die Hard immediately.',
+      context_ko: 'Joey가 Die Hard를 즉시 다시 보고 싶어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E6X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

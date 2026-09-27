@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e5.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E5: Season 7, Episode 5</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E5: The One with Frank Jr.</div>
+        <div class="page-header-meta">Engagement photo disaster. Phoebe dates divorced man. Rachel crushes on assistant Tag. Chandler's uncomfortable confessions. Professional portraits planned.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e5"
             onclick="toggleBookmark('episode','episode-friends-s7e5','📋 Friends S7E5','friends/episodes/season7/s7e5.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 5',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Frank Jr.',
+    description: 'Engagement photo disaster. Phoebe dates divorced man. Rachel crushes on assistant Tag. Chandler\'s uncomfortable confessions. Professional portraits planned.',
+    expressions: [
+    {
+      phrase: 'Someone on the subway licked my neck!',
+      partOfSpeech: 'exclamation',
+      meaning: 'Expressing shock and disgust about strange behavior. The phrase conveys alarm and disbelief.',
+      meaning_ko: '이상한 행동에 대한 충격과 혐오감을 표현합니다. 이 표현은 경보와 불신을 전달합니다.',
+      example: 'A: "What\'s wrong?" B: "Someone on the subway licked my neck!"',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "지하철 누군가가 내 목을 핥았어!"',
+      context: 'Phoebe describing bizarre incident on the subway.',
+      context_ko: 'Phoebe가 지하철에서 기괴한 사건을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X1'
+    },
+    {
+      phrase: 'I just can\'t take a good picture.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing inability to look good in photographs. The phrase shows frustration.',
+      meaning_ko: '사진에서 잘 나오지 못한다는 것을 표현합니다. 이 표현은 답답함을 보여줍니다.',
+      example: 'A: "Why can\'t we find a photo?" B: "I just can\'t take a good picture."',
+      example_ko: 'A: "왜 사진을 못 찾아?" B: "난 좋은 사진을 못 찍어."',
+      context: 'Monica frustrated about engagement photos.',
+      context_ko: 'Monica가 약혼 사진에 답답해합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X2'
+    },
+    {
+      phrase: 'Oh, here\'s a great one.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering a good option or suggestion. The phrase shows excitement about something.',
+      meaning_ko: '좋은 옵션이나 제안을 제공합니다. 이 표현은 무언가에 대한 흥분을 보여줍니다.',
+      example: 'A: "We need a photo." B: "Oh, here\'s a great one."',
+      example_ko: 'A: "우린 사진이 필요해." B: "오, 좋은 게 하나 있네."',
+      context: 'Chandler finding a picture for the announcement.',
+      context_ko: 'Chandler가 발표를 위한 사진을 찾습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X3'
+    },
+    {
+      phrase: 'Why don\'t you get portraits done by a professional?',
+      partOfSpeech: 'suggestion',
+      meaning: 'Recommending hiring an expert for quality results. The phrase offers practical advice.',
+      meaning_ko: '품질 있는 결과를 위해 전문가를 고용할 것을 권장합니다. 이 표현은 실질적인 조언을 제공합니다.',
+      example: 'A: "Photos are bad." B: "Why don\'t you get portraits done by a professional?"',
+      example_ko: 'A: "사진들이 안 좋아." B: "전문가가 한 초상화를 하지 왜?"',
+      context: 'Rachel suggesting professional photography session.',
+      context_ko: 'Rachel이 전문적 사진 세션을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X4'
+    },
+    {
+      phrase: 'I should warn you.',
+      partOfSpeech: 'expression',
+      meaning: 'Cautioning someone about something before proceeding. The phrase shows concern.',
+      meaning_ko: '진행하기 전에 누군가에게 주의를 줍니다. 이 표현은 우려를 보여줍니다.',
+      example: 'A: "Will you do it?" B: "I should warn you..."',
+      example_ko: 'A: "넌 할 거야?" B: "너한테 경고해야 해..."',
+      context: 'Chandler warning about his appearance in photos.',
+      context_ko: 'Chandler가 사진에서의 그의 외모에 대해 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X5'
+    },
+    {
+      phrase: 'I\'m not going. I\'m going.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about hesitation then agreeing to something. The phrase shows comedic contradiction.',
+      meaning_ko: '주저함에 대해 농담한 후 동의합니다. 이 표현은 코믹한 모순을 보여줍니다.',
+      example: 'A: "Will you go?" B: "I\'m not going. I\'m going."',
+      example_ko: 'A: "넌 갈 거야?" B: "난 안 갈 거야. 난 갈 거야."',
+      context: 'Chandler joking about attending photo session.',
+      context_ko: 'Chandler가 사진 세션에 참석하는 것에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X6'
+    },
+    {
+      phrase: 'How about those three-pointers?',
+      partOfSpeech: 'question',
+      meaning: 'Asking someone\'s opinion about impressive basketball shots. The phrase shows enthusiasm.',
+      meaning_ko: '인상적인 농구 슛에 대한 누군가의 의견을 묻습니다. 이 표현은 열정을 보여줍니다.',
+      example: 'A: "That game was great." B: "How about those three-pointers?"',
+      example_ko: 'A: "그 게임 좋았어." B: "저 3점 슛들 어땠어?"',
+      context: 'Joey and Chandler discussing basketball game.',
+      context_ko: 'Joey와 Chandler가 농구 게임을 논의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X7'
+    },
+    {
+      phrase: 'You call him Cute Coffeehouse Guy?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing surprise about someone\'s nickname choice. The phrase shows humor.',
+      meaning_ko: '누군가의 별명 선택에 놀람을 표현합니다. 이 표현은 유머를 보여줍니다.',
+      example: 'A: "I like that guy." B: "You call him Cute Coffeehouse Guy?"',
+      example_ko: 'A: "나 저 남자 좋아." B: "넌 그 남자를 Cute Coffeehouse Guy라고 불러?"',
+      context: 'Joey questioning Phoebe\'s nickname for the guy.',
+      context_ko: 'Joey가 Phoebe의 남자에 대한 별명을 의문시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X8'
+    },
+    {
+      phrase: 'Just asked me out.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing that someone made a romantic invitation. The phrase shares exciting news.',
+      meaning_ko: '누군가가 로맨틱한 초대를 했음을 발표합니다. 이 표현은 흥미로운 소식을 공유합니다.',
+      example: 'A: "What\'s up?" B: "Cute Coffeehouse Guy just asked me out."',
+      example_ko: 'A: "뭐해?" B: "Cute Coffeehouse Guy가 나한테 데이트 신청했어."',
+      context: 'Phoebe sharing exciting news about a date.',
+      context_ko: 'Phoebe가 데이트에 대한 흥미로운 소식을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X9'
+    },
+    {
+      phrase: 'He\'s getting divorced.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing that someone is ending their marriage. The phrase conveys important information.',
+      meaning_ko: '누군가가 결혼을 끝내고 있음을 발표합니다. 이 표현은 중요한 정보를 전달합니다.',
+      example: 'A: "But he\'s married." B: "He\'s getting divorced."',
+      example_ko: 'A: "그런데 그 남자 기혼이야." B: "그는 이혼 중이야."',
+      context: 'Phoebe explaining the marital status of her date.',
+      context_ko: 'Phoebe가 데이트 상대의 결혼 상태를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X10'
+    },
+    {
+      phrase: 'Is it a good idea to go out with him?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for advice about dating someone going through divorce. The phrase seeks guidance.',
+      meaning_ko: '이혼을 거치는 누군가와 데이트하는 것에 대해 조언을 구합니다. 이 표현은 안내를 요청합니다.',
+      example: 'A: "He\'s divorcing." B: "Is it a good idea to go out with him?"',
+      example_ko: 'A: "그 남자 이혼 중이야." B: "그와 데이트하는 게 좋은 생각일까?"',
+      context: 'Monica questioning the wisdom of dating divorced man.',
+      context_ko: 'Monica가 이혼한 남자와 데이트하는 지혜를 의문시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X11'
+    },
+    {
+      phrase: 'Divorced men are not bad men.',
+      partOfSpeech: 'statement',
+      meaning: 'Defending the character of divorced people. The phrase shows understanding.',
+      meaning_ko: '이혼한 사람들의 성격을 옹호합니다. 이 표현은 이해를 보여줍니다.',
+      example: 'A: "Can I date him?" B: "Divorced men are not bad men."',
+      example_ko: 'A: "나 그 남자랑 데이트할 수 있어?" B: "이혼한 남자들은 나쁜 남자들이 아니야."',
+      context: 'Phoebe defending the character of divorced people.',
+      context_ko: 'Phoebe가 이혼한 사람들의 성격을 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X12'
+    },
+    {
+      phrase: 'I could just spread him on a cracker.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about romantic attraction in humorous way. The phrase shows hyperbolic desire.',
+      meaning_ko: '로맨틱한 매력을 유머러스한 방식으로 농담합니다. 이 표현은 과장된 욕망을 보여줍니다.',
+      example: 'A: "Tag is handsome?" B: "I could just spread him on a cracker."',
+      example_ko: 'A: "Tag가 잘생겼어?" B: "난 그 남자를 크래커에 펴서 먹을 수도 있어."',
+      context: 'Rachel expressing crush on her assistant Tag.',
+      context_ko: 'Rachel이 그녀의 조수 Tag에 대한 호감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X13'
+    },
+    {
+      phrase: 'You can\'t date him.',
+      partOfSpeech: 'statement',
+      meaning: 'Stating a firm workplace rule against dating employees. The phrase is authoritative.',
+      meaning_ko: '직원과의 데이트에 대한 엄격한 직장 규칙을 명시합니다. 이 표현은 권위적입니다.',
+      example: 'A: "I like Tag." B: "You can\'t date him."',
+      example_ko: 'A: "난 Tag를 좋아해." B: "넌 그 남자랑 데이트할 수 없어."',
+      context: 'Monica warning Rachel about workplace dating rules.',
+      context_ko: 'Monica가 Rachel에게 직장 데이트 규칙을 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X14'
+    },
+    {
+      phrase: 'I had a drink with lunch.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining unusual behavior by mentioning alcohol consumption. The phrase is an excuse.',
+      meaning_ko: '알코올 섭취를 언급하여 이상한 행동을 설명합니다. 이 표현은 변명입니다.',
+      example: 'A: "Why did you ask that?" B: "I had a drink with lunch."',
+      example_ko: 'A: "왜 그렇게 물었어?" B: "난 점심 때 술 한잔 했어."',
+      context: 'Rachel being inappropriate with her assistant Tag.',
+      context_ko: 'Rachel이 그녀의 조수 Tag에게 부적절하게 대합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E5X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

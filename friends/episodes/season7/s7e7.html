@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e7.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E7: Season 7, Episode 7</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E7: The One with Monica's Thunder</div>
+        <div class="page-header-meta">Joey dates new girl. Monica finds dissertation in library. Chandler encounters Janice. Monica shocked engagement reveal.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e7"
             onclick="toggleBookmark('episode','episode-friends-s7e7','📋 Friends S7E7','friends/episodes/season7/s7e7.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 7',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Monica\'s Thunder',
+    description: 'Joey dates new girl. Monica finds dissertation in library. Chandler encounters Janice. Monica shocked engagement reveal.',
+    expressions: [
+    {
+      phrase: 'How was your date?',
+      partOfSpeech: 'question',
+      meaning: 'Asking someone about their romantic outing. The question shows interest in personal affairs.',
+      meaning_ko: '누군가의 로맨틱한 외출에 대해 묻습니다. 이 질문은 개인 문제에 대한 관심을 보여줍니다.',
+      example: 'A: "I went out last night." B: "How was your date?"',
+      example_ko: 'A: "나 어제 밤 나갔어." B: "데이트 어땠어?"',
+      context: 'Rachel asking Joey about his evening.',
+      context_ko: 'Rachel이 Joey에게 그의 저녁에 대해 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X1'
+    },
+    {
+      phrase: 'I gotta go. I\'m late.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing hurried departure due to time constraints. The phrase shows urgency.',
+      meaning_ko: '시간 제약으로 인한 서두른 출발을 발표합니다. 이 표현은 긴급함을 보여줍니다.',
+      example: 'A: "Where are you going?" B: "I gotta go. I\'m late."',
+      example_ko: 'A: "넌 어디 가?" B: "가야 돼. 늦었어."',
+      context: 'Joey rushing out of the apartment.',
+      context_ko: 'Joey가 아파트에서 서두르고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X2'
+    },
+    {
+      phrase: 'You\'re going to leave her with me?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing surprise at being left responsible for someone. The question shows concern.',
+      meaning_ko: '누군가의 책임을 맡는 것에 놀람을 표현합니다. 이 질문은 우려를 보여줍니다.',
+      example: 'A: "I have to go." B: "You\'re going to leave her with me?"',
+      example_ko: 'A: "난 가야 돼." B: "넌 그녀를 나한테 맡길 거야?"',
+      context: 'Chandler concerned about watching Joey\'s date.',
+      context_ko: 'Chandler가 Joey의 데이트를 보는 것에 우려합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X3'
+    },
+    {
+      phrase: 'Don\'t worry, she\'s a terrific girl.',
+      partOfSpeech: 'statement',
+      meaning: 'Reassuring someone with positive description. The phrase aims to ease concern.',
+      meaning_ko: '긍정적인 설명으로 누군가를 안심시킵니다. 이 표현은 우려를 완화하려고 합니다.',
+      example: 'A: "I\'m worried about watching her." B: "Don\'t worry, she\'s a terrific girl."',
+      example_ko: 'A: "난 그녀를 보는 게 걱정돼." B: "걱정하지 마, 그녀는 멋진 여자야."',
+      context: 'Joey reassuring Chandler about the situation.',
+      context_ko: 'Joey가 Chandler를 상황에 대해 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X4'
+    },
+    {
+      phrase: 'Can you do me a favor?',
+      partOfSpeech: 'expression',
+      meaning: 'Politely requesting help from someone. The phrase shows courtesy.',
+      meaning_ko: '누군가에게 정중하게 도움을 요청합니다. 이 표현은 예의를 보여줍니다.',
+      example: 'A: "I need help." B: "Can you do me a favor?"',
+      example_ko: 'A: "난 도움이 필요해." B: "날 위해 뭔가 해줄 수 있어?"',
+      context: 'Joey asking Chandler for a special request.',
+      context_ko: 'Joey가 Chandler에게 특별한 부탁을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X5'
+    },
+    {
+      phrase: 'Just casually slip it in, you know.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting subtle introduction of topic into conversation. The phrase is informal.',
+      meaning_ko: '대화에 주제를 미묘하게 소개하는 것을 제안합니다. 이 표현은 비공식적입니다.',
+      example: 'A: "How do I mention it?" B: "Just casually slip it in, you know."',
+      example_ko: 'A: "내가 어떻게 말해?" B: "그냥 자연스럽게 넣어, 알지?"',
+      context: 'Joey instructing Chandler how to break the news.',
+      context_ko: 'Joey가 Chandler에게 소식을 어떻게 전할지 지시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X6'
+    },
+    {
+      phrase: 'That\'s a lot to remember.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing difficulty with memorizing complex instructions. The phrase is humorous.',
+      meaning_ko: '복잡한 지시를 암기하는 어려움을 표현합니다. 이 표현은 유머러스합니다.',
+      example: 'A: "Tell her I\'m a loner outlaw." B: "That\'s a lot to remember."',
+      example_ko: 'A: "그녀한테 나 혼자 기는 아웃로라고 말해." B: "그건 기억할 게 많네."',
+      context: 'Chandler reacting to Joey\'s long explanation.',
+      context_ko: 'Chandler이 Joey의 긴 설명에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X7'
+    },
+    {
+      phrase: 'Can\'t I just tell her that you\'re a pig?',
+      partOfSpeech: 'question',
+      meaning: 'Offering simpler alternative to complicated instructions. The question is sarcastic.',
+      meaning_ko: '복잡한 지시에 대한 더 간단한 대안을 제공합니다. 이 질문은 풍자적입니다.',
+      example: 'A: "Remember all these details." B: "Can\'t I just tell her that you\'re a pig?"',
+      example_ko: 'A: "이 모든 세부 사항을 기억해." B: "그냥 넌 못된 놈이라고 할 수 없어?"',
+      context: 'Chandler offering simpler alternative description.',
+      context_ko: 'Chandler가 더 간단한 설명 대안을 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X8'
+    },
+    {
+      phrase: 'I\'m not telling her anything.',
+      partOfSpeech: 'statement',
+      meaning: 'Refusing to convey information to someone. The phrase shows firm refusal.',
+      meaning_ko: '누군가에게 정보를 전달하기를 거부합니다. 이 표현은 확고한 거부를 보여줍니다.',
+      example: 'A: "Tell her I\'m a loner." B: "I\'m not telling her anything."',
+      example_ko: 'A: "그녀한테 난 혼자라고 말해." B: "난 아무것도 안 할 거야."',
+      context: 'Chandler declining Joey\'s request firmly.',
+      context_ko: 'Chandler가 Joey의 요청을 확고히 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X9'
+    },
+    {
+      phrase: 'I was typing names into the computer.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining casual activity at computer for fun. The phrase is conversational.',
+      meaning_ko: '재미를 위해 컴퓨터에서 비공식적인 활동을 설명합니다. 이 표현은 대화체입니다.',
+      example: 'A: "What were you doing?" B: "I was typing names into the computer."',
+      example_ko: 'A: "뭐 하고 있었어?" B: "난 컴퓨터에 이름을 입력하고 있었어."',
+      context: 'Monica explaining library discovery to Chandler.',
+      context_ko: 'Monica가 Chandler에게 도서관 발견을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X10'
+    },
+    {
+      phrase: 'And guess what came up?',
+      partOfSpeech: 'question',
+      meaning: 'Building anticipation for revealing surprising result. The phrase creates suspense.',
+      meaning_ko: '놀라운 결과를 드러내기 위해 기대감을 높입니다. 이 표현은 긴장감을 만듭니다.',
+      example: 'A: "I typed my name in." B: "And guess what came up?"',
+      example_ko: 'A: "나 내 이름을 입력했어." B: "그럼 뭐가 나온 줄 알아?"',
+      context: 'Monica building suspense about library discovery.',
+      context_ko: 'Monica가 도서관 발견에 대한 긴장감을 높입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X11'
+    },
+    {
+      phrase: 'Wow, that\'s actually pretty cool.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing genuine appreciation for something impressive. The phrase is enthusiastic.',
+      meaning_ko: '인상적인 것에 대한 진정한 감사를 표현합니다. 이 표현은 열정적입니다.',
+      example: 'A: "My dissertation is in the library." B: "Wow, that\'s actually pretty cool."',
+      example_ko: 'A: "내 박사 학위 논문이 도서관에 있어." B: "와, 그건 정말 멋진데."',
+      context: 'Chandler appreciating Monica\'s library discovery.',
+      context_ko: 'Chandler이 Monica의 도서관 발견을 감상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X12'
+    },
+    {
+      phrase: 'She said it\'s too dry.',
+      partOfSpeech: 'statement',
+      meaning: 'Reporting customer complaint about food preparation. The phrase relays criticism.',
+      meaning_ko: '음식 준비에 대한 고객 불만을 보도합니다. 이 표현은 비판을 전달합니다.',
+      example: 'A: "Why is she complaining?" B: "She said it\'s too dry."',
+      example_ko: 'A: "왜 그녀가 불평해?" B: "그녀가 너무 건조하다고 말했어."',
+      context: 'Server reporting customer complaint to chef.',
+      context_ko: '종업원이 셰프에게 고객 불만을 보도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X13'
+    },
+    {
+      phrase: 'I\'d like to meet this chicken expert.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing sarcastic desire to meet a critical customer. The phrase is witty.',
+      meaning_ko: '비판적인 고객을 만나고 싶다는 풍자적 욕망을 표현합니다. 이 표현은 재치 있습니다.',
+      example: 'A: "The customer is very picky." B: "I\'d like to meet this chicken expert."',
+      example_ko: 'A: "고객은 매우 까다로워." B: "난 이 닭 전문가를 만나고 싶어."',
+      context: 'Chef sarcastically responding to customer complaint.',
+      context_ko: '셰프가 고객 불만에 풍자적으로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X14'
+    },
+    {
+      phrase: 'Oh, what is that on your finger?',
+      partOfSpeech: 'question',
+      meaning: 'Asking about something noticeable, often jewelry. The question feigns innocence.',
+      meaning_ko: '눈에 띄는 것, 종종 보석에 대해 묻습니다. 이 질문은 순진함을 가장합니다.',
+      example: 'A: "I am engaged!" B: "Oh, what is that on your finger?"',
+      example_ko: 'A: "난 약혼했어!" B: "오, 그게 넌 손가락에 뭐야?"',
+      context: 'Janice noticing Monica\'s engagement ring.',
+      context_ko: 'Janice가 Monica의 약혼 반지를 봅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E7X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

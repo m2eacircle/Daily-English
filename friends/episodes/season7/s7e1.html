@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e1.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E1: Season 7, Episode 1</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E1: The One with Monica's Thunder</div>
+        <div class="page-header-meta">Monica and Chandler announce engagement. Rachel worries about lost opportunity. Phoebe's freelance work. Joey's audition anxiety. Gunther's unrequited feelings. Celebration night chaos.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e1"
             onclick="toggleBookmark('episode','episode-friends-s7e1','📋 Friends S7E1','friends/episodes/season7/s7e1.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Monica\'s Thunder',
+    description: 'Monica and Chandler announce engagement. Rachel worries about lost opportunity. Phoebe\'s freelance work. Joey\'s audition anxiety. Gunther\'s unrequited feelings. Celebration night chaos.',
+    expressions: [
+    {
+      phrase: 'Hey, what\'s going on?',
+      partOfSpeech: 'greeting',
+      meaning: 'A casual greeting asking someone what is happening or what is new. This informal expression shows friendly interest and openness.',
+      meaning_ko: '무언가 일어나고 있는 것을 묻는 캐주얼한 인사말입니다. 이 비형식적인 표현은 친근한 관심과 개방성을 보여줍니다.',
+      example: 'A: "Hey, what\'s going on?" B: "Just arrived at Monica\'s party."',
+      example_ko: 'A: "안녕, 뭐해?" B: "방금 Monica의 파티에 도착했어."',
+      context: 'Chandler greeting friends at Monica\'s engagement celebration.',
+      context_ko: 'Chandler가 Monica의 약혼 축하 파티에서 친구들에게 인사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X1'
+    },
+    {
+      phrase: 'Monica and I are engaged.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing a major life decision to get married. The phrase conveys joy and commitment in a direct, important announcement.',
+      meaning_ko: '결혼하기로 하는 중대한 인생 결정을 발표합니다. 이 표현은 기쁨과 약속을 직접적이고 중요한 발표로 전달합니다.',
+      example: 'A: "What\'s the big news?" B: "Monica and I are engaged."',
+      example_ko: 'A: "좋은 소식이 뭐야?" B: "Monica와 나 약혼했어."',
+      context: 'Chandler announcing his engagement to Monica.',
+      context_ko: 'Chandler가 Monica와의 약혼을 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X2'
+    },
+    {
+      phrase: 'I\'m engaged! I\'m engaged!',
+      partOfSpeech: 'exclamation',
+      meaning: 'Expressing extreme excitement about being engaged. The repetition emphasizes overwhelming joy and enthusiasm.',
+      meaning_ko: '약혼했다는 사실에 대한 극도의 흥분을 표현합니다. 반복은 압도적인 기쁨과 열정을 강조합니다.',
+      example: 'A: "You\'re getting married?" B: "I\'m engaged! I\'m engaged!"',
+      example_ko: 'A: "너 결혼하니?" B: "약혼했어! 약혼했어!"',
+      context: 'Monica repeatedly celebrating her engagement.',
+      context_ko: 'Monica가 약혼을 계속해서 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X3'
+    },
+    {
+      phrase: 'Let her stay. It\'s sweet.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting to keep something going because it is endearing. The phrase conveys appreciation for innocent joy and enthusiasm.',
+      meaning_ko: '무언가가 사랑스럽기 때문에 계속하도록 제안합니다. 이 표현은 순수한 기쁨과 열정에 대한 감사를 전달합니다.',
+      example: 'A: "Should we stop her?" B: "Let her stay. It\'s sweet."',
+      example_ko: 'A: "그걸 멈춰야 해?" B: "그냥 놔둬. 사랑스러워."',
+      context: 'Friends letting Monica celebrate freely.',
+      context_ko: 'Friends가 Monica가 자유롭게 축하하도록 하고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X4'
+    },
+    {
+      phrase: 'I will not shut up!',
+      partOfSpeech: 'expression',
+      meaning: 'Defiantly refusing to be quiet or stop talking. The phrase conveys determination and refusal to comply.',
+      meaning_ko: '조용히 하거나 말을 멈추는 것을 저항적으로 거부합니다. 이 표현은 결단력과 준수 거부를 전달합니다.',
+      example: 'A: "Shut up!" B: "I will not shut up!"',
+      example_ko: 'A: "조용해!" B: "난 조용하지 않을 거야!"',
+      context: 'Monica refusing to stop celebrating her engagement.',
+      context_ko: 'Monica가 자신의 약혼 축하를 멈추는 것을 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X5'
+    },
+    {
+      phrase: 'My fiancé will kick your ass.',
+      partOfSpeech: 'threat',
+      meaning: 'Joking threat defending someone\'s honor. The phrase conveys protective loyalty with humorous exaggeration.',
+      meaning_ko: '누군가의 명예를 지키는 장난스러운 위협입니다. 이 표현은 유머러스한 과장으로 보호적 충성심을 전달합니다.',
+      example: 'A: "Come at me!" B: "My fiancé will kick your ass."',
+      example_ko: 'A: "한 번 해봐!" B: "내 약혼녀가 너를 죽이지."',
+      context: 'Monica joking about Chandler protecting her honor.',
+      context_ko: 'Monica가 Chandler가 그녀의 명예를 보호하는 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X6'
+    },
+    {
+      phrase: 'You get her in, you bolt the door.',
+      partOfSpeech: 'instruction',
+      meaning: 'Giving directions to let someone inside and then lock securely. The phrase conveys planning and caution.',
+      meaning_ko: '누군가를 안으로 들여보내고 문을 단단히 잠그는 지시입니다. 이 표현은 계획과 주의를 전달합니다.',
+      example: 'A: "What\'s the plan?" B: "You get her in, you bolt the door."',
+      example_ko: 'A: "계획이 뭐야?" B: "너가 그녀를 들여 보내고, 문을 잠가."',
+      context: 'Chandler giving instructions during the chaos.',
+      context_ko: 'Chandler가 혼란 속에서 지시를 내립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X7'
+    },
+    {
+      phrase: 'I love you guys so much.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing deep affection and care for friends. The phrase conveys genuine warmth and emotional connection.',
+      meaning_ko: '친구들에 대한 깊은 애정과 배려를 표현합니다. 이 표현은 진정한 따뜻함과 정서적 연결을 전달합니다.',
+      example: 'A: "You mean everything?" B: "I love you guys so much."',
+      example_ko: 'A: "우리가 다는 뜻이야?" B: "난 너희들을 정말 사랑해."',
+      context: 'Monica expressing gratitude to her friends.',
+      context_ko: 'Monica가 그녀의 친구들에게 감사를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X8'
+    },
+    {
+      phrase: 'Thank you for being here.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing gratitude for someone\'s presence and support. The phrase conveys appreciation and recognition.',
+      meaning_ko: '누군가의 존재와 지지에 대한 감사를 표현합니다. 이 표현은 감사와 인정을 전달합니다.',
+      example: 'A: "I\'m happy for you." B: "Thank you for being here."',
+      example_ko: 'A: "난 너를 위해 기뻐." B: "여기 있어줘서 고마워."',
+      context: 'Monica thanking friends for celebrating.',
+      context_ko: 'Monica가 축하해주는 친구들에게 감사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X9'
+    },
+    {
+      phrase: 'Speaking of chiming in...',
+      partOfSpeech: 'transition',
+      meaning: 'Transitioning to a related topic after interruption. The phrase conveys a segue with mild sarcasm.',
+      meaning_ko: '중단 후 관련 주제로 전환합니다. 이 표현은 약간의 조소로 전환을 전달합니다.',
+      example: 'A: "What do you think?" B: "Speaking of chiming in..."',
+      example_ko: 'A: "넌 어떻게 생각해?" B: "그런데 말이야..."',
+      context: 'Chandler bringing up a previous incident.',
+      context_ko: 'Chandler가 이전 사건을 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X10'
+    },
+    {
+      phrase: 'I got up early for an audition.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining the reason for waking up early. The phrase conveys dedication to career goals.',
+      meaning_ko: '일찍 일어난 이유를 설명합니다. 이 표현은 경력 목표에 대한 헌신을 전달합니다.',
+      example: 'A: "Why so early?" B: "I got up early for an audition."',
+      example_ko: 'A: "왜 이리 일찍?" B: "오디션이 있어서 일찍 일어났어."',
+      context: 'Joey explaining why he can\'t stay late.',
+      context_ko: 'Joey가 왜 늦게까지 있을 수 없는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X11'
+    },
+    {
+      phrase: 'I\'m supposed to play nineteen.',
+      partOfSpeech: 'statement',
+      meaning: 'Stating the age requirement for an acting role. The phrase conveys hope and ambition.',
+      meaning_ko: '연기 역할의 나이 요구사항을 명시합니다. 이 표현은 희망과 야망을 전달합니다.',
+      example: 'A: "What\'s the role?" B: "I\'m supposed to play nineteen."',
+      example_ko: 'A: "역할이 뭐야?" B: "19살을 해야 해."',
+      context: 'Joey audition role expectations.',
+      context_ko: 'Joey의 오디션 역할 기대.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X12'
+    },
+    {
+      phrase: 'We should get dressed up.',
+      partOfSpeech: 'suggestion',
+      meaning: 'Recommending that everyone dress nicely for an occasion. The phrase conveys planning and celebration.',
+      meaning_ko: '행사를 위해 멋지게 옷을 입을 것을 권장합니다. 이 표현은 계획과 축하를 전달합니다.',
+      example: 'A: "What should we do?" B: "We should get dressed up."',
+      example_ko: 'A: "우리 뭘 할까?" B: "멋지게 입자."',
+      context: 'Rachel suggesting a celebration at the Plaza.',
+      context_ko: 'Rachel이 Plaza에서 축하할 것을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X13'
+    },
+    {
+      phrase: 'I can\'t stay too long.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating limited availability due to other obligations. The phrase conveys regret and constraint.',
+      meaning_ko: '다른 의무로 인한 제한된 가용성을 나타냅니다. 이 표현은 유감과 제약을 전달합니다.',
+      example: 'A: "Stay and celebrate!" B: "I can\'t stay too long."',
+      example_ko: 'A: "있고 축하해!" B: "난 오래 있을 수 없어."',
+      context: 'Joey having to leave early for audition.',
+      context_ko: 'Joey가 오디션으로 일찍 떠나야 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X14'
+    },
+    {
+      phrase: 'Congratulations. This is wonderful.',
+      partOfSpeech: 'congratulation',
+      meaning: 'Offering genuine praise and best wishes. The phrase conveys sincere happiness for someone\'s success.',
+      meaning_ko: '진정한 칭찬과 축원을 제공합니다. 이 표현은 누군가의 성공에 대한 진정한 행복을 전달합니다.',
+      example: 'A: "We\'re engaged!" B: "Congratulations. This is wonderful."',
+      example_ko: 'A: "우리 약혼했어!" B: "축하해. 정말 좋아."',
+      context: 'Friends congratulating Monica and Chandler.',
+      context_ko: 'Friends가 Monica와 Chandler를 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E1X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e4.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E4: Season 7, Episode 4</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E4: The One with Rachel's Assistant</div>
+        <div class="page-header-meta">Joey's play performance disappoints parents. Monica gets job promotion. Rachel's assistant leaves. Joey books two TV shows. Success and confessions.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e4"
             onclick="toggleBookmark('episode','episode-friends-s7e4','📋 Friends S7E4','friends/episodes/season7/s7e4.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 4',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Rachel\'s Assistant',
+    description: 'Joey\'s play performance disappoints parents. Monica gets job promotion. Rachel\'s assistant leaves. Joey books two TV shows. Success and confessions.',
+    expressions: [
+    {
+      phrase: 'You can say that again.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing strong agreement with someone\'s statement. The phrase emphasizes shared opinion.',
+      meaning_ko: '누군가의 진술에 강한 동의를 표현합니다. 이 표현은 공유된 의견을 강조합니다.',
+      example: 'A: "That was terrible." B: "You can say that again."',
+      example_ko: 'A: "그거 정말 끔찍했어." B: "정말로."',
+      context: 'Friends agreeing about the disappointing play.',
+      context_ko: 'Friends가 실망스러운 연극에 동의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X1'
+    },
+    {
+      phrase: 'I couldn\'t have done it alone.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing gratitude for someone\'s help and contribution. The phrase shows humility.',
+      meaning_ko: '누군가의 도움과 기여에 감사를 표현합니다. 이 표현은 겸손을 보여줍니다.',
+      example: 'A: "You did great!" B: "I couldn\'t have done it alone."',
+      example_ko: 'A: "넌 잘했어!" B: "난 혼자 못 했을 거야."',
+      context: 'Joey complimenting his scene partner.',
+      context_ko: 'Joey가 그의 연극 파트너를 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X2'
+    },
+    {
+      phrase: 'You\'re a genius.',
+      partOfSpeech: 'compliment',
+      meaning: 'Expressing high praise for someone\'s intelligence or creativity. The phrase is an exaggeration.',
+      meaning_ko: '누군가의 지능이나 창의성에 높은 칭찬을 표현합니다. 이 표현은 과장입니다.',
+      example: 'A: "I fixed it." B: "You\'re a genius."',
+      example_ko: 'A: "난 고쳤어." B: "넌 천재야."',
+      context: 'Praising someone\'s contribution to a project.',
+      context_ko: '프로젝트에 대한 누군가의 기여를 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X3'
+    },
+    {
+      phrase: 'I got it. I got it.',
+      partOfSpeech: 'expression',
+      meaning: 'Confirming that one will handle something or showing readiness. The phrase emphasizes determination.',
+      meaning_ko: '무언가를 처리하거나 준비 상태를 보여줄 것임을 확인합니다. 이 표현은 결단력을 강조합니다.',
+      example: 'A: "Answer the phone!" B: "I got it. I got it."',
+      example_ko: 'A: "전화 받아!" B: "내가 받을게. 내가 받을게."',
+      context: 'Monica answering the phone quickly.',
+      context_ko: 'Monica가 빠르게 전화를 답니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X4'
+    },
+    {
+      phrase: 'It\'s Mommy.',
+      partOfSpeech: 'announcement',
+      meaning: 'Informing someone that their mother is calling. The phrase shows familiar warmth.',
+      meaning_ko: '엄마가 전화하고 있음을 알립니다. 이 표현은 친근한 따뜻함을 보여줍니다.',
+      example: 'A: "Who is it?" B: "It\'s Mommy."',
+      example_ko: 'A: "누가 걸었어?" B: "엄마야."',
+      context: 'Monica announcing Joey\'s mother on the phone.',
+      context_ko: 'Monica가 Joey의 엄마를 전화로 알립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X5'
+    },
+    {
+      phrase: 'What did you guys think?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for opinions about a performance or event. The phrase seeks feedback.',
+      meaning_ko: '공연이나 이벤트에 대한 의견을 묻습니다. 이 표현은 피드백을 요청합니다.',
+      example: 'A: "The show is over." B: "What did you guys think?"',
+      example_ko: 'A: "쇼가 끝났어." B: "너희들은 어떻게 생각해?"',
+      context: 'Joey asking friends for reviews of the play.',
+      context_ko: 'Joey가 연극에 대한 친구들의 리뷰를 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X6'
+    },
+    {
+      phrase: 'That was one of the worst things ever.',
+      partOfSpeech: 'criticism',
+      meaning: 'Expressing strong disapproval of something. The phrase is a harsh judgment.',
+      meaning_ko: '무언가에 대한 강한 불만을 표현합니다. 이 표현은 가혹한 판단입니다.',
+      example: 'A: "How was it?" B: "That was one of the worst things ever."',
+      example_ko: 'A: "어땠어?" B: "그건 최악이었어."',
+      context: 'Joey\'s mom criticizing his play performance.',
+      context_ko: 'Joey의 엄마가 그의 연극 공연을 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X7'
+    },
+    {
+      phrase: 'I can\'t lie to him again.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing reluctance to deceive someone repeated times. The phrase shows honesty.',
+      meaning_ko: '반복적으로 누군가를 속일 수 없다는 것을 표현합니다. 이 표현은 정직함을 보여줍니다.',
+      example: 'A: "Just tell him it was good." B: "I can\'t lie to him again."',
+      example_ko: 'A: "그냥 좋았다고 해." B: "난 또 거짓말할 수 없어."',
+      context: 'Monica struggling with honesty about the play.',
+      context_ko: 'Monica가 연극에 대한 정직함으로 고민합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X8'
+    },
+    {
+      phrase: 'I\'m in the middle of a story here.',
+      partOfSpeech: 'expression',
+      meaning: 'Asking for patience while telling a long narrative. The phrase requests uninterrupted time.',
+      meaning_ko: '긴 이야기를 하는 동안 인내심을 요청합니다. 이 표현은 중단되지 않은 시간을 요청합니다.',
+      example: 'A: "Wait, guess what?" B: "I\'m in the middle of a story here."',
+      example_ko: 'A: "잠깐, 넌 뭐 봤어?" B: "난 이야기 중인데."',
+      context: 'Rachel being interrupted while telling a story.',
+      context_ko: 'Rachel이 이야기를 하는 중에 방해받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X9'
+    },
+    {
+      phrase: 'Guess what my agent just said?',
+      partOfSpeech: 'question',
+      meaning: 'Inviting others to guess exciting news or announcement. The phrase builds anticipation.',
+      meaning_ko: '흥미로운 소식이나 발표를 추측하도록 초대합니다. 이 표현은 기대감을 만듭니다.',
+      example: 'A: "You look excited." B: "Guess what my agent just said?"',
+      example_ko: 'A: "넌 신나 보여." B: "내 에이전트가 뭐라고 했게 맞춰봐."',
+      context: 'Joey sharing good news about TV opportunities.',
+      context_ko: 'Joey가 TV 기회에 대한 좋은 소식을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X10'
+    },
+    {
+      phrase: 'That\'s great.',
+      partOfSpeech: 'response',
+      meaning: 'Expressing happiness or approval for someone\'s news. The phrase is supportive.',
+      meaning_ko: '누군가의 소식에 대한 행복이나 승인을 표현합니다. 이 표현은 지지적입니다.',
+      example: 'A: "I got the job!" B: "That\'s great."',
+      example_ko: 'A: "난 그 일을 얻었어!" B: "좋네."',
+      context: 'Friends celebrating Joey\'s good news.',
+      context_ko: 'Friends가 Joey의 좋은 소식을 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X11'
+    },
+    {
+      phrase: 'If you\'re starting another story...',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing frustration about being interrupted repeatedly. The phrase shows impatience.',
+      meaning_ko: '반복적으로 방해받는 것에 대한 좌절감을 표현합니다. 이 표현은 성급함을 보여줍니다.',
+      example: 'A: "And then..." B: "If you\'re starting another story..."',
+      example_ko: 'A: "그 다음..." B: "또 다른 이야기 시작한다면..."',
+      context: 'Rachel frustrated by Joey interrupting.',
+      context_ko: 'Rachel이 Joey의 방해에 답답해합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X12'
+    },
+    {
+      phrase: 'Still get a discount on wedding gowns?',
+      partOfSpeech: 'question',
+      meaning: 'Asking about practical benefits of a new position. The phrase shows humor.',
+      meaning_ko: '새로운 직책의 실질적인 이점을 묻습니다. 이 표현은 유머를 보여줍니다.',
+      example: 'A: "I got promoted." B: "Still get a discount on wedding gowns?"',
+      example_ko: 'A: "난 승진했어." B: "웨딩 드레스 할인은 여전히?"',
+      context: 'Monica\'s job promotion at Ralph Lauren.',
+      context_ko: 'Monica의 Ralph Lauren에서의 직책 승진.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X13'
+    },
+    {
+      phrase: 'I\'m so happy for you.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing genuine joy about someone\'s success. The phrase is sincere and supportive.',
+      meaning_ko: '누군가의 성공에 대한 진정한 기쁨을 표현합니다. 이 표현은 진정하고 지지적입니다.',
+      example: 'A: "I got the job." B: "I\'m so happy for you."',
+      example_ko: 'A: "난 그 일을 얻었어." B: "난 너를 위해 정말 행복해."',
+      context: 'Friends celebrating Monica\'s promotion.',
+      context_ko: 'Friends가 Monica의 승진을 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X14'
+    },
+    {
+      phrase: 'They want me back on Days of our Lives.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing that one has been recalled for a previous role. The phrase shows career success.',
+      meaning_ko: '이전 역할을 위해 불려왔음을 발표합니다. 이 표현은 경력 성공을 보여줍니다.',
+      example: 'A: "Any other news?" B: "They want me back on Days of our Lives."',
+      example_ko: 'A: "다른 소식?" B: "그들이 나를 Days of our Lives로 다시 원해."',
+      context: 'Joey announcing he\'s returning to the soap opera.',
+      context_ko: 'Joey가 그가 드라마로 돌아간다고 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E4X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

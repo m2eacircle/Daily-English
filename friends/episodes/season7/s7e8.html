@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e8.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E8: Season 7, Episode 8</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E8: The One Where Chandler Doesn't Want to Leave</div>
+        <div class="page-header-meta">Thanksgiving states game. Group competes. Rachel gets 48 states. Joey claims champion. Ross loses bet and skips dinner.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e8"
             onclick="toggleBookmark('episode','episode-friends-s7e8','📋 Friends S7E8','friends/episodes/season7/s7e8.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 8',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One Where Chandler Doesn\'t Want to Leave',
+    description: 'Thanksgiving states game. Group competes. Rachel gets 48 states. Joey claims champion. Ross loses bet and skips dinner.',
+    expressions: [
+    {
+      phrase: 'Happy Thanksgiving.',
+      partOfSpeech: 'greeting',
+      meaning: 'Traditional greeting exchanged on the American holiday. The phrase celebrates the occasion.',
+      meaning_ko: '미국 휴일에 교환되는 전통적인 인사말입니다. 이 표현은 그 행사를 축하합니다.',
+      example: 'A: "Happy Thanksgiving!" B: "You too!"',
+      example_ko: 'A: "행복한 추수감사절!" B: "너도!"',
+      context: 'Chandler greeting everyone on Thanksgiving.',
+      context_ko: 'Chandler가 추수감사절에 모두에게 인사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X1'
+    },
+    {
+      phrase: 'That\'s like insanely easy.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming something is extremely simple to do. The phrase shows overconfidence.',
+      meaning_ko: '무언가가 매우 간단하다고 주장합니다. 이 표현은 과신을 보여줍니다.',
+      example: 'A: "Can you name all 50 states?" B: "That\'s like insanely easy."',
+      example_ko: 'A: "50개 주를 다 말할 수 있어?" B: "그건 미친 듯이 쉬운데."',
+      context: 'Rachel dismissing difficulty of states game.',
+      context_ko: 'Rachel이 주 게임의 어려움을 무시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X2'
+    },
+    {
+      phrase: 'It\'s harder than it sounds.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining something is more difficult than initially appears. The phrase corrects expectations.',
+      meaning_ko: '무언가가 처음 보기보다 더 어렵다고 설명합니다. 이 표현은 기대를 수정합니다.',
+      example: 'A: "That seems easy." B: "It\'s harder than it sounds."',
+      example_ko: 'A: "그건 쉬워 보여." B: "그건 들리는 것보다 어려워."',
+      context: 'Monica explaining game difficulty to others.',
+      context_ko: 'Monica가 다른 사람들에게 게임의 어려움을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X3'
+    },
+    {
+      phrase: 'Nobody cares about the Dakotas.',
+      partOfSpeech: 'statement',
+      meaning: 'Dismissing the importance of certain geographic locations humorously. The phrase is joking.',
+      meaning_ko: '특정 지리적 위치의 중요성을 유머러스하게 무시합니다. 이 표현은 농담입니다.',
+      example: 'A: "You forgot two states." B: "Nobody cares about the Dakotas."',
+      example_ko: 'A: "넌 두 주를 잊었어." B: "아무도 Dakota를 신경 안 써."',
+      context: 'Joey justifying forgetting states in game.',
+      context_ko: 'Joey가 게임에서 주를 잊은 것을 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X4'
+    },
+    {
+      phrase: 'I got tired of naming states.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining abandonment of activity due to boredom. The phrase shows lack of focus.',
+      meaning_ko: '지루함으로 인한 활동 포기를 설명합니다. 이 표현은 집중력 부족을 보여줍니다.',
+      example: 'A: "Why did you stop?" B: "I got tired of naming states."',
+      example_ko: 'A: "왜 멈췄어?" B: "나 주 이름 짓기 지쳤어."',
+      context: 'Phoebe explaining her unusual game entries.',
+      context_ko: 'Phoebe가 그녀의 unusual한 게임 항목을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X5'
+    },
+    {
+      phrase: 'Say hello to the new champ.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing oneself as winner proudly. The phrase shows competitive victory.',
+      meaning_ko: '자신을 승자로 자랑스럽게 발표합니다. 이 표현은 경쟁 승리를 보여줍니다.',
+      example: 'A: "Who won?" B: "Say hello to the new champ."',
+      example_ko: 'A: "누가 이겼어?" B: "새로운 챔프에게 인사해."',
+      context: 'Joey announcing his states game victory.',
+      context_ko: 'Joey가 주 게임 승리를 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X6'
+    },
+    {
+      phrase: 'How is New England not a state?',
+      partOfSpeech: 'question',
+      meaning: 'Questioning why something isn\'t included in expected category. The phrase is confused.',
+      meaning_ko: '무언가가 왜 예상 범주에 포함되지 않는지 묻습니다. 이 표현은 혼란스럽습니다.',
+      example: 'A: "That\'s not a state." B: "How is New England not a state?"',
+      example_ko: 'A: "그건 주가 아니야." B: "New England가 주가 아니라고?"',
+      context: 'Joey confused about what counts as a state.',
+      context_ko: 'Joey가 무엇이 주로 간주되는지 혼란스러워합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X7'
+    },
+    {
+      phrase: 'His girlfriend came into town.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining arrival of someone\'s romantic partner. The phrase reports news.',
+      meaning_ko: '누군가의 로맨틱한 파트너의 도착을 설명합니다. 이 표현은 뉴스를 보도합니다.',
+      example: 'A: "Why isn\'t Tag here?" B: "His girlfriend came into town."',
+      example_ko: 'A: "왜 Tag가 안 왔어?" B: "그의 여자친구가 왔어."',
+      context: 'Rachel explaining Tag\'s absence from dinner.',
+      context_ko: 'Rachel이 Tag의 저녁 결석을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X8'
+    },
+    {
+      phrase: 'Why didn\'t you tell me?',
+      partOfSpeech: 'question',
+      meaning: 'Asking why important information wasn\'t communicated. The phrase shows frustration.',
+      meaning_ko: '중요한 정보가 왜 전달되지 않았는지 묻습니다. 이 표현은 좌절감을 보여줍니다.',
+      example: 'A: "Tag isn\'t coming." B: "Why didn\'t you tell me?"',
+      example_ko: 'A: "Tag가 안 와." B: "왜 날 안 말했어?"',
+      context: 'Monica upset about unexpected change in plans.',
+      context_ko: 'Monica가 예상치 못한 계획 변경에 화났습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X9'
+    },
+    {
+      phrase: 'Your food is so delicious and perfect.',
+      partOfSpeech: 'statement',
+      meaning: 'Offering sincere compliment about cooking. The phrase is flattering.',
+      meaning_ko: '요리에 대한 진정한 칭찬을 제공합니다. 이 표현은 아첨합니다.',
+      example: 'A: "I made too much food." B: "Your food is so delicious and perfect."',
+      example_ko: 'A: "나 너무 많이 만들었어." B: "넌 음식 정말 맛있고 완벽해."',
+      context: 'Chandler flattering Monica about cooking.',
+      context_ko: 'Chandler가 Monica의 요리를 아첨합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X10'
+    },
+    {
+      phrase: 'It makes you want to kill yourself.',
+      partOfSpeech: 'expression',
+      meaning: 'Exaggerating frustration with something difficult. The phrase is hyperbolic humor.',
+      meaning_ko: '뭔가 어려운 것에 대한 좌절감을 과장합니다. 이 표현은 과장 유머입니다.',
+      example: 'A: "This game is hard." B: "It makes you want to kill yourself."',
+      example_ko: 'A: "이 게임은 어려워." B: "정말 미칠 것 같아."',
+      context: 'Ross commenting on difficulty of states game.',
+      context_ko: 'Ross가 주 게임의 어려움에 대해 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X11'
+    },
+    {
+      phrase: 'I bet I can get all 50.',
+      partOfSpeech: 'expression',
+      meaning: 'Making confident prediction about success. The phrase shows determination.',
+      meaning_ko: '성공에 대한 자신감 있는 예측을 합니다. 이 표현은 결단력을 보여줍니다.',
+      example: 'A: "This is impossible." B: "I bet I can get all 50."',
+      example_ko: 'A: "이건 불가능해." B: "나 50개 다 할 수 있어."',
+      context: 'Ross making bet that he can name all states.',
+      context_ko: 'Ross가 모든 주를 말할 수 있다는 내기를 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X12'
+    },
+    {
+      phrase: 'You\'re on.',
+      partOfSpeech: 'expression',
+      meaning: 'Accepting a challenge or bet from someone. The phrase shows agreement.',
+      meaning_ko: '누군가의 도전이나 내기를 수용합니다. 이 표현은 동의를 보여줍니다.',
+      example: 'A: "I bet I can do this." B: "You\'re on."',
+      example_ko: 'A: "나 이거 할 수 있어." B: "좋아, 시작해."',
+      context: 'Monica accepting Ross\'s bet about states.',
+      context_ko: 'Monica가 Ross의 주에 대한 내기를 수용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X13'
+    },
+    {
+      phrase: 'Don\'t look at my list.',
+      partOfSpeech: 'request',
+      meaning: 'Asking someone not to view something private. The phrase is protective.',
+      meaning_ko: '누군가에게 비공개 내용을 보지 말도록 요청합니다. 이 표현은 보호적입니다.',
+      example: 'A: "I\'m making my list." B: "Don\'t look at my list."',
+      example_ko: 'A: "난 내 리스트를 만들고 있어." B: "내 리스트 보지 마."',
+      context: 'Ross protecting his states list from others.',
+      context_ko: 'Ross가 다른 사람들로부터 자신의 주 리스트를 보호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X14'
+    },
+    {
+      phrase: 'Did you guys know your oven doesn\'t work?',
+      partOfSpeech: 'question',
+      meaning: 'Revealing surprising discovery about appliance malfunction. The phrase is informative.',
+      meaning_ko: '기구 고장에 대한 놀라운 발견을 드러냅니다. 이 표현은 정보 제공적입니다.',
+      example: 'A: "I need to use the oven." B: "Did you guys know your oven doesn\'t work?"',
+      example_ko: 'A: "난 오븐을 써야 해." B: "너희 오븐 고장난 거 알았어?"',
+      context: 'Monica discovering oven malfunction at Joey\'s place.',
+      context_ko: 'Monica가 Joey의 장소에서 오븐 고장을 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E8X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

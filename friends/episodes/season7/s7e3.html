@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e3.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E3: Season 7, Episode 3</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E3: The One with Phoebe's Cookies</div>
+        <div class="page-header-meta">Chandler's new glasses surprise. Engagement gifts debate. Monica's secret cookie recipe. Chandler's childhood boat memory. Joey's sailing adventure begins.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e3"
             onclick="toggleBookmark('episode','episode-friends-s7e3','📋 Friends S7E3','friends/episodes/season7/s7e3.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 3',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Phoebe\'s Cookies',
+    description: 'Chandler\'s new glasses surprise. Engagement gifts debate. Monica\'s secret cookie recipe. Chandler\'s childhood boat memory. Joey\'s sailing adventure begins.',
+    expressions: [
+    {
+      phrase: 'Are you kidding?',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing disbelief or shock at what someone said. The phrase conveys surprise and incredulity.',
+      meaning_ko: '누군가가 말한 것에 대한 불신이나 충격을 표현합니다. 이 표현은 놀람과 의구심을 전달합니다.',
+      example: 'A: "I didn\'t notice anything." B: "Are you kidding?"',
+      example_ko: 'A: "난 뭐도 못 봤는데." B: "농담하지마!"',
+      context: 'Friends shocked Chandler got glasses without them noticing.',
+      context_ko: 'Friends가 Chandler가 안경을 쓴 것을 못 본 데 충격받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X1'
+    },
+    {
+      phrase: 'I\'ll give you a hint.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering to provide clues to help someone figure something out. The phrase shows playfulness.',
+      meaning_ko: '누군가가 뭔가를 알아내도록 돕기 위해 단서를 제공합니다. 이 표현은 장난기를 보여줍니다.',
+      example: 'A: "What are you talking about?" B: "I\'ll give you a hint."',
+      example_ko: 'A: "넌 뭔 말을 해?" B: "힌트 줄게."',
+      context: 'Chandler hinting about his glasses to the group.',
+      context_ko: 'Chandler가 그룹에게 안경에 대해 힌트를 줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X2'
+    },
+    {
+      phrase: 'I got glasses.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing that one has acquired eyeglasses. The phrase is a simple factual statement.',
+      meaning_ko: '안경을 구했다는 것을 발표합니다. 이 표현은 단순한 사실 진술입니다.',
+      example: 'A: "What\'s the big announcement?" B: "I got glasses."',
+      example_ko: 'A: "뭔 큰 발표야?" B: "난 안경을 샀어."',
+      context: 'Chandler revealing his new glasses to friends.',
+      context_ko: 'Chandler가 친구들에게 새 안경을 공개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X3'
+    },
+    {
+      phrase: 'You always had glasses.',
+      partOfSpeech: 'statement',
+      meaning: 'Claiming that someone wore glasses consistently in the past. The phrase shows incorrect memory.',
+      meaning_ko: '누군가가 과거에 계속 안경을 썼다고 주장합니다. 이 표현은 부정확한 기억을 보여줍니다.',
+      example: 'A: "I got glasses." B: "You always had glasses."',
+      example_ko: 'A: "난 안경을 샀어." B: "넌 항상 안경 썼잖아."',
+      context: 'Monica misremembering Chandler\'s eyewear history.',
+      context_ko: 'Monica가 Chandler의 안경 착용 역사를 잘못 기억합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X4'
+    },
+    {
+      phrase: 'The glasses look great.',
+      partOfSpeech: 'compliment',
+      meaning: 'Expressing positive opinion about someone\'s appearance with glasses. The phrase shows approval.',
+      meaning_ko: '누군가의 안경 차림새에 대한 긍정적인 의견을 표현합니다. 이 표현은 승인을 보여줍니다.',
+      example: 'A: "How do they look?" B: "The glasses look great."',
+      example_ko: 'A: "어떻게 봐?" B: "안경 정말 잘 어울려."',
+      context: 'Joey complimenting Chandler\'s new glasses.',
+      context_ko: 'Joey가 Chandler의 새 안경을 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X5'
+    },
+    {
+      phrase: 'What do you want for an engagement present?',
+      partOfSpeech: 'question',
+      meaning: 'Asking someone what gift they would like for their engagement. The phrase shows generosity.',
+      meaning_ko: '누군가가 약혼 선물로 원하는 것을 묻습니다. 이 표현은 관대함을 보여줍니다.',
+      example: 'A: "You\'re engaged!" B: "What do you want for an engagement present?"',
+      example_ko: 'A: "넌 약혼했어!" B: "약혼 선물로 뭘 원해?"',
+      context: 'Friends asking Monica and Chandler gift preferences.',
+      context_ko: 'Friends가 Monica와 Chandler의 선물 선호도를 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X6'
+    },
+    {
+      phrase: 'We don\'t want to deprive them.',
+      partOfSpeech: 'expression',
+      meaning: 'Saying that someone doesn\'t want to prevent others from giving gifts. The phrase shows acceptance.',
+      meaning_ko: '누군가가 다른 사람들이 선물을 주는 것을 방지하고 싶지 않다고 말합니다. 이 표현은 수용을 보여줍니다.',
+      example: 'A: "You don\'t need gifts." B: "We don\'t want to deprive them."',
+      example_ko: 'A: "넌 선물이 필요 없어." B: "우린 그들을 박탈하고 싶지 않아."',
+      context: 'Monica accepting gracious gift offers from friends.',
+      context_ko: 'Monica가 친구들의 친절한 선물 제안을 수용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X7'
+    },
+    {
+      phrase: 'I already have one.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that one already possesses the item being suggested. The phrase politely declines.',
+      meaning_ko: '제안된 항목을 이미 소유하고 있음을 나타냅니다. 이 표현은 정중히 거절합니다.',
+      example: 'A: "You could get a CD player." B: "I already have one."',
+      example_ko: 'A: "CD 플레이어를 살 수 있어." B: "난 이미 하나 있어."',
+      context: 'Rachel saying she has a CD player already.',
+      context_ko: 'Rachel이 이미 CD 플레이어를 가지고 있다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X8'
+    },
+    {
+      phrase: 'Break my heart.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing sadness or emotional hurt about a request. The phrase conveys reluctant agreement.',
+      meaning_ko: '요청에 대한 슬픔이나 정서적 상처를 표현합니다. 이 표현은 불리한 동의를 전달합니다.',
+      example: 'A: "Can I have your secret recipe?" B: "Break my heart."',
+      example_ko: 'A: "비밀 레시피 줄 수 있어?" B: "내 마음 가져."',
+      context: 'Chandler reluctantly agreeing to give recipe away.',
+      context_ko: 'Chandler가 레시피를 주기로 불리하게 동의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X9'
+    },
+    {
+      phrase: 'I\'ve wanted it for years.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing long-standing desire for something. The phrase shows persistent longing.',
+      meaning_ko: '오랫동안 뭔가를 원하고 있음을 표현합니다. 이 표현은 지속적인 갈망을 보여줍니다.',
+      example: 'A: "Why the recipe?" B: "I\'ve wanted it for years."',
+      example_ko: 'A: "왜 레시피야?" B: "난 수년 동안 원했어."',
+      context: 'Monica explaining why she wants the cookie recipe.',
+      context_ko: 'Monica가 왜 쿠키 레시피를 원하는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X10'
+    },
+    {
+      phrase: 'Ahoy!',
+      partOfSpeech: 'greeting',
+      meaning: 'A nautical greeting meaning hello. The phrase is playful and maritime-themed.',
+      meaning_ko: '안녕하세요라는 뜻의 해양 인사입니다. 이 표현은 장난스럽고 해양 테마입니다.',
+      example: 'A: "Where are you?" B: "Ahoy!"',
+      example_ko: 'A: "넌 어디야?" B: "아뇽!"',
+      context: 'Joey greeting everyone from his boat.',
+      context_ko: 'Joey가 자신의 보트에서 모두에게 인사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X11'
+    },
+    {
+      phrase: 'I\'m getting into this sailing stuff.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing developing interest in a new activity. The phrase shows enthusiasm.',
+      meaning_ko: '새로운 활동에 대한 관심이 증가함을 표현합니다. 이 표현은 열정을 보여줍니다.',
+      example: 'A: "Sailing?" B: "I\'m getting into this sailing stuff."',
+      example_ko: 'A: "항해?" B: "난 이 항해 취미에 빠지고 있어."',
+      context: 'Joey developing interest in his boat.',
+      context_ko: 'Joey가 자신의 보트에 대한 관심을 기르고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X12'
+    },
+    {
+      phrase: 'If you don\'t sail it, what do you do on it?',
+      partOfSpeech: 'question',
+      meaning: 'Asking what purpose something serves if not used as intended. The phrase shows logic.',
+      meaning_ko: '의도한 대로 사용되지 않으면 뭔가가 무슨 용도인지 묻습니다. 이 표현은 논리를 보여줍니다.',
+      example: 'A: "I don\'t sail it." B: "If you don\'t sail it, what do you do on it?"',
+      example_ko: 'A: "난 그걸 항해하지 않아." B: "넌 거기서 뭘 하니?"',
+      context: 'Rachel questioning Joey\'s boat usage.',
+      context_ko: 'Rachel이 Joey의 보트 사용을 의문을 제기합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X13'
+    },
+    {
+      phrase: 'When I was fifteen, my dad bought me my own boat.',
+      partOfSpeech: 'statement',
+      meaning: 'Sharing a childhood memory of receiving a boat. The phrase shows privileged upbringing.',
+      meaning_ko: '보트를 받은 어린 시절 기억을 공유합니다. 이 표현은 특권받은 양육을 보여줍니다.',
+      example: 'A: "You can sail?" B: "When I was fifteen, my dad bought me my own boat."',
+      example_ko: 'A: "넌 항해할 수 있어?" B: "15살 때 아빠가 내 보트를 사줬어."',
+      context: 'Ross sharing sailing background with Joey.',
+      context_ko: 'Ross가 Joey와 항해 배경을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X14'
+    },
+    {
+      phrase: 'My pony was sick.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining reason for father\'s gift with humorous excuse. The phrase shows comedic timing.',
+      meaning_ko: '아버지의 선물에 대한 이유를 재미있는 변명으로 설명합니다. 이 표현은 코믹한 타이밍을 보여줍니다.',
+      example: 'A: "Why a boat?" B: "My pony was sick."',
+      example_ko: 'A: "왜 보트야?" B: "내 조랑말이 아팠어."',
+      context: 'Ross explaining his privileged childhood to Joey.',
+      context_ko: 'Ross가 Joey에게 그의 특권받은 어린 시절을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E3X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s7e9.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S7E9: Season 7, Episode 9</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S7E9: The One with the Boobies</div>
+        <div class="page-header-meta">Ben gets his first big kid's bike. Rachel and Tag dating secretly. Monica makes holiday candy basket for neighbors.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e9"
             onclick="toggleBookmark('episode','episode-friends-s7e9','📋 Friends S7E9','friends/episodes/season7/s7e9.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 7, Episode 9',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Boobies',
+    description: 'Ben gets his first big kid\'s bike. Rachel and Tag dating secretly. Monica makes holiday candy basket for neighbors.',
+    expressions: [
+    {
+      phrase: 'I\'m ready.',
+      partOfSpeech: 'statement',
+      meaning: 'Declaring preparedness for activity or situation. The phrase shows confidence.',
+      meaning_ko: '활동이나 상황에 대한 준비 상태를 선언합니다. 이 표현은 자신감을 보여줍니다.',
+      example: 'A: "Are you prepared?" B: "I\'m ready."',
+      example_ko: 'A: "넌 준비됐어?" B: "나 준비됐어."',
+      context: 'Ben declaring readiness for his first big bike ride.',
+      context_ko: 'Ben이 그의 첫 번째 큰 자전거 타기 준비를 선언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X1'
+    },
+    {
+      phrase: 'One daddy, two mommies.',
+      partOfSpeech: 'expression',
+      meaning: 'Playful correction about family structure terminology. The phrase is humorous.',
+      meaning_ko: '가족 구조 용어에 대한 재미있는 수정입니다. 이 표현은 유머러스합니다.',
+      example: 'A: "Thanks, Daddy." B: "One daddy, two mommies."',
+      example_ko: 'A: "고맙습니다, Daddy." B: "아빠 하나, 엄마 둘이야."',
+      context: 'Ross gently correcting Ben\'s family terminology.',
+      context_ko: 'Ross가 Ben의 가족 용어를 부드럽게 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X2'
+    },
+    {
+      phrase: 'There you go, there you go.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering encouragement during activity. The phrase shows support.',
+      meaning_ko: '활동 중 격려를 제공합니다. 이 표현은 지지를 보여줍니다.',
+      example: 'A: "I\'m trying." B: "There you go, there you go."',
+      example_ko: 'A: "나 노력하고 있어." B: "그래, 계속해, 계속해."',
+      context: 'Ross encouraging Ben as he learns to ride.',
+      context_ko: 'Ross가 Ben이 자전거를 타는 법을 배울 때 격려합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X3'
+    },
+    {
+      phrase: 'This is so exciting.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing enthusiasm about milestone event. The phrase shows genuine joy.',
+      meaning_ko: '이정표 사건에 대한 열정을 표현합니다. 이 표현은 진정한 기쁨을 보여줍니다.',
+      example: 'A: "Ben got his first big bike." B: "This is so exciting."',
+      example_ko: 'A: "Ben이 처음 큰 자전거를 얻었어." B: "정말 신나는데."',
+      context: 'Rachel excited about Ben\'s milestone moment.',
+      context_ko: 'Rachel이 Ben의 이정표 순간에 흥분합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X4'
+    },
+    {
+      phrase: 'I never had a bike of my own.',
+      partOfSpeech: 'statement',
+      meaning: 'Sharing nostalgic memory of childhood deprivation. The phrase is reflective.',
+      meaning_ko: '어린 시절 박탈감에 대한 향수로운 기억을 나눕니다. 이 표현은 성찰적입니다.',
+      example: 'A: "Did you have bikes?" B: "I never had a bike of my own."',
+      example_ko: 'A: "넌 자전거 가졌어?" B: "나 내 자전거가 없었어."',
+      context: 'Phoebe reminiscing about childhood without bicycle.',
+      context_ko: 'Phoebe가 자전거 없던 어린 시절을 회상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X5'
+    },
+    {
+      phrase: 'We didn\'t have a lot of money.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining financial hardship from childhood. The phrase is honest.',
+      meaning_ko: '어린 시절 재정적 어려움을 설명합니다. 이 표현은 솔직합니다.',
+      example: 'A: "Why no bike?" B: "We didn\'t have a lot of money."',
+      example_ko: 'A: "왜 자전거가 없었어?" B: "우리 돈이 많지 않았어."',
+      context: 'Phoebe explaining childhood economic circumstances.',
+      context_ko: 'Phoebe가 어린 시절 경제 상황을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X6'
+    },
+    {
+      phrase: 'Did the girl ever let you ride it?',
+      partOfSpeech: 'question',
+      meaning: 'Asking if someone allowed use of something coveted. The phrase is curious.',
+      meaning_ko: '누군가가 탐내던 것의 사용을 허락했는지 묻습니다. 이 표현은 호기심 있습니다.',
+      example: 'A: "The neighbor had a beautiful bike." B: "Did the girl ever let you ride it?"',
+      example_ko: 'A: "이웃이 아름다운 자전거를 가졌어." B: "그녀가 타게 해줬어?"',
+      context: 'Chandler asking about Phoebe\'s childhood bike envy.',
+      context_ko: 'Chandler이 Phoebe의 어린 시절 자전거 부러움을 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X7'
+    },
+    {
+      phrase: 'Making holiday candy for the neighbors.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining charitable activity preparing seasonal gifts. The phrase shows thoughtfulness.',
+      meaning_ko: '계절 선물을 준비하는 자선 활동을 설명합니다. 이 표현은 배려심을 보여줍니다.',
+      example: 'A: "What are you doing?" B: "Making holiday candy for the neighbors."',
+      example_ko: 'A: "뭐 해?" B: "이웃을 위해 홀리데이 캔디 만들고 있어."',
+      context: 'Monica explaining her community-building project.',
+      context_ko: 'Monica가 그녀의 커뮤니티 구축 프로젝트를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X8'
+    },
+    {
+      phrase: 'But we don\'t know the neighbors.',
+      partOfSpeech: 'statement',
+      meaning: 'Pointing out lack of familiarity with local residents. The phrase expresses concern.',
+      meaning_ko: '지역 주민들과의 부족한 친숙함을 지적합니다. 이 표현은 우려를 표현합니다.',
+      example: 'A: "I\'m giving candy to neighbors." B: "But we don\'t know the neighbors."',
+      example_ko: 'A: "난 이웃에게 캔디를 주고 있어." B: "근데 우리 이웃을 몰라."',
+      context: 'Chandler questioning Monica\'s neighbor acquaintance level.',
+      context_ko: 'Chandler이 Monica의 이웃 친숙도를 의문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X9'
+    },
+    {
+      phrase: 'I have great friends.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing gratitude about friendship quality. The phrase shows appreciation.',
+      meaning_ko: '우정의 질에 대한 감사를 표현합니다. 이 표현은 감사를 보여줍니다.',
+      example: 'A: "Why are you so happy?" B: "I have great friends."',
+      example_ko: 'A: "넌 왜 그렇게 행복해?" B: "나 좋은 친구들 있어."',
+      context: 'Rachel expressing happiness about her friendships.',
+      context_ko: 'Rachel이 그녀의 우정에 대한 행복을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X10'
+    },
+    {
+      phrase: 'It\'s not a big deal.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing importance of situation or action. The phrase minimizes significance.',
+      meaning_ko: '상황이나 행동의 중요성을 무시합니다. 이 표현은 중요성을 최소화합니다.',
+      example: 'A: "You made out with your assistant." B: "It\'s not a big deal."',
+      example_ko: 'A: "넌 니 어시스턴트와 뽀뽀했어." B: "별 거 아니야."',
+      context: 'Rachel downplaying her relationship with Tag.',
+      context_ko: 'Rachel이 Tag와의 관계를 축소합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X11'
+    },
+    {
+      phrase: 'We stayed up all night.',
+      partOfSpeech: 'statement',
+      meaning: 'Describing extended wakefulness to accomplish something. The phrase shows dedication.',
+      meaning_ko: '무언가를 성취하기 위해 연장된 깨어 있음을 설명합니다. 이 표현은 헌신을 보여줍니다.',
+      example: 'A: "How did you plan this?" B: "We stayed up all night."',
+      example_ko: 'A: "너희가 어떻게 계획했어?" B: "우리 밤샜어."',
+      context: 'Rachel explaining her planning efforts with Tag.',
+      context_ko: 'Rachel이 Tag와의 계획 노력을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X12'
+    },
+    {
+      phrase: 'Oh, well, you know, we did other stuff too.',
+      partOfSpeech: 'expression',
+      meaning: 'Playfully admitting additional romantic activity. The phrase is suggestive.',
+      meaning_ko: '추가 로맨틱 활동을 장난스럽게 인정합니다. 이 표현은 암시적입니다.',
+      example: 'A: "Planning took all night?" B: "Oh, well, you know, we did other stuff too."',
+      example_ko: 'A: "계획이 밤새 걸렸어?" B: "오, 그런데 우린 다른 것도 했어."',
+      context: 'Rachel and Tag hinting at romantic activity.',
+      context_ko: 'Rachel과 Tag가 로맨틱한 활동을 암시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X13'
+    },
+    {
+      phrase: 'I don\'t sleep with guys on the first date.',
+      partOfSpeech: 'statement',
+      meaning: 'Establishing personal dating boundary or standard. The phrase is declarative.',
+      meaning_ko: '개인적 데이트 경계 또는 기준을 설정합니다. 이 표현은 선언적입니다.',
+      example: 'A: "Did you sleep with him?" B: "I don\'t sleep with guys on the first date."',
+      example_ko: 'A: "넌 그와 잤어?" B: "나 첫 데이트에 남자와 자지 않아."',
+      context: 'Rachel defending her relationship choices.',
+      context_ko: 'Rachel이 그녀의 관계 선택을 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X14'
+    },
+    {
+      phrase: 'The basket is totally empty.',
+      partOfSpeech: 'statement',
+      meaning: 'Reporting successful consumption of items. The phrase is amazed.',
+      meaning_ko: '항목의 성공적인 소비를 보도합니다. 이 표현은 놀라워합니다.',
+      example: 'A: "What happened to the candy?" B: "The basket is totally empty."',
+      example_ko: 'A: "캔디가 어디 갔어?" B: "바구니가 완전히 비었어."',
+      context: 'Monica discovering neighbors ate all the candy.',
+      context_ko: 'Monica가 이웃들이 모든 캔디를 먹었다는 것을 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E9X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
