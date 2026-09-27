@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s8e1.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S8E1: Season 8, Episode 1</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S8E1: The One After the Superbowl</div>
+        <div class="page-header-meta">Monica and Chandler's wedding day. Rachel discovers she's pregnant. Friends celebrate newlywed couple.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s8e1"
             onclick="toggleBookmark('episode','episode-friends-s8e1','📋 Friends S8E1','friends/episodes/season8/s8e1.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One After the Superbowl',
+    description: 'Monica and Chandler\'s wedding day. Rachel discovers she\'s pregnant. Friends celebrate newlywed couple.',
+    expressions: [
+    {
+      phrase: 'I am so excited for you.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing enthusiastic joy for someone\'s good news. The phrase conveys genuine happiness and support. It demonstrates heartfelt celebration.',
+      meaning_ko: '누군가의 좋은 소식에 대해 열정적인 기쁨을 표현합니다. 이 표현은 진정한 행복과 지지를 전달합니다. 그것은 진심 어린 축하를 보여줍니다.',
+      example: 'A: "I\'m getting married!" B: "I am so excited for you."',
+      example_ko: 'A: "난 결혼할 거야!" B: "난 너를 위해 정말 흥분돼."',
+      context: 'Rachel reacting to Monica\'s wedding announcement.',
+      context_ko: 'Rachel이 Monica의 결혼식 발표에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X1'
+    },
+    {
+      phrase: 'You have to change before the party.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting someone to alter their appearance or clothing. The phrase conveys polite instruction or request. It demonstrates social expectation.',
+      meaning_ko: '누군가에게 모습이나 옷을 바꿀 것을 요청합니다. 이 표현은 정중한 지시를 전달합니다. 그것은 사회적 기대를 보여줍니다.',
+      example: 'A: "I\'m wearing this." B: "You have to change before the party."',
+      example_ko: 'A: "난 이거 입을 거야." B: "넌 파티 전에 갈아입어야 해."',
+      context: 'Monica telling Joey he needs different clothes.',
+      context_ko: 'Monica가 Joey에게 다른 옷이 필요하다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X2'
+    },
+    {
+      phrase: 'I didn\'t wanna steal your thunder.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining avoidance of taking attention from someone\'s special moment. The phrase conveys consideration for others. It demonstrates selflessness.',
+      meaning_ko: '누군가의 특별한 순간에서 관심을 빼앗지 않으려고 하는 것을 설명합니다. 이 표현은 타인을 배려하는 마음을 전달합니다. 그것은 이타심을 보여줍니다.',
+      example: 'A: "Why didn\'t you tell me?" B: "I didn\'t wanna steal your thunder."',
+      example_ko: 'A: "왜 나한테 말 안 했어?" B: "난 너의 순간을 망치고 싶지 않았어."',
+      context: 'Chandler explaining why he didn\'t share his news.',
+      context_ko: 'Chandler이 그의 소식을 공유하지 않은 이유를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X3'
+    },
+    {
+      phrase: 'I can\'t say because he\'s famous.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining inability to disclose information due to celebrity status. The phrase conveys secret-keeping. It demonstrates discretion.',
+      meaning_ko: '유명인 지위로 인해 정보를 공개할 수 없음을 설명합니다. 이 표현은 비밀 유지를 전달합니다. 그것은 신중함을 보여줍니다.',
+      example: 'A: "Tell us who the father is!" B: "I can\'t say because he\'s famous."',
+      example_ko: 'A: "아버지가 누군지 말해!" B: "난 그가 유명해서 말할 수 없어."',
+      context: 'Chandler refusing to reveal the baby\'s father.',
+      context_ko: 'Chandler이 아기의 아버지를 밝히기를 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X4'
+    },
+    {
+      phrase: 'You could never embarrass me.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing unconditional acceptance and love. The phrase conveys deep affection and loyalty. It demonstrates unwavering support.',
+      meaning_ko: '무조건적인 수용과 사랑을 표현합니다. 이 표현은 깊은 애정과 충성을 전달합니다. 그것은 흔들리지 않는 지지를 보여줍니다.',
+      example: 'A: "You might be embarrassed." B: "You could never embarrass me."',
+      example_ko: 'A: "넌 부끄러워할 수도 있어." B: "넌 절대 날 난처하게 할 수 없어."',
+      context: 'Monica reassuring Chandler about the wedding dance.',
+      context_ko: 'Monica가 Chandler를 결혼식 춤에 대해 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X5'
+    },
+    {
+      phrase: 'These new shoes are all slippery.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing a practical problem with footwear causing difficulty. The phrase conveys physical struggle. It demonstrates inconvenience.',
+      meaning_ko: '신발로 인한 실질적인 문제를 설명합니다. 이 표현은 신체적 어려움을 전달합니다. 그것은 불편함을 보여줍니다.',
+      example: 'A: "Why are you slipping?" B: "These new shoes are all slippery."',
+      example_ko: 'A: "왜 넌 미끄러워?" B: "이 새 구두들이 다 미끄럽네."',
+      context: 'Chandler struggling with his wedding shoes.',
+      context_ko: 'Chandler이 결혼식 구두로 애를 먹습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X6'
+    },
+    {
+      phrase: 'I married you.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating committed love despite imperfections. The phrase conveys romantic devotion. It demonstrates acceptance of flaws.',
+      meaning_ko: '불완전함에도 불구하고 헌신적인 사랑을 말합니다. 이 표현은 로맨틱한 헌신을 전달합니다. 그것은 결함에 대한 수용을 보여줍니다.',
+      example: 'A: "You might embarrass me." B: "I married you."',
+      example_ko: 'A: "넌 날 난처하게 할 수도 있어." B: "난 너와 결혼했어."',
+      context: 'Monica emphasizing her commitment to Chandler.',
+      context_ko: 'Monica가 Chandler에 대한 그녀의 헌신을 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X7'
+    },
+    {
+      phrase: 'You stole my moves.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking accusation of copying someone\'s dance style or mannerisms. The phrase conveys playful competition. It demonstrates lighthearted teasing.',
+      meaning_ko: '누군가의 춤 스타일이나 행동 양식을 베꼈다는 농담적 비난입니다. 이 표현은 장난스러운 경쟁을 전달합니다. 그것은 가벼운 놀림을 보여줍니다.',
+      example: 'A: "You\'re dancing well." B: "You stole my moves."',
+      example_ko: 'A: "넌 잘 춤을 춘다." B: "넌 내 동작들을 훔쳤어."',
+      context: 'Joey teasing Chandler about his wedding dance.',
+      context_ko: 'Joey가 Chandler의 결혼식 춤으로 그를 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X8'
+    },
+    {
+      phrase: 'I can\'t look at it.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing inability to face something emotionally difficult. The phrase conveys emotional distress. It demonstrates anxiety and fear.',
+      meaning_ko: '정서적으로 어려운 것을 마주할 수 없음을 표현합니다. 이 표현은 정서적 고통을 전달합니다. 그것은 불안과 두려움을 보여줍니다.',
+      example: 'A: "Check the test result." B: "I can\'t look at it."',
+      example_ko: 'A: "테스트 결과를 봐." B: "난 그걸 볼 수 없어."',
+      context: 'Rachel unable to look at the pregnancy test result.',
+      context_ko: 'Rachel이 임신 테스트 결과를 볼 수 없습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X9'
+    },
+    {
+      phrase: 'Somebody else tell me.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting another person to deliver news due to emotional inability. The phrase conveys avoidance and delegation. It demonstrates fear of direct knowledge.',
+      meaning_ko: '감정적 무능함으로 인해 다른 사람에게 소식을 전달해 달라고 요청합니다. 이 표현은 회피와 위임을 전달합니다. 그것은 직접 지식에 대한 두려움을 보여줍니다.',
+      example: 'A: "I\'ll tell you the news." B: "Somebody else tell me."',
+      example_ko: 'A: "난 넌한테 소식을 말해줄게." B: "다른 누군가 말해줘."',
+      context: 'Rachel asking friends to reveal pregnancy test result.',
+      context_ko: 'Rachel이 친구들에게 임신 테스트 결과를 공개해 달라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X10'
+    },
+    {
+      phrase: 'It\'s negative.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring a test result showing lack of pregnancy. The phrase conveys factual medical information. It demonstrates clarity and directness.',
+      meaning_ko: '임신이 없음을 보여주는 테스트 결과를 선언합니다. 이 표현은 사실적인 의학 정보를 전달합니다. 그것은 명확함과 직접성을 보여줍니다.',
+      example: 'A: "What does the test say?" B: "It\'s negative."',
+      example_ko: 'A: "테스트가 뭐래?" B: "음성이야."',
+      context: 'Monica initially telling Rachel the pregnancy test result.',
+      context_ko: 'Monica가 Rachel에게 임신 테스트 결과를 처음 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X11'
+    },
+    {
+      phrase: 'I lied before.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting to previous dishonesty or deception. The phrase conveys confession and reversal of truth. It demonstrates revelation and surprise.',
+      meaning_ko: '이전의 거짓말이나 속임을 인정합니다. 이 표현은 고백과 진실의 뒤바뀜을 전달합니다. 그것은 폭로와 놀라움을 보여줍니다.',
+      example: 'A: "Did you tell the truth?" B: "No, I lied before."',
+      example_ko: 'A: "넌 진실을 말했어?" B: "아니, 난 전에 거짓말했어."',
+      context: 'Monica revealing the pregnancy test is actually positive.',
+      context_ko: 'Monica가 임신 테스트가 실제로 양성임을 공개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X12'
+    },
+    {
+      phrase: 'I\'m gonna have a baby.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring intention to become a parent through pregnancy. The phrase conveys joyful announcement and commitment. It demonstrates life-changing decision.',
+      meaning_ko: '임신을 통해 부모가 될 의도를 선언합니다. 이 표현은 기쁜 발표와 헌신을 전달합니다. 그것은 인생을 바꾸는 결정을 보여줍니다.',
+      example: 'A: "Are you ready for parenthood?" B: "I\'m gonna have a baby."',
+      example_ko: 'A: "넌 부모가 될 준비 돼?" B: "난 아기를 낳을 거야."',
+      context: 'Rachel realizing she\'s truly pregnant and excited.',
+      context_ko: 'Rachel이 자신이 정말 임신했음을 깨닫고 흥분합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X13'
+    },
+    {
+      phrase: 'There\'s so few genuinely nice guys out there.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing observation about rarity of authentic kindness. The phrase conveys disappointment and realism. It demonstrates social commentary.',
+      meaning_ko: '진정한 친절의 희귀성에 대한 관찰을 표현합니다. 이 표현은 실망과 현실주의를 전달합니다. 그것은 사회적 논평을 보여줍니다.',
+      example: 'A: "This guy is really nice." B: "There\'s so few genuinely nice guys out there."',
+      example_ko: 'A: "이 남자는 정말 착해." B: "정말 착한 남자가 거의 없어."',
+      context: 'Mona commenting on Chandler\'s kindness.',
+      context_ko: 'Mona가 Chandler의 친절에 대해 논평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X14'
+    },
+    {
+      phrase: 'I\'m the nice one!',
+      partOfSpeech: 'expression',
+      meaning: 'Passionately asserting personal character as kind and good. The phrase conveys self-defense and pride. It demonstrates passionate self-advocacy.',
+      meaning_ko: '개인의 성격이 친절하고 착하다는 것을 열정적으로 주장합니다. 이 표현은 자기 방어와 자존심을 전달합니다. 그것은 열정적인 자기 옹호를 보여줍니다.',
+      example: 'A: "You\'re not the nice one." B: "I\'m the nice one!"',
+      example_ko: 'A: "넌 착한 놈이 아니야." B: "난 착한 놈이야!"',
+      context: 'Joey defending his kindness against Chandler.',
+      context_ko: 'Joey가 Chandler에 대항하여 자신의 친절을 옹호합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E1X15'
+    }
+  ]
   };
 
   var S_NUM = 8;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,19 +307,7 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s8e2.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S8E2: Season 8, Episode 2</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S8E2: The One with the Red Sweater</div>
+        <div class="page-header-meta">Honeymoon fun and complications. Rachel decides to tell the father. Joey proposes to Rachel.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s8e2"
             onclick="toggleBookmark('episode','episode-friends-s8e2','📋 Friends S8E2','friends/episodes/season8/s8e2.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 2',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Red Sweater',
+    description: 'Honeymoon fun and complications. Rachel decides to tell the father. Joey proposes to Rachel.',
+    expressions: [
+    {
+      phrase: 'I don\'t care what the computer says.',
+      partOfSpeech: 'expression',
+      meaning: 'Refusing to accept automated system results over personal judgment. The phrase conveys strong disagreement and authority. It demonstrates defiance.',
+      meaning_ko: '자동화된 시스템 결과를 개인적인 판단보다 거부합니다. 이 표현은 강한 불동의와 권위를 전달합니다. 그것은 반항을 보여줍니다.',
+      example: 'A: "The system says it\'s correct." B: "I don\'t care what the computer says."',
+      example_ko: 'A: "시스템이 맞다고 해." B: "난 컴퓨터가 뭐 말하든 상관 안 돼."',
+      context: 'Chandler arguing with the hotel about charges.',
+      context_ko: 'Chandler이 호텔의 청구에 대해 논쟁합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X1'
+    },
+    {
+      phrase: 'I\'m no longer a bride.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing end of bridal status after marriage ceremony. The phrase conveys bittersweet transition. It demonstrates new identity.',
+      meaning_ko: '결혼식 후 신부 지위의 끝을 표현합니다. 이 표현은 씁쓸한 변화를 전달합니다. 그것은 새로운 정체성을 보여줍니다.',
+      example: 'A: "You\'re still a bride!" B: "No, I\'m no longer a bride."',
+      example_ko: 'A: "넌 여전히 신부야!" B: "아니야, 난 더 이상 신부가 아니야."',
+      context: 'Monica checking out of the bridal suite.',
+      context_ko: 'Monica이 신부 스위트에서 체크아웃합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X2'
+    },
+    {
+      phrase: 'We have so much to look forward to.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing optimism about future events and opportunities. The phrase conveys hope and excitement. It demonstrates positive outlook.',
+      meaning_ko: '미래 이벤트와 기회에 대한 낙관주의를 표현합니다. 이 표현은 희망과 흥분을 전달합니다. 그것은 긍정적인 전망을 보여줍니다.',
+      example: 'A: "The honeymoon..." B: "We have so much to look forward to."',
+      example_ko: 'A: "신혼여행..." B: "우린 기대할 게 정말 많아."',
+      context: 'Chandler reassuring Monica about their future.',
+      context_ko: 'Chandler이 Monica에게 그들의 미래를 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X3'
+    },
+    {
+      phrase: 'That\'s true! I knew I married you for a reason!',
+      partOfSpeech: 'expression',
+      meaning: 'Joking admission that spouse\'s idea proves the marriage worthwhile. The phrase conveys playful appreciation. It demonstrates humor about partnership.',
+      meaning_ko: '배우자의 아이디어가 결혼이 가치가 있음을 증명한다는 농담적 인정입니다. 이 표현은 장난스러운 감사를 전달합니다. 그것은 파트너십에 대한 유머를 보여줍니다.',
+      example: 'A: "I have a solution!" B: "That\'s true! I knew I married you for a reason!"',
+      example_ko: 'A: "난 해결책이 있어!" B: "맞아! 난 너랑 결혼한 이유를 알았어!"',
+      context: 'Monica delighted by Chandler\'s disposable camera idea.',
+      context_ko: 'Monica가 Chandler의 일회용 카메라 아이디어에 기뻐합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X4'
+    },
+    {
+      phrase: 'Checkout is not till noon.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that hotel checkout time has not yet arrived. The phrase conveys factual information about timing. It demonstrates time awareness.',
+      meaning_ko: '호텔 체크아웃 시간이 아직 도래하지 않았음을 명시합니다. 이 표현은 시간에 대한 사실적 정보를 전달합니다. 그것은 시간 인식을 보여줍니다.',
+      example: 'A: "Hurry up!" B: "Checkout is not till noon."',
+      example_ko: 'A: "서둘러!" B: "체크아웃은 정오까지 아직이야."',
+      context: 'Monica noting Ross doesn\'t need to rush leaving.',
+      context_ko: 'Monica가 Ross가 급할 필요가 없음을 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X5'
+    },
+    {
+      phrase: 'He has a good eleven minutes left.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about someone having limited time before deadline. The phrase conveys sarcasm about time remaining. It demonstrates humorous timing.',
+      meaning_ko: '누군가가 마감 전에 제한된 시간이 남았다는 농담입니다. 이 표현은 남은 시간에 대한 냉소를 전달합니다. 그것은 유머러스한 타이밍을 보여줍니다.',
+      example: 'A: "Ross will check out soon." B: "He has a good eleven minutes left."',
+      example_ko: 'A: "Ross가 곧 체크아웃할 거야." B: "그는 정말 11분이 남았어."',
+      context: 'Chandler joking about Ross rushing before checkout.',
+      context_ko: 'Chandler이 Ross가 체크아웃 전에 서두르는 것을 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X6'
+    },
+    {
+      phrase: 'This is part of a salt-and-pepper set.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining that item is one half of matching pair. The phrase conveys justification for additional action. It demonstrates clever reasoning.',
+      meaning_ko: '항목이 일치하는 쌍의 절반임을 설명합니다. 이 표현은 추가 조치에 대한 정당화를 전달합니다. 그것은 영리한 추론을 보여줍니다.',
+      example: 'A: "Why open another?" B: "This is part of a salt-and-pepper set."',
+      example_ko: 'A: "왜 또 하나를 열어?" B: "이건 소금-후추 쌍의 일부야."',
+      context: 'Monica rationalizing opening more wedding gifts.',
+      context_ko: 'Monica가 더 많은 결혼 선물을 여는 것을 합리화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X7'
+    },
+    {
+      phrase: 'The guys don\'t know yet, do they?',
+      partOfSpeech: 'expression',
+      meaning: 'Asking confirmation that information hasn\'t been disclosed to others. The phrase conveys need for secrecy. It demonstrates confidentiality.',
+      meaning_ko: '정보가 다른 사람들에게 공개되지 않았음을 확인하도록 요청합니다. 이 표현은 비밀 유지의 필요성을 전달합니다. 그것은 기밀성을 보여줍니다.',
+      example: 'A: "I have a secret." B: "The guys don\'t know yet, do they?"',
+      example_ko: 'A: "난 비밀이 있어." B: "남자들이 아직 모르지, 그치?"',
+      context: 'Phoebe asking Rachel if friends know about pregnancy.',
+      context_ko: 'Phoebe이 Rachel에게 친구들이 임신을 알고 있는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X8'
+    },
+    {
+      phrase: 'You\'re gonna tell this guy today.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that someone will deliver important news soon. The phrase conveys certainty about future action. It demonstrates direct reference.',
+      meaning_ko: '누군가가 곧 중요한 소식을 전달할 것임을 명시합니다. 이 표현은 미래 행동에 대한 확실성을 전달합니다. 그것은 직접 참조를 보여줍니다.',
+      example: 'A: "When will I tell him?" B: "You\'re gonna tell this guy today."',
+      example_ko: 'A: "언제 그한테 말할 거야?" B: "넌 오늘 그 남자한테 말할 거야."',
+      context: 'Phoebe discussing Rachel revealing baby news.',
+      context_ko: 'Phoebe가 Rachel이 아기 소식을 공개하는 것을 논의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X9'
+    },
+    {
+      phrase: 'You\'re like Ed McMahon, except without the big check.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking comparison of life-changing news announcement. The phrase conveys humorous pop culture reference. It demonstrates witty analogy.',
+      meaning_ko: '인생을 바꾸는 뉴스 발표의 농담적인 비교입니다. 이 표현은 유머러스한 팝 문화 참고를 전달합니다. 그것은 재치 있는 비유를 보여줍니다.',
+      example: 'A: "I\'m announcing big news." B: "You\'re like Ed McMahon, except without the big check."',
+      example_ko: 'A: "난 큰 소식을 발표하고 있어." B: "넌 큰 수표 없는 Ed McMahon 같아."',
+      context: 'Phoebe joking about Rachel\'s pregnancy announcement.',
+      context_ko: 'Phoebe이 Rachel의 임신 발표를 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X10'
+    },
+    {
+      phrase: 'Should have never walked into that Sunglass Hut!',
+      partOfSpeech: 'expression',
+      meaning: 'Joking regret about where romantic encounter occurred. The phrase conveys exaggerated blame. It demonstrates humorous self-recrimination.',
+      meaning_ko: '로맨틱한 만남이 일어난 장소에 대한 농담적 후회입니다. 이 표현은 과장된 비난을 전달합니다. 그것은 유머러스한 자책을 보여줍니다.',
+      example: 'A: "I might be the father!" B: "Should have never walked into that Sunglass Hut!"',
+      example_ko: 'A: "난 아버지일 수도 있어!" B: "절대 Sunglass Hut에 안 들어갔어야 했어!"',
+      context: 'Joey panicking about potential fatherhood.',
+      context_ko: 'Joey가 잠재적 부부의 역할에 대해 당황합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X11'
+    },
+    {
+      phrase: 'You can turn around, or rip the Band-Aid off.',
+      partOfSpeech: 'phrasal verb',
+      meaning: 'Offering choice between avoiding or confronting difficult situation. The phrase conveys two options with different outcomes. It demonstrates problem-solving.',
+      meaning_ko: '어려운 상황을 피하거나 대면하는 선택을 제공합니다. 이 표현은 다양한 결과를 가진 두 가지 선택지를 전달합니다. 그것은 문제 해결을 보여줍니다.',
+      example: 'A: "What should I do?" B: "You can turn around, or rip the Band-Aid off."',
+      example_ko: 'A: "난 뭘 해야 돼?" B: "넌 돌아가거나, 일을 해버릴 수 있어."',
+      context: 'Phoebe giving Rachel two choices about confession.',
+      context_ko: 'Phoebe가 Rachel에게 고백에 대한 두 가지 선택을 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X12'
+    },
+    {
+      phrase: 'I\'m having a baby.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring pregnancy news to potential father. The phrase conveys life-altering announcement. It demonstrates bold declaration.',
+      meaning_ko: '잠재적 아버지에게 임신 소식을 선언합니다. 이 표현은 인생을 바꾸는 발표를 전달합니다. 그것은 담대한 선언을 보여줍니다.',
+      example: 'A: "What do you want?" B: "I\'m having a baby."',
+      example_ko: 'A: "넌 뭘 원해?" B: "난 아기를 낳을 거야."',
+      context: 'Rachel finally telling Tag about her pregnancy.',
+      context_ko: 'Rachel이 마침내 Tag에게 그녀의 임신을 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X13'
+    },
+    {
+      phrase: 'No matter what he says, you\'re not alone.',
+      partOfSpeech: 'expression',
+      meaning: 'Promising unconditional support regardless of outcome. The phrase conveys protective friendship. It demonstrates loyalty.',
+      meaning_ko: '결과에 관계없이 무조건적인 지지를 약속합니다. 이 표현은 보호적인 우정을 전달합니다. 그것은 충성심을 보여줍니다.',
+      example: 'A: "I\'m worried..." B: "No matter what he says, you\'re not alone."',
+      example_ko: 'A: "난 걱정돼..." B: "그가 뭐 말하든, 넌 혼자가 아니야."',
+      context: 'Joey reassuring Rachel about her pregnancy situation.',
+      context_ko: 'Joey가 Rachel의 임신 상황에 대해 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X14'
+    },
+    {
+      phrase: 'Rachel Green, will you marry me?',
+      partOfSpeech: 'expression',
+      meaning: 'Proposing marriage to woman in dramatic gesture. The phrase conveys romantic proposal. It demonstrates passionate commitment.',
+      meaning_ko: '여성에게 극적인 제스처로 결혼을 청합니다. 이 표현은 로맨틱한 청혼을 전달합니다. 그것은 열정적인 헌신을 보여줍니다.',
+      example: 'A: "What are you doing?" B: "Rachel Green, will you marry me?"',
+      example_ko: 'A: "넌 뭐 해?" B: "Rachel Green, 넌 날 결혼할래?"',
+      context: 'Joey proposing marriage to help Rachel.',
+      context_ko: 'Joey가 Rachel을 돕기 위해 결혼을 청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E2X15'
+    }
+  ]
   };
 
   var S_NUM = 8;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,19 +307,7 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
