@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S7E24: Season 7, Episode 24</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-meta">Monica's wedding day. Chandler gets cold feet and disappears. Joey is stuck on set. Everyone scrambles to make the wedding happen.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e24"
             onclick="toggleBookmark('episode','episode-friends-s7e24','📋 Friends S7E24','friends/episodes/season7/s7e24.html')">
@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 24',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Monica\'s wedding day. Chandler gets cold feet and disappears. Joey is stuck on set. Everyone scrambles to make the wedding happen.',
+    expressions: [
+    {
+      phrase: 'Monica\'s gonna have a baby.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing major pregnancy news. Shows shock.',
+      meaning_ko: '주요 임신 소식을 발표합니다. 충격을 보여줍니다.',
+      example: 'Rachel: "Monica\'s gonna have a baby."',
+      example_ko: 'Rachel: "Monica가 아기를 가질 거야."',
+      context: 'Rachel discovering Monica\'s pregnancy test on her wedding day.',
+      context_ko: 'Rachel은 결혼식 날에 Monica의 임신 테스트를 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X1'
+    },
+    {
+      phrase: 'It\'s turning into the worst wedding ever.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing escalating problems at event. Shows despair.',
+      meaning_ko: '행사의 확대되는 문제를 설명합니다. 절망을 보여줍니다.',
+      example: 'Phoebe: "It\'s turning into the worst wedding ever."',
+      example_ko: 'Phoebe: "이게 최악의 결혼식이 되고 있어."',
+      context: 'Phoebe reacting to multiple wedding day disasters.',
+      context_ko: 'Phoebe는 여러 결혼식 날 재앙에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X2'
+    },
+    {
+      phrase: 'Phoebe, we cannot tell anyone about this.',
+      partOfSpeech: 'instruction',
+      meaning: 'Commanding secrecy about sensitive information. Shows urgency.',
+      meaning_ko: '민감한 정보에 대한 비밀을 명령합니다. 긴급성을 보여줍니다.',
+      example: 'Rachel: "Phoebe, we cannot tell anyone about this."',
+      example_ko: 'Rachel: "Phoebe, 우린 아무도 이것에 대해 말할 수 없어."',
+      context: 'Rachel and Phoebe keeping Monica\'s pregnancy secret.',
+      context_ko: 'Rachel과 Phoebe는 Monica의 임신을 비밀로 유지합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X3'
+    },
+    {
+      phrase: 'I\'m never gonna get married.',
+      partOfSpeech: 'expression',
+      meaning: 'Despairing about ever finding love or marriage. Shows hopelessness.',
+      meaning_ko: '사랑이나 결혼을 찾는 것에 대해 절망합니다. 절망을 보여줍니다.',
+      example: 'Rachel: "I\'m never gonna get married."',
+      example_ko: 'Rachel: "난 절대 결혼 안 할 거야."',
+      context: 'Rachel spiraling during Monica\'s makeup session.',
+      context_ko: 'Rachel은 Monica의 화장 세션 중에 소용돌이칩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X4'
+    },
+    {
+      phrase: 'Maybe I should just forget about it. Become a lesbian or something.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about drastic life changes due to despair. Shows humor in crisis.',
+      meaning_ko: '절망으로 인한 극단적인 인생 변화를 농담합니다. 위기의 유머를 보여줍니다.',
+      example: 'Rachel: "Maybe I should just forget about it. Become a lesbian or something."',
+      example_ko: 'Rachel: "그냥 포기할까. 레즈비언이 되거나 뭐 그런 거."',
+      context: 'Rachel spiraling during emotional makeup moment.',
+      context_ko: 'Rachel은 감정적인 화장 순간에 소용돌이칩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X5'
+    },
+    {
+      phrase: 'I have a wedding that I have to be at. I\'m officiating.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining serious commitment and role. Shows importance.',
+      meaning_ko: '심각한 헌신과 역할을 설명합니다. 중요성을 보여줍니다.',
+      example: 'Joey: "I have a wedding that I have to be at. I\'m officiating..."',
+      example_ko: 'Joey: "난 가야 할 결혼식이 있어. 난 주례자야..."',
+      context: 'Joey trying to leave the film set for Monica\'s wedding.',
+      context_ko: 'Joey는 Monica의 결혼식을 위해 영화 세트에서 떠나려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X6'
+    },
+    {
+      phrase: 'I made up the wedding because I didn\'t want you to worry.',
+      partOfSpeech: 'confession',
+      meaning: 'Admitting deception to protect someone. Shows consideration.',
+      meaning_ko: '누군가를 보호하기 위해 속임을 인정합니다. 배려를 보여줍니다.',
+      example: 'Joey: "I made up the wedding, because I didn\'t want you to worry."',
+      example_ko: 'Joey: "난 결혼식을 만들었어, 왜냐하면 난 넌 걱정 안 하길 원했어."',
+      context: 'Joey confessing he lied to leave set early.',
+      context_ko: 'Joey는 일찍 세트를 떠나기 위해 거짓말했음을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X7'
+    },
+    {
+      phrase: 'Hair transplant.',
+      partOfSpeech: 'statement',
+      meaning: 'Revealing unexpected truth about cosmetic procedure. Shows humor.',
+      meaning_ko: '미용 시술에 대한 예상치 못한 진실을 드러냅니다. 유머를 보여줍니다.',
+      example: 'Joey: "Hair transplant."',
+      example_ko: 'Joey: "머리 이식."',
+      context: 'Joey explaining his "surgery" to director.',
+      context_ko: 'Joey는 감독에게 그의 "수술"을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X8'
+    },
+    {
+      phrase: 'If I go home, we\'re gonna become the Bings.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing fear of inheriting family dysfunction. Shows anxiety.',
+      meaning_ko: '가족 기능 부전 상속에 대한 두려움을 표현합니다. 불안을 보여줍니다.',
+      example: 'Chandler: "If I go home, we\'re gonna become the Bings."',
+      example_ko: 'Chandler: "집에 가면, 우린 Bings가 될 거야."',
+      context: 'Chandler explaining his wedding day panic to Ross.',
+      context_ko: 'Chandler는 Ross에게 결혼식 날 공황을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X9'
+    },
+    {
+      phrase: 'The Bings have bad marriages. They yell, fight, and use the pool boy as a pawn.',
+      partOfSpeech: 'description',
+      meaning: 'Cataloguing family dysfunction patterns. Shows fear of inheritance.',
+      meaning_ko: '가족 기능 부전 패턴을 나열합니다. 상속에 대한 두려움을 보여줍니다.',
+      example: 'Chandler: "The Bings have bad marriages. They yell, fight, and use the pool boy..."',
+      example_ko: 'Chandler: "Bings는 나쁜 결혼을 해. 그들은 외쳐, 싸우고, pool boy를..."',
+      context: 'Chandler detailing his family\'s marriage problems.',
+      context_ko: 'Chandler는 그의 가족의 결혼 문제를 자세히 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X10'
+    },
+    {
+      phrase: 'Only Paul Newman can make marriage work.',
+      partOfSpeech: 'joke',
+      meaning: 'Humorously suggesting only celebrities succeed at marriage. Shows despair.',
+      meaning_ko: '유명인만 결혼에 성공한다고 유머러스하게 암시합니다. 절망을 보여줍니다.',
+      example: 'Chandler: "Only Paul Newman can make marriage work."',
+      example_ko: 'Chandler: "Paul Newman만 결혼을 성공시킬 수 있어."',
+      context: 'Chandler expressing self-doubt about marriage.',
+      context_ko: 'Chandler는 결혼에 대한 자기의심을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X11'
+    },
+    {
+      phrase: 'Right now no one has a lower opinion of you than I do.',
+      partOfSpeech: 'statement',
+      meaning: 'Stating harsh judgment while offering support paradoxically. Shows honesty.',
+      meaning_ko: '역설적으로 지지를 제공하면서 가혹한 판단을 진술합니다. 정직을 보여줍니다.',
+      example: 'Ross: "Right now no one has a lower opinion of you than I do."',
+      example_ko: 'Ross: "지금 날 더 낮게 본 사람은 없어."',
+      context: 'Ross supporting Chandler despite his disappearance.',
+      context_ko: 'Ross는 Chandler의 사라짐에도 불구하고 지원합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X12'
+    },
+    {
+      phrase: 'But I totally believe you can do this.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering encouragement despite doubts. Shows faith.',
+      meaning_ko: '의심에도 불구하고 격려를 제공합니다. 믿음을 보여줍니다.',
+      example: 'Ross: "But I totally believe you can do this."',
+      example_ko: 'Ross: "하지만 난 넌 이거 할 수 있다고 완전히 믿어."',
+      context: 'Ross supporting panicked Chandler.',
+      context_ko: 'Ross는 공황에 빠진 Chandler를 지원합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X13'
+    },
+    {
+      phrase: 'Can you just come home and take a shower? That\'s not scary, right?',
+      partOfSpeech: 'question',
+      meaning: 'Breaking down big task into small steps. Shows wisdom.',
+      meaning_ko: '큰 작업을 작은 단계로 나눕니다. 지혜를 보여줍니다.',
+      example: 'Ross: "Can you just come home and take a shower? That\'s not scary, right?"',
+      example_ko: 'Ross: "그냥 집에 와서 샤워만 해? 그건 무섭지 않지?"',
+      context: 'Ross using small steps to help Chandler cope.',
+      context_ko: 'Ross는 작은 단계를 사용하여 Chandler가 대처하도록 도와줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X14'
+    },
+    {
+      phrase: 'Here comes the bride.',
+      partOfSpeech: 'expression',
+      meaning: 'Traditional announcement of bride\'s arrival. Shows celebration.',
+      meaning_ko: '신부 도착의 전통적 공고입니다. 축제를 보여줍니다.',
+      example: 'Friend: "Here comes the bride."',
+      example_ko: 'Friend: "신부가 온다."',
+      context: 'Monica beginning her walk down the aisle.',
+      context_ko: 'Monica는 복도를 걸어가기 시작합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E24X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

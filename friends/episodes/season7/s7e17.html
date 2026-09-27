@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 17',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Monica and Rachel search for wedding dresses. Ross and Joey meet an attractive new neighbor. Chandler works on wedding plans.',
+    expressions: [
+    {
+      phrase: 'Food? Oh, give me.',
+      partOfSpeech: 'expression',
+      meaning: 'Enthusiastically requesting food or showing immediate interest. Expresses hunger or excitement.',
+      meaning_ko: '음식을 열정적으로 요청하거나 즉각적인 관심을 보입니다. 배고픔이나 흥미를 표현합니다.',
+      example: 'Monica: "The caterer sent me this list of 12 appetizers."',
+      example_ko: 'Monica: "케이터러가 12개 전채의 목록을 보냈어."',
+      context: 'Monica showing Chandler the appetizer list for the wedding.',
+      context_ko: 'Monica는 Chandler에게 결혼식 전채 목록을 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X1'
+    },
+    {
+      phrase: 'Since forever.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating something has been true for a very long time. Shows established history.',
+      meaning_ko: '뭔가가 오랜 시간 동안 사실임을 나타냅니다. 확립된 역사를 보여줍니다.',
+      example: 'Chandler: "Since when are you into swing music?" "Since forever."',
+      example_ko: 'Chandler: "언제부터 스윙 음악을 좋아해?" "예날부터."',
+      context: 'Chandler revealing his long-time passion for swing music.',
+      context_ko: 'Chandler는 그의 오래된 스윙 음악 열정을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X2'
+    },
+    {
+      phrase: 'You stick to your job.',
+      partOfSpeech: 'expression',
+      meaning: 'Advising someone to focus on their assigned responsibilities. Shows delegation.',
+      meaning_ko: '누군가에게 할당된 책임에 집중하도록 권고합니다. 위임을 보여줍니다.',
+      example: 'Monica: "You stick to your job."',
+      example_ko: 'Monica: "넌 너의 일에 집중해."',
+      context: 'Monica telling Chandler to focus on his wedding tasks.',
+      context_ko: 'Monica는 Chandler에게 결혼 작업에 집중하도록 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X3'
+    },
+    {
+      phrase: 'Staying out of the way.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing a role of not interfering or causing trouble. Shows humility.',
+      meaning_ko: '간섭하지 않거나 문제를 일으키지 않는 역할을 설명합니다. 겸손을 보여줍니다.',
+      example: 'Chandler: "What is your job?" "Staying out of the way."',
+      example_ko: 'Chandler: "너의 일이 뭐야?" "방해 안 하는 거."',
+      context: 'Chandler humorously describing his wedding planning role.',
+      context_ko: 'Chandler는 그의 결혼식 계획 역할을 유머러스하게 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X4'
+    },
+    {
+      phrase: 'The great thing about being engaged.',
+      partOfSpeech: 'expression',
+      meaning: 'Highlighting a positive aspect of engagement or commitment. Shows confidence.',
+      meaning_ko: '약혼이나 헌신의 긍정적 측면을 강조합니다. 자신감을 보여줍니다.',
+      example: 'Ross: "The great thing about being engaged, I\'m not nervous anymore."',
+      example_ko: 'Ross: "약혼했을 때 좋은 점은, 난 더 이상 긴장 안 해."',
+      context: 'Ross explaining how engagement changed his confidence.',
+      context_ko: 'Ross는 약혼이 그의 자신감을 어떻게 변화시켰는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X5'
+    },
+    {
+      phrase: 'Could you guys help me?',
+      partOfSpeech: 'question',
+      meaning: 'Politely requesting assistance from multiple people. Shows politeness and need.',
+      meaning_ko: '여러 사람에게 정중하게 도움을 요청합니다. 정중함과 필요를 보여줍니다.',
+      example: 'Kristen: "Could you guys help me?" (with a heavy box)',
+      example_ko: 'Kristen: "도와줄 수 있어요?" (무거운 상자로)',
+      context: 'Kristen asking Ross and Chandler for help moving boxes.',
+      context_ko: 'Kristen은 Ross와 Chandler에게 상자를 옮기는 것을 도와달라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X6'
+    },
+    {
+      phrase: 'I\'d love to show you around.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering to take someone to see places. Shows hospitality and interest.',
+      meaning_ko: '누군가를 장소 주변에 데려가도록 제공합니다. 환대와 관심을 보여줍니다.',
+      example: 'Ross: "I\'d love to show you around sometime."',
+      example_ko: 'Ross: "언젠가 주변을 보여주고 싶어."',
+      context: 'Ross trying to impress Kristen when they meet.',
+      context_ko: 'Ross는 Kristen을 만날 때 인상을 주려고 노력합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X7'
+    },
+    {
+      phrase: 'This is it. This is the one.',
+      partOfSpeech: 'expression',
+      meaning: 'Identifying something as perfect or the ideal choice. Shows certainty.',
+      meaning_ko: '뭔가를 완벽하거나 이상적인 선택으로 식별합니다. 확실성을 보여줍니다.',
+      example: 'Monica: "This is it. Yeah, this is the one." (about her wedding dress)',
+      example_ko: 'Monica: "이거야. 네, 이게 맞아." (웨딩 드레스에 대해)',
+      context: 'Monica finding her perfect wedding dress.',
+      context_ko: 'Monica는 그녀의 완벽한 웨딩 드레스를 찾습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X8'
+    },
+    {
+      phrase: 'You look so beautiful.',
+      partOfSpeech: 'compliment',
+      meaning: 'Expressing admiration for someone\'s appearance. Shows appreciation.',
+      meaning_ko: '누군가의 외모에 대한 감탄을 표현합니다. 감사를 보여줍니다.',
+      example: 'Rachel: "Oh, my God! You look so beautiful!"',
+      example_ko: 'Rachel: "오, 신이시여! 넌 정말 아름다워!"',
+      context: 'Rachel complimenting Monica in her wedding dress.',
+      context_ko: 'Rachel은 웨딩 드레스를 입은 Monica를 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X9'
+    },
+    {
+      phrase: 'I couldn\'t afford one.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting lack of financial means for something. Shows honesty about budget.',
+      meaning_ko: '뭔가에 대한 재정 수단 부족을 인정합니다. 예산에 대한 정직을 보여줍니다.',
+      example: 'Megan: "But I couldn\'t afford one." (about the expensive dress)',
+      example_ko: 'Megan: "하지만 난 사기 못 해." (비싼 드레스에 대해)',
+      context: 'Megan explaining why she\'ll buy her dress at a discount.',
+      context_ko: 'Megan은 왜 할인점에서 드레스를 사는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X10'
+    },
+    {
+      phrase: 'They\'re having a huge sale.',
+      partOfSpeech: 'statement',
+      meaning: 'Announcing a major discount event. Shows helpfulness in sharing information.',
+      meaning_ko: '대규모 할인 이벤트를 발표합니다. 정보 공유에 있어 도움이 됨을 보여줍니다.',
+      example: 'Megan: "Day after tomorrow, they\'re having a huge sale."',
+      example_ko: 'Megan: "내일 모레, 큰 세일을 해."',
+      context: 'Megan sharing a money-saving tip with Monica.',
+      context_ko: 'Megan은 Monica와 돈 절약 팁을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X11'
+    },
+    {
+      phrase: 'I\'m just kidding.',
+      partOfSpeech: 'expression',
+      meaning: 'Clarifying that a previous statement was not serious. Shows humor.',
+      meaning_ko: '이전 진술이 진지하지 않았음을 명확히 합니다. 유머를 보여줍니다.',
+      example: 'Megan: "I\'m not getting married." "I\'m just kidding. I\'m getting married in December."',
+      example_ko: 'Megan: "난 결혼 안 해." "농담이야. 난 12월에 결혼해."',
+      context: 'Megan teasing Monica about her wedding date.',
+      context_ko: 'Megan은 Monica의 결혼 날짜를 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X12'
+    },
+    {
+      phrase: 'Don\'t buy that here.',
+      partOfSpeech: 'advice',
+      meaning: 'Recommending against purchasing in a particular place. Shows helpfulness.',
+      meaning_ko: '특정 장소에서 구매를 권하지 않습니다. 도움이 됨을 보여줍니다.',
+      example: 'Megan: "Don\'t buy that here. Go to Kleinman\'s. Get it half off."',
+      example_ko: 'Megan: "여기서 사지 마. Kleinman\'s로 가. 반값에 사."',
+      context: 'Megan advising Monica about overpriced wedding dress store.',
+      context_ko: 'Megan은 Monica에게 비싼 웨딩 드레스 가게에 대해 조언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X13'
+    },
+    {
+      phrase: 'I own this store.',
+      partOfSpeech: 'statement',
+      meaning: 'Revealing ownership of an establishment. Shows ironic timing of comment.',
+      meaning_ko: '설립의 소유권을 공개합니다. 의견의 아이러니한 타이밍을 보여줍니다.',
+      example: 'Store Owner: "I own this store." (in response to Megan criticizing prices)',
+      example_ko: 'Store Owner: "난 이 가게를 소유해." (Megan이 가격을 비판하는 것에 대한 대응)',
+      context: 'The store owner responding to Megan\'s comments about high prices.',
+      context_ko: 'Store Owner는 높은 가격에 대한 Megan의 의견에 대응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X14'
+    },
+    {
+      phrase: 'What a beautiful name.',
+      partOfSpeech: 'compliment',
+      meaning: 'Expressing admiration for someone\'s name. Shows charm and flirtation.',
+      meaning_ko: '누군가의 이름에 대한 감탄을 표현합니다. 매력과 작업을 보여줍니다.',
+      example: 'Joey: "What a beautiful name. What is it again?" "Kristen."',
+      example_ko: 'Joey: "정말 예쁜 이름이야. 뭐라고 했지?" "Kristen."',
+      context: 'Joey flirting with Kristen while helping her move.',
+      context_ko: 'Joey는 Kristen을 이사하는 것을 도울 때 작업합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E17X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S7E21: Season 7, Episode 21</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-meta">Chandler and Monica write wedding vows. Ross helps Chandler with his feelings. Friends discover their engagement.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e21"
             onclick="toggleBookmark('episode','episode-friends-s7e21','📋 Friends S7E21','friends/episodes/season7/s7e21.html')">
@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 21',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Chandler and Monica write wedding vows. Ross helps Chandler with his feelings. Friends discover their engagement.',
+    expressions: [
+    {
+      phrase: 'Do you realize we\'re getting married in four weeks?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing amazement at how close a major event is. Shows excitement.',
+      meaning_ko: '주요 행사가 얼마나 가까운지 놀라움을 표현합니다. 흥분을 보여줍니다.',
+      example: 'Monica: "Do you realize we\'re getting married in four weeks?"',
+      example_ko: 'Monica: "우리 4주 후에 결혼하는 거 알아?"',
+      context: 'Monica counting down to her wedding day with Chandler.',
+      context_ko: 'Monica는 Chandler와의 결혼식 날짜를 세고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X1'
+    },
+    {
+      phrase: 'There\'s still so much to do!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing stress about incomplete preparations. Shows overwhelm.',
+      meaning_ko: '불완전한 준비에 대한 스트레스를 표현합니다. 압도를 보여줍니다.',
+      example: 'Monica: "There\'s still so much to do!"',
+      example_ko: 'Monica: "아직도 할 것이 너무 많아!"',
+      context: 'Monica stressed about wedding planning tasks.',
+      context_ko: 'Monica는 결혼식 계획 작업에 대해 스트레스를 받고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X2'
+    },
+    {
+      phrase: 'I figured I\'d just buy those.',
+      partOfSpeech: 'statement',
+      meaning: 'Joking about purchasing something instead of creating it. Shows humor.',
+      meaning_ko: '만드는 대신 뭔가를 구입하는 것에 대해 농담합니다. 유머를 보여줍니다.',
+      example: 'Chandler: "I figured I\'d just buy those. \"Pat, I\'d like to buy a vow.\""',
+      example_ko: 'Chandler: "난 그냥 사기로 생각했어. \"Pat, 나 서약을 사고 싶은데.\""',
+      context: 'Chandler joking about not writing his own vows.',
+      context_ko: 'Chandler는 자신의 서약을 쓰지 않는 것에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X3'
+    },
+    {
+      phrase: 'Say what\'s in your heart.',
+      partOfSpeech: 'instruction',
+      meaning: 'Advising someone to speak from genuine emotion. Shows sincerity.',
+      meaning_ko: '누군가에게 진정한 감정에서 말하도록 조언합니다. 성실성을 보여줍니다.',
+      example: 'Rachel: "Say what\'s in your heart."',
+      example_ko: 'Rachel: "너의 마음에서 말해."',
+      context: 'Rachel helping Chandler write genuine wedding vows.',
+      context_ko: 'Rachel은 Chandler가 진정한 결혼식 서약을 쓰도록 도와줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X4'
+    },
+    {
+      phrase: 'She must love me more than I love her!',
+      partOfSpeech: 'expression',
+      meaning: 'Comparing love levels based on effort or emotions shown. Shows insecurity.',
+      meaning_ko: '노력이나 표현된 감정에 따라 사랑의 수준을 비교합니다. 불안감을 보여줍니다.',
+      example: 'Chandler: "Look at her go. She must love me more than I love her!"',
+      example_ko: 'Chandler: "봐 저 모습. 그녀가 날 더 사랑하나 봐!"',
+      context: 'Chandler worried comparing his feelings to Monica\'s.',
+      context_ko: 'Chandler는 자신의 감정을 Monica의 것과 비교하며 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X5'
+    },
+    {
+      phrase: 'This shouldn\'t be this hard!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing frustration that something is more difficult than expected. Shows struggle.',
+      meaning_ko: '뭔가가 예상보다 더 어렵다는 좌절을 표현합니다. 투쟁을 보여줍니다.',
+      example: 'Chandler: "There are no words! This shouldn\'t be this hard!"',
+      example_ko: 'Chandler: "말이 없어! 이렇게 어렵지 않아야 해!"',
+      context: 'Chandler frustrated with writing his wedding vows.',
+      context_ko: 'Chandler는 결혼식 서약을 쓰는 것에 대해 좌절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X6'
+    },
+    {
+      phrase: 'You\'ve done this before. What did you say in your vows?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for guidance from someone with prior experience. Shows seeking help.',
+      meaning_ko: '이전 경험을 가진 누군가에게 지도를 요청합니다. 도움을 구하는 것을 보여줍니다.',
+      example: 'Chandler: "You\'ve done this before. What did you say in your vows?"',
+      example_ko: 'Chandler: "넌 전에 했잖아. 너 서약에서 뭐라고 했어?"',
+      context: 'Chandler asking Ross for vow-writing advice.',
+      context_ko: 'Chandler는 Ross에게 서약 쓰기 조언을 묻고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X7'
+    },
+    {
+      phrase: 'I promised never to love another woman until I die.',
+      partOfSpeech: 'statement',
+      meaning: 'Making a solemn commitment of lifelong devotion. Shows seriousness.',
+      meaning_ko: '평생 헌신에 대한 엄숙한 약속을 합니다. 진지함을 보여줍니다.',
+      example: 'Ross: "With Carol I promised never to love another woman until I die."',
+      example_ko: 'Ross: "Carol과는 죽을 때까지 다른 여자를 사랑하지 않겠다고 약속했어."',
+      context: 'Ross revealing what he promised in his first wedding vows.',
+      context_ko: 'Ross는 첫 결혼식 서약에서 한 약속을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X8'
+    },
+    {
+      phrase: 'She made no such promise.',
+      partOfSpeech: 'statement',
+      meaning: 'Revealing that someone did not make an equivalent commitment. Shows irony.',
+      meaning_ko: '누군가가 동등한 약속을 하지 않았음을 드러냅니다. 아이러니를 보여줍니다.',
+      example: 'Ross: "She made no such promise."',
+      example_ko: 'Ross: "그녀는 그런 약속을 하지 않았어."',
+      context: 'Ross commenting on Carol\'s lack of reciprocal promise.',
+      context_ko: 'Ross는 Carol의 상호 약속 부재에 대해 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X9'
+    },
+    {
+      phrase: 'I\'m pathetic.',
+      partOfSpeech: 'expression',
+      meaning: 'Self-critical statement expressing personal disappointment. Shows self-doubt.',
+      meaning_ko: '개인적 실망을 표현하는 자기비판 진술입니다. 자기의심을 보여줍니다.',
+      example: 'Chandler: "I\'m pathetic. Monica knows what to say."',
+      example_ko: 'Chandler: "난 한심해. Monica는 뭐라고 할지 알아."',
+      context: 'Chandler comparing himself negatively to Monica.',
+      context_ko: 'Chandler는 자신을 Monica와 부정적으로 비교합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X10'
+    },
+    {
+      phrase: 'Those are my eyes!',
+      partOfSpeech: 'expression',
+      meaning: 'Correcting a misidentification humorously. Shows playfulness.',
+      meaning_ko: '잘못된 식별을 유머러스하게 수정합니다. 장난기를 보여줍니다.',
+      example: 'Monica: "Those are my eyes!"',
+      example_ko: 'Monica: "그건 내 눈이야!"',
+      context: 'Monica correcting Chandler\'s drawing of her dress.',
+      context_ko: 'Monica는 Chandler의 드레스 그림을 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X11'
+    },
+    {
+      phrase: 'Are we allowed to lie in the vows?',
+      partOfSpeech: 'question',
+      meaning: 'Asking if deception is acceptable in wedding promises. Shows humor.',
+      meaning_ko: '결혼 약속에서 기만이 허용되는지 묻습니다. 유머를 보여줍니다.',
+      example: 'Chandler: "All right, there\'s a nuclear holocaust... Would you go out with me?" "Are we allowed to lie in the vows?"',
+      example_ko: 'Chandler: "좋아, 핵전쟁이 나면... 날 데이트할래?" "서약에서 거짓말 해도 돼?"',
+      context: 'Chandler joking about the honesty required in vows.',
+      context_ko: 'Chandler는 서약에서 필요한 진실성을 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X12'
+    },
+    {
+      phrase: 'I never thought I\'d be so lucky as to fall in love with my best friend.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing gratitude for unexpected romantic fortune. Shows deep feeling.',
+      meaning_ko: '예상치 못한 로맨틱한 행운에 대한 감사를 표현합니다. 깊은 감정을 보여줍니다.',
+      example: 'Monica (attempting vows): "Chandler... in all my life... I never thought I\'d be so lucky..."',
+      example_ko: 'Monica (서약 시도): "Chandler... 내 인생에... 이렇게 운이 좋을 줄..."',
+      context: 'Monica beginning to express her wedding vows.',
+      context_ko: 'Monica는 결혼식 서약을 표현하기 시작합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X13'
+    },
+    {
+      phrase: 'You make me happier than I ever thought I could be.',
+      partOfSpeech: 'statement',
+      meaning: 'Expressing that someone exceeds expectations for happiness. Shows deep love.',
+      meaning_ko: '누군가가 행복에 대한 기대를 초과한다고 표현합니다. 깊은 사랑을 보여줍니다.',
+      example: 'Chandler (vows): "You make me happier than I ever thought I could be."',
+      example_ko: 'Chandler (서약): "넌 내가 생각한 것보다 나를 더 행복하게 해."',
+      context: 'Chandler expressing his genuine love in his vows.',
+      context_ko: 'Chandler는 자신의 서약에서 진정한 사랑을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X14'
+    },
+    {
+      phrase: 'Will you marry me?',
+      partOfSpeech: 'question',
+      meaning: 'The ultimate romantic proposal asking for commitment. Shows ultimate intention.',
+      meaning_ko: '헌신을 요청하는 궁극의 로맨틱한 제안입니다. 궁극의 의도를 보여줍니다.',
+      example: 'Chandler (vows): "Will you marry me?"',
+      example_ko: 'Chandler (서약): "날 결혼해 줄래?"',
+      context: 'Chandler proposing to Monica at the end of his vows.',
+      context_ko: 'Chandler는 서약 끝에 Monica에게 청혼합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E21X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

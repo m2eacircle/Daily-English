@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 16',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Rachel babysits Ben. Chandler and Monica search for a minister. Joey offers to perform the wedding ceremony.',
+    expressions: [
+    {
+      phrase: 'We have a bathroom emergency.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing an urgent need to use the bathroom. Conveys urgency and embarrassment.',
+      meaning_ko: '화장실을 긴급히 사용해야 할 필요를 발표합니다. 긴급함과 당혹감을 전달합니다.',
+      example: 'Ben and Rachel: "We have a bathroom emergency."',
+      example_ko: 'Ben과 Rachel: "화장실 응급이야."',
+      context: 'Ben and Rachel arriving with urgent bathroom need.',
+      context_ko: 'Ben과 Rachel은 긴급한 화장실 필요를 가지고 도착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X1'
+    },
+    {
+      phrase: 'Could you do me a big favor?',
+      partOfSpeech: 'question',
+      meaning: 'Politely asking someone to help with something important. Shows deference.',
+      meaning_ko: '누군가에게 중요한 일을 도와달라고 정중하게 요청합니다. 경의를 보여줍니다.',
+      example: 'Ross: "Could you do me a big favor?"',
+      example_ko: 'Ross: "큰 부탁을 해도 될까?"',
+      context: 'Ross asking Rachel to watch Ben while he has a meeting.',
+      context_ko: 'Ross는 Rachel에게 미팅 중에 Ben을 봐달라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X2'
+    },
+    {
+      phrase: 'I\'ve never done that before.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting lack of experience with something. Shows nervousness or uncertainty.',
+      meaning_ko: '뭔가에 대한 경험 부족을 인정합니다. 신경 또는 불확실성을 보여줍니다.',
+      example: 'Rachel: "I\'ve never done that before. Me and him, alone."',
+      example_ko: 'Rachel: "난 그런 거 해본 적 없어. 나랑 그, 둘이."',
+      context: 'Rachel nervous about babysitting Ben for the first time.',
+      context_ko: 'Rachel은 처음으로 Ben을 봐야 하는 것에 불안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X3'
+    },
+    {
+      phrase: 'He\'s not an ex-con.',
+      partOfSpeech: 'expression',
+      meaning: 'Reassuring that someone is not dangerous or criminal. Used humorously.',
+      meaning_ko: '누군가가 위험하거나 범죄자가 아니라는 것을 안심시킵니다. 유머러스하게 사용됩니다.',
+      example: 'Ross: "He\'s not an ex-con."',
+      example_ko: 'Ross: "그는 전직 수감자가 아니야."',
+      context: 'Ross reassuring Rachel that Ben is just a child, not dangerous.',
+      context_ko: 'Ross는 Rachel에게 Ben이 단지 아이일 뿐 위험하지 않다는 것을 안심시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X4'
+    },
+    {
+      phrase: 'What do I do with him?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for guidance on how to handle or occupy someone. Shows uncertainty.',
+      meaning_ko: '누군가를 다루거나 점유하는 방법에 대한 지침을 요청합니다. 불확실성을 보여줍니다.',
+      example: 'Rachel: "What do I do with him?"',
+      example_ko: 'Rachel: "나 그래서 뭐 해?"',
+      context: 'Rachel anxiously asking how to care for Ben.',
+      context_ko: 'Rachel은 불안하게 Ben을 돌보는 방법을 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X5'
+    },
+    {
+      phrase: 'Talk to him. Entertain him. Keep him alive.',
+      partOfSpeech: 'instruction',
+      meaning: 'Giving basic guidance with increasing seriousness. Shows humor mixed with urgency.',
+      meaning_ko: '기본 지침을 증가하는 진지함으로 제공합니다. 유머와 긴급함을 섞어 보여줍니다.',
+      example: 'Ross: "Talk to him. Entertain him. Keep him alive."',
+      example_ko: 'Ross: "그한테 말해. 그를 즐겁게 해. 살려둬."',
+      context: 'Ross giving Rachel instructions on Ben care.',
+      context_ko: 'Ross는 Rachel에게 Ben 돌보기 지침을 줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X6'
+    },
+    {
+      phrase: 'You mean the spitter?',
+      partOfSpeech: 'question',
+      meaning: 'Identifying someone by an unflattering characteristic. Shows mockery or disdain.',
+      meaning_ko: '무성하지 않은 특성으로 누군가를 식별합니다. 조롱이나 경멸을 보여줍니다.',
+      example: 'Monica: "You mean the spitter?" (about a minister)',
+      example_ko: 'Monica: "그 침뱉는 인간 말이야?" (목사에 대해)',
+      context: 'Monica describing ministers for the wedding.',
+      context_ko: 'Monica는 결혼식을 위해 목사들을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X7'
+    },
+    {
+      phrase: 'We\'re getting "married" married.',
+      partOfSpeech: 'expression',
+      meaning: 'Distinguishing between a serious marriage and a casual one. Shows seriousness.',
+      meaning_ko: '진지한 결혼과 캐주얼한 결혼을 구분합니다. 진지함을 보여줍니다.',
+      example: 'Chandler: "We\'re getting \\"married\\" married, not \\"6th-grade\\" married."',
+      example_ko: 'Chandler: "우리 진짜 결혼이야, 초등학교 장난 아니야."',
+      context: 'Chandler rejecting one of their suggestions for officiant.',
+      context_ko: 'Chandler는 공식자 제안 중 하나를 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X8'
+    },
+    {
+      phrase: 'Anyone can be ordained on the Internet.',
+      partOfSpeech: 'statement',
+      meaning: 'Explaining that internet ordination is easy and accessible. Shows possibility.',
+      meaning_ko: '인터넷 서품이 쉽고 접근 가능함을 설명합니다. 가능성을 보여줍니다.',
+      example: 'Phoebe: "Anyone can be ordained on the Internet and perform weddings."',
+      example_ko: 'Phoebe: "누구나 인터넷에서 서품받고 결혼식을 할 수 있어."',
+      context: 'Phoebe suggesting friends could be the minister.',
+      context_ko: 'Phoebe는 친구들이 목사가 될 수 있다고 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X9'
+    },
+    {
+      phrase: 'I call it!',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming or demanding something. Shows immediate assertiveness.',
+      meaning_ko: '뭔가를 요구하거나 주장합니다. 즉각적인 주장성을 보여줍니다.',
+      example: 'Phoebe: "I call it!" (claiming to be the minister)',
+      example_ko: 'Phoebe: "내가 할래!" (목사가 되기를 요구)',
+      context: 'Phoebe quickly claiming the role of minister.',
+      context_ko: 'Phoebe는 빠르게 목사 역할을 요구합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X10'
+    },
+    {
+      phrase: 'In control of his saliva.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing someone who doesn\'t spit. Shows humor through specific detail.',
+      meaning_ko: '침을 흘리지 않는 사람을 설명합니다. 특정 세부 사항을 통한 유머를 보여줍니다.',
+      example: 'Monica: "And in control of his saliva."',
+      example_ko: 'Monica: "그리고 침을 조절할 수 있는 사람."',
+      context: 'Monica defining what they want in a legitimate minister.',
+      context_ko: 'Monica는 정당한 목사에서 원하는 것을 정의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X11'
+    },
+    {
+      phrase: 'We were on a break!',
+      partOfSpeech: 'expression',
+      meaning: 'Defending a past relationship decision. Shows famous Friends reference.',
+      meaning_ko: '과거 관계 결정을 옹호합니다. 유명한 Friends 참고를 보여줍니다.',
+      example: 'Ross: "Hey, we were not on a... Okay." (to Ben)',
+      example_ko: 'Ross: "우리 break 안 했어... 좋아." (Ben에게)',
+      context: 'Ross correcting Ben about his breakup with Rachel.',
+      context_ko: 'Ross는 Rachel과의 이별에 대해 Ben을 바로잡습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X12'
+    },
+    {
+      phrase: 'Everyone knows I\'m an ass man.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking about personal preferences humorously. Shows comedic frankness.',
+      meaning_ko: '개인 선호도에 대해 유머러스하게 농담합니다. 희극적 솔직함을 보여줍니다.',
+      example: 'Joey: "Everyone knows I\'m an ass man."',
+      example_ko: 'Joey: "다들 알지, 나 엉덩이 좋아한다고."',
+      context: 'Joey explaining why he won\'t stare at Monica during ceremony.',
+      context_ko: 'Joey는 왜 식식 중에 Monica를 안 볼 건지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X13'
+    },
+    {
+      phrase: 'It would really mean a lot to me.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that something is deeply important or meaningful. Shows sincerity.',
+      meaning_ko: '뭔가가 깊이 중요하거나 의미 있다는 것을 표현합니다. 성실함을 보여줍니다.',
+      example: 'Joey: "Plus, I love you guys and it would really mean a lot to me."',
+      example_ko: 'Joey: "그리고 너희를 사랑하고 정말 많이 의미 있어."',
+      context: 'Joey earnestly asking to officiate the wedding.',
+      context_ko: 'Joey는 진심으로 결혼식을 주례하기를 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X14'
+    },
+    {
+      phrase: 'I have a bone to pick with you.',
+      partOfSpeech: 'idiom',
+      meaning: 'Expressing that someone has a complaint or grievance. Shows frustration.',
+      meaning_ko: '누군가가 불평이나 불만을 가지고 있음을 표현합니다. 좌절을 보여줍니다.',
+      example: 'Ross: "I have a bone to pick with you." (about Ben\'s prank)',
+      example_ko: 'Ross: "너랑 할 말이 있어." (Ben의 장난에 대해)',
+      context: 'Ross confronting Rachel about Ben learning pranks.',
+      context_ko: 'Ross는 Ben이 장난을 배운 것에 대해 Rachel을 대면합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E16X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

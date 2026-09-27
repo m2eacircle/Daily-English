@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 18',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Joey gets nominated for a Soapie award. Ross deals with a student crush. Monica worries about marriage.',
+    expressions: [
+    {
+      phrase: 'You won\'t believe this!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing excitement about surprising news. Shows enthusiasm and anticipation.',
+      meaning_ko: '놀라운 뉴스에 흥미를 표현합니다. 열정과 기대를 보여줍니다.',
+      example: 'Joey: "Guys, you won\'t believe this!"',
+      example_ko: 'Joey: "여러분, 이거 못 믿을 거야!"',
+      context: 'Joey arriving excitedly to share his Emmy nomination news.',
+      context_ko: 'Joey는 Emmy 후보 소식을 공유하려고 신나서 도착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X1'
+    },
+    {
+      phrase: 'I\'m up for a Soapie.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing candidacy for an award. Shows achievement and recognition.',
+      meaning_ko: '상 후보임을 발표합니다. 성취와 인정을 보여줍니다.',
+      example: 'Joey: "I\'m up for a Soapie!" (soap opera award)',
+      example_ko: 'Joey: "난 Soapie 후보야!" (비누극장상)',
+      context: 'Joey revealing he\'s nominated for a soap opera award.',
+      context_ko: 'Joey는 비누극장상 후보임을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X2'
+    },
+    {
+      phrase: 'That is something you\'re making up.',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing someone of inventing something false. Shows skepticism.',
+      meaning_ko: '누군가가 거짓말을 만들고 있다고 고소합니다. 회의를 보여줍니다.',
+      example: 'Monica: "Is that something you\'re making up?"',
+      example_ko: 'Monica: "그건 너 지어낸 거야?"',
+      context: 'Monica doubting that a "Soapie" award actually exists.',
+      context_ko: 'Monica는 "Soapie" 상이 실제로 존재한다고 의심합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X3'
+    },
+    {
+      phrase: 'The third most prestigious soap opera award.',
+      partOfSpeech: 'expression',
+      meaning: 'Ranking something in order of importance. Shows prioritization.',
+      meaning_ko: '중요도 순서로 순위를 매깁니다. 우선순위를 보여줍니다.',
+      example: 'Rachel: "That is the third most prestigious soap opera award."',
+      example_ko: 'Rachel: "그것이 세 번째로 권위 있는 비누극장상이야."',
+      context: 'Rachel highlighting the importance of Joey\'s award nomination.',
+      context_ko: 'Rachel은 Joey의 상 후보의 중요성을 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X4'
+    },
+    {
+      phrase: 'I can\'t go. I\'ll be too nervous!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing inability due to anxiety. Shows worry and hesitation.',
+      meaning_ko: '불안으로 인한 무능력을 표현합니다. 걱정과 망설임을 보여줍니다.',
+      example: 'Joey: "I can\'t go. I\'ll be too nervous!"',
+      example_ko: 'Joey: "난 못 가. 너무 긴장돼!"',
+      context: 'Joey expressing anxiety about attending the award ceremony.',
+      context_ko: 'Joey는 시상식 참석에 대한 불안감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X5'
+    },
+    {
+      phrase: 'This is all I have.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that something is one\'s only possession or priority. Shows desperation.',
+      meaning_ko: '뭔가가 유일한 소유물이나 우선순위라고 진술합니다. 절망을 보여줍니다.',
+      example: 'Monica: "You are getting married. This is all I have."',
+      example_ko: 'Monica: "넌 결혼하고 있어. 이게 내가 가진 전부야."',
+      context: 'Monica expressing that the award show is her only free time.',
+      context_ko: 'Monica는 시상식이 그녀의 유일한 여유 시간임을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X6'
+    },
+    {
+      phrase: 'I need to fail you.',
+      partOfSpeech: 'expression',
+      meaning: 'Informing a student of academic failure. Shows professional responsibility.',
+      meaning_ko: '학생에게 학문적 실패를 알립니다. 직업적 책임을 보여줍니다.',
+      example: 'Professor: "I\'m afraid I had to fail you."',
+      example_ko: 'Professor: "미안해, 넌 낙제야."',
+      context: 'Ross\'s professor informing a student of failure on midterm.',
+      context_ko: 'Ross의 교수는 중간고사 낙제를 학생에게 알립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X7'
+    },
+    {
+      phrase: 'You look so good.',
+      partOfSpeech: 'compliment',
+      meaning: 'Expressing attraction or admiration for appearance. Shows interest.',
+      meaning_ko: '외모에 대한 끌림이나 감탄을 표현합니다. 관심을 보여줍니다.',
+      example: 'Student: "When you wear that tight little turtleneck sweater... you look so good."',
+      example_ko: 'Student: "그 타이트한 터틀넥 스웨터를 입을 때... 너 정말 좋아 보여."',
+      context: 'A student expressing romantic interest in his professor.',
+      context_ko: '학생은 교수에 대한 로맨틱한 관심을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X8'
+    },
+    {
+      phrase: 'That guy is totally checking you out.',
+      partOfSpeech: 'expression',
+      meaning: 'Observing that someone is showing romantic interest. Shows awareness.',
+      meaning_ko: '누군가가 로맨틱한 관심을 보이고 있음을 관찰합니다. 인식을 보여줍니다.',
+      example: 'Phoebe: "That guy at the counter is totally checking you out."',
+      example_ko: 'Phoebe: "저 카운터 남자가 너를 계속 보고 있어."',
+      context: 'Phoebe noticing a man interested in Monica at the coffee shop.',
+      context_ko: 'Phoebe는 커피숍에서 Monica에 관심 있는 남자를 주목합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X9'
+    },
+    {
+      phrase: 'Get his number just in case.',
+      partOfSpeech: 'advice',
+      meaning: 'Suggesting obtaining contact information as backup. Shows pragmatism.',
+      meaning_ko: '백업으로 연락처를 얻을 것을 제안합니다. 실용주의를 보여줍니다.',
+      example: 'Phoebe: "Get his number, just in case."',
+      example_ko: 'Phoebe: "그 남자 번호 받아, 만약를 위해."',
+      context: 'Phoebe humorously suggesting Monica get a backup number.',
+      context_ko: 'Phoebe는 유머러스하게 Monica에게 백업 번호를 받으라고 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X10'
+    },
+    {
+      phrase: 'I\'m very flattered, but I\'m engaged.',
+      partOfSpeech: 'expression',
+      meaning: 'Politely declining interest while acknowledging the compliment. Shows respect.',
+      meaning_ko: '칭찬을 인정하면서 정중하게 거절합니다. 존경을 보여줍니다.',
+      example: 'Monica: "I\'m very flattered, but, uh, I\'m engaged."',
+      example_ko: 'Monica: "정말 감명받았지만, 넌 약혼했어."',
+      context: 'Monica declining romantic interest from a coffee shop customer.',
+      context_ko: 'Monica는 커피숍 고객의 로맨틱한 관심을 거절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X11'
+    },
+    {
+      phrase: 'I want it so much.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing intense desire for something. Shows passion and yearning.',
+      meaning_ko: '뭔가에 대한 강렬한 열망을 표현합니다. 열정과 갈망을 보여줍니다.',
+      example: 'Joey: "I\'ve never even been nominated before. I want it so much."',
+      example_ko: 'Joey: "난 한 번도 후보가 되어본 적이 없어. 정말 원해."',
+      context: 'Joey expressing how much the award means to him.',
+      context_ko: 'Joey는 상이 그에게 얼마나 중요한지 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X12'
+    },
+    {
+      phrase: 'I just feel like I\'ve had 10 drinks.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing being intoxicated or euphoric. Uses exaggeration for humor.',
+      meaning_ko: '취한 상태 또는 행복감을 설명합니다. 유머를 위해 과장을 사용합니다.',
+      example: 'Rachel: "I just like him so much that I just feel like I\'ve had 10 drinks."',
+      example_ko: 'Rachel: "그를 정말 좋아해서 10잔을 마신 기분이야."',
+      context: 'Rachel describing the euphoric feeling of new romance.',
+      context_ko: 'Rachel은 새로운 로맨스의 행복감을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X13'
+    },
+    {
+      phrase: 'I\'m never gonna have that feeling again.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing resignation about future loss. Shows melancholy acceptance.',
+      meaning_ko: '미래 손실에 대한 항복을 표현합니다. 우울한 수용을 보여줍니다.',
+      example: 'Monica: "I\'m never gonna have that feeling again."',
+      example_ko: 'Monica: "난 다시는 그런 기분을 못 느낄 거야."',
+      context: 'Monica realizing marriage means giving up exciting new feelings.',
+      context_ko: 'Monica는 결혼이 신나는 새로운 감정을 포기한다는 것을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X14'
+    },
+    {
+      phrase: 'I got under him.',
+      partOfSpeech: 'idiom',
+      meaning: 'Phoebe\'s humorous euphemism for resolving romantic feelings. Shows dark humor.',
+      meaning_ko: 'Phoebe의 로맨틱한 감정을 해결하는 유머러스한 완곡 표현입니다. 어두운 유머를 보여줍니다.',
+      example: 'Phoebe: "How\'d you get over that teacher?" "I didn\'t. I got under him."',
+      example_ko: 'Phoebe: "그 선생님을 어떻게 잊었어?" "안 했어. 그 아래로 갔어."',
+      context: 'Phoebe\'s comedic response about overcoming teacher crush.',
+      context_ko: 'Phoebe는 선생님 스쿨을 극복하는 것에 대해 희극적으로 대답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E18X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

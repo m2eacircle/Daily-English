@@ -51,7 +51,7 @@
       </div>
       <div class="page-header-info">
         <div class="page-header-title">Friends &mdash; S7E14: Season 7, Episode 14</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-meta">Rachel's 30th birthday party with twists, surprises, and the crew celebrating milestones.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s7e14"
             onclick="toggleBookmark('episode','episode-friends-s7e14','📋 Friends S7E14','friends/episodes/season7/s7e14.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 14',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Rachel\'s 30th birthday party with twists, surprises, and the crew celebrating milestones.',
+    expressions: [
+    {
+      phrase: 'Happy birthday!',
+      partOfSpeech: 'greeting',
+      meaning: 'A celebratory expression used to wish someone joy on their birthday. Conveys warm wishes and celebration.',
+      meaning_ko: '생일에 누군가에게 기쁨을 기원하기 위해 사용되는 축하 표현입니다. 따뜻한 축원과 축제를 전달합니다.',
+      example: 'Friends shouting: "Happy birthday Rachel!"',
+      example_ko: 'Friends 외침: "생일 축하해, Rachel!"',
+      context: 'The episode opens with friends greeting Rachel at her 30th birthday party.',
+      context_ko: '에피소드는 친구들이 Rachel의 30번째 생일 파티에서 인사하는 것으로 시작합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X1'
+    },
+    {
+      phrase: 'It\'s your birthday.',
+      partOfSpeech: 'expression',
+      meaning: 'A reminder or statement acknowledging someone\'s special day. Often used to encourage celebration.',
+      meaning_ko: '누군가의 특별한 날을 인정하는 알림 또는 진술입니다. 종종 축제를 장려하기 위해 사용됩니다.',
+      example: 'Monica: "It\'s your birthday. Come celebrate with us."',
+      example_ko: 'Monica: "오늘이 너의 생일이야. 우리와 함께 축하하자."',
+      context: 'Monica trying to pull Rachel out to join the party.',
+      context_ko: 'Monica는 Rachel을 파티에 참여하도록 끌어내려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X2'
+    },
+    {
+      phrase: 'Turning 30 is not that big a deal.',
+      partOfSpeech: 'expression',
+      meaning: 'A reassuring statement minimizing age concerns. Suggests reaching 30 is ordinary life progression.',
+      meaning_ko: '나이 걱정을 최소화하는 안심 진술입니다. 30세가 되는 것은 평범한 인생 진행을 시사합니다.',
+      example: 'Ross: "Look, turning 30 is not that big a deal."',
+      example_ko: 'Ross: "봐, 30이 되는 것은 큰 일이 아니야."',
+      context: 'Ross trying to comfort anxious Rachel about reaching 30.',
+      context_ko: 'Ross는 30에 도달하는 것에 불안해하는 Rachel을 위로하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X3'
+    },
+    {
+      phrase: 'Why, God, why?',
+      partOfSpeech: 'exclamation',
+      meaning: 'An exasperated cry expressing distress or dismay. Shows emotional desperation about a situation.',
+      meaning_ko: '고통이나 실망을 표현하는 절망적인 외침입니다. 상황에 대한 정서적 절망을 보여줍니다.',
+      example: 'Rachel: "Why, God, why? I\'m turning 30!"',
+      example_ko: 'Rachel: "아, 왜요? 왜요? 난 30이 되고 있어!"',
+      context: 'Rachel dramatically reacting to her 30th birthday.',
+      context_ko: 'Rachel은 30번째 생일에 극적으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X4'
+    },
+    {
+      phrase: 'We had a deal.',
+      partOfSpeech: 'expression',
+      meaning: 'Referencing a prior agreement or promise. Usually indicates someone broke their commitment.',
+      meaning_ko: '이전 계약이나 약속을 언급합니다. 보통 누군가가 약속을 위반했음을 나타냅니다.',
+      example: 'Rachel: "We had a deal. Let the others grow old, not me."',
+      example_ko: 'Rachel: "우리는 협약이 있었어. 다른 사람들은 늙게 하고 나는 아니기로."',
+      context: 'Rachel complaining about being the only one getting older.',
+      context_ko: 'Rachel은 유일하게 늙고 있다고 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X5'
+    },
+    {
+      phrase: 'Am I overreacting?',
+      partOfSpeech: 'question',
+      meaning: 'Seeking validation that your emotional response is appropriate. Questions if reaction is excessive.',
+      meaning_ko: '정서적 반응이 적절한지 검증을 요청합니다. 반응이 과도한지 질문합니다.',
+      example: 'Rachel: "Is it just me? Am I overreacting?"',
+      example_ko: 'Rachel: "나만 그래? 내가 과하게 반응하는 거야?"',
+      context: 'Rachel asking friends if her birthday anxiety is unreasonable.',
+      context_ko: 'Rachel은 친구들에게 생일 불안이 불합리한지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X6'
+    },
+    {
+      phrase: 'I did it. One mile.',
+      partOfSpeech: 'expression',
+      meaning: 'Celebrating accomplishment of a goal or challenge. Expresses pride in achievement.',
+      meaning_ko: '목표나 도전의 성취를 축하합니다. 성취감을 표현합니다.',
+      example: 'Phoebe: "I did it. One mile on a Hippity Hop."',
+      example_ko: 'Phoebe: "했어. Hippity Hop으로 1마일."',
+      context: 'Phoebe completing her life goal before turning 30.',
+      context_ko: 'Phoebe는 30이 되기 전에 인생 목표를 완료합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X7'
+    },
+    {
+      phrase: 'That\'s everything I wanted to do.',
+      partOfSpeech: 'expression',
+      meaning: 'Statement indicating completion of all goals or desires. Shows satisfaction with accomplishment.',
+      meaning_ko: '모든 목표 또는 욕망의 완료를 나타내는 진술입니다. 성취에 만족을 보여줍니다.',
+      example: 'Phoebe: "That\'s it. That\'s everything I wanted before 30."',
+      example_ko: 'Phoebe: "다 됐어. 30이 되기 전에 원하던 모든 거야."',
+      context: 'Phoebe satisfied with completing her bucket list goal.',
+      context_ko: 'Phoebe는 버킷 리스트 목표 완료에 만족합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X8'
+    },
+    {
+      phrase: 'I want to get something pierced.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating desire to have a body part pierced. Indicates wanting to do something bold.',
+      meaning_ko: '신체 일부를 천공하기를 원하는 욕망을 나타냅니다. 대담한 일을 하고 싶다는 것을 나타냅니다.',
+      example: 'Rachel: "I want to get something pierced. My nose or tongue."',
+      example_ko: 'Rachel: "뭔가 천공을 하고 싶어. 코나 혀."',
+      context: 'Rachel deciding to do something wild for her birthday.',
+      context_ko: 'Rachel은 생일을 위해 뭔가 야생적인 일을 하기로 결정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X9'
+    },
+    {
+      phrase: 'That hurts.',
+      partOfSpeech: 'expression',
+      meaning: 'A simple statement of pain or discomfort. Can be literal or figurative.',
+      meaning_ko: '고통이나 불편함의 간단한 진술입니다. 문자 또는 비유적일 수 있습니다.',
+      example: 'Monica: "You know, that hurts." (about getting pierced)',
+      example_ko: 'Monica: "알지, 그것 아파." (천공에 대해)',
+      context: 'Monica warning Rachel about piercing pain.',
+      context_ko: 'Monica는 Rachel에게 천공 통증을 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X10'
+    },
+    {
+      phrase: 'I\'m totally freaked out.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing extreme anxiety or fear about something. Shows being very disturbed.',
+      meaning_ko: '어떤 것에 대한 극심한 불안이나 두려움을 표현합니다. 매우 불안해하는 것을 보여줍니다.',
+      example: 'Phoebe: "I\'m totally freaked out about turning 25."',
+      example_ko: 'Phoebe: "난 25가 되는 것에 정말 불안해."',
+      context: 'Phoebe empathizing with Rachel\'s birthday fears.',
+      context_ko: 'Phoebe는 Rachel의 생일 두려움에 공감합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X11'
+    },
+    {
+      phrase: 'Get out of my apartment.',
+      partOfSpeech: 'expression',
+      meaning: 'A direct command asking someone to leave. Shows frustration or rejection.',
+      meaning_ko: '누군가에게 떠날 것을 요청하는 직접적인 명령입니다. 좌절이나 거부를 보여줍니다.',
+      example: 'Rachel: "Get out of my apartment." (to Phoebe)',
+      example_ko: 'Rachel: "내 아파트에서 나가. (Phoebe에게)"',
+      context: 'Rachel annoyed by Phoebe\'s age anxiety comparison.',
+      context_ko: 'Rachel은 Phoebe의 나이 불안 비교에 짜증을 냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X12'
+    },
+    {
+      phrase: 'For what it\'s worth.',
+      partOfSpeech: 'expression',
+      meaning: 'A phrase introducing an opinion offered with uncertainty. Softens what follows.',
+      meaning_ko: '불확실성과 함께 제시되는 의견을 소개하는 표현입니다. 다음을 부드럽게 합니다.',
+      example: 'Joey: "For what it\'s worth, I think you\'re doing great."',
+      example_ko: 'Joey: "참고로, 넌 정말 잘하고 있다고 생각해."',
+      context: 'Joey offering encouragement to anxious Rachel.',
+      context_ko: 'Joey는 불안한 Rachel에게 격려를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X13'
+    },
+    {
+      phrase: 'No one handles this well.',
+      partOfSpeech: 'expression',
+      meaning: 'A generalization that everyone struggles with something. Provides commiseration.',
+      meaning_ko: '모두가 뭔가로 힘들어한다는 일반화입니다. 동정을 제공합니다.',
+      example: 'Joey: "Let\'s face it, no one handles this well."',
+      example_ko: 'Joey: "있는 그대로, 아무도 이것을 잘 다루지 못해."',
+      context: 'Joey comforting Rachel about turning 30.',
+      context_ko: 'Joey는 Rachel을 30이 되는 것에 대해 위로합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X14'
+    },
+    {
+      phrase: 'Might want to puke on you later.',
+      partOfSpeech: 'expression',
+      meaning: 'A humorous warning about being drunk and getting sick. Uses comedy to warn.',
+      meaning_ko: '취하고 병이 날 수 있다는 재미있는 경고입니다. 코미디를 사용하여 경고합니다.',
+      example: 'Rachel (drunk): "Might want to puke on you later."',
+      example_ko: 'Rachel (취함): "나중에 너한테 토할 수도 있어."',
+      context: 'Drunk Rachel arriving late to her surprise party.',
+      context_ko: '취한 Rachel이 놀라운 파티에 늦게 도착합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E14X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

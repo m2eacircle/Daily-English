@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 7, Episode 15',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Joey\'s character gets a brain transplant on Days of Our Lives. Chandler and Monica plan wedding details with friends.',
+    expressions: [
+    {
+      phrase: 'Monica said "wedding."',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing surprise or shock at a word used. Shows emphasis and reaction to important statement.',
+      meaning_ko: '사용된 단어에 놀람이나 충격을 표현합니다. 중요한 진술에 대한 강조와 반응을 보여줍니다.',
+      example: 'Chandler: "Monica said \\"wedding.\\"" (shocked reaction)',
+      example_ko: 'Chandler: "Monica가 \\"결혼\\"이라고 말했어." (놀란 반응)',
+      context: 'Chandler reacting with surprise to Monica mentioning the wedding.',
+      context_ko: 'Chandler는 Monica가 결혼을 언급하는 것에 놀라서 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X1'
+    },
+    {
+      phrase: 'I\'m kind of keeping this one on the QT.',
+      partOfSpeech: 'expression',
+      meaning: 'Keeping something quiet or secret. QT stands for "on the quiet" or "on the down-low."',
+      meaning_ko: '뭔가를 조용히 하거나 비밀로 유지합니다. QT는 "조용히" 또는 "몰래"를 의미합니다.',
+      example: 'Monica: "I\'m kind of keeping this one on the QT." (about wedding plans)',
+      example_ko: 'Monica: "이건 좀 비밀로 놔둘 거야." (결혼식 계획에 대해)',
+      context: 'Monica keeping a secret about wedding arrangements.',
+      context_ko: 'Monica는 결혼식 준비에 대한 비밀을 유지합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X2'
+    },
+    {
+      phrase: 'My character is coming out of his coma!',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing a major development or awakening in a storyline. Shows excitement.',
+      meaning_ko: '스토리 라인의 주요 발전이나 깨어남을 발표합니다. 흥미를 보여줍니다.',
+      example: 'Joey: "My character is coming out of his coma!"',
+      example_ko: 'Joey: "내 역할이 혼수에서 깨어나고 있어!"',
+      context: 'Joey excitedly sharing good news from the soap opera.',
+      context_ko: 'Joey는 비누 극장에서 좋은 소식을 신나게 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X3'
+    },
+    {
+      phrase: 'I\'m getting a new brain!',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing an unusual or surprising development. Shows shock and excitement combined.',
+      meaning_ko: '비정상적이거나 놀라운 발전을 발표합니다. 충격과 흥미를 함께 보여줍니다.',
+      example: 'Joey: "And not only that. I\'m getting a new brain!"',
+      example_ko: 'Joey: "그리고 그뿐만 아니라. 새 뇌를 가지고 있어!"',
+      context: 'Joey revealing his character gets a brain transplant.',
+      context_ko: 'Joey는 그의 역할이 뇌 이식을 받는다고 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X4'
+    },
+    {
+      phrase: 'Why is this so hard for you to get?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing frustration about someone not understanding something obvious.',
+      meaning_ko: '누군가가 명백한 것을 이해하지 못하는 것에 대한 좌절을 표현합니다.',
+      example: 'Joey: "Why is this so hard for you to get?"',
+      example_ko: 'Joey: "이게 이해하기가 왜 이렇게 어려워?"',
+      context: 'Joey frustrated that Monica doesn\'t understand the brain transplant concept.',
+      context_ko: 'Joey는 Monica가 뇌 이식 개념을 이해하지 못해 답답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X5'
+    },
+    {
+      phrase: 'He\'s too cute to be straight.',
+      partOfSpeech: 'expression',
+      meaning: 'Making assumptions about someone\'s sexual orientation based on appearance.',
+      meaning_ko: '외모를 기반으로 누군가의 성적 지향에 대한 가정을 합니다.',
+      example: 'Monica: "He\'s too cute to be straight. Ha, ha."',
+      example_ko: 'Monica: "그는 너무 잘생겨서 직진이 아니야. 하, 하."',
+      context: 'Monica and Rachel discussing a man at the coffee shop.',
+      context_ko: 'Monica와 Rachel은 커피숍의 남자에 대해 논의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X6'
+    },
+    {
+      phrase: 'He left his cell phone.',
+      partOfSpeech: 'expression',
+      meaning: 'Observing that someone forgot or abandoned a valuable item.',
+      meaning_ko: '누군가가 귀중한 물건을 잊거나 포기했음을 관찰합니다.',
+      example: 'Monica: "He left his cell phone." (discovering it at the coffee shop)',
+      example_ko: 'Monica: "그가 핸드폰을 놔뒀어." (커피숍에서 발견)',
+      context: 'Monica finding a customer\'s forgotten phone.',
+      context_ko: 'Monica는 고객의 잊혀진 휴대폰을 찾습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X7'
+    },
+    {
+      phrase: 'Wouldn\'t that be a great story?',
+      partOfSpeech: 'question',
+      meaning: 'Proposing an idea as potentially romantic or noteworthy. Often rhetorical.',
+      meaning_ko: '아이디어를 잠재적으로 로맨틱하거나 주목할만한 것으로 제안합니다. 종종 수사적입니다.',
+      example: 'Phoebe: "Wouldn\'t that be a great story?"',
+      example_ko: 'Phoebe: "좋은 이야기가 되지 않을까?"',
+      context: 'Phoebe imagining a romantic phone encounter scenario.',
+      context_ko: 'Phoebe는 로맨틱한 전화 만남 시나리오를 상상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X8'
+    },
+    {
+      phrase: 'A fairy tale for the digital age.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing a romantic modern scenario using tech. Shows poetic thinking.',
+      meaning_ko: '기술을 사용하여 로맨틱한 현대 시나리오를 설명합니다. 시적 사고를 보여줍니다.',
+      example: 'Phoebe: "Kind of like a fairy tale for the digital age."',
+      example_ko: 'Phoebe: "디지털 시대의 동화 같아."',
+      context: 'Phoebe describing the romantic phone story concept.',
+      context_ko: 'Phoebe는 로맨틱한 전화 이야기 개념을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X9'
+    },
+    {
+      phrase: 'I haven\'t been out on a date in so long.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that it has been a considerable time since dating. Shows loneliness.',
+      meaning_ko: '데이트를 한 지 오랜 시간이 지났음을 표현합니다. 외로움을 보여줍니다.',
+      example: 'Phoebe: "I don\'t know. I haven\'t been out on a date in so long."',
+      example_ko: 'Phoebe: "몰라. 정말 오랜 시간 데이트를 안 했어."',
+      context: 'Phoebe justifying why she should get the phone.',
+      context_ko: 'Phoebe는 왜 휴대폰을 가져야 하는지 정당화합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X10'
+    },
+    {
+      phrase: 'That wasn\'t a date.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing or denying that a meeting counted as dating. Shows skepticism.',
+      meaning_ko: '만남이 데이트로 계산되지 않음을 거부합니다. 회의를 보여줍니다.',
+      example: 'Rachel: "Phoebe, you had a date three days ago."',
+      example_ko: 'Rachel: "Phoebe, 넌 3일 전에 데이트했어."',
+      context: 'Rachel challenging Phoebe\'s claim of not dating.',
+      context_ko: 'Rachel은 Phoebe의 데이트하지 않는다는 주장에 도전합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X11'
+    },
+    {
+      phrase: 'I didn\'t think I would love again.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing hopelessness that turned to optimism. Shows recovery from sadness.',
+      meaning_ko: '절망이 낙관으로 변한 것을 표현합니다. 슬픔으로부터의 회복을 보여줍니다.',
+      example: 'Rachel: "Yeah, and until now, I didn\'t think I would love again."',
+      example_ko: 'Rachel: "네, 그리고 지금까지 난 다시 사랑할 줄 몰랐어."',
+      context: 'Rachel joking about quickly getting over her breakup with Tag.',
+      context_ko: 'Rachel은 Tag와의 이별을 빨리 극복하는 것에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X12'
+    },
+    {
+      phrase: 'How do we fairly decide who gets the phone?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for a fair method to resolve a dispute. Shows desire for justice.',
+      meaning_ko: '분쟁을 해결하기 위한 공정한 방법을 묻습니다. 정의에 대한 욕구를 보여줍니다.',
+      example: 'Chandler: "How do we fairly decide who gets the phone?"',
+      example_ko: 'Chandler: "누가 휴대폰을 가져야 할지 공정하게 어떻게 결정해?"',
+      context: 'Chandler mediating between Rachel and Phoebe\'s competition.',
+      context_ko: 'Chandler는 Rachel과 Phoebe의 경쟁 사이를 중재합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X13'
+    },
+    {
+      phrase: 'That was a real person?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing surprise that someone believed a person was just an actor.',
+      meaning_ko: '누군가가 한 사람을 배우일 뿐이라고 생각한 것에 놀람을 표현합니다.',
+      example: 'Actress: "Oh, that was a real person?" (about Joey\'s character)',
+      example_ko: 'Actress: "아, 그게 진짜 사람이었어?" (Joey 역할에 대해)',
+      context: 'The actress not recognizing Joey as a real actor on the show.',
+      context_ko: 'Actress는 Joey를 쇼의 실제 배우로 인식하지 못합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X14'
+    },
+    {
+      phrase: 'A character I\'ve been playing for 20 years!',
+      partOfSpeech: 'expression',
+      meaning: 'Emphasizing the length and importance of a role. Shows pride and offense.',
+      meaning_ko: '역할의 길이와 중요성을 강조합니다. 자부심과 모욕을 보여줍니다.',
+      example: 'Actress: "About a character I\'ve been playing for 20 years!"',
+      example_ko: 'Actress: "제가 20년 동안 연기해온 역할에 대해!"',
+      context: 'The actress offended Joey is asking for tips on her iconic character.',
+      context_ko: 'Actress는 Joey가 그녀의 상징적인 역할에 대해 팁을 요청하는 것에 화났습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S7E15X15'
+    }
+  ]
   };
 
   var S_NUM = 7;
@@ -105,6 +271,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +288,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
