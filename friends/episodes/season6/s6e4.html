@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 4',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Rachel\'s true identity revealed. Ross becomes university lecturer. Joey loses health insurance. Phoebe fears death from psychic prediction.',
+    expressions: [
+    {
+      phrase: 'How weird is that?',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing amazement at coincidental or strange situation. Shows astonishment at unusual occurrence. Demonstrates surprised observation.',
+      meaning_ko: '우연적이거나 이상한 상황에 대한 경이감을 표현합니다. 비정상적인 발생에 놀라움을 보여줍니다. 놀란 관찰을 보여줍니다.',
+      example: 'A: "You have exactly what I need." B: "How weird is that?"',
+      example_ko: 'A: "넌 정확히 내가 필요한 것을 가져." B: "이게 얼마나 이상해?"',
+      context: 'Rachel noticing she has a magnet bottle opener that Chandler lacks.',
+      context_ko: 'Rachel이 Chandler가 가지지 않은 자석 병따개가 있다는 것을 알아차립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X1'
+    },
+    {
+      phrase: 'In a way, you complete me.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting someone fulfills missing part of your life. Shows romantic or personal completion notion. Demonstrates affectionate observation.',
+      meaning_ko: '누군가가 당신의 삶에서 누락된 부분을 충족시킨다고 제안합니다. 로맨틱하거나 개인적인 완성 개념을 보여줍니다. 애정 어린 관찰을 보여줍니다.',
+      example: 'A: "You have something I don\'t." B: "In a way, you complete me."',
+      example_ko: 'A: "넌 내가 없는 뭔가를 가졌어." B: "어떤 의미에서, 넌 나를 완성해."',
+      context: 'Chandler expressing connection with Rachel over kitchen item.',
+      context_ko: 'Chandler가 Rachel과 부엌 물품에 대한 연결을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X2'
+    },
+    {
+      phrase: 'You complete me kitchen, matey.',
+      partOfSpeech: 'expression',
+      meaning: 'Making nonsensical joke by misapplying romantic phrase. Shows comedic misuse of language. Demonstrates humorous corruption of meaning.',
+      meaning_ko: '로맨틱한 표현을 잘못 적용하여 말이 안 되는 농담을 만듭니다. 언어의 코미디 오용을 보여줍니다. 의미의 유머러스한 왜곡을 보여줍니다.',
+      example: 'A: "You complete me." B: "You complete me kitchen, matey."',
+      example_ko: 'A: "넌 나를 완성해." B: "넌 내 부엌을 완성해, 친구."',
+      context: 'Chandler making absurd joke with pirate accent.',
+      context_ko: 'Chandler가 해적 억양으로 터무니없는 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X3'
+    },
+    {
+      phrase: 'You are in love with Rachel.',
+      partOfSpeech: 'expression',
+      meaning: 'Making accusation of romantic feelings toward someone. Shows direct assertion about hidden emotions. Demonstrates confident observation.',
+      meaning_ko: '누군가에 대한 로맨틱한 감정의 비난을 합니다. 숨겨진 감정에 대한 직접적인 주장을 보여줍니다. 자신감 있는 관찰을 보여줍니다.',
+      example: 'A: "What?" B: "You are in love with Rachel."',
+      example_ko: 'A: "뭐?" B: "넌 Rachel을 사랑해."',
+      context: 'Monica accusingly telling Ross about his feelings for Rachel.',
+      context_ko: 'Monica가 Ross에게 Rachel에 대한 감정을 비난하며 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X4'
+    },
+    {
+      phrase: 'You are obsessed with her.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming someone has unhealthy fixation on another person. Shows accusation of excessive focus. Demonstrates judgmental observation.',
+      meaning_ko: '누군가가 다른 사람에 대해 건강하지 않은 집착을 가지고 있다고 주장합니다. 과도한 초점에 대한 비난을 보여줍니다. 판단적인 관찰을 보여줍니다.',
+      example: 'A: "I\'m not." B: "You are obsessed with her."',
+      example_ko: 'A: "난 아니야." B: "넌 그녀에게 집착했어."',
+      context: 'Monica listing ways Ross constantly discusses Rachel.',
+      context_ko: 'Monica가 Ross가 Rachel을 자주 논의하는 방식을 나열합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X5'
+    },
+    {
+      phrase: 'Saved by the bell.',
+      partOfSpeech: 'idiom',
+      meaning: 'Expressing relief at being rescued from awkward situation by interruption. Shows fortunate timing avoidance. Demonstrates grateful escape.',
+      meaning_ko: '어색한 상황에서 중단으로 구출된 것에 대한 안도감을 표현합니다. 다행스러운 타이밍 회피를 보여줍니다. 감사한 탈출을 보여줍니다.',
+      example: 'A: "I need to ask you something serious." B: "Saved by the bell."',
+      example_ko: 'A: "난 너한테 진지한 걸 물어봐야 해." B: "종 울려서 다행이네."',
+      context: 'Ross relieved when doorbell rings during uncomfortable conversation.',
+      context_ko: 'Ross는 불편한 대화 중 초인종이 울려서 안도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X6'
+    },
+    {
+      phrase: 'That you\'re a liar.',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing someone of dishonesty. Shows blunt direct insult. Demonstrates hostile statement.',
+      meaning_ko: '누군가를 거짓말쟁이로 비난합니다. 무뚝뚝한 직접 모욕을 보여줍니다. 적대적인 진술을 보여줍니다.',
+      example: 'A: "I forgot you bought those." B: "That you\'re a liar."',
+      example_ko: 'A: "난 넌 그걸 샀단 걸 깜빡했어." B: "넌 거짓말쟁이라는 걸."',
+      context: 'Rachel calling out Chandler\'s dishonesty about candlesticks.',
+      context_ko: 'Rachel이 Chandler의 촛대에 대한 거짓을 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X7'
+    },
+    {
+      phrase: 'They loved it.',
+      partOfSpeech: 'expression',
+      meaning: 'Reporting positive reception from an audience or group. Shows successful outcome. Demonstrates pleased announcement.',
+      meaning_ko: '청중이나 그룹으로부터 긍정적인 반응을 보고합니다. 성공적인 결과를 보여줍니다. 기쁜 발표를 보여줍니다.',
+      example: 'A: "Did they like your paper?" B: "They loved it."',
+      example_ko: 'A: "그들이 너 논문을 좋아했어?" B: "그들이 정말 좋아했어."',
+      context: 'Ross reporting university\'s positive response to his research paper.',
+      context_ko: 'Ross가 대학의 자신의 연구 논문에 대한 긍정적인 반응을 보고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X8'
+    },
+    {
+      phrase: 'Professor and Mrs.',
+      partOfSpeech: 'expression',
+      meaning: 'Referencing married name and title together. Shows playful acknowledgment of marriage status. Demonstrates teasing reference.',
+      meaning_ko: '결혼한 이름과 직함을 함께 참조합니다. 결혼 상태에 대한 장난스러운 인정을 보여줍니다. 놀리는 참조를 보여줍니다.',
+      example: 'A: "Professor Geller sounds great." B: "Professor and Mrs."',
+      example_ko: 'A: "Professor Geller는 훌륭해 들려." B: "Professor and Mrs."',
+      context: 'Monica reminding Ross he\'s technically still married to Rachel.',
+      context_ko: 'Monica가 Ross에게 그가 기술적으로 Rachel과 여전히 결혼했다는 것을 상기시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X9'
+    },
+    {
+      phrase: 'She told me I\'m gonna die this week.',
+      partOfSpeech: 'expression',
+      meaning: 'Reporting dire prediction about imminent death. Shows matter-of-fact announcement of bad news. Demonstrates casual delivery of serious information.',
+      meaning_ko: '임박한 사망에 대한 불길한 예측을 보고합니다. 나쁜 뉴스의 담담한 발표를 보여줍니다. 심각한 정보의 우연한 전달을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "She told me I\'m gonna die this week."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "그녀가 나 이번 주에 죽을 거라고 말했어."',
+      context: 'Phoebe reporting psychic\'s death prediction in casual manner.',
+      context_ko: 'Phoebe가 심령술사의 죽음 예측을 우연히 보고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X10'
+    },
+    {
+      phrase: 'This is what\'s gonna kill me.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing extreme boredom or frustration with something. Shows hyperbolic complaint about tedium. Demonstrates exaggerated annoyance.',
+      meaning_ko: '무언가에 대한 극단적인 지루함이나 답답함을 표현합니다. 지루함에 대한 과장된 불평을 보여줍니다. 과장된 성가심을 보여줍니다.',
+      example: 'A: "He\'s reading about sediment flow rate." B: "This is what\'s gonna kill me."',
+      example_ko: 'A: "그는 퇴적물 흐름 속도에 대해 읽고 있어." B: "이게 날 죽일 거야."',
+      context: 'Phoebe commenting on Ross\'s boring lecture material.',
+      context_ko: 'Phoebe가 Ross의 지루한 강의 자료에 대해 논평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X11'
+    },
+    {
+      phrase: 'Are there naked chicks on that paper?',
+      partOfSpeech: 'question',
+      meaning: 'Joking about lack of visual interest in technical materials. Shows humorous observation of boredom. Demonstrates comedic critique.',
+      meaning_ko: '기술 자료의 시각적 관심 부족에 대해 농담합니다. 지루함의 유머러스한 관찰을 보여줍니다. 코미디 비평을 보여줍니다.',
+      example: 'A: "Why are you staring at that paper?" B: "Are there naked chicks on that paper?"',
+      example_ko: 'A: "넌 왜 그 종이를 쳐다봐?" B: "그 종이에 나체 여자들이 있어?"',
+      context: 'Joey joking about why anyone would be interested in Ross\'s lecture.',
+      context_ko: 'Joey가 왜 누군가 Ross의 강의에 관심을 가지는지 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X12'
+    },
+    {
+      phrase: 'It\'s a university, not a comedy club.',
+      partOfSpeech: 'expression',
+      meaning: 'Defending serious tone of academic setting against humorous suggestions. Shows insistence on professionalism. Demonstrates defensive explanation.',
+      meaning_ko: '유머러스한 제안에 대해 학문적 환경의 진지한 톤을 옹호합니다. 전문성에 대한 주장을 보여줍니다. 방어적인 설명을 보여줍니다.',
+      example: 'A: "Open with a joke." B: "It\'s a university, not a comedy club."',
+      example_ko: 'A: "농담으로 시작해." B: "이건 대학이지, 코미디 클럽이 아니야."',
+      context: 'Ross rejecting suggestion to tell jokes during lecture.',
+      context_ko: 'Ross가 강의 중 농담을 말하라는 제안을 거절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X13'
+    },
+    {
+      phrase: 'When I had insurance, I could get hit by a bus.',
+      partOfSpeech: 'expression',
+      meaning: 'Making dark joke about recklessness covered by health insurance. Shows humorous despair about loss of safety net. Demonstrates comedic fatalism.',
+      meaning_ko: '건강 보험으로 덮인 무모함에 대해 검은 농담을 합니다. 안전망 손실에 대한 유머러스한 절망을 보여줍니다. 코미디 운명론을 보여줍니다.',
+      example: 'A: "You lost your insurance?" B: "When I had insurance, I could get hit by a bus."',
+      example_ko: 'A: "넌 보험을 잃었어?" B: "보험이 있을 때, 난 버스에 치일 수 있었어."',
+      context: 'Joey joking about his carefree attitude when insured.',
+      context_ko: 'Joey가 보험이 있을 때 자신의 무관심한 태도에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X14'
+    },
+    {
+      phrase: 'I\'m gonna pass the news on to Joey and Chandler.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing intention to share information with others. Shows plan for communication. Demonstrates forward intent.',
+      meaning_ko: '다른 사람들과 정보를 공유할 의도를 발표합니다. 통신 계획을 보여줍니다. 앞으로의 의도를 보여줍니다.',
+      example: 'A: "I proved them wrong." B: "I\'m gonna pass the news on to Joey and Chandler."',
+      example_ko: 'A: "난 그들을 틀렸다고 증명했어." B: "난 그 소식을 Joey와 Chandler에게 전할 거야."',
+      context: 'Ross planning to tell his friends he\'s neither funny nor sexy.',
+      context_ko: 'Ross가 자신이 재미있지도 섹시하지도 않다고 친구들에게 말할 계획입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E4X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

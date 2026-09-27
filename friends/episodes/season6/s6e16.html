@@ -92,10 +92,209 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 16',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: '15 English expressions from Season 6, Episode 16: "The One Where Rachel Finds Out"',
+    expressions: [
+      {
+        phrase: "Life's pretty great, isn't it?",
+        partOfSpeech: 'rhetorical question',
+        meaning: 'A casual, reflective comment expressing satisfaction or contentment about how things are going.',
+        meaning_ko: '현재의 상황에 대한 만족감이나 행복감을 표현하는 반문형의 느슨한 표현.',
+        example: 'I got the job I wanted, and I\'m living in a great city. Life\'s pretty great, isn\'t it?',
+        example_ko: '내가 원하던 일을 얻었고, 멋진 도시에서 살고 있어. 인생이 정말 좋지 않아?',
+        context: 'A fan is excited about urinating in Joey\'s apartment because he\'s a famous actor.',
+        context_ko: ' Fan이 유명 배우의 아파트에서 화장실을 사용한 것에 흥분한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "They have parasites?",
+        partOfSpeech: 'expression',
+        meaning: 'A response expressing surprise or skepticism about an unexpected or unpleasant fact.',
+        meaning_ko: '예상치 못한 또는 불쾌한 사실에 대해 놀람이나 의심을 표현하는 응답.',
+        example: 'You said oysters are aphrodisiacs? They have parasites?',
+        example_ko: '넌 굴이 최음제라고 했어? 기생충이 있다고?',
+        context: 'Monica responds with concern when Richard mentions oysters are considered aphrodisiacs.',
+        context_ko: 'Monica가 Richard가 굴이 최음제로 여겨진다고 말할 때 우려를 표한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I've got to get out of this bed.",
+        partOfSpeech: 'expression',
+        meaning: 'A statement of urgency or desperation to leave a current situation or location.',
+        meaning_ko: '현재 상황이나 위치를 떠나야 한다는 긴급함이나 절망감을 표현하는 진술.',
+        example: 'I\'ve been lying here all day. I\'ve got to get out of this bed.',
+        example_ko: '나는 하루 종일 누워 있었어. 이 침대에서 나가야 해.',
+        context: 'Phoebe is recovering from her heart attack and is frustrated being bedridden.',
+        context_ko: 'Phoebe는 심장마비에서 회복 중이며 누워만 있는 것에 답답해한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I hate herbal tea.",
+        partOfSpeech: 'expression',
+        meaning: 'A direct statement of strong dislike or disapproval for something.',
+        meaning_ko: '어떤 것에 대한 강한 불호나 불만을 표현하는 직설적인 진술.',
+        example: 'Don\'t bring me herbal tea. I hate herbal tea.',
+        example_ko: '나한테 허브티를 가져오지 마. 나는 허브티를 싫어해.',
+        context: 'Phoebe complains about the herbal tea she\'s given while recovering in bed.',
+        context_ko: 'Phoebe가 회복 중 받은 허브티에 불만을 표한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Chandler, I'm gonna die a virgin!",
+        partOfSpeech: 'exclamation',
+        meaning: 'An exaggerated, dramatic expression of fear or despair about never having a romantic relationship.',
+        meaning_ko: '낭만적인 관계를 가져본 적이 없을 것이라는 두려움이나 절망을 과장되게 표현한 외침.',
+        example: 'I\'m 35 and have never dated. Chandler, I\'m gonna die a virgin!',
+        example_ko: '나는 35살인데 데이트를 한 번도 안 했어. Chandler, 난 처녀로 죽을 거야!',
+        context: 'Monica despairs to Chandler about her lack of romantic experience.',
+        context_ko: 'Monica가 로맨틱 경험 부족에 대해 Chandler에게 절망적으로 말한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Do you want to do it with me?",
+        partOfSpeech: 'expression',
+        meaning: 'A question asking if someone wants to engage in an activity or action together.',
+        meaning_ko: '누군가가 함께 어떤 활동이나 행동에 참여하고 싶은지 묻는 질문.',
+        example: 'I\'m going to the movies. Do you want to do it with me?',
+        example_ko: '나는 영화 보러 갈 거야. 나랑 같이 할래?',
+        context: 'Chandler offers to help Monica with her situation in a provocative way.',
+        context_ko: 'Chandler이 Monica의 상황을 도와주자고 도발적으로 제안한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I was kidding.",
+        partOfSpeech: 'expression',
+        meaning: 'A statement to clarify that what was just said was meant as a joke, not serious.',
+        meaning_ko: '방금 말한 것이 농담이지 진심이 아니라는 것을 명확히 하는 진술.',
+        example: 'I said I\'d buy you a car. Just kidding! I was kidding.',
+        example_ko: '내가 너한테 차를 사줄 거라고 했어. 농담이야! 농담이었어.',
+        context: 'Chandler clarifies he was joking when he offered to help Monica.',
+        context_ko: 'Chandler이 Monica를 도와주겠다고 한 것이 농담이었음을 명확히 한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "How do you know where Dr. Drake Ramoray leaves off and Joey Tribbiani begins?",
+        partOfSpeech: 'question',
+        meaning: 'An inquiry asking how someone distinguishes between a fictional character and the real person portraying them.',
+        meaning_ko: '허구 캐릭터와 그를 연기하는 실제 인물 사이를 어떻게 구분하는지 묻는 질문.',
+        example: 'You\'re such an amazing actor. How do you know where your character ends and you begin?',
+        example_ko: '넌 정말 훌륭한 배우야. 너의 캐릭터가 어디서 끝나고 넌 어디서 시작하는지 어떻게 알아?',
+        context: 'Rachel asks Joey about his acting and character development.',
+        context_ko: 'Rachel이 Joey에게 그의 연기와 캐릭터 발전에 대해 묻는다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I can't feel my hands.",
+        partOfSpeech: 'expression',
+        meaning: 'A statement indicating physical numbness or loss of sensation, often used to describe emotional overwhelm.',
+        meaning_ko: '신체적 무감각이나 감각 상실을 나타내는 진술로, 종종 정서적 과부하를 표현하는 데 사용된다.',
+        example: 'This moment is so magical I can\'t feel my hands.',
+        example_ko: '이 순간이 너무 마법 같아서 내 손을 느낄 수 없어.',
+        context: 'Monica experiences overwhelming emotion from Joey\'s compliment about her beauty.',
+        context_ko: 'Monica가 Joey의 아름다움에 대한 칭찬으로 압도적인 감정을 느낀다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "We can't do this.",
+        partOfSpeech: 'expression',
+        meaning: 'A statement of reluctance or refusal to proceed with something, often expressing boundaries or hesitation.',
+        meaning_ko: '어떤 것을 계속 진행하기를 거부하거나 꺼리는 것을 표현하는 진술로, 종종 경계나 주저함을 나타낸다.',
+        example: 'I really like you, but we can\'t do this. It\'s too complicated.',
+        example_ko: '난 너를 정말 좋아하는데, 우린 이걸 할 수 없어. 너무 복잡해.',
+        context: 'Monica stops things with Joey before they go further.',
+        context_ko: 'Monica가 Joey와의 관계가 더 진행되기 전에 멈춘다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I'm just a horrible person.",
+        partOfSpeech: 'expression',
+        meaning: 'A statement of harsh self-criticism or guilt about one\'s actions or character.',
+        meaning_ko: '자신의 행동이나 성격에 대한 가혹한 자책이나 죄책감을 표현하는 진술.',
+        example: 'I lied to my friend and I feel terrible. I\'m just a horrible person.',
+        example_ko: '나는 친구에게 거짓말을 했고 정말 끔찍해. 나는 그냥 끔찍한 사람이야.',
+        context: 'Rachel beats herself up about nearly cheating on her husband.',
+        context_ko: 'Rachel이 남편에게 거의 바람을 피운 것에 대해 자책한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I'm not a star. I'm just a regular famous actor.",
+        partOfSpeech: 'expression',
+        meaning: 'A self-deprecating statement downplaying one\'s fame or importance.',
+        meaning_ko: '자신의 명성이나 중요성을 축소하는 자조적인 진술.',
+        example: 'Everyone keeps calling me a star, but I\'m not a star. I\'m just a regular famous actor.',
+        example_ko: '모두가 나를 스타라고 부르지만, 난 스타가 아니야. 난 그냥 평범한 유명 배우일 뿐이야.',
+        context: 'Joey makes a humorous, contradictory comment about his status.',
+        context_ko: 'Joey가 자신의 지위에 대해 유머러스하고 모순된 발언을 한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Would anyone really miss me if I weren't here?",
+        partOfSpeech: 'rhetorical question',
+        meaning: 'An existential question expressing doubt about one\'s importance or value to others.',
+        meaning_ko: '타인에 대한 자신의 중요성이나 가치에 대한 의심을 표현하는 존재적 질문.',
+        example: 'Sometimes I feel like nobody needs me. Would anyone really miss me if I weren\'t here?',
+        example_ko: '때로는 나를 필요로 하는 사람이 아무도 없는 것 같아. 내가 여기에 없으면 정말 누군가 날 그리워할까?',
+        context: 'Ross compares his experience to feeling insignificant at a party.',
+        context_ko: 'Ross가 자신의 경험을 파티에서 하찮다고 느끼는 것에 비유한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Your worst day with two women is still pretty much better than any other day.",
+        partOfSpeech: 'expression',
+        meaning: 'A compliment or perspective suggesting that even a mediocre experience with multiple partners is still desirable.',
+        meaning_ko: '여러 파트너와의 평범한 경험도 여전히 바람직하다는 것을 시사하는 칭찬이나 관점.',
+        example: 'You say the party was awkward, but hey, your worst day with two women is still pretty much better than any other day.',
+        example_ko: '넌 파티가 어색했다고 했지만, 넌 여자 둘과의 최악의 날도 다른 날보다 훨씬 좋다고.',
+        context: 'Joey tries to cheer up Ross by putting his experience in perspective.',
+        context_ko: 'Joey가 Ross의 경험을 관점에서 보며 그를 격려하려 한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "My part seemed to be over pretty quickly.",
+        partOfSpeech: 'expression',
+        meaning: 'A euphemistic or indirect comment about underwhelming sexual performance.',
+        meaning_ko: '성적 능력이 부족하다는 것을 우회적이거나 간접적으로 표현하는 진술.',
+        example: 'That event was disappointing. My part seemed to be over pretty quickly.',
+        example_ko: '그 이벤트는 실망스러웠어. 내 부분이 꽤 빨리 끝난 것 같았어.',
+        context: 'Ross admits his threesome experience wasn\'t satisfying.',
+        context_ko: 'Ross는 자신의 3인 경험이 만족스럽지 않았다고 인정한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Hey, check me out. I'm a slut!",
+        partOfSpeech: 'exclamation',
+        meaning: 'A self-congratulatory or joking comment about having a promiscuous lifestyle.',
+        meaning_ko: '방탕한 생활 방식에 대한 자축적이거나 농담 섞인 발언.',
+        example: 'I just realized I slept with multiple people this week. Hey, check me out. I\'m a slut!',
+        example_ko: '나는 이번 주에 여러 사람과 잤다는 것을 깨달았어. 이봐, 나를 봐. 나는 방탕한 사람이야!',
+        context: 'Monica jokes about her newfound sexual confidence after sleeping with Chandler.',
+        context_ko: 'Monica가 Chandler와 잠을 자신의 새로운 성적 자신감에 대해 농담한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "Can the doctor see me now?",
+        partOfSpeech: 'expression',
+        meaning: 'A suggestive phrase referring to being ready for romantic or sexual activity.',
+        meaning_ko: '로맨틱하거나 성적 활동을 위해 준비가 되었음을 시사하는 표현.',
+        example: 'After that amazing experience, I told him, Can the doctor see me now?',
+        example_ko: '그 멋진 경험 후에, 나는 그에게 의사가 나를 볼 수 있을까라고 말했어.',
+        context: 'Monica uses flirty wordplay with Roger about being examined.',
+        context_ko: 'Monica가 Roger와의 진료에 대해 장난스러운 말을 사용한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      },
+      {
+        phrase: "I didn't get that message. So this doesn't count.",
+        partOfSpeech: 'expression',
+        meaning: 'A humorous way of dismissing something by claiming it didn\'t happen if you weren\'t properly informed.',
+        meaning_ko: '적절한 통보를 받지 못했다면 그것이 일어나지 않았다고 주장함으로써 뭔가를 장난스럽게 무시하는 방식.',
+        example: 'You said I was fired? I didn\'t get that message. So this doesn\'t count.',
+        example_ko: '넌 나를 해고했다고 말했어? 나는 그 메시지를 받지 못했어. 그래서 이건 셀 수 없어.',
+        context: 'Phoebe uses the excuse of not receiving a message to claim she wasn\'t actually fired.',
+        context_ko: 'Phoebe는 메시지를 받지 못했다는 변명으로 자신이 실제로 해고되지 않았다고 주장한다.',
+        youtubeUrl: 'REPLACE_WITH_YOUTUBE_URL'
+      }
+    ]
   };
 
   var S_NUM = 6;

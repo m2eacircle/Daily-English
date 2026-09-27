@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 7',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Rachel moves in with Phoebe. Joey\'s new roommate Janine is an Australian dancer. Ross gets a new colleague.',
+    expressions: [
+    {
+      phrase: 'You have all the good words.',
+      partOfSpeech: 'expression',
+      meaning: 'Complaining that distribution of resources is unfair. Shows frustration at inequality. Demonstrates playful disappointment.',
+      meaning_ko: '자원 분배가 불공평하다고 불평합니다. 부등에 대한 좌절감을 보여줍니다. 장난스러운 실망을 보여줍니다.',
+      example: 'A: "I get the first part." B: "You have all the good words."',
+      example_ko: 'A: "나는 첫 번째 부분을 얻어." B: "너는 모든 좋은 단어를 가지고 있어."',
+      context: 'Phoebe complaining about unequal word distribution in answering machine greeting.',
+      context_ko: 'Phoebe가 답변 기계 인사말에서 불공평한 단어 분배에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X1'
+    },
+    {
+      phrase: 'You\'re no ordinary roommate, are you?',
+      partOfSpeech: 'question',
+      meaning: 'Acknowledging someone has surprising or exceptional qualities. Shows admiration mixed with amazement. Demonstrates recognizing uniqueness.',
+      meaning_ko: '누군가가 놀라운 또는 뛰어난 자질을 가지고 있음을 인정합니다. 경탄이 섞인 경탄을 보여줍니다. 독특함을 인식하는 것을 보여줍니다.',
+      example: 'A: "I did something unexpected." B: "You\'re no ordinary roommate, are you?"',
+      example_ko: 'A: "나는 뭔가 예상치 못한 일을 했어." B: "너는 보통 룸메이트가 아니지?"',
+      context: 'Rachel impressed by Phoebe\'s clever word sequencing in greeting.',
+      context_ko: 'Rachel이 Phoebe의 인사말에서의 영리한 단어 수열에 감동합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X2'
+    },
+    {
+      phrase: 'We\'ll run in the park. It\'ll be like our first roommate-bonding thing.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting joint activity to build relationship and friendship. Shows initiative for bonding. Demonstrates creating connection opportunities.',
+      meaning_ko: '관계와 우정을 구축하기 위해 공동 활동을 제안합니다. 유대 결성의 주도권을 보여줍니다. 연결 기회를 만드는 것을 보여줍니다.',
+      example: 'A: "Want to bond?" B: "We\'ll run in the park. It\'ll be like our first roommate-bonding thing."',
+      example_ko: 'A: "유대를 하고 싶어?" B: "우린 공원에서 뛰어. 그건 우리 첫 번째 룸메이트 유대 활동이 될 거야."',
+      context: 'Rachel inviting Phoebe to go running together to build friendship.',
+      context_ko: 'Rachel이 우정을 쌓기 위해 Phoebe를 함께 달리기에 초대합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X3'
+    },
+    {
+      phrase: 'You\'ve met your match, Rachel Green.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring equal or superior competence in competition. Shows confident bravado. Demonstrates triumphant declaration.',
+      meaning_ko: '경쟁에서 동등하거나 우월한 능력을 선언합니다. 자신감 있는 허풍을 보여줍니다. 승리 선언을 보여줍니다.',
+      example: 'A: "I\'m better at this." B: "You\'ve met your match, Rachel Green."',
+      example_ko: 'A: "난 이것을 더 잘해." B: "너는 너의 짝을 만났어, Rachel Green."',
+      context: 'Phoebe claiming victory in answering machine greeting word game.',
+      context_ko: 'Phoebe가 답변 기계 인사말 단어 게임에서 승리를 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X4'
+    },
+    {
+      phrase: 'And I just realized I can sleep with my eyes open.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically expressing boredom or disinterest in topic. Shows comedic disengagement. Demonstrates cutting off boring discussion.',
+      meaning_ko: '주제에 대한 지루함 또는 관심 부족을 풍자적으로 표현합니다. 코미디 무관심을 보여줍니다. 지루한 토론을 끊는 것을 보여줍니다.',
+      example: 'A: "This theory is fascinating." B: "And I just realized I can sleep with my eyes open."',
+      example_ko: 'A: "이 이론은 매력적이야." B: "그리고 나는 눈을 뜨고 잠을 잘 수 있다는 것을 깨달았어."',
+      context: 'Chandler sarcastically responding to Ross\'s boring computer theory.',
+      context_ko: 'Chandler가 Ross의 지루한 컴퓨터 이론에 풍자적으로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X5'
+    },
+    {
+      phrase: 'It was a great idea, nailing the boxes to the floor.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically praising bad idea assuming wrong assumption. Shows comedic misunderstanding. Demonstrates ironic compliment.',
+      meaning_ko: '잘못된 가정을 가정하여 나쁜 아이디어를 풍자적으로 칭찬합니다. 코미디 오해를 보여줍니다. 아이러니한 칭찬을 보여줍니다.',
+      example: 'A: "Monica did something." B: "It was a great idea, nailing the boxes to the floor."',
+      example_ko: 'A: "Monica가 뭔가 했어." B: "상자를 바닥에 못질하는 것은 좋은 아이디어였어."',
+      context: 'Monica sarcastically congratulating Chandler on nailing boxes down.',
+      context_ko: 'Monica가 Chandler가 상자를 못으로 고정한 것을 풍자적으로 축하합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X6'
+    },
+    {
+      phrase: 'She\'s gonna be my new roommate.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing entry of new person into shared living space. Shows excitement about arrival. Demonstrates introducing new living arrangement.',
+      meaning_ko: '새로운 사람이 공동 생활 공간에 들어오는 것을 발표합니다. 도착에 대한 흥분을 보여줍니다. 새로운 생활 환경을 소개하는 것을 보여줍니다.',
+      example: 'A: "Who is this?" B: "She\'s gonna be my new roommate."',
+      example_ko: 'A: "이 사람이 누구야?" B: "그녀는 나의 새로운 룸메이트가 될 거야."',
+      context: 'Joey introducing Janine to the group.',
+      context_ko: 'Joey가 Janine을 그룹에 소개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X7'
+    },
+    {
+      phrase: 'Did you even interview this woman before you asked her to move in?',
+      partOfSpeech: 'question',
+      meaning: 'Questioning whether proper vetting was done before major decision. Shows concern for poor planning. Demonstrates criticizing hasty action.',
+      meaning_ko: '주요 결정 전에 적절한 심사가 수행되었는지 의문을 제기합니다. 형편없는 계획에 대한 우려를 보여줍니다. 성급한 조치를 비판하는 것을 보여줍니다.',
+      example: 'A: "She\'s moving in." B: "Did you even interview this woman before you asked her to move in?"',
+      example_ko: 'A: "그녀가 이사할 거야." B: "넌 그녀에게 이사를 요청하기 전에 심지어 그녀와 인터뷰했어?"',
+      context: 'Monica questioning Joey\'s decision to hire Janine as roommate without proper interview.',
+      context_ko: 'Monica가 Joey가 적절한 인터뷰 없이 Janine을 룸메이트로 고용한 결정을 의문을 제기합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X8'
+    },
+    {
+      phrase: 'When can you move in?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for move-in timing without getting background information. Shows impulsiveness and lack of proper planning. Demonstrates minimal screening.',
+      meaning_ko: '배경 정보를 얻지 않고 이사 타이밍을 묻습니다. 충동성과 형편없는 계획을 보여줍니다. 최소한의 심사를 보여줍니다.',
+      example: 'A: "You need to interview me first." B: "When can you move in?"',
+      example_ko: 'A: "너는 먼저 나를 인터뷰해야 해." B: "넌 언제 이사할 거야?"',
+      context: 'Joey\'s only interview question for Janine.',
+      context_ko: 'Joey가 Janine에게 한 유일한 인터뷰 질문입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X9'
+    },
+    {
+      phrase: 'I cannot wait to ask her out.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing eagerness to pursue romantic interest immediately. Shows impatience regarding romantic goals. Demonstrates excited romantic intent.',
+      meaning_ko: '즉시 연애 관심사를 추구할 열정을 표현합니다. 연애 목표와 관련된 조급함을 보여줍니다. 흥분한 연애 의도를 보여줍니다.',
+      example: 'A: "She\'s attractive." B: "I cannot wait to ask her out."',
+      example_ko: 'A: "그녀는 매력적이야." B: "나는 그녀에게 데이트를 신청할 수 없을 정도로 기대돼."',
+      context: 'Joey immediately planning to ask Janine out despite warnings.',
+      context_ko: 'Joey가 경고에도 불구하고 즉시 Janine에게 데이트를 신청할 계획을 세웁니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X10'
+    },
+    {
+      phrase: 'She\'s your roommate. It\'ll be way too complicated.',
+      partOfSpeech: 'expression',
+      meaning: 'Warning against romantic involvement due to living situation complications. Shows protective concern. Demonstrates logical reasoning about consequences.',
+      meaning_ko: '생활 상황 합병증으로 인한 연애 관여에 대해 경고합니다. 보호적 우려를 보여줍니다. 결과에 대한 논리적 추론을 보여줍니다.',
+      example: 'A: "I want to date her." B: "She\'s your roommate. It\'ll be way too complicated."',
+      example_ko: 'A: "나는 그녀와 데이트하고 싶어." B: "그녀는 너의 룸메이트야. 그건 너무 복잡할 거야."',
+      context: 'Chandler warning Joey against dating Janine.',
+      context_ko: 'Chandler가 Joey에게 Janine과의 데이트에 대해 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X11'
+    },
+    {
+      phrase: 'Now imagine you live at the supermarket.',
+      partOfSpeech: 'expression',
+      meaning: 'Using hyperbolic analogy to show consequences of breakup with roommate. Shows dramatic reasoning. Demonstrates exaggerated warning.',
+      meaning_ko: '룸메이트와의 결별의 결과를 보여주기 위해 과장된 유추를 사용합니다. 극적인 추론을 보여줍니다. 과장된 경고를 보여줍니다.',
+      example: 'A: "It won\'t be that bad." B: "Now imagine you live at the supermarket."',
+      example_ko: 'A: "그건 그렇게 나쁘지 않을 거야." B: "이제 너가 슈퍼마켓에 산다고 상상해봐."',
+      context: 'Monica explaining worst case scenario of dating roommate.',
+      context_ko: 'Monica가 룸메이트와의 데이트의 최악의 시나리오를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X12'
+    },
+    {
+      phrase: 'I\'ve got all this built-up flirting energy.',
+      partOfSpeech: 'expression',
+      meaning: 'Complaining about suppressed desire to flirt with attractive person. Shows frustration from restraint. Demonstrates comedic admission of need.',
+      meaning_ko: '매력적인 사람과 작업할 억제된 욕망에 대해 불평합니다. 억제에서 비롯된 좌절감을 보여줍니다. 필요성의 코미디 인정을 보여줍니다.',
+      example: 'A: "Don\'t flirt with her." B: "I\'ve got all this built-up flirting energy."',
+      example_ko: 'A: "그녀와 작업하지 마." B: "나는 모든 이 축적된 작업 에너지를 가지고 있어."',
+      context: 'Joey struggling to suppress flirtation with Janine.',
+      context_ko: 'Joey가 Janine과의 작업을 억제하기 위해 투쟁합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X13'
+    },
+    {
+      phrase: 'I didn\'t want you to touch me because I\'m all sweaty from the workout.',
+      partOfSpeech: 'expression',
+      meaning: 'Making excuse to avoid physical contact with attractive person. Shows attempting restraint through excuse making. Demonstrates awkward boundary setting.',
+      meaning_ko: '매력적인 사람과의 신체 접촉을 피하기 위해 변명을 합니다. 변명을 통한 억제 시도를 보여줍니다. 어색한 경계 설정을 보여줍니다.',
+      example: 'A: "Can I touch you?" B: "I didn\'t want you to touch me because I\'m all sweaty from the workout."',
+      example_ko: 'A: "나를 만져도 돼?" B: "나는 너를 만나고 싶지 않았어. 난 운동으로 모두 땀이 나 있어."',
+      context: 'Joey making excuse to avoid Janine\'s physical contact.',
+      context_ko: 'Joey가 Janine의 신체 접촉을 피하기 위해 변명을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X14'
+    },
+    {
+      phrase: 'It\'s just my thongs are too delicate for the dryer.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining clothing care practices in casual conversation. Shows normal roommate discussion. Demonstrates comfort discussing personal items.',
+      meaning_ko: '일상 대화에서 의류 관리 관행을 설명합니다. 정상적인 룸메이트 토론을 보여줍니다. 개인 물품 토론에 대한 편안함을 보여줍니다.',
+      example: 'A: "What\'s hanging there?" B: "It\'s just my thongs are too delicate for the dryer."',
+      example_ko: 'A: "저기 뭐가 걸려 있어?" B: "그건 내 속옷이 건조기에 너무 민감해서야."',
+      context: 'Janine casually explaining why her underwear hangs in the bathroom.',
+      context_ko: 'Janine이 왜 자신의 속옷이 욕실에 걸려 있는지 일상적으로 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E7X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

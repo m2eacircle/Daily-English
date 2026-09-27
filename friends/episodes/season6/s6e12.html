@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 12',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Chandler\'s joke published in Playboy. Joke ownership dispute. Monica\'s high maintenance debate. Job struggles.',
+    expressions: [
+    {
+      phrase: 'You\'re not gonna believe this.',
+      partOfSpeech: 'expression',
+      meaning: 'Introducing exciting or surprising news with dramatic emphasis. Shows anticipation of amazement. Demonstrates building suspense.',
+      meaning_ko: '극적 강조로 흥미롭거나 놀라운 뉴스를 소개합니다. 놀라움에 대한 기대감을 보여줍니다. 긴장감을 조성하는 것을 보여줍니다.',
+      example: 'A: "You\'re not gonna believe this." B: "What? Tell me!"',
+      example_ko: 'A: "넌 이걸 믿지 않을 거야." B: "뭐야? 말해봐!"',
+      context: 'Chandler excitedly introducing his news that Playboy published his joke.',
+      context_ko: 'Chandler가 Playboy가 자신의 농담을 출판했다는 뉴스를 흥분하여 소개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X1'
+    },
+    {
+      phrase: 'I made up a joke and sent it in to Playboy.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating the action of creating humor and submitting it to a publication. Shows creative confidence. Demonstrates completed action narration.',
+      meaning_ko: '유머를 작성하고 잡지에 제출하는 행동을 진술합니다. 창의적 자신감을 보여줍니다. 완료된 행동 내레이션을 보여줍니다.',
+      example: 'A: "What did you do?" B: "I made up a joke and sent it in to Playboy."',
+      example_ko: 'A: "넌 뭐 했어?" B: "나는 농담을 지어서 Playboy에 보냈어."',
+      context: 'Chandler explaining the origin of his published Playboy joke.',
+      context_ko: 'Chandler가 자신의 출판된 Playboy 농담의 유래를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X2'
+    },
+    {
+      phrase: 'They printed it.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating confirmation that a publication accepted and released the submitted content. Shows publication success. Demonstrates triumphant fact.',
+      meaning_ko: '출판사가 제출된 콘텐츠를 수락하고 출시했다는 확인을 진술합니다. 출판 성공을 보여줍니다. 승리적인 사실을 보여줍니다.',
+      example: 'A: "Did they accept it?" B: "They printed it."',
+      example_ko: 'A: "그들이 받아들였어?" B: "그들이 인쇄했어."',
+      context: 'Chandler proudly confirming that Playboy published his submitted joke.',
+      context_ko: 'Chandler가 Playboy가 자신의 제출한 농담을 출판했음을 자랑스럽게 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X3'
+    },
+    {
+      phrase: 'It\'s not just about the pictures.',
+      partOfSpeech: 'expression',
+      meaning: 'Defending a publication\'s content value beyond its most obvious feature. Shows intellectual defense. Demonstrates deeper content justification.',
+      meaning_ko: '출판사의 콘텐츠 가치를 가장 명백한 기능 이상으로 방어합니다. 지적 방어를 보여줍니다. 더 깊은 콘텐츠 정당화를 보여줍니다.',
+      example: 'A: "Playboy is just pictures?" B: "It\'s not just about the pictures."',
+      example_ko: 'A: "Playboy는 그냥 사진이야?" B: "그건 사진만의 문제가 아니야."',
+      context: 'Chandler sarcastically defending Playboy\'s journalistic and humor content to skeptical friends.',
+      context_ko: 'Chandler가 의심하는 친구들에게 Playboy의 저널리즘과 유머 콘텐츠를 풍자적으로 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X4'
+    },
+    {
+      phrase: 'I made that joke up.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting original authorship and invention of humor despite credit dispute. Shows ownership claim. Demonstrates defending intellectual property.',
+      meaning_ko: '신용 분쟁에도 불구하고 유머의 원래 저자권과 발명을 주장합니다. 소유권 주장을 보여줍니다. 지적 재산권 방어를 보여줍니다.',
+      example: 'A: "That\'s a funny joke." B: "I made that joke up."',
+      example_ko: 'A: "그건 재미있는 농담이야." B: "나 그 농담 지었어."',
+      context: 'Chandler insisting the joke is original to him amid Phoebe\'s competing claim.',
+      context_ko: 'Chandler가 Phoebe의 경쟁적 주장 속에서 농담이 자신의 것임을 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X5'
+    },
+    {
+      phrase: 'I told Dan and he said it was the funniest joke he\'d ever heard.',
+      partOfSpeech: 'expression',
+      meaning: 'Using third-party validation and extreme superlative comparison to prove joke ownership. Shows evidence gathering. Demonstrates witness-based proof.',
+      meaning_ko: '제3자 검증과 극도의 최고급 비교를 사용하여 농담 소유권을 증명합니다. 증거 수집을 보여줍니다. 증인 기반 증명을 보여줍니다.',
+      example: 'A: "Did anyone hear this before?" B: "I told Dan and he said it was the funniest joke he\'d ever heard."',
+      example_ko: 'A: "누가 이거 전에 들었어?" B: "나는 Dan에게 말했고 그는 그게 자기가 들었던 가장 재미있는 농담이라고 했어."',
+      context: 'Phoebe using secondary witness testimony to support her original joke authorship claim.',
+      context_ko: 'Phoebe가 자신의 원래 농담 저자권 주장을 지지하기 위해 2차 증인 증언을 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X6'
+    },
+    {
+      phrase: 'Hey, tell Dan thanks.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastic acknowledgment dismissing witness credibility through ironic gratitude. Shows sarcasm. Demonstrates mocking appreciation.',
+      meaning_ko: '아이러니한 감사를 통해 증인 신뢰성을 소홀히 하는 풍자적 인정. 풍자를 보여줍니다. 조롱하는 감사를 보여줍니다.',
+      example: 'A: "Dan loves the joke." B: "Hey, tell Dan thanks."',
+      example_ko: 'A: "Dan이 농담을 좋아해." B: "아, Dan에게 고맙다고 전해."',
+      context: 'Chandler sarcastically dismissing Dan\'s testimony as relevant to the joke dispute.',
+      context_ko: 'Chandler가 Dan의 증언을 농담 분쟁과 관련이 있다고 풍자적으로 소홀히 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X7'
+    },
+    {
+      phrase: 'You know what we should do?',
+      partOfSpeech: 'question',
+      meaning: 'Initiating suggestion or proposal for joint activity. Shows shared decision-making. Demonstrates proposal initiation.',
+      meaning_ko: '공동 활동을 위한 제안 또는 제안을 시작합니다. 공유된 의사 결정을 보여줍니다. 제안 시작을 보여줍니다.',
+      example: 'A: "I\'m bored." B: "You know what we should do?"',
+      example_ko: 'A: "나 심심해." B: "우리가 뭐 해야 할까?"',
+      context: 'Janine suggesting an outing activity to Chandler while Monica watches her show.',
+      context_ko: 'Janine이 Monica가 자신의 쇼를 볼 때 Chandler에게 외출 활동을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X8'
+    },
+    {
+      phrase: 'I don\'t want to miss when they were skinny.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating desire not to miss past footage of performers\' younger appearance. Shows nostalgia-driven viewing. Demonstrates shallow appreciation comment.',
+      meaning_ko: '공연자의 어린 모습의 과거 영상을 놓치고 싶지 않은 욕구를 진술합니다. 향수 기반 시청을 보여줍니다. 얕은 감상 의견을 보여줍니다.',
+      example: 'A: "Can we watch later?" B: "I don\'t want to miss when they were skinny."',
+      example_ko: 'A: "나중에 볼 수 있어?" B: "나는 그들이 날씬했을 때를 놓치고 싶지 않아."',
+      context: 'Chandler jokingly declining Janine\'s invitation due to wanting to see Heart\'s younger appearance in the documentary.',
+      context_ko: 'Chandler가 다큐멘터리에서 Heart의 어린 모습을 보고 싶다는 이유로 Janine의 초대를 농담으로 거절합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X9'
+    },
+    {
+      phrase: 'Why is your cable out?',
+      partOfSpeech: 'question',
+      meaning: 'Asking the reason for loss of cable television service. Shows curiosity about cause. Demonstrates cause-seeking question.',
+      meaning_ko: '케이블 텔레비전 서비스 손실의 이유를 묻습니다. 원인에 대한 호기심을 보여줍니다. 원인 추구 질문을 보여줍니다.',
+      example: 'A: "The TV is off." B: "Why is your cable out?"',
+      example_ko: 'A: "TV가 꺼져 있어." B: "넌 왜 케이블이 없어?"',
+      context: 'Chandler asking Joey why his cable television is disconnected.',
+      context_ko: 'Chandler가 Joey에게 자신의 케이블 텔레비전이 왜 끊어졌는지 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X10'
+    },
+    {
+      phrase: 'I haven\'t really paid the bill.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting financial delinquency in humorous understatement. Shows financial embarrassment. Demonstrates casual confession of debt.',
+      meaning_ko: '유머러스한 과소 진술로 재정적 불이행을 인정합니다. 재정적 수치심을 보여줍니다. 부채에 대한 캐주얼한 자백을 보여줍니다.',
+      example: 'A: "Did you pay the cable bill?" B: "I haven\'t really paid the bill."',
+      example_ko: 'A: "넌 케이블 청구서를 냈어?" B: "나는 정말 청구서를 내지 않았어."',
+      context: 'Joey confessing to Chandler he\'s too poor to pay his cable bill due to lost acting work.',
+      context_ko: 'Joey가 잃어버린 연기 일 때문에 케이블 청구서를 낼 수 없을 정도로 가난하다고 Chandler에게 자백합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X11'
+    },
+    {
+      phrase: 'I can handle it, all right?',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting self-reliance and capability to manage a challenging situation independently. Shows defensive pride. Demonstrates stubborn independence.',
+      meaning_ko: '자립심과 도전적인 상황을 독립적으로 관리할 수 있는 능력을 주장합니다. 방어적 자부심을 보여줍니다. 완고한 독립성을 보여줍니다.',
+      example: 'A: "Let me help you." B: "I can handle it, all right?"',
+      example_ko: 'A: "내가 도와줄게." B: "나는 그걸 다룰 수 있어, 알았지?"',
+      context: 'Joey defensively insisting he can manage his financial troubles without Chandler\'s assistance.',
+      context_ko: 'Joey가 Chandler의 도움 없이 자신의 재정 문제를 처리할 수 있다고 방어적으로 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X12'
+    },
+    {
+      phrase: 'So you stole my joke and you stole my money?',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing someone of multiple forms of theft both creative and financial. Shows double-layer indignation. Demonstrates compound grievance.',
+      meaning_ko: '누군가를 창의적인 것과 재정적인 것을 포함한 여러 형태의 절도로 고발합니다. 이중 분노를 보여줍니다. 복합 불만을 보여줍니다.',
+      example: 'A: "I got the check for your joke." B: "So you stole my joke and you stole my money?"',
+      example_ko: 'A: "나는 너의 농담에 대한 수표를 받았어." B: "그래서 넌 내 농담도 훔치고 내 돈도 훔쳤어?"',
+      context: 'Chandler accusing Phoebe of both stealing his joke and the monetary payment from Playboy.',
+      context_ko: 'Chandler가 Phoebe를 자신의 농담과 Playboy로부터의 금전 지불을 모두 훔친 것으로 고발합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X13'
+    },
+    {
+      phrase: 'You think I\'m high maintenance?',
+      partOfSpeech: 'question',
+      meaning: 'Defensively questioning someone\'s characterization of oneself as demanding or difficult. Shows defensive challenge. Demonstrates rebuttal inquiry.',
+      meaning_ko: '누군가의 자신을 까다롭거나 어렵다고 특징짓는 것을 방어적으로 의문합니다. 방어적 도전을 보여줍니다. 반박 조회를 보여줍니다.',
+      example: 'A: "You\'re so high maintenance." B: "You think I\'m high maintenance?"',
+      example_ko: 'A: "넌 정말 고급스러워." B: "넌 내가 고급스럽다고 생각해?"',
+      context: 'Monica defensively questioning Chandler\'s assessment of her being high maintenance.',
+      context_ko: 'Monica가 자신이 까다롭다는 Chandler의 평가를 방어적으로 의문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X14'
+    },
+    {
+      phrase: 'You\'re just not as easygoing as Rachel.',
+      partOfSpeech: 'expression',
+      meaning: 'Comparing someone unfavorably to another person regarding relaxed demeanor. Shows comparative criticism. Demonstrates hierarchy-establishing criticism.',
+      meaning_ko: '편안한 태도와 관련하여 누군가를 다른 사람과 부리하게 비교합니다. 비교 비판을 보여줍니다. 계층 설정 비판을 보여줍니다.',
+      example: 'A: "Why do you prefer her?" B: "You\'re just not as easygoing as Rachel."',
+      example_ko: 'A: "넌 왜 그녀를 더 좋아해?" B: "넌 Rachel만큼 마음이 편하지 않아."',
+      context: 'Chandler comparing Monica unfavorably to Rachel in terms of flexibility and easygoing nature.',
+      context_ko: 'Chandler가 Monica를 유연성과 편안한 성향 측면에서 Rachel과 부리하게 비교합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E12X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 8',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Joey complains about Janine\'s decorations. Rachel gets job at Ralph Lauren. Phoebe kisses married Ralph Lauren. Chandler whitens teeth.',
+    expressions: [
+    {
+      phrase: 'This girl thing is dangerous. It\'s spreading.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking that feminine influence is invading male space like an epidemic. Shows comedic alarm. Demonstrates exaggerated warning.',
+      meaning_ko: '여성의 영향이 전염병처럼 남성 공간에 침입한다는 농담을 합니다. 코미디 경보를 보여줍니다. 과장된 경고를 보여줍니다.',
+      example: 'A: "Look at this pillow." B: "This girl thing is dangerous. It\'s spreading."',
+      example_ko: 'A: "이 베개를 봐." B: "이 여성 것은 위험해. 확산되고 있어."',
+      context: 'Joey noticing feminine decorations accumulating in his apartment.',
+      context_ko: 'Joey가 자신의 아파트에 쌓이는 여성스러운 장식을 발견합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X1'
+    },
+    {
+      phrase: 'You are a guy, okay? This is a guy\'s place.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting that space must maintain masculine character and identity. Shows defensive stance. Demonstrates establishing ownership rules.',
+      meaning_ko: '공간이 남성적 특성과 정체성을 유지해야 한다고 주장합니다. 방어적 입장을 보여줍니다. 소유권 규칙을 확립하는 것을 보여줍니다.',
+      example: 'A: "I like the decorations." B: "You are a guy, okay? This is a guy\'s place."',
+      example_ko: 'A: "나 이 장식 좋아." B: "넌 남자야, 알지? 이건 남자 장소야."',
+      context: 'Chandler reminding Joey to maintain masculine standards in apartment.',
+      context_ko: 'Chandler가 Joey에게 아파트에서 남성적 기준을 유지하도록 상기시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X2'
+    },
+    {
+      phrase: 'Soon, you\'ll be soaking your fingers in stuff.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking that he will adopt feminine hygiene habits if influenced by roommate. Shows humorous slippery slope. Demonstrates warning of full feminization.',
+      meaning_ko: '그가 룸메이트의 영향을 받으면 여성 위생 습관을 채택할 것이라는 농담을 합니다. 유머러스한 미끄러운 경사를 보여줍니다. 완전한 여성화 경고를 보여줍니다.',
+      example: 'A: "What\'s wrong with these changes?" B: "Soon, you\'ll be soaking your fingers in stuff."',
+      example_ko: 'A: "이 변화가 뭐가 문제야?" B: "곧 넌 손가락을 뭔가에 담글 거야."',
+      context: 'Chandler exaggerating consequences of feminine influence on Joey.',
+      context_ko: 'Chandler가 Joey에 대한 여성의 영향의 결과를 과장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X3'
+    },
+    {
+      phrase: 'We have to hem the new dust ruffle.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing feminine domestic task in place of expected masculine conversation. Shows comedic emasculation. Demonstrates defeated acceptance of femininity.',
+      meaning_ko: '예상되는 남성 대화 대신 여성 가사 작업을 발표합니다. 코미디 남성성 제거를 보여줍니다. 여성성의 패배한 수용을 보여줍니다.',
+      example: 'A: "Let\'s be men." B: "We have to hem the new dust ruffle."',
+      example_ko: 'A: "우리 남자 되자." B: "우리 새로운 먼지 러플을 꿰매야 해."',
+      context: 'Monica responding to Chandler\'s masculine posturing with feminine tasks.',
+      context_ko: 'Monica가 Chandler의 남성적 자세에 여성 작업으로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X4'
+    },
+    {
+      phrase: 'The one who looked at you once because you got in her way.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing someone\'s romantic interpretation as coincidental consequence. Shows skeptical debunking. Demonstrates correcting false assumption.',
+      meaning_ko: '누군가의 로맨틱한 해석을 우연한 결과로 취급합니다. 회의적 논박을 보여줍니다. 잘못된 가정을 수정하는 것을 보여줍니다.',
+      example: 'A: "She was staring at me." B: "The one who looked at you once because you got in her way."',
+      example_ko: 'A: "그녀는 나를 노려봤어." B: "너가 그녀 방식에 들어갔기 때문에 한 번 본 사람."',
+      context: 'Rachel correcting Joey\'s misinterpretation of Hillary\'s glance.',
+      context_ko: 'Rachel이 Joey의 Hillary의 시선에 대한 오해를 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X5'
+    },
+    {
+      phrase: 'I got a job at Ralph Lauren. A year ago.',
+      partOfSpeech: 'expression',
+      meaning: 'Revealing good news was withheld so long it loses impact when finally mentioned. Shows comedic delayed reaction. Demonstrates belated job announcement.',
+      meaning_ko: '좋은 소식이 마침내 언급될 때까지 기다려서 충격을 잃었다는 것을 밝혀냅니다. 코미디 지연 반응을 보여줍니다. 늦은 일자리 발표를 보여줍니다.',
+      example: 'A: "That\'s great!" B: "A year ago."',
+      example_ko: 'A: "좋아!" B: "1년 전."',
+      context: 'Rachel revealing she changed jobs and has been at Ralph Lauren for a year.',
+      context_ko: 'Rachel이 일자리를 바꿨고 1년 동안 Ralph Lauren에 있었던 것을 밝힙니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X6'
+    },
+    {
+      phrase: 'Come by at lunch so my boss doesn\'t see you.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting visit during specific time to hide third party from authority figure. Shows concern about boss disapproval. Demonstrates employee insecurity.',
+      meaning_ko: '제3자를 권위자로부터 숨기기 위해 특정 시간에 방문을 요청합니다. 상사 불승인에 대한 우려를 보여줍니다. 직원 불안감을 보여줍니다.',
+      example: 'A: "Can I visit?" B: "Come by at lunch so my boss doesn\'t see you."',
+      example_ko: 'A: "방문할 수 있어?" B: "점심 시간에 와. 내 상사가 널 안 보도록."',
+      context: 'Rachel asking Phoebe to come by Ralph Lauren during lunch.',
+      context_ko: 'Rachel이 Phoebe에게 점심 시간에 Ralph Lauren에 방문하도록 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X7'
+    },
+    {
+      phrase: 'The next thing I know, we\'re making out.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing rapid escalation from introduction to passionate kissing without explanation. Shows casual acceptance of spontaneous action. Demonstrates lack of consequence awareness.',
+      meaning_ko: '설명 없이 소개에서 열정적 키스로의 빠른 확대를 설명합니다. 자발적 행동의 캐주얼 수용을 보여줍니다. 결과 인식 부족을 보여줍니다.',
+      example: 'A: "What happened?" B: "The next thing I know, we\'re making out."',
+      example_ko: 'A: "뭐 됐어?" B: "그 다음 순간, 우린 열정적으로 키스하고 있었어."',
+      context: 'Phoebe explaining how she ended up kissing Ralph Lauren in the copy room.',
+      context_ko: 'Phoebe가 복사실에서 Ralph Lauren과 키스하게 된 경과를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X8'
+    },
+    {
+      phrase: 'What am I supposed to do, ask every guy I make out with if he\'s married?',
+      partOfSpeech: 'question',
+      meaning: 'Sarcastically questioning expectation while ironically revealing pattern of reckless behavior. Shows defensive rationalization. Demonstrates misguided logic.',
+      meaning_ko: '기대치를 풍자적으로 질문하면서 무모한 행동의 패턴을 아이러니하게 드러냅니다. 방어적 합리화를 보여줍니다. 잘못된 논리를 보여줍니다.',
+      example: 'A: "He\'s married!" B: "What am I supposed to do, ask every guy I make out with if he\'s married?"',
+      example_ko: 'A: "그는 결혼했어!" B: "난 뭐해야 돼? 내가 키스한 모든 남자에게 결혼했는지 물어봐야 해?"',
+      context: 'Phoebe defensively responding to learning Ralph Lauren is married.',
+      context_ko: 'Phoebe가 Ralph Lauren이 결혼했다는 것을 알고 방어적으로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X9'
+    },
+    {
+      phrase: 'There\'s a kid in this picture. Is it a relative?',
+      partOfSpeech: 'question',
+      meaning: 'Questioning presence of child in decoration with assumption of personal connection. Shows concern about appropriateness. Demonstrates uncertainty about roommate\'s choices.',
+      meaning_ko: '개인적 연결 가정으로 장식에서 아이의 존재를 질문합니다. 적절성에 대한 우려를 보여줍니다. 룸메이트의 선택에 대한 불확실성을 보여줍니다.',
+      example: 'A: "I put up a picture." B: "There\'s a kid in this picture. Is it a relative?"',
+      example_ko: 'A: "나 그림을 걸었어." B: "이 그림에 아이가 있어. 친척이야?"',
+      context: 'Joey questioning Anne Geddes baby photograph Janine hung up.',
+      context_ko: 'Joey가 Janine이 걸어 놓은 Anne Geddes 아기 사진을 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X10'
+    },
+    {
+      phrase: 'I don\'t want to be a jerk, but you\'re changing too much around here.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing complaint while attempting to soften criticism through disclaimer. Shows attempt at politeness before complaint. Demonstrates reluctant confrontation.',
+      meaning_ko: '거부적 평가를 통해 비판을 완화하려는 시도를 하면서 불평을 표현합니다. 불평 전에 정중함 시도를 보여줍니다. 마지못한 대면을 보여줍니다.',
+      example: 'A: "Is something wrong?" B: "I don\'t want to be a jerk, but you\'re changing too much around here."',
+      example_ko: 'A: "뭔가 문제 있어?" B: "난 못된 사람이 되고 싶지 않아. 하지만 넌 여기서 너무 많이 바꾸고 있어."',
+      context: 'Joey expressing frustration with Janine\'s decorating changes.',
+      context_ko: 'Joey가 Janine의 장식 변화에 대한 좌절감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X11'
+    },
+    {
+      phrase: 'The candles and the "foofy schmoofer" thing here.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissively describing feminine decorative items with made-up mocking term. Shows disdain for unfamiliar items. Demonstrates contemptuous language.',
+      meaning_ko: '만들어낸 조롱 용어로 여성 장식 항목을 경멸적으로 설명합니다. 낯선 항목에 대한 경멸을 보여줍니다. 경멸적 언어를 보여줍니다.',
+      example: 'A: "These are decorative." B: "The candles and the foofy schmoofer thing here."',
+      example_ko: 'A: "이건 장식용이야." B: "양초들과 여기의 foofy schmoofer 것."',
+      context: 'Joey mockingly describing feminine decorative items in his apartment.',
+      context_ko: 'Joey가 자신의 아파트의 여성 장식 항목을 조롱합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X12'
+    },
+    {
+      phrase: 'My towel is not on the floor, where I keep it.',
+      partOfSpeech: 'expression',
+      meaning: 'Complaining about organization improvement being contrary to his untidy preferences. Shows resistance to cleanliness. Demonstrates defense of sloppiness.',
+      meaning_ko: '조직 개선이 자신의 정리되지 않은 선호도에 반대한다고 불평합니다. 청결함에 대한 저항을 보여줍니다. 엉성함의 방어를 보여줍니다.',
+      example: 'A: "I organized the towels." B: "My towel is not on the floor, where I keep it."',
+      example_ko: 'A: "나 수건을 정리했어." B: "내 수건이 바닥에 없어. 내가 보관하는 곳에."',
+      context: 'Joey complaining that Janine put his towel on a hook instead of floor.',
+      context_ko: 'Joey가 Janine이 자신의 수건을 바닥 대신 후크에 놓은 것에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X13'
+    },
+    {
+      phrase: 'I think I shouldn\'t look directly at them.',
+      partOfSpeech: 'expression',
+      meaning: 'Humorously suggesting something is visually overwhelming or excessive. Shows exaggeration for comedic effect. Demonstrates joking about overdone results.',
+      meaning_ko: '무언가가 시각적으로 압도적이거나 과도하다고 유머러스하게 제안합니다. 코미디 효과를 위한 과장을 보여줍니다. 과도한 결과에 대한 농담을 보여줍니다.',
+      example: 'A: "What do you think of my teeth?" B: "I think I shouldn\'t look directly at them."',
+      example_ko: 'A: "내 이빨을 어떻게 생각해?" B: "난 그걸 직접 봐서 안 될 것 같아."',
+      context: 'Monica joking about Chandler\'s overly whitened teeth.',
+      context_ko: 'Monica가 Chandler의 지나치게 미백된 이빨을 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X14'
+    },
+    {
+      phrase: 'What was wrong with your old human teeth?',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically questioning dental procedure by implying result looks inhuman. Shows exaggeration of appearance change. Demonstrates comedic exaggeration.',
+      meaning_ko: '결과가 인간이 아닌 것처럼 보인다고 암시하여 치과 시술을 풍자적으로 질문합니다. 외모 변화의 과장을 보여줍니다. 코미디 과장을 보여줍니다.',
+      example: 'A: "Are my teeth better?" B: "What was wrong with your old human teeth?"',
+      example_ko: 'A: "내 이빨이 더 나아?" B: "너의 이전 인간 이빨이 뭐가 잘못되었어?"',
+      context: 'Ross sarcastically commenting on Chandler\'s overly whitened teeth results.',
+      context_ko: 'Ross가 Chandler의 지나치게 미백된 이빨 결과에 대해 풍자적으로 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E8X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

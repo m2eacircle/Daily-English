@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 5',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Rachel discovers secret marriage to Ross. Phoebe babysits Frank\'s triplets. Chandler pretends to own found Porsche.',
+    expressions: [
+    {
+      phrase: 'When? After the birth of our first secret child?',
+      partOfSpeech: 'question',
+      meaning: 'Sarcastically questioning delayed announcement timing. Shows mockery of poor planning. Demonstrates sarcastic incredulity.',
+      meaning_ko: '지연된 발표 타이밍을 풍자적으로 질문합니다. 형편없는 계획의 조롱을 보여줍니다. 풍자적인 믿음 거부를 보여줍니다.',
+      example: 'A: "I was going to tell you." B: "When? After the birth of our first secret child?"',
+      example_ko: 'A: "난 너한테 말할 거였어." B: "언제? 첫 번째 비밀 아이 탄생 후?"',
+      context: 'Rachel sarcastically questioning Ross about hiding Vegas marriage.',
+      context_ko: 'Rachel이 Ross가 Vegas 결혼을 숨긴 것에 대해 풍자적으로 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X1'
+    },
+    {
+      phrase: 'At what point did you think this was a successful marriage?',
+      partOfSpeech: 'question',
+      meaning: 'Asking when someone considered a failed situation as successful. Shows rhetorical mockery. Demonstrates pointed sarcasm.',
+      meaning_ko: '누군가가 실패한 상황을 언제 성공으로 생각했는지 묻습니다. 수사적 조롱을 보여줍니다. 날카로운 풍자를 보여줍니다.',
+      example: 'A: "It\'s kind of funny." B: "At what point did you think this was a successful marriage?"',
+      example_ko: 'A: "이건 좀 재미있어." B: "이게 언제 성공한 결혼이라고 생각했어?"',
+      context: 'Rachel questioning Ross\'s flawed perspective on the situation.',
+      context_ko: 'Rachel이 상황에 대한 Ross의 결함 있는 관점을 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X2'
+    },
+    {
+      phrase: 'I have a sickness.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically diagnosing someone with inability to stop lying. Shows exasperated accusation. Demonstrates frustrated observation.',
+      meaning_ko: '누군가를 거짓말을 멈출 수 없는 질환으로 풍자적으로 진단합니다. 지친 비난을 보여줍니다. 답답한 관찰을 보여줍니다.',
+      example: 'A: "That\'s another lie." B: "I have a sickness."',
+      example_ko: 'A: "또 다른 거짓이야." B: "난 질환이 있어."',
+      context: 'Phoebe sarcastically accusing Ross of chronic lying.',
+      context_ko: 'Phoebe가 Ross를 만성적 거짓말쟁이로 풍자적으로 비난합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X3'
+    },
+    {
+      phrase: 'You\'re not married to any more of us, are you?',
+      partOfSpeech: 'question',
+      meaning: 'Sarcastically checking if secretly married to multiple people. Shows humorous fear. Demonstrates joking accusation.',
+      meaning_ko: '다른 사람들과 비밀리에 결혼했는지 풍자적으로 확인합니다. 유머러스한 두려움을 보여줍니다. 농담하는 비난을 보여줍니다.',
+      example: 'A: "I didn\'t tell anyone." B: "You\'re not married to any more of us, are you?"',
+      example_ko: 'A: "난 누구에게도 말 안 했어." B: "너 우리 중 더 많은 사람들과 결혼한 거 아니지?"',
+      context: 'Monica checking if Ross has other secret marriages.',
+      context_ko: 'Monica가 Ross가 다른 비밀 결혼이 있는지 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X4'
+    },
+    {
+      phrase: 'I saved up for 350 years.',
+      partOfSpeech: 'expression',
+      meaning: 'Making exaggerated joke about salary being too low. Shows humorous complaint about wages. Demonstrates comedic despair.',
+      meaning_ko: '급여가 너무 낮다는 과장된 농담을 합니다. 임금에 대한 유머러스한 불평을 보여줍니다. 코미디 절망을 보여줍니다.',
+      example: 'A: "Is that your Porsche?" B: "I make 4 bucks an hour. I saved up for 350 years."',
+      example_ko: 'A: "그게 너 포르셰야?" B: "난 시간에 4달러를 벌어. 350년을 저축했어."',
+      context: 'Gunther joking about how long it took to save for his car.',
+      context_ko: 'Gunther가 자신의 자동차를 위해 저축하는 데 얼마나 오래 걸렸는지 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X5'
+    },
+    {
+      phrase: 'My husband, the apple of my eye.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically referring to spouse as beloved while being angry. Shows ironic affection. Demonstrates sarcastic endearment.',
+      meaning_ko: '화난 상태에서 배우자를 사랑하는 사람으로 풍자적으로 부릅니다. 아이러니한 애정을 보여줍니다. 풍자적 애정을 보여줍니다.',
+      example: 'A: "I\'m angry at you." B: "My husband, the apple of my eye."',
+      example_ko: 'A: "난 너한테 화났어." B: "내 남편, 내 눈의 사과."',
+      context: 'Rachel sarcastically greeting Ross after finding out about secret marriage.',
+      context_ko: 'Rachel이 비밀 결혼을 알아낸 후 Ross를 풍자적으로 인사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X6'
+    },
+    {
+      phrase: 'I got us a court date for tomorrow at 2.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing scheduled appointment for legal proceedings. Shows taking action. Demonstrates decisive planning.',
+      meaning_ko: '법적 절차를 위해 예정된 약속을 발표합니다. 조치를 취하는 것을 보여줍니다. 결단력 있는 계획을 보여줍니다.',
+      example: 'A: "We need to fix this." B: "I got us a court date for tomorrow at 2."',
+      example_ko: 'A: "우리가 이걸 고쳐야 해." B: "난 내일 2시에 법정 날짜를 예약했어."',
+      context: 'Rachel scheduling appointment to get annulment from Ross.',
+      context_ko: 'Rachel이 Ross로부터 혼인무효를 받기 위해 약속을 예약합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X7'
+    },
+    {
+      phrase: 'I\'m gonna do this my way, and I don\'t wanna hear a peep out of you.',
+      partOfSpeech: 'expression',
+      meaning: 'Demanding sole control of situation without input. Shows insistence on independence. Demonstrates refusal of help.',
+      meaning_ko: '도움 없이 상황을 전적으로 통제하도록 요구합니다. 독립성에 대한 주장을 보여줍니다. 도움 거부를 보여줍니다.',
+      example: 'A: "I can help." B: "I\'m gonna do this my way, and I don\'t wanna hear a peep out of you."',
+      example_ko: 'A: "난 도와줄 수 있어." B: "난 내 방식대로 할 거고, 넌 한마디도 안 할 거야."',
+      context: 'Rachel taking control of annulment process without Ross\'s input.',
+      context_ko: 'Rachel이 Ross의 도움 없이 혼인무효 과정을 통제합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X8'
+    },
+    {
+      phrase: 'Thanks to you, I\'m halfway there.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically blaming someone for setting negative precedent. Shows bitter accusation. Demonstrates resentful acknowledgment.',
+      meaning_ko: '부정적인 선례를 정한 것에 대해 누군가를 풍자적으로 비난합니다. 쓴 비난을 보여줍니다. 분개한 인정을 보여줍니다.',
+      example: 'A: "You\'d understand if you had two failed marriages." B: "Thanks to you, I\'m halfway there."',
+      example_ko: 'A: "넌 두 번 실패한 결혼이 있으면 이해할 거야." B: "너 때문에, 난 이미 중간이야."',
+      context: 'Rachel sarcastically crediting Ross with putting her on path to divorce.',
+      context_ko: 'Rachel이 Ross를 풍자적으로 이혼 길에 놓은 것에 대해 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X9'
+    },
+    {
+      phrase: 'I don\'t think I\'ve ever been this angry.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing extreme level of anger beyond previous experiences. Shows unprecedented emotion. Demonstrates intense frustration.',
+      meaning_ko: '이전 경험보다 극단적인 분노 수준을 표현합니다. 전례 없는 감정을 보여줍니다. 강렬한 좌절감을 보여줍니다.',
+      example: 'A: "I\'m sorry." B: "I don\'t think I\'ve ever been this angry."',
+      example_ko: 'A: "미안해." B: "난 이렇게 화난 적이 없었어."',
+      context: 'Rachel expressing extent of anger toward Ross.',
+      context_ko: 'Rachel이 Ross에 대한 분노의 정도를 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X10'
+    },
+    {
+      phrase: 'What about the time I said we were on a break?',
+      partOfSpeech: 'question',
+      meaning: 'Reminding someone of past moment that caused more anger. Shows deflecting blame to past conflict. Demonstrates defensive reference.',
+      meaning_ko: '더 많은 분노를 일으킨 과거 순간을 상기시킵니다. 과거 갈등에 대한 비난 회피를 보여줍니다. 방어적 참조를 보여줍니다.',
+      example: 'A: "I\'ve never been this angry." B: "What about the time I said we were on a break?"',
+      example_ko: 'A: "난 이렇게 화난 적이 없었어." B: "우리가 break 중이라고 한 때는?"',
+      context: 'Ross reminding Rachel of their previous major conflict.',
+      context_ko: 'Ross가 Rachel에게 이전의 주요 갈등을 상기시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X11'
+    },
+    {
+      phrase: 'Do you think they\'re having fun?',
+      partOfSpeech: 'question',
+      meaning: 'Anxiously checking on others\' experience quality. Shows concern for wellbeing of those in care. Demonstrates nervous caregiving.',
+      meaning_ko: '다른 사람들의 경험 품질을 불안하게 확인합니다. 보살핌을 받는 사람들의 웰빙에 대한 관심을 보여줍니다. 신경쓰는 보살핌을 보여줍니다.',
+      example: 'A: "How are the babies?" B: "Do you think they\'re having fun?"',
+      example_ko: 'A: "아기들은 어떻게 돼?" B: "그들이 재미있어 하나?"',
+      context: 'Phoebe nervously checking if babies are enjoying being cared for.',
+      context_ko: 'Phoebe가 아기들이 보살핌을 받는 것을 즐기고 있는지 신경쓰며 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X12'
+    },
+    {
+      phrase: 'We should really be playing a zone defense.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting changed strategy for organizing responsibilities. Shows sports-themed approach to problem solving. Demonstrates tactical suggestion.',
+      meaning_ko: '책임을 구성하기 위해 변경된 전략을 제안합니다. 문제 해결에 대한 스포츠 테마의 접근 방식을 보여줍니다. 전술적 제안을 보여줍니다.',
+      example: 'A: "How should we handle this?" B: "We should really be playing a zone defense."',
+      example_ko: 'A: "우리가 이걸 어떻게 해야 해?" B: "우린 정말 zone defense를 해야 해."',
+      context: 'Joey suggesting organized baby care strategy using sports terminology.',
+      context_ko: 'Joey가 스포츠 용어를 사용하여 조직된 아기 보살핌 전략을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X13'
+    },
+    {
+      phrase: 'I should not be in the end zone.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging inexperience prevents high-responsibility assignment. Shows recognition of limitations. Demonstrates humble self-assessment.',
+      meaning_ko: '경험 부족이 높은 책임 할당을 막는다고 인정합니다. 제한에 대한 인식을 보여줍니다. 겸손한 자기 평가를 보여줍니다.',
+      example: 'A: "You be in charge of wiping." B: "I\'m a rookie. I should not be in the end zone."',
+      example_ko: 'A: "넌 닦는 걸 담당해." B: "난 초보자야. 난 end zone에 있으면 안 돼."',
+      context: 'Phoebe accepting that she shouldn\'t handle most difficult baby care task.',
+      context_ko: 'Phoebe가 가장 어려운 아기 보살핌 일을 해서는 안 된다고 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X14'
+    },
+    {
+      phrase: 'I don\'t come to the city much.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining infrequency of urban visits to justify unfamiliarity. Shows admission of outsider status. Demonstrates contextual excuse.',
+      meaning_ko: '도시 방문 불가능성을 설명하여 낯섦을 정당화합니다. 외부인 지위의 인정을 보여줍니다. 상황 변명을 보여줍니다.',
+      example: 'A: "This is strange." B: "I don\'t come to the city much."',
+      example_ko: 'A: "이건 이상해." B: "난 도시에 자주 안 와."',
+      context: 'Porsche owner explaining his unfamiliarity with city and Joey\'s behavior.',
+      context_ko: 'Porsche 주인이 도시와 Joey의 행동에 대한 자신의 낯섦을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E5X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

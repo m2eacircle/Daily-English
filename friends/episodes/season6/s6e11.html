@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 11',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Joey and Janine kiss at midnight. Pottery Barn controversy. Couples dinner. Phoebe\'s antique table discovery.',
+    expressions: [
+    {
+      phrase: 'You think I have a chance with Janine?',
+      partOfSpeech: 'question',
+      meaning: 'Hopefully asking whether romantic prospects exist with someone specific. Shows vulnerability. Demonstrates seeking romantic reassurance.',
+      meaning_ko: '특정 누군가와 로맨틱한 전망이 존재하는지 희망차게 묻습니다. 취약성을 보여줍니다. 로맨틱한 안심을 추구하는 것을 보여줍니다.',
+      example: 'A: "You think I have a chance with her?" B: "Honestly, probably not."',
+      example_ko: 'A: "넌 내가 그녀와 기회가 있다고 생각해?" B: "솔직히, 아마 아니야."',
+      context: 'Joey seeking advice about romantic possibilities with his roommate Janine.',
+      context_ko: 'Joey가 룸메이트 Janine과의 로맨틱한 가능성에 대해 조언을 구합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X1'
+    },
+    {
+      phrase: 'Ugh, we\'ve been through this.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing frustration about repeating the same difficult conversation or topic. Shows exasperation. Demonstrates tired impatience.',
+      meaning_ko: '같은 어려운 대화나 주제를 반복하는 것에 대해 좌절감을 표현합니다. 분노를 보여줍니다. 지친 조바심을 보여줍니다.',
+      example: 'A: "I really think she likes me." B: "Ugh, we\'ve been through this."',
+      example_ko: 'A: "나는 정말 그녀가 나를 좋아한다고 생각해." B: "휴, 우리는 이미 이 얘기했어."',
+      context: 'Rachel or Chandler expressing fatigue about Joey\'s ongoing Janine obsession.',
+      context_ko: 'Rachel 또는 Chandler가 Joey의 지속적인 Janine 집착에 대한 피로감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X2'
+    },
+    {
+      phrase: 'Don\'t do this to yourself.',
+      partOfSpeech: 'expression',
+      meaning: 'Warning someone against self-inflicted emotional pain or disappointment through false hope. Shows caring concern. Demonstrates protective advice.',
+      meaning_ko: '거짓 희망을 통해 자가 가해적 감정 고통이나 실망을 경고합니다. 배려하는 관심을 보여줍니다. 보호적 조언을 보여줍니다.',
+      example: 'A: "Maybe she\'ll change her mind." B: "Don\'t do this to yourself."',
+      example_ko: 'A: "아마 그녀가 마음을 바꿀 거야." B: "자기 자신에게 이렇게 하지 마."',
+      context: 'Someone pleading with Joey to accept Janine\'s rejection before it gets worse.',
+      context_ko: '누군가가 Joey에게 상황이 악화되기 전에 Janine의 거절을 받아들이라고 간청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X3'
+    },
+    {
+      phrase: 'She made it clear it isn\'t going to happen.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating someone\'s unambiguous rejection or denial without room for misinterpretation. Shows blunt honesty. Demonstrates stating hard facts.',
+      meaning_ko: '잘못 해석할 여지 없이 누군가의 명확한 거절이나 거부를 언급합니다. 무뚝뚝한 솔직함을 보여줍니다. 어려운 사실을 진술하는 것을 보여줍니다.',
+      example: 'A: "Maybe one day..." B: "She made it clear it isn\'t going to happen."',
+      example_ko: 'A: "어쩌면 언젠가는..." B: "그녀는 그게 안 될 거라는 게 명확했어."',
+      context: 'Reinforcing to Joey that Janine\'s rejection is final and not open for negotiation.',
+      context_ko: 'Joey에게 Janine의 거절이 최종적이며 협상의 여지가 없다는 것을 재확인시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X4'
+    },
+    {
+      phrase: 'I just kissed her!',
+      partOfSpeech: 'exclamation',
+      meaning: 'Announcing a romantic action taken with excitement and revelation of recent events. Shows triumphant disclosure. Demonstrates proud excitement.',
+      meaning_ko: '최근 사건의 흥분과 폭로와 함께 로맨틱한 행동을 공표합니다. 승리적인 공개를 보여줍니다. 자랑스러운 흥분을 보여줍니다.',
+      example: 'A: "She would never..." B: "I just kissed her!"',
+      example_ko: 'A: "그녀는 절대..." B: "내가 방금 그녀를 키스했어!"',
+      context: 'Joey triumphantly revealing he successfully kissed Janine at midnight on New Year\'s Eve.',
+      context_ko: 'Joey가 New Year\'s Eve에 자정에 성공적으로 Janine을 키스했음을 자랑스럽게 공개합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X5'
+    },
+    {
+      phrase: 'Oh, we kissed it up real nice.',
+      partOfSpeech: 'expression',
+      meaning: 'Bragging about the quality and intensity of a kiss in casual, confident language. Shows romantic pride. Demonstrates boastful satisfaction.',
+      meaning_ko: '캐주얼하고 자신감 있는 언어로 키스의 질과 강도에 대해 자랑합니다. 로맨틱한 자부심을 보여줍니다. 자랑적인 만족을 보여줍니다.',
+      example: 'A: "How was it?" B: "Oh, we kissed it up real nice."',
+      example_ko: 'A: "어땠어?" B: "오, 우린 정말 잘 키스했어."',
+      context: 'Joey proudly describing the quality and passion of kissing Janine.',
+      context_ko: 'Joey가 Janine을 키스한 것의 질과 열정을 자랑스럽게 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X6'
+    },
+    {
+      phrase: 'So you kissed. Then what happened?',
+      partOfSpeech: 'question',
+      meaning: 'Asking for continuation of events after initial action with curiosity about developments. Shows engaged interest. Demonstrates seeking full narrative.',
+      meaning_ko: '초기 행동 후 사건의 지속을 요청하고 발전에 대한 호기심을 표현합니다. 참여하는 관심을 보여줍니다. 전체 내러티브 추구를 보여줍니다.',
+      example: 'A: "We kissed." B: "So you kissed. Then what happened?"',
+      example_ko: 'A: "우리 키스했어." B: "그럼 키스했고. 그다음에 뭐 됐어?"',
+      context: 'Friends asking Joey for more details about what transpired after kissing Janine.',
+      context_ko: '친구들이 Janine을 키스한 후 무슨 일이 일어났는지에 대해 더 많은 세부 정보를 Joey에게 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X7'
+    },
+    {
+      phrase: 'Just leave your lips?',
+      partOfSpeech: 'question',
+      meaning: 'Flirtatiously asking someone to keep their lips available for kissing while departing. Shows romantic playfulness. Demonstrates suggestive farewell.',
+      meaning_ko: '떠나면서 키스를 할 수 있도록 입술을 남겨두도록 작업 걸어 요청합니다. 로맨틱한 장난기를 보여줍니다. 암시적인 작별을 보여줍니다.',
+      example: 'A: "I have to go." B: "Just leave your lips?"',
+      example_ko: 'A: "나는 가야 해." B: "그냥 입술만 남겨?"',
+      context: 'Janine flirtatiously asking Joey to let her kiss him before she leaves for dance class.',
+      context_ko: 'Janine이 Joey에게 춤 수업에 가기 전에 자신이 그를 키스하게 해달라고 작업을 겁니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X8'
+    },
+    {
+      phrase: 'I could do it forever.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing unlimited enthusiasm and willingness to continue an enjoyable activity indefinitely. Shows passionate dedication. Demonstrates extreme satisfaction.',
+      meaning_ko: '즐거운 활동을 계속하려는 무제한의 열정과 의사를 표현합니다. 열정적인 헌신을 보여줍니다. 극단적인 만족을 보여줍니다.',
+      example: 'A: "You really like kissing her?" B: "I could do it forever."',
+      example_ko: 'A: "넌 정말 그녀를 키스하는 걸 좋아해?" B: "나는 영원히 할 수 있어."',
+      context: 'Joey gushing enthusiastically about how much he loves kissing Janine.',
+      context_ko: 'Joey가 Janine을 키스하는 것을 얼마나 좋아하는지 열정적으로 흘러 넘칩니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X9'
+    },
+    {
+      phrase: 'She kisses better than my mom cooks.',
+      partOfSpeech: 'expression',
+      meaning: 'Comparing romantic kissing ability to family cooking skill as ultimate compliment using familiar reference. Shows hyperbolic praise. Demonstrates exaggerated admiration.',
+      meaning_ko: '친숙한 참조를 사용하여 로맨틱한 키스 능력을 가족 요리 능력과 최고의 찬사로 비교합니다. 과장된 칭찬을 보여줍니다. 과장된 감탄을 보여줍니다.',
+      example: 'A: "How good is she?" B: "She kisses better than my mom cooks."',
+      example_ko: 'A: "그녀가 얼마나 좋아?" B: "그녀는 내 엄마가 요리하는 것보다 더 잘 키스해."',
+      context: 'Joey giving Janine an exaggerated, family-based compliment about her kissing.',
+      context_ko: 'Joey가 Janine에게 그녀의 키스에 대해 과장되고 가족 기반의 찬사를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X10'
+    },
+    {
+      phrase: 'I\'m so glad you said "cooks."',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing relief at someone choosing a specific word instead of alternative with darker implication. Shows humor about narrowly avoided bad phrasing.',
+      meaning_ko: '누군가가 더 어두운 함축이 있는 대안 대신 특정 단어를 선택한 것에 대해 안도감을 표현합니다. 거의 피한 나쁜 표현에 대한 유머를 보여줍니다.',
+      example: 'A: "She\'s better than my mom..." B: "I\'m so glad you said cooks."',
+      example_ko: 'A: "그녀는 내 엄마보다..." B: "넌 요리한다고 말했으니까 정말 다행이야."',
+      context: 'Someone reacting with relief that Joey said "cooks" and not something inappropriate about his mom.',
+      context_ko: '누군가가 Joey가 "요리한다"고 말했고 그의 엄마에 대해 부적절한 것을 말하지 않은 것에 안도감으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X11'
+    },
+    {
+      phrase: 'Does anyone even know what an apothecary is?',
+      partOfSpeech: 'question',
+      meaning: 'Skeptically challenging others\' understanding of an obscure historical term to highlight its obscurity. Shows doubting assumption of knowledge.',
+      meaning_ko: '모호한 역사적 용어의 불명확성을 강조하기 위해 회의적으로 다른 사람들의 이해에 의문을 제기합니다. 지식 가정을 의심하는 것을 보여줍니다.',
+      example: 'A: "It\'s an apothecary table." B: "Does anyone even know what an apothecary is?"',
+      example_ko: 'A: "그건 약사 탁자야." B: "누가 약사가 뭔지 알아?"',
+      context: 'Monica or someone questioning the validity of using "apothecary" as furniture justification.',
+      context_ko: 'Monica나 누군가가 가구 정당화로 "약사"를 사용하는 타당성에 의문을 제기합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X12'
+    },
+    {
+      phrase: 'I hate mass-produced stuff.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing strong preference for unique, handmade items over factory-manufactured goods. Shows philosophical materialist stance. Demonstrates individualistic values.',
+      meaning_ko: '공장에서 제조한 상품보다 독특하고 손수 만든 항목에 대한 강한 선호를 표현합니다. 철학적 물질주의적 입장을 보여줍니다. 개인주의적 가치를 보여줍니다.',
+      example: 'A: "It\'s from Pottery Barn." B: "I hate mass-produced stuff."',
+      example_ko: 'A: "그건 Pottery Barn에서 나왔어." B: "나는 대량 생산 물건을 싫어해."',
+      context: 'Phoebe explaining her disdain for mass-produced furniture like Pottery Barn items.',
+      context_ko: 'Phoebe가 Pottery Barn 물건 같은 대량 생산 가구에 대한 경멸을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X13'
+    },
+    {
+      phrase: 'Her furniture should have a story behind it.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing belief that personal possessions should carry meaningful history and unique origin narrative. Shows valuing authenticity. Demonstrates preferring genuine background.',
+      meaning_ko: '개인 소유물이 의미 있는 역사와 독특한 기원 내러티브를 전달해야 한다는 믿음을 설명합니다. 진정성을 높이 평가하는 것을 보여줍니다. 진정한 배경 선호를 보여줍니다.',
+      example: 'A: "Why doesn\'t she like Pottery Barn?" B: "Her furniture should have a story behind it."',
+      example_ko: 'A: "왜 그녀는 Pottery Barn을 좋아하지 않아?" B: "그녀의 가구는 그 뒤에 이야기가 있어야 해."',
+      context: 'Explaining Phoebe\'s philosophy that authentic items need personal history and meaning.',
+      context_ko: 'Phoebe의 진정한 항목이 개인적 역사와 의미가 필요하다는 철학을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X14'
+    },
+    {
+      phrase: 'It\'s from yore.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing something as coming from indefinite ancient times using archaic poetic language. Shows humorous vagueness about origins. Demonstrates playful historical evasion.',
+      meaning_ko: '고대 시적 언어를 사용하여 무언가를 부정확한 고대 시간에서 나온 것으로 설명합니다. 기원에 대한 유머러스한 모호성을 보여줍니다. 장난스러운 역사적 회피를 보여줍니다.',
+      example: 'A: "What period is it from?" B: "It\'s from yore."',
+      example_ko: 'A: "그게 어느 시대거?" B: "그건 예전부터야."',
+      context: 'Chandler vaguely describing the "apothecary table" with archaic language to impress Phoebe.',
+      context_ko: 'Chandler가 Phoebe에게 깊은 인상을 주기 위해 "약사 탁자"를 고대 언어로 모호하게 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E11X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

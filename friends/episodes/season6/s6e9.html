@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 9',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Thanksgiving episode. Chandler\'s parents visit. Monica worries about Chandler\'s reputation. Joey goes to dancer party.',
+    expressions: [
+    {
+      phrase: 'Guess who\'s coming to Thanksgiving dinner.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing surprising or significant arrival using suspenseful phrasing. Shows anticipation building. Demonstrates creating curiosity before revelation.',
+      meaning_ko: '놀라운 또는 중요한 도착을 의심스러운 표현을 사용하여 발표합니다. 기대감 구축을 보여줍니다. 계시 전에 호기심을 만드는 것을 보여줍니다.',
+      example: 'A: "What\'s the surprise?" B: "Guess who\'s coming to Thanksgiving dinner."',
+      example_ko: 'A: "뭐가 깜짝이야?" B: "누가 추수감사절 저녁에 올 거 봐."',
+      context: 'Monica announcing her parents are coming for Thanksgiving.',
+      context_ko: 'Monica가 부모님이 추수감사절을 위해 오고 있다고 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X1'
+    },
+    {
+      phrase: 'If you could not mention that we live together, that\'d be great.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting someone keep information secret in casual tone. Shows attempt at lightness while making serious request. Demonstrates indirect request for concealment.',
+      meaning_ko: '캐주얼한 톤으로 누군가가 정보를 비밀로 유지하도록 요청합니다. 심각한 요청을 하면서 가벼움 시도를 보여줍니다. 은폐에 대한 간접적 요청을 보여줍니다.',
+      example: 'A: "I\'ll tell them." B: "If you could not mention that we live together, that\'d be great."',
+      example_ko: 'A: "난 그들한테 말해." B: "우리가 함께 산다는 걸 언급하지 않아 줄 수 있으면 좋을 텐데."',
+      context: 'Monica asking Chandler to hide their living situation from her parents.',
+      context_ko: 'Monica가 Chandler에게 부모님으로부터 생활 상황을 숨기도록 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X2'
+    },
+    {
+      phrase: 'They don\'t like you.',
+      partOfSpeech: 'expression',
+      meaning: 'Delivering blunt negative judgment without softening or explanation. Shows direct honesty. Demonstrates harsh truth statement.',
+      meaning_ko: '완화나 설명 없이 둔탁한 부정 판단을 전달합니다. 직접적 정직함을 보여줍니다. 가혹한 진실 성명을 보여줍니다.',
+      example: 'A: "Don\'t they like me?" B: "They don\'t like you."',
+      example_ko: 'A: "그들이 나를 안 좋아해?" B: "그들이 널 안 좋아해."',
+      context: 'Monica finally revealing why her parents don\'t approve of Chandler.',
+      context_ko: 'Monica가 마침내 부모님이 Chandler를 승인하지 않는 이유를 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X3'
+    },
+    {
+      phrase: 'Maybe because you used to be aloof or that you\'re really sarcastic.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering possible explanations for negative judgment in conditional phrasing. Shows hesitant blame assignment. Demonstrates listing character flaws.',
+      meaning_ko: '조건부 표현으로 부정 판단에 대한 가능한 설명을 제시합니다. 주저하는 비난 할당을 보여줍니다. 특성 결함을 나열하는 것을 보여줍니다.',
+      example: 'A: "Why don\'t they like me?" B: "Maybe because you used to be aloof or that you\'re really sarcastic."',
+      example_ko: 'A: "왜 그들이 날 안 좋아해?" B: "아마도 넌 무관심했거나 너무 풍자적이기 때문일 거야."',
+      context: 'Monica listing reasons her parents dislike Chandler.',
+      context_ko: 'Monica가 부모님이 Chandler를 싫어하는 이유를 나열합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X4'
+    },
+    {
+      phrase: 'I will be charming. I will make them love me, then we\'ll tell them.',
+      partOfSpeech: 'expression',
+      meaning: 'Proposing strategy to change negative opinion through personal charm before revealing sensitive information. Shows overconfidence in charisma. Demonstrates manipulative approach.',
+      meaning_ko: '민감한 정보를 공개하기 전에 개인적 매력을 통해 부정적 의견을 바꾸는 전략을 제안합니다. 카리스마에 대한 과신을 보여줍니다. 조작적 접근을 보여줍니다.',
+      example: 'A: "They won\'t approve." B: "I will be charming. I will make them love me, then we\'ll tell them."',
+      example_ko: 'A: "그들은 승인 안 할 거야." B: "난 매력적일 거야. 난 그들을 날 사랑하게 만들 거야. 그 다음 우리가 말할 거야."',
+      context: 'Chandler confidently planning to win over Monica\'s parents with charm.',
+      context_ko: 'Chandler가 자신감 있게 매력으로 Monica의 부모님을 이기려고 계획합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X5'
+    },
+    {
+      phrase: 'I don\'t think you\'ll ever get my parents that drunk.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking that charm won\'t work and only intoxication could have won the parents over. Shows sarcastic pessimism. Demonstrates humorous deflation of confidence.',
+      meaning_ko: '매력이 작동하지 않을 것이고 오직 중독만이 부모님을 이겼을 수 있다고 농담합니다. 풍자적 비관을 보여줍니다. 자신감의 유머러스한 수축을 보여줍니다.',
+      example: 'A: "I\'ll charm them." B: "I don\'t think you\'ll ever get my parents that drunk."',
+      example_ko: 'A: "난 그들을 유혹할 거야." B: "난 넌 내 부모님을 그렇게 취하게 할 수 없을 것 같아."',
+      context: 'Monica sarcastically commenting on Chandler\'s confidence about winning her parents over.',
+      context_ko: 'Monica가 Chandler의 부모님을 이기려는 자신감에 대해 풍자적으로 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X6'
+    },
+    {
+      phrase: 'Great. Another Thanksgiving with nothing to give thanks for.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically expressing despair about holiday mood by claiming lack of gratitude objects. Shows comedic pessimism. Demonstrates self-pitying humor.',
+      meaning_ko: '감사의 대상이 부족하다고 주장하여 휴일 분위기에 대한 절망을 풍자적으로 표현합니다. 코미디 비관을 보여줍니다. 자기-불쌍히 여기는 유머를 보여줍니다.',
+      example: 'A: "Happy Thanksgiving." B: "Great. Another Thanksgiving with nothing to give thanks for."',
+      example_ko: 'A: "추수감사절 잘 보내." B: "좋아. 감사할 거 없는 또 다른 추수감사절."',
+      context: 'Joey expressing pessimism about the holiday after hearing about Chandler\'s issues.',
+      context_ko: 'Joey가 Chandler의 문제에 대해 들은 후 휴일에 대한 비관을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X7'
+    },
+    {
+      phrase: 'We did say we\'d stop by this little thing Joey\'s roommate is having.',
+      partOfSpeech: 'expression',
+      meaning: 'Casually understating commitment to attend event using diminutive language. Shows reluctant acknowledgment of promise. Demonstrates evasive phrasing.',
+      meaning_ko: '축소어를 사용하여 이벤트 참석에 대한 약속을 우연하게 축소합니다. 약속의 마지못한 인정을 보여줍니다. 회피적 표현을 보여줍니다.',
+      example: 'A: "Are you leaving?" B: "We did say we\'d stop by this little thing Joey\'s roommate is having."',
+      example_ko: 'A: "넌 떠나고 있어?" B: "우린 Joey의 룸메이트가 열고 있는 작은 것에 들렀다고 말했어."',
+      context: 'Chandler trying to justify leaving Thanksgiving to go to Janine\'s party.',
+      context_ko: 'Chandler가 추수감사절을 떠나 Janine의 파티에 가는 것을 정당화하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X8'
+    },
+    {
+      phrase: 'All of her hot dancer friends are gonna be there and they\'ll be drinking and dancing.',
+      partOfSpeech: 'expression',
+      meaning: 'Listing appealing features of event to justify attendance using obvious attraction reasoning. Shows transparent motivation. Demonstrates honest desire statement.',
+      meaning_ko: '명백한 매력 추론을 사용하여 참석을 정당화하기 위해 이벤트의 매력적인 특징을 나열합니다. 투명한 동기를 보여줍니다. 정직한 욕망 성명을 보여줍니다.',
+      example: 'A: "Why do you want to go?" B: "All of her hot dancer friends are gonna be there and they\'ll be drinking and dancing."',
+      example_ko: 'A: "넌 왜 가고 싶어?" B: "그녀의 모든 핫한 댄서 친구들이 거기 있을 거고 그들은 마시고 춤을 출 거야."',
+      context: 'Joey and Chandler openly admitting their true reason for wanting to leave.',
+      context_ko: 'Joey와 Chandler가 떠나고 싶은 진정한 이유를 공개적으로 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X9'
+    },
+    {
+      phrase: 'You\'re not going. You said you\'d eat here and you\'ll eat here.',
+      partOfSpeech: 'expression',
+      meaning: 'Issuing firm command based on prior commitment, using repetition for emphasis. Shows authority assertion. Demonstrates parental firmness.',
+      meaning_ko: '강조를 위해 반복을 사용하여 이전 약속에 따른 확고한 명령을 내립니다. 권위 주장을 보여줍니다. 부모의 확고함을 보여줍니다.',
+      example: 'A: "Can I leave?" B: "You\'re not going. You said you\'d eat here and you\'ll eat here."',
+      example_ko: 'A: "난 나갈 수 있어?" B: "넌 가지 않을 거야. 넌 여기서 먹겠다고 했고 여기서 먹을 거야."',
+      context: 'Monica firmly preventing Chandler and Joey from leaving for the party.',
+      context_ko: 'Monica가 Chandler와 Joey가 파티에 가는 것을 확고하게 막습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X10'
+    },
+    {
+      phrase: 'It\'s like the first Thanksgiving when the Indians and Pilgrims sat down.',
+      partOfSpeech: 'expression',
+      meaning: 'Making ridiculous historical comparison to justify frivolous action using irony. Shows absurd rationalization. Demonstrates comedic logic failure.',
+      meaning_ko: '풍자를 사용하여 경박한 행동을 정당화하기 위해 터무니없는 역사적 비교를 합니다. 부조리한 합리화를 보여줍니다. 코미디 논리 실패를 보여줍니다.',
+      example: 'A: "That\'s not Thanksgiving." B: "It\'s like the first Thanksgiving when the Indians and Pilgrims sat down."',
+      example_ko: 'A: "그건 추수감사절이 아니야." B: "그건 인디언들과 순례자들이 앉은 첫 번째 추수감사절 같아."',
+      context: 'Joey making absurd historical comparison to justify going to the party.',
+      context_ko: 'Joey가 파티에 가는 것을 정당화하기 위해 터무니없는 역사적 비교를 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X11'
+    },
+    {
+      phrase: 'I have dandruff. There\'s no need to laugh and point.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging personal flaw publicly while asking for respectful treatment despite humiliation. Shows wounded dignity. Demonstrates self-aware complaint.',
+      meaning_ko: '개인적 결함을 공개적으로 인정하면서 모욕에도 불구하고 존중하는 대우를 요청합니다. 상처 입은 존엄성을 보여줍니다. 자기 인식 불평을 보여줍니다.',
+      example: 'A: "Look at that." B: "I have dandruff. There\'s no need to laugh and point."',
+      example_ko: 'A: "저기 봐." B: "난 비듬이 있어. 웃고 가리킬 필요 없어."',
+      context: 'Jack Geller embarrassed when dandruff is noticed after Monica comments on his appearance.',
+      context_ko: 'Jack Geller이 Monica가 외모를 언급한 후 비듬이 주목될 때 당황합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X12'
+    },
+    {
+      phrase: 'I dreamt that he saved me from a burning building and he was so brave and so strong.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing dream sequence that casts someone in heroic light as basis for changed perception. Shows fantasy-based judgment shift. Demonstrates frivolous attraction.',
+      meaning_ko: '누군가를 영웅적 빛으로 표현하는 꿈 수열을 설명하면서 인식 변화의 기초로 삼습니다. 판타지 기반 판단 전환을 보여줍니다. 경박한 매력을 보여줍니다.',
+      example: 'A: "What changed?" B: "I dreamt that he saved me from a burning building and he was so brave and so strong."',
+      example_ko: 'A: "뭐가 바뀌었어?" B: "난 그가 불타는 건물에서 나를 구했고 그는 너무 용감했고 너무 강했어."',
+      context: 'Phoebe explaining her new attraction to Mr. Geller based on a dream.',
+      context_ko: 'Phoebe가 꿈에 기초한 Mr. Geller에 대한 새로운 매력을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X13'
+    },
+    {
+      phrase: 'I have chosen to make a traditional English trifle.',
+      partOfSpeech: 'expression',
+      meaning: 'Formally announcing dessert selection using elevated language and deliberate phrasing. Shows enthusiasm and seriousness about dish. Demonstrates proud presentation.',
+      meaning_ko: '상승된 언어와 신중한 표현을 사용하여 디저트 선택을 공식적으로 발표합니다. 요리에 대한 열정과 진지함을 보여줍니다. 자랑스러운 프리젠테이션을 보여줍니다.',
+      example: 'A: "What\'s for dessert?" B: "I have chosen to make a traditional English trifle."',
+      example_ko: 'A: "디저트가 뭐야?" B: "나는 전통 영어 trifle을 만들기로 선택했어."',
+      context: 'Rachel formally announcing her dessert choice for Thanksgiving.',
+      context_ko: 'Rachel이 추수감사절을 위한 디저트 선택을 공식적으로 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X14'
+    },
+    {
+      phrase: 'Well, it\'s done about two minutes before it looks like that.',
+      partOfSpeech: 'expression',
+      meaning: 'Giving vague cooking guidance that creates more confusion instead of clarity. Shows inadequate instruction. Demonstrates unhelpful cooking advice.',
+      meaning_ko: '명확성 대신 더 많은 혼동을 만드는 모호한 요리 지도를 제공합니다. 부적절한 지시를 보여줍니다. 도움이 되지 않는 요리 조언을 보여줍니다.',
+      example: 'A: "How do I know when it\'s done?" B: "Well, it\'s done about two minutes before it looks like that."',
+      example_ko: 'A: "언제 되었는지 어떻게 알아?" B: "글쎄, 그렇게 보이기 약 2분 전에 되었어."',
+      context: 'Monica giving Rachel confusing guidance on cooking the butter for her trifle.',
+      context_ko: 'Monica가 Rachel에게 trifle용 버터를 요리하는 것에 대해 혼란스러운 지도를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E9X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

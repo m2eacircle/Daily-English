@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s6e18.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S6E18: Season 6, Episode 18</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S6E18: The One with the Rumor</div>
+        <div class="page-header-meta">Ross pursues student Elizabeth. Monica and Rachel's apartment catches fire. Joey auditions as fireman. Friends navigate relationships amid chaos.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s6e18"
             onclick="toggleBookmark('episode','episode-friends-s6e18','📋 Friends S6E18','friends/episodes/season6/s6e18.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 6, Episode 18',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Rumor',
+    description: 'Ross pursues student Elizabeth. Monica and Rachel\'s apartment catches fire. Joey auditions as fireman. Friends navigate relationships amid chaos.',
+    expressions: [
+    {
+      phrase: 'I just got my teacher evaluations.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating receipt of student feedback on teaching performance. The phrase conveys announcement of feedback collection. It demonstrates professional responsibility.',
+      meaning_ko: '학생 피드백 수집을 발표합니다. 이 표현은 교수 능력 평가를 전달합니다. 그것은 전문적 책임을 보여줍니다.',
+      example: 'A: "How did the class go?" B: "I just got my teacher evaluations."',
+      example_ko: 'A: "수업이 어땠어?" B: "방금 학생 평가를 받았어."',
+      context: 'Ross sharing feedback from his paleontology class.',
+      context_ko: 'Ross는 고생물학 수업의 피드백을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X1'
+    },
+    {
+      phrase: 'There\'s a big-selling calendar, huh?',
+      partOfSpeech: 'question',
+      meaning: 'Joking about popularity of calendars featuring attractive people. The phrase conveys humorous skepticism. It demonstrates comedic deflection.',
+      meaning_ko: '매력적인 사람이 나온 인기 있는 달력을 농담합니다. 이 표현은 유머러스한 회의를 전달합니다. 그것은 코미디 회피를 보여줍니다.',
+      example: 'A: "Someone called you a hottie." B: "There\'s a big-selling calendar, huh?"',
+      example_ko: 'A: "누군가가 넌 hottie라고 불렀어." B: "인기 있는 달력이 있네?"',
+      context: 'Monica joking about compliments in teacher evaluations.',
+      context_ko: 'Monica는 교수 평가의 칭찬에 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X2'
+    },
+    {
+      phrase: 'It\'s a girl.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting certainty about someone\'s gender identity. The phrase conveys confident assumption. It demonstrates definitive conclusion.',
+      meaning_ko: '누군가의 성 정체성에 대한 확실성을 주장합니다. 이 표현은 자신감 있는 가정을 전달합니다. 그것은 확정적 결론을 보여줍니다.',
+      example: 'A: "Are they male or female?" B: "It\'s a girl."',
+      example_ko: 'A: "그들은 남자야 여자야?" B: "여자야."',
+      context: 'Chandler confirming the secret admirer is female.',
+      context_ko: 'Chandler는 비밀 팬이 여자임을 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X3'
+    },
+    {
+      phrase: 'It is frowned upon.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining something is discouraged but not explicitly prohibited. The phrase conveys disapproval without formal prohibition. It demonstrates informal constraint.',
+      meaning_ko: '무언가가 명시적으로 금지되지는 않지만 권장되지 않습니다. 이 표현은 공식적 금지 없이 불인정을 전달합니다. 그것은 비공식적 제약을 보여줍니다.',
+      example: 'A: "Is it against the rules?" B: "No, but it is frowned upon."',
+      example_ko: 'A: "규칙 위반이야?" B: "아니, 하지만 권장되지 않아."',
+      context: 'Ross explaining policy on teacher-student relationships.',
+      context_ko: 'Ross는 교수-학생 관계 정책을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X4'
+    },
+    {
+      phrase: 'You gotta get me an audition.',
+      partOfSpeech: 'expression',
+      meaning: 'Making urgent request for someone\'s professional help. The phrase conveys insistent demand. It demonstrates pressing need.',
+      meaning_ko: '누군가의 전문적 도움을 긴급하게 요청합니다. 이 표현은 강력한 요구를 전달합니다. 그것은 긴박한 필요성을 보여줍니다.',
+      example: 'A: "You know a movie director?" B: "You gotta get me an audition."',
+      example_ko: 'A: "영화 감독을 아세요?" B: "날 오디션 봐줘야 해."',
+      context: 'Joey pressuring Chandler to get audition for film.',
+      context_ko: 'Joey는 Chandler가 영화 오디션을 얻을 수 있도록 강요합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X5'
+    },
+    {
+      phrase: 'I haven\'t talked to her in like ten years.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing long time since last communication. The phrase conveys extent of time gap. It demonstrates separation.',
+      meaning_ko: '마지막 의사소통 이후 오랜 시간이 지났음을 표현합니다. 이 표현은 시간 격차의 정도를 전달합니다. 그것은 분리를 보여줍니다.',
+      example: 'A: "Can you call her?" B: "I haven\'t talked to her in like ten years."',
+      example_ko: 'A: "그녀한테 전화 할 수 있어?" B: "약 10년 동안 얘기 안 했어."',
+      context: 'Chandler hesitating about contacting old college friend.',
+      context_ko: 'Chandler는 오래된 대학 친구와 연락하기를 주저합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X6'
+    },
+    {
+      phrase: 'Just remember Thursday. Thursday.',
+      partOfSpeech: 'expression',
+      meaning: 'Repeatedly emphasizing importance of remembering specific day. The phrase conveys urgent reminder. It demonstrates insistent emphasis.',
+      meaning_ko: '특정 요일을 기억하는 것의 중요성을 반복적으로 강조합니다. 이 표현은 긴급한 상기를 전달합니다. 그것은 강력한 강조를 보여줍니다.',
+      example: 'A: "When\'s the deadline?" B: "Just remember Thursday. Thursday."',
+      example_ko: 'A: "기한이 언제야?" B: "목요일 기억해. 목요일."',
+      context: 'Monica insisting Joey remember audition deadline.',
+      context_ko: 'Monica는 Joey가 오디션 기한을 기억할 것을 강요합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X7'
+    },
+    {
+      phrase: 'Someone is in our apartment.',
+      partOfSpeech: 'expression',
+      meaning: 'Warning about presence of intruder in personal space. The phrase conveys alarm and urgency. It demonstrates immediate threat.',
+      meaning_ko: '개인 공간에서 침입자의 존재를 경고합니다. 이 표현은 경보와 긴급성을 전달합니다. 그것은 즉각적인 위협을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "Someone is in our apartment!"',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "누군가가 우리 아파트에 있어!"',
+      context: 'Rachel panicking about fire department calling her.',
+      context_ko: 'Rachel은 소방서가 그녀에게 전화하는 것에 공황합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X8'
+    },
+    {
+      phrase: 'There was a fire at our place.',
+      partOfSpeech: 'expression',
+      meaning: 'Reporting serious emergency involving flames at residence. The phrase conveys crisis announcement. It demonstrates urgent disaster.',
+      meaning_ko: '주거지에서 심각한 화재 응급 상황을 보도합니다. 이 표현은 위기 발표를 전달합니다. 그것은 긴급한 재해를 보여줍니다.',
+      example: 'A: "What happened?" B: "There was a fire at our place."',
+      example_ko: 'A: "뭐가 일어났어?" B: "우리 집에 불이 났어."',
+      context: 'Rachel reporting fire department emergency call.',
+      context_ko: 'Rachel은 소방서 긴급 전화를 보도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X9'
+    },
+    {
+      phrase: 'This is so meant to be.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing belief that something is destined or fated. The phrase conveys sense of destiny. It demonstrates cosmic alignment.',
+      meaning_ko: '무언가가 정해지거나 운명임을 믿습니다. 이 표현은 운명 감각을 전달합니다. 그것은 우주적 정렬을 보여줍니다.',
+      example: 'A: "That\'s perfect timing!" B: "This is so meant to be."',
+      example_ko: 'A: "정말 완벽한 타이밍이야!" B: "이건 진짜 운명이야."',
+      context: 'Joey excited about being fireman for audition.',
+      context_ko: 'Joey는 오디션을 위해 소방관이 되는 것을 기대합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X10'
+    },
+    {
+      phrase: 'I\'m a little embarrassed about calling you a hottie.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting shame about making flirtatious written comment. The phrase conveys mild embarrassment. It demonstrates social awkwardness.',
+      meaning_ko: '작업 신호 댓글 쓴 것이 부끄럽다고 인정합니다. 이 표현은 약간의 부끄러움을 전달합니다. 그것은 사회적 어색함을 보여줍니다.',
+      example: 'A: "Did you write that?" B: "I\'m a little embarrassed about it."',
+      example_ko: 'A: "넌 그걸 썼어?" B: "좀 부끄러워."',
+      context: 'Student confessing evaluation comment to Professor Ross.',
+      context_ko: '학생은 교수 Ross에게 평가 댓글을 고백합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X11'
+    },
+    {
+      phrase: 'The semester\'s over. You\'re not my teacher anymore.',
+      partOfSpeech: 'expression',
+      meaning: 'Arguing that professional boundary no longer applies. The phrase conveys changed circumstances. It demonstrates opportunity reasoning.',
+      meaning_ko: '전문적 경계가 더 이상 적용되지 않는다고 주장합니다. 이 표현은 변경된 상황을 전달합니다. 그것은 기회 추론을 보여줍니다.',
+      example: 'A: "I can\'t date you." B: "The semester\'s over. You\'re not my teacher."',
+      example_ko: 'A: "난 너랑 사귈 수 없어." B: "학기가 끝났어. 넌 내 교사가 아니야."',
+      context: 'Elizabeth arguing with Ross about dating possibility.',
+      context_ko: 'Elizabeth는 데이트 가능성에 대해 Ross와 논쟁합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X12'
+    },
+    {
+      phrase: 'Everything\'s ruined.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing despair about complete loss of possessions. The phrase conveys total destruction. It demonstrates devastation.',
+      meaning_ko: '소유물의 완전한 손실에 대한 절망을 표현합니다. 이 표현은 완전한 파괴를 전달합니다. 그것은 황폐화를 보여줍니다.',
+      example: 'A: "How bad is the damage?" B: "Everything\'s ruined."',
+      example_ko: 'A: "피해가 얼마나 심해?" B: "모든 게 망쳤어."',
+      context: 'Rachel surveying her destroyed apartment after fire.',
+      context_ko: 'Rachel은 화재 후 자신의 파괴된 아파트를 조사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X13'
+    },
+    {
+      phrase: 'It\'s against the rules.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that action violates official policy or regulations. The phrase conveys prohibition. It demonstrates rule enforcement.',
+      meaning_ko: '행동이 공식 정책이나 규정을 위반한다고 명시합니다. 이 표현은 금지를 전달합니다. 그것은 규칙 시행을 보여줍니다.',
+      example: 'A: "Can we date?" B: "It\'s against the rules."',
+      example_ko: 'A: "우린 사귈 수 있어?" B: "규칙 위반이야."',
+      context: 'Ross informing Elizabeth about university policy.',
+      context_ko: 'Ross는 Elizabeth에게 대학 정책을 알립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X14'
+    },
+    {
+      phrase: 'You are so fired.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring someone will lose their job for policy violation. The phrase conveys definitive termination. It demonstrates employment consequence.',
+      meaning_ko: '정책 위반으로 누군가가 직업을 잃을 것을 선언합니다. 이 표현은 확정적 해고를 전달합니다. 그것은 고용 결과를 보여줍니다.',
+      example: 'A: "Is this rule enforced?" B: "You are so fired."',
+      example_ko: 'A: "이 규칙이 시행돼?" B: "넌 정말 해고될 거야."',
+      context: 'Lydia informing Ross about dating student consequences.',
+      context_ko: 'Lydia는 Ross에게 학생 데이트의 결과를 알립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E18X15'
+    }
+  ]
   };
 
   var S_NUM = 6;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,7 +307,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
     if (!EP_DATA.available) {
       var overlay = document.createElement('div');
       overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
@@ -160,7 +318,7 @@
       document.body.appendChild(overlay);
       return;
     }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

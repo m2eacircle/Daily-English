@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 13',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Joey gives away free coffee. Chandler sent home sick from work. Rachel\'s sister Jill arrives. Father cuts her off financially.',
+    expressions: [
+    {
+      phrase: 'That\'s on the house.',
+      partOfSpeech: 'idiom',
+      meaning: 'Offering something complimentary or free of charge as a gift or gesture. Shows generous offering. Demonstrates free provision.',
+      meaning_ko: '무언가를 선물이나 제스처로 무료 또는 보충으로 제공합니다. 관대한 제공을 보여줍니다. 무료 제공을 보여줍니다.',
+      example: 'A: "How much do I owe?" B: "That\'s on the house."',
+      example_ko: 'A: "내가 얼마를 빚져?" B: "그건 내 집에서 나온 거야."',
+      context: 'Joey giving a customer\'s drink complimentary as a free treat at the coffee shop.',
+      context_ko: 'Joey가 고객의 음료를 커피숍에서 무료 대접으로 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X1'
+    },
+    {
+      phrase: 'I don\'t get sick.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting exceptional health status and resistance to illness. Shows prideful resistance. Demonstrates boastful immunity claim.',
+      meaning_ko: '예외적인 건강 상태와 질병에 대한 저항력을 주장합니다. 자랑스러운 저항을 보여줍니다. 자랑스러운 면역 주장을 보여줍니다.',
+      example: 'A: "You\'re sick?" B: "I don\'t get sick."',
+      example_ko: 'A: "넌 아파?" B: "나는 아프지 않아."',
+      context: 'Chandler defensively insisting he never gets sick despite obvious illness symptoms.',
+      context_ko: 'Chandler가 명백한 질병 증상에도 불구하고 자신이 절대 아프지 않다고 방어적으로 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X2'
+    },
+    {
+      phrase: 'Getting sick is for weaklings.',
+      partOfSpeech: 'expression',
+      meaning: 'Characterizing illness as a sign of weakness and inferior strength. Shows masculine pride. Demonstrates contemptuous view of vulnerability.',
+      meaning_ko: '질병을 약함과 열등한 강도의 신호로 특징짓습니다. 남성다운 자부심을 보여줍니다. 취약성에 대한 경멸적 견해를 보여줍니다.',
+      example: 'A: "Everyone gets sick sometimes." B: "Getting sick is for weaklings."',
+      example_ko: 'A: "모두가 때때로 아파." B: "아파지는 건 약한 사람들을 위한 거야."',
+      context: 'Chandler dismissively insulting people who become ill as being weak or inferior.',
+      context_ko: 'Chandler가 아프게 되는 사람들을 약하거나 열등하다고 경멸적으로 모욕합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X3'
+    },
+    {
+      phrase: 'It\'s for pansies.',
+      partOfSpeech: 'expression',
+      meaning: 'Using derogatory slang to label illness susceptibility as effeminate or cowardly. Shows insulting dismissal. Demonstrates harsh masculine stereotyping.',
+      meaning_ko: '질병 감수성을 여성스럽거나 비겁하다고 표시하기 위해 모욕적인 속어를 사용합니다. 모욕적인 거부를 보여줍니다. 가혹한 남성 고정관념을 보여줍니다.',
+      example: 'A: "You should rest." B: "That\'s for pansies."',
+      example_ko: 'A: "넌 쉬어야 해." B: "그건 약한 사람들을 위한 거야."',
+      context: 'Chandler continuing his insulting characterization of sick people as effeminate.',
+      context_ko: 'Chandler가 아픈 사람들을 여성스럽다고 계속 모욕적으로 특징짓습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X4'
+    },
+    {
+      phrase: 'When you put a D at the end of "fine," you\'re not fine.',
+      partOfSpeech: 'expression',
+      meaning: 'Pointing out how drawn-out pronunciation of "fine" indicates dishonesty about health status. Shows perceptive observation. Demonstrates recognizing denial.',
+      meaning_ko: '"fine"의 연장된 발음이 건강 상태에 대한 부정직을 나타낸다는 것을 지적합니다. 지각력 있는 관찰을 보여줍니다. 부정 인식을 보여줍니다.',
+      example: 'A: "Fiiiiine." B: "When you put a D at the end of fine, you\'re not fine."',
+      example_ko: 'A: "파이인인인." B: "fine의 끝에 D를 붙이면, 넌 괜찮지 않아."',
+      context: 'Monica recognizing Chandler\'s denial through his exaggerated pronunciation of the word "fine."',
+      context_ko: 'Monica가 "fine"이라는 단어의 과장된 발음을 통해 Chandler의 부정을 인식합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X5'
+    },
+    {
+      phrase: 'Daddy cut me off.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating parental termination of financial support as a consequence. Shows dependent status. Demonstrates loss of privilege.',
+      meaning_ko: '결과로 부모의 재정적 지원 종료를 진술합니다. 종속적 상태를 보여줍니다. 특권 손실을 보여줍니다.',
+      example: 'A: "How did you end up here?" B: "Daddy cut me off."',
+      example_ko: 'A: "넌 어떻게 여기까지 오게 됐어?" B: "아버지가 나를 차단했어."',
+      context: 'Jill explaining why she came to stay with Rachel after her father stopped supporting her.',
+      context_ko: 'Jill이 아버지가 자신을 지원하지 않은 후에 Rachel과 함께 지내기 위해 왜 왔는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X6'
+    },
+    {
+      phrase: 'I\'m gonna hire a lawyer, sue you and take all your money.',
+      partOfSpeech: 'expression',
+      meaning: 'Threatening legal action and financial claim against someone in anger. Shows frustrated retaliation. Demonstrates explosive anger threat.',
+      meaning_ko: '분노 속에서 누군가에 대해 법적 조치와 재정적 청구를 위협합니다. 좌절된 보복을 보여줍니다. 폭발적인 분노 위협을 보여줍니다.',
+      example: 'A: "Your money stops now." B: "I\'m gonna hire a lawyer, sue you and take all your money."',
+      example_ko: 'A: "너의 돈은 이제 멈춰." B: "나는 변호사를 고용해서 너를 고소하고 너의 모든 돈을 가져갈 거야."',
+      context: 'Jill recounting her angry threat to her father when he cut off her financial support.',
+      context_ko: 'Jill이 아버지가 재정적 지원을 끊었을 때 아버지에게 한 분노한 위협을 다시 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X7'
+    },
+    {
+      phrase: 'And then I\'m gonna cut you off.',
+      partOfSpeech: 'expression',
+      meaning: 'Continuing threat to terminate relationship and support in retaliation. Shows petulant revenge fantasy. Demonstrates empty threatening conclusion.',
+      meaning_ko: '보복으로 관계와 지원 종료를 계속 위협합니다. 제멋대로인 복수 판타지를 보여줍니다. 공허한 위협 결론을 보여줍니다.',
+      example: 'A: "I won\'t pay for that." B: "And then I\'m gonna cut you off."',
+      example_ko: 'A: "나는 그 비용을 내지 않을 거야." B: "그리고 나는 너를 차단할 거야."',
+      context: 'Jill completing her threat to her father by threatening him with abandonment.',
+      context_ko: 'Jill이 아버지를 버림으로써 위협함으로써 아버지에게 한 위협을 완성합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X8'
+    },
+    {
+      phrase: 'Learn the value of money from the one daughter he\'s proud of.',
+      partOfSpeech: 'expression',
+      meaning: 'Referencing parental instruction for financial education from favored child. Shows competitive jealousy. Demonstrates stinging sibling comparison.',
+      meaning_ko: '선호하는 자식으로부터 재정 교육을 위한 부모 지시를 참조합니다. 경쟁적 질투를 보여줍니다. 따끔한 형제 비교를 보여줍니다.',
+      example: 'A: "You need to learn something." B: "Learn the value of money from the one daughter he\'s proud of."',
+      example_ko: 'A: "넌 뭔가를 배워야 해." B: "그가 자랑스러워하는 딸로부터 돈의 가치를 배워."',
+      context: 'Jill recounting her father\'s harsh comparison between her and Rachel regarding financial responsibility.',
+      context_ko: 'Jill이 재정적 책임과 관련하여 자신과 Rachel 사이의 아버지의 가혹한 비교를 다시 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X9'
+    },
+    {
+      phrase: 'My dad\'s proud of me.',
+      partOfSpeech: 'expression',
+      meaning: 'Excitedly celebrating parental approval and validation with repeated emphasis. Shows desperate happiness. Demonstrates overjoyed repetition.',
+      meaning_ko: '반복된 강조로 부모의 승인과 유효성을 신나게 축하합니다. 절망적인 행복을 보여줍니다. 환호한 반복을 보여줍니다.',
+      example: 'A: "That\'s nice." B: "My dad\'s proud of me. My dad\'s proud of me!"',
+      example_ko: 'A: "좋네." B: "내 아버지가 나를 자랑스러워해. 내 아버지가 나를 자랑스러워해!"',
+      context: 'Rachel gleefully reacting to learning her father considers her the responsible daughter.',
+      context_ko: 'Rachel이 아버지가 자신을 책임감 있는 딸로 여긴다는 것을 배운 것에 기쁨으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X10'
+    },
+    {
+      phrase: 'This is the best thing that could\'ve ever happened to you.',
+      partOfSpeech: 'expression',
+      meaning: 'Characterizing hardship as beneficial opportunity for personal growth and independence. Shows tough-love perspective. Demonstrates reframing adversity.',
+      meaning_ko: '어려움을 개인적 성장과 독립의 유익한 기회로 특징짓습니다. 단호한 사랑 관점을 보여줍니다. 역경 재구성을 보여줍니다.',
+      example: 'A: "This is terrible." B: "This is the best thing that could\'ve ever happened to you."',
+      example_ko: 'A: "이건 끔찍해." B: "이건 너에게 일어날 수 있는 최고의 일이야."',
+      context: 'Rachel encouraging Jill by reframing her father\'s financial cutoff as a positive life lesson.',
+      context_ko: 'Rachel이 아버지의 재정적 차단을 긍정적인 인생 교훈으로 재구성하여 Jill을 격려합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X11'
+    },
+    {
+      phrase: 'You\'re gonna get a job.',
+      partOfSpeech: 'expression',
+      meaning: 'Commanding employment acquisition as practical life responsibility. Shows directive planning. Demonstrates assertive instruction.',
+      meaning_ko: '실질적인 인생 책임으로 고용 획득을 명령합니다. 지시적 계획을 보여줍니다. 주장적 지시를 보여줍니다.',
+      example: 'A: "I don\'t know what to do." B: "You\'re gonna get a job."',
+      example_ko: 'A: "나는 뭘 할지 몰라." B: "넌 일을 얻을 거야."',
+      context: 'Rachel setting practical expectations for Jill\'s new independent life path.',
+      context_ko: 'Rachel이 Jill의 새로운 독립적인 인생 경로에 대한 실질적인 기대를 설정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X12'
+    },
+    {
+      phrase: 'You can stay with us.',
+      partOfSpeech: 'expression',
+      meaning: 'Offering shelter and lodging provision in a spirit of generosity. Shows supportive hospitality. Demonstrates kind offer of home.',
+      meaning_ko: '관대함의 정신으로 쉼터와 숙박 제공을 제공합니다. 지지적인 접대를 보여줍니다. 집의 친절한 제안을 보여줍니다.',
+      example: 'A: "I have nowhere to go." B: "You can stay with us."',
+      example_ko: 'A: "나는 갈 곳이 없어." B: "넌 우리와 함께 있을 수 있어."',
+      context: 'Monica and Rachel offering Jill temporary accommodation while she gets back on her feet.',
+      context_ko: 'Monica와 Rachel이 Jill이 다시 일어설 때까지 임시 숙박을 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X13'
+    },
+    {
+      phrase: 'I don\'t think charging clothes to your dad qualifies as making it on your own.',
+      partOfSpeech: 'expression',
+      meaning: 'Pointing out logical inconsistency between claiming independence while using paternal credit. Shows critical observation. Demonstrates ironic contradiction recognition.',
+      meaning_ko: '부모의 신용을 사용하면서 독립을 주장하는 것 사이의 논리적 불일치를 지적합니다. 비판적 관찰을 보여줍니다. 아이러니한 모순 인식을 보여줍니다.',
+      example: 'A: "I\'m doing it myself." B: "You\'re using your dad\'s card though." "I don\'t think charging clothes to your dad qualifies as making it on your own."',
+      example_ko: 'A: "나는 스스로 하고 있어." B: "하지만 넌 아버지의 카드를 쓰고 있어." "아버지에게 옷을 청구하는 것이 스스로 하는 것으로 인정되지 않는다고 생각해."',
+      context: 'Ross pointing out Jill\'s hypocrisy in claiming independence while spending her father\'s money.',
+      context_ko: 'Ross가 아버지의 돈을 쓰면서 독립을 주장하는 Jill의 위선을 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X14'
+    },
+    {
+      phrase: 'You bought a boat?',
+      partOfSpeech: 'question',
+      meaning: 'Expressing shocked disbelief at an extravagant luxury purchase. Shows surprised reaction. Demonstrates astonished inquiry.',
+      meaning_ko: '과장된 사치 구매에 대한 충격적인 불신을 표현합니다. 놀란 반응을 보여줍니다. 놀란 조회를 보여줍니다.',
+      example: 'A: "I bought a boat." B: "You bought a boat?"',
+      example_ko: 'A: "나는 보트를 샀어." B: "넌 보트를 샀어?"',
+      context: 'Rachel incredulously asking Jill why her father cut her off after she made such an extravagant purchase.',
+      context_ko: 'Rachel이 Jill이 그렇게 과장된 구매를 한 후 아버지가 왜 자신을 차단했는지 믿을 수 없이 묻습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E13X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

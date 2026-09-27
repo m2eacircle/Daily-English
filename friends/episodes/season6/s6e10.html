@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 10',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Christmas episode. Dick Clark\'s New Year\'s Rockin\' Eve. Friends hunt for Monica\'s hidden gifts. Holiday plans.',
+    expressions: [
+    {
+      phrase: 'That\'s a good story, Grandpa.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically dismissing someone\'s rambling anecdote as typical elderly repetition. Shows irreverent humor. Demonstrates comedic mocking.',
+      meaning_ko: '누군가의 횡설수설하는 일화를 전형적인 노인의 반복으로 풍자적으로 해제합니다. 무례한 유머를 보여줍니다. 코미디 조롱을 보여줍니다.',
+      example: 'A: "I remember when people used big lights." B: "That\'s a good story, Grandpa."',
+      example_ko: 'A: "난 사람들이 큰 불빛을 썼던 때를 기억해." B: "좋은 이야기네, 할아버지."',
+      context: 'Monica sarcastically responding to someone\'s long story about old Christmas lights.',
+      context_ko: 'Monica가 오래된 크리스마스 불빛에 대한 누군가의 긴 이야기에 풍자적으로 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X1'
+    },
+    {
+      phrase: 'Having a perfect tree is not what Christmas is about.',
+      partOfSpeech: 'expression',
+      meaning: 'Articulating what Christmas truly values by rejecting materialism. Shows philosophical shift. Demonstrates reordering priorities.',
+      meaning_ko: '물질주의를 거부함으로써 크리스마스가 진정으로 가치 있는 것을 표현합니다. 철학적 변화를 보여줍니다. 우선순위 재정렬을 보여줍니다.',
+      example: 'A: "Your tree is not perfect." B: "Having a perfect tree is not what Christmas is about."',
+      example_ko: 'A: "너의 나무가 완벽하지 않아." B: "완벽한 나무를 갖는 것이 크리스마스가 하는 일이 아니야."',
+      context: 'Monica explaining her newfound philosophy about Christmas priorities.',
+      context_ko: 'Monica가 크리스마스 우선순위에 대한 자신의 새로운 철학을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X2'
+    },
+    {
+      phrase: 'It\'s about being with loved ones.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating the core meaning of holidays as meaningful relationships and presence. Shows sentimental affection. Demonstrates expressing authentic values.',
+      meaning_ko: '휴일의 핵심 의미를 의미 있는 관계와 존재로 표현합니다. 감상적 애정을 보여줍니다. 진정한 가치를 표현하는 것을 보여줍니다.',
+      example: 'A: "What matters for Christmas?" B: "It\'s about being with loved ones."',
+      example_ko: 'A: "크리스마스에 뭐가 중요해?" B: "그건 사랑하는 사람들과 함께 있는 것에 대해서야."',
+      context: 'Monica explaining the true meaning of Christmas to the group.',
+      context_ko: 'Monica가 크리스마스의 진정한 의미를 그룹에 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X3'
+    },
+    {
+      phrase: 'I can see why that\'s hard to resist.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging attractiveness or appeal of something previously mentioned. Shows understanding and sympathy. Demonstrates validating someone\'s feelings.',
+      meaning_ko: '이전에 언급한 것의 매력이나 매력을 인정합니다. 이해와 동정을 보여줍니다. 누군가의 감정을 검증하는 것을 보여줍니다.',
+      example: 'A: "I can\'t stop looking at her." B: "I can see why that\'s hard to resist."',
+      example_ko: 'A: "나는 그녀를 보는 것을 멈출 수 없어." B: "나는 왜 그게 저항하기 어려운지 알 수 있어."',
+      context: 'Rachel sympathizing with Joey\'s struggle to stay away from attractive Janine.',
+      context_ko: 'Rachel이 Joey가 매력적인 Janine과 떨어져 있으려는 투쟁에 공감합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X4'
+    },
+    {
+      phrase: 'You are aware that she\'s not a monkey, right?',
+      partOfSpeech: 'question',
+      meaning: 'Sarcastically questioning someone\'s objectifying behavior by pointing out inappropriate treatment. Shows humor-based criticism. Demonstrates witty correction.',
+      meaning_ko: '부적절한 대우를 지적하여 누군가의 대상화하는 행동을 풍자적으로 질문합니다. 유머 기반 비판을 보여줍니다. 재치 있는 수정을 보여줍니다.',
+      example: 'A: "I want to feed her grapes and brush her hair." B: "You are aware that she\'s not a monkey, right?"',
+      example_ko: 'A: "나는 그녀에게 포도를 먹이고 머리를 빗어주고 싶어." B: "넌 그녀가 원숭이가 아니라는 걸 알고 있지?"',
+      context: 'Chandler sarcastically commenting on Joey\'s over-romanticized behavior toward Janine.',
+      context_ko: 'Chandler가 Janine에 대한 Joey의 과도하게 낭만화된 행동에 풍자적으로 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X5'
+    },
+    {
+      phrase: 'I am so over Janine.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming loss of romantic interest or attraction using casual dismissal language. Shows false confidence. Demonstrates insincere disinterest.',
+      meaning_ko: '캐주얼한 거부 언어를 사용하여 로맨틱한 관심 또는 매력 손실을 주장합니다. 거짓 자신감을 보여줍니다. 부실한 무관심을 보여줍니다.',
+      example: 'A: "Are you still interested?" B: "I am so over Janine."',
+      example_ko: 'A: "넌 여전히 관심 있어?" B: "나는 Janine에 너무 넘어갔어."',
+      context: 'Joey insisting he\'s moved past Janine right before she arrives.',
+      context_ko: 'Joey가 Janine이 도착하기 직전에 그녀를 넘어갔다고 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X6'
+    },
+    {
+      phrase: 'It\'s called some sort of Dickin\' Rockin\' Dicky Eve.',
+      partOfSpeech: 'expression',
+      meaning: 'Fumbling the proper name of famous TV special through misremembering pronunciation and wording. Shows absent-minded error. Demonstrates comedic mispronunciation.',
+      meaning_ko: '발음과 단어를 잘못 기억하여 유명한 TV 스페셜의 올바른 이름을 포기합니다. 건망증 오류를 보여줍니다. 코미디 발음 오류를 보여줍니다.',
+      example: 'A: "What\'s the special called?" B: "It\'s called some sort of Dickin\' Rockin\' Dicky Eve."',
+      example_ko: 'A: "그 스페셜이 뭐라고 불러?" B: "그건 뭔가 Dickin\' Rockin\' Dicky Eve라고 불러."',
+      context: 'Janine mispronouncing the name of Dick Clark\'s New Year\'s Rockin\' Eve.',
+      context_ko: 'Janine이 Dick Clark\'s New Year\'s Rockin\' Eve의 이름을 잘못 발음합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X7'
+    },
+    {
+      phrase: 'You\'re still just a little fat girl inside, aren\'t you?',
+      partOfSpeech: 'expression',
+      meaning: 'Teasing someone about their childhood self or past habits with playful mockery. Shows intimate but cutting joke. Demonstrates affectionate ribbing.',
+      meaning_ko: '장난스러운 조롱으로 누군가의 어린 시절 자신이나 과거 습관에 대해 놀립니다. 친밀하지만 날카로운 농담을 보여줍니다. 애정 어린 놀림을 보여줍니다.',
+      example: 'A: "I love that show!" B: "You\'re still just a little fat girl inside, aren\'t you?"',
+      example_ko: 'A: "나 그 쇼 좋아!" B: "넌 여전히 안에만 작은 뚱뚱한 여자 아이야, 그지?"',
+      context: 'Monica\'s friend teasing her about her childhood love of the TV special.',
+      context_ko: 'Monica의 친구가 TV 스페셜에 대한 어린 시절 사랑에 대해 그녀를 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X8'
+    },
+    {
+      phrase: 'Those guys rock the most!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing enthusiastic admiration for performers or a group using superlative language. Shows excited approval. Demonstrates gushing praise.',
+      meaning_ko: '최고급 언어를 사용하여 공연자 또는 그룹에 대한 열정적 경탄을 표현합니다. 흥분한 승인을 보여줍니다. 과한 찬사를 보여줍니다.',
+      example: 'A: "I\'ll be a party person on the show." B: "Those guys rock the most!"',
+      example_ko: 'A: "나는 쇼에서 party person이 될 거야." B: "그 사람들은 가장 록스"',
+      context: 'Monica excitedly responding to learning about party people on the New Year\'s show.',
+      context_ko: 'Monica가 New Year 쇼의 party people에 대해 배우는 것에 흥분하여 응답합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X9'
+    },
+    {
+      phrase: 'The music\'s gonna start, you\'re gonna dance, we\'ll tape it.',
+      partOfSpeech: 'expression',
+      meaning: 'Giving rapid-fire instructions using casual future tense without explanation. Shows confident leadership. Demonstrates directive communication.',
+      meaning_ko: '설명 없이 캐주얼한 미래형을 사용하여 빠른 지시를 제공합니다. 자신감 있는 리더십을 보여줍니다. 지시적 통신을 보여줍니다.',
+      example: 'A: "What do we do?" B: "The music\'s gonna start, you\'re gonna dance, we\'ll tape it."',
+      example_ko: 'A: "우리가 뭐해?" B: "음악이 시작할 거고, 너 춤을 출 거고, 우린 테이프할 거야."',
+      context: 'Show director giving instructions to the dancers for the Dick Clark special.',
+      context_ko: 'Show 감독이 Dick Clark 스페셜을 위해 댄서들에게 지시를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X10'
+    },
+    {
+      phrase: 'Don\'t look at the camera.',
+      partOfSpeech: 'expression',
+      meaning: 'Instructing people not to acknowledge the camera or production during filming. Shows standard filming direction. Demonstrates professional instruction.',
+      meaning_ko: '촬영 중 카메라나 프로덕션을 인정하지 말도록 지시합니다. 표준 촬영 방향을 보여줍니다. 전문 지시를 보여줍니다.',
+      example: 'A: "What should we do?" B: "Don\'t look at the camera."',
+      example_ko: 'A: "우리가 뭐해야 돼?" B: "카메라를 보지 마."',
+      context: 'Director giving instruction to the dancers about camera awareness.',
+      context_ko: ' 감독이 카메라 인식에 대해 댄서들에게 지시를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X11'
+    },
+    {
+      phrase: 'She\'s always bested us, that wily minx.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing someone\'s repeated competitive victory with admiring exasperation using archaic language. Shows grudging respect. Demonstrates playful defeat acknowledgment.',
+      meaning_ko: '고대 언어를 사용하여 누군가의 반복된 경쟁적 승리를 경탄하며 분노로 설명합니다. 마지못한 존경을 보여줍니다. 장난스러운 패배 인정을 보여줍니다.',
+      example: 'A: "Monica always finds your gifts first." B: "She\'s always bested us, that wily minx."',
+      example_ko: 'A: "Monica는 항상 너의 선물을 먼저 찾아." B: "그녀는 항상 우리를 이겨, 그 교활한 여자."',
+      context: 'Chandler acknowledging Monica\'s superior gift-hiding ability over years.',
+      context_ko: 'Chandler가 Monica의 수년에 걸친 우월한 선물 숨김 능력을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X12'
+    },
+    {
+      phrase: 'Dear Losers, do you really think I\'d hide presents under the couch?',
+      partOfSpeech: 'expression',
+      meaning: 'Using condescending name-calling in written message while questioning naive strategy. Shows mockery in writing. Demonstrates humorous insult via note.',
+      meaning_ko: '쓰여진 메시지에서 경멸적인 이름 부르기를 사용하면서 순진한 전략을 의문을 제기합니다. 쓰기에서의 조롱을 보여줍니다. 메모를 통한 유머러스한 모욕을 보여줍니다.',
+      example: 'A: "Found the presents!" B: "Dear Losers, do you really think I\'d hide presents under the couch?"',
+      example_ko: 'A: "선물을 찾았어!" B: "사랑하는 Losers들, 너희가 정말 내가 소파 아래에 선물을 숨길 거라고 생각해?"',
+      context: 'Monica\'s note mocking the friends\' futile gift-hunting attempts.',
+      context_ko: 'Monica의 메모는 친구들의 헛된 선물 사냥 시도를 조롱합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X13'
+    },
+    {
+      phrase: 'P.S. Chandler, I knew they\'d break you.',
+      partOfSpeech: 'expression',
+      meaning: 'Adding postscript prediction about someone\'s weakness with knowing mockery. Shows prediction accuracy. Demonstrates I-told-you-so commentary.',
+      meaning_ko: '아는 조롱으로 누군가의 약점에 대한 사후 예측을 추가합니다. 예측 정확도를 보여줍니다. I-told-you-so 논평을 보여줍니다.',
+      example: 'A: "She wrote about me too?" B: "P.S. Chandler, I knew they\'d break you."',
+      example_ko: 'A: "그녀가 나한테도 썼어?" B: "P.S. Chandler, 나는 그들이 너를 깰 거 알았어."',
+      context: 'Monica\'s note acknowledging Chandler will be persuaded by his friends.',
+      context_ko: 'Monica의 메모는 Chandler가 친구들에 의해 설득될 것을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X14'
+    },
+    {
+      phrase: 'Uh-oh. She may be onto us.',
+      partOfSpeech: 'expression',
+      meaning: 'Recognizing someone has discovered the conspiracy or plan through realized evidence. Shows dawning realization. Demonstrates caught-in-the-act acknowledgment.',
+      meaning_ko: '실현된 증거를 통해 누군가가 음모나 계획을 발견했음을 인식합니다. 점진적 깨달음을 보여줍니다. 현장에서 적발된 인정을 보여줍니다.',
+      example: 'A: "She found a fake present!" B: "Uh-oh. She may be onto us."',
+      example_ko: 'A: "그녀가 가짜 선물을 찾았어!" B: "아야. 그녀는 우리를 알 지도 몰라."',
+      context: 'Chandler realizing Monica has outsmarted them again with a fake gift note.',
+      context_ko: 'Chandler가 Monica가 가짜 선물 메모로 다시 그들을 능가했음을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E10X15'
+    }
+  ]
   };
 
   var S_NUM = 6;

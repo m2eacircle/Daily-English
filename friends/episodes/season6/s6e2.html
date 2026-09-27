@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
+    available: true,
     title: 'Season 6, Episode 2',
-    description: 'Expressions coming soon.',
-    expressions: []
+    description: 'Monica and Chandler move in together. Ross hides Vegas marriage from Rachel. Joey struggles with roommate loss.',
+    expressions: [
+    {
+      phrase: 'Want to hear something weird?',
+      partOfSpeech: 'question',
+      meaning: 'Asking permission to share unusual or surprising information. Shows anticipation of listener reaction. Indicates unexpected news incoming.',
+      meaning_ko: '이상하거나 놀라운 정보를 공유할 수 있는 권한을 묻습니다. 청자 반응에 대한 기대를 보여줍니다. 예상치 못한 뉴스가 들어온다는 것을 나타냅니다.',
+      example: 'A: "What\'s up?" B: "Want to hear something weird?"',
+      example_ko: 'A: "뭐 하고 있어?" B: "뭔가 이상한 거 들을래?"',
+      context: 'Ross about to reveal he didn\'t get the annulment.',
+      context_ko: 'Ross가 혼인무효를 받지 못했다는 것을 드러내려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X1'
+    },
+    {
+      phrase: 'Three divorces! Three divorces!',
+      partOfSpeech: 'expression',
+      meaning: 'Emphasizing repeated accusations about failed marriages. Shows exaggeration through repetition. Demonstrates overwhelming concern.',
+      meaning_ko: '실패한 결혼에 대한 반복된 비난을 강조합니다. 반복을 통한 과장을 보여줍니다. 압도적인 관심을 보여줍니다.',
+      example: 'A: "What did your lawyer say?" B: "Three divorces! Three divorces!"',
+      example_ko: 'A: "너 변호사가 뭐라고 했어?" B: "3번 결혼했어! 3번!"',
+      context: 'Ross explaining his lawyer\'s reaction to his marital history.',
+      context_ko: 'Ross가 자신의 결혼 이력에 대한 변호사의 반응을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X2'
+    },
+    {
+      phrase: 'I don\'t want my tombstone to read that.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing concern about lasting reputation after death. Shows anxiety about legacy. Demonstrates humorous existential worry.',
+      meaning_ko: '죽음 이후 지속되는 명성에 대한 관심을 표현합니다. 유산에 대한 불안을 보여줍니다. 유머러스한 실존적 걱정을 보여줍니다.',
+      example: 'A: "You\'ll always be known for it." B: "I don\'t want my tombstone to read that."',
+      example_ko: 'A: "넌 항상 그것으로 알려질 거야." B: "난 내 묘비에 그렇게 써지길 원치 않아."',
+      context: 'Ross expressing fear about being remembered for divorces.',
+      context_ko: 'Ross가 결혼 실패로 기억되는 것에 대한 두려움을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X3'
+    },
+    {
+      phrase: 'Mine\'s gonna say, "Buried Alive."',
+      partOfSpeech: 'expression',
+      meaning: 'Making dark joke about one\'s own epitaph. Shows gallows humor about life situation. Demonstrates comedic pessimism.',
+      meaning_ko: '자신의 묘비명에 대한 검은 농담을 합니다. 삶의 상황에 대한 스스로의 유머를 보여줍니다. 코미디 비관주의를 보여줍니다.',
+      example: 'A: "What will your tombstone say?" B: "Mine\'s gonna say, Buried Alive."',
+      example_ko: 'A: "넌 묘비에 뭐라고 써질래?" B: "내 건 \"생매장되다\" 라고 쓸 거야."',
+      context: 'Phoebe making dark joke about her epitaph.',
+      context_ko: 'Phoebe가 자신의 묘비명에 대해 검은 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X4'
+    },
+    {
+      phrase: 'I can\'t have another failed marriage.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating firm refusal to experience marital failure again. Shows determination about avoiding repetition. Demonstrates resolve and regret.',
+      meaning_ko: '다시 결혼 실패를 경험할 수 없다는 강한 거부를 나타냅니다. 반복 회피에 대한 결심을 보여줍니다. 결심과 후회를 보여줍니다.',
+      example: 'A: "Will you try again?" B: "I can\'t have another failed marriage."',
+      example_ko: 'A: "넌 다시 해볼래?" B: "난 또 다른 실패한 결혼을 할 수 없어."',
+      context: 'Ross explaining why he won\'t get annulment.',
+      context_ko: 'Ross가 혼인무효를 받지 않는 이유를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X5'
+    },
+    {
+      phrase: 'Woman. Sorry.',
+      partOfSpeech: 'expression',
+      meaning: 'Self-correcting gendered language mistake. Shows awareness of respectful terminology. Demonstrates quick apology.',
+      meaning_ko: '성별 표현 실수를 자기 수정합니다. 존경하는 용어에 대한 인식을 보여줍니다. 빠른 사과를 보여줍니다.',
+      example: 'A: "That girl?" B: "Woman. Sorry."',
+      example_ko: 'A: "그 여자애?" B: "여자. 미안해."',
+      context: 'Chandler correcting Phoebe\'s use of "girl" instead of "woman."',
+      context_ko: 'Chandler가 Phoebe의 "girl" 대신 "woman"을 사용하는 것을 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X6'
+    },
+    {
+      phrase: 'This sucks!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing strong displeasure or frustration. Shows direct emotion about negative situation. Demonstrates blunt dissatisfaction.',
+      meaning_ko: '강한 불만이나 좌절감을 표현합니다. 부정적인 상황에 대한 직접적인 감정을 보여줍니다. 솔직한 불만족을 보여줍니다.',
+      example: 'A: "You have to move." B: "This sucks!"',
+      example_ko: 'A: "넌 이사해야 해." B: "이건 최악이야!"',
+      context: 'Joey reacting negatively to Chandler moving out.',
+      context_ko: 'Joey가 Chandler의 이사에 부정적으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X7'
+    },
+    {
+      phrase: 'He\'s the best roommate!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing sudden reversal of previous criticism. Shows inability to follow through on complaints. Demonstrates conflicted loyalty.',
+      meaning_ko: '이전 비판의 갑작스러운 반전을 표현합니다. 불평을 따라하지 못함을 보여줍니다. 상충하는 충성심을 보여줍니다.',
+      example: 'A: "Tell her he\'s terrible." B: "He\'s the best roommate!"',
+      example_ko: 'A: "그가 끔찍하다고 말해." B: "그는 최고의 룸메이트야!"',
+      context: 'Joey unable to say anything bad about Chandler despite trying.',
+      context_ko: 'Joey가 노력했음에도 불구하고 Chandler에 대해 나쁜 말을 할 수 없습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X8'
+    },
+    {
+      phrase: 'I have some exciting news.',
+      partOfSpeech: 'expression',
+      meaning: 'Introducing positive development or announcement. Shows anticipation of positive reaction. Demonstrates enthusiasm.',
+      meaning_ko: '긍정적인 발전이나 공지를 소개합니다. 긍정적인 반응에 대한 기대를 보여줍니다. 열정을 보여줍니다.',
+      example: 'A: "What\'s up?" B: "I have some exciting news."',
+      example_ko: 'A: "뭐 있어?" B: "난 흥미로운 뉴스가 있어."',
+      context: 'Monica approaching Phoebe with news about moving in with Chandler.',
+      context_ko: 'Monica가 Chandler와 함께 이사할 뉴스를 가지고 Phoebe에게 접근합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X9'
+    },
+    {
+      phrase: 'It\'s official. No turning back.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing finalized decision with no possibility of reversal. Shows commitment and determination. Demonstrates point of no return.',
+      meaning_ko: '역방향 가능성이 없는 최종 결정을 발표합니다. 약속과 결심을 보여줍니다. 돌아올 수 없는 시점을 보여줍니다.',
+      example: 'A: "Are you sure?" B: "It\'s official. No turning back."',
+      example_ko: 'A: "넌 확실해?" B: "이제 공식이야. 돌아갈 수 없어."',
+      context: 'Chandler confirming the permanence of moving in decision.',
+      context_ko: 'Chandler가 이사 결정의 영구성을 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X10'
+    },
+    {
+      phrase: 'The worst day.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing a day as entirely negative without elaboration. Shows exaggeration for comedic effect. Demonstrates dramatic complaint.',
+      meaning_ko: '하루를 구체적인 설명 없이 완전히 부정적인 것으로 치부합니다. 코미디 효과를 위한 과장을 보여줍니다. 극적인 불평을 보여줍니다.',
+      example: 'A: "How was work?" B: "The worst day."',
+      example_ko: 'A: "일은 어땠어?" B: "최악의 하루였어."',
+      context: 'Rachel complaining about her bad day at work.',
+      context_ko: 'Rachel이 자신의 나쁜 업무 날에 대해 불평합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X11'
+    },
+    {
+      phrase: 'You\'re finally making progress at work.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging successful advancement in career. Shows recognition of achievement. Demonstrates supportive observation.',
+      meaning_ko: '직업에서 성공적인 발전을 인정합니다. 성취에 대한 인정을 보여줍니다. 지지적인 관찰을 보여줍니다.',
+      example: 'A: "What happened?" B: "You\'re finally making progress at work."',
+      example_ko: 'A: "뭐 있었어?" B: "넌 이제 일에서 진전이 있네."',
+      context: 'Joey trying to comfort Rachel about her job situation.',
+      context_ko: 'Joey가 Rachel의 일 상황에 대해 위로하려고 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X12'
+    },
+    {
+      phrase: 'My boss calls me Racquel.',
+      partOfSpeech: 'expression',
+      meaning: 'Complaining about incorrect name usage by authority figure. Shows frustration with disrespect. Demonstrates indignation.',
+      meaning_ko: '권위 있는 사람에 의한 부정확한 이름 사용에 대해 불평합니다. 불존경에 대한 좌절감을 보여줍니다. 분개함을 보여줍니다.',
+      example: 'A: "What\'s wrong?" B: "My boss calls me Racquel."',
+      example_ko: 'A: "뭐가 문제야?" B: "내 상사가 나를 Racquel이라고 불러."',
+      context: 'Rachel upset about boss getting her name wrong in meeting.',
+      context_ko: 'Rachel은 상사가 회의에서 그녀의 이름을 잘못 기억한 것에 화났습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X13'
+    },
+    {
+      phrase: 'By the end of the day, they called me Rocky.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing escalation of name mispronunciation throughout day. Shows how mistakes compound. Demonstrates increasing absurdity.',
+      meaning_ko: '하루 종일 이름 발음 오류의 악화를 설명합니다. 실수가 어떻게 누적되는지를 보여줍니다. 증가하는 황당함을 보여줍니다.',
+      example: 'A: "How bad was it?" B: "By the end of the day, they called me Rocky."',
+      example_ko: 'A: "얼마나 나빴어?" B: "하루 끝에는 다들 나를 Rocky라고 불렀어."',
+      context: 'Rachel explaining how the name confusion got progressively worse.',
+      context_ko: 'Rachel이 이름 혼동이 어떻게 점점 더 악화되었는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X14'
+    },
+    {
+      phrase: 'I\'m so happy for you guys!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing genuine excitement for others\' positive news. Shows sincere support for friends. Demonstrates enthusiastic approval.',
+      meaning_ko: '다른 사람들의 긍정적인 뉴스에 대한 진정한 흥분을 표현합니다. 친구에 대한 진정한 지원을 보여줍니다. 열정적인 승인을 보여줍니다.',
+      example: 'A: "We\'re moving in together!" B: "I\'m so happy for you guys!"',
+      example_ko: 'A: "우리가 함께 이사할 거야!" B: "난 너희 너무 행복해!"',
+      context: 'Rachel genuinely excited about Monica and Chandler moving together.',
+      context_ko: 'Rachel이 Monica와 Chandler의 이사에 진정으로 흥분합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S6E2X15'
+    }
+  ]
   };
 
   var S_NUM = 6;
