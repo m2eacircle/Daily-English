@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 16',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Two Parties',
+    description: 'Joey admits he\'s in love with Rachel to Chandler. Phoebe finds Monica\'s soul mate Don. Ross tries to accept Joey\'s feelings. Monica and Don\'s instant connection.',
+    expressions: [
+      {
+        phrase: "I'm sorry, did you just say it's Rachel?",
+        partOfSpeech: "expression",
+        meaning: "Expressing shock or disbelief at an unexpected or significant revelation.",
+        meaning_ko: "예상치 못한 또는 중요한 계시에 대한 충격이나 불신을 표현한다.",
+        example: "Did you really just say you're moving to Paris? I can't believe it.",
+        example_ko: "넌 정말 파리로 이사한다고 말했어? 난 믿을 수 없어.",
+        context: "Chandler is shocked when Joey confesses he's in love with Rachel.",
+        context_ko: "조이가 레이첼을 사랑한다고 고백했을 때 챈들러는 충격을 받는다.",
+        youtubeUrl: "REPLACE_S8E16X1"
+      },
+      {
+        phrase: "You like Rachel?",
+        partOfSpeech: "expression",
+        meaning: "Seeking confirmation or repeating back in disbelief what someone just said.",
+        meaning_ko: "누군가가 방금 말한 것을 불신하며 확인을 구하거나 반복한다.",
+        example: "You want to quit your job? Really?",
+        example_ko: "넌 직업을 그만두고 싶어? 정말?",
+        context: "Chandler repeats Joey's confession to make sure he heard correctly.",
+        context_ko: "챈들러는 조이의 고백을 반복하여 제대로 들었는지 확인한다.",
+        youtubeUrl: "REPLACE_S8E16X2"
+      },
+      {
+        phrase: "You know who else I like? You. And it doesn't get said enough. I like you, Ross.",
+        partOfSpeech: "expression",
+        meaning: "A sincere affirmation of friendship and appreciation, often unexpected.",
+        meaning_ko: "우정과 감사의 진정한 확인으로, 종종 예상치 못한 것.",
+        example: "I want you to know that I really appreciate you—you're a great friend.",
+        example_ko: "나는 너를 정말 감사한다는 것을 알고 싶어—넌 훌륭한 친구야.",
+        context: "Chandler tries to comfort Ross by affirming his friendship.",
+        context_ko: "챈들러는 우정을 확인함으로써 로스를 위로하려고 시도한다.",
+        youtubeUrl: "REPLACE_S8E16X3"
+      },
+      {
+        phrase: "It's not a big deal.",
+        partOfSpeech: "expression",
+        meaning: "Dismissing something as unimportant or insignificant, often unconvincingly.",
+        meaning_ko: "뭔가를 중요하지 않거나 사소한 것으로 무시하며, 종종 확신적이지 않다.",
+        example: "I crashed your car. It's not a big deal.",
+        example_ko: "나는 너의 차를 충돌했어. 그건 큰 일이 아니야.",
+        context: "Joey downplays the significance of his love for Rachel.",
+        context_ko: "조이는 레이첼에 대한 자신의 사랑의 중요성을 과소평가한다.",
+        youtubeUrl: "REPLACE_S8E16X4"
+      },
+      {
+        phrase: "I'm an actor, you know? As a group, we tend to be overdramatic.",
+        partOfSpeech: "expression",
+        meaning: "Deflecting by making a self-aware joke about one's own group or profession.",
+        meaning_ko: "자신의 그룹이나 직업에 대한 자조적인 농담으로 회피한다.",
+        example: "I'm a lawyer—we all exaggerate about everything to win arguments.",
+        example_ko: "나는 변호사야—우리는 모두 논쟁에서 이기기 위해 모든 것을 과장한다.",
+        context: "Joey tries to excuse his emotional declaration as typical actor behavior.",
+        context_ko: "조이는 자신의 감정적인 선언을 전형적인 배우 행동으로 변명하려고 시도한다.",
+        youtubeUrl: "REPLACE_S8E16X5"
+      },
+      {
+        phrase: "These are just feelings. They'll go away.",
+        partOfSpeech: "expression",
+        meaning: "Convincing oneself (unconvincingly) that emotions are temporary.",
+        meaning_ko: "감정이 일시적이라고 자신을 (확신적이지 않게) 설득하려고 한다.",
+        example: "This anxiety will pass. It's temporary.",
+        example_ko: "이 불안은 지나갈 거야. 그건 임시적이야.",
+        context: "Joey tries to rationalize his persistent feelings for Rachel as fleeting.",
+        context_ko: "조이는 레이첼에 대한 자신의 지속적인 감정을 일시적인 것으로 합리화하려고 시도한다.",
+        youtubeUrl: "REPLACE_S8E16X6"
+      },
+      {
+        phrase: "That's the youngest girl to reject me.",
+        partOfSpeech: "expression",
+        meaning: "A humorous self-deprecating joke about repeated romantic rejection.",
+        meaning_ko: "반복된 로맨틱한 거절에 대한 유머러스한 자조적 농담.",
+        example: "Even the baby kicked me away—my rejection record is complete.",
+        example_ko: "심지어 아기도 나를 차버렸어—내 거절 기록이 완성되었어.",
+        context: "Joey jokes about feeling the baby kick against his hand as rejection.",
+        context_ko: "조이는 아기가 자신의 손을 발차기하는 것을 거절로 농담한다.",
+        youtubeUrl: "REPLACE_S8E16X7"
+      },
+      {
+        phrase: "Do you believe in soul mates?",
+        partOfSpeech: "expression",
+        meaning: "A philosophical question about whether one perfect person exists for everyone.",
+        meaning_ko: "모든 사람을 위해 하나의 완벽한 사람이 존재하는지에 대한 철학적 질문.",
+        example: "Do you think there's just one person meant for you in the whole world?",
+        example_ko: "넌 온 세상에 너를 위해 정해진 단 한 사람이 있다고 생각해?",
+        context: "Phoebe opens a conversation about romantic destiny and soul mates.",
+        context_ko: "피비가 로맨틱한 운명과 소울메이트에 대한 대화를 시작한다.",
+        youtubeUrl: "REPLACE_S8E16X8"
+      },
+      {
+        phrase: "You know how you find him? Stop looking.",
+        partOfSpeech: "expression",
+        meaning: "Romantic advice suggesting that love comes when you stop actively seeking it.",
+        meaning_ko: "당신이 그것을 적극적으로 찾는 것을 멈출 때 사랑이 온다고 제안하는 로맨틱한 조언.",
+        example: "The best relationships happen when you're not trying to find someone.",
+        example_ko: "최고의 관계는 너가 누군가를 찾으려고 하지 않을 때 일어나.",
+        context: "Phoebe shares her philosophy about finding soul mates.",
+        context_ko: "피비는 소울메이트를 찾는 것에 대한 그녀의 철학을 공유한다.",
+        youtubeUrl: "REPLACE_S8E16X9"
+      },
+      {
+        phrase: "I've stopped looking for Russell Crowe. He'll find me.",
+        partOfSpeech: "expression",
+        meaning: "Applying romantic advice (perhaps humorously) to finding a celebrity crush.",
+        meaning_ko: "로맨틱한 조언을 (아마도 유머있게) 연예인 crush를 찾는 것에 적용한다.",
+        example: "I'm not going to look for my celebrity crush—they'll come to me.",
+        example_ko: "나는 내 연예인 crush를 찾지 않을 거야—그들이 나에게 올 거야.",
+        context: "Phoebe applies her soul mate philosophy to her celebrity crush.",
+        context_ko: "피비는 자신의 소울메이트 철학을 자신의 연예인 crush에 적용한다.",
+        youtubeUrl: "REPLACE_S8E16X10"
+      },
+      {
+        phrase: "Well, last night, I met Monica's.",
+        partOfSpeech: "expression",
+        meaning: "Casually revealing significant information that contradicts what was just discussed.",
+        meaning_ko: "방금 논의된 것과 모순되는 중요한 정보를 우연하게 공개한다.",
+        example: "Actually, I just saw your ex at the mall yesterday.",
+        example_ko: "실제로, 나는 어제 쇼핑몰에서 너의 전 남자 친구를 봤어.",
+        context: "Rachel reveals she just met Monica's alleged soul mate, Don.",
+        context_ko: "레이첼은 그녀가 방금 모니카의 alleged 소울메이트인 Don을 만났다고 밝힌다.",
+        youtubeUrl: "REPLACE_S8E16X11"
+      },
+      {
+        phrase: "A tall guy with hair similar to mine? Oh, unknowable universe!",
+        partOfSpeech: "expression",
+        meaning: "Sarcastic acceptance of an uncanny coincidence or seeming fate.",
+        meaning_ko: "엄청난 우연의 일치 또는 보이는 운명에 대한 풍자적 수용.",
+        example: "She happens to like sci-fi and beer? Oh, destiny!",
+        example_ko: "그녀는 공상과학과 맥주를 좋아하는가? 오, 운명이다!",
+        context: "Chandler sarcastically responds to Don being Monica's apparent soul mate match.",
+        context_ko: "챈들러는 Don이 모니카의 apparent 소울메이트 매치에 풍자적으로 반응한다.",
+        youtubeUrl: "REPLACE_S8E16X12"
+      },
+      {
+        phrase: "He may not be my soul mate, but a girl's gotta eat.",
+        partOfSpeech: "expression",
+        meaning: "Justifying dating someone by citing practical needs over romantic feelings.",
+        meaning_ko: "로맨틱한 감정보다 실질적인 필요를 인용하여 누군가와 데이트하는 것을 정당화한다.",
+        example: "He's not my ideal guy, but rent is due.",
+        example_ko: "그는 내가 이상적인 남자가 아니지만, 월세가 만기야.",
+        context: "Rachel justifies continuing to date Don despite believing he's Monica's soul mate.",
+        context_ko: "레이첼은 Don이 모니카의 소울메이트라고 믿음에도 불구하고 계속 데이트하는 것을 정당화한다.",
+        youtubeUrl: "REPLACE_S8E16X13"
+      },
+      {
+        phrase: "I never been in love, so... I don't know what to do.",
+        partOfSpeech: "expression",
+        meaning: "Expressing vulnerability and confusion about handling romantic feelings for the first time.",
+        meaning_ko: "처음으로 로맨틱한 감정을 처리하는 것에 대한 취약성과 혼란을 표현한다.",
+        example: "This is my first real relationship. I don't know how to handle it.",
+        example_ko: "이건 내 첫 번째 진정한 관계야. 나는 그것을 어떻게 처리해야 할지 모르겠어.",
+        context: "Joey admits to Ross that he's never been in love before Rachel.",
+        context_ko: "조이는 로스에게 그가 레이첼 이전에 사랑에 빠진 적이 없다고 인정한다.",
+        youtubeUrl: "REPLACE_S8E16X14"
+      },
+      {
+        phrase: "If she's not where you are, you can start to move on. But if she is where you are... then my feeling weird shouldn't stand in the way.",
+        partOfSpeech: "expression",
+        meaning: "Wisely suggesting that distance determines whether to pursue romantic feelings.",
+        meaning_ko: "거리가 로맨틱한 감정을 추구할지 여부를 결정한다고 현명하게 제안한다.",
+        example: "If she moves away, you can forget about her. But if she stays, you should tell her.",
+        example_ko: "그녀가 이주한다면, 넌 그녀를 잊을 수 있어. 하지만 그녀가 머물면, 넌 그녀에게 말해야 해.",
+        context: "Chandler advises Joey on how to handle his feelings for Rachel.",
+        context_ko: "챈들러는 조이에게 레이첼에 대한 자신의 감정을 처리하는 방법을 조언한다.",
+        youtubeUrl: "REPLACE_S8E16X15"
+      }
+    ]
   };
 
   var S_NUM = 8;

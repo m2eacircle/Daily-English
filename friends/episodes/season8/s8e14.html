@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 14',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Secret Closet',
+    description: 'Phoebe discovers Chandler is secretly getting a massage. Rachel feels the baby kick for the first time. Monica refuses to open her secret closet. Braxton Hicks scare.',
+    expressions: [
+      {
+        phrase: "You caught me at a bad time.",
+        partOfSpeech: "expression",
+        meaning: "Indicating that someone is currently unavailable or occupied with something important.",
+        meaning_ko: "현재 사용할 수 없거나 중요한 일에 바쁘다는 것을 나타낸다.",
+        example: "Sorry, you caught me at a bad time—I'm in the middle of a meeting.",
+        example_ko: "미안해, 넌 나를 나쁜 시간에 잡았어—나는 회의 중이야.",
+        context: "Joey tells Phoebe he can't hang out because he's busy with Chandler.",
+        context_ko: "조이가 피비에게 챈들러와 바빠서 어울릴 수 없다고 말한다.",
+        youtubeUrl: "REPLACE_S8E14X1"
+      },
+      {
+        phrase: "You're getting a massage? You never let me massage you.",
+        partOfSpeech: "expression",
+        meaning: "Expressing hurt or jealousy that someone is accepting from others what they won't accept from the speaker.",
+        meaning_ko: "누군가가 말하는 사람으로부터 거부한 것을 다른 사람으로부터 받아들이고 있다는 상처나 질투를 표현한다.",
+        example: "You refuse my help but you accepted theirs? That hurts.",
+        example_ko: "넌 내 도움을 거절하지만 그들의 도움을 받아들였어? 그건 상처야.",
+        context: "Phoebe is upset to learn Chandler is seeing a professional massage therapist named Alexandra.",
+        context_ko: "피비는 챈들러가 Alexandra라는 전문 마사지 치료사를 만나고 있다는 것을 알게 되어 화났다.",
+        youtubeUrl: "REPLACE_S8E14X2"
+      },
+      {
+        phrase: "I told you you hate massages.",
+        partOfSpeech: "expression",
+        meaning: "Calling someone out for being inconsistent or lying about their preferences.",
+        meaning_ko: "누군가가 자신의 선호도에 대해 일관성이 없거나 거짓말을 하고 있다고 지적한다.",
+        example: "You said you don't like sushi, but I just saw you order it.",
+        example_ko: "넌 너는 초밥을 좋아하지 않는다고 했지만, 나는 방금 넌 그걸 주문했어.",
+        context: "Phoebe confronts Chandler about his previous claim that he hates massages.",
+        context_ko: "피비는 챈들러가 마사지를 싫어한다고 주장한 것에 대해 그를 대면한다.",
+        youtubeUrl: "REPLACE_S8E14X3"
+      },
+      {
+        phrase: "Buy stamps. Pick up dry cleaning. Don't let Phoebe in.",
+        partOfSpeech: "expression",
+        meaning: "A humorous list mixing mundane tasks with an absurd directive, often suggesting someone should be avoided.",
+        meaning_ko: "평범한 작업을 터무니없는 지시와 섞는 유머러스한 목록으로, 종종 누군가를 피해야 한다고 제안한다.",
+        example: "Call the plumber. Water the plants. Keep Mom out of the basement.",
+        example_ko: "배관공에 전화해. 식물에 물을 줘. 엄마가 지하실에 들어오지 않게 해.",
+        context: "A joke about Chandler's to-do list apparently including avoiding Phoebe.",
+        context_ko: "챈들러의 할일 목록에 피비를 피하는 것이 포함되어 있다는 농담.",
+        youtubeUrl: "REPLACE_S8E14X4"
+      },
+      {
+        phrase: "How long has this been going on?",
+        partOfSpeech: "expression",
+        meaning: "Demanding to know the duration of a secret or hidden situation.",
+        meaning_ko: "비밀이거나 숨겨진 상황의 지속 기간을 알 것을 요구한다.",
+        example: "How long have you been dating without telling me?",
+        example_ko: "넌 얼마나 오래 나에게 말하지 않고 데이트했어?",
+        context: "Phoebe accusingly asks how long Chandler has been secretly getting professional massages.",
+        context_ko: "피비는 챈들러가 얼마나 오래 비밀리에 전문 마사지를 받고 있었는지 비난하며 묻는다.",
+        youtubeUrl: "REPLACE_S8E14X5"
+      },
+      {
+        phrase: "Okay. Oh, too late! I'm leaving.",
+        partOfSpeech: "expression",
+        meaning: "Dramatically deciding to leave a situation, often ignoring attempts to explain or apologize.",
+        meaning_ko: "상황을 떠나기로 극적으로 결정하며, 종종 설명이나 사과 시도를 무시한다.",
+        example: "You've already lost me. I'm done listening.",
+        example_ko: "넌 이미 나를 잃었어. 나는 더 이상 듣지 않을 거야.",
+        context: "Phoebe angrily storms off after learning about Chandler's secret massages.",
+        context_ko: "피비는 챈들러의 비밀 마사지에 대해 알게 된 후 화나서 몸을 굴린다.",
+        youtubeUrl: "REPLACE_S8E14X6"
+      },
+      {
+        phrase: "I hope it's not an inappropriate time to say this, but you're the best sex I've ever had.",
+        partOfSpeech: "expression",
+        meaning: "A compliment about someone's intimate skills, often made during a vulnerable or inconvenient moment.",
+        meaning_ko: "누군가의 친밀한 기술에 대한 칭찬으로, 종종 취약하거나 불편한 순간에 만들어진다.",
+        example: "I know now isn't the time, but I wanted to tell you you're amazing.",
+        example_ko: "지금이 아니라는 걸 알지만, 나는 넌 놀랍다고 말하고 싶었어.",
+        context: "Rachel compliments Joey on his intimate skills during her labor.",
+        context_ko: "레이첼이 그녀의 진통 중에 조이의 친밀한 기술을 칭찬한다.",
+        youtubeUrl: "REPLACE_S8E14X7"
+      },
+      {
+        phrase: "That's always appropriate.",
+        partOfSpeech: "expression",
+        meaning: "Affirming that a compliment or statement is well-received regardless of timing or context.",
+        meaning_ko: "타이밍이나 상황에 관계없이 칭찬이나 진술이 잘 받아들여진다는 것을 확인한다.",
+        example: "Telling someone they're wonderful is never a bad idea.",
+        example_ko: "누군가가 훌륭하다고 말하는 것은 나쁜 아이디어가 아니야.",
+        context: "Joey warmly accepts Rachel's intimate compliment during labor.",
+        context_ko: "조이는 진통 중에 레이첼의 친밀한 칭찬을 따뜻하게 받아들인다.",
+        youtubeUrl: "REPLACE_S8E14X8"
+      },
+      {
+        phrase: "I hope you're a better father than you are a friend!",
+        partOfSpeech: "expression",
+        meaning: "A harsh criticism suggesting someone is failing at friendship and hoping they do better at fatherhood.",
+        meaning_ko: "누군가가 우정에 실패하고 있으며 아버지로서 더 잘하기를 바라는 가혹한 비판.",
+        example: "You've let me down as a friend. I hope you're better with your kids.",
+        example_ko: "넌 친구로서 나를 실망시켰어. 나는 넌 니 아이들과 더 잘하기를 바래.",
+        context: "Phoebe shouts this angry accusation at Joey after he ignores her during the labor.",
+        context_ko: "피비는 조이가 진통 중에 자신을 무시한 후 이 화난 비난을 조이에게 외친다.",
+        youtubeUrl: "REPLACE_S8E14X9"
+      },
+      {
+        phrase: "Feel this. Come feel my belly. The baby's kicking for the first time.",
+        partOfSpeech: "expression",
+        meaning: "Excitedly inviting someone to physically feel a pregnancy milestone—the first fetal movement.",
+        meaning_ko: "누군가를 물리적으로 느끼도록 초대하여 흥분하게 하는 임신 이정표—첫 번째 태동.",
+        example: "Come here, you have to feel the baby kick!",
+        example_ko: "여기 와, 넌 아기가 발차기하는 것을 느껴야 해!",
+        context: "Rachel calls Joey urgently to feel the first movement of their baby.",
+        context_ko: "레이첼이 조이에게 그들의 아기의 첫 번째 움직임을 느끼도록 긴급히 요청한다.",
+        youtubeUrl: "REPLACE_S8E14X10"
+      },
+      {
+        phrase: "She's like, um... Who's that kind of annoying girl soccer player? Mia Hamm!",
+        partOfSpeech: "expression",
+        meaning: "A humorous comparison using a pop culture reference, often backpedaling on an insult.",
+        meaning_ko: "팝 컬처 참조를 사용한 유머러스한 비교로, 종종 모욕을 후퇴한다.",
+        example: "The baby's kicking like that famous athlete—really strong!",
+        example_ko: "아기가 그 유명한 운동선수처럼 발차기하고 있어—정말 강해!",
+        context: "Joey affectionately compares the baby's strong kicks to soccer player Mia Hamm.",
+        context_ko: "조이는 아기의 강한 발차기를 축구 선수 Mia Hamm과 애정있게 비교한다.",
+        youtubeUrl: "REPLACE_S8E14X11"
+      },
+      {
+        phrase: "Who says you can't get a nice punch bowl for under $6?",
+        partOfSpeech: "expression",
+        meaning: "Sarcastically questioning the quality of a cheap gift, suggesting it's poor value.",
+        meaning_ko: "싸구려 선물의 품질을 풍자적으로 질문하여 낮은 가치를 제안한다.",
+        example: "This cheapo thing is exactly what a wedding should be—terrible.",
+        example_ko: "이 싸구려 것은 정확히 결혼식이 어떻게 해야 하는지—끔찍해.",
+        context: "Monica sarcastically comments on the cheap, ugly punch bowl they received as a wedding gift.",
+        context_ko: "모니카는 그들이 결혼식 선물로 받은 싸구려, 못생긴 펀치볼에 대해 풍자적으로 언급한다.",
+        youtubeUrl: "REPLACE_S8E14X12"
+      },
+      {
+        phrase: "Have you forgotten everything you learned in orientation?",
+        partOfSpeech: "expression",
+        meaning: "Sarcastically suggesting someone has forgotten basic rules or procedures they were taught.",
+        meaning_ko: "누군가가 가르쳤던 기본 규칙이나 절차를 잊었다고 풍자적으로 제안한다.",
+        example: "Didn't they teach you that in training?",
+        example_ko: "그들이 그걸 훈련에서 가르치지 않았어?",
+        context: "Monica sarcastically reminds Chandler of proper household organization basics.",
+        context_ko: "모니카는 챈들러에게 적절한 가정 조직의 기본을 풍자적으로 상기시킨다.",
+        youtubeUrl: "REPLACE_S8E14X13"
+      },
+      {
+        phrase: "Nothing in there concerns you. If you love me, you'll just let it go.",
+        partOfSpeech: "expression",
+        meaning: "Setting a firm boundary by saying a secret is not the other person's business and requesting acceptance.",
+        meaning_ko: "비밀이 다른 사람의 사업이 아니라고 말하고 수용을 요청하여 확고한 경계를 설정한다.",
+        example: "What's in my closet is my business. Please respect that.",
+        example_ko: "내 옷장에 뭐가 있는지는 내 일이야. 그걸 존중해 줘.",
+        context: "Monica firmly refuses to let Chandler open her mysterious locked closet.",
+        context_ko: "모니카는 챈들러가 그녀의 신비한 잠긴 옷장을 열도록 거부한다.",
+        youtubeUrl: "REPLACE_S8E14X14"
+      },
+      {
+        phrase: "Potato, 'potato.' - Dinosaurs. Potato, 'potato.'",
+        partOfSpeech: "expression",
+        meaning: "A humorous dismissal suggesting that two things are essentially the same despite different names.",
+        meaning_ko: "다른 이름에도 불구하고 두 가지가 본질적으로 같다는 것을 시사하는 유머러스한 해제.",
+        example: "Tomato, 'tomato'—they're basically the same thing.",
+        example_ko: "토마토, '토마토'—그들은 기본적으로 같은 것이야.",
+        context: "Phoebe playfully dismisses Ross's correction about dinosaurs vs. dragons as unimportant.",
+        context_ko: "피비는 공룡 대 드래곤에 대한 로스의 수정을 중요하지 않은 것으로 장난스럽게 무시한다.",
+        youtubeUrl: "REPLACE_S8E14X15"
+      }
+    ]
   };
 
   var S_NUM = 8;

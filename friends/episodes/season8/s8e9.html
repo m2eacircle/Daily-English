@@ -92,10 +92,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 9',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Chandler in a Box',
+    description: 'Thanksgiving dinner with Will, an old classmate. Surprising revelations about a high school club. Joey commits to eating an entire turkey.',
+    expressions: [
+      {
+        phrase: "You fall for it every time.",
+        partOfSpeech: "expression",
+        meaning: "You keep believing something that isn't true; you're easily fooled or tricked repeatedly.",
+        meaning_ko: "너는 계속 사실이 아닌 것을 믿는다; 너는 반복적으로 쉽게 속는다.",
+        example: "I keep telling him that story and you fall for it every time!",
+        example_ko: "나는 계속 그 이야기를 말해도 넌 매번 속는군!",
+        context: "Phoebe tricks Rachel into believing pregnancy rumors, and Rachel reacts every time without fail.",
+        context_ko: "프로비가 레이첼을 임신 소문으로 속이고, 레이첼은 매번 반응을 보인다.",
+        youtubeUrl: "REPLACE_S8E9X1"
+      },
+      {
+        phrase: "It just doesn't seem worth it.",
+        partOfSpeech: "expression",
+        meaning: "Something is not important or valuable enough to bother doing; the effort isn't justified.",
+        meaning_ko: "뭔가 하기에 충분히 중요하거나 가치 있지 않다; 노력이 정당하지 않다.",
+        example: "Making a whole turkey for just three people just doesn't seem worth it.",
+        example_ko: "단 세 사람을 위해 온전한 칠면조를 만드는 것은 가치 있어 보이지 않는다.",
+        context: "Monica questions whether it's worth cooking a full turkey when several guests don't eat meat.",
+        context_ko: "모니카는 몇몇 손님이 고기를 먹지 않을 때 온전한 칠면조를 요리할 가치가 있는지 의문을 제기한다.",
+        youtubeUrl: "REPLACE_S8E9X2"
+      },
+      {
+        phrase: "Thanksgiving with no turkey is like Fourth of July with no apple pie.",
+        partOfSpeech: "idiom",
+        meaning: "A comparison showing that certain things are essential or expected together; removing one ruins the whole.",
+        meaning_ko: "특정 것들이 필수적이거나 함께 기대된다는 것을 보여주는 비교; 하나를 빼면 전체가 망가진다.",
+        example: "Without the dessert, Christmas dinner isn't Christmas dinner.",
+        example_ko: "디저트 없이, 크리스마스 저녁은 크리스마스 저녁이 아니다.",
+        context: "Someone argues that turkey is essential to Thanksgiving, just as apple pie is to Fourth of July.",
+        context_ko: "누군가 칠면조가 추수감사절에 필수적이라고 주장하는 것처럼 애플파이가 7월 4일에 필수적이다.",
+        youtubeUrl: "REPLACE_S8E9X3"
+      },
+      {
+        phrase: "Because I'm a Tribbiani. This is what we do.",
+        partOfSpeech: "expression",
+        meaning: "Using family heritage or identity to justify a particular behavior or ability.",
+        meaning_ko: "특정 행동이나 능력을 정당화하기 위해 가족 유산이나 정체성을 사용한다.",
+        example: "I can eat a lot because I'm Italian. It's what we do.",
+        example_ko: "나는 이탈리아 사람이라 많이 먹을 수 있어. 우리가 하는 일이야.",
+        context: "Joey confidently declares he can finish an entire turkey because eating is a Tribbiani family talent.",
+        context_ko: "조이는 먹는 것이 트리비아니 가족의 재능이라고 자신 있게 선언하며 칠면조를 다 먹을 수 있다고 말한다.",
+        youtubeUrl: "REPLACE_S8E9X4"
+      },
+      {
+        phrase: "I'm just pretending to watch the game so I don't have to help out with stuff.",
+        partOfSpeech: "expression",
+        meaning: "To fake interest in something to avoid doing other responsibilities or tasks.",
+        meaning_ko: "다른 책임이나 작업을 피하기 위해 뭔가에 대한 관심을 가장한다.",
+        example: "I'm just pretending to be busy so I don't have to clean the house.",
+        example_ko: "집을 청소하지 않기 위해 바쁜 척하고 있어.",
+        context: "Chandler admits his secret strategy of pretending to watch football to avoid helping Monica with Thanksgiving preparations.",
+        context_ko: "챈들러는 모니카의 추수감사절 준비를 돕지 않기 위해 축구를 보는 척하는 비결을 인정한다.",
+        youtubeUrl: "REPLACE_S8E9X5"
+      },
+      {
+        phrase: "That is brilliant.",
+        partOfSpeech: "expression",
+        meaning: "That is an excellent, clever, or impressive idea or action.",
+        meaning_ko: "그것은 훌륭하고 영리하며 인상적인 생각이나 행동이다.",
+        example: "Your plan to avoid the chores is brilliant!",
+        example_ko: "집안일을 피하려는 계획은 정말 영리해!",
+        context: "Ross is impressed by Chandler's clever avoidance strategy of pretending to watch the football game.",
+        context_ko: "로스는 챈들러가 축구 경기를 보는 척하는 영리한 회피 전략에 감탄한다.",
+        youtubeUrl: "REPLACE_S8E9X6"
+      },
+      {
+        phrase: "Well, it's only like my favorite bay.",
+        partOfSpeech: "wordplay/pun",
+        meaning: "A clever play on words using 'Green Bay' football team as if the speaker loves the geography.",
+        meaning_ko: "'그린 베이' 미식축구 팀을 마치 화자가 지리를 사랑하는 것처럼 사용하는 영리한 말놀이.",
+        example: "I love Paris—it's my favorite city. Well, actually it's my favorite pair-of-eyes!",
+        example_ko: "나는 파리를 사랑해—그것은 내가 좋아하는 도시야. 실제로는 내가 좋아하는 한 쌍의 눈이야!",
+        context: "Joey jokingly explains why he suddenly likes football (Green Bay), using a pun on the team name.",
+        context_ko: "조이가 갑자기 축구를 좋아하는 이유를 농담으로 설명하면서 팀 이름을 말장난으로 사용한다.",
+        youtubeUrl: "REPLACE_S8E9X7"
+      },
+      {
+        phrase: "My two greatest enemies, Ross: Rachel Green and complex carbohydrates.",
+        partOfSpeech: "expression",
+        meaning: "Naming something as a major source of conflict or difficulty in one's life.",
+        meaning_ko: "뭔가를 자신의 삶에서 주요 갈등이나 어려움의 원인으로 명명한다.",
+        example: "My two greatest enemies are my boss and procrastination.",
+        example_ko: "나의 두 가지 가장 큰 적은 내 보스와 미루는 습관이다.",
+        context: "Will tells Ross that Rachel Green and complex carbohydrates are his biggest challenges.",
+        context_ko: "윌이 로스에게 레이첼 그린과 복합 탄수화물이 그의 최대 도전이라고 말한다.",
+        youtubeUrl: "REPLACE_S8E9X8"
+      },
+      {
+        phrase: "I hate her, Ross. I hate her.",
+        partOfSpeech: "expression",
+        meaning: "To express extreme dislike or anger toward someone with strong emphasis.",
+        meaning_ko: "강한 강조와 함께 누군가에 대한 극단적인 불만이나 분노를 표현한다.",
+        example: "I hate him. I really hate him for what he did.",
+        example_ko: "나는 그를 미워해. 나는 그가 한 일 때문에 정말 그를 미워해.",
+        context: "Will repeatedly expresses his deep hatred for Rachel Green from his high school experience.",
+        context_ko: "윌은 고등학교에서의 경험으로 인해 레이첼 그린에 대한 깊은 증오를 반복적으로 표현한다.",
+        youtubeUrl: "REPLACE_S8E9X9"
+      },
+      {
+        phrase: "Queen Rachel, does whatever she wants in her little Rachel-land.",
+        partOfSpeech: "expression",
+        meaning: "To mockingly describe someone as self-centered or as if they live in their own isolated world.",
+        meaning_ko: "누군가를 자기중심적이거나 자신의 고립된 세계에서 산다고 조롱하며 묘사한다.",
+        example: "He acts like he's in his own bubble, doing whatever he wants in his little world.",
+        example_ko: "그는 자신의 거품 속에 있는 것처럼 행동하며, 자신의 작은 세계에서 하고 싶은 대로 한다.",
+        context: "Will mockingly describes Rachel as if she's royalty living in her own privileged world.",
+        context_ko: "윌은 레이첼을 자신의 특권적인 세계에서 사는 왕족인 것처럼 조롱스럽게 묘사한다.",
+        youtubeUrl: "REPLACE_S8E9X10"
+      },
+      {
+        phrase: "A little mean? You made my life miserable.",
+        partOfSpeech: "expression",
+        meaning: "Correcting someone's understatement by emphasizing how severe the situation actually was.",
+        meaning_ko: "누군가의 경미함을 수정하여 상황이 실제로 얼마나 심각한지를 강조한다.",
+        example: "A little rude? You were absolutely horrible to me!",
+        example_ko: "조금 무례했어? 넌 나한테 정말 끔찍했어!",
+        context: "Will corrects Rachel's understatement when she apologizes for being 'a little mean' to him.",
+        context_ko: "윌은 레이첼이 그에게 '조금' 못되었다고 사과할 때 그 경미함을 수정한다.",
+        youtubeUrl: "REPLACE_S8E9X11"
+      },
+      {
+        phrase: "We had a club. The \"I Hate Rachel Green Club.\"",
+        partOfSpeech: "expression",
+        meaning: "A revelation that multiple people organized together to express their collective dislike.",
+        meaning_ko: "여러 사람이 집단 불만을 표현하기 위해 함께 조직했다는 것의 드러남.",
+        example: "Oh, we didn't just ignore you—we had a club dedicated to it!",
+        example_ko: "오, 우리는 너를 무시하기만 한 게 아니야—우리는 그것을 위한 클럽을 만들었어!",
+        context: "Will reveals that he and Ross created an organized club specifically to hate Rachel in high school.",
+        context_ko: "윌은 고등학교에서 자신과 로스가 레이첼을 미워하기 위해 특별히 만든 조직 클럽이 있었다고 밝힌다.",
+        youtubeUrl: "REPLACE_S8E9X12"
+      },
+      {
+        phrase: "You went out with her? We had a pact.",
+        partOfSpeech: "expression",
+        meaning: "Expressing shock that someone broke an agreement or promise to do something together.",
+        meaning_ko: "누군가가 함께 뭔가를 하기로 한 계약이나 약속을 깬 것에 충격을 표현한다.",
+        example: "You married her? We had a pact to stay single!",
+        example_ko: "넌 그녀와 결혼했어? 우리는 독신으로 있기로 약속했잖아!",
+        context: "Will is shocked when Ross reveals he dated Rachel, violating their pact against her.",
+        context_ko: "로스가 레이첼과 사귀었다고 밝힐 때 윌은 그들의 약속을 위반한 것에 충격을 받는다.",
+        youtubeUrl: "REPLACE_S8E9X13"
+      },
+      {
+        phrase: "The only reason I joined cofounded the club was that I was insanely in love with you.",
+        partOfSpeech: "expression",
+        meaning: "Revealing that a negative action was motivated by deep romantic feelings rather than true hate.",
+        meaning_ko: "부정적인 행동이 진정한 증오가 아닌 깊은 로맨틱한 감정으로 동기가 되었다는 것을 드러낸다.",
+        example: "I was mean to you because I secretly loved you and didn't know how to show it.",
+        example_ko: "나는 너에게 못됐어. 왜냐하면 나는 너를 비밀리에 사랑했는데 그것을 표현하는 방법을 몰랐기 때문이야.",
+        context: "Will explains his antagonistic behavior toward Rachel was actually driven by romantic love.",
+        context_ko: "윌이 레이첼에 대한 적대적인 행동이 실제로 로맨틱한 사랑에 의해 동기가 되었다고 설명한다.",
+        youtubeUrl: "REPLACE_S8E9X14"
+      },
+      {
+        phrase: "It was no big deal.",
+        partOfSpeech: "expression",
+        meaning: "Downplaying something; suggesting that something is not important or significant.",
+        meaning_ko: "뭔가를 경시하기; 뭔가가 중요하거나 의미 있지 않다는 것을 시사한다.",
+        example: "Don't worry about it—it was no big deal.",
+        example_ko: "걱정하지 마—큰 일이 아니야.",
+        context: "Ross tries to minimize the importance of the rumor he and Will started about Rachel.",
+        context_ko: "로스는 자신과 윌이 레이첼에 대해 시작한 소문의 중요성을 최소화하려고 한다.",
+        youtubeUrl: "REPLACE_S8E9X15"
+      }
+    ]
   };
 
   var S_NUM = 8;

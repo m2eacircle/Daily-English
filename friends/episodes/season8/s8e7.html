@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s8e7.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S8E7: Season 8, Episode 7</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S8E7: The One with the Birthing Video</div>
+        <div class="page-header-meta">Monica hires a maid. Rachel goes on date with Eric. Apartment search complications. Phoebe mishap.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s8e7"
             onclick="toggleBookmark('episode','episode-friends-s8e7','📋 Friends S8E7','friends/episodes/season8/s8e7.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 7',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Birthing Video',
+    description: 'Monica hires a maid. Rachel goes on date with Eric. Apartment search complications. Phoebe mishap.',
+    expressions: [
+    {
+      phrase: 'Nagging works!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that persistent complaining successfully achieved desired result. The phrase conveys vindication. It demonstrates proof.',
+      meaning_ko: '지속적인 불평이 원하는 결과를 성공적으로 달성했음을 표현합니다. 이 표현은 정당화를 전달합니다. 그것은 증명을 보여줍니다.',
+      example: 'A: "I got the house cleaned." B: "Nagging works!"',
+      example_ko: 'A: "난 집을 청소했어." B: "잔소리가 효과 있어!"',
+      context: 'Monica realizing her complaints achieved cleaning.',
+      context_ko: 'Monica가 불평이 청소를 달성했음을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X1'
+    },
+    {
+      phrase: 'Usually when I\'m anxious, I clean.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining personal coping mechanism for dealing with stress. The phrase conveys anxiety response. It demonstrates habit.',
+      meaning_ko: '스트레스 대처를 위한 개인적 대처 메커니즘을 설명합니다. 이 표현은 불안 반응을 전달합니다. 그것은 습관을 보여줍니다.',
+      example: 'A: "You seem anxious." B: "Usually when I\'m anxious, I clean."',
+      example_ko: 'A: "넌 불안해 보여." B: "보통 나는 불안할 때 청소해."',
+      context: 'Monica explaining her stress relief method.',
+      context_ko: 'Monica가 그녀의 스트레스 해소 방법을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X2'
+    },
+    {
+      phrase: 'I never get calls!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing surprise at receiving unexpected phone contact. The phrase conveys astonishment. It demonstrates social isolation.',
+      meaning_ko: '예상치 못한 전화 연락을 받은 놀라움을 표현합니다. 이 표현은 경악을 전달합니다. 그것은 사회적 고립을 보여줍니다.',
+      example: 'A: "Your phone is ringing." B: "I never get calls!"',
+      example_ko: 'A: "너 전화가 울려." B: "난 절대 전화 안 받아!"',
+      context: 'Phoebe shocked at receiving call from Eric.',
+      context_ko: 'Phoebe가 Eric의 전화를 받고 충격을 받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X3'
+    },
+    {
+      phrase: 'What an incredible violation and wonderful surprise!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing contradictory emotions about concerning yet positive action. The phrase conveys mixed feelings. It demonstrates acceptance.',
+      meaning_ko: '우려스럽지만 긍정적인 행동에 대해 모순된 감정을 표현합니다. 이 표현은 혼합 감정을 전달합니다. 그것은 수용을 보여줍니다.',
+      example: 'A: "I got your number illegally." B: "What an incredible violation and wonderful surprise!"',
+      example_ko: 'A: "난 불법적으로 너 번호를 얻었어." B: "정말 끔찍한 위반이자 멋진 놀라움이야!"',
+      context: 'Phoebe reacting to Eric getting her phone number.',
+      context_ko: 'Phoebe가 Eric이 그녀의 전화번호를 얻은 것에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X4'
+    },
+    {
+      phrase: 'Are you asking me out?',
+      partOfSpeech: 'expression',
+      meaning: 'Seeking clarification of romantic intention behind question. The phrase conveys directness. It demonstrates confirmation.',
+      meaning_ko: '질문 뒤의 낭만적 의도를 명확히 하려고 합니다. 이 표현은 직설성을 전달합니다. 그것은 확인을 보여줍니다.',
+      example: 'A: "Do you eat lunch?" B: "Are you asking me out?"',
+      example_ko: 'A: "넌 점심 먹어?" B: "넌 나한테 작업 거는 거야?"',
+      context: 'Phoebe clarifying Eric\'s intention.',
+      context_ko: 'Phoebe가 Eric의 의도를 명확히 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X5'
+    },
+    {
+      phrase: 'It\'d be weird since you just broke up with my sister.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that timing creates uncomfortable relationship dynamic. The phrase conveys ethical concern. It demonstrates principle.',
+      meaning_ko: '시간이 불편한 관계 역학을 만드는 것을 명시합니다. 이 표현은 윤리적 관심을 전달합니다. 그것은 원칙을 보여줍니다.',
+      example: 'A: "Let\'s go out." B: "It\'d be weird since you just broke up with my sister."',
+      example_ko: 'A: "우리 데이트 해." B: "넌 내 언니랑 방금 헤어졌는데 어색할 거야."',
+      context: 'Phoebe pointing out relationship awkwardness.',
+      context_ko: 'Phoebe가 관계의 어색함을 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X6'
+    },
+    {
+      phrase: 'I was just saying that so you\'d think I was a good person.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting that moral stance was performative for appearance. The phrase conveys insincerity. It demonstrates admission.',
+      meaning_ko: '도덕적 입장이 외형을 위한 공연이었음을 인정합니다. 이 표현은 진실성 부족을 전달합니다. 그것은 인정을 보여줍니다.',
+      example: 'A: "Then I apologize." B: "I was just saying that so you\'d think I was a good person."',
+      example_ko: 'A: "그럼 미안해." B: "난 그냥 넌 날 좋은 사람이라고 생각하길 원했어."',
+      context: 'Eric clarifying his moral concern was fake.',
+      context_ko: 'Eric이 그의 도덕적 관심이 가짜였음을 명확히 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X7'
+    },
+    {
+      phrase: 'I won\'t take no for an answer.',
+      partOfSpeech: 'idiom',
+      meaning: 'Stating refusal to accept rejection or refusal. The phrase conveys determination. It demonstrates persistence.',
+      meaning_ko: '거절이나 거부 수용 거부를 명시합니다. 이 표현은 결단을 전달합니다. 그것은 끈기를 보여줍니다.',
+      example: 'A: "I can\'t go out with you." B: "I won\'t take no for an answer."',
+      example_ko: 'A: "난 너랑 못 나가." B: "난 안 된다는 답을 받지 않을 거야."',
+      context: 'Eric persisting with romantic pursuit.',
+      context_ko: 'Eric이 낭만적 추구를 지속합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X8'
+    },
+    {
+      phrase: 'I can\'t live with Joey once the baby comes.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating need to move residence due to incompatibility with impending situation. The phrase conveys necessity. It demonstrates decision.',
+      meaning_ko: '다가오는 상황과의 비호환성으로 인해 거주지를 옮길 필요를 명시합니다. 이 표현은 필요성을 전달합니다. 그것은 결정을 보여줍니다.',
+      example: 'A: "Where will you live?" B: "I can\'t live with Joey once the baby comes."',
+      example_ko: 'A: "넌 어디 살아?" B: "난 아기가 오면 Joey와 못 살아."',
+      context: 'Ross explaining need to find apartment.',
+      context_ko: 'Ross가 아파트를 찾아야 할 필요를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X9'
+    },
+    {
+      phrase: 'I don\'t want my child\'s first words to be "How you doing?"',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing concern that baby will adopt housemate\'s catchphrase as formative language. The phrase conveys worry. It demonstrates humor.',
+      meaning_ko: '아기가 룸메이트의 구호를 형성 언어로 채택할 수 있다는 우려를 표현합니다. 이 표현은 걱정을 전달합니다. 그것은 유머를 보여줍니다.',
+      example: 'A: "Why move?" B: "I don\'t want my child\'s first words to be \'How you doing?\'"',
+      example_ko: 'A: "왜 이사 가?" B: "난 아이의 첫 말이 \'How you doing?\'이길 원하지 않아."',
+      context: 'Ross joking about Joey\'s influence.',
+      context_ko: 'Ross가 Joey의 영향력에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X10'
+    },
+    {
+      phrase: 'She stole my jeans!',
+      partOfSpeech: 'expression',
+      meaning: 'Accusing maid of taking clothing without permission. The phrase conveys indignation. It demonstrates betrayal.',
+      meaning_ko: '가정부가 허락 없이 옷을 가져갔다고 고발합니다. 이 표현은 분개를 전달합니다. 그것은 배신을 보여줍니다.',
+      example: 'A: "She\'s wearing pants." B: "She stole my jeans!"',
+      example_ko: 'A: "그녀가 바지를 입고 있어." B: "그녀가 내 청바지를 훔쳤어!"',
+      context: 'Monica accusing maid of theft.',
+      context_ko: 'Monica가 가정부를 절도로 고발합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X11'
+    },
+    {
+      phrase: 'It\'s the perfect crime.',
+      partOfSpeech: 'expression',
+      meaning: 'Jokingly claiming that stealing while wearing item makes crime undetectable. The phrase conveys ironic humor. It demonstrates jest.',
+      meaning_ko: '물건을 입으면서 훔치는 것이 범죄를 감지 불가능하게 만든다고 농담으로 주장합니다. 이 표현은 아이러니 유머를 전달합니다. 그것은 농담을 보여줍니다.',
+      example: 'A: "She wore them in front of you?" B: "It\'s the perfect crime."',
+      example_ko: 'A: "그녀가 너 앞에서 입었어?" B: "완벽한 범죄야."',
+      context: 'Monica humorously calling out theft logic.',
+      context_ko: 'Monica가 절도 논리를 유머러스하게 지적합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X12'
+    },
+    {
+      phrase: 'You\'re so sweet!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing gratitude and appreciation for thoughtful gesture. The phrase conveys warmth. It demonstrates affection.',
+      meaning_ko: '세심한 제스처에 감사와 감사를 표현합니다. 이 표현은 따뜻함을 전달합니다. 그것은 애정을 보여줍니다.',
+      example: 'A: "I set up the nursery." B: "You\'re so sweet!"',
+      example_ko: 'A: "난 보육실을 설치했어." B: "넌 정말 착해!"',
+      context: 'Rachel thanking Chandler for apartment setup.',
+      context_ko: 'Rachel이 아파트 설정에 대해 Chandler에게 감사합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X13'
+    },
+    {
+      phrase: 'Look, if I\'m bringing home a woman who can\'t stand being around a baby, then maybe I don\'t wanna be with that woman.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that compatibility with child-presence reveals incompatibility with person. The phrase conveys priorities. It demonstrates maturity.',
+      meaning_ko: '아이 존재와의 호환성이 사람과의 비호환성을 나타낸다고 명시합니다. 이 표현은 우선순위를 전달합니다. 그것은 성숙함을 보여줍니다.',
+      example: 'A: "Won\'t women mind?" B: "Look, if I\'m bringing home a woman who can\'t stand being around a baby, then maybe I don\'t wanna be with that woman."',
+      example_ko: 'A: "여자들이 신경 쓸 거 아니야?" B: "봐, 내가 아기 옆에 있을 수 없는 여자를 집에 데려오면, 아마 난 그 여자와 함께 있고 싶지 않을 거야."',
+      context: 'Joey showing maturity about parenting.',
+      context_ko: 'Joey가 양육에 대한 성숙함을 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X14'
+    },
+    {
+      phrase: 'I really want you to stay.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing genuine desire for someone to remain living. The phrase conveys emotional attachment. It demonstrates vulnerability.',
+      meaning_ko: '누군가가 거주를 계속하길 원하는 진정한 욕구를 표현합니다. 이 표현은 감정적 애착을 전달합니다. 그것은 취약성을 보여줍니다.',
+      example: 'A: "I might move." B: "I really want you to stay."',
+      example_ko: 'A: "난 이사 갈 수도 있어." B: "난 정말 넌 여기 머물렀으면 좋겠어."',
+      context: 'Joey asking Rachel to stay living together.',
+      context_ko: 'Joey가 Rachel에게 함께 사는 것을 계속해달라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E7X15'
+    }
+  ]
   };
 
   var S_NUM = 8;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,19 +307,7 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

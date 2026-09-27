@@ -50,8 +50,8 @@
           onerror="this.src='../../images/s8e4.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S8E4: Season 8, Episode 4</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S8E4: The One with the Video Tape</div>
+        <div class="page-header-meta">Honeymoon couples jealousy. Ross and Rachel's past revealed on video. Confrontation about who initiated.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s8e4"
             onclick="toggleBookmark('episode','episode-friends-s8e4','📋 Friends S8E4','friends/episodes/season8/s8e4.html')">
@@ -77,25 +77,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 8, Episode 4',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Video Tape',
+    description: 'Honeymoon couples jealousy. Ross and Rachel\'s past revealed on video. Confrontation about who initiated.',
+    expressions: [
+    {
+      phrase: 'I just want you to know that I love you.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring affection before entering new phase of life. The phrase conveys sincere emotional expression. It demonstrates commitment.',
+      meaning_ko: '인생의 새로운 단계에 들어가기 전에 애정을 선언합니다. 이 표현은 진정한 감정 표현을 전달합니다. 그것은 헌신을 보여줍니다.',
+      example: 'A: "Before we start this journey..." B: "I just want you to know that I love you."',
+      example_ko: 'A: "이 여정을 시작하기 전에..." B: "난 너를 사랑한다는 걸 알아줘."',
+      context: 'Chandler expressing love to Monica entering their apartment.',
+      context_ko: 'Chandler이 Monica에게 아파트에 들어가며 사랑을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X1'
+    },
+    {
+      phrase: 'We finally have a couple to hang out with.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing excitement about having friends who are married. The phrase conveys social inclusion and relief. It demonstrates happiness.',
+      meaning_ko: '결혼한 친구를 갖게 된 것에 대한 흥분을 표현합니다. 이 표현은 사회적 포함과 안도감을 전달합니다. 그것은 행복을 보여줍니다.',
+      example: 'A: "We met another couple!" B: "We finally have a couple to hang out with."',
+      example_ko: 'A: "우린 다른 커플을 만났어!" B: "드디어 어울릴 커플이 생겼어."',
+      context: 'Monica and Chandler excited about meeting Greg and Jenny.',
+      context_ko: 'Monica와 Chandler가 Greg와 Jenny를 만난 것에 흥분합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X2'
+    },
+    {
+      phrase: 'That\'s a little misleading.',
+      partOfSpeech: 'expression',
+      meaning: 'Gently objecting to inaccurate characterization or statement. The phrase conveys diplomatic disagreement. It demonstrates correction.',
+      meaning_ko: '부정확한 특성화나 진술에 부드럽게 반대합니다. 이 표현은 외교적 불동의를 전달합니다. 그것은 수정을 보여줍니다.',
+      example: 'A: "You totally came on to me." B: "That\'s a little misleading."',
+      example_ko: 'A: "넌 정말 내게 작업 걸었어." B: "그건 좀 오도적이야."',
+      context: 'Ross correcting Rachel\'s version of their encounter.',
+      context_ko: 'Ross가 Rachel의 그들의 만남 버전을 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X3'
+    },
+    {
+      phrase: 'You got fake-numbered.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that someone received false contact information deliberately. The phrase conveys social rejection. It demonstrates embarrassment.',
+      meaning_ko: '누군가가 의도적으로 거짓 연락처 정보를 받았음을 나타냅니다. 이 표현은 사회적 거절을 전달합니다. 그것은 당혹감을 보여줍니다.',
+      example: 'A: "They won\'t answer." B: "You got fake-numbered."',
+      example_ko: 'A: "그들이 대답 안 해." B: "넌 가짜 번호를 받았어."',
+      context: 'Chandler realizing Greg and Jenny gave them wrong number.',
+      context_ko: 'Chandler이 Greg와 Jenny가 잘못된 번호를 줬음을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X4'
+    },
+    {
+      phrase: 'You were a delight to talk to.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that conversation was enjoyable and pleasant. The phrase conveys polite appreciation. It demonstrates courtesy.',
+      meaning_ko: '대화가 즐겁고 쾌적했음을 표현합니다. 이 표현은 정중한 감사를 전달합니다. 그것은 예의를 보여줍니다.',
+      example: 'A: "Why did you give me a fake number?" B: "You were a delight to talk to."',
+      example_ko: 'A: "왜 가짜 번호를 줬어?" B: "너와 대화하는 것이 정말 즐거웠어."',
+      context: 'Monica and Chandler sarcastically praising their interaction.',
+      context_ko: 'Monica와 Chandler가 그들의 상호작용을 풍자적으로 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X5'
+    },
+    {
+      phrase: 'I don\'t want Greg and Jenny\'s rejects.',
+      partOfSpeech: 'expression',
+      meaning: 'Refusing to associate with people discarded by others. The phrase conveys wounded pride and dignity. It demonstrates self-respect.',
+      meaning_ko: '다른 사람이 버린 사람들과 어울리기를 거부합니다. 이 표현은 상처받은 자존심과 존엄성을 전달합니다. 그것은 자존감을 보여줍니다.',
+      example: 'A: "You can hang with us." B: "I don\'t want Greg and Jenny\'s rejects."',
+      example_ko: 'A: "넌 우랑 어울릴 수 있어." B: "난 Greg와 Jenny의 버려진 사람들을 원하지 않아."',
+      context: 'Chandler rejecting consolation from friends.',
+      context_ko: 'Chandler이 친구들로부터의 위로를 거부합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X6'
+    },
+    {
+      phrase: 'That\'s like the pervert motto.',
+      partOfSpeech: 'expression',
+      meaning: 'Joking that denial is standard behavior for guilty person. The phrase conveys accusation with humor. It demonstrates wit.',
+      meaning_ko: '부인이 유죄인 사람의 표준 행동이라고 농담합니다. 이 표현은 유머로 고발을 전달합니다. 그것은 재치를 보여줍니다.',
+      example: 'A: "I\'m not a pervert." B: "That\'s like the pervert motto."',
+      example_ko: 'A: "난 변태 아니야." B: "그건 변태들의 모토 같아."',
+      context: 'Rachel joking about Ross filming them.',
+      context_ko: 'Rachel이 Ross가 그들을 촬영한 것에 대해 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X7'
+    },
+    {
+      phrase: 'It doesn\'t matter who came on to who.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming that details of initiation are unimportant. The phrase conveys dismissal of specifics. It demonstrates pragmatism.',
+      meaning_ko: '개시 세부 사항이 중요하지 않다고 주장합니다. 이 표현은 세부 사항의 해제를 전달합니다. 그것은 실용성을 보여줍니다.',
+      example: 'A: "Who started it?" B: "It doesn\'t matter who came on to who."',
+      example_ko: 'A: "누가 시작했어?" B: "누가 작업 걸었는지는 중요하지 않아."',
+      context: 'Ross trying to end argument about initiation.',
+      context_ko: 'Ross가 개시에 대한 논쟁을 끝내려고 시도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X8'
+    },
+    {
+      phrase: 'You were begging me to kiss you.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming someone desperately wanted physical intimacy. The phrase conveys accusation of desire. It demonstrates blame-shifting.',
+      meaning_ko: '누군가가 신체적 친밀함을 간절히 원했다고 주장합니다. 이 표현은 욕망에 대한 고발을 전달합니다. 그것은 책임 전가를 보여줍니다.',
+      example: 'A: "You came on to me." B: "You were begging me to kiss you."',
+      example_ko: 'A: "넌 내게 작업 걸었어." B: "넌 날 키스해달라고 간청했잖아."',
+      context: 'Ross accusing Rachel of initiating.',
+      context_ko: 'Ross가 Rachel이 시작했다고 고발합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X9'
+    },
+    {
+      phrase: 'I have it on videotape.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming to have recorded evidence of past event. The phrase conveys proof and finality. It demonstrates assertion.',
+      meaning_ko: '과거 사건의 녹화된 증거가 있다고 주장합니다. 이 표현은 증거와 최종성을 전달합니다. 그것은 주장을 보여줍니다.',
+      example: 'A: "You\'re lying." B: "I have it on videotape."',
+      example_ko: 'A: "넌 거짓말하고 있어." B: "난 그걸 비디오테이프에 기록했어."',
+      context: 'Ross claiming he has footage of their encounter.',
+      context_ko: 'Ross가 그들의 만남 영상을 가지고 있다고 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X10'
+    },
+    {
+      phrase: 'You gotta tell a girl before you tape her.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that obtaining consent for recording is essential. The phrase conveys legal and moral requirement. It demonstrates principle.',
+      meaning_ko: '녹음을 위한 동의 취득이 필수라고 명시합니다. 이 표현은 법적, 도덕적 요구사항을 전달합니다. 그것은 원칙을 보여줍니다.',
+      example: 'A: "I recorded us." B: "You gotta tell a girl before you tape her."',
+      example_ko: 'A: "난 우릴 기록했어." B: "테이프하기 전에 여자한테 말해야 돼."',
+      context: 'Chandler criticizing Ross for filming without permission.',
+      context_ko: 'Chandler이 Ross가 허가 없이 촬영한 것을 비판합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X11'
+    },
+    {
+      phrase: 'That\'s the magic story you use when you want sex.',
+      partOfSpeech: 'expression',
+      meaning: 'Revealing someone\'s manipulative tactic for seduction. The phrase conveys exposure of technique. It demonstrates accusation.',
+      meaning_ko: '누군가의 유혹을 위한 조작적 전술을 드러냅니다. 이 표현은 기술의 노출을 전달합니다. 그것은 고발을 보여줍니다.',
+      example: 'A: "The Europe story?" B: "That\'s the magic story you use when you want sex."',
+      example_ko: 'A: "Europe 이야기?" B: "그건 성관계를 원할 때 쓰는 마법 같은 이야기야."',
+      context: 'Rachel identifying Ross\'s seduction technique.',
+      context_ko: 'Rachel이 Ross의 유혹 기법을 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X12'
+    },
+    {
+      phrase: 'How do you know about that story?',
+      partOfSpeech: 'expression',
+      meaning: 'Asking how someone became aware of private secret. The phrase conveys surprise and concern. It demonstrates alarm.',
+      meaning_ko: '누군가가 개인 비밀을 알게 된 방법을 묻습니다. 이 표현은 놀라움과 우려를 전달합니다. 그것은 경보를 보여줍니다.',
+      example: 'A: "Your Europe story..." B: "How do you know about that story?"',
+      example_ko: 'A: "넌 Europe 이야기를..." B: "넌 그 이야기를 어떻게 알았어?"',
+      context: 'Ross shocked by Rachel knowing his secret tale.',
+      context_ko: 'Ross가 Rachel이 그의 비밀 이야기를 알고 있어 충격을 받습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X13'
+    },
+    {
+      phrase: 'The whole "who came on to who" thing really doesn\'t matter.',
+      partOfSpeech: 'expression',
+      meaning: 'Dismissing argument about who initiated encounter. The phrase conveys acceptance and moving forward. It demonstrates resolution.',
+      meaning_ko: '누가 만남을 시작했는지에 대한 논쟁을 무시합니다. 이 표현은 수용과 진행을 전달합니다. 그것은 해결을 보여줍니다.',
+      example: 'A: "You came on to me!" B: "The whole thing doesn\'t matter."',
+      example_ko: 'A: "넌 날 작업 걸었어!" B: "전체 일은 중요하지 않아."',
+      context: 'Ross attempting to resolve heated argument with Rachel.',
+      context_ko: 'Ross가 Rachel과의 치열한 논쟁을 해결하려고 시도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X14'
+    },
+    {
+      phrase: 'We are good, interesting, funny people with good questions.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting personal quality and worth to those rejecting. The phrase conveys self-validation and dignity. It demonstrates confidence.',
+      meaning_ko: '거절하는 사람들에게 개인적 품질과 가치를 주장합니다. 이 표현은 자기 검증과 존엄성을 전달합니다. 그것은 자신감을 보여줍니다.',
+      example: 'A: "You\'re boring." B: "We are good, interesting, funny people with good questions."',
+      example_ko: 'A: "넌 지루해." B: "우린 훌륭하고 흥미롭고 재미있는 좋은 질문을 하는 사람들이야."',
+      context: 'Chandler defending himself and Monica to Greg.',
+      context_ko: 'Chandler이 자신과 Monica를 Greg에게 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S8E4X15'
+    }
+  ]
   };
 
   var S_NUM = 8;
@@ -105,6 +257,7 @@
   function goHome() { window.location.href = '../../../index.html'; }
 
   function buildExpressions() {
+    var isKo = getLang() === 'ko';
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
     var html = '';
@@ -121,12 +274,18 @@
         var pos = x.partOfSpeech
           ? '<span style="font-size:0.7rem;color:var(--accent3);font-weight:700;margin-left:8px;text-transform:uppercase;letter-spacing:1px">' + escHtml(x.partOfSpeech) + '</span>'
           : '';
+        var meaning = (isKo && x.meaning_ko) ? x.meaning_ko : x.meaning;
+        var example = (isKo && x.example_ko) ? x.example_ko : x.example;
+        var context = (isKo && x.context_ko) ? x.context_ko : x.context;
+        var exprNum = isKo
+          ? ('표현 ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM)
+          : ('Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM);
         html += '<div class="expr-card" id="slot' + num + '">';
-        html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
+        html += '<div class="expr-num">' + exprNum + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-meaning">' + escHtml(meaning) + '</div>';
+        html += '<div class="expr-example">' + escHtml(example) + '</div>';
+        if (context) html += '<div class="expr-context">&#128205; ' + escHtml(context) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -148,19 +307,7 @@
   }
 
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
