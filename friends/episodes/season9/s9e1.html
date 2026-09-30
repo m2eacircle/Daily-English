@@ -6,6 +6,10 @@
   <title>Friends S9E1 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <style>
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
+    .lang-btn { padding: 8px 16px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 0.9rem; transition: all 0.22s; }
+    .lang-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .lang-btn:hover { transform: scale(1.05); }
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
@@ -15,6 +19,12 @@
     .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-section { margin-bottom: 12px; }
+    .expr-section strong { color: var(--accent3); }
+    .lang-en { display: none; }
+    .lang-ko { display: none; }
+    .lang-en.active { display: block; }
+    .lang-ko.active { display: block; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -68,6 +78,10 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
     <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":9,"e":1}'>&#128172; 15 English Expressions &mdash; Season 9 Episode 1</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    </div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -264,6 +278,19 @@
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
   }
 
+  var currentLang = 'en';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    // Update button states
+    var btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    // Update visibility
+    document.querySelectorAll('.lang-en').forEach(function(el) { el.classList.toggle('active', lang === 'en'); });
+    document.querySelectorAll('.lang-ko').forEach(function(el) { el.classList.toggle('active', lang === 'ko'); });
+  }
+
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
     var list = document.getElementById('exprList');
@@ -284,14 +311,18 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div><strong style="color:var(--accent3)">English:</strong></div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        html += '<div><strong style="color:var(--accent3)">Korean (한국어):</strong></div>';
-        html += '<div class="expr-meaning-ko">' + escHtml(x.meaning_ko) + '</div>';
-        html += '<div class="expr-example-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="expr-section lang-en active"><strong>English:</strong></div>';
+        html += '<div class="expr-meaning lang-en active">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example lang-en active">' + escHtml(x.example) + '</div>';
+        html += '<div class="expr-section lang-ko"><strong>Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko lang-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko lang-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="lang-en active">';
         if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        html += '</div>';
+        html += '<div class="lang-ko">';
         if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
+        html += '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
@@ -299,7 +330,7 @@
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-meaning lang-en active" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
