@@ -6,12 +6,25 @@
   <title>Friends S9E6 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <style>
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
+    .lang-btn { padding: 8px 16px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 0.9rem; transition: all 0.22s; }
+    .lang-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .lang-btn:hover { transform: scale(1.05); }
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-section { margin-bottom: 12px; }
+    .expr-section strong { color: var(--accent3); }
+    .lang-en { display: none; }
+    .lang-ko { display: none; }
+    .lang-en.active { display: block; }
+    .lang-ko.active { display: block; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +63,8 @@
           onerror="this.src='../../images/s9e6.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E6: Season 9, Episode 6</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E6: The One That Could Have Been (Part 1)</div>
+        <div class="page-header-meta">Monica's new restaurant job. Phoebe and Mike exchange apartment keys. David returns from Minsk.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e6"
             onclick="toggleBookmark('episode','episode-friends-s9e6','📋 Friends S9E6','friends/episodes/season9/s9e6.html')">
@@ -65,6 +78,10 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
     <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":9,"e":6}'>&#128172; 15 English Expressions &mdash; Season 9 Episode 6</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    </div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -92,10 +109,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 6',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One That Could Have Been (Part 1)',
+    description: 'Monica\'s new restaurant job. Phoebe and Mike exchange apartment keys. David returns from Minsk. Relationship developments and unexpected reunions.',
+    expressions: [
+    {
+      phrase: 'I love my new job!',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing enthusiasm and happiness about employment. The phrase conveys excitement about work. It demonstrates positive feeling.',
+      meaning_ko: '고용에 대한 열정과 행복감을 표현합니다. 이 표현은 일에 대한 흥분을 전달합니다. 그것은 긍정적인 느낌을 나타냅니다.',
+      example: 'A: "How\'s the new restaurant?" B: "I love my new job!"',
+      example_ko: 'A: "새 레스토랑은?" B: "난 내 새 직업을 사랑해!"',
+      context: 'Monica screaming with joy about her position at her new restaurant.',
+      context_ko: 'Monica가 새 레스토랑에서의 위치에 대해 기쁨으로 비명을 지릅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X1'
+    },
+    {
+      phrase: 'You bet your ass I am.',
+      partOfSpeech: 'expression',
+      meaning: 'Emphatic affirmation or strong agreement. The phrase conveys certainty and conviction. It demonstrates intense agreement.',
+      meaning_ko: '강조된 확인 또는 강한 동의입니다. 이 표현은 확실성과 신념을 전달합니다. 그것은 강렬한 동의를 나타냅니다.',
+      example: 'A: "Are you excited?" B: "You bet your ass I am."',
+      example_ko: 'A: "넌 신나?" B: "당연히 신나!"',
+      context: 'Monica confirming she is indeed screaming about her new job.',
+      context_ko: 'Monica가 그녀가 실제로 새 직업에 대해 비명을 지르고 있음을 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X2'
+    },
+    {
+      phrase: 'Twice as big as Alessandro\'s.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing something as being double the size or capacity of something else. The phrase conveys comparison. It demonstrates measuring scale.',
+      meaning_ko: '무언가를 다른 것의 두 배 크기 또는 용량으로 묘사합니다. 이 표현은 비교를 전달합니다. 그것은 규모를 측정하는 것을 나타냅니다.',
+      example: 'A: "How big is the kitchen?" B: "Twice as big as Alessandro\'s."',
+      example_ko: 'A: "주방은 얼마나 커?" B: "Alessandro\'s의 두 배 커."',
+      context: 'Monica describing the size of her new restaurant\'s kitchen.',
+      context_ko: 'Monica가 새 레스토랑의 주방 크기를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X3'
+    },
+    {
+      phrase: 'Monica-clean.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing something as exceptionally clean, beyond normal standards. The phrase conveys extreme cleanliness. It demonstrates using a name as an adjective.',
+      meaning_ko: '무언가를 정상 기준을 초과하여 극도로 깨끗한 것으로 묘사합니다. 이 표현은 극단적인 청결을 전달합니다. 그것은 이름을 형용사로 사용하는 것을 나타냅니다.',
+      example: 'A: "Is it clean?" B: "Not just clean, Monica-clean."',
+      example_ko: 'A: "깨끗해?" B: "깨끗한 것뿐만 아니라, Monica 수준으로 깨끗해."',
+      context: 'Monica praising how exceptionally clean her new restaurant\'s kitchen is.',
+      context_ko: 'Monica가 새 레스토랑의 주방이 얼마나 깨끗한지 칭찬합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X4'
+    },
+    {
+      phrase: 'Big step for Phoebe and Mike.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing an important or significant development in a relationship. The phrase conveys major progress. It demonstrates marking milestones.',
+      meaning_ko: '관계에서 중요하거나 의미 있는 발전을 설명합니다. 이 표현은 주요 진전을 전달합니다. 그것은 이정표를 표시하는 것을 나타냅니다.',
+      example: 'A: "What\'s this key?" B: "Big step for Phoebe and Mike."',
+      example_ko: 'A: "이 열쇠는?" B: "Phoebe와 Mike에게는 큰 진전이야."',
+      context: 'Chandler commenting on Phoebe and Mike exchanging apartment keys.',
+      context_ko: 'Chandler가 Phoebe와 Mike가 아파트 열쇠를 교환하는 것에 대해 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X5'
+    },
+    {
+      phrase: 'These little things open doors.',
+      partOfSpeech: 'idiom',
+      meaning: 'Describing keys as literally or symbolically opening possibilities and opportunities. The phrase conveys access and opportunity. It demonstrates wordplay.',
+      meaning_ko: '열쇠를 문자 그대로 또는 상징적으로 가능성과 기회를 여는 것으로 묘사합니다. 이 표현은 접근성과 기회를 전달합니다. 그것은 말장난을 나타냅니다.',
+      example: 'A: "Is the key important?" B: "These little things open doors."',
+      example_ko: 'A: "열쇠는 중요해?" B: "이런 작은 것들이 문을 열어."',
+      context: 'Phoebe making a pun about keys literally and symbolically opening opportunities.',
+      context_ko: 'Phoebe가 열쇠가 문자 그대로 그리고 상징적으로 기회를 열어주는 것에 대해 말장난을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X6'
+    },
+    {
+      phrase: 'I just gave him your address.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that one provided their location information to someone. The phrase conveys sharing personal information. It demonstrates an action with consequences.',
+      meaning_ko: '누군가에게 자신의 위치 정보를 제공했다고 진술합니다. 이 표현은 개인 정보 공유를 전달합니다. 그것은 결과가 있는 행동을 나타냅니다.',
+      example: 'A: "Where did you go?" B: "I just gave him your address."',
+      example_ko: 'A: "넌 어디 갔어?" B: "난 그에게 네 주소를 줬어."',
+      context: 'David explaining to Phoebe that he impulsively gave the taxi driver her address.',
+      context_ko: 'David가 Phoebe에게 그가 충동적으로 택시 기사에게 그녀의 주소를 주었다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X7'
+    },
+    {
+      phrase: 'I didn\'t even think about it.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that an action was done automatically without deliberation. The phrase conveys lack of forethought. It demonstrates impulse action.',
+      meaning_ko: '행동이 신중히 생각하지 않고 자동으로 수행되었다고 진술합니다. 이 표현은 사전 사유의 부족을 전달합니다. 그것은 충동적 행동을 나타냅니다.',
+      example: 'A: "Why did you do that?" B: "I didn\'t even think about it."',
+      example_ko: 'A: "넌 왜 그랬어?" B: "난 생각도 안 해봤어."',
+      context: 'David explaining he automatically went to Phoebe\'s address without conscious thought.',
+      context_ko: 'David가 자신이 의식적인 생각 없이 자동으로 Phoebe의 주소로 갔다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X8'
+    },
+    {
+      phrase: 'He\'s just so irresistible.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing someone as impossible to resist romantically or emotionally. The phrase conveys attraction. It demonstrates expressing infatuation.',
+      meaning_ko: '누군가를 로맨틱하거나 감정적으로 저항할 수 없는 것으로 묘사합니다. 이 표현은 매력을 전달합니다. 그것은 황홀감을 표현하는 것을 나타냅니다.',
+      example: 'A: "Why do you like him?" B: "He\'s just so irresistible."',
+      example_ko: 'A: "넌 왜 그를 좋아해?" B: "그냥 저항할 수 없어."',
+      context: 'Phoebe explaining to Monica why she was overcome with emotion seeing David.',
+      context_ko: 'Phoebe가 Monica에게 David를 보고 왜 감정이 압도되었는지 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X9'
+    },
+    {
+      phrase: 'I\'m just the worst person ever.',
+      partOfSpeech: 'expression',
+      meaning: 'Self-critical statement expressing guilt or shame about one\'s behavior. The phrase conveys regret and self-blame. It demonstrates self-deprecation.',
+      meaning_ko: '자신의 행동에 대한 죄책감이나 수치심을 표현하는 자기 비판 진술입니다. 이 표현은 후회와 자기 비난을 전달합니다. 그것은 자조를 나타냅니다.',
+      example: 'A: "You lied to David?" B: "I\'m just the worst person ever."',
+      example_ko: 'A: "넌 David에게 거짓말했어?" B: "난 최악의 인간이야."',
+      context: 'Phoebe expressing guilt about not telling David she\'s seeing Mike.',
+      context_ko: 'Phoebe가 David에게 Mike를 만나고 있다고 말하지 않은 것에 대한 죄책감을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X10'
+    },
+    {
+      phrase: 'You can imagine how happy I am.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically expressing unhappiness about an ironic situation. The phrase conveys sarcastic displeasure. It demonstrates passive-aggressive humor.',
+      meaning_ko: '역설적인 상황에 대해 불행을 풍자적으로 표현합니다. 이 표현은 풍자적인 불쾌감을 전달합니다. 그것은 소극적 공격적 유머를 나타냅니다.',
+      example: 'A: "That\'s ironic." B: "You can imagine how happy I am."',
+      example_ko: 'A: "그건 역설적이야." B: "난 얼마나 행복한지 상상할 수 있겠지."',
+      context: 'Ross sarcastically reacting to the irony of David returning and Phoebe exchanging keys with Mike.',
+      context_ko: 'Ross가 David가 돌아오고 Phoebe가 Mike와 열쇠를 교환하는 역설에 풍자적으로 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X11'
+    },
+    {
+      phrase: 'Unless I don\'t.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting an alternative possibility or hesitation about a stated decision. The phrase conveys doubt and consideration. It demonstrates second-guessing.',
+      meaning_ko: '명시된 결정에 대한 대안적 가능성이나 회의를 시사합니다. 이 표현은 의심과 고려를 전달합니다. 그것은 재고를 나타냅니다.',
+      example: 'A: "You\'ll tell him, right?" B: "Unless I don\'t."',
+      example_ko: 'A: "넌 말할 거지?" B: "아니면 안 할 수도."',
+      context: 'Phoebe expressing uncertainty about whether she should tell David she\'s seeing Mike.',
+      context_ko: 'Phoebe가 David에게 Mike를 만나고 있다고 말해야 할지 여부에 대한 불확실성을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X12'
+    },
+    {
+      phrase: 'You have to tell David.',
+      partOfSpeech: 'expression',
+      meaning: 'Insisting that someone must disclose information to another person. The phrase conveys moral obligation. It demonstrates ethical instruction.',
+      meaning_ko: '누군가가 다른 사람에게 정보를 공개해야 한다고 주장합니다. 이 표현은 도덕적 의무를 전달합니다. 그것은 윤리적 지시를 나타냅니다.',
+      example: 'A: "Should I tell him?" B: "You have to tell David."',
+      example_ko: 'A: "내가 말해야 해?" B: "넌 David에게 말해야 해."',
+      context: 'Chandler giving Phoebe moral guidance about her situation with David and Mike.',
+      context_ko: 'Chandler가 Phoebe에게 David와 Mike와의 상황에 대해 도덕적 지도를 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X13'
+    },
+    {
+      phrase: 'I realize how it\'s a bit unorthodox.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging that something is unconventional or outside normal practice. The phrase conveys understanding of uniqueness. It demonstrates self-awareness.',
+      meaning_ko: '무언가가 관례적이지 않거나 일반적인 관행 범위를 벗어났음을 인정합니다. 이 표현은 독창성에 대한 이해를 전달합니다. 그것은 자기 인식을 나타냅니다.',
+      example: 'A: "A male nanny?" B: "I realize how it\'s a bit unorthodox."',
+      example_ko: 'A: "남성 유모?" B: "난 그게 좀 이례적인 걸 알아."',
+      context: 'Sandy acknowledging that his role as a male nanny is unconventional.',
+      context_ko: 'Sandy가 남성 유모로서의 자신의 역할이 관례적이지 않음을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X14'
+    },
+    {
+      phrase: 'The most satisfying thing you can do with your life.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing that caring for a child provides the greatest fulfillment. The phrase conveys deep meaning and life purpose. It demonstrates stating values.',
+      meaning_ko: '아이를 돌보는 것이 최고의 만족감을 준다는 것을 표현합니다. 이 표현은 깊은 의미와 인생의 목적을 전달합니다. 그것은 가치를 진술하는 것을 나타냅니다.',
+      example: 'A: "Why be a nanny?" B: "It\'s the most satisfying thing you can do with your life."',
+      example_ko: 'A: "왜 유모가 돼?" B: "그건 인생에서 할 수 있는 가장 만족스러운 일이야."',
+      context: 'Sandy explaining his genuine belief in the importance and fulfillment of childcare.',
+      context_ko: 'Sandy가 아동 보육의 중요성과 만족감에 대한 진정한 믿음을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E6X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +286,19 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  var currentLang = 'en';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    // Update button states
+    var btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    // Update visibility
+    document.querySelectorAll('.lang-en').forEach(function(el) { el.classList.toggle('active', lang === 'en'); });
+    document.querySelectorAll('.lang-ko').forEach(function(el) { el.classList.toggle('active', lang === 'ko'); });
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,17 +320,26 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-section lang-en active"><strong>English:</strong></div>';
+        html += '<div class="expr-meaning lang-en active">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example lang-en active">' + escHtml(x.example) + '</div>';
+        html += '<div class="expr-section lang-ko"><strong>Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko lang-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko lang-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="lang-en active">';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        html += '</div>';
+        html += '<div class="lang-ko">';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
+        html += '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
+        html += '<div class="expr-meaning lang-en active" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

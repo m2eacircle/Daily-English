@@ -6,12 +6,25 @@
   <title>Friends S9E10 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <style>
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
+    .lang-btn { padding: 8px 16px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 0.9rem; transition: all 0.22s; }
+    .lang-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .lang-btn:hover { transform: scale(1.05); }
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-section { margin-bottom: 12px; }
+    .expr-section strong { color: var(--accent3); }
+    .lang-en { display: none; }
+    .lang-ko { display: none; }
+    .lang-en.active { display: block; }
+    .lang-ko.active { display: block; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +63,8 @@
           onerror="this.src='../../images/s9e10.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E10: Season 9, Episode 10</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E10: The One with the Boobies</div>
+        <div class="page-header-meta">A Christmas episode filled with festive traditions, gift-hunting mishaps, and Holiday Armadillo costumes. Chandler faces workplace temptation while missing Monica during the holidays.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e10"
             onclick="toggleBookmark('episode','episode-friends-s9e10','📋 Friends S9E10','friends/episodes/season9/s9e10.html')">
@@ -65,6 +78,10 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
     <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":9,"e":10}'>&#128172; 15 English Expressions &mdash; Season 9 Episode 10</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    </div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -92,10 +109,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 10',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Boobies',
+    description: 'A Christmas episode filled with festive traditions, gift-hunting mishaps, and Holiday Armadillo costumes. Chandler faces workplace temptation while missing Monica during the holidays.',
+    expressions: [
+    {
+      phrase: 'This sucks.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing disapproval or dissatisfaction about a situation. The phrase conveys negativity. It demonstrates stating strong dislike.',
+      meaning_ko: '상황에 대한 불승인이나 불만을 표현합니다. 이 표현은 부정성을 전달합니다. 그것은 강한 싫음을 진술하는 것을 나타냅니다.',
+      example: 'A: "We have to work on Christmas." B: "This sucks."',
+      example_ko: 'A: "우린 크리스마스에 일해야 해." B: "정말 싫어."',
+      context: 'Workers at Chandler\'s office expressing frustration about being scheduled during the Christmas holiday.',
+      context_ko: 'Chandler의 사무실 직원들이 크리스마스 휴일 동안 근무 예정이어서 좌절을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X1'
+    },
+    {
+      phrase: 'Now it feels like Christmas.',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically expressing that a negative event has made something feel complete or authentic. The phrase conveys dark humor. It demonstrates ironic commentary.',
+      meaning_ko: '부정적인 사건이 무언가를 완전하거나 진정성 있게 만들었다고 비꼬아 표현합니다. 이 표현은 검은 유머를 전달합니다. 그것은 풍자적인 논평을 나타냅니다.',
+      example: 'A: "Work is terrible." B: "Now it feels like Christmas."',
+      example_ko: 'A: "일이 끔찍해." B: "이제 크리스마스 같네."',
+      context: 'Chandler making a joke that complaining about work makes the situation feel more festive.',
+      context_ko: 'Chandler가 일에 대한 불평이 상황을 더 축제 같게 느끼게 한다는 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X2'
+    },
+    {
+      phrase: 'I have to back to an empty hotel room.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing loneliness and isolation during a holiday season. The phrase conveys sadness about separation. It demonstrates highlighting disadvantage.',
+      meaning_ko: '휴일 시즌 동안 외로움과 고립을 표현합니다. 이 표현은 분리에 대한 슬픔을 전달합니다. 그것은 불이익을 강조하는 것을 나타냅니다.',
+      example: 'A: "At least you go home." B: "I have to back to an empty hotel room."',
+      example_ko: 'A: "적어도 넌 집에 가잖아." B: "난 빈 호텔 방으로 가야 해."',
+      context: 'Chandler expressing his loneliness, having to spend Christmas alone in a hotel room instead of with family.',
+      context_ko: 'Chandler가 크리스마스를 가족과 함께하지 않고 호텔 방에서 혼자 보내야 하는 외로움을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X3'
+    },
+    {
+      phrase: 'I\'m actually thinking about becoming a motivational speaker.',
+      partOfSpeech: 'expression',
+      meaning: 'Jokingly considering a career change based on recent performance. The phrase conveys self-deprecating humor. It demonstrates false confidence.',
+      meaning_ko: '최근 공연을 기반으로 직업 변경을 농담으로 고려합니다. 이 표현은 자조 유머를 전달합니다. 그것은 거짓 자신감을 나타냅니다.',
+      example: 'A: "That was a nice speech." B: "I\'m thinking about becoming a motivational speaker."',
+      example_ko: 'A: "그건 좋은 연설이었어." B: "난 동기부여 강사가 되는 것을 고려하고 있어."',
+      context: 'Chandler joking that his attempt to boost morale was so good he could become a professional speaker.',
+      context_ko: 'Chandler가 사기를 올리려는 시도가 전문 연사가 될 정도로 좋았다고 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X4'
+    },
+    {
+      phrase: 'Our holidays are pretty traditional.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing family celebrations that follow established customs and patterns. The phrase conveys predictability. It demonstrates explaining normality.',
+      meaning_ko: '확립된 관습과 패턴을 따르는 가족 축하를 설명합니다. 이 표현은 예측 가능성을 전달합니다. 그것은 정상성을 설명하는 것을 나타냅니다.',
+      example: 'A: "What do you do for holidays?" B: "Our holidays are pretty traditional."',
+      example_ko: 'A: "넌 휴일에 뭐 해?" B: "우리 휴일은 전통적이야."',
+      context: 'Someone describing that their family celebrates in conventional ways during the holiday season.',
+      context_ko: '누군가가 가족이 휴일 시즌 동안 전통적인 방식으로 축하한다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X5'
+    },
+    {
+      phrase: 'I would have written them a song.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining a gift choice based on personal creative effort rather than monetary value. The phrase conveys thoughtfulness. It demonstrates justifying gift selection.',
+      meaning_ko: '금전적 가치가 아닌 개인적인 창의적 노력을 기반으로 선물 선택을 설명합니다. 이 표현은 배려를 전달합니다. 그것은 선물 선택을 정당화하는 것을 나타냅니다.',
+      example: 'A: "What would you give them?" B: "I would have written them a song."',
+      example_ko: 'A: "넌 뭘 줄 거야?" B: "난 그들을 위해 노래를 썼을 거야."',
+      context: 'Someone suggesting that writing a personalized song is an appropriate and meaningful Christmas gift.',
+      context_ko: '누군가가 개인화된 노래를 쓰는 것이 적절하고 의미 있는 크리스마스 선물이라고 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X6'
+    },
+    {
+      phrase: 'We are looking for our Christmas presents from Monica.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing the act of searching for hidden gifts before the intended gift-giving occasion. The phrase conveys violation of gift protocol. It demonstrates explaining rule-breaking.',
+      meaning_ko: '의도된 선물 증여 기회 이전에 숨겨진 선물을 찾는 행위를 설명합니다. 이 표현은 선물 프로토콜의 위반을 전달합니다. 그것은 규칙 위반을 설명하는 것을 나타냅니다.',
+      example: 'A: "What are you doing?" B: "We are looking for our Christmas presents from Monica."',
+      example_ko: 'A: "넌 뭐 하고 있어?" B: "우린 Monica에게서 받을 크리스마스 선물을 찾고 있어."',
+      context: 'Rachel and Phoebe explaining their tradition of searching for hidden gifts before Christmas.',
+      context_ko: 'Rachel과 Phoebe가 크리스마스 이전에 숨겨진 선물을 찾는 전통을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X7'
+    },
+    {
+      phrase: 'She\'s always bested us.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging that someone has consistently defeated or outmaneuvered others in competition. The phrase conveys repeated failure. It demonstrates admitting repeated loss.',
+      meaning_ko: '누군가가 경쟁에서 지속적으로 다른 사람들을 패배시키거나 능가했음을 인정합니다. 이 표현은 반복된 실패를 전달합니다. 그것은 반복된 패배를 인정하는 것을 나타냅니다.',
+      example: 'A: "You\'ll find the presents." B: "She\'s always bested us."',
+      example_ko: 'A: "넌 선물을 찾을 거야." B: "그녀는 항상 우리를 이겼어."',
+      context: 'Rachel acknowledging that Monica has consistently outsmarted their attempts to find hidden Christmas gifts.',
+      context_ko: 'Rachel이 Monica가 숨겨진 크리스마스 선물을 찾으려는 시도를 항상 능가했음을 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X8'
+    },
+    {
+      phrase: 'Do you really think I\'d hide presents under the couch?',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically questioning whether someone would use an obvious hiding place. The phrase conveys confidence in one\'s cleverness. It demonstrates rhetorical disbelief.',
+      meaning_ko: '누군가가 명백한 숨김 장소를 사용할 것인지 비꼬아 질문합니다. 이 표현은 자신의 영리함에 대한 자신감을 전달합니다. 그것은 수사적 불신을 나타냅니다.',
+      example: 'A: "I found presents!" B: "Do you really think I\'d hide them there?"',
+      example_ko: 'A: "난 선물을 찾았어!" B: "넌 진짜 내가 거기다 숨길 거라고 생각해?"',
+      context: 'Monica taunting Rachel and Phoebe by pointing out how obvious their search locations are.',
+      context_ko: 'Monica가 Rachel과 Phoebe의 명백한 검색 위치를 지적하여 놀립니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X9'
+    },
+    {
+      phrase: 'I knew they\'d break you.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing confidence that someone would succumb to pressure or persuasion. The phrase conveys predictable weakness. It demonstrates stating certainty about surrender.',
+      meaning_ko: '누군가가 압력이나 설득에 항복할 것이라는 확신을 표현합니다. 이 표현은 예측 가능한 약함을 전달합니다. 그것은 항복에 대한 확실성을 진술하는 것을 나타냅니다.',
+      example: 'A: "You broke." B: "I knew they\'d break you."',
+      example_ko: 'A: "넌 항복했어." B: "난 그들이 너를 항복시킬 줄 알았어."',
+      context: 'Monica knowing that Chandler would eventually join Rachel and Phoebe in searching for the hidden gifts.',
+      context_ko: 'Monica가 Chandler가 결국 Rachel과 Phoebe가 숨겨진 선물을 찾는 것에 동참할 것을 알고 있습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X10'
+    },
+    {
+      phrase: 'I\'m the Holiday Armadillo.',
+      partOfSpeech: 'expression',
+      meaning: 'Identifying oneself by a humorous fictional character created for holiday celebration purposes. The phrase conveys playful role-playing. It demonstrates silly self-identification.',
+      meaning_ko: '휴일 축하 목적을 위해 만든 유머러스한 가상의 캐릭터로 자신을 식별합니다. 이 표현은 장난스러운 역할 놀이를 전달합니다. 그것은 어리석은 자기 식별을 나타냅니다.',
+      example: 'A: "Who are you?" B: "I\'m the Holiday Armadillo."',
+      example_ko: 'A: "넌 누구야?" B: "난 Holiday Armadillo야."',
+      context: 'Ross identifying himself as the Holiday Armadillo, a costume he created to teach Ben about Hanukkah.',
+      context_ko: 'Ross가 자신을 Holiday Armadillo로 식별하며, 이는 Ben에게 Hanukkah를 가르치기 위해 만든 의상입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X11'
+    },
+    {
+      phrase: 'There\'s a sentence I never thought I\'d say.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing surprise at being forced to say something unusual or nonsensical. The phrase conveys astonishment at absurdity. It demonstrates commenting on odd circumstances.',
+      meaning_ko: '평상시 말할 수 없는 비정상적이거나 말도 안 되는 것을 말하도록 강요받는 것에 놀라움을 표현합니다. 이 표현은 부조리에 대한 경악을 전달합니다. 그것은 이상한 상황에 대해 언급하는 것을 나타냅니다.',
+      example: 'A: "Santa, the armadillo and I will talk." B: "There\'s a sentence I never thought I\'d say."',
+      example_ko: 'A: "Santa, armadillo와 나는 대화할 거야." B: "내가 말할 줄 몰랐던 문장이야."',
+      context: 'Ross commenting on the absurdity of having to talk to someone dressed as Santa and someone as an armadillo.',
+      context_ko: 'Ross가 Santa로 옷을 입은 사람과 armadillo로 옷을 입은 사람과 대화해야 한다는 황당함에 대해 언급합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X12'
+    },
+    {
+      phrase: 'I\'m happily married.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring satisfaction and contentment in one\'s marriage relationship. The phrase conveys commitment and relationship quality. It demonstrates stating matrimonial happiness.',
+      meaning_ko: '자신의 결혼 관계에 만족과 행복을 선언합니다. 이 표현은 약속과 관계의 질을 전달합니다. 그것은 결혼 행복을 진술하는 것을 나타냅니다.',
+      example: 'A: "Do you have a relationship?" B: "I\'m happily married."',
+      example_ko: 'A: "넌 관계가 있어?" B: "난 행복하게 결혼했어."',
+      context: 'Chandler insisting to Wendy that he is content in his marriage despite her advances.',
+      context_ko: 'Chandler가 Wendy의 접근에도 불구하고 그의 결혼에 만족하고 있다고 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X13'
+    },
+    {
+      phrase: 'She\'d kick your ass.',
+      partOfSpeech: 'expression',
+      meaning: 'Humorously warning that a person\'s partner would retaliate or punish them if present. The phrase conveys humorous marital loyalty. It demonstrates joking threat.',
+      meaning_ko: '현재 있다면 사람의 파트너가 보복하거나 처벌할 것이라고 유머러스하게 경고합니다. 이 표현은 유머러스한 결혼적 충성을 전달합니다. 그것은 농담 위협을 나타냅니다.',
+      example: 'A: "I like you." B: "My wife would kick your ass if she were here."',
+      example_ko: 'A: "난 너를 좋아해." B: "내 아내가 여기 있으면 너를 혼낼 거야."',
+      context: 'Chandler jokingly warning Wendy what Monica would do if she were present during the temptation.',
+      context_ko: 'Chandler가 유혹 중에 Monica가 현재 있으면 뭘 할지에 대해 Wendy에게 농담으로 경고합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X14'
+    },
+    {
+      phrase: 'Nothing\'s ever gonna happen between us.',
+      partOfSpeech: 'expression',
+      meaning: 'Definitively stating that a romantic or intimate relationship will not develop. The phrase conveys clear boundaries. It demonstrates explicit rejection.',
+      meaning_ko: '낭만적이거나 친밀한 관계가 발전하지 않을 것을 명확하게 진술합니다. 이 표현은 명확한 경계를 전달합니다. 그것은 명시적인 거절을 나타냅니다.',
+      example: 'A: "I like you." B: "Nothing\'s ever gonna happen between us."',
+      example_ko: 'A: "난 너를 좋아해." B: "우린 절대 뭔가 될 수 없어."',
+      context: 'Chandler firmly rejecting Wendy\'s advances and reaffirming his commitment to Monica.',
+      context_ko: 'Chandler가 Wendy의 접근을 단호히 거절하고 Monica에 대한 약속을 다시 확인합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E10X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +286,19 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  var currentLang = 'en';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    // Update button states
+    var btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    // Update visibility
+    document.querySelectorAll('.lang-en').forEach(function(el) { el.classList.toggle('active', lang === 'en'); });
+    document.querySelectorAll('.lang-ko').forEach(function(el) { el.classList.toggle('active', lang === 'ko'); });
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,17 +320,26 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-section lang-en active"><strong>English:</strong></div>';
+        html += '<div class="expr-meaning lang-en active">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example lang-en active">' + escHtml(x.example) + '</div>';
+        html += '<div class="expr-section lang-ko"><strong>Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko lang-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko lang-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="lang-en active">';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        html += '</div>';
+        html += '<div class="lang-ko">';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
+        html += '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
+        html += '<div class="expr-meaning lang-en active" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

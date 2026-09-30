@@ -6,12 +6,25 @@
   <title>Friends S9E7 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <style>
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
+    .lang-btn { padding: 8px 16px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 0.9rem; transition: all 0.22s; }
+    .lang-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .lang-btn:hover { transform: scale(1.05); }
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-section { margin-bottom: 12px; }
+    .expr-section strong { color: var(--accent3); }
+    .lang-en { display: none; }
+    .lang-ko { display: none; }
+    .lang-en.active { display: block; }
+    .lang-ko.active { display: block; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +63,8 @@
           onerror="this.src='../../images/s9e7.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E7: Season 9, Episode 7</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E7: The One That Could Have Been (Part 2)</div>
+        <div class="page-header-meta">Phoebe meets Mike's wealthy parents. Joey and Chandler tour Richard's apartment. Family dynamics and first impressions.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e7"
             onclick="toggleBookmark('episode','episode-friends-s9e7','📋 Friends S9E7','friends/episodes/season9/s9e7.html')">
@@ -65,6 +78,10 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
     <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":9,"e":7}'>&#128172; 15 English Expressions &mdash; Season 9 Episode 7</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    </div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -92,10 +109,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 7',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One That Could Have Been (Part 2)',
+    description: 'Phoebe meets Mike\'s wealthy parents. Joey and Chandler tour Richard\'s apartment. Family dynamics and first impressions. Nervous moments and surprises.',
+    expressions: [
+    {
+      phrase: 'Big step.',
+      partOfSpeech: 'expression',
+      meaning: 'A significant milestone or important development in a relationship or situation. The phrase conveys major progress. It demonstrates recognizing importance.',
+      meaning_ko: '관계나 상황에서 중요한 이정표나 중요한 발전입니다. 이 표현은 주요 진전을 전달합니다. 그것은 중요성을 인식하는 것을 나타냅니다.',
+      example: 'A: "I\'m meeting his parents." B: "Big step."',
+      example_ko: 'A: "난 그의 부모님을 만나." B: "큰 진전이야."',
+      context: 'Monica commenting on Phoebe meeting Mike\'s parents for the first time.',
+      context_ko: 'Monica가 Phoebe가 Mike의 부모님을 처음으로 만나는 것에 대해 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X1'
+    },
+    {
+      phrase: 'Just be yourself.',
+      partOfSpeech: 'expression',
+      meaning: 'Advice to act naturally without pretense or artificial behavior. The phrase conveys authenticity. It demonstrates offering genuine counsel.',
+      meaning_ko: '가짜 없이 자연스럽게 행동하라는 조언입니다. 이 표현은 진정성을 전달합니다. 그것은 진정한 조언을 제공하는 것을 나타냅니다.',
+      example: 'A: "I\'m nervous." B: "Just be yourself."',
+      example_ko: 'A: "난 긴장돼." B: "그냥 너 자신이어."',
+      context: 'Monica advising Phoebe on how to act around Mike\'s parents.',
+      context_ko: 'Monica가 Phoebe에게 Mike의 부모님 주변에서 어떻게 행동할지 조언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X2'
+    },
+    {
+      phrase: 'They live on the Upper East Side on Park Avenue.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing residence in an affluent area of Manhattan. The phrase conveys wealth and status. It demonstrates noting socioeconomic indicators.',
+      meaning_ko: '맨해튼의 부유한 지역에 거주하는 것을 설명합니다. 이 표현은 부와 지위를 전달합니다. 그것은 사회경제적 지표를 기록하는 것을 나타냅니다.',
+      example: 'A: "Where do they live?" B: "The Upper East Side on Park Avenue."',
+      example_ko: 'A: "그들은 어디 살아?" B: "상류층 지역의 Park Avenue에."',
+      context: 'Monica revealing that Mike\'s parents are wealthy based on their address.',
+      context_ko: 'Monica가 주소에 따라 Mike의 부모님이 부자임을 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X3'
+    },
+    {
+      phrase: 'She can\'t be herself.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting that someone needs to act differently or less authentically in a particular situation. The phrase conveys social pressure. It demonstrates expectation of adaptation.',
+      meaning_ko: '특정 상황에서 누군가가 다르게 행동하거나 덜 진정하게 행동해야 한다고 시사합니다. 이 표현은 사회적 압력을 전달합니다. 그것은 적응의 기대를 나타냅니다.',
+      example: 'A: "She should be herself." B: "She can\'t be herself."',
+      example_ko: 'A: "그녀는 자신이어야 해." B: "그녀는 자신이 될 수 없어."',
+      context: 'Rachel correcting Monica about Phoebe needing to adjust behavior for wealthy in-laws.',
+      context_ko: 'Rachel이 Phoebe가 부유한 시부모를 위해 행동을 조정해야 한다는 Monica의 의견을 수정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X4'
+    },
+    {
+      phrase: 'With the father, you wanna flirt a little.',
+      partOfSpeech: 'expression',
+      meaning: 'Advice to use mild romantic charm with a parent figure. The phrase conveys social strategy. It demonstrates suggesting relationship-building tactics.',
+      meaning_ko: '부모 인물과 함께 약간의 낭만적인 매력을 사용하라는 조언입니다. 이 표현은 사회적 전략을 전달합니다. 그것은 관계 구축 전술을 시사하는 것을 나타냅니다.',
+      example: 'A: "How do I win over his dad?" B: "Flirt a little."',
+      example_ko: 'A: "난 어떻게 그의 아버지를 이겨?" B: "조금 작업 거니."',
+      context: 'Monica giving Phoebe dating advice about charming Mike\'s father.',
+      context_ko: 'Monica가 Phoebe에게 Mike의 아버지를 매력적으로 만드는 방법에 대한 데이트 조언을 제공합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X5'
+    },
+    {
+      phrase: 'I\'m wearing pantyhose.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that one is dressed formally or less comfortably than usual. The phrase conveys formality or discomfort. It demonstrates indicating unusual clothing.',
+      meaning_ko: '평소보다 더 공식적으로 또는 편하지 않게 옷을 입었다고 진술합니다. 이 표현은 공식성이나 불편함을 전달합니다. 그것은 비정상적인 의류를 나타내는 것을 나타냅니다.',
+      example: 'A: "You look so formal!" B: "I\'m wearing pantyhose."',
+      example_ko: 'A: "넌 정말 공식적이야!" B: "난 판티호스를 입고 있어."',
+      context: 'Phoebe commenting that her formal outfit for meeting Mike\'s parents feels uncomfortable.',
+      context_ko: 'Phoebe가 Mike의 부모님을 만나기 위한 공식적인 복장이 불편하다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X6'
+    },
+    {
+      phrase: 'Oh, my God. You\'re rich.',
+      partOfSpeech: 'expression',
+      meaning: 'Exclaiming with surprise upon realizing someone\'s wealth. The phrase conveys shock and realization. It demonstrates noticing privilege.',
+      meaning_ko: '누군가의 부를 깨닫고 놀라며 외칩니다. 이 표현은 충격과 깨달음을 전달합니다. 그것은 특권을 알아차리는 것을 나타냅니다.',
+      example: 'A: "Welcome to my parents\' home." B: "Oh, my God. You\'re rich."',
+      example_ko: 'A: "내 부모님 집에 오신 것을 환영합니다." B: "오, 신이시여. 넌 부자야."',
+      context: 'Phoebe reacting to the size and luxury of Mike\'s parents\' home.',
+      context_ko: 'Phoebe가 Mike의 부모님 집의 크기와 럭셔리함에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X7'
+    },
+    {
+      phrase: 'So? They gotta die someday.',
+      partOfSpeech: 'expression',
+      meaning: 'Dark humor suggesting inheritance will eventually come to someone. The phrase conveys morbid perspective. It demonstrates dark comedy.',
+      meaning_ko: '상속금이 결국 누군가에게 올 것이라고 시사하는 어두운 유머입니다. 이 표현은 불길한 관점을 전달합니다. 그것은 어두운 코미디를 나타냅니다.',
+      example: 'A: "His parents are rich." B: "So? They gotta die someday."',
+      example_ko: 'A: "그의 부모님이 부자야." B: "그럼? 그들도 언젠가 죽어야지."',
+      context: 'Chandler making a joke about Mike inheriting his parents\' wealth eventually.',
+      context_ko: 'Chandler가 Mike가 결국 부모님의 부를 물려받을 것에 대한 농담을 합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X8'
+    },
+    {
+      phrase: 'Holy crap!',
+      partOfSpeech: 'expression',
+      meaning: 'Exclamation expressing shock, surprise, or astonishment. The phrase conveys strong emotion. It demonstrates verbal emphasis.',
+      meaning_ko: '충격, 놀라움 또는 경악을 표현하는 외침입니다. 이 표현은 강한 감정을 전달합니다. 그것은 언어적 강조를 나타냅니다.',
+      example: 'A: "It\'s three floors!" B: "Holy crap!"',
+      example_ko: 'A: "3층이야!" B: "대박!"',
+      context: 'Phoebe reacting to learning Mike\'s parents\' home has three floors.',
+      context_ko: 'Phoebe가 Mike의 부모님 집이 3층이라는 것을 알게 되고 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X9'
+    },
+    {
+      phrase: 'I can see where Mike gets his good looks from.',
+      partOfSpeech: 'expression',
+      meaning: 'Compliment suggesting someone inherited their appearance from a parent. The phrase conveys flattery. It demonstrates offering praise.',
+      meaning_ko: '누군가가 부모로부터 외모를 물려받았음을 시사하는 칭찬입니다. 이 표현은 아첨을 전달합니다. 그것은 찬사를 제공하는 것을 나타냅니다.',
+      example: 'A: "This is my father." B: "I can see where you get your good looks from."',
+      example_ko: 'A: "이게 내 아버지야." B: "넌 아버지에게서 잘생긴 외모를 물려받았구나."',
+      context: 'Phoebe attempting to charm Mike\'s father with a compliment about his appearance.',
+      context_ko: 'Phoebe가 Mike의 아버지에게 외모에 대한 칭찬으로 그를 매력적으로 만들려고 시도합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X10'
+    },
+    {
+      phrase: 'I got hepatitis.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that one contracted a contagious liver disease. The phrase conveys health adversity. It demonstrates sharing difficult history.',
+      meaning_ko: '전염성 간 질환에 걸렸다는 것을 진술합니다. 이 표현은 건강상의 역경을 전달합니다. 그것은 어려운 역사를 공유하는 것을 나타냅니다.',
+      example: 'A: "Tell us about yourself." B: "I got hepatitis."',
+      example_ko: 'A: "너에 대해 말해 줄래?" B: "난 간염에 걸렸어."',
+      context: 'Phoebe sharing inappropriate details of her difficult past with Mike\'s parents.',
+      context_ko: 'Phoebe가 Mike의 부모님과 자신의 어려운 과거에 대한 부적절한 세부사항을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X11'
+    },
+    {
+      phrase: 'I don\'t pay taxes.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting to not paying required government income taxes. The phrase conveys illegal activity. It demonstrates confessing to wrongdoing.',
+      meaning_ko: '필요한 정부 소득세를 내지 않고 있음을 인정합니다. 이 표현은 불법 활동을 전달합니다. 그것은 잘못을 고백하는 것을 나타냅니다.',
+      example: 'A: "What\'s your job?" B: "Massage therapist, and I don\'t pay taxes."',
+      example_ko: 'A: "넌 뭐하는 사람이야?" B: "마사지 치료사인데, 난 세금을 안 내."',
+      context: 'Phoebe inadvertently revealing tax evasion to Mike\'s wealthy parents.',
+      context_ko: 'Phoebe가 부유한 Mike의 부모님에게 실수로 탈세를 드러냅니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X12'
+    },
+    {
+      phrase: 'This is not going well.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging that a situation is proceeding badly or unsuccessfully. The phrase conveys frustration. It demonstrates recognizing failure.',
+      meaning_ko: '상황이 나쁘게 진행되거나 성공하지 못하고 있음을 인정합니다. 이 표현은 좌절감을 전달합니다. 그것은 실패를 인식하는 것을 나타냅니다.',
+      example: 'A: "How\'s it going?" B: "This is not going well."',
+      example_ko: 'A: "어떻게 되고 있어?" B: "잘 안 되고 있어."',
+      context: 'Phoebe realizing her introduction to Mike\'s parents is going poorly.',
+      context_ko: 'Phoebe가 Mike의 부모님에 대한 자신의 소개가 잘못되고 있음을 깨닫습니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X13'
+    },
+    {
+      phrase: 'Maybe just a little less pimp spit.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting someone avoid mentioning unsavory details from their past. The phrase conveys gentle criticism. It demonstrates constructive feedback.',
+      meaning_ko: '누군가가 과거의 불쾌한 세부사항을 언급하지 않도록 제안합니다. 이 표현은 온화한 비판을 전달합니다. 그것은 건설적인 피드백을 나타냅니다.',
+      example: 'A: "Was I okay?" B: "Good, but maybe less about your rough past."',
+      example_ko: 'A: "난 괜찮았어?" B: "좋았지만, 너의 어려운 과거 얘기는 좀 덜."',
+      context: 'Mike gently advising Phoebe to tone down the dark details of her life story.',
+      context_ko: 'Mike가 Phoebe에게 자신의 인생 이야기의 어두운 세부사항을 낮추도록 온화하게 조언합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X14'
+    },
+    {
+      phrase: 'You must work out all the time.',
+      partOfSpeech: 'expression',
+      meaning: 'Complimenting someone on their physical fitness based on appearance. The phrase conveys admiration for physical condition. It demonstrates flirtatious praise.',
+      meaning_ko: '외모에 따라 신체 체력에 대해 누군가를 칭찬합니다. 이 표현은 신체 상태에 대한 감탄을 전달합니다. 그것은 작업 칭찬을 나타냅니다.',
+      example: 'A: "You look great." B: "You must work out all the time."',
+      example_ko: 'A: "넌 멋있어 보여." B: "넌 계속 운동하나?"',
+      context: 'Phoebe successfully using flirtation to charm Mike\'s father Theodore.',
+      context_ko: 'Phoebe가 성공적으로 작업을 사용하여 Mike의 아버지 Theodore를 매력적으로 만듭니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E7X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +286,19 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  var currentLang = 'en';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    // Update button states
+    var btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    // Update visibility
+    document.querySelectorAll('.lang-en').forEach(function(el) { el.classList.toggle('active', lang === 'en'); });
+    document.querySelectorAll('.lang-ko').forEach(function(el) { el.classList.toggle('active', lang === 'ko'); });
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,17 +320,26 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-section lang-en active"><strong>English:</strong></div>';
+        html += '<div class="expr-meaning lang-en active">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example lang-en active">' + escHtml(x.example) + '</div>';
+        html += '<div class="expr-section lang-ko"><strong>Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko lang-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko lang-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="lang-en active">';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        html += '</div>';
+        html += '<div class="lang-ko">';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
+        html += '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
+        html += '<div class="expr-meaning lang-en active" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';

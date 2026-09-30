@@ -6,12 +6,25 @@
   <title>Friends S9E8 &mdash; Daily English</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <style>
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
+    .lang-btn { padding: 8px 16px; border: 2px solid var(--border); background: var(--card); color: var(--text); border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 0.9rem; transition: all 0.22s; }
+    .lang-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .lang-btn:hover { transform: scale(1.05); }
     .expr-card { border-radius: 12px; padding: 18px 20px; margin: 0; }
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-section { margin-bottom: 12px; }
+    .expr-section strong { color: var(--accent3); }
+    .lang-en { display: none; }
+    .lang-ko { display: none; }
+    .lang-en.active { display: block; }
+    .lang-ko.active { display: block; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +63,8 @@
           onerror="this.src='../../images/s9e8.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E8: Season 9, Episode 8</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E8: The One with Chandler in a Box</div>
+        <div class="page-header-meta">Thanksgiving chaos unfolds as Monica and Chandler are chosen as Emma's godparents. Amy's shocking revelations and Joey's lying lessons create awkward moments throughout the holiday dinner.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e8"
             onclick="toggleBookmark('episode','episode-friends-s9e8','📋 Friends S9E8','friends/episodes/season9/s9e8.html')">
@@ -65,6 +78,10 @@
       <div class="bookmark-chips" id="bookmarkChips"></div>
     </div>
     <div class="section-label" data-i18n="episode.exprs.label" data-i18n-vars='{"s":9,"e":8}'>&#128172; 15 English Expressions &mdash; Season 9 Episode 8</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    </div>
     <div class="expr-list" id="exprList"></div>
   </div>
 </main>
@@ -92,10 +109,176 @@
      Empty slots show as "Coming Soon" placeholders automatically.
   ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 8',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with Chandler in a Box',
+    description: 'Thanksgiving chaos unfolds as Monica and Chandler are chosen as Emma\'s godparents. Amy\'s shocking revelations and Joey\'s lying lessons create awkward moments throughout the holiday dinner.',
+    expressions: [
+    {
+      phrase: 'I need a good lie.',
+      partOfSpeech: 'expression',
+      meaning: 'Requesting help to fabricate a plausible excuse. The phrase conveys seeking dishonest assistance. It demonstrates asking for deceptive support.',
+      meaning_ko: '그럴듯한 변명을 만들기 위해 도움을 요청합니다. 이 표현은 부정직한 지원을 찾는 것을 전달합니다. 그것은 기만적인 지원을 요청하는 것을 나타냅니다.',
+      example: 'A: "I missed a work event." B: "I need a good lie."',
+      example_ko: 'A: "난 회사 행사를 놓쳤어." B: "좋은 변명이 필요해."',
+      context: 'Joey asking Phoebe to help him create a convincing excuse for skipping work.',
+      context_ko: 'Joey가 Phoebe에게 일을 건너뛰기 위한 설득력 있는 변명을 만드는 것을 도와달라고 요청합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X1'
+    },
+    {
+      phrase: 'You stink at lying.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that someone is not skilled at deception. The phrase conveys criticism of dishonest ability. It demonstrates insulting lack of skill.',
+      meaning_ko: '누군가가 속임수에 능하지 않다고 진술합니다. 이 표현은 부정직한 능력에 대한 비판을 전달합니다. 그것은 기술 부족에 대한 모욕을 나타냅니다.',
+      example: 'A: "I can make up excuses." B: "You stink at lying."',
+      example_ko: 'A: "난 변명을 만들 수 있어." B: "넌 거짓말을 못해."',
+      context: 'Phoebe telling Joey he is not good at fabricating believable lies.',
+      context_ko: 'Phoebe가 Joey에게 그가 그럴듯한 거짓말을 잘 만들지 못한다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X2'
+    },
+    {
+      phrase: 'Lying is basically just acting.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming that deception requires the same skills as performance. The phrase conveys comparing dishonesty to theatrical work. It demonstrates equating unrelated skills.',
+      meaning_ko: '속임이 공연과 같은 기술을 요구한다고 주장합니다. 이 표현은 부정직성을 극장 작업과 비교하는 것을 전달합니다. 그것은 관련 없는 기술을 동일시하는 것을 나타냅니다.',
+      example: 'A: "Why can\'t you lie?" B: "Lying is basically just acting."',
+      example_ko: 'A: "넌 왜 거짓말을 못해?" B: "거짓말은 기본적으로 연기야."',
+      context: 'Joey explaining to Phoebe that lying should be easy since he is an actor.',
+      context_ko: 'Joey가 Phoebe에게 자신이 배우이므로 거짓말이 쉬워야 한다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X3'
+    },
+    {
+      phrase: 'I am a terrific actor.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing confidence in one\'s performance abilities. The phrase conveys self-assurance about acting skill. It demonstrates boastful self-praise.',
+      meaning_ko: '자신의 공연 능력에 자신감을 표현합니다. 이 표현은 연기 기술에 대한 자신감을 전달합니다. 그것은 자랑스러운 자기 칭찬을 나타냅니다.',
+      example: 'A: "Are you a good actor?" B: "I am a terrific actor."',
+      example_ko: 'A: "넌 좋은 배우야?" B: "난 멋진 배우야."',
+      context: 'Joey confidently asserting his superior acting talent to Phoebe.',
+      context_ko: 'Joey가 Phoebe에게 자신의 우수한 연기 재능을 자신감 있게 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X4'
+    },
+    {
+      phrase: 'It would be incredible if you guys died.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing dark humor by wishing death upon someone. The phrase conveys macabre joke. It demonstrates shocking dark comedy.',
+      meaning_ko: '누군가에게 죽음을 바라는 어두운 유머를 표현합니다. 이 표현은 음산한 농담을 전달합니다. 그것은 충격적인 어두운 코미디를 나타냅니다.',
+      example: 'A: "You need to be nice." B: "It would be incredible if you died."',
+      example_ko: 'A: "넌 착해야 해." B: "넌 죽으면 좋을 텐데."',
+      context: 'Amy jokingly expressing that she would love to inherit Emma if Ross and Monica died.',
+      context_ko: 'Amy가 Ross와 Monica가 죽으면 Emma를 물려받고 싶을 것이라고 농담으로 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X5'
+    },
+    {
+      phrase: 'I would rise to the occasion.',
+      partOfSpeech: 'phrasal verb',
+      meaning: 'Promising to handle a difficult situation successfully. The phrase conveys capability under pressure. It demonstrates confident commitment to meet challenges.',
+      meaning_ko: '어려운 상황을 성공적으로 처리할 것을 약속합니다. 이 표현은 압력 하에서의 능력을 전달합니다. 그것은 도전에 대응하기 위한 자신감 있는 약속을 나타냅니다.',
+      example: 'A: "Could you handle raising my child?" B: "I would rise to the occasion."',
+      example_ko: 'A: "넌 우리 아이를 키울 수 있어?" B: "난 상황에 맞게 할 거야."',
+      context: 'Amy imagining herself successfully stepping up if she became Emma\'s guardian.',
+      context_ko: 'Amy가 자신이 Emma의 보호자가 되었을 때 성공적으로 할 수 있을 것을 상상합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X6'
+    },
+    {
+      phrase: 'She has nowhere else to go.',
+      partOfSpeech: 'expression',
+      meaning: 'Stating that someone has no alternative location to stay or visit. The phrase conveys lack of options. It demonstrates explaining predicament.',
+      meaning_ko: '누군가가 머물거나 방문할 다른 장소가 없다고 진술합니다. 이 표현은 선택지 부족을 전달합니다. 그것은 어려운 상황을 설명하는 것을 나타냅니다.',
+      example: 'A: "Why invite her?" B: "She has nowhere else to go."',
+      example_ko: 'A: "왜 그녀를 초대해?" B: "그녀는 갈 곳이 없어."',
+      context: 'Ross explaining to Monica why Amy should be invited to Thanksgiving dinner.',
+      context_ko: 'Ross가 Monica에게 Amy가 추수감사절 저녁에 초대되어야 하는 이유를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X7'
+    },
+    {
+      phrase: 'I don\'t want them bonding too much.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing concern that two people might develop an overly close relationship. The phrase conveys warning against intimacy. It demonstrates expressing protective anxiety.',
+      meaning_ko: '두 사람이 너무 가까운 관계를 발전시킬까봐 우려를 표현합니다. 이 표현은 친밀함에 대한 경고를 전달합니다. 그것은 보호적인 불안을 표현하는 것을 나타냅니다.',
+      example: 'A: "They should bond." B: "I don\'t want them bonding too much."',
+      example_ko: 'A: "그들은 친해져야 해." B: "난 그들이 너무 친해지면 안 돼."',
+      context: 'Monica worried that Amy might negatively influence Emma if they get too close.',
+      context_ko: 'Monica가 Amy가 그들이 너무 가까워지면 Emma에게 부정적인 영향을 끼칠까봐 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X8'
+    },
+    {
+      phrase: 'She may need one.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting that someone might actually require a cosmetic procedure. The phrase conveys accepting unpleasant truth. It demonstrates conceding a point.',
+      meaning_ko: '누군가가 실제로 성형 절차를 필요로 할 수 있다고 제안합니다. 이 표현은 불쾌한 진실을 받아들이는 것을 전달합니다. 그것은 포인트를 인정하는 것을 나타냅니다.',
+      example: 'A: "Don\'t say she needs a nose job." B: "She may need one."',
+      example_ko: 'A: "넌 그녀가 콧대수술이 필요하다고 말하지 마." B: "그녀는 필요할 수도 있어."',
+      context: 'Monica jokingly agreeing that Emma might need a nose job in the future.',
+      context_ko: 'Monica가 Emma가 나중에 콧대수술이 필요할 수도 있다고 농담으로 동의합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X9'
+    },
+    {
+      phrase: 'She\'s a lump.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing a baby as an unresponsive, inactive object. The phrase conveys disrespectful characterization. It demonstrates insulting lack of connection.',
+      meaning_ko: '아기를 반응 없고 비활동적인 물체로 설명합니다. 이 표현은 무례한 특성화를 전달합니다. 그것은 연결 부족을 모욕하는 것을 나타냅니다.',
+      example: 'A: "Be nice to the baby." B: "She\'s a lump."',
+      example_ko: 'A: "아기한테 친절해 줄래." B: "그냥 물덩어리일 뿐이야."',
+      context: 'Amy coldly dismissing Emma as having no personality or connection to her.',
+      context_ko: 'Amy가 Emma를 냉정하게 성격이나 연결이 없다고 무시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X10'
+    },
+    {
+      phrase: 'You\'re all about the fun.',
+      partOfSpeech: 'expression',
+      meaning: 'Characterizing someone as primarily focused on enjoyment and entertainment. The phrase conveys defining someone\'s personality. It demonstrates describing lack of discipline.',
+      meaning_ko: '누군가를 주로 즐거움과 오락에 집중하는 것으로 특성화합니다. 이 표현은 누군가의 성격을 정의하는 것을 전달합니다. 그것은 규율 부족을 설명하는 것을 나타냅니다.',
+      example: 'A: "Are you strict?" B: "No, I\'m all about the fun."',
+      example_ko: 'A: "넌 엄해?" B: "아니, 난 재미만 생각해."',
+      context: 'Chandler explaining that he is the fun parent while Monica is the strict disciplinarian.',
+      context_ko: 'Chandler가 자신은 재미 있는 부모이고 Monica는 엄격한 훈육자라고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X11'
+    },
+    {
+      phrase: 'Be careful.',
+      partOfSpeech: 'expression',
+      meaning: 'Warning someone to take precautions or pay attention to avoid harm. The phrase conveys offering protective advice. It demonstrates expressing cautious concern.',
+      meaning_ko: '누군가에게 주의를 기울이거나 피해를 피하기 위해 조심하라고 경고합니다. 이 표현은 보호 조언을 제공하는 것을 전달합니다. 그것은 신중한 우려를 표현하는 것을 나타냅니다.',
+      example: 'A: "I\'ll hold the baby." B: "Be careful."',
+      example_ko: 'A: "난 아기를 들어볼게." B: "조심해."',
+      context: 'Monica cautiously instructing someone to handle the baby carefully.',
+      context_ko: 'Monica가 누군가에게 아기를 조심해서 다루도록 신중하게 지시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X12'
+    },
+    {
+      phrase: 'This is such a slap in the face.',
+      partOfSpeech: 'idiom',
+      meaning: 'Describing something as deeply insulting or humiliating. The phrase conveys severe emotional hurt. It demonstrates expressing deep offense and betrayal.',
+      meaning_ko: '무언가를 깊은 모욕이나 굴욕으로 설명합니다. 이 표현은 심각한 정서적 상처를 전달합니다. 그것은 깊은 모욕과 배신을 표현하는 것을 나타냅니다.',
+      example: 'A: "We chose Monica." B: "This is such a slap in the face."',
+      example_ko: 'A: "우린 Monica를 선택했어." B: "이건 정말 모욕적이야."',
+      context: 'Amy feeling betrayed that Ross and Rachel chose Monica over her as Emma\'s guardian.',
+      context_ko: 'Amy가 Ross와 Rachel이 Emma의 보호자로 자신보다 Monica를 선택한 것으로 배신감을 느깁니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X13'
+    },
+    {
+      phrase: 'Who has to die for me to get her?',
+      partOfSpeech: 'expression',
+      meaning: 'Sarcastically asking what conditions must be met to achieve a goal. The phrase conveys frustrated questioning. It demonstrates expressing exasperated confusion.',
+      meaning_ko: '목표를 달성하기 위해 어떤 조건을 충족해야 하는지 비꼬아 질문합니다. 이 표현은 좌절한 질문을 전달합니다. 그것은 지친 혼동을 표현하는 것을 나타냅니다.',
+      example: 'A: "Monica needs to be alive." B: "Who has to die for me to get her?"',
+      example_ko: 'A: "Monica가 살아 있어야 돼." B: "그럼 누가 죽어야 내가 그녀를 얻어?"',
+      context: 'Amy sarcastically questioning the conditions under which she could become Emma\'s guardian.',
+      context_ko: 'Amy가 자신이 Emma의 보호자가 될 수 있는 조건에 대해 비꼬아 질문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X14'
+    },
+    {
+      phrase: 'You\'re more of the fun parent.',
+      partOfSpeech: 'expression',
+      meaning: 'Categorizing someone as the caregiver who emphasizes enjoyment over discipline. The phrase conveys parental role definition. It demonstrates explaining personality type.',
+      meaning_ko: '누군가를 규율보다 즐거움을 강조하는 보호자로 분류합니다. 이 표현은 부모 역할 정의를 전달합니다. 그것은 성격 유형을 설명하는 것을 나타냅니다.',
+      example: 'A: "Can you be strict?" B: "You\'re more of the fun parent."',
+      example_ko: 'A: "넌 엄할 수 있어?" B: "넌 더 재미있는 부모 역할이야."',
+      context: 'Ross and Rachel explaining to Chandler that he fills a different parental role than Monica.',
+      context_ko: 'Ross와 Rachel이 Chandler에게 자신이 Monica와 다른 부모 역할을 한다고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E8X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +286,19 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  var currentLang = 'en';
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    // Update button states
+    var btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    // Update visibility
+    document.querySelectorAll('.lang-en').forEach(function(el) { el.classList.toggle('active', lang === 'en'); });
+    document.querySelectorAll('.lang-ko').forEach(function(el) { el.classList.toggle('active', lang === 'ko'); });
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,17 +320,26 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
-        html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
-        html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div class="expr-section lang-en active"><strong>English:</strong></div>';
+        html += '<div class="expr-meaning lang-en active">' + escHtml(x.meaning) + '</div>';
+        html += '<div class="expr-example lang-en active">' + escHtml(x.example) + '</div>';
+        html += '<div class="expr-section lang-ko"><strong>Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko lang-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko lang-ko">' + escHtml(x.example_ko) + '</div>';
+        html += '<div class="lang-en active">';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        html += '</div>';
+        html += '<div class="lang-ko">';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
+        html += '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
-        html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
+        html += '<div class="expr-meaning lang-en active" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
