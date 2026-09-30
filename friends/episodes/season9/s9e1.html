@@ -10,8 +10,11 @@
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +53,8 @@
           onerror="this.src='../../images/s9e1.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E1: Season 9, Episode 1</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E1: The One Where No One's Ready</div>
+        <div class="page-header-meta">Chandler accidentally proposes to Rachel. Joey's engagement confusion. Emma's birth celebration. Relationship revelations and misunderstandings.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e1"
             onclick="toggleBookmark('episode','episode-friends-s9e1','📋 Friends S9E1','friends/episodes/season9/s9e1.html')">
@@ -77,25 +80,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 1',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One Where No One\'s Ready',
+    description: 'Chandler accidentally proposes to Rachel. Joey\'s engagement confusion. Emma\'s birth celebration. Relationship revelations and misunderstandings.',
+    expressions: [
+    {
+      phrase: 'I guess we should make it official.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting that it\'s time to formally acknowledge or announce something. The phrase conveys readiness for commitment. It demonstrates taking a next step.',
+      meaning_ko: '무언가를 공식적으로 인정하거나 공개할 시간이라고 제안합니다. 이 표현은 약속의 준비를 전달합니다. 그것은 다음 단계를 나타냅니다.',
+      example: 'A: "Should we tell people about us?" B: "I guess we should make it official."',
+      example_ko: 'A: "우리에 대해 사람들에게 말할까?" B: "공식으로 알릴 시간인 것 같아."',
+      context: 'Ross suggesting he and Rachel make their relationship official.',
+      context_ko: 'Ross는 자신과 Rachel의 관계를 공식화할 것을 제안합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X1'
+    },
+    {
+      phrase: 'You\'re weird today.',
+      partOfSpeech: 'expression',
+      meaning: 'Observing that someone is acting unusually or strangely. The phrase conveys surprise at behavior. It demonstrates noticing odd conduct.',
+      meaning_ko: '누군가가 평소와 다르게 이상하게 행동한다고 관찰합니다. 이 표현은 행동에 대한 놀라움을 전달합니다. 그것은 이상한 행동을 알아채는 것을 나타냅니다.',
+      example: 'A: "Why are you acting so strange?" B: "You\'re weird today."',
+      example_ko: 'A: "넌 왜 그렇게 이상하게 행동해?" B: "너 오늘 이상한데."',
+      context: 'Rachel noticing Ross\'s nervous and unusual behavior.',
+      context_ko: 'Rachel은 Ross의 불안하고 이상한 행동을 알아챕니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X2'
+    },
+    {
+      phrase: 'I just did something terrible.',
+      partOfSpeech: 'expression',
+      meaning: 'Confessing to committing a serious mistake or wrongdoing. The phrase conveys regret and anxiety. It demonstrates taking responsibility.',
+      meaning_ko: '심각한 실수나 잘못을 저질렀음을 인정합니다. 이 표현은 후회와 불안을 전달합니다. 그것은 책임을 지는 것을 나타냅니다.',
+      example: 'A: "What\'s wrong?" B: "I just did something terrible."',
+      example_ko: 'A: "뭐가 잘못됐어?" B: "난 심각한 실수를 했어."',
+      context: 'Chandler confessing his accidental proposal to Joey.',
+      context_ko: 'Chandler가 우발적인 청혼을 Joey에게 인정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X3'
+    },
+    {
+      phrase: 'It kind of looked like I did.',
+      partOfSpeech: 'expression',
+      meaning: 'Admitting that one\'s actions appeared to communicate something unintended. The phrase conveys misunderstanding consequences. It demonstrates acknowledging perception.',
+      meaning_ko: '자신의 행동이 의도하지 않은 무언가를 전달하는 것처럼 보였음을 인정합니다. 이 표현은 오해의 결과를 전달합니다. 그것은 인식을 인정하는 것을 나타냅니다.',
+      example: 'A: "Did you propose?" B: "It kind of looked like I did."',
+      example_ko: 'A: "넌 청혼했어?" B: "그렇게 보였어."',
+      context: 'Chandler explaining his accidental proposal appearance.',
+      context_ko: 'Chandler가 우발적인 청혼의 모습을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X4'
+    },
+    {
+      phrase: 'I was down on one knee.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing being in the traditional kneeling position. The phrase conveys romantic proposal positioning. It demonstrates physical placement during proposal.',
+      meaning_ko: '전통적인 무릎을 꿇는 자세를 설명합니다. 이 표현은 낭만적인 청혼 자세를 전달합니다. 그것은 청혼 중 신체적 위치를 나타냅니다.',
+      example: 'A: "How did you propose?" B: "I was down on one knee."',
+      example_ko: 'A: "넌 어떻게 청혼했어?" B: "내가 무릎을 꿇었어."',
+      context: 'Chandler explaining the position when Rachel misunderstood.',
+      context_ko: 'Chandler가 Rachel이 잘못 이해했을 때의 자세를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X5'
+    },
+    {
+      phrase: 'This is gonna kill him.',
+      partOfSpeech: 'phrasal verb',
+      meaning: 'Predicting someone will be extremely upset or hurt. The phrase conveys serious distress consequence. It demonstrates anticipating emotional reaction.',
+      meaning_ko: '누군가가 극도로 화나거나 상처받을 것이라고 예측합니다. 이 표현은 심각한 고통의 결과를 전달합니다. 그것은 감정적 반응을 예상하는 것을 나타냅니다.',
+      example: 'A: "How will he react?" B: "This is gonna kill him."',
+      example_ko: 'A: "그는 어떻게 반응할까?" B: "그가 정말 상처받을 거야."',
+      context: 'Chandler worried about Ross\'s reaction to the engagement.',
+      context_ko: 'Chandler가 Ross의 약혼에 대한 반응을 걱정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X6'
+    },
+    {
+      phrase: 'How much he loves to propose.',
+      partOfSpeech: 'expression',
+      meaning: 'Referencing someone\'s strong enjoyment of making marriage proposals. The phrase conveys enthusiasm for romantic gestures. It demonstrates passion for proposing.',
+      meaning_ko: '누군가가 결혼 청혼을 하는 것을 얼마나 좋아하는지 언급합니다. 이 표현은 로맨틱한 제스처에 대한 열정을 전달합니다. 그것은 청혼에 대한 열정을 나타냅니다.',
+      example: 'A: "Ross loves proposals?" B: "Yeah, you know how much he loves to propose."',
+      example_ko: 'A: "Ross는 청혼을 좋아해?" B: "응, 그가 청혼을 얼마나 좋아하는지 알지."',
+      context: 'Chandler joking that Ross enjoys proposing in relationships.',
+      context_ko: 'Chandler가 Ross가 관계에서 청혼을 즐긴다고 농담합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X7'
+    },
+    {
+      phrase: 'I think I just got engaged.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing that an engagement occurred, possibly unexpectedly. The phrase conveys shock and realization. It demonstrates reporting major life event.',
+      meaning_ko: '약혼이 발생했으며, 아마도 예상치 못하게 발생했음을 발표합니다. 이 표현은 충격과 깨달음을 전달합니다. 그것은 주요 인생 사건을 보고하는 것을 나타냅니다.',
+      example: 'A: "What?" B: "I think I just got engaged."',
+      example_ko: 'A: "뭐?" B: "나 방금 약혼한 것 같아."',
+      context: 'Rachel\'s realization after Chandler\'s accidental proposal.',
+      context_ko: 'Chandler의 우발적인 청혼 후 Rachel의 깨달음.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X8'
+    },
+    {
+      phrase: 'I\'m like the puppet master.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming to control or manipulate situations and other people\'s actions. The phrase conveys orchestrating events. It demonstrates enjoying influence.',
+      meaning_ko: '상황과 다른 사람의 행동을 통제하거나 조종한다고 주장합니다. 이 표현은 사건을 조율하는 것을 전달합니다. 그것은 영향력을 즐기는 것을 나타냅니다.',
+      example: 'A: "You made this happen?" B: "I\'m like the puppet master."',
+      example_ko: 'A: "넌 이걸 일으켰어?" B: "난 마치 조종자 같아."',
+      context: 'Monica proudly claiming responsibility for the engagement.',
+      context_ko: 'Monica가 약혼에 대한 책임을 자랑스럽게 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X9'
+    },
+    {
+      phrase: 'It just doesn\'t feel right.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing intuition that something is wrong or inappropriate. The phrase conveys uncertainty and doubt. It demonstrates trusting feelings over logic.',
+      meaning_ko: '뭔가 잘못되었거나 부적절하다는 직관을 표현합니다. 이 표현은 불확실성과 의심을 전달합니다. 그것은 논리보다 감정을 믿는 것을 나타냅니다.',
+      example: 'A: "Aren\'t you happy?" B: "I don\'t know. It just doesn\'t feel right."',
+      example_ko: 'A: "넌 행복하지 않아?" B: "모르겠어. 뭔가 이상해."',
+      context: 'Rachel expressing doubt about her engagement to Joey.',
+      context_ko: 'Rachel이 Joey와의 약혼에 대한 의심을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X10'
+    },
+    {
+      phrase: 'You two are so meant to be.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting that two people are destined to be together romantically. The phrase conveys belief in destiny. It demonstrates supporting a relationship.',
+      meaning_ko: '두 사람이 로맨틱하게 함께 있도록 운명지어졌다고 주장합니다. 이 표현은 운명에 대한 믿음을 전달합니다. 그것은 관계를 지지하는 것을 나타냅니다.',
+      example: 'A: "Do you think we\'re right?" B: "You two are so meant to be."',
+      example_ko: 'A: "우리가 맞는 거 같아?" B: "너희 둘은 정말 잘 어울려."',
+      context: 'Monica convincing Rachel that she and Joey belong together.',
+      context_ko: 'Monica가 Rachel을 자신과 Joey가 함께할 자격이 있다고 확신시킵니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X11'
+    },
+    {
+      phrase: 'Everybody thinks so.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating that a majority or all people share the same opinion. The phrase conveys consensus agreement. It demonstrates collective approval.',
+      meaning_ko: '대다수 또는 모든 사람이 같은 의견을 공유한다는 것을 나타냅니다. 이 표현은 합의 동의를 전달합니다. 그것은 집단적 승인을 나타냅니다.',
+      example: 'A: "Is it a good idea?" B: "Yes. Everybody thinks so."',
+      example_ko: 'A: "좋은 생각이야?" B: "응. 모두 그렇게 생각해."',
+      context: 'Monica saying their friends approve of the engagement.',
+      context_ko: 'Monica가 친구들이 약혼을 승인한다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X12'
+    },
+    {
+      phrase: 'Well, this is awkward.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging that the current situation is uncomfortable or socially difficult. The phrase conveys embarrassment or tension. It demonstrates recognizing discomfort.',
+      meaning_ko: '현재 상황이 불편하거나 사회적으로 어렵다는 것을 인정합니다. 이 표현은 당혹감이나 긴장을 전달합니다. 그것은 불편함을 인식하는 것을 나타냅니다.',
+      example: 'A: "So you proposed?" B: "Well, this is awkward."',
+      example_ko: 'A: "그래서 넌 청혼했어?" B: "음, 이게 좀 어색한데."',
+      context: 'Ross when he realizes the full situation of the misunderstanding.',
+      context_ko: 'Ross가 오해의 전체 상황을 깨달을 때.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X13'
+    },
+    {
+      phrase: 'Why didn\'t you tell me before?',
+      partOfSpeech: 'expression',
+      meaning: 'Asking why someone withheld important information until now. The phrase conveys frustration at delayed disclosure. It demonstrates questioning timing.',
+      meaning_ko: '누군가가 지금까지 중요한 정보를 숨기지 않은 이유를 묻습니다. 이 표현은 지연된 공개에 대한 답답함을 전달합니다. 그것은 타이밍에 대한 의문을 나타냅니다.',
+      example: 'A: "I didn\'t tell you." B: "Why didn\'t you tell me before?"',
+      example_ko: 'A: "난 말하지 않았어." B: "넌 전에 왜 말하지 않았어?"',
+      context: 'Rachel frustrated that Joey didn\'t explain sooner.',
+      context_ko: 'Rachel이 Joey가 더 일찍 설명하지 않은 것에 답답해합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X14'
+    },
+    {
+      phrase: 'It wasn\'t my ring.',
+      partOfSpeech: 'expression',
+      meaning: 'Clarifying that an object or item doesn\'t belong to the speaker. The phrase conveys denial of ownership. It demonstrates distancing from responsibility.',
+      meaning_ko: '물건이나 항목이 화자에게 속하지 않는다고 명확히 합니다. 이 표현은 소유권 부인을 전달합니다. 그것은 책임에서 거리를 두는 것을 나타냅니다.',
+      example: 'A: "Why did you have a ring?" B: "It wasn\'t my ring."',
+      example_ko: 'A: "넌 왜 반지를 가지고 있었어?" B: "그건 내 반지가 아니었어."',
+      context: 'Joey explaining the engagement ring belonged to Ross.',
+      context_ko: 'Joey가 약혼반지가 Ross의 것이라고 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E1X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +258,11 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,16 +284,21 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div><strong style="color:var(--accent3)">English:</strong></div>';
         html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
         html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div><strong style="color:var(--accent3)">Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko">' + escHtml(x.example_ko) + '</div>';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
         html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
@@ -147,20 +312,12 @@
     toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
   }
 
+  function t(key) {
+    return key; // Fallback if i18n not loaded
+  }
+
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

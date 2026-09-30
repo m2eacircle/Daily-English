@@ -10,8 +10,11 @@
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +53,8 @@
           onerror="this.src='../../images/s9e3.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E3: Season 9, Episode 3</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E3: The One with the Pediatrician</div>
+        <div class="page-header-meta">Chandler gets Tulsa job. Rachel worries about Emma's health. Phoebe sets up Joey on double date with Mike. Friends face new challenges.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e3"
             onclick="toggleBookmark('episode','episode-friends-s9e3','📋 Friends S9E3','friends/episodes/season9/s9e3.html')">
@@ -77,25 +80,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 3',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One with the Pediatrician',
+    description: 'Chandler gets Tulsa job. Rachel worries about Emma\'s health. Phoebe sets up Joey on double date with Mike. Friends face new challenges.',
+    expressions: [
+    {
+      phrase: 'You\'re the glue that holds this together.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing someone as essential to group unity. The phrase conveys importance to cohesion. It demonstrates valuing someone\'s role.',
+      meaning_ko: '그룹의 단결에 필수적인 누군가를 설명합니다. 이 표현은 응집력에 대한 중요성을 전달합니다. 그것은 누군가의 역할을 소중히 여기는 것을 나타냅니다.',
+      example: 'A: "Why do we need you?" B: "You\'re the glue that holds this together."',
+      example_ko: 'A: "우리가 왜 너한테 필요해?" B: "넌 우리 그룹을 묶는 접착제야."',
+      context: 'Friends saying Chandler cannot leave for Tulsa.',
+      context_ko: 'Friends가 Chandler가 Tulsa로 갈 수 없다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X1'
+    },
+    {
+      phrase: 'I call their apartment!',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming dibs on something before others. The phrase conveys quick action to reserve. It demonstrates wanting something urgently.',
+      meaning_ko: '다른 사람들보다 먼저 뭔가에 대해 주장합니다. 이 표현은 예약을 위한 빠른 조치를 전달합니다. 그것은 긴급하게 무언가를 원하는 것을 나타냅니다.',
+      example: 'A: "They\'re moving!" B: "I call their apartment!"',
+      example_ko: 'A: "그들이 이사 가!" B: "난 그들의 아파트 내꺼!"',
+      context: 'Joey wanting to move into vacated apartment.',
+      context_ko: 'Joey가 비워진 아파트로 이사하고 싶어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X2'
+    },
+    {
+      phrase: 'I kind of have to, don\'t I?',
+      partOfSpeech: 'expression',
+      meaning: 'Accepting necessity or obligation reluctantly. The phrase conveys resignation to required action. It demonstrates lacking choice.',
+      meaning_ko: '필요성이나 의무를 마지못해 수락합니다. 이 표현은 필수 조치에 대한 체념을 전달합니다. 그것은 선택의 여지가 없음을 나타냅니다.',
+      example: 'A: "Do you have to go?" B: "I kind of have to, don\'t I?"',
+      example_ko: 'A: "넌 가야 해?" B: "난 가야 하지 않아?"',
+      context: 'Chandler accepting his Tulsa job requirement.',
+      context_ko: 'Chandler이 Tulsa 업무 요구를 수락합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X3'
+    },
+    {
+      phrase: 'Because of this stupid thing.',
+      partOfSpeech: 'expression',
+      meaning: 'Blaming an object or situation for circumstances. The phrase conveys frustration at cause. It demonstrates venting frustration.',
+      meaning_ko: '물건이나 상황이 상황을 유발하는 것을 비난합니다. 이 표현은 원인에 대한 답답함을 전달합니다. 그것은 답답함을 표현하는 것을 나타냅니다.',
+      example: 'A: "Why do you have to go?" B: "Because of this stupid thing."',
+      example_ko: 'A: "넌 왜 가야 해?" B: "이 멍청한 일 때문이야."',
+      context: 'Chandler blaming job requirement for moving.',
+      context_ko: 'Chandler이 이사를 위한 업무 요구를 비난합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X4'
+    },
+    {
+      phrase: 'If you go to Tulsa, I go with you.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing commitment to follow someone regardless. The phrase conveys unwavering support. It demonstrates marital devotion.',
+      meaning_ko: '상관없이 누군가를 따르기로 약속합니다. 이 표현은 흔들리지 않는 지지를 전달합니다. 그것은 부부의 헌신을 나타냅니다.',
+      example: 'A: "I have to move." B: "If you go to Tulsa, I go with you."',
+      example_ko: 'A: "난 이사 가야 해." B: "넌 Tulsa 가면 난 따라갈 거야."',
+      context: 'Monica deciding to go with Chandler to Tulsa.',
+      context_ko: 'Monica가 Chandler와 함께 Tulsa로 가기로 결정합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X5'
+    },
+    {
+      phrase: 'I won\'t live in a different state for 208 days.',
+      partOfSpeech: 'expression',
+      meaning: 'Refusing separation through specific time calculation. The phrase conveys relationship priority. It demonstrates calculating commitment.',
+      meaning_ko: '특정 시간 계산을 통해 분리를 거부합니다. 이 표현은 관계 우선순위를 전달합니다. 그것은 약속을 계산하는 것을 나타냅니다.',
+      example: 'A: "I\'ll be gone four days a week." B: "I won\'t live in a different state for 208 days."',
+      example_ko: 'A: "난 주에 4일 없을 거야." B: "난 208일 동안 다른 주에 살 수 없어."',
+      context: 'Monica showing exact math refusing separation.',
+      context_ko: 'Monica가 분리를 거부하기 위해 정확한 수학을 보여줍니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X6'
+    },
+    {
+      phrase: 'You said that without gagging.',
+      partOfSpeech: 'expression',
+      meaning: 'Noticing someone spoke normally without physical reaction. The phrase conveys positive behavior change. It demonstrates recognizing progress.',
+      meaning_ko: '누군가가 신체 반응 없이 정상적으로 말했음을 알아챕니다. 이 표현은 긍정적인 행동 변화를 전달합니다. 그것은 진전을 인식하는 것을 나타냅니다.',
+      example: 'A: "That felt natural." B: "You said that without gagging."',
+      example_ko: 'A: "그게 자연스러웠어." B: "넌 구역질하지 않고 말했어."',
+      context: 'Chandler noticing Monica\'s acceptance of Tulsa.',
+      context_ko: 'Chandler이 Monica의 Tulsa 수락을 알아챕니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X7'
+    },
+    {
+      phrase: 'What was there anything wrong with Emma?',
+      partOfSpeech: 'expression',
+      meaning: 'Questioning validity of claimed problem. The phrase conveys skepticism about issue. It demonstrates challenging assertion.',
+      meaning_ko: '주장된 문제의 타당성을 의문합니다. 이 표현은 문제에 대한 회의를 전달합니다. 그것은 주장에 도전하는 것을 나타냅니다.',
+      example: 'A: "I called the doctor." B: "Was there anything wrong with Emma?"',
+      example_ko: 'A: "난 의사한테 전화했어." B: "Emma한테 뭐가 잘못됐어?"',
+      context: 'Ross questioning Rachel\'s reason for calling pediatrician.',
+      context_ko: 'Ross가 Rachel이 소아과에 전화한 이유를 의문합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X8'
+    },
+    {
+      phrase: 'He fired us!',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing termination of professional relationship. The phrase conveys shocked dismissal. It demonstrates expressing alarm.',
+      meaning_ko: '전문적인 관계 종료를 발표합니다. 이 표현은 충격적인 해고를 전달합니다. 그것은 경보를 표현하는 것을 나타냅니다.',
+      example: 'A: "What happened?" B: "He fired us!"',
+      example_ko: 'A: "뭐가 일어났어?" B: "그가 우리를 해고했어!"',
+      context: 'Rachel realizing Dr. Wiener fired them as patients.',
+      context_ko: 'Rachel이 Dr. Wiener가 환자로서 자신들을 해고했음을 깨닙니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X9'
+    },
+    {
+      phrase: 'Why does everything happen to me?',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing frustration about repeated misfortune. The phrase conveys self-pity. It demonstrates complaining about bad luck.',
+      meaning_ko: '반복되는 불운에 대한 좌절감을 표현합니다. 이 표현은 자기 연민을 전달합니다. 그것은 나쁜 운에 대한 불평을 나타냅니다.',
+      example: 'A: "The doctor fired us." B: "Why does everything happen to me?"',
+      example_ko: 'A: "의사가 우리를 해고했어." B: "왜 모든 게 나한테만 일어나?"',
+      context: 'Rachel\'s reaction to losing their pediatrician.',
+      context_ko: 'Rachel이 소아과 의사를 잃은 것에 대한 반응입니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X10'
+    },
+    {
+      phrase: 'I\'m ready for a more serious relationship.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing personal growth toward commitment. The phrase conveys maturity shift. It demonstrates expressing readiness.',
+      meaning_ko: '약속을 향한 개인적 성장을 발표합니다. 이 표현은 성숙함의 변화를 전달합니다. 그것은 준비 상태를 표현하는 것을 나타냅니다.',
+      example: 'A: "You\'re changing?" B: "I\'m ready for a more serious relationship."',
+      example_ko: 'A: "넌 변하고 있어?" B: "난 좀 더 심각한 관계를 위해 준비됐어."',
+      context: 'Joey announcing maturity after Rachel situation.',
+      context_ko: 'Joey가 Rachel 상황 후 성숙함을 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X11'
+    },
+    {
+      phrase: 'She is not opposed to threesomes.',
+      partOfSpeech: 'expression',
+      meaning: 'Revealing unexpected personal preference openly. The phrase conveys surprising information. It demonstrates shocking disclosure.',
+      meaning_ko: '예상치 못한 개인적 선호를 공개적으로 공개합니다. 이 표현은 놀라운 정보를 전달합니다. 그것은 충격적인 공개를 나타냅니다.',
+      example: 'A: "Tell me about Mary Ellen." B: "She is not opposed to threesomes."',
+      example_ko: 'A: "Mary Ellen에 대해 말해줘." B: "그녀는 쓰리썸을 반대하지 않아."',
+      context: 'Monica sharing unexpected detail about date.',
+      context_ko: 'Monica가 데이트에 대한 예상치 못한 세부 사항을 공유합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X12'
+    },
+    {
+      phrase: 'Is there no mystery left in romance?',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing dismay at losing anticipation. The phrase conveys romantic disappointment. It demonstrates lamenting lost surprise.',
+      meaning_ko: '기대감 손실에 대한 실망을 표현합니다. 이 표현은 로맨틱한 실망을 전달합니다. 그것은 잃어버린 놀라움을 한탄하는 것을 나타냅니다.',
+      example: 'A: "You told me his name." B: "Is there no mystery left?"',
+      example_ko: 'A: "넌 그의 이름을 말했어." B: "남은 미스터리가 없어?"',
+      context: 'Joey lamenting lost romance of date setup.',
+      context_ko: 'Joey가 데이트 설정의 잃어버린 로맨스를 한탄합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X13'
+    },
+    {
+      phrase: 'Follow my lead, okay?',
+      partOfSpeech: 'expression',
+      meaning: 'Instructing someone to imitate or copy actions. The phrase conveys guidance instruction. It demonstrates taking control.',
+      meaning_ko: '누군가에게 행동을 모방하도록 지시합니다. 이 표현은 지도 지시를 전달합니다. 그것은 통제를 취하는 것을 나타냅니다.',
+      example: 'A: "What should I do?" B: "Follow my lead, okay?"',
+      example_ko: 'A: "난 뭘 해야 해?" B: "날 따라 해, 알겠지?"',
+      context: 'Phoebe coaching Mike on double date.',
+      context_ko: 'Phoebe가 Mike를 더블 데이트에서 코칭합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X14'
+    },
+    {
+      phrase: 'All you have to do is pretend.',
+      partOfSpeech: 'expression',
+      meaning: 'Simplifying task by suggesting only acting required. The phrase conveys minimizing difficulty. It demonstrates encouraging deception.',
+      meaning_ko: '연기만 필요하다고 제안하여 작업을 단순화합니다. 이 표현은 어려움을 최소화합니다. 그것은 기만을 권장하는 것을 나타냅니다.',
+      example: 'A: "Can I do this?" B: "All you have to do is pretend."',
+      example_ko: 'A: "난 이걸 할 수 있어?" B: "넌 그냥 연기만 하면 돼."',
+      context: 'Phoebe telling Mike to pretend dating situation.',
+      context_ko: 'Phoebe가 Mike에게 데이팅 상황을 연기하라고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E3X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +258,11 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,16 +284,21 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div><strong style="color:var(--accent3)">English:</strong></div>';
         html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
         html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div><strong style="color:var(--accent3)">Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko">' + escHtml(x.example_ko) + '</div>';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
         html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
@@ -147,20 +312,12 @@
     toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
   }
 
+  function t(key) {
+    return key; // Fallback if i18n not loaded
+  }
+
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {

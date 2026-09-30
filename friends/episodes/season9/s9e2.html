@@ -10,8 +10,11 @@
     .expr-card:hover { transform: translateX(3px); }
     .expr-phrase { font-size: 1.06rem; font-weight: 900; color: var(--accent); margin-bottom: 5px; }
     .expr-meaning { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
+    .expr-meaning-ko { font-size: 0.87rem; color: var(--text); line-height: 1.65; margin-bottom: 6px; }
     .expr-example { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
+    .expr-example-ko { font-size: 0.82rem; color: var(--muted); font-style: italic; border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 8px; line-height: 1.6; }
     .expr-context { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
+    .expr-context-ko { font-size: 0.77rem; color: var(--muted); margin-bottom: 8px; }
     .expr-num { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); margin-bottom: 7px; }
     .expr-actions { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--border); flex-wrap: wrap; margin-top: 6px; }
     .btn-youtube { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg,#ff0000,#cc0000); color:#fff; border:none; border-radius: 8px; padding: 8px 16px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.22s; text-decoration: none; font-family: inherit; }
@@ -50,8 +53,8 @@
           onerror="this.src='../../images/s9e2.png';this.onerror=function(){this.parentElement.innerHTML='&#127916;';};">
       </div>
       <div class="page-header-info">
-        <div class="page-header-title">Friends &mdash; S9E2: Season 9, Episode 2</div>
-        <div class="page-header-meta">Expressions coming soon.</div>
+        <div class="page-header-title">Friends &mdash; S9E2: The One Where Emma Cries</div>
+        <div class="page-header-meta">Rachel and Emma come home. Chandler gets Tulsa job offer. Baby Emma won't stop crying. Rachel and Monica as new parents.</div>
         <div class="page-header-actions">
           <button class="btn-bm" data-bm-id="episode-friends-s9e2"
             onclick="toggleBookmark('episode','episode-friends-s9e2','📋 Friends S9E2','friends/episodes/season9/s9e2.html')">
@@ -77,25 +80,177 @@
 <script src="../../../js/i18n.js"></script>
 <script src="../../../js/app.js"></script>
 <script>
-  /* ================================================================
-     EPISODE DATA — edit this object to update expressions
-     ----------------------------------------------------------------
-     Each expression has:
-       phrase       : the English expression
-       partOfSpeech : e.g. 'idiom', 'phrasal verb', 'expression'
-       meaning      : your explanation
-       example      : an example sentence
-       context      : scene context (optional, can be empty '')
-       youtubeUrl   : paste YouTube link here when ready
-     ----------------------------------------------------------------
-     The page shows 15 slots. Add up to 15 objects in expressions[].
-     Empty slots show as "Coming Soon" placeholders automatically.
-  ================================================================ */
   var EP_DATA = {
-    available: false,
-    title: 'Season 9, Episode 2',
-    description: 'Expressions coming soon.',
-    expressions: []
+    available: true,
+    title: 'The One Where Emma Cries',
+    description: 'Rachel and Emma come home. Chandler gets Tulsa job offer. Baby Emma won\'t stop crying. Rachel and Monica as new parents.',
+    expressions: [
+    {
+      phrase: 'I was exhausted, I was emotional.',
+      partOfSpeech: 'expression',
+      meaning: 'Explaining one\'s state of mind due to fatigue and emotional distress. The phrase conveys excuse for poor judgment. It demonstrates justifying irrational decisions.',
+      meaning_ko: '피로와 정서적 고통으로 인한 자신의 정신 상태를 설명합니다. 이 표현은 부실한 판단을 위한 변명을 전달합니다. 그것은 비합리적인 결정을 정당화하는 것을 나타냅니다.',
+      example: 'A: "Why did you say yes?" B: "I was exhausted, I was emotional."',
+      example_ko: 'A: "넌 왜 승낙했어?" B: "난 피곤했고 감정적이었어."',
+      context: 'Rachel explaining why she said yes to marrying Joey.',
+      context_ko: 'Rachel이 Joey와 결혼하기로 동의한 이유를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X1'
+    },
+    {
+      phrase: 'I would have said yes to anybody.',
+      partOfSpeech: 'expression',
+      meaning: 'Indicating one would accept any proposal regardless of specifics. The phrase conveys extreme fatigue and emotional state. It demonstrates exaggeration for emphasis.',
+      meaning_ko: '구체적인 내용과 관계없이 모든 제안을 수락할 것이라고 나타냅니다. 이 표현은 극도의 피로와 감정 상태를 전달합니다. 그것은 강조를 위한 과장을 나타냅니다.',
+      example: 'A: "You\'d say yes?" B: "I would have said yes to anybody."',
+      example_ko: 'A: "넌 승낙했어?" B: "난 누구에게든 승낙했을 거야."',
+      context: 'Rachel emphasizing her exhausted emotional state.',
+      context_ko: 'Rachel이 자신의 피곤한 감정 상태를 강조합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X2'
+    },
+    {
+      phrase: 'I\'m not helping.',
+      partOfSpeech: 'expression',
+      meaning: 'Acknowledging that one\'s comment is not useful or supportive. The phrase conveys self-awareness about unhelpful remarks. It demonstrates recognizing poor timing.',
+      meaning_ko: '자신의 말이 유용하거나 지지적이지 않다는 것을 인정합니다. 이 표현은 도움이 되지 않는 발언에 대한 자각을 전달합니다. 그것은 부정적인 타이밍을 인식하는 것을 나타냅니다.',
+      example: 'A: "That\'s not helping." B: "I know, I\'m not helping."',
+      example_ko: 'A: "그건 도움이 안 돼." B: "알아, 난 도움이 안 돼."',
+      context: 'Chandler realizing his comment made things worse.',
+      context_ko: 'Chandler가 자신의 말이 상황을 더 악화시켰음을 깨닙니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X3'
+    },
+    {
+      phrase: 'I can\'t stay too mad at you.',
+      partOfSpeech: 'expression',
+      meaning: 'Suggesting that one cannot maintain anger toward another. The phrase conveys difficulty in holding grudges. It demonstrates softening resentment.',
+      meaning_ko: '다른 사람을 향한 분노를 유지할 수 없다고 제안합니다. 이 표현은 원한을 유지하는 어려움을 전달합니다. 그것은 분개를 부드럽게 하는 것을 나타냅니다.',
+      example: 'A: "Are you still mad?" B: "I can\'t stay too mad at you."',
+      example_ko: 'A: "너한테 아직 화났어?" B: "난 너한테 너무 오래 화낼 수 없어."',
+      context: 'Rachel saying she can\'t stay mad at herself.',
+      context_ko: 'Rachel이 자신에게 화낼 수 없다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X4'
+    },
+    {
+      phrase: 'I just had his baby.',
+      partOfSpeech: 'expression',
+      meaning: 'Announcing or reminding of giving birth to someone\'s child. The phrase conveys major life accomplishment. It demonstrates using event as leverage.',
+      meaning_ko: '누군가의 자녀를 출산했음을 발표하거나 상기시킵니다. 이 표현은 주요 인생 성취를 전달합니다. 그것은 사건을 지렛대로 사용하는 것을 나타냅니다.',
+      example: 'A: "Can he stay mad?" B: "I just had his baby!"',
+      example_ko: 'A: "그가 화낼 수 있어?" B: "난 방금 그의 아이를 낳았어!"',
+      context: 'Rachel using motherhood to excuse engagement confusion.',
+      context_ko: 'Rachel이 모성을 약혼 혼란의 변명으로 사용합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X5'
+    },
+    {
+      phrase: 'That\'s not fair.',
+      partOfSpeech: 'expression',
+      meaning: 'Objecting to unjust or unequal treatment or advantage. The phrase conveys complaint about unfair circumstances. It demonstrates protesting inequality.',
+      meaning_ko: '부당하거나 불평등한 대우 또는 이점에 반대합니다. 이 표현은 부공정한 상황에 대한 불만을 전달합니다. 그것은 불평등에 항의하는 것을 나타냅니다.',
+      example: 'A: "You have an unfair advantage." B: "That\'s not fair."',
+      example_ko: 'A: "넌 부정한 이점이 있어." B: "그건 공평하지 않아."',
+      context: 'Ross saying Rachel can\'t use motherhood as excuse.',
+      context_ko: 'Ross가 Rachel이 모성을 변명으로 쓸 수 없다고 말합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X6'
+    },
+    {
+      phrase: 'I couldn\'t sleep last night.',
+      partOfSpeech: 'expression',
+      meaning: 'Reporting inability to fall asleep or stay asleep. The phrase conveys insomnia or restlessness. It demonstrates explaining fatigue causes.',
+      meaning_ko: '잠을 자지 못했음을 보고합니다. 이 표현은 불면증이나 불안을 전달합니다. 그것은 피로 원인을 설명하는 것을 나타냅니다.',
+      example: 'A: "Why are you tired?" B: "I couldn\'t sleep last night."',
+      example_ko: 'A: "왜 피곤해?" B: "나 어젯밤에 잠을 자지 못했어."',
+      context: 'Chandler explaining his exhaustion due to work anxiety.',
+      context_ko: 'Chandler가 업무 불안으로 인한 피로를 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X7'
+    },
+    {
+      phrase: 'The more I worried, the more.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing a cycle where worry intensifies another emotion. The phrase conveys vicious cycle of anxiety. It demonstrates escalating worry patterns.',
+      meaning_ko: '걱정이 다른 감정을 심화시키는 주기를 설명합니다. 이 표현은 불안의 악순환을 전달합니다. 그것은 악화되는 걱정 패턴을 나타냅니다.',
+      example: 'A: "How did it get worse?" B: "The more I worried, the more I couldn\'t sleep."',
+      example_ko: 'A: "어떻게 더 나빠졌어?" B: "내가 더 걱정할수록 더 잠을 자지 못했어."',
+      context: 'Chandler explaining his anxiety spiral before meeting.',
+      context_ko: 'Chandler가 회의 전 불안 악순환을 설명합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X8'
+    },
+    {
+      phrase: 'I can\'t get enough of her.',
+      partOfSpeech: 'expression',
+      meaning: 'Expressing strong desire to spend time with someone. The phrase conveys affection and attachment. It demonstrates intense love or enjoyment.',
+      meaning_ko: '누군가와 시간을 보내고 싶은 강한 욕망을 표현합니다. 이 표현은 애정과 애착을 전달합니다. 그것은 강렬한 사랑이나 즐거움을 나타냅니다.',
+      example: 'A: "Do you like the baby?" B: "I can\'t get enough of her."',
+      example_ko: 'A: "넌 아기를 좋아해?" B: "난 그녀를 계속 보고 싶어."',
+      context: 'Rachel expressing overwhelming love for newborn Emma.',
+      context_ko: 'Rachel이 신생아 Emma에 대한 압도적인 사랑을 표현합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X9'
+    },
+    {
+      phrase: 'Well, I can do whatever I want.',
+      partOfSpeech: 'expression',
+      meaning: 'Asserting autonomy and freedom from restrictions. The phrase conveys confidence in personal authority. It demonstrates exercising independence.',
+      meaning_ko: '제한으로부터의 자율성과 자유를 주장합니다. 이 표현은 개인 권위에 대한 확신을 전달합니다. 그것은 독립성을 행사하는 것을 나타냅니다.',
+      example: 'A: "You shouldn\'t do that." B: "Well, I can do whatever I want."',
+      example_ko: 'A: "넌 그렇게 하면 안 돼." B: "음, 난 뭐든 할 수 있어."',
+      context: 'Rachel ignoring baby advice to wake sleeping Emma.',
+      context_ko: 'Rachel이 자고 있는 Emma를 깨우라는 조언을 무시합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X10'
+    },
+    {
+      phrase: 'I made her.',
+      partOfSpeech: 'expression',
+      meaning: 'Claiming creative or biological responsibility for someone\'s existence. The phrase conveys parental authority. It demonstrates claiming ownership.',
+      meaning_ko: '누군가의 존재에 대한 창의적 또는 생물학적 책임을 주장합니다. 이 표현은 부모의 권위를 전달합니다. 그것은 소유권을 주장하는 것을 나타냅니다.',
+      example: 'A: "You shouldn\'t wake her." B: "I made her."',
+      example_ko: 'A: "넌 그녀를 깨우면 안 돼." B: "난 그녀를 만들었어."',
+      context: 'Rachel asserting her authority as Emma\'s mother.',
+      context_ko: 'Rachel이 Emma의 엄마로서의 권위를 주장합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X11'
+    },
+    {
+      phrase: 'It breaks your heart.',
+      partOfSpeech: 'expression',
+      meaning: 'Describing something that causes deep emotional pain. The phrase conveys heartbreak and distress. It demonstrates expressing sadness.',
+      meaning_ko: '깊은 정서적 고통을 유발하는 것을 설명합니다. 이 표현은 심장 통증과 고통을 전달합니다. 그것은 슬픔을 표현하는 것을 나타냅니다.',
+      example: 'A: "How did you feel?" B: "It breaks your heart."',
+      example_ko: 'A: "넌 어떤 기분이었어?" B: "정말 마음이 아팠어."',
+      context: 'Monica and Rachel reacting to baby Emma\'s crying.',
+      context_ko: 'Monica와 Rachel이 아기 Emma의 울음에 반응합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X12'
+    },
+    {
+      phrase: 'How long do you think we have to stay?',
+      partOfSpeech: 'expression',
+      meaning: 'Asking about duration of required presence or attendance. The phrase conveys desire to leave. It demonstrates impatience.',
+      meaning_ko: '필요한 존재 또는 참석 기간을 묻습니다. 이 표현은 떠나고 싶은 욕망을 전달합니다. 그것은 조급함을 나타냅니다.',
+      example: 'A: "Are we stuck here?" B: "How long do you think we have to stay?"',
+      example_ko: 'A: "우리가 여기 갇혔어?" B: "너 우리가 얼마나 오래 있어야 한다고 생각해?"',
+      context: 'Friends questioning duration of baby Emma visit.',
+      context_ko: 'Friends가 아기 Emma 방문 기간에 대해 의문을 제기합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X13'
+    },
+    {
+      phrase: 'I didn\'t technically do anything wrong.',
+      partOfSpeech: 'expression',
+      meaning: 'Using technicalities to defend behavior. The phrase conveys splitting hairs on responsibility. It demonstrates evading full accountability.',
+      meaning_ko: '기술적 세부 사항을 사용하여 행동을 방어합니다. 이 표현은 책임에 대한 까다로운 점을 전달합니다. 그것은 완전한 책임을 회피하는 것을 나타냅니다.',
+      example: 'A: "You did something wrong." B: "I didn\'t technically do anything wrong."',
+      example_ko: 'A: "넌 뭔가 잘못했어." B: "난 기술적으로 뭔가 잘못한 게 아니야."',
+      context: 'Joey defending his role in fake engagement.',
+      context_ko: 'Joey가 거짓 약혼에서의 역할을 방어합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X14'
+    },
+    {
+      phrase: 'Problem solved.',
+      partOfSpeech: 'expression',
+      meaning: 'Declaring that a difficulty or issue has been resolved. The phrase conveys finality and satisfaction. It demonstrates closing discussion.',
+      meaning_ko: '어려움이나 문제가 해결되었음을 선언합니다. 이 표현은 확정성과 만족감을 전달합니다. 그것은 토론을 종료하는 것을 나타냅니다.',
+      example: 'A: "What do we do about the job?" B: "Problem solved. You\'re moving to Tulsa."',
+      example_ko: 'A: "우리가 일에 대해 뭘 해?" B: "문제 해결. 넌 Tulsa로 이사 가."',
+      context: 'Boss announcing Chandler will manage office in Tulsa.',
+      context_ko: 'Boss가 Chandler가 Tulsa 사무실을 관리할 것이라고 발표합니다.',
+      youtubeUrl: 'https://www.youtube.com/watch?v=REPLACE_S9E2X15'
+    }
+    ]
   };
 
   var S_NUM = 9;
@@ -103,6 +258,11 @@
   var TOTAL = 15;
 
   function goHome() { window.location.href = '../../../index.html'; }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
 
   function buildExpressions() {
     var dataExprs = EP_DATA.expressions || [];
@@ -124,16 +284,21 @@
         html += '<div class="expr-card" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
         html += '<div class="expr-phrase">&ldquo;' + escHtml(x.phrase) + '&rdquo;' + pos + '</div>';
+        html += '<div><strong style="color:var(--accent3)">English:</strong></div>';
         html += '<div class="expr-meaning">' + escHtml(x.meaning) + '</div>';
         html += '<div class="expr-example">' + escHtml(x.example) + '</div>';
-        if (x.context) html += '<div class="expr-context">&#128205; ' + escHtml(x.context) + '</div>';
+        html += '<div><strong style="color:var(--accent3)">Korean (한국어):</strong></div>';
+        html += '<div class="expr-meaning-ko">' + escHtml(x.meaning_ko) + '</div>';
+        html += '<div class="expr-example-ko">' + escHtml(x.example_ko) + '</div>';
+        if (x.context) html += '<div class="expr-context">📍 ' + escHtml(x.context) + '</div>';
+        if (x.context_ko) html += '<div class="expr-context-ko">📍 ' + escHtml(x.context_ko) + '</div>';
         html += '<div class="expr-actions">' + ytBtn;
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
         html += '</div></div>';
       } else {
         html += '<div class="expr-card placeholder-slot" id="slot' + num + '">';
         html += '<div class="expr-num">Expression ' + num + ' &middot; S' + S_NUM + 'E' + E_NUM + '</div>';
-        html += '<div class="expr-phrase" style="color:var(--muted)">&#128172; Expression ' + num + '</div>';
+        html += '<div class="expr-phrase" style="color:var(--muted)">💬 Expression ' + num + '</div>';
         html += '<div class="expr-meaning" style="color:var(--muted)">Add this expression to EP_DATA.expressions in the page source.</div>';
         html += '<div class="expr-actions"><button class="btn-youtube pending">' + t('expr.coming') + '</button>';
         html += '<button class="btn-bm" data-bm-id="' + bmId + '" onclick="handleExprBm(' + num + ')">' + t('bm.bookmark') + '</button>';
@@ -147,20 +312,12 @@
     toggleBookmark('expression','expr-s'+S_NUM+'e'+E_NUM+'x'+num,'💬 S'+S_NUM+'E'+E_NUM+' Expr'+num,'friends/episodes/season'+S_NUM+'/s'+S_NUM+'e'+E_NUM+'.html#slot'+num);
   }
 
+  function t(key) {
+    return key; // Fallback if i18n not loaded
+  }
+
   window.addEventListener('DOMContentLoaded', function() {
-    /* ── Availability guard ── */
-    if (!EP_DATA.available) {
-      var overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#0d1b2e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;';
-      overlay.innerHTML =
-        '<div style="font-size:3rem;margin-bottom:1rem;">&#128274;</div>'
-        + '<div style="font-size:1.3rem;font-weight:900;color:#38bdf8;margin-bottom:0.5rem;">Coming Soon</div>'
-        + '<div style="font-size:0.9rem;color:#6b87aa;margin-bottom:2rem;">This episode is not available yet.<br>Check back soon!</div>'
-        + '<button onclick="history.back()" style="background:#38bdf8;color:#0d1b2e;border:none;border-radius:10px;padding:10px 28px;font-size:0.95rem;font-weight:800;cursor:pointer;">&#9664; Go Back</button>';
-      document.body.appendChild(overlay);
-      return;
-    }
-        checkTermsGuard();
+    checkTermsGuard();
     buildExpressions();
     if (window.location.hash) {
       setTimeout(function() {
